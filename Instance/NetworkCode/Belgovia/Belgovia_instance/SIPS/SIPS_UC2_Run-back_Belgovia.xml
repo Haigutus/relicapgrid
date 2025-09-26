@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:nc="https://cim4.eu/ns/nc#"
+    xmlns:cim="https://cim.ucaiug.io/ns#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+  <dcat:Dataset rdf:about="urn:uuid:a5269097-22cd-4aba-9dd5-0a3628953891">
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/0080531c-fa18-4d51-8832-4bcbced77c90"/>
+    <eumd:applicationSoftware>PowerFactory-2022.SP2</eumd:applicationSoftware>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.3"/>
+    <dcterms:description xml:lang="en">"This is an example of remedial action profile."@en</dcterms:description>
+    <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
+    <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
+    <dcterms:identifier>urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc</dcterms:identifier>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Model/Belgovia-RA"/>
+    <dcat:keyword>RA</dcat:keyword>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/Test/Party/Belgovia"/>
+    <dcterms:requires rdf:resource="#_b2d1215a-a124-4b6e-9df5-85ecdce9793b"/>
+    <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
+    <dcat:version>1.0.0</dcat:version>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Action/CGM-RA"/>
+  </dcat:Dataset>
+
+<!-- SIPS_UC_2 Run-back function on HVDC link  -->
+  <nc:RemedialActionScheme rdf:ID="_3ecde63d-c87f-4947-a1f2-3622dc2092ba">
+    <cim:IdentifiedObject.description>LOGIC: IF line BO-Line_2 or line BO-Line_6 trips AND power flow on HVDC TieLine_GA_BO2 is higher than 20 MW THEN decrease power flow on HVDC to 10 MW</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>3ecde63d-c87f-4947-a1f2-3622dc2092ba</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>SIPS_UC2_Runback</cim:IdentifiedObject.name>
+    <nc:RemedialActionScheme.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionSchemeKind.sips" />
+    <nc:RemedialActionScheme.normalArmed>true</nc:RemedialActionScheme.normalArmed>
+  </nc:RemedialActionScheme>
+	<!-- in case of import on TieLine_GA_BO2 decprease the power to 10 MW--> 
+  <nc:Stage rdf:ID="_215c0331-cf8e-4499-b9b5-bc3cffd3f3b3">
+    <cim:IdentifiedObject.mRID>215c0331-cf8e-4499-b9b5-bc3cffd3f3b3</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>SIPS_UC2_Runback_import</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_d91f1368-bd8c-456a-9088-0dd4b9620b21" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_3ecde63d-c87f-4947-a1f2-3622dc2092ba" />
+    <nc:Stage.priority>0</nc:Stage.priority>
+  </nc:Stage>  
+  <nc:GridStateAlterationCollection rdf:ID="_d91f1368-bd8c-456a-9088-0dd4b9620b21">
+    <cim:IdentifiedObject.mRID>d91f1368-bd8c-456a-9088-0dd4b9620b21</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set power flow on TieLine_GA_BO2 to 10 MW</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>  
+  <nc:EquivalentInjectionAction rdf:ID="_b591f3b9-e7e6-4625-b1d2-f53dec63ced1">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_d91f1368-bd8c-456a-9088-0dd4b9620b21" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p" />
+    <cim:IdentifiedObject.mRID>b591f3b9-e7e6-4625-b1d2-f53dec63ced1</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set power on EquivalentInjection to 10 MW</cim:IdentifiedObject.name>
+    <nc:EquivalentInjectionAction.EquivalentInjection rdf:resource="#_9dc33660-e284-4c74-bb9a-44604390634e" />
+  </nc:EquivalentInjectionAction>
+   <nc:StaticPropertyRange rdf:ID="_de394860-8c5f-48b4-869c-c09f5247a6ec">
+    <cim:IdentifiedObject.mRID>de394860-8c5f-48b4-869c-c09f5247a6ec</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set power on EquivalentInjection to 10 MW</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_b591f3b9-e7e6-4625-b1d2-f53dec63ced1"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p"/>
+    <nc:RangeConstraint.normalValue>10</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange>
+		<!-- trigger conditions: if any line tripped (contingency triggered) and import on TieLine_GA_BO2 higher than 20 MW (EquivalentInjection power lower than -20 MW)-->  
+<nc:StageTrigger rdf:ID="_d9977bd6-c363-45db-ad83-17ef21929894">
+    <cim:IdentifiedObject.mRID>d9977bd6-c363-45db-ad83-17ef21929894</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>One of the lines is disconnected AND power flow on TieLine_GA_BO2 is higher than 20 MW</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_23ef64de-0f0c-490f-b771-e48b5bd247c5" />
+    <nc:StageTrigger.Stage rdf:resource="#_215c0331-cf8e-4499-b9b5-bc3cffd3f3b3" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+  <nc:Gate rdf:ID="_23ef64de-0f0c-490f-b771-e48b5bd247c5">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.and" />
+    <cim:IdentifiedObject.mRID>23ef64de-0f0c-490f-b771-e48b5bd247c5</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>One of the lines is disconnected AND power flow on TieLine_GA_BO2 is higher than 20 MW</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinTerminal rdf:ID="_b9ab4665-9c09-40b0-bfa9-cbcc58e5330b">
+    <nc:GateInputPin.Gate rdf:resource="#_23ef64de-0f0c-490f-b771-e48b5bd247c5" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.lessThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <nc:GateInputPin.thresholdValue>-20</nc:GateInputPin.thresholdValue>
+    <cim:IdentifiedObject.mRID>b9ab4665-9c09-40b0-bfa9-cbcc58e5330b</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Import on TieLine_GA_BO2 is more 20 MW</cim:IdentifiedObject.name>
+    <nc:PinTerminal.Terminal rdf:resource="#_73ae8a3c-8217-9467-638f-cf007f229852" />
+    <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" /> 
+  </nc:PinTerminal>
+  <nc:PinGate rdf:ID="_0578c33a-f74a-44c4-99fb-74fa6f4d6e58">
+    <nc:GateInputPin.Gate rdf:resource="#_23ef64de-0f0c-490f-b771-e48b5bd247c5" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.equals" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>0578c33a-f74a-44c4-99fb-74fa6f4d6e58</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>One of the lines tripped</cim:IdentifiedObject.name>
+    <nc:PinGate.GateOutput rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
+  </nc:PinGate>
+	<!-- in case of export on TieLine_GA_BO2 decprease the power to 10 MW--> 
+  <nc:Stage rdf:ID="_89705a24-34bd-493e-a572-c32f25106e3b">
+    <cim:IdentifiedObject.mRID>89705a24-34bd-493e-a572-c32f25106e3b</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Runback_SwePol</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_84477640-5bd9-4076-bfe8-415ae0ef8d6e" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_3ecde63d-c87f-4947-a1f2-3622dc2092ba" />
+    <nc:Stage.priority>0</nc:Stage.priority>
+  </nc:Stage>  
+  <nc:GridStateAlterationCollection rdf:ID="_84477640-5bd9-4076-bfe8-415ae0ef8d6e">
+    <cim:IdentifiedObject.mRID>84477640-5bd9-4076-bfe8-415ae0ef8d6e</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set power flow on TieLine_GA_BO2 to 10 MW</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>  
+  <nc:EquivalentInjectionAction rdf:ID="_12b3c4e6-2104-4499-b003-1248ef533e13">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_84477640-5bd9-4076-bfe8-415ae0ef8d6e" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p" />
+    <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
+    <cim:IdentifiedObject.mRID>12b3c4e6-2104-4499-b003-1248ef533e13</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set power on EquivalentInjection to -10 MW</cim:IdentifiedObject.name>
+    <nc:EquivalentInjectionAction.EquivalentInjection rdf:resource="#_9dc33660-e284-4c74-bb9a-44604390634e" />
+  </nc:EquivalentInjectionAction>
+   <nc:StaticPropertyRange rdf:ID="_bcc5cc7d-1c60-4014-9c5f-fb16af94bba8">
+    <cim:IdentifiedObject.mRID>bcc5cc7d-1c60-4014-9c5f-fb16af94bba8</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set power on EquivalentInjection to -10 MW</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_12b3c4e6-2104-4499-b003-1248ef533e13"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p"/>
+    <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange>
+		<!-- trigger conditions if any line tripped (contingency triggered) and export on TieLine_GA_BO2 higher than 20 MW (EquivalentInjection power higher than 20 MW)-->  
+  <nc:StageTrigger rdf:ID="_f9444387-0b28-4f1f-8eec-cb48514b0080">
+    <cim:IdentifiedObject.mRID>f9444387-0b28-4f1f-8eec-cb48514b0080</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>One of the lines is disconnected AND power flow on TieLine_GA_BO2 is higher than 150 MW</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_4cd05f81-650a-4ee1-aa14-95d30f6f6b22" />
+    <nc:StageTrigger.Stage rdf:resource="#_89705a24-34bd-493e-a572-c32f25106e3b" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+  <nc:Gate rdf:ID="_4cd05f81-650a-4ee1-aa14-95d30f6f6b22">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.and" />
+    <cim:IdentifiedObject.mRID>4cd05f81-650a-4ee1-aa14-95d30f6f6b22</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>One of the lines is disconnected AND power flow on TieLine_GA_BO2 is higher than 20 MW</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinTerminal rdf:ID="_2cc58aa5-6ec0-4a69-b7e4-10cebb1388eb">
+    <nc:GateInputPin.Gate rdf:resource="#_4cd05f81-650a-4ee1-aa14-95d30f6f6b22" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <nc:GateInputPin.thresholdValue>20</nc:GateInputPin.thresholdValue>
+    <cim:IdentifiedObject.mRID>2cc58aa5-6ec0-4a69-b7e4-10cebb1388eb</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Export on TieLine_GA_BO2 is more 20 MW</cim:IdentifiedObject.name>
+    <nc:PinTerminal.Terminal rdf:resource="#_73ae8a3c-8217-9467-638f-cf007f229852" />
+    <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" /> 
+  </nc:PinTerminal>
+  <nc:PinGate rdf:ID="_6211b151-9809-40a8-bd66-a0ca88eb546d">
+    <nc:GateInputPin.Gate rdf:resource="#_4cd05f81-650a-4ee1-aa14-95d30f6f6b22" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.equals" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>6211b151-9809-40a8-bd66-a0ca88eb546d</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>One of the lines tripped</cim:IdentifiedObject.name>
+    <nc:PinGate.GateOutput rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
+  </nc:PinGate>
+		<!-- check if one of the lines tripped - contingency applied -->   
+  <nc:Gate rdf:ID="_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.or" />
+    <cim:IdentifiedObject.mRID>b73c5258-2fb6-4e8a-8b0a-61d84a52ee27</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>line SLK–DUN or SLK–ZRC or MON–DUN tripped - contingency applied</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinContingency rdf:ID="_86b26849-bc10-462b-97ef-1d339cd6614e">
+    <nc:GateInputPin.Gate rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.equals" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>86b26849-bc10-462b-97ef-1d339cd6614e</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>line BO-Line_2 tripped - contingency applied</cim:IdentifiedObject.name>
+    <nc:PinContingency.Contingency rdf:resource="#_83ef276e-86ae-4d95-a877-6eb89d6ffd45" />
+  </nc:PinContingency>
+  <nc:PinContingency rdf:ID="_cbd14cdc-d4f5-42f8-a0a6-af0dfba9b34e">
+    <nc:GateInputPin.Gate rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.equals" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>cbd14cdc-d4f5-42f8-a0a6-af0dfba9b34e</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>line BO-Line_6 tripped - contingency applied</cim:IdentifiedObject.name>
+    <nc:PinContingency.Contingency rdf:resource="#_2084c569-ff2f-4f21-b67e-720384ce23ba" />
+  </nc:PinContingency>
+</rdf:RDF>

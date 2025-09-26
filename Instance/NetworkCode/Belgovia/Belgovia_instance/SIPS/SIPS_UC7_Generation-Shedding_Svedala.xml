@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:nc="https://cim4.eu/ns/nc#"
+    xmlns:cim="https://cim.ucaiug.io/ns#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+  <dcat:Dataset rdf:about="urn:uuid:4934a1b0-6ace-4588-9e17-5ea0956346ef">
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/0080531c-fa18-4d51-8832-4bcbced77c90"/>
+    <eumd:applicationSoftware>PowerFactory-2022.SP2</eumd:applicationSoftware>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.3"/>
+    <dcterms:description xml:lang="en">"This is an example of remedial action profile."@en</dcterms:description>
+    <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
+    <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
+    <dcterms:identifier>urn:uuid:4934a1b0-6ace-4588-9e17-5ea0956346ef</dcterms:identifier>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Model/Belgovia-RA"/>
+    <dcat:keyword>RA</dcat:keyword>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/Test/Party/Belgovia"/>
+    <dcterms:requires rdf:resource="#_b2d1215a-a124-4b6e-9df5-85ecdce9793b"/>
+    <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
+    <dcat:version>1.0.0</dcat:version>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Action/CGM-RA"/>
+  </dcat:Dataset>
+
+<!--  -->
+
+<!-- UC_7 Automatic Generation Shedding -->
+<!-- UC7_SIPS1 armed when line CL6 is overloaded above TATL is Stage 1 -->    
+  <nc:RemedialActionScheme rdf:ID="_ce962568-cce9-4c5c-8d45-b79694efcf88">
+    <cim:IdentifiedObject.description>SIPS actions when initially line CL6 is overloaded above TATL</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>ce962568-cce9-4c5c-8d45-b79694efcf88</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1</cim:IdentifiedObject.name>
+    <nc:RemedialActionScheme.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionSchemeKind.sips" />
+    <nc:RemedialActionScheme.normalArmed>true</nc:RemedialActionScheme.normalArmed> <!-- should it be true or false? -->
+    <nc:RemedialActionScheme.GateArmed rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0" />
+  </nc:RemedialActionScheme>
+  <nc:Gate rdf:ID="_068d8431-c5b8-4908-8af0-9642779347c0">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.and" />
+    <cim:IdentifiedObject.mRID>068d8431-c5b8-4908-8af0-9642779347c0</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinOperationalLimit rdf:ID="_55893c3d-b222-40cd-b18b-8941bfb4d9c2">
+    <nc:GateInputPin.Gate rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>55893c3d-b222-40cd-b18b-8941bfb4d9c2</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
+    <nc:PinOperationalLimit.OperationalLimit rdf:resource="#_0a60b94d-13e6-43ad-1135-09fe81afb5a4" />
+  </nc:PinOperationalLimit>
+<!-- SIPS1 Stage1 which should be activated when line CL6 is overload above TATL after first LF&CA -->
+  <nc:Stage rdf:ID="_2f60b546-dfcf-4e0c-b0d6-40264de45cbd">
+    <cim:IdentifiedObject.mRID>2f60b546-dfcf-4e0c-b0d6-40264de45cbd</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_332b7627-e0ad-4bd5-a678-aebb305727a6" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
+    <nc:Stage.priority>1</nc:Stage.priority> <!-- because it should be executed after first LF&CA -->
+  </nc:Stage>
+  <nc:GridStateAlterationCollection rdf:ID="_332b7627-e0ad-4bd5-a678-aebb305727a6">
+    <cim:IdentifiedObject.mRID>332b7627-e0ad-4bd5-a678-aebb305727a6</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G1</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>
+  <nc:TopologyAction rdf:ID="_e2a19b7e-6d21-4987-b138-f746bba325e6">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_332b7627-e0ad-4bd5-a678-aebb305727a6" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <cim:IdentifiedObject.mRID>e2a19b7e-6d21-4987-b138-f746bba325e6</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <nc:TopologyAction.Switch rdf:resource="#_ecc7d452-3cc6-4a6f-ac55-cfc80f3aac53" />
+  </nc:TopologyAction>
+  <nc:StaticPropertyRange rdf:ID="_5d65b3b1-1c66-4045-8d6b-0accc85043ed">
+    <cim:IdentifiedObject.mRID>5d65b3b1-1c66-4045-8d6b-0accc85043ed</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_e2a19b7e-6d21-4987-b138-f746bba325e6"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange> 
+  <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
+    <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
+    <nc:StageTrigger.Stage rdf:resource="#_2f60b546-dfcf-4e0c-b0d6-40264de45cbd" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+<!-- SIPS1 Stage2a which should be activated when line CL6 is still overload above TATL after second LF&CA -->
+  <nc:Stage rdf:ID="_7d2d969e-6b11-45c5-ba66-9637072b3be5">
+    <cim:IdentifiedObject.mRID>7d2d969e-6b11-45c5-ba66-9637072b3be5</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2a</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
+    <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
+  </nc:Stage>
+  <nc:GridStateAlterationCollection rdf:ID="_124a56f0-22cc-47b0-a9ab-219641b76e25">
+    <cim:IdentifiedObject.mRID>124a56f0-22cc-47b0-a9ab-219641b76e25</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G3</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>
+  <nc:TopologyAction rdf:ID="_d101c17c-c67a-4a33-b8ad-aaee4ca6563e">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <cim:IdentifiedObject.mRID>d101c17c-c67a-4a33-b8ad-aaee4ca6563e</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G3 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <nc:TopologyAction.Switch rdf:resource="#_dafeb217-8a10-4068-b88a-2e884a2bdc32" />
+  </nc:TopologyAction>
+  <nc:StaticPropertyRange rdf:ID="_fe2f9b5c-7a78-4f3d-983a-d9602f9e5fe7">
+    <cim:IdentifiedObject.mRID>fe2f9b5c-7a78-4f3d-983a-d9602f9e5fe7</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G3 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_d101c17c-c67a-4a33-b8ad-aaee4ca6563e"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange> 
+  <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
+    <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
+    <nc:StageTrigger.Stage rdf:resource="#_7d2d969e-6b11-45c5-ba66-9637072b3be5" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+<!-- SIPS1 Stage2b which should be activated when line CL6 is still overload above PATL but below TATL after second LF&CA -->
+  <nc:Stage rdf:ID="_bfa56840-37ff-44e3-9d2d-df5efc3a1b81">
+    <cim:IdentifiedObject.mRID>bfa56840-37ff-44e3-9d2d-df5efc3a1b81</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2b</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_b7a0d8df-2809-4bd3-952c-474ba032aa46" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
+    <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
+  </nc:Stage>
+  <nc:GridStateAlterationCollection rdf:ID="_b7a0d8df-2809-4bd3-952c-474ba032aa46">
+    <cim:IdentifiedObject.mRID>b7a0d8df-2809-4bd3-952c-474ba032aa46</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to 0 MW</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>
+  <nc:RotatingMachineAction rdf:ID="_884fd5ca-afa6-4b5b-a0f7-2daee3f1959f">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_b7a0d8df-2809-4bd3-952c-474ba032aa46" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
+    <cim:IdentifiedObject.mRID>884fd5ca-afa6-4b5b-a0f7-2daee3f1959f</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
+    <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_2a35657f-a1a8-45dc-911e-e71535b35d87" />
+  </nc:RotatingMachineAction>
+  <nc:StaticPropertyRange rdf:ID="_f4d38a37-bb34-477b-aba3-b68c934077b5">
+    <cim:IdentifiedObject.mRID>f4d38a37-bb34-477b-aba3-b68c934077b5</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin = 10 MW</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_884fd5ca-afa6-4b5b-a0f7-2daee3f1959f"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
+    <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange>
+  <nc:StageTrigger rdf:ID="_011fd5e3-cdcb-46d6-b6b8-a81f9fac8b59">
+    <cim:IdentifiedObject.mRID>011fd5e3-cdcb-46d6-b6b8-a81f9fac8b59</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL but lower than TATL</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_1653b751-c9df-4f36-9970-db3bf8e87deb"/>
+    <nc:StageTrigger.Stage rdf:resource="#_bfa56840-37ff-44e3-9d2d-df5efc3a1b81" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+  <nc:Gate rdf:ID="_1653b751-c9df-4f36-9970-db3bf8e87deb">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.and" />
+    <cim:IdentifiedObject.mRID>1653b751-c9df-4f36-9970-db3bf8e87deb</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL but lower than TATL</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinOperationalLimit rdf:ID="_3da34bc8-e993-4e9e-81f7-8a97f6d21d9d">
+    <nc:GateInputPin.Gate rdf:resource="#_1653b751-c9df-4f36-9970-db3bf8e87deb" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>3da34bc8-e993-4e9e-81f7-8a97f6d21d9d</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+    <nc:PinOperationalLimit.OperationalLimit rdf:resource="#_02abc849-a241-bd01-ca44-a13e3e46d3bd" />
+  </nc:PinOperationalLimit>  
+  <nc:PinOperationalLimit rdf:ID="_57fdf76c-1d95-4616-9635-f6a18cfbbdce">
+    <nc:GateInputPin.Gate rdf:resource="#_1653b751-c9df-4f36-9970-db3bf8e87deb" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.lessThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>57fdf76c-1d95-4616-9635-f6a18cfbbdce</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is lower than TATL</cim:IdentifiedObject.name>
+    <nc:PinOperationalLimit.OperationalLimit rdf:resource="#_0a60b94d-13e6-43ad-1135-09fe81afb5a4" />
+  </nc:PinOperationalLimit>
+<!-- SIPS1 Stage3 which should be activated when line CL6 is still overload after third LF&CA -->
+  <nc:Stage rdf:ID="_950f792b-d761-48f6-8f82-cf40b889a26c">
+    <cim:IdentifiedObject.mRID>950f792b-d761-48f6-8f82-cf40b889a26c</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage3</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25"/> <!-- I used the same GridStateAlterationCollection as for Stage 2a because multiple Stages can refer to one GridStateAlterationCollection  -->
+    <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
+    <nc:Stage.priority>3</nc:Stage.priority> <!-- because it should be executed after third LF&CA -->
+  </nc:Stage>
+  <nc:StageTrigger rdf:ID="_d45195f1-9b95-44b6-b9d9-47600b855e41">
+    <cim:IdentifiedObject.mRID>d45195f1-9b95-44b6-b9d9-47600b855e41</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_299a2a80-eea1-423e-984a-bcd768f711bb"/>
+    <nc:StageTrigger.Stage rdf:resource="#_950f792b-d761-48f6-8f82-cf40b889a26c" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+  <nc:Gate rdf:ID="_299a2a80-eea1-423e-984a-bcd768f711bb">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.and" />
+    <cim:IdentifiedObject.mRID>299a2a80-eea1-423e-984a-bcd768f711bb</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinOperationalLimit rdf:ID="_0709bc69-baee-41f1-8d00-7e6caaa7636f">
+    <nc:GateInputPin.Gate rdf:resource="#_299a2a80-eea1-423e-984a-bcd768f711bb" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>0709bc69-baee-41f1-8d00-7e6caaa7636f</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+    <nc:PinOperationalLimit.OperationalLimit rdf:resource="#_02abc849-a241-bd01-ca44-a13e3e46d3bd" />
+  </nc:PinOperationalLimit>  
+
+<!-- UC7_SIPS2 armed when line CL6 is overloaded above PATL but below TATL is Stage 1 -->  
+  <nc:RemedialActionScheme rdf:ID="_f151d691-a13b-4c70-a7e9-e7c272da78bb">
+    <cim:IdentifiedObject.description>SIPS actions when initially line CL6 is overloaded above PATL but below TATL</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>f151d691-a13b-4c70-a7e9-e7c272da78bb</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS2</cim:IdentifiedObject.name>
+    <nc:RemedialActionScheme.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionSchemeKind.sips" />
+    <nc:RemedialActionScheme.normalArmed>true</nc:RemedialActionScheme.normalArmed> <!-- should it be true or false? -->
+    <nc:RemedialActionScheme.GateArmed rdf:resource="#_a0e20b48-a34b-40e6-8282-538804536985" />
+  </nc:RemedialActionScheme>
+  <nc:Gate rdf:ID="_a0e20b48-a34b-40e6-8282-538804536985">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.and" />
+    <cim:IdentifiedObject.mRID>a0e20b48-a34b-40e6-8282-538804536985</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL but lower than TATL</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinOperationalLimit rdf:ID="_f6bb443a-89fe-4656-84c3-aa4b66b6a9af">
+    <nc:GateInputPin.Gate rdf:resource="#_a0e20b48-a34b-40e6-8282-538804536985" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>f6bb443a-89fe-4656-84c3-aa4b66b6a9af</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+    <nc:PinOperationalLimit.OperationalLimit rdf:resource="#_02abc849-a241-bd01-ca44-a13e3e46d3bd" />
+  </nc:PinOperationalLimit>  
+  <nc:PinOperationalLimit rdf:ID="_3a833fbd-9e2e-42df-919d-7be00de94cbc">
+    <nc:GateInputPin.Gate rdf:resource="#_a0e20b48-a34b-40e6-8282-538804536985" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.lessThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>3a833fbd-9e2e-42df-919d-7be00de94cbc</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is lower than TATL</cim:IdentifiedObject.name>
+    <nc:PinOperationalLimit.OperationalLimit rdf:resource="#_0a60b94d-13e6-43ad-1135-09fe81afb5a4" />
+  </nc:PinOperationalLimit>
+<!-- SIPS2 Stage1 which should be activated when line CL6 is overload above PATL but below TATL after first LF&CA -->
+  <nc:Stage rdf:ID="_f8722dc4-0b1c-4b36-be29-fe3aa5460549">
+    <cim:IdentifiedObject.mRID>f8722dc4-0b1c-4b36-be29-fe3aa5460549</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_02a420c3-dcc2-413e-9f7d-a4997c42e155" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
+    <nc:Stage.priority>1</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
+  </nc:Stage>
+  <nc:GridStateAlterationCollection rdf:ID="_02a420c3-dcc2-413e-9f7d-a4997c42e155">
+    <cim:IdentifiedObject.mRID>02a420c3-dcc2-413e-9f7d-a4997c42e155</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>
+  <nc:RotatingMachineAction rdf:ID="_8e60eea4-9c86-4e9d-8012-6645d5efb96d">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_02a420c3-dcc2-413e-9f7d-a4997c42e155" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
+    <cim:IdentifiedObject.mRID>8e60eea4-9c86-4e9d-8012-6645d5efb96d</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
+    <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_2a35657f-a1a8-45dc-911e-e71535b35d87" />
+  </nc:RotatingMachineAction>
+  <nc:StaticPropertyRange rdf:ID="_3997ac30-8d9f-432c-9a38-db6a465be999">
+    <cim:IdentifiedObject.mRID>3997ac30-8d9f-432c-9a38-db6a465be999</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin = 10 MW</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_8e60eea4-9c86-4e9d-8012-6645d5efb96d"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
+    <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange>
+  <nc:StageTrigger rdf:ID="_92195218-f3a3-4cca-af38-1550a91bcd44">
+    <cim:IdentifiedObject.mRID>92195218-f3a3-4cca-af38-1550a91bcd44</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL but lower than TATL</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_a0e20b48-a34b-40e6-8282-538804536985"/>
+    <nc:StageTrigger.Stage rdf:resource="#_f8722dc4-0b1c-4b36-be29-fe3aa5460549" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+<!-- SIPS2 Stage2 which should be activated when line CL6 is still overload above PATL after second LF&CA -->
+  <nc:Stage rdf:ID="_2efd4f05-da11-4060-8fa4-44b84388d723">
+    <cim:IdentifiedObject.mRID>2efd4f05-da11-4060-8fa4-44b84388d723</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_12097f09-e5cc-4fdc-98eb-0675d0f2af11" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
+    <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
+  </nc:Stage>
+  <nc:GridStateAlterationCollection rdf:ID="_12097f09-e5cc-4fdc-98eb-0675d0f2af11">
+    <cim:IdentifiedObject.mRID>12097f09-e5cc-4fdc-98eb-0675d0f2af11</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G1</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>
+  <nc:TopologyAction rdf:ID="_0bec00cd-cf46-40d8-931a-efb35bc417af">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_12097f09-e5cc-4fdc-98eb-0675d0f2af11" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <cim:IdentifiedObject.mRID>0bec00cd-cf46-40d8-931a-efb35bc417af</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <nc:TopologyAction.Switch rdf:resource="#_ecc7d452-3cc6-4a6f-ac55-cfc80f3aac53" />
+  </nc:TopologyAction>
+  <nc:StaticPropertyRange rdf:ID="_d84509e2-2d21-4c03-9d3e-941e3777d4d6">
+    <cim:IdentifiedObject.mRID>d84509e2-2d21-4c03-9d3e-941e3777d4d6</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_0bec00cd-cf46-40d8-931a-efb35bc417af"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange> 
+  <nc:StageTrigger rdf:ID="_9aaa5e63-3126-4f9d-930a-2397b97af9d5">
+    <cim:IdentifiedObject.mRID>9aaa5e63-3126-4f9d-930a-2397b97af9d5</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_48f7389d-7825-4a5a-a187-29cdd37a4057"/>
+    <nc:StageTrigger.Stage rdf:resource="#_2efd4f05-da11-4060-8fa4-44b84388d723" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+  <nc:Gate rdf:ID="_48f7389d-7825-4a5a-a187-29cdd37a4057">
+    <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.and" />
+    <cim:IdentifiedObject.mRID>48f7389d-7825-4a5a-a187-29cdd37a4057</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+  </nc:Gate>
+  <nc:PinOperationalLimit rdf:ID="_a9dd0aed-87c1-49d8-90a1-f17d794c5ab0">
+    <nc:GateInputPin.Gate rdf:resource="#_48f7389d-7825-4a5a-a187-29cdd37a4057" />
+    <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>a9dd0aed-87c1-49d8-90a1-f17d794c5ab0</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+    <nc:PinOperationalLimit.OperationalLimit rdf:resource="#_02abc849-a241-bd01-ca44-a13e3e46d3bd" />
+  </nc:PinOperationalLimit>  
+<!-- SIPS2 Stage3 which should be activated when line CL6 is still overload above PATL after third LF&CA -->
+  <nc:Stage rdf:ID="_cd59bf8e-890c-40e3-a699-041f3111cd99">
+    <cim:IdentifiedObject.mRID>cd59bf8e-890c-40e3-a699-041f3111cd99</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2</cim:IdentifiedObject.name>
+    <nc:Stage.GridStateAlterationCollection rdf:resource="#_ea6979c2-2ad4-484a-9f41-bec157a0eedd" />
+    <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
+    <nc:Stage.priority>3</nc:Stage.priority> <!-- because it should be executed after third LF&CA -->
+  </nc:Stage>
+  <nc:GridStateAlterationCollection rdf:ID="_ea6979c2-2ad4-484a-9f41-bec157a0eedd">
+    <cim:IdentifiedObject.mRID>ea6979c2-2ad4-484a-9f41-bec157a0eedd</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G3</cim:IdentifiedObject.name>
+  </nc:GridStateAlterationCollection>
+  <nc:TopologyAction rdf:ID="_0725050a-0ece-49d0-8822-f5e0c8fb99c9">
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_ea6979c2-2ad4-484a-9f41-bec157a0eedd" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <cim:IdentifiedObject.mRID>0725050a-0ece-49d0-8822-f5e0c8fb99c9</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <nc:TopologyAction.Switch rdf:resource="#_dafeb217-8a10-4068-b88a-2e884a2bdc32" />
+  </nc:TopologyAction>
+  <nc:StaticPropertyRange rdf:ID="_34676da6-a62d-4f41-b9bc-0a7e3d95efe7">
+    <cim:IdentifiedObject.mRID>34676da6-a62d-4f41-b9bc-0a7e3d95efe7</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <nc:RangeConstraint.GridStateAlteration rdf:resource="#_0725050a-0ece-49d0-8822-f5e0c8fb99c9"/>
+    <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
+    <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
+  </nc:StaticPropertyRange> 
+  <nc:StageTrigger rdf:ID="_e5d8b062-b39b-4fea-b329-a2781b8fbac8">
+    <cim:IdentifiedObject.mRID>e5d8b062-b39b-4fea-b329-a2781b8fbac8</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
+    <nc:StageTrigger.GateTrigger rdf:resource="#_48f7389d-7825-4a5a-a187-29cdd37a4057"/> <!-- I used the same gate as for Stage 2 because multiple GateTriggers can refer to one Gate -->
+    <nc:StageTrigger.Stage rdf:resource="#_cd59bf8e-890c-40e3-a699-041f3111cd99" />
+    <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
+    <nc:StageTrigger.priority>0</nc:StageTrigger.priority>
+  </nc:StageTrigger>
+</rdf:RDF>

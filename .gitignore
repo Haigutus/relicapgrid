@@ -1,0 +1,7 @@
+# Ignoring packages #
+############
+*.zip
+
+# Ignoring folders #
+############
+/Snippets/
