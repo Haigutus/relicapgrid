@@ -19,7 +19,7 @@
 		<entsoe:ConnectivityNode.toEndNameTso>TSO-Britheim</entsoe:ConnectivityNode.toEndNameTso>
 		<entsoe:ConnectivityNode.boundaryPoint>true</entsoe:ConnectivityNode.boundaryPoint>
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_dbd82264-a684-4b87-946d-a5a02714daa9"/>
-		<cim:IdentifiedObject.description>BP_GA-BH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Britheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<cim:IdentifiedObject.mRID>4905819a-7927-4112-8e3b-4e8178b7daa5</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_GA-BH1</cim:IdentifiedObject.name>
 		<entsoe:IdentifiedObject.shortName>BP_GA-BH1</entsoe:IdentifiedObject.shortName>
@@ -34,7 +34,7 @@
 	</cim:Line>
 	<cim:TopologicalNode rdf:ID="_c414b790-7b1e-9545-a3dc-dddff8cc2cd9">
 		<cim:IdentifiedObject.name>BP_GA-BH1</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_GA-BH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Britheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_GA-BH1</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>GA</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>BH</entsoe:TopologicalNode.toEndIsoCode>
@@ -47,7 +47,7 @@
 	</cim:TopologicalNode>
 	<cim:TopologicalNode rdf:ID="_6436d106-4c76-6b46-91c3-0be9788c2416">
 		<cim:IdentifiedObject.name>BP_GA-BH1</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_GA-BH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Britheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_GA-BH1</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>GA</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>BH</entsoe:TopologicalNode.toEndIsoCode>

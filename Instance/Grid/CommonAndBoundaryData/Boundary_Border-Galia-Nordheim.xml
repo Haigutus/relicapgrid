@@ -22,7 +22,7 @@
     <eu:BoundaryPoint.toEndIsoCode>NH</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Oldissa1</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Nordheim</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_GA-NH1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Nordheim (substation name) (220kV).</cim:IdentifiedObject.description>
     <eu:IdentifiedObject.energyIdentCodeEic>10T-AT-SI-00001T</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>f55e441a-6fef-2657-4229-355ca95df87e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-NH1</cim:IdentifiedObject.name>
@@ -30,7 +30,7 @@
   </eu:BoundaryPoint>
   <cim:ConnectivityNode rdf:ID="_d9574184-b375-45f6-8fcc-20ec0470bf93">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_82abfaf2-36df-44ac-b4e5-e40a535affa4"/>
-    <cim:IdentifiedObject.description>BP_GA-NH1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Nordheim (substation name) (220kV).</cim:IdentifiedObject.description>
     <eu:IdentifiedObject.energyIdentCodeEic>10T-AT-SI-00001T</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>d9574184-b375-45f6-8fcc-20ec0470bf93</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-NH1</cim:IdentifiedObject.name>

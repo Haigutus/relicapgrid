@@ -17,10 +17,10 @@
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_a2ca87bb-9b25-455d-8a8c-a29933a84cef"/>
     <eu:BoundaryPoint.fromEndIsoCode>GA</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Galia</eu:BoundaryPoint.fromEndName>
-    <eu:BoundaryPoint.fromEndNameTso>Galia</eu:BoundaryPoint.fromEndNameTso>
+    <eu:BoundaryPoint.fromEndNameTso>TSO-Galia</eu:BoundaryPoint.fromEndNameTso>
     <eu:BoundaryPoint.toEndIsoCode>BO</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Belgovia</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Belgovia</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Belgovia</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.description>BP GA-BO</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>fe850064-97a7-89ae-37e7-e67d935e7576</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP GA-BO</cim:IdentifiedObject.name>

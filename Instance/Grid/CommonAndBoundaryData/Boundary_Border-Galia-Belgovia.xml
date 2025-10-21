@@ -22,14 +22,14 @@
     <eu:BoundaryPoint.toEndIsoCode>BO</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Brussia4</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Belgovia</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_GA-BO4</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 4 between Galia (substation name) and Belgovia (substation name) (380kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>f079f04c-604b-e408-5c3a-e93025400df9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO4</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO4</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>
   <cim:ConnectivityNode rdf:ID="_1a14d3b4-b7b5-4b73-9467-04cad5fb6557">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_e454ebf1-94fd-4513-89e4-23239bdca8eb"/>
-    <cim:IdentifiedObject.description>BP_GA-BO4</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 4 between Galia (substation name) and Belgovia (substation name) (380kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>1a14d3b4-b7b5-4b73-9467-04cad5fb6557</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO4</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO4</eu:IdentifiedObject.shortName>
@@ -50,14 +50,14 @@
     <eu:BoundaryPoint.toEndIsoCode>BO</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Brussia3</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Belgovia</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_GA-BO3</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 3 between Galia (substation name) and Belgovia (substation name) (380kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>7976cd48-d51c-8e4b-9595-56299cb5b4f8</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO3</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO3</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>  
   <cim:ConnectivityNode rdf:ID="_b67cf870-cb6e-11e1-bcee-406c8f32ef58">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_54a2e470-ef70-443f-ae81-bcf2d117caa2"/>
-    <cim:IdentifiedObject.description>BP_GA-BO3</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 3 between Galia (substation name) and Belgovia (substation name) (380kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>b67cf870-cb6e-11e1-bcee-406c8f32ef58</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO3</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO3</eu:IdentifiedObject.shortName>
@@ -78,14 +78,14 @@
     <eu:BoundaryPoint.toEndIsoCode>BO</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Brussia1</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Belgovia</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_GA-BO1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Belgovia (substation name) (220kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>a3e1a51f-cc76-155c-543f-ea7cb0c6db20</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO1</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO1</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>  
   <cim:ConnectivityNode rdf:ID="_cfb37abe-3dde-4bd3-84a6-b2d8d0df6203">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_a581a1d6-dbfe-40b7-9405-bd6303376efc"/>
-    <cim:IdentifiedObject.description>BP_GA-BO1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Belgovia (substation name) (220kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>cfb37abe-3dde-4bd3-84a6-b2d8d0df6203</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO1</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO1</eu:IdentifiedObject.shortName>
@@ -106,14 +106,14 @@
     <eu:BoundaryPoint.toEndIsoCode>BO</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Brussia2</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Belgovia</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_GA-BO2</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 2 between Galia (substation name) and Belgovia (substation name) (220kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>af1d901f-98de-574f-abc3-6c3025e7a685</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO2</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO2</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>  
   <cim:ConnectivityNode rdf:ID="_b67c8340-cb6e-11e1-bcee-406c8f32ef58">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_bd25e87a-c626-4dd7-a846-7fba517fbb8f"/>
-    <cim:IdentifiedObject.description>BP_GA-BO2</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 2 between Galia (substation name) and Belgovia (substation name) (220kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>b67c8340-cb6e-11e1-bcee-406c8f32ef58</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO2</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO2</eu:IdentifiedObject.shortName>
@@ -134,14 +134,14 @@
     <eu:BoundaryPoint.toEndIsoCode>BO</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Brussia5</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Belgovia</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_GA-BO5</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 5 between Galia (substation name) and Belgovia (substation name) (380kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>8fe8c999-a939-5d43-b857-02dd312f2dea</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO5</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_GA-BO5</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>
   <cim:ConnectivityNode rdf:ID="_b675a570-cb6e-11e1-bcee-406c8f32ef58">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_eac31e3d-fdf5-4656-b10e-66481bfcfec5"/>
-    <cim:IdentifiedObject.description>BP_GA-BO5</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 5 between Galia (substation name) and Belgovia (substation name) (380kV).</cim:IdentifiedObject.description>
     <eu:IdentifiedObject.energyIdentCodeEic>10T-DK-SE-00001D</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>b675a570-cb6e-11e1-bcee-406c8f32ef58</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-BO5</cim:IdentifiedObject.name>

@@ -34,7 +34,7 @@
 		<entsoe:ConnectivityNode.toEndNameTso>TSO-Espheim</entsoe:ConnectivityNode.toEndNameTso>
 		<entsoe:ConnectivityNode.boundaryPoint>true</entsoe:ConnectivityNode.boundaryPoint>
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_c3f46fe5-0cd1-4a1c-b722-e967b9ab21e2"/>
-		<cim:IdentifiedObject.description>BP_SD-EH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Svedala (substation name) and Espheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<cim:IdentifiedObject.mRID>49831d24-33e9-4233-8424-3f88186a924e</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_SD-EH1</cim:IdentifiedObject.name>
 		<entsoe:IdentifiedObject.shortName>BP_SD-EH1</entsoe:IdentifiedObject.shortName>
@@ -49,7 +49,7 @@
 		<entsoe:ConnectivityNode.toEndNameTso>TSO-Espheim</entsoe:ConnectivityNode.toEndNameTso>
 		<entsoe:ConnectivityNode.boundaryPoint>true</entsoe:ConnectivityNode.boundaryPoint>
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_41d4fafe-e4ce-4ca3-86d9-f181ae3f8ea3"/>
-		<cim:IdentifiedObject.description>BP_SD-EH2</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 2 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
 		<cim:IdentifiedObject.mRID>183d126d-2522-4ff2-a8cd-c5016cf09c1b</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_SD-EH2</cim:IdentifiedObject.name>
 		<entsoe:IdentifiedObject.shortName>BP_SD-EH2</entsoe:IdentifiedObject.shortName>
@@ -65,7 +65,7 @@
 		<entsoe:ConnectivityNode.toEndNameTso>TSO-Espheim</entsoe:ConnectivityNode.toEndNameTso>
 		<entsoe:ConnectivityNode.boundaryPoint>true</entsoe:ConnectivityNode.boundaryPoint>
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_78525c97-a5b6-4cbb-8028-1236ca2f4a37"/>
-		<cim:IdentifiedObject.description>BP_SD-EH3</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 3 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
 		<cim:IdentifiedObject.mRID>8dd436f0-f8a2-405b-a991-1a2479077ef5</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_SD-EH3</cim:IdentifiedObject.name>
 		<entsoe:IdentifiedObject.shortName>BP_SD-EH3</entsoe:IdentifiedObject.shortName>
@@ -138,7 +138,7 @@
 	</cim:TopologicalNode>
 	<cim:TopologicalNode rdf:ID="_da478bfe-fcf6-894c-8c24-22da815efe4f">
 		<cim:IdentifiedObject.name>BP_SD-EH1</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_SD-EH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Svedala (substation name) and Espheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_SD-EH1</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>SD</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>EH</entsoe:TopologicalNode.toEndIsoCode>
@@ -151,7 +151,7 @@
 	</cim:TopologicalNode>
 	<cim:TopologicalNode rdf:ID="_271c26f2-359e-0347-9016-d8c917d55b15">
 		<cim:IdentifiedObject.name>BP_SD-EH2</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_SD-EH2</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 2 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_SD-EH2</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>SD</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>EH</entsoe:TopologicalNode.toEndIsoCode>
@@ -164,7 +164,7 @@
 	</cim:TopologicalNode>
 	<cim:TopologicalNode rdf:ID="_09ebdc27-b1bd-0647-ac5a-bbc6b39dd9ee">
 		<cim:IdentifiedObject.name>BP_SD-EH3</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_SD-EH3</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 3 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_SD-EH3</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>SD</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>EH</entsoe:TopologicalNode.toEndIsoCode>

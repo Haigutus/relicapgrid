@@ -182,9 +182,9 @@
     <eu:BoundaryPoint.fromEndIsoCode>EH</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Cartelle</eu:BoundaryPoint.fromEndName>
     <eu:BoundaryPoint.fromEndNameTso>Espheim</eu:BoundaryPoint.fromEndNameTso>
-    <eu:BoundaryPoint.toEndIsoCode>PT</eu:BoundaryPoint.toEndIsoCode>
+    <eu:BoundaryPoint.toEndIsoCode>PH</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Alto Lindoso</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Portheim</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Portheim</eu:BoundaryPoint.toEndNameTso>
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_b675a570-cb6e-11e1-bcee-406c8f32ef58" />
     <cim:IdentifiedObject.mRID>8fe8c999-a939-5d43-b857-02dd312f2dea</cim:IdentifiedObject.mRID>
   </eu:BoundaryPoint>
@@ -224,7 +224,7 @@
     <eu:BoundaryPoint.fromEndIsoCode>AT</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Zell/Ziller</eu:BoundaryPoint.fromEndName>
     <eu:BoundaryPoint.fromEndNameTso>APG</eu:BoundaryPoint.fromEndNameTso>
-    <eu:BoundaryPoint.toEndIsoCode>DE</eu:BoundaryPoint.toEndIsoCode>
+    <eu:BoundaryPoint.toEndIsoCode>TG</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Strass</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TIWAG-Netz</eu:BoundaryPoint.toEndNameTso>
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_b66f15c0-cb6e-11e1-bcee-406c8f32ef58" />
@@ -238,7 +238,7 @@
     <eu:BoundaryPoint.fromEndIsoCode>AT</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Zell/Ziller</eu:BoundaryPoint.fromEndName>
     <eu:BoundaryPoint.fromEndNameTso>APG</eu:BoundaryPoint.fromEndNameTso>
-    <eu:BoundaryPoint.toEndIsoCode>DE</eu:BoundaryPoint.toEndIsoCode>
+    <eu:BoundaryPoint.toEndIsoCode>TG</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Strass</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TIWAG-Netz</eu:BoundaryPoint.toEndNameTso>
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_b6978550-cb6e-11e1-bcee-406c8f32ef58" />
