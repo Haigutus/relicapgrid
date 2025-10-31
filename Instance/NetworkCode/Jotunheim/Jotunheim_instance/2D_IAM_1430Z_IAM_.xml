@@ -19,7 +19,7 @@
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcat:keyword>IAM</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Jotunheim"/>
     <dcterms:requires rdf:resource="urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd"/>
     <dcat:startDate>2022-06-16T12:30:00Z</dcat:startDate>
