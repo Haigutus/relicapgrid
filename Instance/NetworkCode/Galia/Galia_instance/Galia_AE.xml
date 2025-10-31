@@ -17,7 +17,7 @@
     <dcterms:identifier>447dc560-28a7-41ff-b1ce-15dd3f0d5e87</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Galia-AE"/>
     <dcat:keyword>AE</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Galia"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	

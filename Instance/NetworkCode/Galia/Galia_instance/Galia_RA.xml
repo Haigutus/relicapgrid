@@ -17,7 +17,7 @@
     <dcterms:identifier>2ea55b46-ad48-4408-be72-734b475ba18f</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Galia-RA"/>
     <dcat:keyword>RA</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Galia"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	

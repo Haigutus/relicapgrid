@@ -17,7 +17,7 @@
     <dcterms:identifier>a2c02149-a114-4b5e-9de5-74dcccd9793a</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Galia-ER"/>
     <dcat:keyword>ER</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Galia"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
