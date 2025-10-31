@@ -16,7 +16,7 @@
     <dcterms:identifier>fc3c4b17-cce7-4c2f-9c13-8240e514c87c</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-SIS"/>
     <dcat:keyword>SIS</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
 	  <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	

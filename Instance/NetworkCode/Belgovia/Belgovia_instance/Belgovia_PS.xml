@@ -16,7 +16,7 @@
     <dcterms:identifier>8a82ef13-ae28-4037-8a44-f84b1f639ba4</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-PS"/>
     <dcat:keyword>PS</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
