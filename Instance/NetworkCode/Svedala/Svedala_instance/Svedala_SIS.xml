@@ -12,7 +12,7 @@
   <dcat:Dataset rdf:about="urn:uuid:2426ac74-18f0-441c-9814-3f06655302e6">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
 
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/StateInstructionSchedule/2.3"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/StateInstructionSchedule/2.4"/>
     <dcterms:description xml:lang="en">This is an example of state instruction schedule profile.</dcterms:description>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
 	<dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>

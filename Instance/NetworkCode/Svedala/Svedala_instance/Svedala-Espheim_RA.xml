@@ -4,7 +4,7 @@
 
 <dcat:Dataset rdf:about="urn:uuid:c1413a88-1f17-4b9e-9afe-cd089605c671">
     <dcterms:identifier>c1413a88-1f17-4b9e-9afe-cd089605c671</dcterms:identifier>
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.3"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.4"/>
     <dcterms:description>Svedala - HVDC - Espheim  - NC profile</dcterms:description>
     <prov:generatedAtTime>2025-06-19T14:00:00Z</prov:generatedAtTime>
     <dcterms:publisher rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>

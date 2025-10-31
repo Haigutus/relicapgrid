@@ -9,7 +9,7 @@
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:8a82ef13-ae28-4037-8a44-f84b1f639ba4">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/PowerSchedule/2.3"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/PowerSchedule/2.4"/>
     <dcterms:description xml:lang="en">This is an example of power schedule profile.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
