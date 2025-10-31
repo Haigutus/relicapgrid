@@ -12,7 +12,7 @@
     xmlns:dcterms="http://purl.org/dc/terms/#" > 
   <dcat:Dataset rdf:about="urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/SecurityAnalysisResult/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/SecurityAnalysisResult/2.5"/>
     <dcterms:description xml:lang="en">This is an example of security analysis result profile.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:07:25Z</prov:generatedAtTime>

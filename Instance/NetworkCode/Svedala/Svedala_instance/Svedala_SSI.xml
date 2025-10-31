@@ -12,7 +12,7 @@
   <dcat:Dataset rdf:about="urn:uuid:ba3dc01a-fa68-4886-b053-2737e1276d27">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
 
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/SteadyStateInstruction/2.3"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/SteadyStateInstruction/2.4"/>
     <dcterms:description xml:lang="en">This is an example of steady state instruction profile.</dcterms:description>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
 	<dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>

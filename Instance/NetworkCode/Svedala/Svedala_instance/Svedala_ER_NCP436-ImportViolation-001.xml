@@ -13,7 +13,7 @@
 		  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<dcat:Dataset rdf:about="urn:uuid:d3c8730a-d4e7-4c83-a7f6-307101a84609">
 		<dcterms:identifier>d3c8730a-d4e7-4c83-a7f6-307101a84609</dcterms:identifier>
-		<dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.3"/>
+		<dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.4"/>
 		<dcterms:description>NCP436 Power Transfer Corridors - Import violation</dcterms:description>
 		<prov:generatedAtTime>2025-04-01T11:00:00Z</prov:generatedAtTime>
 		<dcterms:publisher rdf:resource="https://www.energinet.dk/SV-IOP"/>
