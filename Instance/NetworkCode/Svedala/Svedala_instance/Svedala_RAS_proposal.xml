@@ -12,14 +12,14 @@
   <dcat:Dataset rdf:about="urn:uuid:adaaff90-c3bd-463b-a405-b84d7389b351">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <eumd:applicationSoftware>PowerFactory-2022.SP2</eumd:applicationSoftware>
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialActionSchedule/2.3"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialActionSchedule/2.4"/>
     <dcterms:description xml:lang="en">This is an example of remedial action schedule profile dataset proposed by a TSO.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>adaaff90-c3bd-463b-a405-b84d7389b351</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-RAS"/>
     <dcat:keyword>RAS</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/Test/Party/Svedala"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	

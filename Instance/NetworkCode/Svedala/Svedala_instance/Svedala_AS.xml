@@ -12,12 +12,12 @@
   <dcat:Dataset rdf:about="urn:uuid:dc9fc9d1-bb73-4b36-a5a6-7fbb9ed5b354">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/AvailabilitySchedule/2.3"/>
-    <dcterms:description>Example for SvK</dcterms:description>
+    <dcterms:description>This is the example for availability schedule dataset for Svedala part of ReliCapGrid</dcterms:description>
     <dcterms:identifier>dc9fc9d1-bb73-4b36-a5a6-7fbb9ed5b354</dcterms:identifier> 
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-AS"/>
     <dcterms:issued>2024-12-03T10:00:00Z</dcterms:issued>
     <dcat:keyword>AS</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	

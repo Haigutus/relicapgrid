@@ -10,14 +10,14 @@
   <dcat:Dataset rdf:about="urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
 
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialActionSchedule/2.3"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialActionSchedule/2.4"/>
     <dcterms:description xml:lang="en">This is an example of remedial action schedule profile that Belgovia proposes in answer to the FAP process.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>87e76d11-6689-4e96-8094-0db3730fa60d</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-RAS"/>
     <dcat:keyword>RAS</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	

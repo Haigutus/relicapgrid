@@ -10,14 +10,14 @@
   <dcat:Dataset rdf:about="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
 
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.3"/>
-    <dcterms:description xml:lang="en">This is an example of equipment reliability profile.</dcterms:description>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.4"/>
+    <dcterms:description xml:lang="en">This is the equipment reliability dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>886d71fa-6ca7-4be9-a55d-04c3c49c987c</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-ER"/>
     <dcat:keyword>ER</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
@@ -135,7 +135,7 @@
   </nc:CircuitShare>
   <nc:CircuitShare rdf:about="_83a19891-4f1b-4eed-ab7d-7c9040b36df2">
     <cim:IdentifiedObject.mRID>83a19891-4f1b-4eed-ab7d-7c9040b36df2</cim:IdentifiedObject.mRID>
-    <nc:CircuitShare.Circuit rdf:resource="#_c31ae69b-423d-47c0-bacc-083d64e34d4a "/>
+    <nc:CircuitShare.Circuit rdf:resource="#_c31ae69b-423d-47c0-bacc-083d64e34d4a"/>
     <nc:CircuitShare.PowerTransferCorridor rdf:resource="#_0863ac0c-b6af-4553-a00b-cde463a8a7d4"/>
     <nc:CircuitShare.normalContributionFactor>50</nc:CircuitShare.normalContributionFactor>
   </nc:CircuitShare>
