@@ -7,7 +7,7 @@
   <md:FullModel rdf:about="urn:uuid:f2d3f250-f39f-4545-86fe-d3bdbe1dea0b">
     <md:Model.DependentOn rdf:resource="urn:uuid:fe534bf5-0160-43eb-9b1a-da77b7818665"/>
     <md:Model.created>2025-02-07T19:27:57Z</md:Model.created>
-    <md:Model.description>BD test data.</md:Model.description>
+    <md:Model.description>The topology dataset for Belgovia, which is part of the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet> http://belgovia.bo/CGMES</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/Topology-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>

@@ -7,7 +7,7 @@
   <md:FullModel rdf:about="urn:uuid:74def37a-c099-4e6a-85b4-edd7c43a5a7a">
     <md:Model.DependentOn rdf:resource="urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03"/>
     <md:Model.created>2025-02-08T10:43:06Z</md:Model.created>
-    <md:Model.description>BD test data.</md:Model.description>
+    <md:Model.description>The topology dataset for Nordheim, which is part of the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://nordheim.nh/CGMES</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/Topology-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>

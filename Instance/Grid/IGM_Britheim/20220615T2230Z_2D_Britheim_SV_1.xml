@@ -7,7 +7,7 @@
   <md:FullModel rdf:about="urn:uuid:bc112df8-1df7-4f54-9175-b7035a8b1108">
     <md:Model.DependentOn rdf:resource="urn:uuid:c9d01d20-0a67-4b37-9a8c-90cc7a0f9f2c"/>
     <md:Model.created>2025-02-08T14:27:41Z</md:Model.created>
-    <md:Model.description>BD test data.</md:Model.description>
+    <md:Model.description>The state variables dataset for Britheim, which is part of the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://britheim.bh/CGMES</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>
