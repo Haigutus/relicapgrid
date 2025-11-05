@@ -8,8 +8,8 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c">
-    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/StateInstructionSchedule/2.4"/>
+    <dcterms:license>https://energy.referencedata.eu/Confidentiality/Public</dcterms:license>
+    <dcterms:license>https://ap.cim4.eu/StateInstructionSchedule/2.4</dcterms:license>
     <dcterms:description xml:lang="en">This is the State Instruction Schedule dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
@@ -17,14 +17,14 @@
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-SIS"/>
     <dcat:keyword>SIS</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
+    <dcterms:license>https://energy.referencedata.eu/test/party/Belgovia</dcterms:license>
 	  <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
 	  <dcterms:title>20230722_Belgovia_SIS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-SIS"/>
+    <dcterms:license>https://energy.referencedata.eu/Activity/CGM-SIS</dcterms:license>
   </dcat:Dataset>
   
 <!-- 7.1.6.3	Disable an Assessed Element  -->

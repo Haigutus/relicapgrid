@@ -8,9 +8,9 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:4ae1b37e-5d64-4918-aea4-68beba431faf">
-    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:license>https://energy.referencedata.eu/Confidentiality/Public</dcterms:license>
 
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/Contingency/2.3"/>
+    <dcterms:license>https://ap.cim4.eu/Contingency/2.3</dcterms:license>
     <dcterms:description xml:lang="en">This is the contingency dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2025-12-31T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
@@ -18,14 +18,14 @@
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-CO"/>
     <dcat:keyword>CO</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
+    <dcterms:license>https://energy.referencedata.eu/test/party/Belgovia</dcterms:license>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:d9565b72-0c4e-47e8-877e-638a81f045ed"/>
     <dcat:startDate>2025-05-12T22:30:00Z</dcat:startDate>
 	<dcterms:title>20250520_Belgovia_CO-SIPS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
+    <dcterms:license>https://energy.referencedata.eu/Activity/CGM-CO</dcterms:license>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_6bfb44c4-e857-4df8-aa6e-73675d584d8c">
     <cim:ContingencyElement.Contingency rdf:resource="#_83ef276e-86ae-4d95-a877-6eb89d6ffd45"/>

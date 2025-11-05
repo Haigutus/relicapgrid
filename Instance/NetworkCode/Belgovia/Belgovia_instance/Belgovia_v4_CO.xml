@@ -55,7 +55,7 @@
     <cim:ContingencyElement.Contingency rdf:resource="#_65582e87-5035-4465-8dd9-cb655224b29f"/>
     <cim:ContingencyEquipment.Equipment rdf:resource="#_cb459405-cc14-4215-a45c-416789205904"/>
     <cim:ContingencyEquipment.contingentStatus rdf:resource="https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.outOfService"/>
-    <cim:IdentifiedObject.description>The equipment for this contingency is a NonConformLoad "BE-Load_1" in Belgovia; Loss of a single demand facility</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>The equipment for this contingency is a NonConformLoad "BO-Load_1" in Belgovia; Loss of a single demand facility</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>96c83c1b-df9e-44d2-adfb-a759975ada49</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>NonConformLoad_1</cim:IdentifiedObject.name>
   </cim:ContingencyEquipment>
