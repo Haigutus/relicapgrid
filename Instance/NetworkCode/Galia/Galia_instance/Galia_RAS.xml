@@ -10,7 +10,7 @@
   <dcat:Dataset rdf:about="urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
 
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialActionSchedule/2.4"/>
+    <dcterms:license>https://ap.cim4.eu/RemedialActionSchedule/2.4</dcterms:license>
     <dcterms:description xml:lang="en">This is the remedial action schedule dataset for Galia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
@@ -18,14 +18,14 @@
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Galia-RAS"/>
     <dcat:keyword>RAS</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/JOTUNHEIM"/>
+    <dcterms:license>https://energy.referencedata.eu/test/party/JOTUNHEIM</dcterms:license>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
 	<dcterms:title>20220615_Galia_RAS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RAS"/>
+    <dcterms:license>https://energy.referencedata.eu/Activity/CGM-RAS</dcterms:license>
   </dcat:Dataset>
   <nc:GenericValueTimePoint rdf:ID="_3bf7b894-12e6-401b-83db-4bb3d35da4b1">
     <nc:GenericValueTimePoint.GenericValueSchedule rdf:resource="#_2391985f-1e21-4184-a2ca-99ec573e5aaf"/>
