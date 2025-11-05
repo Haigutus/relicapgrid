@@ -8,8 +8,10 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12">
+    <dcterms:license>https://energy.referencedata.eu/Confidentiality/Public</dcterms:license>
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
 
+    <dcterms:license>https://ap.cim4.eu/RemedialAction/2.4</dcterms:license>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
     <dcterms:description xml:lang="en">This is the remedial action dataset for Espheim part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
@@ -18,6 +20,7 @@
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-RA"/>
     <dcat:keyword>RA</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+    <dcterms:license>https://energy.referencedata.eu/test/party/Espheim</dcterms:license>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Espheim"/>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
@@ -25,7 +28,7 @@
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
 	<dcterms:title>20220615_Espheim_RA_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RA"/>
+    <dcterms:license>https://energy.referencedata.eu/Activity/CGM-RA</dcterms:license>
   </dcat:Dataset>
   <nc:ContingencyWithRemedialAction rdf:ID="_d49b72bc-7677-4e4c-949a-0b4c40a8c62b">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_13334fdf-9cc2-4341-adb6-1281269040b4"/>
