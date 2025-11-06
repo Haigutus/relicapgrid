@@ -8,7 +8,7 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c">
-    <dcterms:license>https://energy.referencedata.eu/Confidentiality/Public</dcterms:license>
+    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
     <dcterms:license>https://ap.cim4.eu/StateInstructionSchedule/2.4</dcterms:license>
     <dcterms:description xml:lang="en">This is the State Instruction Schedule dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
