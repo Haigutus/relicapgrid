@@ -202,4 +202,13 @@
     <eu:IdentifiedObject.shortName>NR</eu:IdentifiedObject.shortName>
     <cim:SubGeographicalRegion.Region rdf:resource="#_fb980bdf-ced5-4f87-8264-998e95e065a5"/>
   </cim:SubGeographicalRegion>
+  <cim:SubGeographicalRegion rdf:ID="_77467625-a8fe-8792-7cf2-06c5dfd5fba9">
+    <cim:IdentifiedObject.mRID>77467625-a8fe-8792-7cf2-06c5dfd5fba9</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
+    <cim:SubGeographicalRegion.Region rdf:resource="#_9356077b-f716-0d6c-0cac-32c074bd8fa3" />
+  </cim:SubGeographicalRegion>  
+  <cim:GeographicalRegion rdf:ID="_9356077b-f716-0d6c-0cac-32c074bd8fa3">
+    <cim:IdentifiedObject.mRID>9356077b-f716-0d6c-0cac-32c074bd8fa3</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>NH</cim:IdentifiedObject.name>
+  </cim:GeographicalRegion>
 </rdf:RDF>

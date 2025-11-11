@@ -753,5 +753,14 @@
     <cim:IdentifiedObject.name>BP_SD-EH1</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_SD-EH1</eu:IdentifiedObject.shortName>
     <cim:Line.Region rdf:resource="#_fbcc6679-6da5-4cfd-b50c-8ce23f450c78"/>
-  </cim:Line>
+  </cim:Line>  
+  <cim:SubGeographicalRegion rdf:ID="_77467625-a8fe-8792-7cf2-06c5dfd5fba9">
+    <cim:IdentifiedObject.mRID>77467625-a8fe-8792-7cf2-06c5dfd5fba9</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
+    <cim:SubGeographicalRegion.Region rdf:resource="#_9356077b-f716-0d6c-0cac-32c074bd8fa3" />
+  </cim:SubGeographicalRegion>  
+  <cim:GeographicalRegion rdf:ID="_9356077b-f716-0d6c-0cac-32c074bd8fa3">
+    <cim:IdentifiedObject.mRID>9356077b-f716-0d6c-0cac-32c074bd8fa3</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>NH</cim:IdentifiedObject.name>
+  </cim:GeographicalRegion>
 </rdf:RDF>
