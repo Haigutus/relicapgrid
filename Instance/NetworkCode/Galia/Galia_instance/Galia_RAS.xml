@@ -43,7 +43,7 @@
     <cim:IdentifiedObject.mRID>5890c244-cb1a-4b4a-8919-8bab81e4fd4c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
     <nc:RemedialActionSchedule.Contingency rdf:resource="#_bd7bb012-f7b9-45e0-9e15-4e2aa3592829"/>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_f4d57bc2-1cef-46ab-ae13-3ad864813d9c"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>

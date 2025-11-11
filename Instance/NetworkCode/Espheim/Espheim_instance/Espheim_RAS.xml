@@ -119,7 +119,7 @@
   <nc:RemedialActionSchedule rdf:ID="_d19d4049-b9cc-4246-8c92-8e529b9849d1">
     <cim:IdentifiedObject.mRID>d19d4049-b9cc-4246-8c92-8e529b9849d1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_c9c76af9-c11e-49ad-854c-760292b59a6e"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
@@ -127,7 +127,7 @@
     <cim:IdentifiedObject.mRID>555ce651-e381-4ad1-a040-312136df2f6e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
     <nc:RemedialActionSchedule.Contingency rdf:resource="#_96c96ad8-844c-4f3b-8b38-c886ba2c0214"/>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_d856a2a2-3de4-4a7b-aea4-d363c13d9014"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
@@ -135,7 +135,7 @@
     <cim:IdentifiedObject.mRID>639648b6-622a-4c19-b916-965398eaded2</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
     <nc:RemedialActionSchedule.Contingency rdf:resource="#_8cdec4c6-10c3-40c1-9eeb-7f6ae8d9b3fe"/>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_5898c268-9b32-4ab5-9cfc-64546135a337"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
@@ -143,7 +143,7 @@
     <cim:IdentifiedObject.mRID>62d0429e-3823-413a-8f72-2719f9fa2b2e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
     <nc:RemedialActionSchedule.Contingency rdf:resource="#_ce19dd34-429e-4b72-8813-7615cc57b4a4"/>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_2e4f4212-7b30-4316-9fce-ca618f2a8a05"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
@@ -151,7 +151,7 @@
     <cim:IdentifiedObject.mRID>e4dd0e41-0b08-4fdc-a5d8-781288df712e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
     <nc:RemedialActionSchedule.Contingency rdf:resource="#_b6b780cb-9fe5-4c45-989d-447a927c3874"/>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_c8bf6b19-1c3b-4ce6-a15c-99995a3c88ce"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
@@ -159,7 +159,7 @@
     <cim:IdentifiedObject.mRID>dcd0bd4a-f870-4786-a930-7cbcffe452de</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
     <nc:RemedialActionSchedule.Contingency rdf:resource="#_b6b780cb-9fe5-4c45-989d-447a927c3874"/>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_1fd630a9-b9d8-414b-ac84-b47a093af936"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
@@ -167,7 +167,7 @@
     <cim:IdentifiedObject.mRID>d9696d07-a53a-4763-90b2-6ef42926a218</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RAS</cim:IdentifiedObject.name>
     <nc:RemedialActionSchedule.Contingency rdf:resource="#_b6b780cb-9fe5-4c45-989d-447a927c3874"/>
-    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#Y1001C--00095L"/>
+    <nc:RemedialActionSchedule.ProposingEntity rdf:resource="#_5f5820d9-3e05-473e-94c8-3c767be03e1a"/>
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_fb487cc2-0f7b-4958-8f66-1d3fabf7840d"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
