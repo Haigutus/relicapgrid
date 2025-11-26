@@ -193,7 +193,9 @@
     <cim:IdentifiedObject.name>Import on TL 20 MW</cim:IdentifiedObject.name>
 	<cim:IdentifiedObject.description>Import on TieLine_GA_BO2 is more 20 MW</cim:IdentifiedObject.description>
     <nc:PinTerminal.Terminal rdf:resource="#_73ae8a3c-8217-9467-638f-cf007f229852" />
-    <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" /> 
+    <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" />
+	<!-- Added attribute, which says this pin is controllable for if it should be a possible input or not. True means that it is possible that this input activates the SIPS in default settings. -->
+	<nc:GateInputPin.normalEnabled>true</nc:GateInputPin.normalEnabled> 
   </nc:PinTerminal>
   <nc:PinGate rdf:ID="_0578c33a-f74a-44c4-99fb-74fa6f4d6e58">
     <nc:GateInputPin.Gate rdf:resource="#_23ef64de-0f0c-490f-b771-e48b5bd247c5" />
@@ -204,6 +206,8 @@
     <cim:IdentifiedObject.mRID>0578c33a-f74a-44c4-99fb-74fa6f4d6e58</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>One of the lines tripped</cim:IdentifiedObject.name>
     <nc:PinGate.GateOutput rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
+	<!-- Added attribute, which says this pin is controllable for if it should be a possible input or not. False means that it is not possible that this input activates the SIPS in default settings (but could be possible if we change current settings in attribute "enabled" SSI profile). -->
+	<nc:GateInputPin.normalEnabled>false</nc:GateInputPin.normalEnabled> 
   </nc:PinGate>
 	<!-- in case of export on TieLine_GA_BO2 decprease the power to 10 MW--> 
   <nc:Stage rdf:ID="_89705a24-34bd-493e-a572-c32f25106e3b">
@@ -323,6 +327,8 @@
     <cim:IdentifiedObject.mRID>af64e952-7fc1-4cb7-8881-a0c2b3256982</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Switch1_BO-Line_6_OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_0a84038e-1952-4d9d-9909-3b49c364a1ac" />
+	<!-- Added attribute, which says this action is controllable for if it should be possible or not. True means it is possible in default settings. -->
+	<nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled> 
   </nc:TopologyAction>
   <nc:StaticPropertyRange rdf:ID="_49c6b720-0d02-403f-9954-001725a16235">
     <cim:IdentifiedObject.mRID>49c6b720-0d02-403f-9954-001725a16235</cim:IdentifiedObject.mRID>
@@ -339,6 +345,8 @@
     <cim:IdentifiedObject.mRID>bdb13ef7-1338-4f34-b42b-5e8ad34989b1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Switch2_BO-Line_6_OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_ddc148fc-3abd-459d-aec1-396283e0def6" />
+	<!-- Added attribute, which says this action is controllable for if it should be possible or not. False means it is not possible in default settings (but could be possible if we change current settings in attribute "enabled" SSI profile). -->
+	<nc:GridStateAlteration.normalEnabled>false</nc:GridStateAlteration.normalEnabled> 
   </nc:TopologyAction>
   <nc:StaticPropertyRange rdf:ID="_496aa829-9d7e-4f19-9c71-447a8534e0a9">
     <cim:IdentifiedObject.mRID>496aa829-9d7e-4f19-9c71-447a8534e0a9</cim:IdentifiedObject.mRID>
