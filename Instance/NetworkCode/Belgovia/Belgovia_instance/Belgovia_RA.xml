@@ -150,7 +150,7 @@
   </nc:GridStateAlterationCollection>  
   <nc:EquivalentInjectionAction rdf:ID="_b591f3b9-e7e6-4625-b1d2-f53dec63ced1">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_d91f1368-bd8c-456a-9088-0dd4b9620b21" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p" />
     <cim:IdentifiedObject.mRID>b591f3b9-e7e6-4625-b1d2-f53dec63ced1</cim:IdentifiedObject.mRID>
 	<cim:IdentifiedObject.name>Set EI to 10</cim:IdentifiedObject.name>
 	<cim:IdentifiedObject.description>Set power on EquivalentInjection to 10 MW</cim:IdentifiedObject.description>
@@ -163,7 +163,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_b591f3b9-e7e6-4625-b1d2-f53dec63ced1"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p"/>
     <nc:RangeConstraint.normalValue>10</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
 		<!-- trigger conditions: if any line tripped (contingency triggered) and import on TieLine_GA_BO2 higher than 20 MW (EquivalentInjection power lower than -20 MW)-->  
@@ -224,7 +224,7 @@
   </nc:GridStateAlterationCollection>  
   <nc:EquivalentInjectionAction rdf:ID="_12b3c4e6-2104-4499-b003-1248ef533e13">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_84477640-5bd9-4076-bfe8-415ae0ef8d6e" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p" />
     <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
     <cim:IdentifiedObject.mRID>12b3c4e6-2104-4499-b003-1248ef533e13</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Set power on EquivalentInjection to -10 MW</cim:IdentifiedObject.name>
@@ -236,7 +236,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_12b3c4e6-2104-4499-b003-1248ef533e13"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/EquivalentInjection.p"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/EquivalentInjection.p"/>
     <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
 		<!-- trigger conditions if any line tripped (contingency triggered) and export on TieLine_GA_BO2 higher than 20 MW (EquivalentInjection power higher than 20 MW)-->  
@@ -323,7 +323,7 @@
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_af64e952-7fc1-4cb7-8881-a0c2b3256982">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_24e0aad8-46eb-43a5-8846-a59d64edb10e" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>af64e952-7fc1-4cb7-8881-a0c2b3256982</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Switch1_BO-Line_6_OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_0a84038e-1952-4d9d-9909-3b49c364a1ac" />
@@ -336,12 +336,12 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_af64e952-7fc1-4cb7-8881-a0c2b3256982"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
   <nc:TopologyAction rdf:ID="_bdb13ef7-1338-4f34-b42b-5e8ad34989b1">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_24e0aad8-46eb-43a5-8846-a59d64edb10e" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>bdb13ef7-1338-4f34-b42b-5e8ad34989b1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Switch2_BO-Line_6_OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_ddc148fc-3abd-459d-aec1-396283e0def6" />
@@ -354,7 +354,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_bdb13ef7-1338-4f34-b42b-5e8ad34989b1"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
   <nc:StageTrigger rdf:ID="_38ac48fd-027f-45a9-90c9-08d9abd7b0d2">
@@ -402,7 +402,7 @@
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_ecd76354-2372-4eca-af47-530abc00549c">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_44027a5c-bfb3-4a50-823e-e8303c34360f" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>ecd76354-2372-4eca-af47-530abc00549c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Open TieLine_GA_BO2 breaker</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_484536e9-762a-49a3-9970-d60b9fae03fe" />
@@ -413,7 +413,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_ecd76354-2372-4eca-af47-530abc00549c"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
   <nc:StageTrigger rdf:ID="_375e7a7b-4710-4efe-b052-134446bef7f8">
@@ -463,7 +463,7 @@
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_8b56b2cd-99ac-4fc3-ad3d-eb14153426f3">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_d660909d-3027-4e60-9a49-b83a14820025" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>8b56b2cd-99ac-4fc3-ad3d-eb14153426f3</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Open breaker BO_Breaker_1</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_38dfcc80-600f-44e2-8f71-fb595b4f00ac" />
@@ -474,7 +474,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_8b56b2cd-99ac-4fc3-ad3d-eb14153426f3"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
   <nc:StageTrigger rdf:ID="_a1673e05-907a-4d90-b01a-ee4d9c752061">
@@ -524,7 +524,7 @@
   </nc:GridStateAlterationCollection>
   <nc:RotatingMachineAction rdf:ID="_3326ee03-5968-45bb-a88c-6a2185d89da7">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_cf042533-90b8-4a2e-9955-2ef8b71b5886" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
     <cim:IdentifiedObject.mRID>3326ee03-5968-45bb-a88c-6a2185d89da7</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Set generator BO-G2 to Pmin</cim:IdentifiedObject.name>
     <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_3a3b27be-b18b-4385-b557-6735d733baf0" />
@@ -535,7 +535,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_3326ee03-5968-45bb-a88c-6a2185d89da7"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.down"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
     <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
   <nc:StageTrigger rdf:ID="83b5c01d-2c91-4404-b525-b48c9f6cc3f0">
