@@ -565,7 +565,7 @@
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_e2a19b7e-6d21-4987-b138-f746bba325e6">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_332b7627-e0ad-4bd5-a678-aebb305727a6" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>e2a19b7e-6d21-4987-b138-f746bba325e6</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_ecc7d452-3cc6-4a6f-ac55-cfc80f3aac53" />
@@ -576,7 +576,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_e2a19b7e-6d21-4987-b138-f746bba325e6"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
@@ -601,7 +601,7 @@
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_d101c17c-c67a-4a33-b8ad-aaee4ca6563e">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>d101c17c-c67a-4a33-b8ad-aaee4ca6563e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Generator HÄLLAN_G3 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_dafeb217-8a10-4068-b88a-2e884a2bdc32" />
@@ -612,7 +612,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_d101c17c-c67a-4a33-b8ad-aaee4ca6563e"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
@@ -637,7 +637,7 @@
   </nc:GridStateAlterationCollection>
   <nc:RotatingMachineAction rdf:ID="_884fd5ca-afa6-4b5b-a0f7-2daee3f1959f">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_b7a0d8df-2809-4bd3-952c-474ba032aa46" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
     <cim:IdentifiedObject.mRID>884fd5ca-afa6-4b5b-a0f7-2daee3f1959f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
     <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_2a35657f-a1a8-45dc-911e-e71535b35d87" />
@@ -648,7 +648,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_884fd5ca-afa6-4b5b-a0f7-2daee3f1959f"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
     <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
   <nc:StageTrigger rdf:ID="_011fd5e3-cdcb-46d6-b6b8-a81f9fac8b59">
@@ -764,7 +764,7 @@
   </nc:GridStateAlterationCollection>
   <nc:RotatingMachineAction rdf:ID="_8e60eea4-9c86-4e9d-8012-6645d5efb96d">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_02a420c3-dcc2-413e-9f7d-a4997c42e155" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
     <cim:IdentifiedObject.mRID>8e60eea4-9c86-4e9d-8012-6645d5efb96d</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
     <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_2a35657f-a1a8-45dc-911e-e71535b35d87" />
@@ -775,7 +775,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_8e60eea4-9c86-4e9d-8012-6645d5efb96d"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
     <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
   <nc:StageTrigger rdf:ID="_92195218-f3a3-4cca-af38-1550a91bcd44">
@@ -800,7 +800,7 @@
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_0bec00cd-cf46-40d8-931a-efb35bc417af">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_12097f09-e5cc-4fdc-98eb-0675d0f2af11" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>0bec00cd-cf46-40d8-931a-efb35bc417af</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_ecc7d452-3cc6-4a6f-ac55-cfc80f3aac53" />
@@ -811,7 +811,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_0bec00cd-cf46-40d8-931a-efb35bc417af"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_9aaa5e63-3126-4f9d-930a-2397b97af9d5">
@@ -851,7 +851,7 @@
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_0725050a-0ece-49d0-8822-f5e0c8fb99c9">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_ea6979c2-2ad4-484a-9f41-bec157a0eedd" />
-    <nc:GridStateAlteration.PropertyReference rdf:resource="#http://energy.referencedata.eu/PropertyReference/Switch.open" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>0725050a-0ece-49d0-8822-f5e0c8fb99c9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_dafeb217-8a10-4068-b88a-2e884a2bdc32" />
@@ -862,7 +862,7 @@
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_0725050a-0ece-49d0-8822-f5e0c8fb99c9"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
-    <nc:StaticPropertyRange.PropertyReference rdf:resource="http://energy.referencedata.eu/PropertyReference/Switch.open"/>
+    <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_e5d8b062-b39b-4fea-b329-a2781b8fbac8">
