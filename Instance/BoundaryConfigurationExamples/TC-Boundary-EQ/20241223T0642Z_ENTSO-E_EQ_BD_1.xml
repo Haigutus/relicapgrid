@@ -43,10 +43,10 @@
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_758cfb1f-3703-426a-bc1f-1801ddd9d19d" />
     <eu:BoundaryPoint.fromEndIsoCode>GA</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Galia</eu:BoundaryPoint.fromEndName>
-    <eu:BoundaryPoint.fromEndNameTso>Galia</eu:BoundaryPoint.fromEndNameTso>
+    <eu:BoundaryPoint.fromEndNameTso>TSO-Galia</eu:BoundaryPoint.fromEndNameTso>
     <eu:BoundaryPoint.toEndIsoCode>SD</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Svedala</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Svedala</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Svedala</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.description>BP GA-SD</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>b8857dca-1c00-ae4b-5fd5-80baaf9ce97f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP GA-SD</cim:IdentifiedObject.name>
@@ -56,10 +56,10 @@
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_0617adcd-1448-498b-b6cc-71a4df78cc51" />
     <eu:BoundaryPoint.fromEndIsoCode>GA</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Galia</eu:BoundaryPoint.fromEndName>
-    <eu:BoundaryPoint.fromEndNameTso>Galia</eu:BoundaryPoint.fromEndNameTso>
-    <eu:BoundaryPoint.toEndIsoCode>DE</eu:BoundaryPoint.toEndIsoCode>
+    <eu:BoundaryPoint.fromEndNameTso>TSO-Galia</eu:BoundaryPoint.fromEndNameTso>
+    <eu:BoundaryPoint.toEndIsoCode>TG</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Yggrion</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Yggrion</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Yggrion</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.description>BP2 Galia-Yggrion</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>23024d22-54e3-f4c0-40aa-367bbd3f76f8</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP2 Galia-Yggrion</cim:IdentifiedObject.name>
@@ -69,10 +69,10 @@
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
     <eu:BoundaryPoint.fromEndIsoCode>GA</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Galia</eu:BoundaryPoint.fromEndName>
-    <eu:BoundaryPoint.fromEndNameTso>Galia</eu:BoundaryPoint.fromEndNameTso>
-    <eu:BoundaryPoint.toEndIsoCode>DE</eu:BoundaryPoint.toEndIsoCode>
+    <eu:BoundaryPoint.fromEndNameTso>TSO-Galia</eu:BoundaryPoint.fromEndNameTso>
+    <eu:BoundaryPoint.toEndIsoCode>TG</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Yggrion</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Yggrion</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Yggrion</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.description>BP1 Galia-Yggrion</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>3f5af4d3-5943-dfd0-1c61-de4f3fd11070</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP1 Galia-Yggrion</cim:IdentifiedObject.name>
@@ -82,10 +82,10 @@
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_a2ca87bb-9b25-455d-8a8c-a29933a84cef" />
     <eu:BoundaryPoint.fromEndIsoCode>GA</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Galia</eu:BoundaryPoint.fromEndName>
-    <eu:BoundaryPoint.fromEndNameTso>Galia</eu:BoundaryPoint.fromEndNameTso>
+    <eu:BoundaryPoint.fromEndNameTso>TSO-Galia</eu:BoundaryPoint.fromEndNameTso>
     <eu:BoundaryPoint.toEndIsoCode>BO</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Belgovia</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Belgovia</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Belgovia</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.description>BP GA-BO</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>fe850064-97a7-89ae-37e7-e67d935e7576</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP GA-BO</cim:IdentifiedObject.name>

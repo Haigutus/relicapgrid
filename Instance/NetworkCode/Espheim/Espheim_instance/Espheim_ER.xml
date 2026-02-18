@@ -8,24 +8,23 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965">
-    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.3"/>
-    <dcterms:description xml:lang="en">This is an example of equipment reliability profile.</dcterms:description>
+    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
+    <dcterms:conformsTo>https://ap.cim4.eu/EquipmentReliability/2.4</dcterms:conformsTo>
+    <dcterms:description xml:lang="en">This is the equipment reliability dataset for Espheim part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>e3453a3c-8639-4648-a662-d6c15f512965</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-ER"/>
     <dcat:keyword>ER</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Espheim"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+    <dcterms:publisher>https://energy.referencedata.eu/test/party/Espheim</dcterms:publisher>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
 	<dcterms:title>20220615_Espheim_ER_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-ER"/>
+    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-ER</prov:wasGeneratedBy>
   </dcat:Dataset>
   <nc:BiddingZone rdf:ID="_7acbe48a-be54-4cd7-af2e-87768468c55a">
     <nc:BiddingZone.isTradeEnabled>true</nc:BiddingZone.isTradeEnabled>
@@ -41,6 +40,10 @@
     <nc:SchedulingArea.ControlArea rdf:resource="#_1f9ecd81-e069-4040-bd64-f34b0fac3a60"/>
   </nc:SchedulingArea>
   <nc:EquivalentGeneratingUnit rdf:ID="_0b23d814-7559-4edf-8c55-40af585209e6">
+    <cim:IdentifiedObject.name>EquivalentGeneratingUnit_1</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.mRID>0b23d814-7559-4edf-8c55-40af585209e6</cim:IdentifiedObject.mRID>
+    <cim:Equipment.inService>true</cim:Equipment.inService>
+    <nc:GeneratingUnit.isRamping>false</nc:GeneratingUnit.isRamping>
     <!-- Associations to ExternalNetworkInjection -->
     <cim:EquivalentGeneratingUnit.ExternalNetworkInjection rdf:resource="#_e349f93c-3685-4ea9-a791-a8c1ed359737"/>
     <cim:EquivalentGeneratingUnit.ExternalNetworkInjection rdf:resource="#_6843c26a-5265-4cc7-b88b-6346257770bd"/>

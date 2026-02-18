@@ -192,14 +192,14 @@
     <cim:IdentifiedObject.description>Economic and political union of member states located primarily in the NineRealms</cim:IdentifiedObject.description>
     <eu:IdentifiedObject.energyIdentCodeEic>10T-NR-NR-000001</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>fb980bdf-ced5-4f87-8264-998e95e065a5</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>NR</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>NineRealms</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>NR</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:SubGeographicalRegion rdf:ID="_fbcc6679-6da5-4cfd-b50c-8ce23f450c78">
     <cim:IdentifiedObject.description>NineRealms region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>fbcc6679-6da5-4cfd-b50c-8ce23f450c78</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>NineRealms</cim:IdentifiedObject.name>
-    <eu:IdentifiedObject.shortName>NineRealms</eu:IdentifiedObject.shortName>
+    <eu:IdentifiedObject.shortName>NR</eu:IdentifiedObject.shortName>
     <cim:SubGeographicalRegion.Region rdf:resource="#_fb980bdf-ced5-4f87-8264-998e95e065a5"/>
   </cim:SubGeographicalRegion>
   <cim:SubGeographicalRegion rdf:ID="_77467625-a8fe-8792-7cf2-06c5dfd5fba9">

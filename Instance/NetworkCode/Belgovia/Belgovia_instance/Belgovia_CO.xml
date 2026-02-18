@@ -9,9 +9,8 @@
     xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b">
-    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/Contingency/2.3"/>
+    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
+    <dcterms:conformsTo>https://ap.cim4.eu/Contingency/2.3</dcterms:conformsTo>
     <dcterms:description xml:lang="en">This is an example of the last contingency dataset version update. The version notes provide additional information. We observe one contingency studying the loss of G1, L2, L1 and NonConformLoad_1.</dcterms:description>
     <prov:generatedAtTime>2025-05-15T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>b2d1215a-a124-4b6e-9df5-85ecdce9793b</dcterms:identifier>
@@ -19,8 +18,8 @@
     <dcat:previousVersion rdf:resource="urn:uuid:60e2df9d-1e05-4066-950e-4fb051a273f5"/>
     <dcat:replaces rdf:resource="urn:uuid:068dc1a6-1909-46e7-8524-cca167945d53"/>
     <dcat:keyword>CO</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+    <dcterms:publisher>https://energy.referencedata.eu/test/party/Belgovia</dcterms:publisher>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c"/>
@@ -28,7 +27,7 @@
 	<dcterms:title>20250520_Belgovia_CO_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <adms:versionNotes>This is initial version</adms:versionNotes>
-    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
+    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-CO</prov:wasGeneratedBy>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae">
     <cim:ContingencyElement.Contingency rdf:resource="#_37997e71-cb7d-4a8c-baa6-2a1594956da9"/>

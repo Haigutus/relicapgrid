@@ -13,10 +13,10 @@
 		  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<dcat:Dataset rdf:about="urn:uuid:26bd64b0-06a3-49d6-a6a0-8e29959fc5e3">
 		<dcterms:identifier>26bd64b0-06a3-49d6-a6a0-8e29959fc5e3</dcterms:identifier>
-		<dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.3"/>
+		<dcterms:conformsTo>https://ap.cim4.eu/EquipmentReliability/2.4</dcterms:conformsTo>
 		<dcterms:description>NCP436 Power Transfer Corridors - Normal limits</dcterms:description>
 		<prov:generatedAtTime>2025-04-01T11:00:00Z</prov:generatedAtTime>
-		<dcterms:publisher rdf:resource="https://www.energinet.dk/SV-IOP"/>
+		<dcterms:publisher>https://www.energinet.dk/SV-IOP</dcterms:publisher>
 		<dcterms:rights>Copyright</dcterms:rights>
 		<dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
 		<prov:references rdf:resource="urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e"/>

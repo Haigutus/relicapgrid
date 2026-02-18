@@ -8,23 +8,23 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:79e8ace6-d345-4855-a279-95220d646012">
-    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/ObjectRegistry/2.4"/>
-    <dcterms:description xml:lang="en">This is an example of object registry profile.</dcterms:description>
+    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
+    <dcterms:conformsTo>https://ap.cim4.eu/ObjectRegistry/2.2</dcterms:conformsTo>
+    <dcterms:description xml:lang="en">This is the object registry profile dataset for Espheim part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>79e8ace6-d345-4855-a279-95220d646012</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-OR"/>
     <dcat:keyword>OR</dcat:keyword>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Espheim"/>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+    <dcterms:publisher>https://energy.referencedata.eu/test/party/Espheim</dcterms:publisher>
 	<dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
 	<dcterms:title>20220615_Espheim_OR_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-OR"/>
+    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-OR</prov:wasGeneratedBy>
   </dcat:Dataset>
   <nc:ObjectType rdf:ID="_3dacaa80-ee35-458c-bccd-7b6530a292c9">
     <nc:ObjectType.type>DSO_Injection</nc:ObjectType.type>

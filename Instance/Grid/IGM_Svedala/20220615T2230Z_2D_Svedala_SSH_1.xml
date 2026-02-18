@@ -7,7 +7,7 @@
   <md:FullModel rdf:about="urn:uuid:5102429b-f699-482b-97b4-214c8b06dc7c">
     <md:Model.DependentOn rdf:resource="urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e"/>
     <md:Model.created>2025-02-06T14:18:22Z</md:Model.created>
-    <md:Model.description>BD test data.</md:Model.description>
+    <md:Model.description>The steady-state hypothesis dataset for Svedala, which is part of the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://svedala.sd/CGMES</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>

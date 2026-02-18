@@ -7,7 +7,7 @@
   <md:FullModel rdf:about="urn:uuid:0243f8e6-404f-4ef1-9962-966118b91fd6">
     <md:Model.DependentOn rdf:resource="urn:uuid:36aa2bbc-5049-44f4-a4e0-46f7da2e8ccc"/>
     <md:Model.created>2025-02-08T16:36:21Z</md:Model.created>
-    <md:Model.description>BD test data.</md:Model.description>
+    <md:Model.description>The state variables dataset for Galia, which is part of the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://galia.ga/CGMES</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>

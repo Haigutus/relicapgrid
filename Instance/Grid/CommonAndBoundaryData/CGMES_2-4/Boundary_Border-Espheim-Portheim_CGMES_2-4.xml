@@ -5,7 +5,7 @@
 		<md:Model.profile>http://entsoe.eu/CIM/EquipmentCore/3/1</md:Model.profile>
 		<md:Model.DependentOn rdf:resource="urn:uuid:1b65ada7-39ca-42b8-a278-39c457ed82c3"/>
 		<md:Model.created>2025-02-06T14:18:22Z</md:Model.created>
-		<md:Model.description>BD test data.</md:Model.description>
+		<md:Model.description>The equipment dataset of the boundary that is used in the ReliCapGrid.</md:Model.description>
 		<md:Model.modelingAuthoritySet>http://ninerealms.nr/boundary</md:Model.modelingAuthoritySet>
 		<md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>
 		<md:Model.version>1</md:Model.version>
@@ -19,7 +19,7 @@
 		<entsoe:ConnectivityNode.toEndNameTso>TSO-Portheim</entsoe:ConnectivityNode.toEndNameTso>
 		<entsoe:ConnectivityNode.boundaryPoint>true</entsoe:ConnectivityNode.boundaryPoint>
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0b5bf2ef-a008-4b9a-9fe9-3c528c8bec50"/>
-		<cim:IdentifiedObject.description>BP_EH-PH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Espheim (substation name) and Portheim (substation name) (132kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.energyIdentCodeEic>10T-AT-HU-00002U</entsoe:IdentifiedObject.energyIdentCodeEic>
 		<cim:IdentifiedObject.mRID>8a5a6e86-55e4-476b-a3bd-7832e6168569</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_EH-PH1</cim:IdentifiedObject.name>
@@ -35,7 +35,7 @@
 		<entsoe:ConnectivityNode.toEndNameTso>TSO-Portheim</entsoe:ConnectivityNode.toEndNameTso>
 		<entsoe:ConnectivityNode.boundaryPoint>true</entsoe:ConnectivityNode.boundaryPoint>
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_eb3018f0-767e-4829-9a50-1a12f9505849"/>
-		<cim:IdentifiedObject.description>BP_EH-PH2</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 2 between Espheim (substation name) and Portheim (substation name) (132kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.energyIdentCodeEic>10T-AT-DE-00016Z</entsoe:IdentifiedObject.energyIdentCodeEic>
 		<cim:IdentifiedObject.mRID>bf0b3138-b656-482b-8874-f0a4fa314579</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_EH-PH2</cim:IdentifiedObject.name>
@@ -51,7 +51,7 @@
 		<entsoe:ConnectivityNode.toEndNameTso>TSO-Portheim</entsoe:ConnectivityNode.toEndNameTso>
 		<entsoe:ConnectivityNode.boundaryPoint>true</entsoe:ConnectivityNode.boundaryPoint>
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_dc31ca8a-6261-4eaa-b8b4-11ec57e9cc28"/>
-		<cim:IdentifiedObject.description>BP_EH-PH3</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 3 between Espheim (substation name) and Portheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<cim:IdentifiedObject.mRID>9e6fb634-977c-4640-938c-b1178aa2aa21</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_EH-PH3</cim:IdentifiedObject.name>
 		<entsoe:IdentifiedObject.shortName>BP_EH-PH3</entsoe:IdentifiedObject.shortName>
@@ -82,7 +82,7 @@
 	</cim:Line>
 	<cim:TopologicalNode rdf:ID="_78e49ef9-f3a6-5f4b-b863-ba03e0cfdf23">
 		<cim:IdentifiedObject.name>BP_EH-PH1</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_EH-PH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Espheim (substation name) and Portheim (substation name) (132kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_EH-PH1</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>EH</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>PH</entsoe:TopologicalNode.toEndIsoCode>
@@ -95,7 +95,7 @@
 	</cim:TopologicalNode>
 	<cim:TopologicalNode rdf:ID="_fe190c01-e163-3142-b914-7ef24dc116ae">
 		<cim:IdentifiedObject.name>BP_EH-PH2</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_EH-PH2</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 2 between Espheim (substation name) and Portheim (substation name) (132kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_EH-PH2</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>EH</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>PH</entsoe:TopologicalNode.toEndIsoCode>
@@ -108,7 +108,7 @@
 	</cim:TopologicalNode>
 	<cim:TopologicalNode rdf:ID="_e78f2778-6e07-6a41-a9eb-b76c59b8794c">
 		<cim:IdentifiedObject.name>BP_EH-PH3</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_EH-PH3</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 3 between Espheim (substation name) and Portheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_EH-PH3</entsoe:IdentifiedObject.shortName>
 		<entsoe:TopologicalNode.fromEndIsoCode>EH</entsoe:TopologicalNode.fromEndIsoCode>
 		<entsoe:TopologicalNode.toEndIsoCode>PH</entsoe:TopologicalNode.toEndIsoCode>

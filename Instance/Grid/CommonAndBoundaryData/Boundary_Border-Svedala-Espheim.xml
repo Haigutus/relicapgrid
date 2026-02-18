@@ -7,7 +7,7 @@
   <md:FullModel rdf:about="urn:uuid:af6450db-fe15-4caf-94a1-e22f3fced32e">
     <md:Model.DependentOn rdf:resource="urn:uuid:1b65ada7-39ca-42b8-a278-39c457ed82c3"/>
     <md:Model.created>2025-02-06T14:18:22Z</md:Model.created>
-    <md:Model.description>BD test data.</md:Model.description>
+    <md:Model.description>The equipment dataset of the boundary that is used in the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://ninerealms.nr/boundary</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>
@@ -22,14 +22,14 @@
     <eu:BoundaryPoint.toEndIsoCode>EH</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Barigar2</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Espheim</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_SD-EH2</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 2 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>f3954bf0-0bf9-54ff-eb28-b1559373568d</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_SD-EH2</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_SD-EH2</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>
   <cim:ConnectivityNode rdf:ID="_183d126d-2522-4ff2-a8cd-c5016cf09c1b">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_41d4fafe-e4ce-4ca3-86d9-f181ae3f8ea3"/>
-    <cim:IdentifiedObject.description>BP_SD-EH2</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 2 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
     <eu:IdentifiedObject.energyIdentCodeEic>10T-AT-DE-00001A</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>183d126d-2522-4ff2-a8cd-c5016cf09c1b</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_SD-EH2</cim:IdentifiedObject.name>
@@ -110,14 +110,14 @@
     <eu:BoundaryPoint.toEndIsoCode>EH</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Barigar3</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Espheim</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_SD-EH3</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 3 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>e364f3e7-a2a8-3561-5540-6e74801a20ff</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_SD-EH3</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_SD-EH3</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>
   <cim:ConnectivityNode rdf:ID="_8dd436f0-f8a2-405b-a991-1a2479077ef5">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_78525c97-a5b6-4cbb-8028-1236ca2f4a37"/>
-    <cim:IdentifiedObject.description>BP_SD-EH3</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 3 between Svedala (substation name) and Espheim (substation name) (400kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>8dd436f0-f8a2-405b-a991-1a2479077ef5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_SD-EH3</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_SD-EH3</eu:IdentifiedObject.shortName>
@@ -138,14 +138,14 @@
     <eu:BoundaryPoint.toEndIsoCode>EH</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Barigar1</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Espheim</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_SD-EH1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Svedala (substation name) and Espheim (substation name) (220kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>afa96836-2de5-e633-1c07-491489b89b52</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_SD-EH1</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_SD-EH1</eu:IdentifiedObject.shortName>
   </eu:BoundaryPoint>
   <cim:ConnectivityNode rdf:ID="_49831d24-33e9-4233-8424-3f88186a924e">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_c3f46fe5-0cd1-4a1c-b722-e967b9ab21e2"/>
-    <cim:IdentifiedObject.description>BP_SD-EH1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Svedala (substation name) and Espheim (substation name) (220kV).</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>49831d24-33e9-4233-8424-3f88186a924e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_SD-EH1</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_SD-EH1</eu:IdentifiedObject.shortName>

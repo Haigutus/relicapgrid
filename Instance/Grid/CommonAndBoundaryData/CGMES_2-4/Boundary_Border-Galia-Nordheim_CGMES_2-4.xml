@@ -5,7 +5,7 @@
 		<md:Model.profile>http://entsoe.eu/CIM/EquipmentCore/3/1</md:Model.profile>
 		<md:Model.DependentOn rdf:resource="urn:uuid:1b65ada7-39ca-42b8-a278-39c457ed82c3"/>
 		<md:Model.created>2025-02-06T14:18:22Z</md:Model.created>
-		<md:Model.description>BD test data.</md:Model.description>
+		<md:Model.description>The equipment dataset of the boundary that is used in the ReliCapGrid.</md:Model.description>
 		<md:Model.modelingAuthoritySet>http://ninerealms.nr/boundary</md:Model.modelingAuthoritySet>
 		<md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>
 		<md:Model.version>1</md:Model.version>
@@ -34,7 +34,7 @@
 		<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_82abfaf2-36df-44ac-b4e5-e40a535affa4"/>
 		<cim:IdentifiedObject.mRID>d9574184-b375-45f6-8fcc-20ec0470bf93</cim:IdentifiedObject.mRID>
 		<cim:IdentifiedObject.name>BP_GA-NH1</cim:IdentifiedObject.name>
-		<cim:IdentifiedObject.description>BP_GA-NH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Nordheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.energyIdentCodeEic>10T-AT-SI-00001T</entsoe:IdentifiedObject.energyIdentCodeEic>
 		<entsoe:IdentifiedObject.shortName>BP_GA-NH1</entsoe:IdentifiedObject.shortName>
 		<cim:ConnectivityNode.TopologicalNode>_d6f36c11-356b-4d46-83bf-60c43cc8719d</cim:ConnectivityNode.TopologicalNode>
@@ -73,7 +73,7 @@
 		<entsoe:TopologicalNode.toEndNameTso>TSO-Nordheim</entsoe:TopologicalNode.toEndNameTso>
 		<entsoe:TopologicalNode.boundaryPoint>true</entsoe:TopologicalNode.boundaryPoint>
 		<cim:TopologicalNode.ConnectivityNodeContainer>_82abfaf2-36df-44ac-b4e5-e40a535affa4</cim:TopologicalNode.ConnectivityNodeContainer>
-		<cim:IdentifiedObject.description>BP_GA-NH1</cim:IdentifiedObject.description>
+		<cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Nordheim (substation name) (220kV).</cim:IdentifiedObject.description>
 		<entsoe:IdentifiedObject.shortName>BP_GA-NH1</entsoe:IdentifiedObject.shortName>
 	</cim:TopologicalNode>
 	<cim:VoltageLevel rdf:ID="_e61f8ecf-8129-4702-a3a2-826bdf5ad13d">

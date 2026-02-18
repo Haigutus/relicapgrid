@@ -17,10 +17,10 @@
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
     <eu:BoundaryPoint.fromEndIsoCode>GA</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Galia</eu:BoundaryPoint.fromEndName>
-    <eu:BoundaryPoint.fromEndNameTso>Galia</eu:BoundaryPoint.fromEndNameTso>
-    <eu:BoundaryPoint.toEndIsoCode>DE</eu:BoundaryPoint.toEndIsoCode>
+    <eu:BoundaryPoint.fromEndNameTso>TSO-Galia</eu:BoundaryPoint.fromEndNameTso>
+    <eu:BoundaryPoint.toEndIsoCode>TG</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Yggrion</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Yggrion</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Yggrion</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.description>BP1 Galia-Yggrion</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>3f5af4d3-5943-dfd0-1c61-de4f3fd11070</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP1 Galia-Yggrion</cim:IdentifiedObject.name>
@@ -30,10 +30,10 @@
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_0617adcd-1448-498b-b6cc-71a4df78cc51"/>
     <eu:BoundaryPoint.fromEndIsoCode>GA</eu:BoundaryPoint.fromEndIsoCode>
     <eu:BoundaryPoint.fromEndName>Galia</eu:BoundaryPoint.fromEndName>
-    <eu:BoundaryPoint.fromEndNameTso>Galia</eu:BoundaryPoint.fromEndNameTso>
-    <eu:BoundaryPoint.toEndIsoCode>DE</eu:BoundaryPoint.toEndIsoCode>
+    <eu:BoundaryPoint.fromEndNameTso>TSO-Galia</eu:BoundaryPoint.fromEndNameTso>
+    <eu:BoundaryPoint.toEndIsoCode>TG</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Yggrion</eu:BoundaryPoint.toEndName>
-    <eu:BoundaryPoint.toEndNameTso>Yggrion</eu:BoundaryPoint.toEndNameTso>
+    <eu:BoundaryPoint.toEndNameTso>TSO-Yggrion</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.description>BP2 Galia-Yggrion</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>23024d22-54e3-f4c0-40aa-367bbd3f76f8</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP2 Galia-Yggrion</cim:IdentifiedObject.name>

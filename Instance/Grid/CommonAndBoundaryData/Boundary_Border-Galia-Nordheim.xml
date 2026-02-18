@@ -7,7 +7,7 @@
   <md:FullModel rdf:about="urn:uuid:5f8c11a8-c61c-42c9-925d-8cdbc0146c1a">
     <md:Model.DependentOn rdf:resource="urn:uuid:1b65ada7-39ca-42b8-a278-39c457ed82c3"/>
     <md:Model.created>2025-02-06T14:18:22Z</md:Model.created>
-    <md:Model.description>BD test data.</md:Model.description>
+    <md:Model.description>The equipment dataset of the boundary that is used in the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://ninerealms.nr/boundary</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>
@@ -22,7 +22,7 @@
     <eu:BoundaryPoint.toEndIsoCode>NH</eu:BoundaryPoint.toEndIsoCode>
     <eu:BoundaryPoint.toEndName>Oldissa1</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Nordheim</eu:BoundaryPoint.toEndNameTso>
-    <cim:IdentifiedObject.description>BP_GA-NH1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Nordheim (substation name) (220kV).</cim:IdentifiedObject.description>
     <eu:IdentifiedObject.energyIdentCodeEic>10T-AT-SI-00001T</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>f55e441a-6fef-2657-4229-355ca95df87e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-NH1</cim:IdentifiedObject.name>
@@ -30,7 +30,7 @@
   </eu:BoundaryPoint>
   <cim:ConnectivityNode rdf:ID="_d9574184-b375-45f6-8fcc-20ec0470bf93">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_82abfaf2-36df-44ac-b4e5-e40a535affa4"/>
-    <cim:IdentifiedObject.description>BP_GA-NH1</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Boundary point 1 between Galia (substation name) and Nordheim (substation name) (220kV).</cim:IdentifiedObject.description>
     <eu:IdentifiedObject.energyIdentCodeEic>10T-AT-SI-00001T</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>d9574184-b375-45f6-8fcc-20ec0470bf93</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP_GA-NH1</cim:IdentifiedObject.name>

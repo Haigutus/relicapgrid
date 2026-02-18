@@ -133,9 +133,9 @@
     <cim:IdentifiedObject.name>Jotunheim</cim:IdentifiedObject.name>
   </nc:Organisation>
   <nc:SecurityCoordinator rdf:ID="_5f5820d9-3e05-473e-94c8-3c767be03e1a">
-    <cim:IdentifiedObject.description>Security Coordinator role  for CCR-NineRealms performed by Midgard</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>5f5820d9-3e05-473e-94c8-3c767be03e1a</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>SC-Midgard</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>SC-Jotunheim</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Security Coordinator role  for CCR-NineRealms performed by Jotunheim</cim:IdentifiedObject.description>
     <cim:OrganisationRole.Organisation rdf:resource="#_433aaf4e-3c62-45fc-b2ff-0f343f1b80ba"/>
   </nc:SecurityCoordinator>
   <nc:SynchronousArea rdf:ID="_9c94e9e9-f499-4a9e-9a49-55cfa6afacd9">
