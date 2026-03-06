@@ -5,6 +5,8 @@ ICTC approved on 11 September 2025
 ## Introduction
 This repository contains a synthetic grid model (fake, with no reference to real IGM/CGM elements)​ to which instances of the CIM-extension called "Network Code Profiles" developed at ENTSO-E refer to.
 
+> **Note:** This document uses several technical abbreviations (e.g., TSO, IGM, CGM, CSA). For full definitions, please refer to the [Glossary of Abbreviations](#glossary-of-abbreviations) at the end of this README.
+
 The aim is demonstrating ​practical TSO and RCC data exchange use cases for the purposes of the Regional Coordination Processes, namely the Coordinatied Security Analysis (CSA), Coordinated Capacity Calculation (CCC), Outage Planning Coordination (OPC) and the Short-Term Adequacy (STA).
 
 More concretely, the grid model (both synthetic IGMs and CGM) is available under [Instance/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid) folder. Similarly, the test Network Code Profiles instanced datasets can be found under [Instance/NetworkCode](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/NetworkCode). Additionally, ENTSO-E provides examples of the use of boundary configurations but they are not linked any of the previously mentioned test datasets under [Instance/BoundaryConfigurationExamples](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/BoundaryConfigurationExamples).
@@ -76,3 +78,40 @@ As already mentioned, ENTSO-E explains the use of the Network Code Profiles in t
 
 The content of ReliCapGrid Network Code Profiles datasets' instances will be further developed and demonstrated in subsequent releases.
 
+### Glossary of Abbreviations
+
+This section provides definitions for the technical abbreviations used throughout this repository, categorized by their role in the power system and data exchange processes.
+
+#### Organizations & Standards
+* **ENTSO-E**: European Network of Transmission System Operators for Electricity
+* **ICTC**: Inter-TSO Cooperation Committee (ENTSO-E Steering Group)
+* **CIM**: Common Information Model (IEC 61970/61968 standards)
+* **CGMES**: Common Grid Model Exchange Standard
+* **RCP DES**: Regional Coordination Processes Data Exchange Specification
+
+#### Grid Modeling & Infrastructure
+* **TSO**: Transmission System Operator
+* **RCC**: Regional Coordination Centre
+* **IGM**: Individual Grid Model
+* **CGM**: Common Grid Model
+* **CCR**: Capacity Calculation Region
+* **HVDC**: High-Voltage Direct Current
+* **LCC / VSC**: Line-Commutated Converter / Voltage Source Converter (HVDC technologies)
+
+#### Coordination Processes
+* **CSA**: Coordinated Security Analysis
+* **CCC**: Coordinated Capacity Calculation
+* **OPC**: Outage Planning Coordination
+* **STA**: Short-Term Adequacy
+
+#### Network Code Profile (NCP) Instances
+* **AE**: Assessed Element
+* **CO**: Contingency
+* **ER**: Equipment Reliability
+* **RA / RAS**: Remedial Action / Remedial Action Schedule
+* **SIS**: State Instruction Schedule
+* **SSI**: Steady State Instruction
+* **IAM**: Impact Assessment Matrix
+
+#### Licensing
+* **CC-BY-SA-4.0**: Creative Commons Attribution-ShareAlike 4.0 International License
