@@ -18,11 +18,11 @@
     <dcat:keyword>RAS</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher>https://energy.referencedata.eu/test/party/JOTUNHEIM</dcterms:publisher>
-	<dcterms:rights>Copyright</dcterms:rights>
+    <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-	<dcterms:title>20220615_Belgovia_RAS_1.0.0</dcterms:title>
+    <dcterms:title>20220615_Belgovia_RAS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-RAS</prov:wasGeneratedBy>
   </dcat:Dataset>
@@ -85,7 +85,7 @@
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_30f6377d-5e35-4dd0-a53d-c1992043855e"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
-	
+    
 <!-- 7.4.4	RAS rejection -->
 
   <nc:RemedialActionSchedule rdf:ID="_e79dc7a3-3bd2-4a1a-87e7-a8d90ae0e37c">
@@ -96,7 +96,7 @@
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_7acbe48a-bd54-4cd7-af2e-87768357c559"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.proposed"/>
   </nc:RemedialActionSchedule>
-	
+    
   <nc:RemedialActionSchedule rdf:ID="_457ed671-38b8-4211-82ce-16ee301e6e88">
     <cim:IdentifiedObject.description>RAS</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>457ed671-38b8-4211-82ce-16ee301e6e88</cim:IdentifiedObject.mRID>
@@ -114,5 +114,5 @@
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_5e5ff13e-2043-4468-9351-01920d3d9504"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
-	
+    
 </rdf:RDF>

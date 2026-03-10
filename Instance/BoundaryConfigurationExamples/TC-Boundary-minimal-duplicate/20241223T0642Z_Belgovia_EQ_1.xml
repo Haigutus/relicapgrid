@@ -191,7 +191,7 @@
     <cim:LoadResponseCharacteristic.exponentModel>true</cim:LoadResponseCharacteristic.exponentModel>
     <cim:LoadResponseCharacteristic.pVoltageExponent>1.6</cim:LoadResponseCharacteristic.pVoltageExponent>
     <cim:LoadResponseCharacteristic.qVoltageExponent>1.8</cim:LoadResponseCharacteristic.qVoltageExponent>
-	<cim:LoadResponseCharacteristic.pFrequencyExponent>0</cim:LoadResponseCharacteristic.pFrequencyExponent>
+    <cim:LoadResponseCharacteristic.pFrequencyExponent>0</cim:LoadResponseCharacteristic.pFrequencyExponent>
     <cim:LoadResponseCharacteristic.qFrequencyExponent>0</cim:LoadResponseCharacteristic.qFrequencyExponent>
   </cim:LoadResponseCharacteristic>
   <cim:ControlArea rdf:ID="_22379f25-98a4-4ce3-a957-f38908e53ae3">

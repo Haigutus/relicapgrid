@@ -1,6 +1,6 @@
 # Security policy
 ## Overview
-The ENTSO-E ReliCapGric repository does not contain executable software or external library dependencies. This eliminates risks typically associated with running or maintaining software, such as dependency vulnerabilities or executable file exploits. However, maintaining the integrity of the repository remains a priority.
+The ENTSO-E ReliCapGrid repository does not contain executable software or external library dependencies. This eliminates risks typically associated with running or maintaining software, such as dependency vulnerabilities or executable file exploits. However, maintaining the integrity of the repository remains a priority.
 ## Reporting a vulnerability
 If you identify any potential or confirmed security vulnerability in the ENTSO-E ReliCapGrid repository, please report it privately to the CIM Working Group (WG) maintainers via email at [cim@entsoe.eu](mailto:cim@entsoe.eu)
 

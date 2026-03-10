@@ -15,7 +15,7 @@
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>d5aea98d-c4e2-4436-ab23-6c705e17960e</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Jotunheim-IAM"/>
-	<dcterms:rights>Copyright</dcterms:rights>
+    <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcat:keyword>IAM</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
@@ -23,7 +23,7 @@
     <dcterms:requires rdf:resource="urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd"/>
     <dcat:startDate>2022-06-16T12:30:00Z</dcat:startDate>
     <dcterms:title>20220615_IAM_1.0.0</dcterms:title> 
-	<dcat:version>1.0.0</dcat:version>
+    <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-IAM</prov:wasGeneratedBy>
   </dcat:Dataset>
   <nc:CalculationBasedImpactAssessmentMatrix rdf:ID="_d234292b-7528-4526-a441-c5bf4d3e1854">

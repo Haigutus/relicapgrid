@@ -8,7 +8,7 @@ The test case should be performed as follows:
 
 3)  Check if SIPS was uploaded correctly and the logic is as expected.
 
-4)  Import the Contigency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
+4)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
 
 5)  Run contingency analysis including SIPS activation.
 

@@ -14,16 +14,16 @@
     <dcterms:conformsTo>https://ap.cim4.eu/SteadyStateInstruction/2.4</dcterms:conformsTo>
     <dcterms:description xml:lang="en">This is the steady state instruction dataset for Svedala part of ReliCapGrid.</dcterms:description>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-	<dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
+    <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>ba3dc01a-fa68-4886-b053-2737e1276d27</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-SSI"/>
     <dcat:keyword>SSI</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher>https://energy.referencedata.eu/test/party/Svedala</dcterms:publisher>
-	<dcterms:rights>Copyright</dcterms:rights>
+    <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
-	<dcterms:title>20220615_Svedala_SSI_1.0.0</dcterms:title> 
+    <dcterms:title>20220615_Svedala_SSI_1.0.0</dcterms:title> 
     <dcterms:requires rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-SSI</prov:wasGeneratedBy>

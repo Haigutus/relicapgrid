@@ -20,7 +20,7 @@
     <dcat:keyword>FAP</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher>https://energy.referencedata.eu/test/party/TSO-Svedala</dcterms:publisher>
-	  <dcterms:rights>Copyright</dcterms:rights>
+      <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:title>20250615_Svedala_IGM-FAP_RAS_v3-0-0-beta-1</dcterms:title>
     <dcterms:requires rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/> <!--This is refering to the RA dataset instance-->

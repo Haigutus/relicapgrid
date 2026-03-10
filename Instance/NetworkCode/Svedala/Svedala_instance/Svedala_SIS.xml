@@ -14,17 +14,17 @@
     <dcterms:conformsTo>https://ap.cim4.eu/StateInstructionSchedule/2.4</dcterms:conformsTo>
     <dcterms:description xml:lang="en">This is the state instruction schedule dataset for Svedala part of ReliCapGrid.</dcterms:description>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-	<dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
+    <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>2426ac74-18f0-441c-9814-3f06655302e6</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-SIS"/>
     <dcat:keyword>SIS</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher>https://energy.referencedata.eu/test/party/Svedala</dcterms:publisher>
-	<dcterms:rights>Copyright</dcterms:rights>
+    <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
     <dcterms:requires rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
-	<dcterms:title>20220615_Svedala_SIS_1.0.0</dcterms:title> 
+    <dcterms:title>20220615_Svedala_SIS_1.0.0</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-SIS</prov:wasGeneratedBy>
   </dcat:Dataset>

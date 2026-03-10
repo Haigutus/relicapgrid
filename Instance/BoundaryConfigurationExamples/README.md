@@ -5,7 +5,7 @@ Version 4, 24 September 2025
 ## Introduction
 This folder contains the examples of boundary configurations and associated boundary synthetic test data ("Boundary Data") others than the ones associated with the Grid instances of ReliCapGrid. The files included under this folder should be used for pedagogical purposes on how an implementation of the concepts described in ENTSO-E's [Metadata for Dataset and Distribution Specification](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange/#_Metadata_for_Dataset_and_Distribution_Specification) may look like.
 
-This is a public, anonymised and synthetic test model created by ENTSO-E (formally European Network of System Operators for Electricity).
+This is a public, anonymised and synthetic test model created by ENTSO-E (formerly European Network of Transmission System Operators for Electricity).
 
 Please, review the .github folder for more information about how to collaborate in the project and its implications.
 
@@ -24,28 +24,6 @@ The Boundary Data is suitable to test the following combinations:
 * Boundary dataset header as in NC profiles – extended md:FullModel
 * Boundary dataset header as in NC Profiles v2.3.1 – dcat:Dataset based header
 * Boundary dataset for HVDC using NC profiles containers
-
-## Contents
-
-- [Boundary Test Configurations Documentation](#boundary-test-configurations-documentation)
-  - [Introduction](#introduction)
-  - [Contents](#contents)
-  - [How to provide feedback](#how-to-provide-feedback)
-  - [Accreditations](#accreditations)
-  - [Introduction](#introduction-1)
-  - [Modelling of boundary point on a line](#modelling-of-boundary-point-on-a-line)
-  - [Modelling of boundary point in a substation](#modelling-of-boundary-point-in-a-substation)
-  - [Boundary and common data as separate datasets](#boundary-and-common-data-as-separate-datasets)
-  - [Boundary information per border as separate datasets](#boundary-information-per-border-as-separate-datasets)
-  - [Modelling of boundary points for HVDC link](#modelling-of-boundary-points-for-hvdc-link)
-  - [Modelling of an IGM and a boundary as datasets without duplication](#modelling-of-an-igm-and-a-boundary-as-datasets-without-duplication)
-  - [Modelling of an IGM that includes the boundary as duplication](#modelling-of-an-igm-that-includes-the-boundary-as-duplication)
-  - [Manifest for a boundary dataset with common data](#manifest-for-a-boundary-dataset-with-common-data)
-  - [Boundary dataset header as in CGMES v3.0 EQBD profile](#boundary-dataset-header-as-in-cgmes-v30-eqbd-profile)
-  - [Boundary dataset header as in CGMES v3.0 EQ profile](#boundary-dataset-header-as-in-cgmes-v30-eq-profile)
-  - [Boundary dataset header as in NC profiles – extended md:FullModel](#boundary-dataset-header-as-in-nc-profiles--extended-mdfullmodel)
-  - [Boundary dataset header as in NC Profiles v2.3.2 – dcat:Dataset based header (v3.0.0)](#boundary-dataset-header-as-in-nc-profiles-v232--dcatdataset-based-header-v300)
-  - [Boundary dataset for HVDC using NC profiles containers](#boundary-dataset-for-hvdc-using-nc-profiles-containers)
 
 ## How to provide feedback
 When importing any data contained in the repository, you might find some bugs or issues to report. Please, open a GitHub issue and include your export log.
@@ -67,7 +45,7 @@ highlighted the gaps, but it was too late to address them in the
 published version of the standard. Therefore, in May 2023, ENTSO-E
 issued the document [Boundary and reference data exchange application
 specification](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange/#_Boundary_and_Reference_Data)
-to provide additional specification on boundary point is substation and
+to provide additional specification on boundary point in a substation and
 boundary points related to HVDC interconnections.
 
 As there is no test data that represents all possible combinations, and
@@ -136,7 +114,7 @@ Potential CGMES issues:
 TopologicalNode objects that are part of the boundary dataset or the
 validation instructions shall be considering only BoundaryPoint objects
 that are intended to the scope of the validated IGM. Note that this
-issue is mitigated when bilaterial (per boundaries) are used for the
+issue is mitigated when bilateral (per boundaries) are used for the
 validation of the IGM.
 
 In case of lack of guidance, the following problems could occur:
@@ -260,7 +238,7 @@ ID of the ConnectivityNode is correct
 “_892ef502-162b-469f-b93f-266aae828227”. In the CGM, Nordheim is
 separated in a small area
 
-Main issued to be discussed in the SV-IOP:
+Main issues to be discussed in the SV-IOP:
 
 * Review validation reports as some of the issues may require
 modification of SHACL rules, e.g. the validation of dangling references
