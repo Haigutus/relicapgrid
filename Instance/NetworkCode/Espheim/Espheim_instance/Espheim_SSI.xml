@@ -29,6 +29,6 @@
   
 
   <nc:TopologyAction rdf:about="_4d3757fd-b40a-4d7b-be47-6553935234ff">
-	<nc:GridStateAlteration.enabled>>true</nc:GridStateAlteration.enabled>
+	<nc:GridStateAlteration.enabled>true</nc:GridStateAlteration.enabled>
   </nc:TopologyAction>
 </rdf:RDF>
