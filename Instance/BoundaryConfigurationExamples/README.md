@@ -25,28 +25,6 @@ The Boundary Data is suitable to test the following combinations:
 * Boundary dataset header as in NC Profiles v2.3.1 – dcat:Dataset based header
 * Boundary dataset for HVDC using NC profiles containers
 
-## Contents
-
-- [Boundary Test Configurations Documentation](#boundary-test-configurations-documentation)
-  - [Introduction](#introduction)
-  - [Contents](#contents)
-  - [How to provide feedback](#how-to-provide-feedback)
-  - [Accreditations](#accreditations)
-  - [Introduction](#introduction-1)
-  - [Modelling of boundary point on a line](#modelling-of-boundary-point-on-a-line)
-  - [Modelling of boundary point in a substation](#modelling-of-boundary-point-in-a-substation)
-  - [Boundary and common data as separate datasets](#boundary-and-common-data-as-separate-datasets)
-  - [Boundary information per border as separate datasets](#boundary-information-per-border-as-separate-datasets)
-  - [Modelling of boundary points for HVDC link](#modelling-of-boundary-points-for-hvdc-link)
-  - [Modelling of an IGM and a boundary as datasets without duplication](#modelling-of-an-igm-and-a-boundary-as-datasets-without-duplication)
-  - [Modelling of an IGM that includes the boundary as duplication](#modelling-of-an-igm-that-includes-the-boundary-as-duplication)
-  - [Manifest for a boundary dataset with common data](#manifest-for-a-boundary-dataset-with-common-data)
-  - [Boundary dataset header as in CGMES v3.0 EQBD profile](#boundary-dataset-header-as-in-cgmes-v30-eqbd-profile)
-  - [Boundary dataset header as in CGMES v3.0 EQ profile](#boundary-dataset-header-as-in-cgmes-v30-eq-profile)
-  - [Boundary dataset header as in NC profiles – extended md:FullModel](#boundary-dataset-header-as-in-nc-profiles--extended-mdfullmodel)
-  - [Boundary dataset header as in NC Profiles v2.3.2 – dcat:Dataset based header (v3.0.0)](#boundary-dataset-header-as-in-nc-profiles-v232--dcatdataset-based-header-v300)
-  - [Boundary dataset for HVDC using NC profiles containers](#boundary-dataset-for-hvdc-using-nc-profiles-containers)
-
 ## How to provide feedback
 When importing any data contained in the repository, you might find some bugs or issues to report. Please, open a GitHub issue and include your export log.
 
