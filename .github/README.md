@@ -79,7 +79,7 @@ ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 belo
 - Galia - developed based on legacy MicroGrid Test Configuration
 - Nordheim - only one node
 - Britheim - includes HVDC internal interconnection VSC and also some small grid 1-2 nodes
-- Portheim
+- Portheim - the network model is not part of ReliCapGrid; only the connection towards Portheim is represented
 - HVDC Espheim-Svedala - an HVDC IGM LCC
 - HVDC Nordheim-Galia - an HVDC IGM VSC Bipole
 
