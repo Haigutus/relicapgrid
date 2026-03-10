@@ -14,7 +14,7 @@ The documentation produced and conversations held within the project will use Br
 
 === License
 
-The project artifacts are an open source framework licensed under the https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt[Creative Commons Attribution-ShareAlike 4.0 International] license. This is described in the link:LICENSE.txt[LICENSE].
+The project artifacts are an open source framework licensed under the https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt[Creative Commons Attribution-ShareAlike 4.0 International] license. This is described in the link:LICENSE.md[LICENSE].
 
 By contributing to the project, you accept and agree to the terms and conditions for your present and future contributions submitted to the project.
 
