@@ -33,11 +33,14 @@
     <cim:IdentifiedObject.name>Bidding Zone BO</cim:IdentifiedObject.name>
   </nc:BiddingZone>
   <cim:ReactiveCapabilityCurve rdf:ID="_59ff1e53-0e1a-44c0-ada5-7a0b3a660170">
-    <nc:ReactiveCapabilityCurve.referenceVoltage>10.5</nc:ReactiveCapabilityCurve.referenceVoltage>
-    <cim:IdentifiedObject.mRID>59ff1e53-0e1a-44c0-ada5-7a0b3a660170</cim:IdentifiedObject.mRID>
-    <cim:Curve.curveStyle rdf:resource="https://cim.ucaiug.io/ns#CurveStyle.constantYValue"/>
-    <cim:Curve.xUnit rdf:resource="https://cim.ucaiug.io/ns#UnitSymbol.W"/>
-    <cim:Curve.y1Unit rdf:resource="https://cim.ucaiug.io/ns#UnitSymbol.VAr"/>
+    <nc:ReactiveCapabilityCurve.referenceVoltage>10</nc:ReactiveCapabilityCurve.referenceVoltage>
+	  <cim:IdentifiedObject.mRID>59ff1e53-0e1a-44c0-ada5-7a0b3a660170</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Reactive Capability Curve 10kV</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Example of additional Reactive capability curve for different reference voltage</cim:IdentifiedObject.description>
+    <nc:ReactiveCapabilityCurve.SynchronousMachine2 rdf:resource="#_3a3b27be-b18b-4385-b557-6735d733baf0"/>
+	  <cim:Curve.curveStyle rdf:resource="https://cim.ucaiug.io/ns#CurveStyle.constantYValue"/>
+	  <cim:Curve.xUnit rdf:resource="https://cim.ucaiug.io/ns#UnitSymbol.W"/>
+	  <cim:Curve.y1Unit rdf:resource="https://cim.ucaiug.io/ns#UnitSymbol.VAr"/>
   </cim:ReactiveCapabilityCurve>
   <cim:CurveData rdf:ID="_52a42184-83c4-4d03-853a-e92b1a7dc79a">
     <cim:CurveData.xvalue>0</cim:CurveData.xvalue>
