@@ -43,6 +43,34 @@ List of the people and organisations contributing to this repository.
 
 It must be mentioned that the synthetic grid model *Svedala* is based on [Svenska Kraftnät's](https://www.svk.se/) test model of the same name, which is licensed under [CC BY-SA 4-0 open-source license](https://creativecommons.org/licenses/by-sa/4.0/).
 
+### How to Assemble File Packages for Import
+
+The grid model files are organized under [Instance/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid). The following guidance describes which files to combine when creating import packages for your tooling.
+
+#### IGM (Individual Grid Model)
+
+Each TSO's IGM files are in a dedicated folder (e.g., `Instance/Grid/IGM_Belgovia/`). Boundary and common data files are under `Instance/Grid/CommonAndBoundaryData/`.
+
+**Option 1 — IGM with individual boundary files (recommended):**
+
+- All profiles from the respective `Instance/Grid/IGM_<TSO>/` folder (EQ, SSH, SV, TP)
+- The relevant per-border boundary file(s) from `Instance/Grid/CommonAndBoundaryData/` (e.g., `Boundary_Border-Belgovia-Svedala.xml`)
+- `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
+
+**Option 2 — IGM with merged boundary file (deprecated, will be phased out):**
+
+- All profiles from the respective `Instance/Grid/IGM_<TSO>/` folder (EQ, SSH, SV, TP)
+- `Instance/Grid/CommonAndBoundaryData/CommonData_and_Boundary_merged.xml` — this single file contains common data and all boundary data combined, so no individual border files are needed
+
+#### CGM (Common Grid Model)
+
+- The EQ profile from **each** `Instance/Grid/IGM_<TSO>/` folder
+- All files from `Instance/Grid/CGM/`
+- The relevant per-border boundary file(s) from `Instance/Grid/CommonAndBoundaryData/` (e.g., `Boundary_Border-Belgovia-Svedala.xml`)
+- `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
+
+---
+
 ### The Grid Test Model
 ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 below:
 - Espheim - developed based on legacy SmallGrid Test Configuration
