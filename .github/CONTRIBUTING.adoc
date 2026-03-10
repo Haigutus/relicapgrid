@@ -2,7 +2,7 @@
 
 First off, thanks for taking the time to contribute!
 
-Before you start, we highly recommend that you read the following. IT will give you a set of guidelines for your contributions.
+Before you start, we highly recommend that you read the following. It will give you a set of guidelines for your contributions.
 
 === Code of conduct
 
@@ -64,7 +64,7 @@ Note that, during continuous integration, a check is performed to see if all com
 
 ==== Contributing process
 
-In order to contribute to the project, you need to be contact the maintainers and be included in the development project team as contributor. Please, read the link:MAINTAINERS.md[MAINTAINERS] file for more detailes on how to become contributor.
+In order to contribute to the project, you need to be contact the maintainers and be included in the development project team as contributor. Please, read the link:MAINTAINERS.md[MAINTAINERS] file for more details on how to become contributor.
 
 Before you start contributing, you have to agree with the link:MAINTAINERS.md[maintainers] of the repository about the technical solution you will implement, to make sure it will be aligned with the project guidelines.
 

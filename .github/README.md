@@ -7,15 +7,15 @@ This repository contains a synthetic grid model (fake, with no reference to real
 
 > **Note:** This document uses several technical abbreviations (e.g., TSO, IGM, CGM, CSA). For full definitions, please refer to the [Glossary of Abbreviations](#glossary-of-abbreviations) at the end of this README.
 
-The aim is demonstrating ​practical TSO and RCC data exchange use cases for the purposes of the Regional Coordination Processes, namely the Coordinatied Security Analysis (CSA), Coordinated Capacity Calculation (CCC), Outage Planning Coordination (OPC) and the Short-Term Adequacy (STA).
+The aim is demonstrating ​practical TSO and RCC data exchange use cases for the purposes of the Regional Coordination Processes, namely the Coordinated Security Analysis (CSA), Coordinated Capacity Calculation (CCC), Outage Planning Coordination (OPC) and the Short-Term Adequacy (STA).
 
 More concretely, the grid model (both synthetic IGMs and CGM) is available under [Instance/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid) folder. Similarly, the test Network Code Profiles instanced datasets can be found under [Instance/NetworkCode](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/NetworkCode). Additionally, ENTSO-E provides examples of the use of boundary configurations but they are not linked any of the previously mentioned test datasets under [Instance/BoundaryConfigurationExamples](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/BoundaryConfigurationExamples).
 
 The Regional Coordination Processes Data Exchange Specification (RCP DES) complements the test model as this is the document describing use cases and general guidance on the use Network Code Profiles. Find this data exchange specification and more on the [ENTSO-E's CGMES Library](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange).
 
-ENTSO-E continously collaborates with an ecosystem of TSOs, RCCs, regional projects and relevant industry software vendors. One of the outputs of this collaboration is the ReliCapGrid test model. Readers can consult the Accreditations section down below to see the list of people and organisations collaborating under the [CC-BY-SA-4.0 open-source License](https://github.com/entsoe-tso/relicapgrid/blob/main/LICENSE.md).
+ENTSO-E continuously collaborates with an ecosystem of TSOs, RCCs, regional projects and relevant industry software vendors. One of the outputs of this collaboration is the ReliCapGrid test model. Readers can consult the Accreditations section down below to see the list of people and organisations collaborating under the [CC-BY-SA-4.0 open-source License](https://github.com/entsoe-tso/relicapgrid/blob/main/LICENSE.md).
 
-The following chapters describe the model content and it will continously improved in subsequent releases.
+The following chapters describe the model content and it will be continuously improved in subsequent releases.
 
 ### How to provide feedback
 When importing any data contained in the repository, you might find some bugs or issues to report. Please, open a GitHub issue and include your export log when applicable.
@@ -100,7 +100,7 @@ This information and more (e.g., BiddingZoneBorder) is again represented in the 
 ### Currently demonstrated Network Code Profiles instances
 Currently, four of the TSOs in NineRealms (Belgovia, Galia, Svedala and Espheim) have sent their [Network Code Profile instances](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/NetworkCode) that Jotunheim will use for coordination.
 
-Namely, the AssessedElement (AE), Contingency (CO), EquipmentReliability (ER), RemedialAction (RA), RemedialActionSchedule (RAS), StateInstructionSchedule (SIS), SteadyStateInstruction (SSI) and ImpactAssessmentMatric (IAM) are demonstrated in the ReliCapGrid repository.
+Namely, the AssessedElement (AE), Contingency (CO), EquipmentReliability (ER), RemedialAction (RA), RemedialActionSchedule (RAS), StateInstructionSchedule (SIS), SteadyStateInstruction (SSI) and ImpactAssessmentMatrix (IAM) are demonstrated in the ReliCapGrid repository.
 
 As already mentioned, ENTSO-E explains the use of the Network Code Profiles in the Regional Coordination Processes Data Exchange Specification.
 

@@ -10,7 +10,7 @@ Points below detail the policy that determines in our repositories which branche
 
 ==== Main branch
 
-The default branch is named `+main+` and is protected. Commits can be merged only via pull requests passing different checks: - At least one reviewer, different from the pull request’s author, must have approved the pull request. - Each commits must be signed correctly by its author as descrived in the link:CONTRIBUTING.md[CONTRIBUTING] file. - The ENTSO-E ICT Committee must approve the publication of the release. - ENTSO-E security scan must be performed.
+The default branch is named `+main+` and is protected. Commits can be merged only via pull requests passing different checks: - At least one reviewer, different from the pull request’s author, must have approved the pull request. - Each commits must be signed correctly by its author as described in the link:CONTRIBUTING.md[CONTRIBUTING] file. - The ENTSO-E ICT Committee must approve the publication of the release. - ENTSO-E security scan must be performed.
 
 ==== Release/development branches
 
