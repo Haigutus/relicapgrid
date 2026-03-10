@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:cim="http://iec.ch/TC57/CIM100#" xmlns:eu="http://iec.ch/TC57/CIM100-European#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <md:FullModel rdf:about="urn:uuid:03e76bc6-be5b-4436-8eea-27eae2dcbf9d">
     <md:Model.DependentOn rdf:resource="urn:uuid:15c8a8ad-08d5-4b59-8417-db80e273bd1a" />
-	<md:Model.Supersedes rdf:resource="urn:uuid:fe534bf5-0160-43eb-9b1a-da77b7818665" />
+    <md:Model.Supersedes rdf:resource="urn:uuid:fe534bf5-0160-43eb-9b1a-da77b7818665" />
     <md:Model.created>2025-02-08T21:20:31Z</md:Model.created>
     <md:Model.description>The steady-state hypothesis dataset for Belgovia, updated by Jotunheim.</md:Model.description>
     <md:Model.modelingAuthoritySet> http://belgovia.bo/CGMES</md:Model.modelingAuthoritySet>

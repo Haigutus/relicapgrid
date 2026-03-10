@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:cim="https://cim.ucaiug.io/ns#"
-	xmlns:dcat="http://www.w3.org/ns/dcat#"
-	xmlns:dcatcim="https://cim4.eu/ns/dcatcim#" 
-	xmlns:dcterms="http://purl.org/dc/terms/" 
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:dcatcim="https://cim4.eu/ns/dcatcim#" 
+    xmlns:dcterms="http://purl.org/dc/terms/" 
  	xmlns:eu="https://cim.ucaiug.io/ns/eu#"
-	xmlns:nc="https://cim4.eu/ns/nc#"
-	xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:nc="https://cim4.eu/ns/nc#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:adms="http://www.w3.org/ns/adms#"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   >
 
 
@@ -28,7 +28,7 @@
   <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
   <dcterms:title>20250214_Provenance_Activity_CGM-PV_v1-0-0-alpha-1</dcterms:title>
   <dcterms:type rdf:resource="https://energy.referencedata.eu/type/ReferenceData"/>
-	<prov:generatedAtTime>2025-05-20T09:00:00Z</prov:generatedAtTime>
+    <prov:generatedAtTime>2025-05-20T09:00:00Z</prov:generatedAtTime>
  	<prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-PV"/>
 </dcat:Dataset>
 

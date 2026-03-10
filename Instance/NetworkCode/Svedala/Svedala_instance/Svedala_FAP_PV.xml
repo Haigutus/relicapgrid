@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:cim="https://cim.ucaiug.io/ns#"
-	xmlns:dcat="http://www.w3.org/ns/dcat#"
-	xmlns:dcatcim="https://cim4.eu/ns/dcatcim#" 
-	xmlns:dcterms="http://purl.org/dc/terms/" 
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:dcatcim="https://cim4.eu/ns/dcatcim#" 
+    xmlns:dcterms="http://purl.org/dc/terms/" 
  	xmlns:eu="https://cim.ucaiug.io/ns/eu#"
-	xmlns:nc="https://cim4.eu/ns/nc#"
-	xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:nc="https://cim4.eu/ns/nc#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:adms="http://www.w3.org/ns/adms#"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   >
 
 <dcat:Dataset rdf:about="urn:uuid:501e6690-60d1-4023-ab35-fe41b7310e03">

@@ -111,17 +111,17 @@
     <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" />
   </nc:PinTerminal>
   <nc:PinTerminal rdf:ID="_fb1b297b-35a8-4e09-a1b5-f35b211d2fda">
-	  <nc:GateInputPin.Gate rdf:resource="#_93ca77f3-221d-430b-861f-35f144d49002" />
-	  <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
-	  <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
-	  <nc:GateInputPin.isValuePreFault>true</nc:GateInputPin.isValuePreFault>
-	  <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
-	  <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
-	  <nc:GateInputPin.thresholdValue>250</nc:GateInputPin.thresholdValue>
-	  <cim:IdentifiedObject.mRID>fb1b297b-35a8-4e09-a1b5-f35b211d2fda</cim:IdentifiedObject.mRID>
-	  <cim:IdentifiedObject.name>FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d</cim:IdentifiedObject.name>
-	  <nc:PinTerminal.Terminal rdf:resource="#_f3603af7-a098-1e2c-431e-8ca22ae76221" />
-	  <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" />
+      <nc:GateInputPin.Gate rdf:resource="#_93ca77f3-221d-430b-861f-35f144d49002" />
+      <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
+      <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+      <nc:GateInputPin.isValuePreFault>true</nc:GateInputPin.isValuePreFault>
+      <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.greaterThan" />
+      <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+      <nc:GateInputPin.thresholdValue>250</nc:GateInputPin.thresholdValue>
+      <cim:IdentifiedObject.mRID>fb1b297b-35a8-4e09-a1b5-f35b211d2fda</cim:IdentifiedObject.mRID>
+      <cim:IdentifiedObject.name>FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d</cim:IdentifiedObject.name>
+      <nc:PinTerminal.Terminal rdf:resource="#_f3603af7-a098-1e2c-431e-8ca22ae76221" />
+      <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" />
   </nc:PinTerminal>
   <nc:PinTerminal rdf:ID="_85826c3d-d25f-4b41-92d4-b2b855f3e96f">
     <nc:GateInputPin.Gate rdf:resource="#_1ca0f26a-8197-44e0-a258-cd886c4fb8fd" />
@@ -186,12 +186,12 @@
     <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/ACDCConverter.targetPpcc" />
   </nc:StaticPropertyRange>
   <nc:ACDCConverterAction rdf:ID="_3fa0a033-610d-4c0c-ba12-36a6482f5b08">
-	  <nc:ACDCConverterAction.ACDCConverter rdf:resource="#_038ce404-30dc-4289-b9db-7076cb870b8e" />
-	  <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_4eb0a454-4796-4598-a0af-788cb478d415" />
-	  <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/ACDCConverter.targetPpcc" />
-	  <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
-	  <cim:IdentifiedObject.mRID>3fa0a033-610d-4c0c-ba12-36a6482f5b08</cim:IdentifiedObject.mRID>
-	  <cim:IdentifiedObject.name>RegHvdcAbsolute_038ce404-30dc-4289-b9db-7076cb870b8e-</cim:IdentifiedObject.name>
+      <nc:ACDCConverterAction.ACDCConverter rdf:resource="#_038ce404-30dc-4289-b9db-7076cb870b8e" />
+      <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_4eb0a454-4796-4598-a0af-788cb478d415" />
+      <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/ACDCConverter.targetPpcc" />
+      <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
+      <cim:IdentifiedObject.mRID>3fa0a033-610d-4c0c-ba12-36a6482f5b08</cim:IdentifiedObject.mRID>
+      <cim:IdentifiedObject.name>RegHvdcAbsolute_038ce404-30dc-4289-b9db-7076cb870b8e-</cim:IdentifiedObject.name>
   </nc:ACDCConverterAction>
   <nc:ACDCConverterAction rdf:ID="_26bed5db-d6bd-44e5-ab95-082453bd0cfa">
     <nc:ACDCConverterAction.ACDCConverter rdf:resource="#_038ce404-30dc-4289-b9db-7076cb870b8e" />
@@ -218,12 +218,12 @@
     <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/ACDCConverter.targetPpcc" />
   </nc:StaticPropertyRange>
   <nc:ACDCConverterAction rdf:ID="_55d1fcd7-fd50-49b4-a960-05c6a585138a">
-	<nc:ACDCConverterAction.ACDCConverter rdf:resource="#_e468e6ca-8776-4c22-8f9b-390df610c2fd" />
-	<nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_df90ad87-bf20-45e5-a75d-a5df84384e0e" />
-	<nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/ACDCConverter.targetPpcc" />
-	<nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
-	<cim:IdentifiedObject.mRID>55d1fcd7-fd50-49b4-a960-05c6a585138a</cim:IdentifiedObject.mRID>
-	<cim:IdentifiedObject.name>RegHvdcAbsolute_e468e6ca-8776-4c22-8f9b-390df610c2fd-</cim:IdentifiedObject.name>
+    <nc:ACDCConverterAction.ACDCConverter rdf:resource="#_e468e6ca-8776-4c22-8f9b-390df610c2fd" />
+    <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_df90ad87-bf20-45e5-a75d-a5df84384e0e" />
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/ACDCConverter.targetPpcc" />
+    <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
+    <cim:IdentifiedObject.mRID>55d1fcd7-fd50-49b4-a960-05c6a585138a</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>RegHvdcAbsolute_e468e6ca-8776-4c22-8f9b-390df610c2fd-</cim:IdentifiedObject.name>
   </nc:ACDCConverterAction>
   <nc:ACDCConverterAction rdf:ID="_4285c664-8cb0-4013-826f-347c64ed554b">
     <nc:ACDCConverterAction.ACDCConverter rdf:resource="#_e468e6ca-8776-4c22-8f9b-390df610c2fd" />

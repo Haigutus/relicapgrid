@@ -18,28 +18,28 @@
     <dcat:keyword>PS</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher>https://energy.referencedata.eu/test/party/Belgovia</dcterms:publisher>
-	<dcterms:rights>Copyright</dcterms:rights>
+    <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-	<dcterms:title>20220615_Belgovia_AE_1.0.0</dcterms:title>
+    <dcterms:title>20220615_Belgovia_AE_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-PS</prov:wasGeneratedBy>
   </dcat:Dataset>
 
   <!-- 7.1.8.3.2 Defining a Power (Countertrade) Remedial Action by using Power Schedule  -->
   <nc:PowerSchedule rdf:ID="_27940387-6935-47b6-ab25-8742bac2a266">
-	<cim:IdentifiedObject.mRID>27940387-6935-47b6-ab25-8742bac2a266</cim:IdentifiedObject.mRID>
-	<nc:PowerSchedule.PowerRemedialAction rdf:resource="#_30f6377d-5e35-4dd0-a53d-c1992043855e"/>
-	<nc:PowerSchedule.GeneratingUnit rdf:resource="#_413bbc8a-683c-7e07-4fb9-aa6ec83278e0"/>
-	<nc:PowerSchedule.powerScheduleKind rdf:resource="https://cim4.eu/ns/nc#PowerScheduleKind.power"/>
-	<nc:BaseTimeSeries.timeSeriesKind rdf:resource="https://cim4.eu/ns/nc#BaseTimeSeriesKind.forecast"/>
-	<nc:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.none"/>
+    <cim:IdentifiedObject.mRID>27940387-6935-47b6-ab25-8742bac2a266</cim:IdentifiedObject.mRID>
+    <nc:PowerSchedule.PowerRemedialAction rdf:resource="#_30f6377d-5e35-4dd0-a53d-c1992043855e"/>
+    <nc:PowerSchedule.GeneratingUnit rdf:resource="#_413bbc8a-683c-7e07-4fb9-aa6ec83278e0"/>
+    <nc:PowerSchedule.powerScheduleKind rdf:resource="https://cim4.eu/ns/nc#PowerScheduleKind.power"/>
+    <nc:BaseTimeSeries.timeSeriesKind rdf:resource="https://cim4.eu/ns/nc#BaseTimeSeriesKind.forecast"/>
+    <nc:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.none"/>
   </nc:PowerSchedule>
   <nc:PowerTimePoint rdf:ID="_014615b6-134c-40c3-9d1b-b4d3aa6704fc">
-	<nc:PowerTimePoint.activatedP>45.2835</nc:PowerTimePoint.activatedP>
-	<nc:PowerTimePoint.atTime>2024-02-22T14:30:00Z</nc:PowerTimePoint.atTime>
-	<nc:PowerTimePoint.PowerSchedule rdf:resource="#_27940387-6935-47b6-ab25-8742bac2a266"/>
+    <nc:PowerTimePoint.activatedP>45.2835</nc:PowerTimePoint.activatedP>
+    <nc:PowerTimePoint.atTime>2024-02-22T14:30:00Z</nc:PowerTimePoint.atTime>
+    <nc:PowerTimePoint.PowerSchedule rdf:resource="#_27940387-6935-47b6-ab25-8742bac2a266"/>
   </nc:PowerTimePoint>
 
 </rdf:RDF>

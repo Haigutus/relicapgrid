@@ -18,11 +18,11 @@
     <dcat:keyword>SIS</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
     <dcterms:publisher>https://energy.referencedata.eu/test/party/Espheim</dcterms:publisher>
-	  <dcterms:rights>Copyright</dcterms:rights>
+      <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-	  <dcterms:title>20220615_Espheim_SIS_1.0.0</dcterms:title>
+      <dcterms:title>20220615_Espheim_SIS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-SIS</prov:wasGeneratedBy>
   </dcat:Dataset>
@@ -35,19 +35,19 @@
   
   <nc:GridStateAlterationTimePoint rdf:ID="_1abe3449-d89d-4387-95f1-713f37290b8a">
   	<nc:GridStateAlterationTimePoint.atTime>2022-06-15T22:30:00Z</nc:GridStateAlterationTimePoint.atTime>
-	  <nc:GridStateAlterationTimePoint.enabled>true</nc:GridStateAlterationTimePoint.enabled>
+      <nc:GridStateAlterationTimePoint.enabled>true</nc:GridStateAlterationTimePoint.enabled>
     <nc:GridStateAlterationTimePoint.GridStateAlterationSchedule rdf:resource="#_f5205bd4-637a-4eb7-b0d8-e03638bc570b"/>
   </nc:GridStateAlterationTimePoint>
   
   <nc:GridStateAlterationTimePoint rdf:ID="_478043e2-91fa-4719-aec6-a8f11060f20a">
-	  <nc:GridStateAlterationTimePoint.atTime>2022-06-15T23:30:00Z</nc:GridStateAlterationTimePoint.atTime>
-	  <nc:GridStateAlterationTimePoint.enabled>false</nc:GridStateAlterationTimePoint.enabled>
+      <nc:GridStateAlterationTimePoint.atTime>2022-06-15T23:30:00Z</nc:GridStateAlterationTimePoint.atTime>
+      <nc:GridStateAlterationTimePoint.enabled>false</nc:GridStateAlterationTimePoint.enabled>
     <nc:GridStateAlterationTimePoint.GridStateAlterationSchedule rdf:resource="#_f5205bd4-637a-4eb7-b0d8-e03638bc570b"/>
   </nc:GridStateAlterationTimePoint>
   
   <nc:GridStateAlterationTimePoint rdf:ID="_64d81a72-adbe-410f-8c13-def6af1e299c">
-	  <nc:GridStateAlterationTimePoint.atTime>2022-06-16T00:30:00Z</nc:GridStateAlterationTimePoint.atTime>
-	  <nc:GridStateAlterationTimePoint.enabled>true</nc:GridStateAlterationTimePoint.enabled>
+      <nc:GridStateAlterationTimePoint.atTime>2022-06-16T00:30:00Z</nc:GridStateAlterationTimePoint.atTime>
+      <nc:GridStateAlterationTimePoint.enabled>true</nc:GridStateAlterationTimePoint.enabled>
     <nc:GridStateAlterationTimePoint.GridStateAlterationSchedule rdf:resource="#_f5205bd4-637a-4eb7-b0d8-e03638bc570b"/>
   </nc:GridStateAlterationTimePoint>
 

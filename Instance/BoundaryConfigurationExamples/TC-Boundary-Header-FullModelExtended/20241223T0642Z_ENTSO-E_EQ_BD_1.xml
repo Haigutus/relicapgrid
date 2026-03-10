@@ -7,13 +7,13 @@
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2024-12-23T06:42:14Z</md:Model.scenarioTime>
     <md:Model.version>1</md:Model.version>
-	<dcterms:identifier>ea618702-38af-4b11-b92c-ab1b1c0648f1</dcterms:identifier>
-	<dcterms:issued>2024-12-24T08:01:33Z</dcterms:issued>
-	<dcat:version>1.0.0</dcat:version>
-	<dcat:startDate>2024-12-23T06:42:14Z</dcat:startDate>
-	<dcterms:description xml:lang="en">This is a test model for boundary.</dcterms:description>
-	<dcterms:conformsTo rdf:resource="http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0" />
-	<dcat:keyword>BD</dcat:keyword>
+    <dcterms:identifier>ea618702-38af-4b11-b92c-ab1b1c0648f1</dcterms:identifier>
+    <dcterms:issued>2024-12-24T08:01:33Z</dcterms:issued>
+    <dcat:version>1.0.0</dcat:version>
+    <dcat:startDate>2024-12-23T06:42:14Z</dcat:startDate>
+    <dcterms:description xml:lang="en">This is a test model for boundary.</dcterms:description>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0" />
+    <dcat:keyword>BD</dcat:keyword>
   </md:FullModel>
   <cim:ConnectivityNode rdf:ID="_758cfb1f-3703-426a-bc1f-1801ddd9d19d">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_636b98c2-ed10-4b29-af38-a6078d23f6f7" />
