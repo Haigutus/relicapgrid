@@ -6,7 +6,7 @@ The test case should be performed as follows:
 
 2)  Import the list of SIPS from Remedial Action Profile ([SIPS_UC7_Generation-Shedding_Svedala.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_UC7_Generation-Shedding_Svedala.xml))
 
-3)  Check if SIPS was uploaded correctly and the logic is as expectedsd.
+3)  Check if SIPS was uploaded correctly and the logic is as expected.
 
 4)  Import the Contingency List from Contingency Profile ([Svedala_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_Svedala_CO.xml)).
 
@@ -44,7 +44,7 @@ SIPS acts on two generators connected to the same busbars as the line CL6:
 
 - HÄLLAN_G3.
 
-If the action is to disconnect the generator than the:
+If the action is to disconnect the generator then the:
 
 - Breaker CT72_G1-S (mRID ecc7d452-3cc6-4a6f-ac55-cfc80f3aac53) for HÄLLAN_G1 or
 

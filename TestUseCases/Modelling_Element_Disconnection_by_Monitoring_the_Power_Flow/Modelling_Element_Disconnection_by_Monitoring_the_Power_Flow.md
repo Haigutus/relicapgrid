@@ -8,7 +8,7 @@ The test case should be performed as follows:
 
 3)  Check if SIPS was uploaded correctly and the logic is as expected.
 
-4)  Import the Contigency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
+4)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
 
 5)  Run contingency analysis including SIPS activation.
 
@@ -18,7 +18,7 @@ The test case should be performed as follows:
 
 - SIPS should open the breaker CIRCB-1230991544 in HVDC link TieLine_GA_BO2.
 
-Test data was prepared based on Belgovia individual grid model. The elements connected to the Alfvik substation were used:
+Test data was prepared based on Belgovia individual grid model. The elements connected to the Alfavik substation were used:
 
 ![](images/media/image2.svg)
 

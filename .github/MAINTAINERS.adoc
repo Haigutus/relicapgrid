@@ -29,7 +29,7 @@ Maintainers are ENTSO-E staff that:
 * https://github.com/EduardoRelAlg[EduardoRelAlg - ENTSO-E], 
 * https://github.com/adevps-entsoe[ENTSO-E Service Desk]. 
 
-They grant the appropiate access rights.
+They grant the appropriate access rights.
 
 ==== Contributor rights
 

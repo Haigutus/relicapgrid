@@ -10,7 +10,7 @@ The test case should be performed as follows:
 
 4)  Perform the load flow and check the voltage on 110 kV busbars BO-Busbar_6 in PP_Brussia substation. Adjust the reactive power generation on generator BO-G1 to achieve a voltage of 124 kV on 110 kV busbars BO-Busbar_6.
 
-5)  Import the Contigency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
+5)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
 
 6)  Run contingency analysis including SIPS activation.
 

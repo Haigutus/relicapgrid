@@ -5,15 +5,17 @@ ICTC approved on 11 September 2025
 ## Introduction
 This repository contains a synthetic grid model (fake, with no reference to real IGM/CGM elements)​ to which instances of the CIM-extension called "Network Code Profiles" developed at ENTSO-E refer to.
 
-The aim is demonstrating ​practical TSO and RCC data exchange use cases for the purposes of the Regional Coordination Processes, namely the Coordinatied Security Analysis (CSA), Coordinated Capacity Calculation (CCC), Outage Planning Coordination (OPC) and the Short-Term Adequacy (STA).
+> **Note:** This document uses several technical abbreviations (e.g., TSO, IGM, CGM, CSA). For full definitions, please refer to the [Glossary of Abbreviations](#glossary-of-abbreviations) at the end of this README.
+
+The aim is demonstrating ​practical TSO and RCC data exchange use cases for the purposes of the Regional Coordination Processes, namely the Coordinated Security Analysis (CSA), Coordinated Capacity Calculation (CCC), Outage Planning Coordination (OPC) and the Short-Term Adequacy (STA).
 
 More concretely, the grid model (both synthetic IGMs and CGM) is available under [Instance/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid) folder. Similarly, the test Network Code Profiles instanced datasets can be found under [Instance/NetworkCode](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/NetworkCode). Additionally, ENTSO-E provides examples of the use of boundary configurations but they are not linked any of the previously mentioned test datasets under [Instance/BoundaryConfigurationExamples](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/BoundaryConfigurationExamples).
 
 The Regional Coordination Processes Data Exchange Specification (RCP DES) complements the test model as this is the document describing use cases and general guidance on the use Network Code Profiles. Find this data exchange specification and more on the [ENTSO-E's CGMES Library](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange).
 
-ENTSO-E continously collaborates with an ecosystem of TSOs, RCCs, regional projects and relevant industry software vendors. One of the outputs of this collaboration is the ReliCapGrid test model. Readers can consult the Accreditations section down below to see the list of people and organisations collaborating under the [CC-BY-SA-4.0 open-source License](https://github.com/entsoe-tso/relicapgrid/blob/main/LICENSE.md).
+ENTSO-E continuously collaborates with an ecosystem of TSOs, RCCs, regional projects and relevant industry software vendors. One of the outputs of this collaboration is the ReliCapGrid test model. Readers can consult the Accreditations section down below to see the list of people and organisations collaborating under the [CC-BY-SA-4.0 open-source License](https://github.com/entsoe-tso/relicapgrid/blob/main/LICENSE.md).
 
-The following chapters describe the model content and it will continously improved in subsequent releases.
+The following chapters describe the model content and it will be continuously improved in subsequent releases.
 
 ### How to provide feedback
 When importing any data contained in the repository, you might find some bugs or issues to report. Please, open a GitHub issue and include your export log when applicable.
@@ -41,6 +43,34 @@ List of the people and organisations contributing to this repository.
 
 It must be mentioned that the synthetic grid model *Svedala* is based on [Svenska Kraftnät's](https://www.svk.se/) test model of the same name, which is licensed under [CC BY-SA 4-0 open-source license](https://creativecommons.org/licenses/by-sa/4.0/).
 
+### How to Assemble File Packages for Import
+
+The grid model files are organized under [Instance/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid). The following guidance describes which files to combine when creating import packages for your tooling.
+
+#### IGM (Individual Grid Model)
+
+Each TSO's IGM files are in a dedicated folder (e.g., `Instance/Grid/IGM_Belgovia/`). Boundary and common data files are under `Instance/Grid/CommonAndBoundaryData/`.
+
+**Option 1 — IGM with individual boundary files (recommended):**
+
+- All profiles from the respective `Instance/Grid/IGM_<TSO>/` folder (EQ, SSH, SV, TP)
+- The relevant per-border boundary file(s) from `Instance/Grid/CommonAndBoundaryData/` (e.g., `Boundary_Border-Belgovia-Svedala.xml`)
+- `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
+
+**Option 2 — IGM with merged boundary file (deprecated, will be phased out):**
+
+- All profiles from the respective `Instance/Grid/IGM_<TSO>/` folder (EQ, SSH, SV, TP)
+- `Instance/Grid/CommonAndBoundaryData/CommonData_and_Boundary_merged.xml` — this single file contains common data and all boundary data combined, so no individual border files are needed
+
+#### CGM (Common Grid Model)
+
+- The EQ profile from **each** `Instance/Grid/IGM_<TSO>/` folder
+- All files from `Instance/Grid/CGM/`
+- The relevant per-border boundary file(s) from `Instance/Grid/CommonAndBoundaryData/` (e.g., `Boundary_Border-Belgovia-Svedala.xml`)
+- `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
+
+---
+
 ### The Grid Test Model
 ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 below:
 - Espheim - developed based on legacy SmallGrid Test Configuration
@@ -49,7 +79,7 @@ ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 belo
 - Galia - developed based on legacy MicroGrid Test Configuration
 - Nordheim - only one node
 - Britheim - includes HVDC internal interconnection VSC and also some small grid 1-2 nodes
-- Portheim
+- Portheim - the network model is not part of ReliCapGrid; only the connection towards Portheim is represented
 - HVDC Espheim-Svedala - an HVDC IGM LCC
 - HVDC Nordheim-Galia - an HVDC IGM VSC Bipole
 
@@ -70,9 +100,46 @@ This information and more (e.g., BiddingZoneBorder) is again represented in the 
 ### Currently demonstrated Network Code Profiles instances
 Currently, four of the TSOs in NineRealms (Belgovia, Galia, Svedala and Espheim) have sent their [Network Code Profile instances](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/NetworkCode) that Jotunheim will use for coordination.
 
-Namely, the AssessedElement (AE), Contingency (CO), EquipmentReliability (ER), RemedialAction (RA), RemedialActionSchedule (RAS), StateInstructionSchedule (SIS), SteadyStateInstruction (SSI) and ImpactAssessmentMatric (IAM) are demonstrated in the ReliCapGrid repository.
+Namely, the AssessedElement (AE), Contingency (CO), EquipmentReliability (ER), RemedialAction (RA), RemedialActionSchedule (RAS), StateInstructionSchedule (SIS), SteadyStateInstruction (SSI) and ImpactAssessmentMatrix (IAM) are demonstrated in the ReliCapGrid repository.
 
 As already mentioned, ENTSO-E explains the use of the Network Code Profiles in the Regional Coordination Processes Data Exchange Specification.
 
 The content of ReliCapGrid Network Code Profiles datasets' instances will be further developed and demonstrated in subsequent releases.
 
+### Glossary of Abbreviations
+
+This section provides definitions for the technical abbreviations used throughout this repository, categorized by their role in the power system and data exchange processes.
+
+#### Organizations & Standards
+* **ENTSO-E**: European Network of Transmission System Operators for Electricity
+* **ICTC**: Inter-TSO Cooperation Committee (ENTSO-E Steering Group)
+* **CIM**: Common Information Model (IEC 61970/61968 standards)
+* **CGMES**: Common Grid Model Exchange Standard
+* **RCP DES**: Regional Coordination Processes Data Exchange Specification
+
+#### Grid Modeling & Infrastructure
+* **TSO**: Transmission System Operator
+* **RCC**: Regional Coordination Centre
+* **IGM**: Individual Grid Model
+* **CGM**: Common Grid Model
+* **CCR**: Capacity Calculation Region
+* **HVDC**: High-Voltage Direct Current
+* **LCC / VSC**: Line-Commutated Converter / Voltage Source Converter (HVDC technologies)
+
+#### Coordination Processes
+* **CSA**: Coordinated Security Analysis
+* **CCC**: Coordinated Capacity Calculation
+* **OPC**: Outage Planning Coordination
+* **STA**: Short-Term Adequacy
+
+#### Network Code Profile (NCP) Instances
+* **AE**: Assessed Element
+* **CO**: Contingency
+* **ER**: Equipment Reliability
+* **RA / RAS**: Remedial Action / Remedial Action Schedule
+* **SIS**: State Instruction Schedule
+* **SSI**: Steady State Instruction
+* **IAM**: Impact Assessment Matrix
+
+#### Licensing
+* **CC-BY-SA-4.0**: Creative Commons Attribution-ShareAlike 4.0 International License

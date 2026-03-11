@@ -12,7 +12,7 @@ The test case should be performed as follows:
 
 3)  Check if SIPS was uploaded correctly and the logic is as expected.
 
-4)  Import the Contigency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO.xml)).
+4)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO.xml)).
 
 5)  Change the TATL value for line BO-Line_6 in Alfavik substation to 110 -- name: tatl 600 for BO-Line_6 mRID: 524301ff-c48a-836e-f914-ed06ac42e2e1.
 
@@ -22,7 +22,7 @@ The test case should be performed as follows:
 
 - For contingency on line BO-Line_2 the current flow on line BO-Line_6 was higher than 110A and the line was disconnected by opening switches on both ends of the line.
 
-Test data was prepared based on Belgovia individual grid model. The elements connected to the Alfvik substations were used:
+Test data was prepared based on Belgovia individual grid model. The elements connected to the Alfavik substations were used:
 
 - ![](images/media/image2.svg)
 
