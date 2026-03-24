@@ -87,8 +87,8 @@
     <cim:IdentifiedObject.name>ADU 1</cim:IdentifiedObject.name>
   </nc:AreaDispatchableUnit>
   <!-- 7.1.10.2. Voltage Angle Limit -->
-  <nc:VoltageAngleLimit rdf:ID="_c06b2f38-c6c6-4fec-8ddb-234eebaea8ec">
-    <cim:IdentifiedObject.mRID>c06b2f38-c6c6-4fec-8ddb-234eebaea8ec</cim:IdentifiedObject.mRID>
+  <nc:VoltageAngleLimit rdf:ID="_bf17bcf4-fee4-4108-a22f-2ead83edb55c">
+    <cim:IdentifiedObject.mRID>bf17bcf4-fee4-4108-a22f-2ead83edb55c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>VoltageAngleLimit1</cim:IdentifiedObject.name>
     <cim:IdentifiedObject.description>Limit for voltage angle at a specific terminal</cim:IdentifiedObject.description>
     <nc:VoltageAngleLimit.normalValue>10.0</nc:VoltageAngleLimit.normalValue>
@@ -111,9 +111,11 @@
   </nc:InfeedTerminal>
   <nc:LineCircuit rdf:ID="_cef9011e-3753-453b-93bd-fb36eb3daac1">
     <nc:InfeedTerminal.mRID>cef9011e-3753-453b-93bd-fb36eb3daac1</nc:InfeedTerminal.mRID>
+    <nc:Circuit.PositiveFlowIn>True<nc:Circuit.PositiveFlowIn>
   </nc:LineCircuit>
   <nc:PowerTransformerCircuit rdf:ID="_c31ae69b-423d-47c0-bacc-083d64e34d4a">
     <nc:InfeedTerminal.mRID>c31ae69b-423d-47c0-bacc-083d64e34d4a</nc:InfeedTerminal.mRID>
+    <nc:Circuit.PositiveFlowIn>True<nc:Circuit.PositiveFlowIn>
   </nc:PowerTransformerCircuit>
   <cim:Equipment rdf:about="_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
     <nc:Equipment.Circuit rdf:resource="#_cef9011e-3753-453b-93bd-fb36eb3daac1"/>

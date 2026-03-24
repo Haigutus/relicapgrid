@@ -9,7 +9,6 @@
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c">
     <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
-    <dcterms:license>https://ap.cim4.eu/StateInstructionSchedule/2.4</dcterms:license>
     <dcterms:description xml:lang="en">This is the State Instruction Schedule dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
@@ -17,14 +16,12 @@
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-SIS"/>
     <dcat:keyword>SIS</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:license>https://energy.referencedata.eu/test/party/Belgovia</dcterms:license>
       <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
       <dcterms:title>20230722_Belgovia_SIS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <dcterms:license>https://energy.referencedata.eu/Activity/CGM-SIS</dcterms:license>
   </dcat:Dataset>
   
 <!-- 7.1.6.3	Disable an Assessed Element  -->
@@ -117,15 +114,13 @@
     <cim:IdentifiedObject.description>Power Shift Key Schedule 1</cim:IdentifiedObject.description>
   <cim:IdentifiedObject.mRID>3b5748de-39f2-45d7-9a66-65819c667e91</cim:IdentifiedObject.mRID>
   <cim:IdentifiedObject.name>PSKS1</cim:IdentifiedObject.name>
+   <cim:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.none"/>
 </nc:PowerShiftKeySchedule>
 <nc:PowerBidScheduleTimePoint rdf:ID="_250e37a5-50e0-44b7-9bd7-7284c04116db">
   <nc:PowerBidScheduleTimePoint.atTime>2024-02-22T17:30:00Z</nc:PowerBidScheduleTimePoint.atTime>
     <nc:PowerBidScheduleTimePoint.PowerBidSchedule rdf:resource="#_6c0ba4c5-5ac0-43f8-87d9-ec2fb41a3dec"/>
     <nc:PowerBidScheduleTimePoint.p>-125.4625</nc:PowerBidScheduleTimePoint.p>
     <nc:PowerBidScheduleTimePoint.price>325.00</nc:PowerBidScheduleTimePoint.price>
-    <cim:IdentifiedObject.description>Power Bid Schedule Time Point 1 sample</cim:IdentifiedObject.description>
-  <cim:IdentifiedObject.mRID>250e37a5-50e0-44b7-9bd7-7284c04116db</cim:IdentifiedObject.mRID>
-  <cim:IdentifiedObject.name>PBS Timepoint 1</cim:IdentifiedObject.name>
 </nc:PowerBidScheduleTimePoint>
 <nc:ParticipationFactorTimePoint rdf:ID="_06dea5a7-512e-48da-a2fc-5e0ec83a5b8e">
     <nc:ParticipationFactorTimePoint.atTime>2024-02-22T17:30:00Z</nc:ParticipationFactorTimePoint.atTime>
