@@ -83,6 +83,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_70b696ac-c38f-4528-8d65-ba707c0b72e1">
     <cim:IdentifiedObject.mRID>37997e71-cb7d-4a8c-baa6-2a1594956da9</cim:IdentifiedObject.mRID>
@@ -92,6 +93,7 @@
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_ed7b43e8-a1d4-45d6-984b-b9d9cb4f07c7"/>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:RotatingMachineAction rdf:ID="_7be59519-0083-4845-a587-cb391ed16a1d">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_d874f8e3-7272-44b8-95ba-18f10449f036"/>
@@ -100,6 +102,7 @@
     <cim:IdentifiedObject.mRID>7be59519-0083-4845-a587-cb391ed16a1d</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Rotatig Mach 2</cim:IdentifiedObject.name>
     <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_550ebe0d-f2b2-48c1-991f-cebea43a21aa"/>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:RotatingMachineAction>
   <nc:RotatingMachineAction rdf:ID="_a38d4a85-e221-43ec-b7bb-122f7c95f06e">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_d874f8e3-7272-44b8-95ba-18f10449f036"/>
@@ -116,6 +119,7 @@
     <cim:IdentifiedObject.mRID>ddb3c55f-b2ec-414e-baa3-592829e2edb2</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Shunt action 1</cim:IdentifiedObject.name>
     <nc:ShuntCompensatorModification.ShuntCompensator rdf:resource="#_002b0a40-3957-46db-b84a-30420083558f"/>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:ShuntCompensatorModification>
   <nc:TapPositionAction rdf:ID="_bf7f0ef4-dad3-4322-b2be-5ace59837e60">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_5e5ff13e-2043-4468-9351-01920d3d9504"/>
@@ -280,8 +284,8 @@
   <nc:Gate rdf:ID="_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27">
     <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.or" />
     <cim:IdentifiedObject.mRID>b73c5258-2fb6-4e8a-8b0a-61d84a52ee27</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Check if one of the lines SLK–DUN (synthetic BO-Line_2), or SLK–ZRC (synthetic BO-Line_6), or MON–DUN tripped - contingency applied</cim:IdentifiedObject.name>
-  </nc:Gate>
+<cim:IdentifiedObject.name>check if one of the lines tripped - contingency applied</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Check if one of the lines SLK-DUN (BO-Line_2), or SLK-ZRC (BO-Line_6), or MON-DUN tripped - contingency applied</cim:IdentifiedObject.description>  </nc:Gate>
   <nc:PinContingency rdf:ID="_86b26849-bc10-462b-97ef-1d339cd6614e">
     <nc:GateInputPin.Gate rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
     <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
