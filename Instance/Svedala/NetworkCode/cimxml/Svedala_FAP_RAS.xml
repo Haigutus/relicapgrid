@@ -11,6 +11,9 @@
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:4ced79a6-1cda-476c-86ac-b8c0d6bf1c9f">
     <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
+    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
+    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
     <dcterms:conformsTo>https://ap.cim4.eu/RemedialActionSchedule/2.4</dcterms:conformsTo>
     <dcterms:description xml:lang="en">This is a synthetic Fast Activation Process (FAP) instantiation example included in Network Code part of ReliCap.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>

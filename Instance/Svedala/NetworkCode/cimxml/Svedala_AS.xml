@@ -11,6 +11,9 @@
     xmlns:dcterms="http://purl.org/dc/terms/" > 
   <dcat:Dataset rdf:about="urn:uuid:dc9fc9d1-bb73-4b36-a5a6-7fbb9ed5b354">
     <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
+    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
+    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
     <dcterms:conformsTo>https://ap.cim4.eu/AvailabilitySchedule/2.3</dcterms:conformsTo>
     <dcterms:description>This is the example for availability schedule dataset for Svedala part of ReliCapGrid</dcterms:description>
     <dcterms:identifier>dc9fc9d1-bb73-4b36-a5a6-7fbb9ed5b354</dcterms:identifier> 
