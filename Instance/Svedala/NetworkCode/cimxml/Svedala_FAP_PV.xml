@@ -32,6 +32,7 @@
   <dcterms:type rdf:resource="https://energy.referencedata.eu/type/Activity"/>
   	<prov:generatedAtTime>2025-02-14T11:00:00Z</prov:generatedAtTime>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/PV</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
 </dcat:Dataset>
 
 

@@ -31,6 +31,8 @@
     <dcat:version>3.0.0-beta-1</dcat:version>
     <!--The name of the action might need to be adjusted. For the moment it is called "IGM-FAP"-->
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/IGM-FAP</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2025-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
 
   <nc:GenericValueTimePoint rdf:ID="_34faa19b-f39d-495d-94c7-c8919ca1f6d5">

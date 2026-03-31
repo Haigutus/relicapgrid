@@ -28,6 +28,8 @@
     <dcterms:title>20220615_Belgovia_SHS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-SHS</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
    <nc:CurrentLimitSchedule rdf:ID="_a246aa9a-1e25-4693-a681-f4f771949d2f">
     <cim:IdentifiedObject.name>CLS1</cim:IdentifiedObject.name>

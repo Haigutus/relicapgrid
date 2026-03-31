@@ -28,6 +28,8 @@
     <dcterms:title>20220615_Svedala_CO_1.0.0</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-CO</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_78c34698-16b2-4863-affe-1b9c599de0d5">
     <cim:ContingencyElement.Contingency rdf:resource="#_e05bbe20-9d4a-40da-9777-8424d216785d"/>

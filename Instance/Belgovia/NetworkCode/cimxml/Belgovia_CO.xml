@@ -31,6 +31,8 @@
     <dcat:version>1.0.0</dcat:version>
     <adms:versionNotes>This is initial version</adms:versionNotes>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-CO</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2025-05-18T18:00:00Z</dcterms:issued>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae">
     <cim:ContingencyElement.Contingency rdf:resource="#_37997e71-cb7d-4a8c-baa6-2a1594956da9"/>

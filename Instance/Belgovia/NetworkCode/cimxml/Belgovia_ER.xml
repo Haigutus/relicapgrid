@@ -28,6 +28,8 @@
     <dcterms:title>20220615_Belgovia_ER_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-ER</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:BiddingZone rdf:ID="_91e89a38-ca68-44c1-8ed4-a7db8e435f4f">
     <nc:BiddingZone.isTradeEnabled>true</nc:BiddingZone.isTradeEnabled>
