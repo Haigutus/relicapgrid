@@ -28,6 +28,8 @@
     <dcterms:title>20250512_Belgovia_CO_2.0.0</dcterms:title>
     <dcat:version>2.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2025-05-17T18:00:00Z</dcterms:issued>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae">
     <cim:ContingencyElement.Contingency rdf:resource="#_37997e71-cb7d-4a8c-baa6-2a1594956da9"/>

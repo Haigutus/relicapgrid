@@ -27,6 +27,8 @@
 		<dcterms:title>20241025_Svedala_ER_1.0.0</dcterms:title> 
 		<dcat:keyword>ER</dcat:keyword>
 		<dcat:version>1</dcat:version>
+		<dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+		<dcterms:issued>2024-10-25T12:00:00Z</dcterms:issued>
 	</dcat:Dataset>
 
 	<nc:OrdinaryPowerTransferCorridor rdf:ID="_1ad441fe-e557-4e7b-8286-91bd8029c3ff">

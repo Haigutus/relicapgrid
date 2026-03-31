@@ -28,6 +28,8 @@
     <dcterms:title>20220615_Espheim_AE_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-AE</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:AssessedElement rdf:ID="_2cc84c47-b6b7-481c-aa0e-6c46589d458a">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_151d6acf-d4fd-4604-9603-f02348603277"/>

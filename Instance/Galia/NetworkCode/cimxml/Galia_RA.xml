@@ -28,6 +28,8 @@
     <dcterms:title>20220615_Galia_RA_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-RA</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:ContingencyWithRemedialAction rdf:ID="_e3512f27-7c5e-4121-adf8-e943872d8fa5">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_bd7bb012-f7b9-45e0-9e15-4e2aa3592829"/>

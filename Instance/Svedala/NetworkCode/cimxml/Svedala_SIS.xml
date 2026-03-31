@@ -30,6 +30,8 @@
     <dcterms:title>20220615_Svedala_SIS_1.0.0</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-SIS</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:GridStateAlterationSchedule rdf:ID="_a951d00f-5f48-4fb9-9194-7fd88193529e">
     <nc:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.none"/>

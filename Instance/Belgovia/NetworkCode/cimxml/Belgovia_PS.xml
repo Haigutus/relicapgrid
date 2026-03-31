@@ -28,6 +28,8 @@
     <dcterms:title>20220615_Belgovia_AE_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-PS</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
 
   <!-- 7.1.8.3.2 Defining a Power (Countertrade) Remedial Action by using Power Schedule  -->

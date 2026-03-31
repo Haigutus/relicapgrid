@@ -28,6 +28,8 @@
       <dcterms:title>20220615_Espheim_SIS_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-SIS</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
     
   <nc:GridStateAlterationSchedule rdf:ID="_f5205bd4-637a-4eb7-b0d8-e03638bc570b">

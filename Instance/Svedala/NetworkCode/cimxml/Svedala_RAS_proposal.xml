@@ -31,6 +31,8 @@
     <dcterms:title>20220615_Svedala_RAS_1.0.0</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Action/CGM-RAS</prov:wasGeneratedBy>
+    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+    <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
    <nc:RemedialActionSchedule rdf:ID="_51361821-0a40-4e5a-a49d-29c266ea2ecc">
     <cim:IdentifiedObject.mRID>51361821-0a40-4e5a-a49d-29c266ea2ecc</cim:IdentifiedObject.mRID>
