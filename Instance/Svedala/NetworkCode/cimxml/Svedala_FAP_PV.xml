@@ -18,10 +18,10 @@
   <dcat:startDate>2024-12-31T23:00:00Z</dcat:startDate>
   <dcat:version>3.0.0-beta-1</dcat:version>
   <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
+  <dcterms:conformsTo>https://ap.cim4.eu/Provenance/1.0</dcterms:conformsTo>
+  <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
   <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
   <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
-  <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-  <dcterms:conformsTo>https://ap.cim4.eu/Provenance/1.0</dcterms:conformsTo>
   <dcterms:description xml:lang="en">Provenance (PV) dataset for FAP [prototype under discussion].</dcterms:description>
   <dcterms:identifier>501e6690-60d1-4023-ab35-fe41b7310e03</dcterms:identifier>
   <dcterms:issued>2025-02-14T12:00:00Z</dcterms:issued>
