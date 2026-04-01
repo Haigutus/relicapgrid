@@ -34,6 +34,7 @@
     <nc:ContingencyWithRemedialAction.RemedialAction rdf:resource="#_f4d57bc2-1cef-46ab-ae13-3ad864813d9c"/>
     <nc:ContingencyWithRemedialAction.combinationConstraintKind rdf:resource="https://cim4.eu/ns/nc#ElementCombinationConstraintKind.included"/>
     <nc:ContingencyWithRemedialAction.mRID>e3512f27-7c5e-4121-adf8-e943872d8fa5</nc:ContingencyWithRemedialAction.mRID>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:ContingencyWithRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_f4d57bc2-1cef-46ab-ae13-3ad864813d9c">
     <cim:IdentifiedObject.description>Curative RA: LoadAction (15 percent load shed - Scaling factor to 0.7)</cim:IdentifiedObject.description>
@@ -43,6 +44,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:LoadAction rdf:ID="_7bbb3343-e48b-42dd-9ca5-6ff8945ca5b0">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_f4d57bc2-1cef-46ab-ae13-3ad864813d9c"/>
