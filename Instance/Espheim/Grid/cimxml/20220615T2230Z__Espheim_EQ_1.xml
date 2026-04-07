@@ -26731,7 +26731,7 @@
   </cim:Disconnector>
   <cim:EquivalentInjection rdf:ID="_adcbb277-4ef5-22b8-4957-2cc29d68dc6a">
     <cim:ConductingEquipment.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14"/>
-    <cim:Equipment.EquipmentContainer rdf:resource="#_c06d67a0-4984-4661-846c-f42a9b29c049"/>
+    <cim:Equipment.EquipmentContainer rdf:resource="#_ba130a7b-fb46-4c73-a6cf-ec41812a14c0"/>
     <cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
     <cim:IdentifiedObject.mRID>adcbb277-4ef5-22b8-4957-2cc29d68dc6a</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BoundaryInjectionEq</cim:IdentifiedObject.name>
