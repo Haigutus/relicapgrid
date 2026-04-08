@@ -108,10 +108,10 @@
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
     <cim:IdentifiedObject.mRID>ceafce7b-5485-4cb8-9e06-c85ba137ffa9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
-    <eu:IdentifiedObject.shortName />
+    <eu:IdentifiedObject.shortName>BP_PH-EH</eu:IdentifiedObject.shortName>
     <cim:IdentifiedObject.description>Portheim-Espheim Connectivity Node in the Boundary Substation</cim:IdentifiedObject.description>
   </cim:ConnectivityNode>
-    <eu:BoundaryPoint rdf:ID="_3f5af4d3-5943-dfd0-1c61-de4f3fd11070">
+  <eu:BoundaryPoint rdf:ID="_3f5af4d3-5943-dfd0-1c61-de4f3fd11070">
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
     <eu:BoundaryPoint.fromEndIsoCode />
     <eu:BoundaryPoint.fromEndName />
@@ -121,7 +121,8 @@
     <eu:BoundaryPoint.toEndNameTso />
     <cim:IdentifiedObject.mRID>3f5af4d3-5943-dfd0-1c61-de4f3fd11070</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
-    <eu:IdentifiedObject.shortName />
+    <eu:IdentifiedObject.shortName>BP_PH-EH</eu:IdentifiedObject.shortName>
+    <cim:IdentifiedObject.description>Boundary point 4 in a Substation between Portheim and Espheim (400kV).</cim:IdentifiedObject.description>
   </eu:BoundaryPoint>
   <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b9">
     <cim:IdentifiedObject.description>Portheim-Espheim Voltage Level 400kV in the Boundary Substation</cim:IdentifiedObject.description>
