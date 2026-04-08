@@ -35464,13 +35464,7 @@
     <cim:Terminal.ConductingEquipment rdf:resource="#_1ff2641c-c414-4d30-8050-f98efbf98de0"/>
     <cim:Terminal.ConnectivityNode rdf:resource="#_f8e25464-339d-4eaf-8fe1-a0e819761af6"/>
   </cim:Terminal>
-  <cim:Terminal rdf:ID="_5f5512ab-99af-c355-9703-454c8c77392c">
-    <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
-    <cim:IdentifiedObject.mRID>5f5512ab-99af-c355-9703-454c8c77392c</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Cub_2</cim:IdentifiedObject.name>
-    <cim:Terminal.ConductingEquipment rdf:resource="#_bb8787ff-96b9-4618-85d5-d1bcad51337f"/>
-    <cim:Terminal.ConnectivityNode rdf:resource="#_221d599c-4098-47fd-859d-c8be218abcb4"/>
-  </cim:Terminal>
+
   <cim:Terminal rdf:ID="_1d3a8f3c-2568-4381-9beb-ddbd4910a00d">
     <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     <cim:IdentifiedObject.mRID>1d3a8f3c-2568-4381-9beb-ddbd4910a00d</cim:IdentifiedObject.mRID>
@@ -53854,13 +53848,7 @@
     <cim:Terminal.ConductingEquipment rdf:resource="#_04854529-c766-11e1-8775-005056c00008"/>
     <cim:Terminal.ConnectivityNode rdf:resource="#_6b6aea3c-62d6-46a0-9a72-154f49fc21a5"/>
   </cim:Terminal>
-  <cim:Terminal rdf:ID="_147eb269-c3af-51ee-4aa2-771733789022">
-    <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-    <cim:IdentifiedObject.mRID>147eb269-c3af-51ee-4aa2-771733789022</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Cub_1</cim:IdentifiedObject.name>
-    <cim:Terminal.ConductingEquipment rdf:resource="#_2c9a0753-421a-489b-9761-9452f60b3157"/>
-    <cim:Terminal.ConnectivityNode rdf:resource="#_221d599c-4098-47fd-859d-c8be218abcb4"/>
-  </cim:Terminal>
+
   <cim:Terminal rdf:ID="_22b9a5af-147c-457b-8baa-c5368d0b405b">
     <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     <cim:IdentifiedObject.mRID>22b9a5af-147c-457b-8baa-c5368d0b405b</cim:IdentifiedObject.mRID>
@@ -55474,7 +55462,8 @@
     <cim:OperationalLimit.OperationalLimitType rdf:resource="#_faef57d9-24e7-2c9b-0b0f-e4c2e09e707d"/>
     <cim:VoltageLimit.normalValue>420</cim:VoltageLimit.normalValue>
   </cim:VoltageLimit>
-  <!-- Instances around EH_31 busbar-->
+  <!-- Instances around EH_31 busbar deleted -->
+  <!-- 
   <cim:BusbarSection rdf:ID="_050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a">
     <cim:Equipment.EquipmentContainer rdf:resource="#_4da02ca4-ccdb-0e71-a8ae-86d6343108b4"/>
     <cim:IdentifiedObject.mRID>050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a</cim:IdentifiedObject.mRID>
@@ -55485,24 +55474,40 @@
     <cim:IdentifiedObject.mRID>221d599c-4098-47fd-859d-c8be218abcb4</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
   </cim:ConnectivityNode>
-  <cim:OperationalLimitSet rdf:ID="_7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea">
-    <cim:IdentifiedObject.mRID>7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Voltage limits for EH_31</cim:IdentifiedObject.name>
-    <cim:OperationalLimitSet.Terminal rdf:resource="#_ee433f38-c62f-4cb1-c431-fcdffe4e0983"/>
-  </cim:OperationalLimitSet>
-  <cim:Terminal rdf:ID="_ee433f38-c62f-4cb1-c431-fcdffe4e0983">
-    <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-    <cim:IdentifiedObject.mRID>ee433f38-c62f-4cb1-c431-fcdffe4e0983</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
-    <cim:Terminal.ConductingEquipment rdf:resource="#_050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a"/>
-    <cim:Terminal.ConnectivityNode rdf:resource="#_221d599c-4098-47fd-859d-c8be218abcb4"/>
-  </cim:Terminal>
   <cim:VoltageLevel rdf:ID="_4da02ca4-ccdb-0e71-a8ae-86d6343108b4">
     <cim:IdentifiedObject.mRID>4da02ca4-ccdb-0e71-a8ae-86d6343108b4</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
     <cim:VoltageLevel.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14"/>
     <cim:VoltageLevel.Substation rdf:resource="#_f8025dcb-09a5-c5b6-58db-bc9ce65ebd3f"/>
   </cim:VoltageLevel>
+  -->
+  <!-- Instances around EH_31 busbar -->
+  <cim:Terminal rdf:ID="_ee433f38-c62f-4cb1-c431-fcdffe4e0983">
+    <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    <cim:IdentifiedObject.mRID>ee433f38-c62f-4cb1-c431-fcdffe4e0983</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
+    <cim:Terminal.ConductingEquipment rdf:resource="#_050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a"/>
+    <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
+  </cim:Terminal>
+  <cim:Terminal rdf:ID="_5f5512ab-99af-c355-9703-454c8c77392c">
+    <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    <cim:IdentifiedObject.mRID>5f5512ab-99af-c355-9703-454c8c77392c</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Cub_2</cim:IdentifiedObject.name>
+    <cim:Terminal.ConductingEquipment rdf:resource="#_bb8787ff-96b9-4618-85d5-d1bcad51337f"/>
+    <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
+  </cim:Terminal>
+  <cim:Terminal rdf:ID="_147eb269-c3af-51ee-4aa2-771733789022">
+    <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    <cim:IdentifiedObject.mRID>147eb269-c3af-51ee-4aa2-771733789022</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Cub_1</cim:IdentifiedObject.name>
+    <cim:Terminal.ConductingEquipment rdf:resource="#_2c9a0753-421a-489b-9761-9452f60b3157"/>
+    <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
+  </cim:Terminal>
+  <cim:OperationalLimitSet rdf:ID="_7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea">
+    <cim:IdentifiedObject.mRID>7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Voltage limits for EH_31</cim:IdentifiedObject.name>
+    <cim:OperationalLimitSet.Terminal rdf:resource="#_ee433f38-c62f-4cb1-c431-fcdffe4e0983"/>
+  </cim:OperationalLimitSet>
   <cim:VoltageLimit rdf:ID="_eea01e1b-1682-d8a8-372f-8eafb5f3af8d">
     <cim:IdentifiedObject.mRID>eea01e1b-1682-d8a8-372f-8eafb5f3af8d</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>high limit for EH_31</cim:IdentifiedObject.name>
