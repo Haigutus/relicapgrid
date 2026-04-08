@@ -109,6 +109,7 @@
     <cim:IdentifiedObject.mRID>ceafce7b-5485-4cb8-9e06-c85ba137ffa9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName />
+    <cim:IdentifiedObject.description>Portheim-Espheim Connectivity Node in the Boundary Substation</cim:IdentifiedObject.description>
   </cim:ConnectivityNode>
     <eu:BoundaryPoint rdf:ID="_3f5af4d3-5943-dfd0-1c61-de4f3fd11070">
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
@@ -122,18 +123,19 @@
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName />
   </eu:BoundaryPoint>
-    <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b9">
-    <cim:IdentifiedObject.description />
+  <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b9">
+    <cim:IdentifiedObject.description>Portheim-Espheim Voltage Level 400kV in the Boundary Substation</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>0c4f41f8-9797-44eb-bdbe-1a28efa083b9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Portheim-Espheim VL 400</cim:IdentifiedObject.name>
-    <eu:IdentifiedObject.shortName />
+    <cim:IdentifiedObject.name>Portheim-Espheim Voltage Level 400kV</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>PH-EH VL 400kV</eu:IdentifiedObject.shortName>
     <cim:VoltageLevel.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:VoltageLevel.Substation rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c2" />
   </cim:VoltageLevel>
   <cim:Substation rdf:ID="_42b7f03a-db7a-415a-9e15-25f634f5ea9c">
     <cim:IdentifiedObject.mRID>42b7f03a-db7a-415a-9e15-25f634f5ea9c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Substation Portheim-Espheim</cim:IdentifiedObject.name>
-    <eu:IdentifiedObject.shortName />
+    <eu:IdentifiedObject.shortName>Substation PH-EH</eu:IdentifiedObject.shortName>    
+    <cim:IdentifiedObject.description>AC Substation Boundary for Portheim-Espheim</cim:IdentifiedObject.description>
     <cim:Substation.Region rdf:resource="#_fbcc6679-6da5-4cfd-b50c-8ce23f450c78" />
   </cim:Substation>
 </rdf:RDF>
