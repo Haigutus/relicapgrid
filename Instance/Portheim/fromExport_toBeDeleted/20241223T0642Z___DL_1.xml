@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with PowerFactory 2026 (x64) (digcimdb.dll ServicePack 0) -->
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/CIM100#" xmlns:eu="http://iec.ch/TC57/CIM100-European#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <md:FullModel rdf:about="urn:uuid:fa967fb8-d64d-4679-90b2-57f88b0021a1">
+    <md:Model.DependentOn rdf:resource="urn:uuid:1520c218-37e3-4a12-ab80-d555475d5aff" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:c5b75ce3-d708-4718-8ae0-8dc357db2328" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:e1130e35-0d4b-4cf0-9869-447ec16c2040" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f" />
+    <md:Model.created>2026-04-07T12:58:24Z</md:Model.created>
+    <md:Model.description>This is a text model for boundary.</md:Model.description>
+    <md:Model.modelingAuthoritySet />
+    <md:Model.profile>http://iec.ch/TC57/ns/CIM/DiagramLayout-EU/3.0</md:Model.profile>
+    <md:Model.scenarioTime>2024-12-23T06:42:14Z</md:Model.scenarioTime>
+    <md:Model.version>1</md:Model.version>
+  </md:FullModel>
+</rdf:RDF>

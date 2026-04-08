@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with PowerFactory 2026 (x64) (digcimdb.dll ServicePack 0) -->
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/CIM100#" xmlns:eu="http://iec.ch/TC57/CIM100-European#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <md:FullModel rdf:about="urn:uuid:c5b75ce3-d708-4718-8ae0-8dc357db2328">
+    <md:Model.created>2026-04-07T12:58:24Z</md:Model.created>
+    <md:Model.description>This is a text model for boundary.</md:Model.description>
+    <md:Model.modelingAuthoritySet>http://entsoe.eu/boundary</md:Model.modelingAuthoritySet>
+    <md:Model.profile>http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/3.0</md:Model.profile>
+    <md:Model.scenarioTime>2024-12-23T06:42:14Z</md:Model.scenarioTime>
+    <md:Model.version>1</md:Model.version>
+  </md:FullModel>
+  <cim:ConnectivityNode rdf:ID="_0617adcd-1448-498b-b6cc-71a4df78cc51">
+    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:IdentifiedObject.mRID>0617adcd-1448-498b-b6cc-71a4df78cc51</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+  </cim:ConnectivityNode>
+  <cim:ConnectivityNode rdf:ID="_ceafce7b-5485-4cb8-9e06-c85ba137ffa9">
+    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:IdentifiedObject.mRID>ceafce7b-5485-4cb8-9e06-c85ba137ffa9</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+  </cim:ConnectivityNode>
+  <cim:SubGeographicalRegion rdf:ID="_f8b5f79d-5710-433c-974b-240d4e9d90b7">
+    <cim:IdentifiedObject.mRID>f8b5f79d-5710-433c-974b-240d4e9d90b7</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Realms</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+    <cim:SubGeographicalRegion.Region rdf:resource="#_ea9e5264-0ee2-4e66-95b4-187f55c7860f" />
+  </cim:SubGeographicalRegion>
+  <cim:GeographicalRegion rdf:ID="_ea9e5264-0ee2-4e66-95b4-187f55c7860f">
+    <cim:IdentifiedObject.mRID>ea9e5264-0ee2-4e66-95b4-187f55c7860f</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>NR</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+  </cim:GeographicalRegion>
+  <eu:BoundaryPoint rdf:ID="_23024d22-54e3-f4c0-40aa-367bbd3f76f8">
+    <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_0617adcd-1448-498b-b6cc-71a4df78cc51" />
+    <eu:BoundaryPoint.fromEndIsoCode />
+    <eu:BoundaryPoint.fromEndName />
+    <eu:BoundaryPoint.fromEndNameTso />
+    <eu:BoundaryPoint.toEndIsoCode />
+    <eu:BoundaryPoint.toEndName />
+    <eu:BoundaryPoint.toEndNameTso />
+    <cim:IdentifiedObject.mRID>23024d22-54e3-f4c0-40aa-367bbd3f76f8</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+  </eu:BoundaryPoint>
+  <eu:BoundaryPoint rdf:ID="_3f5af4d3-5943-dfd0-1c61-de4f3fd11070">
+    <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
+    <eu:BoundaryPoint.fromEndIsoCode />
+    <eu:BoundaryPoint.fromEndName />
+    <eu:BoundaryPoint.fromEndNameTso />
+    <eu:BoundaryPoint.toEndIsoCode />
+    <eu:BoundaryPoint.toEndName />
+    <eu:BoundaryPoint.toEndNameTso />
+    <cim:IdentifiedObject.mRID>3f5af4d3-5943-dfd0-1c61-de4f3fd11070</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+  </eu:BoundaryPoint>
+  <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b9">
+    <cim:IdentifiedObject.description />
+    <cim:IdentifiedObject.mRID>0c4f41f8-9797-44eb-bdbe-1a28efa083b9</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Portheim-Espheim VL 400</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+    <cim:VoltageLevel.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:VoltageLevel.Substation rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c2" />
+  </cim:VoltageLevel>
+  <cim:Substation rdf:ID="_42b7f03a-db7a-415a-9e15-25f634f5ea9c">
+    <cim:IdentifiedObject.mRID>42b7f03a-db7a-415a-9e15-25f634f5ea9c</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Substation Portheim-Espheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+    <cim:Substation.Region rdf:resource="#_f8b5f79d-5710-433c-974b-240d4e9d90b7" />
+  </cim:Substation>
+  <cim:BaseVoltage rdf:ID="_f6df8f62-0219-ac98-f9c4-92f09309586f">
+    <cim:BaseVoltage.nominalVoltage>400</cim:BaseVoltage.nominalVoltage>
+    <cim:IdentifiedObject.description>BaseVoltage 400.00 kV</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>f6df8f62-0219-ac98-f9c4-92f09309586f</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>400.00 kV</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>400.00 kV</eu:IdentifiedObject.shortName>
+  </cim:BaseVoltage>
+</rdf:RDF>
