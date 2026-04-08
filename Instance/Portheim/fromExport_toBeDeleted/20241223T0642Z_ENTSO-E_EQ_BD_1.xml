@@ -10,7 +10,7 @@
     <md:Model.version>1</md:Model.version>
   </md:FullModel>
   <cim:ConnectivityNode rdf:ID="_0617adcd-1448-498b-b6cc-71a4df78cc51">
-    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:IdentifiedObject.mRID>0617adcd-1448-498b-b6cc-71a4df78cc51</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName />

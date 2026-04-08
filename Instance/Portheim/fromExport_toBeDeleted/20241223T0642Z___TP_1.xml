@@ -672,7 +672,7 @@
     <cim:IdentifiedObject.mRID>969b5d09-89e5-f7b8-e0c8-b110e1ad1697</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
     <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
-    <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_4a7ea0f4-fbc5-7dd4-7eb2-0e779b972b28">
     <cim:IdentifiedObject.mRID>4a7ea0f4-fbc5-7dd4-7eb2-0e779b972b28</cim:IdentifiedObject.mRID>
@@ -708,7 +708,7 @@
     <cim:IdentifiedObject.mRID>41eb633f-b5c4-1471-78fd-005ebb9653c0</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
     <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
-    <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_c329207e-9cfb-cac9-db88-9e804fa32962">
     <cim:IdentifiedObject.mRID>c329207e-9cfb-cac9-db88-9e804fa32962</cim:IdentifiedObject.mRID>

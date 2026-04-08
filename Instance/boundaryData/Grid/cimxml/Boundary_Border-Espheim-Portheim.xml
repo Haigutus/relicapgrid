@@ -105,7 +105,7 @@
   </cim:Line>
   <!-- AC Substation Boundary -->
   <cim:ConnectivityNode rdf:ID="_ceafce7b-5485-4cb8-9e06-c85ba137ffa9">
-    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:IdentifiedObject.mRID>ceafce7b-5485-4cb8-9e06-c85ba137ffa9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>BP_PH-EH</eu:IdentifiedObject.shortName>

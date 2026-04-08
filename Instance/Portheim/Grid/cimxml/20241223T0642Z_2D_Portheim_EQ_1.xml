@@ -1716,14 +1716,14 @@
   </cim:VoltageLevel>
   <cim:EquivalentInjection rdf:ID="_d246bed9-b8a5-1338-58d9-ff6f9790777c">
     <cim:ConductingEquipment.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
-    <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
     <cim:IdentifiedObject.mRID>d246bed9-b8a5-1338-58d9-ff6f9790777c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BoundaryInjectionEq</cim:IdentifiedObject.name>
   </cim:EquivalentInjection>
   <cim:EquivalentInjection rdf:ID="_7df8b72b-0734-4d6c-9366-313819b808d1">
     <cim:ConductingEquipment.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
-    <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
+    <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
     <cim:IdentifiedObject.mRID>7df8b72b-0734-4d6c-9366-313819b808d1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>EI Portheim-Espheim (Portheim side)</cim:IdentifiedObject.name>
