@@ -565,10 +565,10 @@
     <cim:VoltageLevel.BaseVoltage rdf:resource="#_c33fa347-75df-2fc2-4ae5-0d1456576b35" />
     <cim:VoltageLevel.Substation rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c1" />
   </cim:VoltageLevel>
-  <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b91">
-    <cim:IdentifiedObject.mRID>0c4f41f8-9797-44eb-bdbe-1a28efa083b91</cim:IdentifiedObject.mRID>
+  <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b9">
+    <cim:IdentifiedObject.mRID>0c4f41f8-9797-44eb-bdbe-1a28efa083b9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Portheim-Espheim VL 400</cim:IdentifiedObject.name>
-    <cim:VoltageLevel.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:VoltageLevel.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:VoltageLevel.Substation rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c1" />
   </cim:VoltageLevel>
   <cim:ConformLoadGroup rdf:ID="_99eb7434-e261-bffa-d936-7bb64e0817d1">
@@ -599,8 +599,8 @@
     <cim:IdentifiedObject.mRID>fb847d00-7b51-9705-74f2-15261d45b37f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>G1</cim:IdentifiedObject.name>
   </cim:GeneratingUnit>
-  <cim:Substation rdf:ID="_42b7f03a-db7a-415a-9e15-25f634f5ea9c1">
-    <cim:IdentifiedObject.mRID>42b7f03a-db7a-415a-9e15-25f634f5ea9c1</cim:IdentifiedObject.mRID>
+  <cim:Substation rdf:ID="_42b7f03a-db7a-415a-9e15-25f634f5ea9c">
+    <cim:IdentifiedObject.mRID>42b7f03a-db7a-415a-9e15-25f634f5ea9c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Substation Portheim-Espheim</cim:IdentifiedObject.name>
     <cim:Substation.Region rdf:resource="#_b36a3f1b-9a5f-4823-bd2a-5a0e9196a816" />
   </cim:Substation>
@@ -641,7 +641,7 @@
     <cim:PowerTransformerEnd.ratedS>255</cim:PowerTransformerEnd.ratedS>
     <cim:PowerTransformerEnd.ratedU>400</cim:PowerTransformerEnd.ratedU>
     <cim:PowerTransformerEnd.x>100.389</cim:PowerTransformerEnd.x>
-    <cim:TransformerEnd.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TransformerEnd.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TransformerEnd.Terminal rdf:resource="#_7bc6afd6-353f-fb08-897a-fe53ae28aef8" />
     <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
   </cim:PowerTransformerEnd>
@@ -661,7 +661,7 @@
     <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
   </cim:PowerTransformerEnd>
   <cim:EquivalentInjection rdf:ID="_5c3c6f3f-dd78-4282-a50f-b8a0842b21f3">
-    <cim:ConductingEquipment.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:ConductingEquipment.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
     <cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
     <cim:IdentifiedObject.mRID>5c3c6f3f-dd78-4282-a50f-b8a0842b21f3</cim:IdentifiedObject.mRID>

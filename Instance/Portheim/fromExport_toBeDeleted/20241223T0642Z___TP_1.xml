@@ -659,19 +659,19 @@
   <cim:TopologicalNode rdf:ID="_7512e66f-8552-986d-1273-4519711b9728">
     <cim:IdentifiedObject.mRID>7512e66f-8552-986d-1273-4519711b9728</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>R4</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_7332b792-5f2c-4194-9cd3-680bb3eaaadd" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_c4e69774-d342-6869-56b1-1e1dd472e3c1">
     <cim:IdentifiedObject.mRID>c4e69774-d342-6869-56b1-1e1dd472e3c1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>T.R3.2</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_6a1ca3a7-1418-41a1-91db-1f7e5f0bb5c6" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_969b5d09-89e5-f7b8-e0c8-b110e1ad1697">
     <cim:IdentifiedObject.mRID>969b5d09-89e5-f7b8-e0c8-b110e1ad1697</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_4a7ea0f4-fbc5-7dd4-7eb2-0e779b972b28">
@@ -683,7 +683,7 @@
   <cim:TopologicalNode rdf:ID="_4250fc93-a0a8-9d9b-108e-3c7ae0bb5d10">
     <cim:IdentifiedObject.mRID>4250fc93-a0a8-9d9b-108e-3c7ae0bb5d10</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>TB</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_1c5b0552-ee6a-b3ab-3edf-a1ca250fe0c3">
@@ -695,25 +695,25 @@
   <cim:TopologicalNode rdf:ID="_4373cc8f-1f0e-c44a-85e1-9a4a6f621e16">
     <cim:IdentifiedObject.mRID>4373cc8f-1f0e-c44a-85e1-9a4a6f621e16</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>T.R1.1</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_b1717c1a-cba4-42a8-ba5d-f9b5f3a84358" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_2cb6bcf0-3706-d890-3414-efd153324779">
     <cim:IdentifiedObject.mRID>2cb6bcf0-3706-d890-3414-efd153324779</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>T.R2.2</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_7e223bc6-8f9f-4462-9ca1-6c2e4dad4d16" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_41eb633f-b5c4-1471-78fd-005ebb9653c0">
     <cim:IdentifiedObject.mRID>41eb633f-b5c4-1471-78fd-005ebb9653c0</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b92" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_c329207e-9cfb-cac9-db88-9e804fa32962">
     <cim:IdentifiedObject.mRID>c329207e-9cfb-cac9-db88-9e804fa32962</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>L4</cim:IdentifiedObject.name>
-    <cim:TopologicalNode.BaseVoltage rdf:resource="#_f6df8f62-0219-ac98-f9c4-92f09309586f" />
+    <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_1b7fa571-bb76-4daf-aa93-e75b3a46f6e1" />
   </cim:TopologicalNode>
 </rdf:RDF>
