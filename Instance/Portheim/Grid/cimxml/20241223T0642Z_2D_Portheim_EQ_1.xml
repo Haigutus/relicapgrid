@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with PowerFactory 2026 (x64) (digcimdb.dll ServicePack 0) -->
 <rdf:RDF xmlns:cim="http://iec.ch/TC57/CIM100#" xmlns:eu="http://iec.ch/TC57/CIM100-European#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <md:FullModel rdf:about="urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f">
     <md:Model.DependentOn rdf:resource="urn:uuid:c5b75ce3-d708-4718-8ae0-8dc357db2328" />
@@ -1815,4 +1814,14 @@
     <cim:SynchronousMachine.qPercent>100</cim:SynchronousMachine.qPercent>
     <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/CIM100#SynchronousMachineKind.generatorOrCondenser" />
   </cim:SynchronousMachine>
+  <cim:ControlArea rdf:ID="_ffc5fd1d-282e-4908-b853-738789df9015">
+    <cim:ControlArea.EnergyArea rdf:resource="#_e6b7b719-d56b-4cf9-a60e-0248f1e9ff15"/>
+    <cim:ControlArea.type rdf:resource="http://iec.ch/TC57/CIM100#ControlAreaTypeKind.Interchange"/>
+    <cim:IdentifiedObject.mRID>ffc5fd1d-282e-4908-b853-738789df9015</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Control AreaPortheim</cim:IdentifiedObject.name>
+  </cim:ControlArea>
+  <cim:LoadArea rdf:ID="_e6b7b719-d56b-4cf9-a60e-0248f1e9ff15">
+    <cim:IdentifiedObject.mRID>e6b7b719-d56b-4cf9-a60e-0248f1e9ff15</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Load Area Portheim</cim:IdentifiedObject.name>
+  </cim:LoadArea>
 </rdf:RDF>

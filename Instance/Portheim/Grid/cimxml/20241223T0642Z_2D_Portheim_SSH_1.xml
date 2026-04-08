@@ -744,4 +744,7 @@
     <cim:Equipment.inService>true</cim:Equipment.inService>
     <cim:GeneratingUnit.normalPF>0</cim:GeneratingUnit.normalPF>
   </cim:GeneratingUnit>
+  <cim:ControlArea rdf:about="#_ffc5fd1d-282e-4908-b853-738789df9015">
+    <cim:ControlArea.netInterchange>0</cim:ControlArea.netInterchange>
+  </cim:ControlArea>
 </rdf:RDF>
