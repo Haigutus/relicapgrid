@@ -1,223 +1,187 @@
 PREFIX adms:    <http://www.w3.org/ns/adms#>
 PREFIX cim:     <https://cim.ucaiug.io/ns#>
+PREFIX datacim: <https://cim4.eu/ns/datacim#>
 PREFIX dcat:    <http://www.w3.org/ns/dcat#>
-PREFIX dcatcim: <https://cim4.eu/ns/dcatcim#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX eu:      <https://cim.ucaiug.io/ns/eu#>
 PREFIX nc:      <https://cim4.eu/ns/nc#>
 PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-<urn:uuid:c4f2422b-03a4-4298-aa16-40921c4ca16f>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 OP"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_OP.xml>;
-        dcat:isDistributionOf  <urn:uuid:67e97bb0-ec38-481d-9e56-3e9d45e95a33>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/OP> .
-
-<urn:uuid:67e97bb0-ec38-481d-9e56-3e9d45e95a33>
+<urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d>
         rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/Operation-EU/3.0>;
-        dcterms:description   "Equipment Operation (OP) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "67e97bb0-ec38-481d-9e56-3e9d45e95a33";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c> , <urn:uuid:d9a01a85-0ad8-4958-be03-d89ad78ca497>;
+        dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
+        dcterms:conformsTo    "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/Contingency/2.3" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#";
+        dcterms:description   "This is the contingency dataset for Galia part of ReliCapGrid."@en;
+        dcterms:identifier    "897e711a-7da8-4cfa-a66e-15d4d5ada97d";
+        dcterms:issued        "2022-06-15T22:30:00Z";
+        dcterms:license       "https://creativecommons.org/licenses/by/4.0/";
+        dcterms:publisher     "https://energy.referencedata.eu/test/party/Galia";
+        dcterms:requires      <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
         dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_OP_v3-0-0-beta-1";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+        dcterms:title         "20220615_Galia_CO_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:distribution     <urn:uuid:c4f2422b-03a4-4298-aa16-40921c4ca16f>;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_SV>;
-        dcat:keyword          "OP" , "Operation";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
+        dcat:distribution     <urn:uuid:31476db1-d454-4682-8ff9-c9063dbefac2>;
+        dcat:endDate          "2023-06-15T22:30:00Z";
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-CO>;
+        dcat:keyword          "CO";
+        dcat:startDate        "2022-06-15T22:30:00Z";
+        dcat:version          "1.0.0" .
 
-<urn:uuid:4841109b-52ca-4457-9beb-8db6890082d6>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 SV"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_SV.xml>;
-        dcat:isDistributionOf  <urn:uuid:5b6a8b13-4c20-4147-8ed6-7249e303e647>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/SV> .
+<urn:uuid:9c8d9ca7-4dc9-4012-ae83-1b82ed93d7bc>
+        rdf:type              dcat:Distribution;
+        dcterms:conformsTo    "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/RemedialAction/2.4" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#";
+        dcterms:description   "This is the remedial action dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL        <file://cimxml/Galia_RA.xml>;
+        dcat:distributionOf   <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
+        dcat:mediaType        <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime  "2022-06-10T07:06:25Z";
+        prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RA" .
 
-<urn:uuid:5b6a8b13-4c20-4147-8ed6-7249e303e647>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description   "State Variable (SV) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "5b6a8b13-4c20-4147-8ed6-7249e303e647";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_SV_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_SV>;
-        dcat:keyword          "SV" , "StateVariablet";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:e6539353-17f9-4d94-be60-eabed8b6e99f>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 TP"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_TP.xml>;
-        dcat:isDistributionOf  <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/TP> .
-
-<urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description   "Topological (TP) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "7b3f94c0-bd9b-e74e-866b-f473153c3e70";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_TP_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_DL>;
-        dcat:keyword          "DL" , "DiagramLayout";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:2e11908e-5e1f-8542-854c-54da76d379d1>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/DiagramLayout-EU/3.0>;
-        dcterms:description   "Diagram Layout (DL) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "2e11908e-5e1f-8542-854c-54da76d379d1";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c> , <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_DL_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_DL>;
-        dcat:keyword          "DL" , "DiagramLayout";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:8b095732-1506-40bd-aeb8-a42d311edd5a>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 DL"@en , "CIMXML serialization of the Nordic44 GL"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_DL.xml> , <file://cimxml/Nordic44-HV_GL.xml>;
-        dcat:isDistributionOf  <urn:uuid:2e11908e-5e1f-8542-854c-54da76d379d1> , <urn:uuid:167b4832-27c5-ff4f-bd26-6ce3bff1bdb7>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/DL> , <https://energy.referencedata.eu/Test/Action/GL> .
-
-<urn:uuid:167b4832-27c5-ff4f-bd26-6ce3bff1bdb7>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/GeographicalLocation-EU/3.0>;
-        dcterms:description   "Geographical Location (GL) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "167b4832-27c5-ff4f-bd26-6ce3bff1bdb7";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_GL_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_GL>;
-        dcat:keyword          "GL" , "GeographicalLocation";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:38884d50-30ff-41d3-99bb-c794cbdf57cb>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 SSH"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_SSH.xml>;
-        dcat:isDistributionOf  <urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/SSH> .
-
-<urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
-        dcterms:description   "Steady-State Hypothesis (SSH) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "1d08772d-c1d0-4c47-810d-b14908cd94f5";
-        dcterms:issued        "2025-02-14T12:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_SSH_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_SSH>;
-        dcat:keyword          "SSH" , "SteadyStateHypothesis";
-        dcat:startDate        "2014-12-31T23:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:5e109739-0140-449f-a7ae-f531f882f7d0>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 EQ"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_EQ.xml>;
-        dcat:isDistributionOf  <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/EQ> .
-
-<urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
-        dcterms:description   "Equipment part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "6ffcaafd-b3b7-4a7f-8d86-7d5870e17629";
-        dcterms:issued        "2025-02-14T12:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_EQ_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_EQ>;
-        dcat:keyword          "EQ" , "Equipment";
-        dcat:startDate        "2014-12-31T23:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:dd979b66-7e29-4124-ba65-52d18b86330b>
+<urn:uuid:de31b9ed-3373-469c-a7cc-fda1c0e7d5fe>
         rdf:type              dcat:Catalog;
-        dcterms:description   "Grid part of Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "3d40111f-fc40-439e-a9f3-1670715392ca";
-        dcterms:issued        "2025-02-14T12:00:00Z";
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
+        dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/Contingency/2.3" , "https://ap.cim4.eu/EquipmentReliability/2.4" , "http://iec.ch/TC57/CIM100#" , "https://ap.cim4.eu/RemedialActionSchedule/2.4" , "https://ap.cim4.eu/RemedialAction/2.4" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://ap.cim4.eu/AssessedElement/2.4";
+        dcterms:description   ""@en;
+        dcterms:identifier    "de31b9ed-3373-469c-a7cc-fda1c0e7d5fe";
+        dcterms:issued        "2022-06-15T22:30:00Z";
+        dcterms:license       "https://creativecommons.org/licenses/by/4.0/";
+        dcterms:publisher     "https://energy.referencedata.eu/test/party/JOTUNHEIM" , "https://energy.referencedata.eu/test/party/Galia";
         dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
         dcterms:title         "Manifest";
-        adms:versionNotes     "Initial version"@en;
-        dcat:dataset          <urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5> , <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c> , <urn:uuid:167b4832-27c5-ff4f-bd26-6ce3bff1bdb7> , <urn:uuid:2e11908e-5e1f-8542-854c-54da76d379d1> , <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70> , <urn:uuid:5b6a8b13-4c20-4147-8ed6-7249e303e647>;
-        dcat:version          "3.0.0-beta.1" .
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87> , <urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd> , <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d> , <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f> , <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
+        dcat:version          "1.0.0" .
+
+<urn:uuid:6384a404-9aab-485d-b645-17702b071bcb>
+        rdf:type              dcat:Distribution;
+        dcterms:conformsTo    "https://ap.cim4.eu/AssessedElement/2.4" , "http://iec.ch/TC57/CIM100#" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+        dcterms:description   "This is the assessed element dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL        <file://cimxml/Galia_AE.xml>;
+        dcat:distributionOf   <urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87>;
+        dcat:mediaType        <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime  "2022-06-10T07:06:25Z";
+        prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-AE" .
+
+<urn:uuid:ebc62b53-934b-4631-9c54-e98e44da4859>
+        rdf:type              dcat:Distribution;
+        dcterms:conformsTo    "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/CIM100#" , "https://ap.cim4.eu/EquipmentReliability/2.4";
+        dcterms:description   "This is the equipment reliability dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL        <file://cimxml/Galia_ER.xml>;
+        dcat:distributionOf   <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
+        dcat:mediaType        <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime  "2022-06-10T07:06:25Z";
+        prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-ER" .
+
+<urn:uuid:31476db1-d454-4682-8ff9-c9063dbefac2>
+        rdf:type              dcat:Distribution;
+        dcterms:conformsTo    "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/CIM100#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://ap.cim4.eu/Contingency/2.3";
+        dcterms:description   "This is the contingency dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL        <file://cimxml/Galia_CO.xml>;
+        dcat:distributionOf   <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d>;
+        dcat:mediaType        <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime  "2022-06-10T07:06:25Z";
+        prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-CO" .
+
+<urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
+        dcterms:conformsTo    "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://ap.cim4.eu/EquipmentReliability/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/CIM100#";
+        dcterms:description   "This is the equipment reliability dataset for Galia part of ReliCapGrid."@en;
+        dcterms:identifier    "a2c02149-a114-4b5e-9de5-74dcccd9793a";
+        dcterms:issued        "2022-06-15T22:30:00Z";
+        dcterms:license       "https://creativecommons.org/licenses/by/4.0/";
+        dcterms:publisher     "https://energy.referencedata.eu/test/party/Galia";
+        dcterms:requires      <urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+        dcterms:title         "20220615_Galia_ER_1.0.0";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:ebc62b53-934b-4631-9c54-e98e44da4859>;
+        dcat:endDate          "2023-06-15T22:30:00Z";
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-ER>;
+        dcat:keyword          "ER";
+        dcat:startDate        "2022-06-15T22:30:00Z";
+        dcat:version          "1.0.0" .
+
+<urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
+        dcterms:conformsTo    "https://ap.cim4.eu/RemedialAction/2.4" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#" , "https://cim4.eu/ns/nc/2.4#";
+        dcterms:description   "This is the remedial action dataset for Galia part of ReliCapGrid."@en;
+        dcterms:identifier    "2ea55b46-ad48-4408-be72-734b475ba18f";
+        dcterms:issued        "2022-06-15T22:30:00Z";
+        dcterms:license       "https://creativecommons.org/licenses/by/4.0/";
+        dcterms:publisher     "https://energy.referencedata.eu/test/party/Galia";
+        dcterms:requires      <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+        dcterms:title         "20220615_Galia_RA_1.0.0";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:9c8d9ca7-4dc9-4012-ae83-1b82ed93d7bc>;
+        dcat:endDate          "2023-06-15T22:30:00Z";
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-RA>;
+        dcat:keyword          "RA";
+        dcat:startDate        "2022-06-15T22:30:00Z";
+        dcat:version          "1.0.0" .
+
+<urn:uuid:07456799-6652-46d7-8816-8e2eb835a16b>
+        rdf:type              dcat:Distribution;
+        dcterms:conformsTo    "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/RemedialActionSchedule/2.4" , "http://iec.ch/TC57/CIM100#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+        dcterms:description   "This is the remedial action schedule dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL        <file://cimxml/Galia_RAS.xml>;
+        dcat:distributionOf   <urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd>;
+        dcat:mediaType        <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime  "2022-06-10T07:06:25Z";
+        prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RAS" .
+
+<urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#" , "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/RemedialActionSchedule/2.4";
+        dcterms:description   "This is the remedial action schedule dataset for Galia part of ReliCapGrid."@en;
+        dcterms:identifier    "dc15a1c0-75ee-49f1-90ac-ccd579376bcd";
+        dcterms:issued        "2022-06-15T22:30:00Z";
+        dcterms:license       "https://creativecommons.org/licenses/by/4.0/";
+        dcterms:publisher     "https://energy.referencedata.eu/test/party/JOTUNHEIM";
+        dcterms:requires      <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+        dcterms:title         "20220615_Galia_RAS_1.0.0";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:07456799-6652-46d7-8816-8e2eb835a16b>;
+        dcat:endDate          "2023-06-15T22:30:00Z";
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-RAS>;
+        dcat:keyword          "RAS";
+        dcat:startDate        "2022-06-15T22:30:00Z";
+        dcat:version          "1.0.0" .
+
+<urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
+        dcterms:conformsTo    "https://ap.cim4.eu/AssessedElement/2.4" , "http://iec.ch/TC57/CIM100#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://cim4.eu/ns/nc/2.4#";
+        dcterms:description   "This is the assessed element dataset for Galia part of ReliCapGrid."@en;
+        dcterms:identifier    "447dc560-28a7-41ff-b1ce-15dd3f0d5e87";
+        dcterms:issued        "2022-06-15T22:30:00Z";
+        dcterms:license       "https://creativecommons.org/licenses/by/4.0/";
+        dcterms:publisher     "https://energy.referencedata.eu/test/party/Galia";
+        dcterms:requires      <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+        dcterms:title         "20220615_Galia_AE_1.0.0";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:6384a404-9aab-485d-b645-17702b071bcb>;
+        dcat:endDate          "2023-06-15T22:30:00Z";
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-AE>;
+        dcat:keyword          "AE";
+        dcat:startDate        "2022-06-15T22:30:00Z";
+        dcat:version          "1.0.0" .
