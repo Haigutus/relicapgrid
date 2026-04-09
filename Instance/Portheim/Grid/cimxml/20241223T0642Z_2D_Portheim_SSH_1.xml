@@ -709,11 +709,6 @@
     <cim:EnergyConsumer.q>10</cim:EnergyConsumer.q>
     <cim:Equipment.inService>true</cim:Equipment.inService>
   </cim:ConformLoad>
-  <cim:EquivalentInjection rdf:about="#_d246bed9-b8a5-1338-58d9-ff6f9790777c">
-    <cim:Equipment.inService>false</cim:Equipment.inService>
-    <cim:EquivalentInjection.p>0</cim:EquivalentInjection.p>
-    <cim:EquivalentInjection.q>0</cim:EquivalentInjection.q>
-  </cim:EquivalentInjection>
   <cim:EquivalentInjection rdf:about="#_7df8b72b-0734-4d6c-9366-313819b808d1">
     <cim:Equipment.inService>true</cim:Equipment.inService>
     <cim:EquivalentInjection.p>-9.99999</cim:EquivalentInjection.p>
