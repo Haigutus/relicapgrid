@@ -184,6 +184,7 @@
     <cim:IdentifiedObject.name>CCR-NineRealms</cim:IdentifiedObject.name>
   </nc:CapacityCalculationRegion>
   <cim:ControlArea rdf:about="#_ffc5fd1d-282e-4908-b853-738789df9015">
+      <cim:IdentifiedObject.mRID>ffc5fd1d-282e-4908-b853-738789df9015</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_0410eff4-6268-4b83-860e-0f9f425f6c6c"/>
   </cim:ControlArea>
   <cim:ControlArea rdf:about="#_1f9ecd81-e069-4040-bd64-f34b0fac3a60">
