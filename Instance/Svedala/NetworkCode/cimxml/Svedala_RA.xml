@@ -559,7 +559,7 @@
 <!-- SIPS1 Stage1 which should be activated when line CL6 is overload above TATL after first LF&CA -->
   <nc:Stage rdf:ID="_2f60b546-dfcf-4e0c-b0d6-40264de45cbd">
     <cim:IdentifiedObject.mRID>2f60b546-dfcf-4e0c-b0d6-40264de45cbd</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1. SIPS1 Stage1 which should be activated when line CL6 is overload above TATL after first LF and CA. The priority is set to 1 because it should be executed after first LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_332b7627-e0ad-4bd5-a678-aebb305727a6" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>1</nc:Stage.priority> <!-- because it should be executed after first LF&CA -->
@@ -586,7 +586,7 @@
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
     <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL. The same gate as for RemedialActionSchem arming and Stage 1 is used because multiple GateTriggers and RemedialActionSchemes can refer to one Gate</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_2f60b546-dfcf-4e0c-b0d6-40264de45cbd" />
     <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
@@ -595,7 +595,7 @@
 <!-- SIPS1 Stage2a which should be activated when line CL6 is still overload above TATL after second LF&CA -->
   <nc:Stage rdf:ID="_7d2d969e-6b11-45c5-ba66-9637072b3be5">
     <cim:IdentifiedObject.mRID>7d2d969e-6b11-45c5-ba66-9637072b3be5</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2a. SIPS1 Stage2a which should be activated when line CL6 is still overload above TATL after second LF and CA. The priority is set to 2 because it should be executed after second LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2a</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -622,7 +622,7 @@
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
     <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL. The same gate as for RemedialActionScheme arming and Stage 1 is used because multiple GateTriggers and RemedialActionSchemes can refer to one Gate</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_7d2d969e-6b11-45c5-ba66-9637072b3be5" />
     <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
@@ -631,7 +631,7 @@
 <!-- SIPS1 Stage2b which should be activated when line CL6 is still overload above PATL but below TATL after second LF&CA -->
   <nc:Stage rdf:ID="_bfa56840-37ff-44e3-9d2d-df5efc3a1b81">
     <cim:IdentifiedObject.mRID>bfa56840-37ff-44e3-9d2d-df5efc3a1b81</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2b. SIPS1 Stage2b which should be activated when line CL6 is still overload above PATL but below TATL after second LF and CA. The priority is set to 2 because it should be executed after second LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2b</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_b7a0d8df-2809-4bd3-952c-474ba032aa46" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -692,7 +692,7 @@
 <!-- SIPS1 Stage3 which should be activated when line CL6 is still overload after third LF&CA -->
   <nc:Stage rdf:ID="_950f792b-d761-48f6-8f82-cf40b889a26c">
     <cim:IdentifiedObject.mRID>950f792b-d761-48f6-8f82-cf40b889a26c</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage3. SIPS1 Stage3 which should be activated when line CL6 is still overload after third LF and CA. The same GridStateAlterationCollection as for Stage 2a is used because multiple Stages can refer to one GridStateAlterationCollection. The priority is set to 3 because it should be executed after third LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage3</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25"/> <!-- I used the same GridStateAlterationCollection as for Stage 2a because multiple Stages can refer to one GridStateAlterationCollection  -->
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>3</nc:Stage.priority> <!-- because it should be executed after third LF&CA -->
@@ -758,7 +758,7 @@
 <!-- SIPS2 Stage1 which should be activated when line CL6 is overload above PATL but below TATL after first LF&CA -->
   <nc:Stage rdf:ID="_f8722dc4-0b1c-4b36-be29-fe3aa5460549">
     <cim:IdentifiedObject.mRID>f8722dc4-0b1c-4b36-be29-fe3aa5460549</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1. SIPS2 Stage1 which should be activated when line CL6 is overload above PATL but below TATL after first LF and CA. The priority is set to 1 because it should be executed after second LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_02a420c3-dcc2-413e-9f7d-a4997c42e155" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
     <nc:Stage.priority>1</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -794,7 +794,7 @@
 <!-- SIPS2 Stage2 which should be activated when line CL6 is still overload above PATL after second LF&CA -->
   <nc:Stage rdf:ID="_2efd4f05-da11-4060-8fa4-44b84388d723">
     <cim:IdentifiedObject.mRID>2efd4f05-da11-4060-8fa4-44b84388d723</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2. SIPS2 Stage2 which should be activated when line CL6 is still overload above PATL after second LF and CA. The priority is set to 2 because it should be executed after second LF and CA </cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_12097f09-e5cc-4fdc-98eb-0675d0f2af11" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
     <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -845,7 +845,7 @@
 <!-- SIPS2 Stage3 which should be activated when line CL6 is still overload above PATL after third LF&CA -->
   <nc:Stage rdf:ID="_cd59bf8e-890c-40e3-a699-041f3111cd99">
     <cim:IdentifiedObject.mRID>cd59bf8e-890c-40e3-a699-041f3111cd99</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2. SIPS2 Stage3 which should be activated when line CL6 is still overload above PATL after third LF and CA. The priority is set to 3 because it should be executed after third LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_ea6979c2-2ad4-484a-9f41-bec157a0eedd" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
     <nc:Stage.priority>3</nc:Stage.priority> <!-- because it should be executed after third LF&CA -->
@@ -872,7 +872,7 @@
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_e5d8b062-b39b-4fea-b329-a2781b8fbac8">
     <cim:IdentifiedObject.mRID>e5d8b062-b39b-4fea-b329-a2781b8fbac8</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL. The same gate as for Stage 2 is used because multiple GateTriggers can refer to one Gate</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_48f7389d-7825-4a5a-a187-29cdd37a4057"/> <!-- I used the same gate as for Stage 2 because multiple GateTriggers can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_cd59bf8e-890c-40e3-a699-041f3111cd99" />
     <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
