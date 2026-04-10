@@ -42,7 +42,7 @@
     <cim:IdentifiedObject.description>Curative RA: LoadAction (15 percent load shed - Scaling factor to 0.7)</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>f4d57bc2-1cef-46ab-ae13-3ad864813d9c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA15</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>

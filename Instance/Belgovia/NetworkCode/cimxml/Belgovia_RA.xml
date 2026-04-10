@@ -56,7 +56,7 @@
     <cim:IdentifiedObject.mRID>30f6377d-5e35-4dd0-a53d-c1992043855e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA18</cim:IdentifiedObject.name>
     <nc:PowerRemedialAction.BiddingZone rdf:resource="#_91e89a38-ca68-44c1-8ed4-a7db8e435f4f"/>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#YBO----------2"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
@@ -66,7 +66,7 @@
     <cim:IdentifiedObject.description>Curative RA: ShuntCompensatorModification (step to 0). Shunt compensator ID: _002b0a40-3957-46db-b84a-30420083558f</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>7acbe48a-bd54-4cd7-af2e-87768357c559</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>shunt RA</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -75,7 +75,7 @@
     <cim:IdentifiedObject.description>Preventive RA: Redispatch (power-freq control in BO acccording to rated power). Generator1 ID:_3a3b27be-b18b-4385-b557-6735d733baf0 to  Generator2 ID: _550ebe0d-f2b2-48c1-991f-cebea43a21aa</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>d874f8e3-7272-44b8-95ba-18f10449f036</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Redispatch</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -84,7 +84,7 @@
     <cim:IdentifiedObject.description>Curative RA: TapPositionAction on normal trafo (MV Tap to 33) TapChangerID : _fe25f43a-7341-446e-a71a-8ab7119ba806</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>5e5ff13e-2043-4468-9351-01920d3d9504</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>TapRA2</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -97,7 +97,7 @@
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#_ed7b43e8-a1d4-45d6-984b-b9d9cb4f07c7"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:RotatingMachineAction rdf:ID="_7be59519-0083-4845-a587-cb391ed16a1d">
