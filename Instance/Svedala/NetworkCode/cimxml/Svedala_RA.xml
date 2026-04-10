@@ -70,7 +70,7 @@
     <cim:IdentifiedObject.description>Preventive RA: TopologyAction (load trip)</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>b2555ccc-6562-4887-8abc-19a6e51cfe36</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA11</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -79,7 +79,7 @@
     <cim:IdentifiedObject.description>This is an example. Curative RA: TopologyAction (switching on CL1). Switch ID: _37b6d57e-d459-422a-8b81-d612a9ead26c</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>5e401955-387e-45ce-b126-dd142b06b20c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA3</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -89,7 +89,7 @@
     <cim:IdentifiedObject.description>This is an example. Curative RA applied only to a XNE: TopologyAction (switching Transformer RUTHUVUD_G1_TRAFO). Transformer ID: _2ab1b800-0c93-4517-86b5-8fd6a3a24ee7</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>347f4f7e-a2b6-4880-846a-8bd1effb00d5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA1</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
@@ -101,7 +101,7 @@
     <cim:IdentifiedObject.description>RA for SubstationA_quarterbar1B UC Activation after RAO of topology RA </cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>7e422768-207d-455f-976e-0b1cb2338509</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationA_quarterbar1B</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="https://data.europa.eu/energy/EIC/10Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
@@ -112,7 +112,7 @@
     <cim:IdentifiedObject.description>Preventive RA : substation split</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>cfabf356-c5e1-4391-b91b-3330bc24f0c9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA17</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -121,7 +121,7 @@
     <cim:IdentifiedObject.description>This is an example. Preventive RA: RegulatingControlAction, Generator voltage from 1.11704 to 1 p.u</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>68255abc-9164-4e9a-89ae-d8c44cf3b2b3</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA1</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -130,7 +130,7 @@
     <cim:IdentifiedObject.description>Curative RA: StaticVarCompensatorAction</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>bf8157d8-d787-44f7-a997-751e50e69165</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA12</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -139,7 +139,7 @@
     <cim:IdentifiedObject.description>Curative RA:  TopologyAction (line trip). Switch ID: _21f21596-302e-4e0e-8009-2b8c3c23517f</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>587cb391-ed16-4a1d-876e-f90241addce5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA5</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -148,7 +148,7 @@
     <cim:IdentifiedObject.description>This is an example. Preventive RA: TopologyAction (generator trip). Generator ID: _1c29fef9-c40a-40e6-904f-7c24624068c7, switches: _902046a4-40e9-421d-9ef1-9adab0d9d41d, _39428c75-098b-4366-861d-2df2a857a805</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>d9bd3aaf-cda3-4b54-bb2e-b03dd9925817</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA2</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -157,7 +157,7 @@
     <cim:IdentifiedObject.description>Curative RA Regulating control action const V target voltage with generator ID : d4e4911b-d87a-4fd5-a7a7-0346c0538db3</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>b5f07ec3-3a3c-49ec-8e85-02a77d4f79c1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA6</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -166,7 +166,7 @@
     <cim:IdentifiedObject.description>RA for SubstationB_2N UC Activation after RAO of topology RA </cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>fa3e3533-345a-4ef1-a46d-3ab6d251924a</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationB_2N</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="https://data.europa.eu/energy/EIC/10Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
@@ -221,7 +221,7 @@
     <cim:IdentifiedObject.description>Curative RA: SIPS (Substation split). Coupler ID: _2db971f1-ed3d-4ea6-acf5-983c4289d51b</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>31d41e36-11c8-417b-bafb-c410d4391898</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -501,7 +501,7 @@
     <cim:IdentifiedObject.description>Topology remedial action with one topology action and without dependencies</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>6d2c8901-d068-4d22-8ce9-7379644b4f17</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Topology RA one Switch</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="https://data.europa.eu/energy/EIC/10Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://data.europa.eu/energy/EIC/TSOA------Q"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
