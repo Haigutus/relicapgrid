@@ -593,6 +593,7 @@
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="http://entsoe.eu/ns/nc#RemedialActionKind.curative"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <cim:IdentifiedObject.mRID>fa73cfee-ff54-43cd-816b-51394cd76f0f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RD RA1</cim:IdentifiedObject.name>
   </nc:RedispatchRemedialAction>
@@ -605,6 +606,7 @@
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="http://entsoe.eu/ns/nc#RemedialActionKind.curative"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <cim:IdentifiedObject.mRID>9d72d12a-f135-437a-83fa-ef3e5b23f41f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RD RA1</cim:IdentifiedObject.name>
   </nc:RedispatchRemedialAction>
