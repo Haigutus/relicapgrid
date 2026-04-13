@@ -129,6 +129,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:RegulatingControlAction rdf:ID="_12b9a70c-9e72-4ec5-af01-d32d440c2aa3">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_c9c76af9-c11e-49ad-854c-760292b59a6e"/>

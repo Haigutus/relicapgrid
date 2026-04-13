@@ -70,6 +70,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_d874f8e3-7272-44b8-95ba-18f10449f036">
     <cim:IdentifiedObject.description>Preventive RA: Redispatch (power-freq control in BO acccording to rated power). Generator1 ID:_3a3b27be-b18b-4385-b557-6735d733baf0 to  Generator2 ID: _550ebe0d-f2b2-48c1-991f-cebea43a21aa</cim:IdentifiedObject.description>
@@ -79,6 +80,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>false</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_5e5ff13e-2043-4468-9351-01920d3d9504">
     <cim:IdentifiedObject.description>Curative RA: TapPositionAction on normal trafo (MV Tap to 33) TapChangerID : _fe25f43a-7341-446e-a71a-8ab7119ba806</cim:IdentifiedObject.description>
