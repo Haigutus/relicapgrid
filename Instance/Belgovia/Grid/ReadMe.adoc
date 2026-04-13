@@ -1,40 +1,61 @@
-= CGMES Model Package - Description
-:author: ENTSO-E / Contributor
-:revnumber: 3.0.0-beta.1
+= Belgovia Grid – CGMES Model Package
+:author: ENTSO-E / Contributors
+:revnumber: CGMES 3.0 – NCP 2.4
 :revdate: {docdate}
 
 == Introduction
 
-This ReadMe complements the machine-readable link:manifest.xml[manifest] and provides a human-readable description of the content and structure of this package.
+This ReadMe complements the machine-readable link:https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/Belgovia/Grid/manifest.ttl[manifest] and provides a human-readable description of the **Belgovia Grid CGMES package** within the
+*ReliCapGrid* repository.
 
-This package represents a power system model compliant with the *Common Grid Model Exchange Standard (CGMES)*, as defined by ENTSO-E and based on the IEC CIM standards.
+Belgovia is a synthetic power system model(Individual Grid Model, IGM) created for testing, demonstration, and interoperability purposes.  
+It does not represent a real TSO grid.
 
-The model is intended for use in interoperability scenarios, including:
+The model is compliant with the *Common Grid Model Exchange Standard (CGMES)*, as defined by ENTSO-E and based on IEC CIM standards.
 
-* power system analysis (e.g. load flow, contingency analysis)
-* data exchange between TSOs, RCCs, and market participants
-* validation and conformance testing
-* tooling and research using standardized datasets
+== Model Scope and Content
+
+The Belgovia model represents a single control area and dataset includes the following CGMES profiles:
+
+* EQ – Equipment
+* TP – Topology
+* SSH – Steady State Hypothesis
+* SV – State Variables 
+
+== Purpose and Intended Use
+
+The Belgovia Grid model is intended for:
+
+* CGMES interoperability and conformance testing
+* Toolchain validation (import/export, profile support)
+* Network Code and Regional Coordination test scenarios
+* Training, documentation, and demonstration purposes
+* Power system analysis (e.g. load flow, contingency analysis)
+
+== Package Structure and Serializations
 
 The package is provided in multiple serializations:
 
-* `cimxml/` – Contains CIM XML files (RDF/XML) according to *IEC 61970-600-1*, with alignment to *IEC 61970-552:2016*.  
-  This is the primary format used by CGMES-compliant power system tools.
+* `cimxml/` –  Authoritative CGMES exchange files (RDF/XML) according to *IEC 61970-600-1*, aligned with *IEC 61970-552:2016*.  
+  This is the primary format used by CGMES-compliant tools.
 
-* `jsonld/` – Contains CIM JSON-LD representations aligned with *IEC 61970-553* (under development).  
-  This format enables integration with *Semantic Web technologies* and modern data ecosystems.
+* `jsonld/` –  
+  CIM JSON-LD representations aligned with *IEC 61970-553* (under development), enabling integration with semantic and data-driven tooling.
+  This serialization is not currently provided and may be added in the future to support semantic and data-driven tooling.
 
-* `trig/` – Contains link:https://www.w3.org/TR/trig/[TriG] representations of the model.  
-  This format is intended for improved human readability and semantic inspection.
+* `trig/` – link:https://www.w3.org/TR/trig/[TriG] representation for improved readability and semantic inspection.
+  This serialization is **optional and not currently included** in this package.
 
 == Authoritative Representation
 
-The authoritative representation of the model is currently maintained in the `cimxml/` folder.
+The authoritative representation of the model is maintained in:
+
+`cimxml/`
 
 All other serializations are derived from this source:
 
-* JSON-LD is generated from CIM XML and located in `jsonld/`
-* TriG is generated from CIM XML and located in `trig/`
+* JSON-LD is generated from CIM XML
+* TriG is generated from CIM XML
 
 [quote]
 ____
@@ -43,66 +64,25 @@ ____
 
 == Validation Approach
 
-The model is validated against:
+The model is designed to be compatible with:
 
-* *CGMES 3.0* profile definitions
+* CGMES 3.0 profile definitions
 * SHACL constraints representing profile rules and semantic validation
 
-Validation activities may include:
+Typical validation activities include:
 
-* syntax validation of RDF/XML and JSON-LD
-* profile conformance validation using SHACL
-* semantic consistency checks across datasets
-* functional validation using CGMES-compliant power system analysis tools
+* RDF/XML syntax checks
+* Profile and SHACL-based conformance checks
+* Semantic consistency verification
+* Functional testing using CGMES-capable power system tools
 
 The CIM XML representation is expected to be compatible with power flow tools supporting CGMES.
 
 == Changelog
 
-This package follows *Semantic Versioning 2.0.0* (link:https://semver.org/[SemVer]) with support for **pre-release versions**:
+Changes to this package follow the governance and release practices of the ReliCapGrid repository.
 
-`{Major}.{Minor}.{Patch}-{PreRelease}.{Iteration}`
-
-* **Major (`X.0.0`)** – Non-backwards-compatible changes  
-  (e.g. transition to a new CGMES version or structural redesign)
-
-* **Minor (`X.Y.0`)** – Backwards-compatible enhancements  
-  (e.g. addition of new objects or datasets compliant with the same profile)
-
-* **Patch (`X.Y.Z`)** – Corrections or minor adjustments  
-  (e.g. attribute updates or corrections without structural impact)
-
-* **Pre-release (`alpha`, `beta`)** – Versions under development
-
-* **Iteration (`X`)** – Sequential build number within the pre-release phase
-
-=== Examples
-
-* `3.0.0-alpha.1` – Early-stage version, subject to significant changes
-* `3.0.0-beta.3` – More stable pre-release version
-* `3.0.0` – Finalized and released version
-
-[cols="3,2,5,2",options="header"]
-|===
-| Version | Date | Description | Issue
-
-| 3.0.0-beta.1
-| 2025-02-14
-| Update manifest structure and metadata aligned with ENTSO-E NCP requirements
-| link:https://github.com/example/repository/issues/15[#15]
-
-| 3.0.0-alpha.1
-| 2025-02-12
-| Namespace alignment and cleanup
-| link:https://github.com/example/repository/issues/10[#10]
-
-| 3.0.0-alpha.1
-| 2025-02-12
-| Migration to CGMES 3.0
-| link:https://github.com/example/repository/issues/9[#9]
-
-|===
-
-For further details, refer to the issue tracking system:
-
-🔗 https://github.com/example/repository/issues
+Updates may include:
+* Structural adjustments aligned with CGMES evolution
+* Corrections and clarifications of existing data
+* Additions to support new test scenarios
