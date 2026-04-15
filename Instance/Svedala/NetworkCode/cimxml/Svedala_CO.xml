@@ -125,7 +125,7 @@
   <cim:ContingencyEquipment rdf:ID="_6b11c563-1cd1-455f-beb7-c9821159848c">
     <cim:ContingencyElement.Contingency rdf:resource="#_92d4f3c9-32e1-47fd-8762-d0e9a042c5a3"/>
     <cim:ContingencyEquipment.Equipment rdf:resource="#_b676e63f-e89a-4bd7-b786-95fe458298eb"/>
-    <cim:ContingencyEquipment.contingentStatus rdf:resource="https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService"/>
+    <cim:ContingencyEquipment.contingentStatus rdf:resource="https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.outOfService"/>
     <cim:IdentifiedObject.description>loss of line CL7</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>6b11c563-1cd1-455f-beb7-c9821159848c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Svedala_CL7</cim:IdentifiedObject.name>
@@ -133,7 +133,7 @@
   <cim:ContingencyEquipment rdf:ID="_d2388514-b207-4741-9ba5-bc8d043feed2">
     <cim:ContingencyElement.Contingency rdf:resource="#_92d4f3c9-32e1-47fd-8762-d0e9a042c5a3"/>
     <cim:ContingencyEquipment.Equipment rdf:resource="#_ebf0cd8b-a357-4e97-aa67-de5b263733d6"/>
-    <cim:ContingencyEquipment.contingentStatus rdf:resource="https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService"/>
+    <cim:ContingencyEquipment.contingentStatus rdf:resource="https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.outOfService"/>
     <cim:IdentifiedObject.description>loss of load CT72_T1_LAST</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>d2388514-b207-4741-9ba5-bc8d043feed2</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Svedala_CT72_T1_LAST</cim:IdentifiedObject.name>
@@ -160,7 +160,7 @@
   <cim:IdentifiedObject.description>The equipment for this contingency - Generator 2</cim:IdentifiedObject.description>
   <cim:IdentifiedObject.mRID>5030a960-be37-4ad7-aa11-1082f41102dc</cim:IdentifiedObject.mRID>
   <cim:ContingencyElement.Contingency rdf:resource="#_2c1fe55c-0d6f-4b2c-85ce-eb1fcbc6175b"/>
-  <cim:ContingencyEquipment.contingentStatus rdf:resource="https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.inService"/>
+  <cim:ContingencyEquipment.contingentStatus rdf:resource="https://cim.ucaiug.io/ns#ContingencyEquipmentStatusKind.outOfService"/>
   <cim:ContingencyEquipment.Equipment rdf:resource="#_1092d095-f5a4-4e36-a31b-8bd15851165f"/>
 </cim:ContingencyEquipment>
 <nc:ExceptionalContingency rdf:ID="_2c1fe55c-0d6f-4b2c-85ce-eb1fcbc6175b">
