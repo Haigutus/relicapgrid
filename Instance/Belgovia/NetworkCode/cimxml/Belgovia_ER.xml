@@ -99,6 +99,7 @@
     <nc:VoltageAngleLimit.normalValue>10.0</nc:VoltageAngleLimit.normalValue>
     <nc:VoltageAngleLimit.AngleReferenceTerminal rdf:resource="#_5c206db8-ef8c-4e53-b2b9-38b52b194c5a"/>
     <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_6fe5c43b-621c-88ac-1d90-22f075cdb50e"/>
+    <cim:OperationalLimit.OperationalLimitType rdf:resource="#_0be2bf15-903e-37c9-9d8b-2fd3b0220ea3"/>
   </nc:VoltageAngleLimit>
 
     <!-- 7.1.10.3	Power Transfer Corridor -->
@@ -108,6 +109,7 @@
     <cim:IdentifiedObject.name>Infeed limit</cim:IdentifiedObject.name>
     <nc:InfeedLimit.normalValueA>1000.0</nc:InfeedLimit.normalValueA>
     <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ee1e0ee2-edf6-8968-9c4c-83fa12446800"/>
+    <cim:OperationalLimit.OperationalLimitType rdf:resource="#_82639e97-ec8d-59c3-3af6-0fcc05fa3eb4"/>
   </nc:InfeedLimit>
   <nc:InfeedTerminal rdf:ID="_02fc97a9-3ed4-4a85-9e29-742bff1d52e1">
     <nc:InfeedTerminal.mRID>02fc97a9-3ed4-4a85-9e29-742bff1d52e1</nc:InfeedTerminal.mRID>
