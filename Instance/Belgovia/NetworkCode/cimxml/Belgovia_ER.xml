@@ -60,6 +60,7 @@
     <nc:SchedulingArea.ControlArea rdf:resource="#_50487bb8-be6d-42a8-9358-cc0bbfe6cfa7"/>
   </nc:SchedulingArea>
   <cim:GeneratingUnit rdf:about="#_413bbc8a-683c-7e07-4fb9-aa6ec83278e0">
+    <cim:IdentifiedObject.mRID>413bbc8a-683c-7e07-4fb9-aa6ec83278e0</cim:IdentifiedObject.mRID>
     <nc:GeneratingUnit.rampLockTime>PT2H</nc:GeneratingUnit.rampLockTime>
     <nc:GeneratingUnit.maxRampDownCountPerDay>2</nc:GeneratingUnit.maxRampDownCountPerDay>
   </cim:GeneratingUnit>
