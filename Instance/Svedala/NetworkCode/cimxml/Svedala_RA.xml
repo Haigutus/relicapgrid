@@ -896,9 +896,10 @@
     <cim:IdentifiedObject.mRID>14b2b671-e92b-40e6-abf8-ad37811b33c7</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>ARA1</cim:IdentifiedObject.name>
     <cim:IdentifiedObject.description>This is an example of availability remedial action</cim:IdentifiedObject.description>
-      <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
   </nc:AvailabilityRemedialAction>
 
 </rdf:RDF>
