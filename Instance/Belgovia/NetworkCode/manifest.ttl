@@ -10,7 +10,7 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 <urn:uuid:f349f079-8e64-475a-b735-278417758207>
         rdf:type              dcat:Distribution;
-        dcterms:conformsTo    "https://ap.cim4.eu/SteadyStateHyptohesisSchedule/1.1" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#";
+        dcterms:conformsTo    "https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#";
         dcterms:description   "This is the steady state hypothesis schedule dataset for Belgovia part of ReliCapGrid."@en;
         dcat:accessURL        <file://cimxml/Belgovia_SHS.xml>;
         dcat:distributionOf   <urn:uuid:79e8ace6-d345-4855-a279-95220d646012>;
@@ -117,7 +117,7 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 <urn:uuid:79e8ace6-d345-4855-a279-95220d646012>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
-        dcterms:conformsTo    "https://ap.cim4.eu/SteadyStateHyptohesisSchedule/1.1" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#";
+        dcterms:conformsTo    "https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#";
         dcterms:description   "This is the steady state hypothesis schedule dataset for Belgovia part of ReliCapGrid."@en;
         dcterms:identifier    "79e8ace6-d345-4855-a279-95220d646012";
         dcterms:issued        "2022-06-15T22:30:00Z";
@@ -267,7 +267,7 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 <urn:uuid:ce455468-832e-4297-9f5c-fd4e76cf648b>
         rdf:type              dcat:Catalog;
         dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
-        dcterms:conformsTo    "https://ap.cim4.eu/PowerSchedule/2.4" , "http://iec.ch/TC57/CIM100#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://ap.cim4.eu/Contingency/2.3" , "https://ap.cim4.eu/EquipmentReliability/2.4" , "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/AssessedElement/2.4" , "https://ap.cim4.eu/RemedialActionSchedule/2.4" , "https://ap.cim4.eu/RemedialAction/2.4" , "https://ap.cim4.eu/SteadyStateHyptohesisSchedule/1.1";
+        dcterms:conformsTo    "https://ap.cim4.eu/PowerSchedule/2.4" , "http://iec.ch/TC57/CIM100#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://ap.cim4.eu/Contingency/2.3" , "https://ap.cim4.eu/EquipmentReliability/2.4" , "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/AssessedElement/2.4" , "https://ap.cim4.eu/RemedialActionSchedule/2.4" , "https://ap.cim4.eu/RemedialAction/2.4" , "https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1";
         dcterms:description   ""@en;
         dcterms:identifier    "ce455468-832e-4297-9f5c-fd4e76cf648b";
         dcterms:issued        "2022-06-15T22:30:00Z" , "2025-05-18T18:00:00Z";
