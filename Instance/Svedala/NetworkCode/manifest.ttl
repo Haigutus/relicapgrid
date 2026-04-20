@@ -369,7 +369,7 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         dcat:keyword          "RA";
         dcat:startDate        "2025-06-19T14:00:00Z";
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Svedala-Espheim-RA>;
-        prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RA" .
+        prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RA" ;
         dcat:version          "1" .
 
 <urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202>
