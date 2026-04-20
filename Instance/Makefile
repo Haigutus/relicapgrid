@@ -25,10 +25,13 @@ TRIG     = $(subst cimxml,trig,$(subst .xml,.trig,$(CIMXML)))
 TTL      = $(patsubst %,%/manifest.ttl,$(DIRS)) $(wildcard referenceData/*/ttl/*)
 
 targets:
-	echo targets: echo, dirs, trig, zip
+	echo targets: dirs, echo, trig, validate, zip
 
 echo:
 	@echo $(TRIG) $(TTL)
+
+validate:
+	riot --validate $(TRIG) $(TTL)
 
 dirs:
 	mkdir $(DIRS_NEW)
@@ -45,5 +48,5 @@ $(foreach x,$(CIMXML),$(eval $(call CIMXML2TRIG,$(x),$(subst cimxml,trig,$(subst
 
 trig: $(TRIG)
 
-zip: $(TRIG)
-	zip -9 -u -o relicapgrid-CGM-trig.zip $(TRIG) $(TTL)
+zip: $(TRIG) $(TTL)
+	zip -9 -u -o relicapgrid-CGM-trig.zip $^
