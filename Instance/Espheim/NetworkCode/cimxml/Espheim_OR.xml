@@ -7,7 +7,7 @@
     xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
-  <dcat:Dataset rdf:about="urn:uuid:79e8ace6-d345-4855-a279-95220d646012">
+  <dcat:Dataset rdf:about="urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18">
     <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
     <dcterms:conformsTo>https://ap.cim4.eu/ObjectRegistry/2.2</dcterms:conformsTo>
     <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
@@ -16,7 +16,7 @@
     <dcterms:description xml:lang="en">This is the object registry profile dataset for Espheim part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
-    <dcterms:identifier>79e8ace6-d345-4855-a279-95220d646012</dcterms:identifier>
+    <dcterms:identifier>c29d23f7-1955-46dc-8bfd-56e082ce9b18</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-OR"/>
     <dcat:keyword>OR</dcat:keyword>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
