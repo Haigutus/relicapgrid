@@ -5,8 +5,8 @@ DIRS =                          \
   ./Belgovia/Grid               \
   ./Belgovia/NetworkCode        \
   ./Britheim/Grid               \
-  ./DC_Espheim-Svedala/Grid     \
-  ./DC_Nordheim-Galia/Grid      \
+  ./DC-Espheim-Svedala/Grid     \
+  ./DC-Nordheim-Galia/Grid      \
   ./Espheim/Grid                \
   ./Espheim/NetworkCode         \
   ./Galia/Grid                  \
@@ -28,7 +28,7 @@ targets:
 	echo targets: echo, dirs, trig, zip
 
 echo:
-	echo $(TRIG) $(TTL)
+	@echo $(TRIG) $(TTL)
 
 dirs:
 	mkdir $(DIRS_NEW)
