@@ -377,8 +377,8 @@ The most useful amongst them are:
 - Classes and Relations: for exploring the ontology
 
 Then it shows some Saved Graphs:
-- [SynchronousMachine STUPET_G4](https://cim.ontotext.com/graphdb/graphs-visualizations?config=7166ff4a5a414f36a7e8a33fd4f42444&uri=urn:uuid:a6ce9705-e654-b6ae-7cce-483726a1ffa9&repositoryId=relicapgrid) is from Relicapgrid
+- [SynchronousMachine STUPET_G4](https://cim.ontotext.com/graphdb/graphs-visualizations?repositoryId=relicapgrid&saved=2cc1935b71f5464c8b286dd38b0e4fa9) is from Relicapgrid
 
-[](img/vizGraph-STUPET_G4.png)
+![](img/vizGraph-STUPET_G4.png)
 
 - But there are also a lot more graphs saved from the Nordic44+Telemark120 datasets
