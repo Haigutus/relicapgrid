@@ -70,108 +70,119 @@
     <cim:IdentifiedObject.description>Preventive RA: TopologyAction (load trip)</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>b2555ccc-6562-4887-8abc-19a6e51cfe36</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA11</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_5e401955-387e-45ce-b126-dd142b06b20c">
     <cim:IdentifiedObject.description>This is an example. Curative RA: TopologyAction (switching on CL1). Switch ID: _37b6d57e-d459-422a-8b81-d612a9ead26c</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>5e401955-387e-45ce-b126-dd142b06b20c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA3</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <!-- Curative Remedial Action applied only to a XNE-->
   <nc:GridStateAlterationRemedialAction rdf:ID="_347f4f7e-a2b6-4880-846a-8bd1effb00d5">
     <cim:IdentifiedObject.description>This is an example. Curative RA applied only to a XNE: TopologyAction (switching Transformer RUTHUVUD_G1_TRAFO). Transformer ID: _2ab1b800-0c93-4517-86b5-8fd6a3a24ee7</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>347f4f7e-a2b6-4880-846a-8bd1effb00d5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA1</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.ContingencyWithRemedialAction rdf:resource="_3a364a5b-7aba-4e48-abd5-4cd79e2e8676"/>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <!-- Curative Remedial Action applied only to a XNE-->
   <nc:GridStateAlterationRemedialAction rdf:ID="_7e422768-207d-455f-976e-0b1cb2338509">
     <cim:IdentifiedObject.description>RA for SubstationA_quarterbar1B UC Activation after RAO of topology RA </cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>7e422768-207d-455f-976e-0b1cb2338509</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationA_quarterbar1B</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="https://data.europa.eu/energy/EIC/10Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.timeToImplement>PT20M0S</nc:RemedialAction.timeToImplement>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_cfabf356-c5e1-4391-b91b-3330bc24f0c9">
     <cim:IdentifiedObject.description>Preventive RA : substation split</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>cfabf356-c5e1-4391-b91b-3330bc24f0c9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA17</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_68255abc-9164-4e9a-89ae-d8c44cf3b2b3">
     <cim:IdentifiedObject.description>This is an example. Preventive RA: RegulatingControlAction, Generator voltage from 1.11704 to 1 p.u</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>68255abc-9164-4e9a-89ae-d8c44cf3b2b3</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA1</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_bf8157d8-d787-44f7-a997-751e50e69165">
     <cim:IdentifiedObject.description>Curative RA: StaticVarCompensatorAction</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>bf8157d8-d787-44f7-a997-751e50e69165</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA12</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_587cb391-ed16-4a1d-876e-f90241addce5">
     <cim:IdentifiedObject.description>Curative RA:  TopologyAction (line trip). Switch ID: _21f21596-302e-4e0e-8009-2b8c3c23517f</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>587cb391-ed16-4a1d-876e-f90241addce5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA5</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_d9bd3aaf-cda3-4b54-bb2e-b03dd9925817">
     <cim:IdentifiedObject.description>This is an example. Preventive RA: TopologyAction (generator trip). Generator ID: _1c29fef9-c40a-40e6-904f-7c24624068c7, switches: _902046a4-40e9-421d-9ef1-9adab0d9d41d, _39428c75-098b-4366-861d-2df2a857a805</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>d9bd3aaf-cda3-4b54-bb2e-b03dd9925817</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA2</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>  
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_b5f07ec3-3a3c-49ec-8e85-02a77d4f79c1">
     <cim:IdentifiedObject.description>Curative RA Regulating control action const V target voltage with generator ID : d4e4911b-d87a-4fd5-a7a7-0346c0538db3</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>b5f07ec3-3a3c-49ec-8e85-02a77d4f79c1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA6</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>  
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_fa3e3533-345a-4ef1-a46d-3ab6d251924a">
     <cim:IdentifiedObject.description>RA for SubstationB_2N UC Activation after RAO of topology RA </cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>fa3e3533-345a-4ef1-a46d-3ab6d251924a</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationB_2N</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="https://data.europa.eu/energy/EIC/10Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.timeToImplement>PT20M0S</nc:RemedialAction.timeToImplement>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:RegulatingControlAction rdf:ID="_4ab66db6-53a4-4ebf-af6e-1ea32b6e77bb">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_b5f07ec3-3a3c-49ec-8e85-02a77d4f79c1"/>
@@ -221,7 +232,7 @@
     <cim:IdentifiedObject.description>Curative RA: SIPS (Substation split). Coupler ID: _2db971f1-ed3d-4ea6-acf5-983c4289d51b</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>31d41e36-11c8-417b-bafb-c410d4391898</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="#Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -501,12 +512,13 @@
     <cim:IdentifiedObject.description>Topology remedial action with one topology action and without dependencies</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>6d2c8901-d068-4d22-8ce9-7379644b4f17</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Topology RA one Switch</cim:IdentifiedObject.name>
-    <nc:RemedialAction.AppointedToRegion rdf:resource="https://data.europa.eu/energy/EIC/10Y1001C--00059P"/>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://data.europa.eu/energy/EIC/TSOA------Q"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.timeToImplement>PT20M0S</nc:RemedialAction.timeToImplement>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:TopologyAction rdf:ID="_b61d5cd5-0373-4e58-82c3-b5e4d86147a5">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_6d2c8901-d068-4d22-8ce9-7379644b4f17"/>
@@ -559,7 +571,7 @@
 <!-- SIPS1 Stage1 which should be activated when line CL6 is overload above TATL after first LF&CA -->
   <nc:Stage rdf:ID="_2f60b546-dfcf-4e0c-b0d6-40264de45cbd">
     <cim:IdentifiedObject.mRID>2f60b546-dfcf-4e0c-b0d6-40264de45cbd</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1. SIPS1 Stage1 which should be activated when line CL6 is overload above TATL after first LF and CA. The priority is set to 1 because it should be executed after first LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_332b7627-e0ad-4bd5-a678-aebb305727a6" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>1</nc:Stage.priority> <!-- because it should be executed after first LF&CA -->
@@ -586,7 +598,7 @@
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
     <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL. The same gate as for RemedialActionSchem arming and Stage 1 is used because multiple GateTriggers and RemedialActionSchemes can refer to one Gate</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_2f60b546-dfcf-4e0c-b0d6-40264de45cbd" />
     <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
@@ -595,7 +607,7 @@
 <!-- SIPS1 Stage2a which should be activated when line CL6 is still overload above TATL after second LF&CA -->
   <nc:Stage rdf:ID="_7d2d969e-6b11-45c5-ba66-9637072b3be5">
     <cim:IdentifiedObject.mRID>7d2d969e-6b11-45c5-ba66-9637072b3be5</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2a. SIPS1 Stage2a which should be activated when line CL6 is still overload above TATL after second LF and CA. The priority is set to 2 because it should be executed after second LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2a</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -622,7 +634,7 @@
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
     <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL. The same gate as for RemedialActionScheme arming and Stage 1 is used because multiple GateTriggers and RemedialActionSchemes can refer to one Gate</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_7d2d969e-6b11-45c5-ba66-9637072b3be5" />
     <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
@@ -631,7 +643,7 @@
 <!-- SIPS1 Stage2b which should be activated when line CL6 is still overload above PATL but below TATL after second LF&CA -->
   <nc:Stage rdf:ID="_bfa56840-37ff-44e3-9d2d-df5efc3a1b81">
     <cim:IdentifiedObject.mRID>bfa56840-37ff-44e3-9d2d-df5efc3a1b81</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2b. SIPS1 Stage2b which should be activated when line CL6 is still overload above PATL but below TATL after second LF and CA. The priority is set to 2 because it should be executed after second LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2b</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_b7a0d8df-2809-4bd3-952c-474ba032aa46" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -692,7 +704,7 @@
 <!-- SIPS1 Stage3 which should be activated when line CL6 is still overload after third LF&CA -->
   <nc:Stage rdf:ID="_950f792b-d761-48f6-8f82-cf40b889a26c">
     <cim:IdentifiedObject.mRID>950f792b-d761-48f6-8f82-cf40b889a26c</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage3. SIPS1 Stage3 which should be activated when line CL6 is still overload after third LF and CA. The same GridStateAlterationCollection as for Stage 2a is used because multiple Stages can refer to one GridStateAlterationCollection. The priority is set to 3 because it should be executed after third LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage3</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25"/> <!-- I used the same GridStateAlterationCollection as for Stage 2a because multiple Stages can refer to one GridStateAlterationCollection  -->
     <nc:Stage.RemedialActionScheme rdf:resource="#_ce962568-cce9-4c5c-8d45-b79694efcf88" />
     <nc:Stage.priority>3</nc:Stage.priority> <!-- because it should be executed after third LF&CA -->
@@ -758,7 +770,7 @@
 <!-- SIPS2 Stage1 which should be activated when line CL6 is overload above PATL but below TATL after first LF&CA -->
   <nc:Stage rdf:ID="_f8722dc4-0b1c-4b36-be29-fe3aa5460549">
     <cim:IdentifiedObject.mRID>f8722dc4-0b1c-4b36-be29-fe3aa5460549</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1. SIPS2 Stage1 which should be activated when line CL6 is overload above PATL but below TATL after first LF and CA. The priority is set to 1 because it should be executed after second LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage1</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_02a420c3-dcc2-413e-9f7d-a4997c42e155" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
     <nc:Stage.priority>1</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -794,7 +806,7 @@
 <!-- SIPS2 Stage2 which should be activated when line CL6 is still overload above PATL after second LF&CA -->
   <nc:Stage rdf:ID="_2efd4f05-da11-4060-8fa4-44b84388d723">
     <cim:IdentifiedObject.mRID>2efd4f05-da11-4060-8fa4-44b84388d723</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2. SIPS2 Stage2 which should be activated when line CL6 is still overload above PATL after second LF and CA. The priority is set to 2 because it should be executed after second LF and CA </cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_12097f09-e5cc-4fdc-98eb-0675d0f2af11" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
     <nc:Stage.priority>2</nc:Stage.priority> <!-- because it should be executed after second LF&CA -->
@@ -845,7 +857,7 @@
 <!-- SIPS2 Stage3 which should be activated when line CL6 is still overload above PATL after third LF&CA -->
   <nc:Stage rdf:ID="_cd59bf8e-890c-40e3-a699-041f3111cd99">
     <cim:IdentifiedObject.mRID>cd59bf8e-890c-40e3-a699-041f3111cd99</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2. SIPS2 Stage3 which should be activated when line CL6 is still overload above PATL after third LF and CA. The priority is set to 3 because it should be executed after third LF and CA</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>AutomaticGenerationShedding_CL6_SIPS1_Stage2</cim:IdentifiedObject.name>
     <nc:Stage.GridStateAlterationCollection rdf:resource="#_ea6979c2-2ad4-484a-9f41-bec157a0eedd" />
     <nc:Stage.RemedialActionScheme rdf:resource="#_f151d691-a13b-4c70-a7e9-e7c272da78bb" />
     <nc:Stage.priority>3</nc:Stage.priority> <!-- because it should be executed after third LF&CA -->
@@ -872,7 +884,7 @@
   </nc:StaticPropertyRange> 
   <nc:StageTrigger rdf:ID="_e5d8b062-b39b-4fea-b329-a2781b8fbac8">
     <cim:IdentifiedObject.mRID>e5d8b062-b39b-4fea-b329-a2781b8fbac8</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL. The same gate as for Stage 2 is used because multiple GateTriggers can refer to one Gate</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than PATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_48f7389d-7825-4a5a-a187-29cdd37a4057"/> <!-- I used the same gate as for Stage 2 because multiple GateTriggers can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_cd59bf8e-890c-40e3-a699-041f3111cd99" />
     <nc:StageTrigger.normalArmed>true</nc:StageTrigger.normalArmed>
@@ -884,9 +896,10 @@
     <cim:IdentifiedObject.mRID>14b2b671-e92b-40e6-abf8-ad37811b33c7</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>ARA1</cim:IdentifiedObject.name>
     <cim:IdentifiedObject.description>This is an example of availability remedial action</cim:IdentifiedObject.description>
-      <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
+    <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
   </nc:AvailabilityRemedialAction>
 
 </rdf:RDF>

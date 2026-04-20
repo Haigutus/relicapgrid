@@ -31,6 +31,7 @@
     <dcat:version>1.0.0</dcat:version>
     <adms:versionNotes>This is an example of Availability schedule dataset for SvK.</adms:versionNotes>
     <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/OPC-AS</prov:wasGeneratedBy>
+    <prov:wasGeneratedAtTime>2024-12-03T10:00:00Z</prov:wasGeneratedAtTime>
   </dcat:Dataset>
   <nc:AvailabilityEquipment rdf:ID="_cbe49fbe-64dd-48e0-8e9b-bbc468265abc">
     <nc:AvailabilityEquipment.Equipment rdf:resource="#_536f4b84-db4c-4545-96e9-bb5a87f65d13"/>
@@ -78,13 +79,13 @@
   <nc:AvailabilitySchedule rdf:ID="_d394295f-9d18-4d9f-9808-bd23282bf60f">
     <cim:IdentifiedObject.mRID>d394295f-9d18-4d9f-9808-bd23282bf60f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Availability Schedule 1</cim:IdentifiedObject.name>
-      <cim:IdentifiedObject.description>Sample Availability Schedule</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Sample Availability Schedule</cim:IdentifiedObject.description>
     <nc:AvailabilitySchedule.cancelledDateTime>2022-06-16T08:34:00Z</nc:AvailabilitySchedule.cancelledDateTime>
-      <nc:AvailabilitySchedule.causeDescription>Maintenance performed from 10:00h to 18:00h</nc:AvailabilitySchedule.causeDescription>
-      <nc:AvailabilitySchedule.causeKind rdf:resource="https://cim4.eu/ns/nc#AvailabilityScheduleCauseKind.maintenance"/>
-      <nc:AvailabilitySchedule.maxRestitutionDuration>640</nc:AvailabilitySchedule.maxRestitutionDuration>
-      <nc:AvailabilitySchedule.priority>1</nc:AvailabilitySchedule.priority>
-      <nc:AvailabilitySchedule.RemedialAction rdf:resource="#_14b2b671-e92b-40e6-abf8-ad37811b33c7"/>
+    <nc:AvailabilitySchedule.causeDescription>Maintenance performed from 10:00h to 18:00h</nc:AvailabilitySchedule.causeDescription>
+    <nc:AvailabilitySchedule.causeKind rdf:resource="https://cim4.eu/ns/nc#AvailabilityScheduleCauseKind.maintenance"/>
+    <nc:AvailabilitySchedule.maxRestitutionDuration>PT10M40S</nc:AvailabilitySchedule.maxRestitutionDuration>
+    <nc:AvailabilitySchedule.priority>1</nc:AvailabilitySchedule.priority>
+    <nc:AvailabilitySchedule.RemedialAction rdf:resource="#_14b2b671-e92b-40e6-abf8-ad37811b33c7"/>
   </nc:AvailabilitySchedule>
 
     <!-- Availability Container -->

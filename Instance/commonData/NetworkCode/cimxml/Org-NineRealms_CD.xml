@@ -184,24 +184,31 @@
     <cim:IdentifiedObject.name>CCR-NineRealms</cim:IdentifiedObject.name>
   </nc:CapacityCalculationRegion>
   <cim:ControlArea rdf:about="#_ffc5fd1d-282e-4908-b853-738789df9015">
+      <cim:IdentifiedObject.mRID>ffc5fd1d-282e-4908-b853-738789df9015</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_0410eff4-6268-4b83-860e-0f9f425f6c6c"/>
   </cim:ControlArea>
   <cim:ControlArea rdf:about="#_1f9ecd81-e069-4040-bd64-f34b0fac3a60">
+      <cim:IdentifiedObject.mRID>1f9ecd81-e069-4040-bd64-f34b0fac3a60</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_151d6acf-d4fd-4604-9603-f02348603277"/>
   </cim:ControlArea>
   <cim:ControlArea rdf:about="#_642a2421-d5ef-450a-90c3-868485f2bf37">
+      <cim:IdentifiedObject.mRID>642a2421-d5ef-450a-90c3-868485f2bf37</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_37136f0f-5ab2-40ab-a823-d8a5d47a4847"/>
   </cim:ControlArea>
   <cim:ControlArea rdf:about="#_b20c892a-a5d2-4378-8744-c2cfea79d0be">
+      <cim:IdentifiedObject.mRID>b20c892a-a5d2-4378-8744-c2cfea79d0be</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_2ec42376-eee2-4ab9-b79a-165e1df2a185"/>
   </cim:ControlArea>
-  <cim:ControlArea rdf:about="#_50487bb8-be6d-42a8-9358-cc0bbfe6cfa7">
+      <cim:ControlArea rdf:about="#_50487bb8-be6d-42a8-9358-cc0bbfe6cfa7">
+      <cim:IdentifiedObject.mRID>50487bb8-be6d-42a8-9358-cc0bbfe6cfa7</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
   </cim:ControlArea>
   <cim:ControlArea rdf:about="#_ebccc726-b760-46c6-b7f6-8289bafce797">
+      <cim:IdentifiedObject.mRID>ebccc726-b760-46c6-b7f6-8289bafce797</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
   </cim:ControlArea>
   <cim:ControlArea rdf:about="#_aaccbbc9-1adc-433f-bc74-672c5a2383a9">
+      <cim:IdentifiedObject.mRID>aaccbbc9-1adc-433f-bc74-672c5a2383a9</cim:IdentifiedObject.mRID>
     <nc:ControlArea.SystemOperator rdf:resource="#_3fcbc75b-4e12-4009-a20f-78938abc04ec"/>
   </cim:ControlArea>
   <nc:CoordinatedCapacityCalculator rdf:ID="_427e7b56-b81a-4703-a018-c7e53a61c006">

@@ -223,7 +223,7 @@
     <cim:ACDCConverter.p>136.044</cim:ACDCConverter.p>
     <cim:ACDCConverter.q>-28.9317</cim:ACDCConverter.q>
     <cim:ACDCConverter.targetPpcc>109.118</cim:ACDCConverter.targetPpcc>
-    <cim:ACDCConverter.targetUdc>1280</cim:ACDCConverter.targetUdc>
+    <cim:ACDCConverter.targetUdc>150</cim:ACDCConverter.targetUdc>
     <cim:Equipment.inService>true</cim:Equipment.inService>
     <cim:VsConverter.droop>0.001</cim:VsConverter.droop>
     <cim:VsConverter.droopCompensation>0.001</cim:VsConverter.droopCompensation>
