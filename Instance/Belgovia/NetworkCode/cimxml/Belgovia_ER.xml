@@ -105,7 +105,7 @@
 
     <!-- 7.1.10.3	Power Transfer Corridor -->
     
-    <nc:InfeedLimit rdf:ID="_c06b2f38-c6c6-4fec-8ddb-234eebaea8ec">
+  <nc:InfeedLimit rdf:ID="_c06b2f38-c6c6-4fec-8ddb-234eebaea8ec">
     <cim:IdentifiedObject.mRID>c06b2f38-c6c6-4fec-8ddb-234eebaea8ec</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Infeed limit</cim:IdentifiedObject.name>
     <nc:InfeedLimit.normalValueA>1000.0</nc:InfeedLimit.normalValueA>
@@ -125,12 +125,12 @@
     <cim:IdentifiedObject.mRID>c31ae69b-423d-47c0-bacc-083d64e34d4a</cim:IdentifiedObject.mRID>
     <nc:Circuit.positiveFlowIn>True</nc:Circuit.positiveFlowIn>
   </nc:PowerTransformerCircuit>
-  <cim:Equipment rdf:about="_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
+  <cim:ACLineSegment rdf:about="_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
     <nc:Equipment.Circuit rdf:resource="#_cef9011e-3753-453b-93bd-fb36eb3daac1"/>
-  </cim:Equipment>
-  <cim:Equipment rdf:about="_b94318f6-6d24-4f56-96b9-df2531ad654343">
+  </cim:ACLineSegment>
+  <cim:PowerTransformer rdf:about="_b94318f6-6d24-4f56-96b9-df2531ad6543">
     <nc:Equipment.Circuit rdf:resource="#_c31ae69b-423d-47c0-bacc-083d64e34d4a"/>
-  </cim:Equipment>
+  </cim:PowerTransformer>
   <nc:OrdinaryPowerTransferCorridor rdf:ID="_0863ac0c-b6af-4553-a00b-cde463a8a7d4">
     <cim:IdentifiedObject.mRID>0863ac0c-b6af-4553-a00b-cde463a8a7d4</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>PTC</cim:IdentifiedObject.name>
