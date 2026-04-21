@@ -9,14 +9,14 @@
     <md:Model.scenarioTime>2024-12-23T06:42:14Z</md:Model.scenarioTime>
     <md:Model.version>1</md:Model.version>
   </md:FullModel>
-  <cim:ConnectivityNode rdf:ID="_0617adcd-1448-498b-b6cc-71a4df78cc51">
+  <cim:ConnectivityNode rdf:ID="_ceafce7b-5485-4cb8-9e06-c85ba137ffa9">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
-    <cim:IdentifiedObject.mRID>0617adcd-1448-498b-b6cc-71a4df78cc51</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.mRID>ceafce7b-5485-4cb8-9e06-c85ba137ffa9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName />
   </cim:ConnectivityNode>
     <eu:BoundaryPoint rdf:ID="_23024d22-54e3-f4c0-40aa-367bbd3f76f8">
-    <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_0617adcd-1448-498b-b6cc-71a4df78cc51" />
+    <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
     <eu:BoundaryPoint.fromEndIsoCode />
     <eu:BoundaryPoint.fromEndName />
     <eu:BoundaryPoint.fromEndNameTso />

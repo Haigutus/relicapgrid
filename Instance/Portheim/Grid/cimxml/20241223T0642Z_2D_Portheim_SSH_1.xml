@@ -348,9 +348,6 @@
   <cim:Terminal rdf:about="#_de6a2f77-e41f-4a42-d4a6-e3915c13e2b2">
     <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
   </cim:Terminal>
-  <cim:Terminal rdf:about="#_62305ead-88ad-0949-cbf5-1192b9b01695">
-    <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
-  </cim:Terminal>
   <cim:Terminal rdf:about="#_d78e2380-86b5-d8b7-6246-d02ccdf68b5a">
     <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
   </cim:Terminal>

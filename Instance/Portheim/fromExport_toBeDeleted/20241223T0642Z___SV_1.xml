@@ -1390,11 +1390,6 @@
     <cim:SvPowerFlow.p>10</cim:SvPowerFlow.p>
     <cim:SvPowerFlow.q>8</cim:SvPowerFlow.q>
   </cim:SvPowerFlow>
-  <cim:SvPowerFlow rdf:ID="_beea68db-cc2c-44cb-8d55-97090b9d8ac7">
-    <cim:SvPowerFlow.Terminal rdf:resource="#_62305ead-88ad-0949-cbf5-1192b9b01695" />
-    <cim:SvPowerFlow.p>0</cim:SvPowerFlow.p>
-    <cim:SvPowerFlow.q>0</cim:SvPowerFlow.q>
-  </cim:SvPowerFlow>
   <cim:SvVoltage rdf:ID="_c4e4ddd9-1e86-40d0-a142-c10ca3c72511">
     <cim:SvVoltage.TopologicalNode rdf:resource="#_4250fc93-a0a8-9d9b-108e-3c7ae0bb5d10" />
     <cim:SvVoltage.angle>-2.18192</cim:SvVoltage.angle>

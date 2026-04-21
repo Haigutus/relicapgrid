@@ -858,6 +858,25 @@
     <cim:IdentifiedObject.mRID>c724d1f1-83d7-4675-91f0-acf022bdccd7</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>T1</cim:IdentifiedObject.name>
   </cim:PowerTransformer>
+  <cim:BusbarSection rdf:ID="_d139e10d-1ae3-4142-a07c-325b24bd34c3">
+    <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
+    <cim:IdentifiedObject.mRID>d139e10d-1ae3-4142-a07c-325b24bd34c3</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
+  </cim:BusbarSection>
+  <cim:Terminal rdf:ID="_454cfe91-08e1-4746-ad18-c587c8b88c07">
+    <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    <cim:IdentifiedObject.mRID>454cfe91-08e1-4746-ad18-c587c8b88c07</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Terminal_BB1.3 busbar</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Terminal of busbar section BB1.3 connecting it to ConnectivityNode</cim:IdentifiedObject.description>
+    <cim:Terminal.ConductingEquipment rdf:resource="#_d139e10d-1ae3-4142-a07c-325b24bd34c3" />
+    <cim:Terminal.ConnectivityNode rdf:resource="#_0617adcd-1448-498b-b6cc-71a4df78cc51" />
+  </cim:Terminal>
+  <cim:ConnectivityNode rdf:ID="_0617adcd-1448-498b-b6cc-71a4df78cc51">
+    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
+    <cim:IdentifiedObject.mRID>0617adcd-1448-498b-b6cc-71a4df78cc51</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>BB1.3</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName />
+  </cim:ConnectivityNode>
   <cim:ConnectivityNode rdf:ID="_f58bd25b-697c-4791-9cc2-c167805bfc6f">
     <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_61739961-1012-4ede-aeb5-22d96a1a2ac8" />
     <cim:IdentifiedObject.mRID>f58bd25b-697c-4791-9cc2-c167805bfc6f</cim:IdentifiedObject.mRID>
@@ -1696,8 +1715,10 @@
     <cim:LoadGroup.SubLoadArea rdf:resource="#_c071cdcb-71aa-f511-b7b0-a9113577acb0" />
   </cim:ConformLoadGroup>
   <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b9">
+    <cim:IdentifiedObject.description>Portheim-Espheim Voltage Level 400kV in the Boundary Substation</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>0c4f41f8-9797-44eb-bdbe-1a28efa083b9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Portheim-Espheim VL 400</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Portheim-Espheim Voltage Level 400kV</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>PH-EH-400kV</eu:IdentifiedObject.shortName>
     <cim:VoltageLevel.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:VoltageLevel.Substation rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c" />
   </cim:VoltageLevel>
@@ -1708,7 +1729,6 @@
     <cim:VoltageLevel.Substation rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c" />
   </cim:VoltageLevel>
   <cim:EquivalentInjection rdf:ID="_7df8b72b-0734-4d6c-9366-313819b808d1">
-    <cim:ConductingEquipment.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
     <cim:IdentifiedObject.mRID>7df8b72b-0734-4d6c-9366-313819b808d1</cim:IdentifiedObject.mRID>
@@ -1769,6 +1789,8 @@
   <cim:Substation rdf:ID="_42b7f03a-db7a-415a-9e15-25f634f5ea9c">
     <cim:IdentifiedObject.mRID>42b7f03a-db7a-415a-9e15-25f634f5ea9c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Substation Portheim-Espheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>Subst-PH-EH</eu:IdentifiedObject.shortName>    
+    <cim:IdentifiedObject.description>AC Substation Boundary for Portheim-Espheim</cim:IdentifiedObject.description>
     <cim:Substation.Region rdf:resource="#_f69de45f-9681-4147-9d1f-9e0336fc8635" />
   </cim:Substation>
   <cim:RegulatingControl rdf:ID="_0dd72787-4799-3444-2d9c-b064d6462bc5">
@@ -1784,7 +1806,7 @@
   </cim:SubLoadArea>
   <cim:LoadArea rdf:ID="_59c80c31-165e-4ee8-b4c7-85d3963421e1">
     <cim:IdentifiedObject.mRID>59c80c31-165e-4ee8-b4c7-85d3963421e1</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Load4</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Load Area Portheim</cim:IdentifiedObject.name>
   </cim:LoadArea>
   <cim:SynchronousMachine rdf:ID="_a6241f6e-63b5-4146-b9f7-a8277e6830db">
     <cim:Equipment.EquipmentContainer rdf:resource="#_3615f98b-c1c3-4d47-82ae-0edfc22b4680" />
@@ -1801,13 +1823,9 @@
     <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/CIM100#SynchronousMachineKind.generatorOrCondenser" />
   </cim:SynchronousMachine>
   <cim:ControlArea rdf:ID="_ffc5fd1d-282e-4908-b853-738789df9015">
-    <cim:ControlArea.EnergyArea rdf:resource="#_e6b7b719-d56b-4cf9-a60e-0248f1e9ff15"/>
+    <cim:ControlArea.EnergyArea rdf:resource="#_59c80c31-165e-4ee8-b4c7-85d3963421e1"/>
     <cim:ControlArea.type rdf:resource="http://iec.ch/TC57/CIM100#ControlAreaTypeKind.Interchange"/>
     <cim:IdentifiedObject.mRID>ffc5fd1d-282e-4908-b853-738789df9015</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Control AreaPortheim</cim:IdentifiedObject.name>
   </cim:ControlArea>
-  <cim:LoadArea rdf:ID="_e6b7b719-d56b-4cf9-a60e-0248f1e9ff15">
-    <cim:IdentifiedObject.mRID>e6b7b719-d56b-4cf9-a60e-0248f1e9ff15</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Load Area Portheim</cim:IdentifiedObject.name>
-  </cim:LoadArea>
 </rdf:RDF>
