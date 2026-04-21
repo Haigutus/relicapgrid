@@ -150,7 +150,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <nc:GateInputPin.thresholdValue>-50</nc:GateInputPin.thresholdValue>
     <cim:IdentifiedObject.mRID>85826c3d-d25f-4b41-92d4-b2b855f3e96f</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>FlowAt_8455f014-d0a0-4712-ad70-8275de3b2ee8e</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a</cim:IdentifiedObject.name>
     <nc:PinTerminal.Terminal rdf:resource="#_6872b1c9-9f39-48d5-88c3-25d9d82af2a2" />
     <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" />
   </nc:PinTerminal>
@@ -163,7 +163,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <nc:GateInputPin.thresholdValue>50</nc:GateInputPin.thresholdValue>
     <cim:IdentifiedObject.mRID>2a58112c-da48-48fd-b1b4-0ad75cc431ae</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>FlowAt_8455f014-d0a0-4712-ad70-8275de3b2ee8e</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a</cim:IdentifiedObject.name>
     <nc:PinTerminal.Terminal rdf:resource="#_6872b1c9-9f39-48d5-88c3-25d9d82af2a2" />
     <nc:PinTerminal.kind rdf:resource="https://cim4.eu/ns/nc#PinTerminalKind.activePower" />
   </nc:PinTerminal>
@@ -174,8 +174,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.equals" />
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <cim:IdentifiedObject.mRID>0e466fa1-6c55-4588-8077-abb6990d72a9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EquipmentTrip_8455f014-d0a0-4712-ad70-8275de3b2ee8e</cim:IdentifiedObject.name>
-    <nc:PinEquipmentTripping.Equipment rdf:resource="#_8455f014-d0a0-4712-ad70-8275de3b2ee8e" />
+    <cim:IdentifiedObject.name>EquipmentTrip_e9a92c08-1020-4810-8126-decb9124fc9a</cim:IdentifiedObject.name>
+    <nc:PinEquipmentTripping.Equipment rdf:resource="#_e9a92c08-1020-4810-8126-decb9124fc9a" />
   </nc:PinEquipmentTripping>
   <nc:PinEquipmentTripping rdf:ID="_4f2c5ad6-2adb-47fd-a4c3-e43a083527dd">
     <nc:GateInputPin.Gate rdf:resource="#_93ca77f3-221d-430b-861f-35f144d49002" />
