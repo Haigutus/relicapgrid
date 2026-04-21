@@ -291,8 +291,9 @@
   <nc:Gate rdf:ID="_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27">
     <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.or" />
     <cim:IdentifiedObject.mRID>b73c5258-2fb6-4e8a-8b0a-61d84a52ee27</cim:IdentifiedObject.mRID>
-<cim:IdentifiedObject.name>check if one of the lines tripped - contingency applied</cim:IdentifiedObject.name>
-    <cim:IdentifiedObject.description>Check if one of the lines SLK-DUN (BO-Line_2), or SLK-ZRC (BO-Line_6), or MON-DUN tripped - contingency applied</cim:IdentifiedObject.description>  </nc:Gate>
+    <cim:IdentifiedObject.name>check if one of the lines tripped - contingency applied</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Check if one of the lines SLK-DUN (BO-Line_2), or SLK-ZRC (BO-Line_6), or MON-DUN tripped - contingency applied</cim:IdentifiedObject.description> 
+  </nc:Gate>
   <nc:PinContingency rdf:ID="_86b26849-bc10-462b-97ef-1d339cd6614e">
     <nc:GateInputPin.Gate rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
     <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
