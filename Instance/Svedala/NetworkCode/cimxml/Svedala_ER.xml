@@ -31,17 +31,48 @@
     <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
-  <nc:BiddingZone rdf:ID="_4b0d834a-3487-426e-b69d-6b5c2a36494b">
-    <nc:BiddingZone.isTradeEnabled>true</nc:BiddingZone.isTradeEnabled>
-    <cim:IdentifiedObject.description>BZ_SD</cim:IdentifiedObject.description>
-    <cim:IdentifiedObject.mRID>4b0d834a-3487-426e-b69d-6b5c2a36494b</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Bidding Zone SD</cim:IdentifiedObject.name>
-  </nc:BiddingZone>
-  <nc:SchedulingArea rdf:ID="_658d2858-ed67-4179-a825-546df2aee455">
-    <cim:IdentifiedObject.description>Svedala</cim:IdentifiedObject.description>
-    <cim:IdentifiedObject.mRID>658d2858-ed67-4179-a825-546df2aee455</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Svedala</cim:IdentifiedObject.name>
-    <nc:SchedulingArea.BiddingZone rdf:resource="#_4b0d834a-3487-426e-b69d-6b5c2a36494b"/>
-    <nc:SchedulingArea.ControlArea rdf:resource="#_ebccc726-b760-46c6-b7f6-8289bafce797"/>
-  </nc:SchedulingArea>
+
+	<nc:OrdinaryPowerTransferCorridor rdf:ID="_1ad441fe-e557-4e7b-8286-91bd8029c3ff">
+		<cim:IdentifiedObject.mRID>1ad441fe-e557-4e7b-8286-91bd8029c3ff</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>UseCase_NCP436</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.description>Power Transfer Corridor for line CL14 and CL15 in "meassured" in substation STENFORSEN CT31</cim:IdentifiedObject.description>
+		<nc:PowerTransferCorridor.normalEnabled>true</nc:PowerTransferCorridor.normalEnabled>
+	</nc:OrdinaryPowerTransferCorridor>
+
+	<nc:CircuitShare rdf:ID="_f65ea671-415f-4284-b216-010b8fe543ab">
+		<cim:IdentifiedObject.mRID>f65ea671-415f-4284-b216-010b8fe543ab</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>CL14_CS</cim:IdentifiedObject.name>
+		<nc:CircuitShare.PowerTransferCorridor rdf:resource="#_1ad441fe-e557-4e7b-8286-91bd8029c3ff"/>
+		<nc:CircuitShare.Circuit rdf:resource="#_f4a4a26e-fbaa-4e67-8632-9cf1c1671902"/>
+	</nc:CircuitShare>
+	<nc:CircuitShare rdf:ID="_eb36a3d9-55b4-435c-a6bc-5a6c571dbd8f">
+		<cim:IdentifiedObject.mRID>eb36a3d9-55b4-435c-a6bc-5a6c571dbd8f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>CL15_CS</cim:IdentifiedObject.name>
+		<nc:CircuitShare.PowerTransferCorridor rdf:resource="#_1ad441fe-e557-4e7b-8286-91bd8029c3ff"/>
+		<nc:CircuitShare.Circuit rdf:resource="#_4ca1c51b-7f5a-490f-9f3a-62ae5a82b6c4"/>
+	</nc:CircuitShare>
+
+	<nc:LineCircuit rdf:ID="_f4a4a26e-fbaa-4e67-8632-9cf1c1671902">
+		<cim:IdentifiedObject.mRID>f4a4a26e-fbaa-4e67-8632-9cf1c1671902</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>CL14_LC</cim:IdentifiedObject.name>
+		<nc:Circuit.IdentifyingTerminal rdf:resource="#_6872b1c9-9f39-48d5-88c3-25d9d82af2a2"/>
+		<nc:Circuit.positiveFlowIn>false</nc:Circuit.positiveFlowIn>
+	</nc:LineCircuit>
+	<nc:LineCircuit rdf:ID="_4ca1c51b-7f5a-490f-9f3a-62ae5a82b6c4">
+		<cim:IdentifiedObject.mRID>4ca1c51b-7f5a-490f-9f3a-62ae5a82b6c4</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>CL15_LC</cim:IdentifiedObject.name>
+		<nc:Circuit.IdentifyingTerminal rdf:resource="#_635e2a2a-e9db-4023-96a6-064a4bcf5a1e"/>
+		<nc:Circuit.positiveFlowIn>false</nc:Circuit.positiveFlowIn>
+	</nc:LineCircuit>
+	
+  <cim:OperationalLimitSet rdf:about="_f11220b0-3c3c-cc6a-105c-8ffd33f5a790">
+		<nc:OperationalLimitSet.PowerTransferCorridor rdf:resource="#_1ad441fe-e557-4e7b-8286-91bd8029c3ff"/>
+  </cim:OperationalLimitSet>
+
+	<cim:OperationalLimitSet rdf:about="_89de3c44-8a85-3cb9-6d7c-af2339a5a047">
+		<nc:OperationalLimitSet.PowerTransferCorridor rdf:resource="#_1ad441fe-e557-4e7b-8286-91bd8029c3ff"/>
+	</cim:OperationalLimitSet>
+	
+
+
 </rdf:RDF>
