@@ -56072,7 +56072,7 @@
     <cim:VoltageLevel.Substation rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c1" />
   </cim:VoltageLevel>
   <cim:VoltageLevel rdf:ID="_0c4f41f8-9797-44eb-bdbe-1a28efa083b9">
-    <cim:IdentifiedObject.description>Portheim-Espheim Voltage Level 400kV in the Boundary Substation</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>Portheim-Espheim Voltage Level 400kV in the Boundary Substation, this instance appears in two EQ files and in the Boundary.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>0c4f41f8-9797-44eb-bdbe-1a28efa083b9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Portheim-Espheim Voltage Level 400kV</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>PH-EH-400kV</eu:IdentifiedObject.shortName>
@@ -56111,7 +56111,7 @@
     <cim:IdentifiedObject.mRID>42b7f03a-db7a-415a-9e15-25f634f5ea9c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Substation Portheim-Espheim</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>Subst-PH-EH</eu:IdentifiedObject.shortName>    
-    <cim:IdentifiedObject.description>AC Substation Boundary for Portheim-Espheim</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.description>AC Substation Boundary for Portheim-Espheim, this instance appears in two EQ files and in the Boundary.</cim:IdentifiedObject.description>
     <cim:Substation.Region rdf:resource="#_f69de45f-9681-4147-9d1f-9e0336fc8635" />
   </cim:Substation>
   <cim:LoadResponseCharacteristic rdf:ID="_6994435b-9f22-ab76-134a-c07ab832dc73">
