@@ -119,11 +119,11 @@
   </nc:InfeedTerminal>
   <nc:LineCircuit rdf:ID="_cef9011e-3753-453b-93bd-fb36eb3daac1">
     <cim:IdentifiedObject.mRID>cef9011e-3753-453b-93bd-fb36eb3daac1</cim:IdentifiedObject.mRID>
-    <nc:Circuit.positiveFlowIn>True</nc:Circuit.positiveFlowIn>
+    <nc:Circuit.positiveFlowIn>true</nc:Circuit.positiveFlowIn>
   </nc:LineCircuit>
   <nc:PowerTransformerCircuit rdf:ID="_c31ae69b-423d-47c0-bacc-083d64e34d4a">
     <cim:IdentifiedObject.mRID>c31ae69b-423d-47c0-bacc-083d64e34d4a</cim:IdentifiedObject.mRID>
-    <nc:Circuit.positiveFlowIn>True</nc:Circuit.positiveFlowIn>
+    <nc:Circuit.positiveFlowIn>true</nc:Circuit.positiveFlowIn>
   </nc:PowerTransformerCircuit>
   <cim:ACLineSegment rdf:about="_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
     <nc:Equipment.Circuit rdf:resource="#_cef9011e-3753-453b-93bd-fb36eb3daac1"/>
