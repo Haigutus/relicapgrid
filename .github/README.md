@@ -28,7 +28,7 @@ List of the people and organisations contributing to this repository.
 
 - [@tviegut](https://github.com/viegut) - AspenTech
 - [@fmalicevicdigsilent](https://github.com/fmalicevicdigsilent) - DIgSILENT
-- [@LarsTruelsenEnerginet](https://github.com/LarsTruelsenEnerginet) and (https://github.com/Holdersen)[@Holdersen] - Energinet
+- [@LarsTruelsenEnerginet](https://github.com/LarsTruelsenEnerginet) and [@Holdersen](https://github.com/Holdersen) - Energinet
 - [@griddigit-ci](https://github.com/griddigit-ci), [@Decodre](https://github.com/Decodre), [@benceszirbik](https://github.com/benceszirbik), [@benedekfodor](https://github.com/benedekfodor) - gridDigIt
 - [@jakubscg](https://github.com/jakubscg) - PSE
 - [@pweaver-rte](https://github.com/pweaver-rte) - RTE
@@ -85,7 +85,7 @@ ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 belo
 
 All of them are in a geographical region called *Nine Realms*. This information and more - like the voltage level of the transmission network - is available in the synthetic *Common Data* dataset that has been created for ReliCapGrid. As readers might guess, this intends to replicate the real (public), more extensive ENTSO-E Common Data dataset available on the [CGMES Library](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange/).
 
-![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/.github/Media/Readme_TheGridModel_1.PNG)
+![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](.github\Media\ReliCapGrid_map1.png)
 
 ### The Network Code Instances
 The *Nine Realms* region that ReliCapGrid represents also happens to be a capacity calculation region called *CCR-NineRealms* that has few synchronous areas,  *SyncArea-Continental* being the main. 
