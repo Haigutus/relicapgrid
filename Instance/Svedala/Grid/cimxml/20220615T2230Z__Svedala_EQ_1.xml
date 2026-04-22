@@ -55943,4 +55943,32 @@
     <cim:OperationalLimit.OperationalLimitType rdf:resource="#_b496b71e-e3c7-ebd3-717d-448274167223"/>
     <cim:VoltageLimit.normalValue>440</cim:VoltageLimit.normalValue>
   </cim:VoltageLimit>
+  <!--Power Transfer Corridor for UseCaseNCP436 -->
+  <cim:ActivePowerLimit rdf:ID="_a331310f-a6b9-4e30-be2e-a6f62b0b5430">
+		<cim:IdentifiedObject.name>Limit_export</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.mRID>a331310f-a6b9-4e30-be2e-a6f62b0b5430</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.description>Limit of Power Transfer Corridor for UseCaseNCP436</cim:IdentifiedObject.description>
+		<cim:ActivePowerLimit.value>2500</cim:ActivePowerLimit.value>
+		<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f11220b0-3c3c-cc6a-105c-8ffd33f5a790"/>
+		<cim:OperationalLimit.OperationalLimitType rdf:resource="#_98cf1d8f-f84f-4d77-9616-43aa5a21c82c"/>
+	</cim:ActivePowerLimit>
+	<cim:ActivePowerLimit rdf:ID="_ec2a2385-872d-4cf7-b50b-f9e8a7210dbb">
+		<cim:IdentifiedObject.name>Limit_import</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.mRID>ec2a2385-872d-4cf7-b50b-f9e8a7210dbb</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.description>Limit of Power Transfer Corridor for UseCaseNCP436</cim:IdentifiedObject.description>
+		<cim:ActivePowerLimit.value>-2500</cim:ActivePowerLimit.value>
+		<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_89de3c44-8a85-3cb9-6d7c-af2339a5a047"/>
+		<cim:OperationalLimit.OperationalLimitType rdf:resource="#_784a84a0-0d21-4d8c-bc63-94f7312a1eb2"/>
+	</cim:ActivePowerLimit>
+	<cim:OperationalLimitType rdf:ID="_784a84a0-0d21-4d8c-bc63-94f7312a1eb2">
+		<cim:OperationalLimitType.direction rdf:resource="https://cim.ucaiug.io/ns#OperationalLimitDirectionKind.high"/>
+		<cim:IdentifiedObject.name>PTC_limit_import</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.mRID>784a84a0-0d21-4d8c-bc63-94f7312a1eb2</cim:IdentifiedObject.mRID>
+	</cim:OperationalLimitType>
+	<cim:OperationalLimitType rdf:ID="_98cf1d8f-f84f-4d77-9616-43aa5a21c82c">
+		<cim:OperationalLimitType.direction rdf:resource="https://cim.ucaiug.io/ns#OperationalLimitDirectionKind.low"/>
+		<cim:IdentifiedObject.name>PTC_limit_export</cim:IdentifiedObject.name>
+		<cim:IdentifiedObject.mRID>98cf1d8f-f84f-4d77-9616-43aa5a21c82c</cim:IdentifiedObject.mRID>
+	</cim:OperationalLimitType>
+
 </rdf:RDF>
