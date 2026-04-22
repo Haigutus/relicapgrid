@@ -5,7 +5,7 @@
 == Overview
 
 The ReliCapGrid project defines *6 cross-border AC and HVDC interconnections* between 7 fictional TSO areas (Galia, Belgovia, Svedala, Espheim, Nordheim, Britheim, Portheim), modelled in *CGMES v3.0* RDF/XML format.
-All boundary configurations are provided as conformance test cases for CGMES boundary modelling tools, following ENTSO-E specifications (see link:https://eepublicdownloads.entsoe.eu/clean-documents/CIM_documents/Grid_Model_CIM/Boundary_and_reference_data_exchange_specification_v1.0.pdf[Boundary and Reference Data Exchange Specification v1.0]).
+All boundary configurations are provided as conformance test cases for CGMES boundary modelling tools, following ENTSO-E specifications (see link:https://eepublicdownloads.entsoe.eu/clean-documents/CIM_documents/Grid_Model_CIM/Boundary_and_reference_data_exchange_specification_v1.0.pdf[Boundary and Reference Data Exchange Specification v1.0]). Note: the specification will have a new version (BC_DES) in the near future.
 
 *Galia* acts as the central hub (3 borders). Together the borders form a partially meshed transmission network with ~20 individual boundary points, covering classical AC tie-lines as well as HVDC converter station boundaries.
 
