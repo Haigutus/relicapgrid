@@ -1,0 +1,66 @@
+= Boundary Configurations in ReliCapGrid
+:toc:
+:toclevels: 2
+
+== Overview
+
+The ReliCapGrid project defines *6 cross-border AC and HVDC interconnections* between 7 fictional TSO areas (Galia, Belgovia, Svedala, Espheim, Nordheim, Britheim, Portheim), modelled in *CGMES v3.0* RDF/XML format.
+All boundary configurations are provided as conformance test cases for CGMES boundary modelling tools, following ENTSO-E specifications (see link:https://eepublicdownloads.entsoe.eu/clean-documents/CIM_documents/Grid_Model_CIM/Boundary_and_reference_data_exchange_specification_v1.0.pdf[Boundary and Reference Data Exchange Specification v1.0]). Note: the specification will have a new version (BC_DES) in the near future.
+
+*Galia* acts as the central hub (3 borders). Together the borders form a partially meshed transmission network with ~20 individual boundary points, covering classical AC tie-lines as well as HVDC converter station boundaries.
+
+* *Standard*: CGMES v3.0 (Common Grid Model Exchange Standard)
+* *File locations*: `Instance/boundaryData/Grid/cimxml/`
+
+
+== Boundary Point Modelling Approaches
+
+The dataset demonstrates the following modelling patterns:
+
+. *Separate boundary and common data* — independent datasets for distribution
+. *Per-border datasets* — modular organisation by boundary
+
+
+== Boundary types
+. *AC Tie-Line Boundary* — classical approach with a ConnectivityNode splitting a tie-line
+. *AC Substation Boundary* — two-point substation boundary configuration
+. *HVDC boundary modelling* — bidirectional converter station boundary points with own IGM files
+
+== Borders in detail
+
+[cols="2,2,2,2,1,2", options="header"]
+|===
+| Border | Boundary Point | From End | To End | Voltage | Connection Type
+
+.5+| Galia – Belgovia
+| BP_GA-BO1 | Alfheim1 (GA) | Brussia1 (BO) | 220 kV | AC Line
+| BP_GA-BO2 | Alfheim2 (GA) | Brussia2 (BO) | 220 kV | AC Line
+| BP_GA-BO3 | Alfheim3 (GA) | Brussia3 (BO) | 380 kV | AC Line
+| BP_GA-BO4 | Alfheim4 (GA) | Brussia4 (BO) | 380 kV | AC Line
+| BP_GA-BO5 | Alfheim5 (GA) | Brussia5 (BO) | 380 kV | AC Line
+
+.1+| Galia – Britheim
+| BP_GA-BH1 | Alfheim6 (GA) | Londgard1 (BH) | 220 kV | AC Line
+
+.2+| Galia – Nordheim
+| BP_GA-NH1 | Alfheim7 (GA) | Oldissa1 (NH) | 220 kV | AC Line
+| BP_GA-NH2 | Alfheim7 (GA) | Oldissa1 (NH) | — | HVDC VSC (substation boundary)
+
+.3+| Svedala – Belgovia
+| BP_SD-BO1 | Bouchala (SD) | Mastania (BO) | 380 kV | AC Line
+| BP_SD-BO2 | Bouchala2 (SD) | Mastania2 (BO) | 380 kV | AC Line
+| BP_SD-BO3 | Bouchala3 (SD) | Mastania3 (BO) | 225 kV | AC Line
+
+.5+| Svedala – Espheim
+| BP_SD-EH1 | Parila1 (SD) | Barigar1 (EH) | 220 kV | AC Line
+| BP_SD-EH2 | Parila2 (SD) | Barigar2 (EH) | 400 kV | AC Line
+| BP_SD-EH3 | Parila3 (SD) | Barigar3 (EH) | 400 kV | AC Line
+| BP_SD-EH_DC1 | Parila4 (SD) | Barigar1 (EH) | — | HVDC LCC (line boundary)
+| BP_EH-SD_DC1 | Madgar4 (EH) | Leyva1 (SD) | — | HVDC LCC (line boundary)
+
+.4+| Espheim – Portheim
+| BP_EH-PH1 | Madgar1 (EH) | Lysaborg1 (PH) | 132 kV | AC Line
+| BP_EH-PH2 | Madgar2 (EH) | Lysaborg2 (PH) | 132 kV | AC Line
+| BP_EH-PH3 | Madgar3 (EH) | Lysaborg3 (PH) | 220 kV | AC Line
+| BP_PH-EH | Substation PH-EH (EH) | Substation PH-EH (PH) | 400 kV | AC Substation Boundary
+|===
