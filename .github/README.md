@@ -11,17 +11,17 @@ The aim is demonstrating ​practical TSO and RCC data exchange use cases for th
 
 The Regional Coordination Processes Data Exchange Specification (RCP DES) complements the test model as this is the document describing use cases and general guidance on the use Network Code Profiles. Find this data exchange specification and more on the [ENTSO-E's CGMES Library](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange).
 
-ENTSO-E continuously collaborates with an ecosystem of TSOs, RCCs, regional projects and relevant industry software vendors. One of the outputs of this collaboration is the ReliCapGrid test model. Readers can consult the Accreditations section down below to see the list of people and organisations collaborating under the [CC-BY-SA-4.0 open-source License](https://github.com/entsoe-tso/relicapgrid/blob/main/LICENSE.md).
+ENTSO-E continuously collaborates with an ecosystem of TSOs, RCCs, regional projects and relevant industry software vendors. One of the outputs of this collaboration is the ReliCapGrid test model. Readers can consult the Accreditations section down below to see the list of people and organisations collaborating under the [CC-BY-SA-4.0 open-source License](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/LICENSE.md).
 
 The following chapters describe the model content and it will be continuously improved in subsequent releases.
 
 ### How to provide feedback
 When importing any data contained in the repository, you might find some bugs or issues to report. Please, open a GitHub issue and include your export log when applicable.
 
-Do not forget to read [CONTRIBUTING](https://github.com/entsoe-tso/relicapgrid/blob/main/.github/CONTRIBUTING.adoc) file.
+Do not forget to read [CONTRIBUTING](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/.github/CONTRIBUTING.adoc) file.
 
 ### License
-Please, refer to the [LICENSE](https://github.com/entsoe-tso/relicapgrid/blob/main/LICENSE.md) for more information on the open-source license collaboration framework of the repository.
+Please, refer to the [LICENSE](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/LICENSE.md) for more information on the open-source license collaboration framework of the repository.
 
 ### Accreditations
 List of the people and organisations contributing to this repository.
@@ -85,7 +85,7 @@ ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 belo
 
 All of them are in a geographical region called *Nine Realms*. This information and more - like the voltage level of the transmission network - is available in the synthetic *Common Data* dataset that has been created for ReliCapGrid. As readers might guess, this intends to replicate the real (public), more extensive ENTSO-E Common Data dataset available on the [CGMES Library](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange/).
 
-![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](https://github.com/entsoe-tso/relicapgrid/blob/main/.github/Media/Readme_TheGridModel_1.PNG)
+![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/.github/Media/Readme_TheGridModel_1.PNG)
 
 ### The Network Code Instances
 The *Nine Realms* region that ReliCapGrid represents also happens to be a capacity calculation region called *CCR-NineRealms* that has few synchronous areas,  *SyncArea-Continental* being the main. 

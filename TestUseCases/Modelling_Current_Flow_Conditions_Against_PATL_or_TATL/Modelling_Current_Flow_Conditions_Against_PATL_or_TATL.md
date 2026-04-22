@@ -8,11 +8,11 @@ The test case should be performed as follows:
 
 1)  Open the CGM model or [IGM Belgovia](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid/IGM_Belgovia).
 
-2)  Import the list of SIPS from Remedial Action Profile ([Belgovia_RA.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_RA.xml))
+2)  Import the list of SIPS from Remedial Action Profile ([Belgovia_RA.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_RA.xml))
 
 3)  Check if SIPS was uploaded correctly and the logic is as expected.
 
-4)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO.xml)).
+4)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO.xml)).
 
 5)  Change the TATL value for line BO-Line_6 in Alfavik substation to 110 -- name: tatl 600 for BO-Line_6 mRID: 524301ff-c48a-836e-f914-ed06ac42e2e1.
 
