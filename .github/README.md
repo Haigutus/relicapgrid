@@ -45,29 +45,30 @@ It must be mentioned that the synthetic grid model *Svedala* is based on [Svensk
 
 ### How to Assemble File Packages for Import
 
-The grid model files are organized under [Instance/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid). The following guidance describes which files to combine when creating import packages for your tooling.
+Each TSO's grid model files are organized under [Instance/*TSO*/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance) folders, serialized in multiple formats, with CIM XML being the primary format under active development. The following guidance describes which files to combine when creating import packages for your tooling.
 
-#### IGM (Individual Grid Model)
+**Individual Grid Model import with individual boundary files - IGM**
 
-Each TSO's IGM files are in a dedicated folder (e.g., `Instance/Grid/IGM_Belgovia/`). Boundary and common data files are under `Instance/Grid/CommonAndBoundaryData/`.
+- All profiles from the respective `Instance/<TSO>/Grid/cimxml` folder (EQ, SSH, SV, TP)
+- The relevant per-border boundary file(s) from `Instance/boundaryData/Grid/cimxml`
+- CommonData for Grids: `Instance\commonData\NetworkCode\cimxml\Org-NineRealms_CD.xml`
 
-**Option 1 — IGM with individual boundary files (recommended):**
+  additionally the Network Code Profiles:
 
-- All profiles from the respective `Instance/Grid/IGM_<TSO>/` folder (EQ, SSH, SV, TP)
-- The relevant per-border boundary file(s) from `Instance/Grid/CommonAndBoundaryData/` (e.g., `Boundary_Border-Belgovia-Svedala.xml`)
+- Desired profiles form the respective `Instance/<TSO>/NetworkCode/cimxml` folder
+- CommonData for Network Code: `Instance/commonData/Grid/cimxml/Grid_CommonData_CGM-CD.xml`
+
+#### Common Grid Model creation - CGM
+
+- The EQ profile from **each** `Instance/<TSO>/Grid/cimxml` folder
+- All files from `Instance/Jotunheim/Grid/cimxml` (SSH, TP, SV)
+- All relevant per-border boundary file(s) from `Instance/boundaryData/Grid/cimxml`
 - `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
 
-**Option 2 — IGM with merged boundary file (deprecated, will be phased out):**
+  additionally the Network Code Profiles:
 
-- All profiles from the respective `Instance/Grid/IGM_<TSO>/` folder (EQ, SSH, SV, TP)
-- `Instance/Grid/CommonAndBoundaryData/CommonData_and_Boundary_merged.xml` — this single file contains common data and all boundary data combined, so no individual border files are needed
-
-#### CGM (Common Grid Model)
-
-- The EQ profile from **each** `Instance/Grid/IGM_<TSO>/` folder
-- All files from `Instance/Grid/CGM/`
-- The relevant per-border boundary file(s) from `Instance/Grid/CommonAndBoundaryData/` (e.g., `Boundary_Border-Belgovia-Svedala.xml`)
-- `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
+- Desired profiles form the respective `Instance/<TSO>/NetworkCode/cimxml` folder
+- CommonData for Network Code: `Instance/commonData/Grid/cimxml/Grid_CommonData_CGM-CD.xml`
 
 ---
 
@@ -79,7 +80,7 @@ ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 belo
 - Galia - developed based on legacy MicroGrid Test Configuration
 - Nordheim - only one node
 - Britheim - includes HVDC internal interconnection VSC and also some small grid 1-2 nodes
-- Portheim - the network model is not part of ReliCapGrid; only the connection towards Portheim is represented
+- Portheim - few nodes modelled in a boundary substation 
 - HVDC Espheim-Svedala - an HVDC IGM LCC
 - HVDC Nordheim-Galia - an HVDC IGM VSC Bipole
 
