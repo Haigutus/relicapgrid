@@ -143,6 +143,7 @@
     <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:IdentifiedObject.mRID>00c7faff-a1ed-4b64-bbf8-527d4efefb76</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Busbar Section BP-PH-EH</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Busbar Section for the Boundary Point Portheim-Espheim</cim:IdentifiedObject.description>
   </cim:BusbarSection>
   <cim:Terminal rdf:ID="_a414d08b-918b-41ac-a242-82a2915ab810">
     <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
