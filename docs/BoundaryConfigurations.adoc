@@ -23,7 +23,7 @@ The dataset demonstrates the following modelling patterns:
 
 == Boundary types
 . *AC Tie-Line Boundary* — classical approach with a ConnectivityNode splitting a tie-line
-. *AC Substation Boundary* — substation boundary configuration
+. *AC Substation Boundary* — substation boundary configuration with common busbar section
 . *HVDC boundary modelling* — bidirectional converter station boundary points with own IGM files
 
 == Borders in detail
