@@ -73,7 +73,7 @@ The following guidance describes which files to combine when creating import pac
 - CommonData for Network Code: `Instance\commonData\NetworkCode\cimxml\Org-NineRealms_CD.xml`
 
 
-The load flow calculation parameters are documented in the [power flow settings document](docs/PowerFlowCalculationSettings.adoc).
+The load flow calculation parameters are documented in the [power flow settings document](../docs/PowerFlowCalculationSettings.adoc).
 
 
 ---
@@ -94,7 +94,7 @@ All of them are in a geographical region called *Nine Realms*. This information 
 
 ![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](.github\Media\ReliCapGrid_map1.png)
 
-A [detailed boundary description](docs/BoundaryConfigurations.adoc) is available in the docs folder.
+A [detailed boundary description](../docs/BoundaryConfigurations.adoc) is available in the docs folder.
 
 ### The Network Code Instances
 The *Nine Realms* region that ReliCapGrid represents also happens to be a capacity calculation region called *CCR-NineRealms* that has a few synchronous areas, with *SyncArea-Continental* being the main one. 
