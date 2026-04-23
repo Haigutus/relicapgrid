@@ -4,11 +4,11 @@ The test case should be performed as follows:
 
 1)  Open the CGM model or [IGM Belgovia](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/Grid/IGM_Belgovia).
 
-2)  Import the list of SIPS from Remedial Action Profile ([Belgovia_RA.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_RA.xml)).
+2)  Import the list of SIPS from Remedial Action Profile ([Belgovia_RA.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_RA.xml)).
 
 3)  Check if SIPS was uploaded correctly and the logic is as expected.
 
-4)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
+4)  Import the Contingency List from Contingency Profile ([Belgovia_CO_SIPS.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)).
 
 5)  Run contingency analysis including SIPS activation.
 
@@ -26,8 +26,8 @@ Test data was prepared based on Belgovia individual grid model. The elements con
 
 - The action is to switch-off the HVDC link TieLine_GA_BO2 which is done by opening the breaker CIRCB-1230991544 (mRID 484536e9-762a-49a3-9970-d60b9fae03fe).
 
-- The SIPS model was prepared in file named: [Belgovia_RA_SIPS_UC4_Last_Line_Disconnection.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_UC4_Last_Line_Disconnection_Belgovia.xml)
+- The SIPS model was prepared in file named: [Belgovia_RA_SIPS_UC4_Last_Line_Disconnection.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_UC4_Last_Line_Disconnection_Belgovia.xml)
 
-- To force the power drop on line BO-Line_2 to less than 1MW, the opening of a breaker at the other end of the line (in PP_Brussia substation) is simulated by adding this breaker (CIRCB-1230992276, mRID 3b394dab-ab47-4022-98be-8123c6dfe7d4) into contingency list ([Belgovia_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)):
+- To force the power drop on line BO-Line_2 to less than 1MW, the opening of a breaker at the other end of the line (in PP_Brussia substation) is simulated by adding this breaker (CIRCB-1230992276, mRID 3b394dab-ab47-4022-98be-8123c6dfe7d4) into contingency list ([Belgovia_CO_SIPS.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/Belgovia_CO_SIPS.xml)):
 
 ![](images/media/image4.svg)

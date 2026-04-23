@@ -4,11 +4,11 @@ The test case should be performed as follows:
 
 1)  Open the CGM model or [IGM Svedala](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance/NetworkCode/Svedala/Svedala_instance).
 
-2)  Import the list of SIPS from Remedial Action Profile ([SIPS_UC7_Generation-Shedding_Svedala.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_UC7_Generation-Shedding_Svedala.xml))
+2)  Import the list of SIPS from Remedial Action Profile ([SIPS_UC7_Generation-Shedding_Svedala.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_UC7_Generation-Shedding_Svedala.xml))
 
 3)  Check if SIPS was uploaded correctly and the logic is as expected.
 
-4)  Import the Contingency List from Contingency Profile ([Svedala_CO_SIPS.xml](https://github.com/entsoe-tso/relicapgrid/blob/main/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_Svedala_CO.xml)).
+4)  Import the Contingency List from Contingency Profile ([Svedala_CO_SIPS.xml](https://github.com/entsoe/relicapgrid/blob/cgmes-3.0_ncp-2.4_tc-1.1/Instance/NetworkCode/Belgovia/Belgovia_instance/SIPS/SIPS_Svedala_CO.xml)).
 
 5)  Make sure that line CL6 PATL and TATL limits are set sufficiently to overload the line in contingency case. Adjusting PATL and TATL limits of line if needed, remembering that TATL limit should be higher than PATL limit.
 
