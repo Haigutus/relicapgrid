@@ -41,7 +41,7 @@
    <nc:RemedialActionSchedule rdf:ID="_24fb6a23-3bb3-4e27-9488-597957c10bdc">
     <cim:IdentifiedObject.mRID>24fb6a23-3bb3-4e27-9488-597957c10bdc</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>FAP proposing costly preventive redispatch</cim:IdentifiedObject.name>
-    <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_fdabc5da-fc4f-488e-8d9b-3f63680566ad"/>
+    <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_6d2c8901-d068-4d22-8ce9-7379644b4f17"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
   <nc:EventSchedule rdf:ID="_fd123c28-963a-49fc-8287-679eb8fc092c">
