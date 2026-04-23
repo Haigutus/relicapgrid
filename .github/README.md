@@ -92,7 +92,7 @@ ReliCapGrid consists of the following fictitious TSOs, as shown in Figure 1 belo
 
 All of them are in a geographical region called *Nine Realms*. This information and more - like the voltage level of the transmission network - is available in the synthetic *Common Data* dataset that has been created for ReliCapGrid. As the name suggests, it is designed to replicate the real (public), more extensive ENTSO-E Common Data dataset available on the [CGMES Library](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange/).
 
-![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](.github\Media\ReliCapGrid_map1.png)
+![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](Media/ReliCapGrid_map1.png)
 
 A [detailed boundary description](../docs/BoundaryConfigurations.adoc) is available in the docs folder.
 
