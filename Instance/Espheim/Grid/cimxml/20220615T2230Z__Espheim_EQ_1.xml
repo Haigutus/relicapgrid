@@ -56085,7 +56085,7 @@
     <cim:LoadGroup.SubLoadArea rdf:resource="#_fa3972a6-d4ea-6e0e-d8df-2f11f67f6d0f" />
   </cim:ConformLoadGroup>
   <cim:PowerTransformer rdf:ID="_9c97f017-0cae-4011-ad66-2637cb96b8b6">
-    <cim:Equipment.EquipmentContainer rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c1" />
+    <cim:Equipment.EquipmentContainer rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c" />
     <cim:IdentifiedObject.mRID>9c97f017-0cae-4011-ad66-2637cb96b8b6</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>T2</cim:IdentifiedObject.name>
   </cim:PowerTransformer>
@@ -56101,7 +56101,7 @@
     <cim:SubLoadArea.LoadArea rdf:resource="#_b3db9960-92c8-3b85-2f89-ef5329c58c15" />
   </cim:SubLoadArea>
   <cim:GeneratingUnit rdf:ID="_fb847d00-7b51-9705-74f2-15261d45b37f">
-    <cim:Equipment.EquipmentContainer rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c1" />
+    <cim:Equipment.EquipmentContainer rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c" />
     <cim:GeneratingUnit.maxOperatingP>204</cim:GeneratingUnit.maxOperatingP>
     <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
     <cim:IdentifiedObject.mRID>fb847d00-7b51-9705-74f2-15261d45b37f</cim:IdentifiedObject.mRID>
