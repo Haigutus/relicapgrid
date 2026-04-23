@@ -41,6 +41,9 @@ List of the people and organisations contributing to this repository.
 
 It must be mentioned that the synthetic grid model *Svedala* is based on [Svenska Kraftnät's](https://www.svk.se/) test model of the same name, which is licensed under [CC BY-SA 4-0 open-source license](https://creativecommons.org/licenses/by-sa/4.0/).
 
+
+---
+
 ### How to Assemble File Packages for Import
 
 Each TSO's grid model files are organized under [Instance/*TSO*/Grid](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance) folders, serialized in multiple formats, with **CIM XML** being the primary format under active development. Similarly, the test Network Code Profiles instanced datasets can be found under [Instance/*TSO*/NetworkCode](https://github.com/entsoe-tso/relicapgrid/tree/main/Instance).
@@ -69,6 +72,10 @@ The following guidance describes which files to combine when creating import pac
 - Desired profiles form the respective `Instance/<TSO>/NetworkCode/cimxml` folder
 - CommonData for Network Code: `Instance\commonData\NetworkCode\cimxml\Org-NineRealms_CD.xml`
 
+
+The load flow calculation parameters are documented in the [power flow settings document](docs/PowerFlowCalculationSettings.adoc).
+
+
 ---
 
 ### The Grid Test Model
@@ -86,6 +93,8 @@ ReliCapGrid organisations are fake TSOs as it can be visualised in Figure 1 belo
 All of them are in a geographical region called *Nine Realms*. This information and more - like the voltage level of the transmission network - is available in the synthetic *Common Data* dataset that has been created for ReliCapGrid. As readers might guess, this intends to replicate the real (public), more extensive ENTSO-E Common Data dataset available on the [CGMES Library](https://www.entsoe.eu/data/cim/cim-for-grid-models-exchange/).
 
 ![Figure 1: Visualisation of ReliCapGrid's synthetic grid model](.github\Media\ReliCapGrid_map1.png)
+
+[Detailed boundary description](docs/BoundaryConfigurations.adoc) can be found in docs folder.
 
 ### The Network Code Instances
 The *Nine Realms* region that ReliCapGrid represents also happens to be a capacity calculation region called *CCR-NineRealms* that has few synchronous areas,  *SyncArea-Continental* being the main. 
