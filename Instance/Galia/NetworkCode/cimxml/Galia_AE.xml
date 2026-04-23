@@ -32,7 +32,7 @@
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:AssessedElement rdf:ID="_e43a18a9-cd28-49ce-b6b1-7db8255462e3">
-    <nc:AssessedElement.AssessedSystemOperator rdf:resource="#X1001A1001A361"/>
+    <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_2ec42376-eee2-4ab9-b79a-165e1df2a185"/>
     <nc:AssessedElement.ConductingEquipment rdf:resource="#_1dc9afba-23b5-41a0-8540-b479ed8baf4b"/>
     <nc:AssessedElement.ScannedForRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:AssessedElement.exclusionReason rdf:resource="https://cim4.eu/ns/nc#SecuredExclusionReasonKind.systemOperator"/>
@@ -42,7 +42,7 @@
     <cim:IdentifiedObject.name>AE2</cim:IdentifiedObject.name>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_e43a18a9-cd28-49ce-b6b1-7db8255462e2">
-    <nc:AssessedElement.AssessedSystemOperator rdf:resource="#X1001A1001A361"/>
+    <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_2ec42376-eee2-4ab9-b79a-165e1df2a185"/>
     <nc:AssessedElement.ConductingEquipment rdf:resource="#_1dc9afba-23b5-41a0-8540-b479ed8baf4b"/>
     <nc:AssessedElement.ScannedForRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:AssessedElement.inBaseCase>true</nc:AssessedElement.inBaseCase>
