@@ -302,7 +302,7 @@
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <cim:IdentifiedObject.mRID>86b26849-bc10-462b-97ef-1d339cd6614e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>line BO-Line_2 tripped - contingency applied</cim:IdentifiedObject.name>
-    <nc:PinContingency.Contingency rdf:resource="#_83ef276e-86ae-4d95-a877-6eb89d6ffd45" />
+    <nc:PinContingency.Contingency rdf:resource="#_7e31c67d-67ba-4592-8ac1-9e806d697c8e" />
   </nc:PinContingency>
   <nc:PinContingency rdf:ID="_cbd14cdc-d4f5-42f8-a0a6-af0dfba9b34e">
     <nc:GateInputPin.Gate rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
@@ -312,7 +312,7 @@
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <cim:IdentifiedObject.mRID>cbd14cdc-d4f5-42f8-a0a6-af0dfba9b34e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>line BO-Line_6 tripped - contingency applied</cim:IdentifiedObject.name>
-    <nc:PinContingency.Contingency rdf:resource="#_2084c569-ff2f-4f21-b67e-720384ce23ba" />
+    <nc:PinContingency.Contingency rdf:resource="#_e9eab3fe-c328-4f78-9bc1-77adb59f6ba7" />
   </nc:PinContingency>
   <!-- SIPS_UC_3 Automatic Line Shedding -->  
    <nc:RemedialActionScheme rdf:ID="_91d9f965-3934-4e27-8da5-7c7ed7372904">
