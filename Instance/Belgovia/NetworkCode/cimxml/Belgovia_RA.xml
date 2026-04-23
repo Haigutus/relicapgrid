@@ -57,7 +57,7 @@
     <cim:IdentifiedObject.name>RA18</cim:IdentifiedObject.name>
     <nc:PowerRemedialAction.BiddingZone rdf:resource="#_91e89a38-ca68-44c1-8ed4-a7db8e435f4f"/>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#YBO----------2"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
