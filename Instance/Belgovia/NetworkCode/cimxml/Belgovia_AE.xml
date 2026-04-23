@@ -137,7 +137,7 @@
     <cim:IdentifiedObject.description>This is an example of Assessed Element with Remedial Action.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>13d17257-977e-43bc-971a-25022282688a</cim:IdentifiedObject.mRID>
     <nc:AssessedElement.ConductingEquipment rdf:resource="#_550ebe0d-f2b2-48c1-991f-cebea43a21aa"/>
-    <nc:AssessedElement.ScannedForRegion rdf:resource="#_5179eb50-d943-451c-af81-194bdf9505e5"/>
+    <nc:AssessedElement.ScannedForRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
     <nc:AssessedElement.isCombinableWithRemedialAction>false</nc:AssessedElement.isCombinableWithRemedialAction>
     <nc:AssessedElement.inBaseCase>true</nc:AssessedElement.inBaseCase>
