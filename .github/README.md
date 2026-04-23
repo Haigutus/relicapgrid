@@ -67,7 +67,7 @@ The following guidance describes which files to combine when creating import pac
   additionally the Network Code Profiles:
 
 - Desired profiles form the respective `Instance/<TSO>/NetworkCode/cimxml` folder
-- CommonData for Network Code: `Instance/commonData/Grid/cimxml/Grid_CommonData_CGM-CD.xml`
+- CommonData for Network Code: `Instance\commonData\NetworkCode\cimxml\Org-NineRealms_CD.xml`
 
 ---
 
