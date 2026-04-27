@@ -56171,7 +56171,6 @@
     <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
   </cim:PowerTransformerEnd>
   <cim:EquivalentInjection rdf:ID="_5c3c6f3f-dd78-4282-a50f-b8a0842b21f3">
-    <cim:ConductingEquipment.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
     <cim:IdentifiedObject.mRID>5c3c6f3f-dd78-4282-a50f-b8a0842b21f3</cim:IdentifiedObject.mRID>
