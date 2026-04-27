@@ -12616,9 +12616,7 @@
   <cim:Equipment rdf:about="#_0480b14b-c766-11e1-8775-005056c00008">
     <cim:Equipment.inService>true</cim:Equipment.inService>
   </cim:Equipment>
-  <cim:Equipment rdf:about="#_050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a">
-    <cim:Equipment.inService>true</cim:Equipment.inService>
-  </cim:Equipment>
+
   <cim:Equipment rdf:about="#_8b1941ec-6614-5883-b068-9bac35664fad">
     <cim:Equipment.inService>true</cim:Equipment.inService>
   </cim:Equipment>
