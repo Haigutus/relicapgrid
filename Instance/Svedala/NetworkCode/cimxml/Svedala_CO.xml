@@ -167,7 +167,7 @@
   <cim:IdentifiedObject.name>CO3</cim:IdentifiedObject.name>
   <cim:IdentifiedObject.description>This is an example of an Exceptional contingency - Loss of two generation units</cim:IdentifiedObject.description>
   <cim:IdentifiedObject.mRID>2c1fe55c-0d6f-4b2c-85ce-eb1fcbc6175b</cim:IdentifiedObject.mRID>
-  <nc:Contingency.EquipmentOperator rdf:resource="#_e6c0b670-29f7-4a6b-abe9-af099e90f7b0"/>
+  <nc:Contingency.EquipmentOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
   <nc:Contingency.normalMustStudy>true</nc:Contingency.normalMustStudy>
   <nc:ExceptionalContingency.kind rdf:resource="https://cim4.eu/ns/nc#ContingencyConditionKind.operational"/>
 </nc:ExceptionalContingency>
@@ -193,7 +193,7 @@
   <cim:IdentifiedObject.name>CO1</cim:IdentifiedObject.name>
   <cim:IdentifiedObject.description>This is an example of an OutOfRange contingency - Loss of two independent busbars</cim:IdentifiedObject.description>
   <cim:IdentifiedObject.mRID>e8e8300b-e3b1-41ba-81af-406f6e5b4a55</cim:IdentifiedObject.mRID>
-  <nc:Contingency.EquipmentOperator rdf:resource="#_e6c0b670-29f7-4a6b-abe9-af099e90f7b0"/>
+  <nc:Contingency.EquipmentOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
   <nc:Contingency.normalMustStudy>true</nc:Contingency.normalMustStudy>
 </nc:OutOfRangeContingency>
 

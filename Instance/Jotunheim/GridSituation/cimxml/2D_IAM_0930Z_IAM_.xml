@@ -50,7 +50,7 @@
   <nc:RemedialActionScheduleOutcomeValue rdf:ID="_9f16db8d-3c1f-4fe8-b22f-51e223c89694">
     <cim:IdentifiedObject.mRID>9f16db8d-3c1f-4fe8-b22f-51e223c89694</cim:IdentifiedObject.mRID>
     <nc:OutcomeValue.ImpactAssessmentMatrix rdf:resource="#_d3b375a5-c7ac-4be4-abbe-64dd89f2e877"/>
-    <nc:OutcomeValue.ImpactedSystemOperator rdf:resource="#_1682bb5a-0eca-4923-a898-f7b6c4aa822b"/>
+    <nc:OutcomeValue.ImpactedSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
     <nc:OutcomeValue.outcome rdf:resource="http://entsoe.eu/ns/nc#OutcomeImpactAssessmentKind.false"/>
     <nc:RemedialActionOutcomeValue.RemedialActionSchedule rdf:resource="#_e79dc7a3-3bd2-4a1a-87e7-a8d90ae0e37c"/>
   </nc:RemedialActionScheduleOutcomeValue>

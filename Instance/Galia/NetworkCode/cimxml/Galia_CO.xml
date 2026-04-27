@@ -40,7 +40,7 @@
     <cim:IdentifiedObject.name>G1</cim:IdentifiedObject.name>
   </cim:ContingencyEquipment>
   <nc:OrdinaryContingency rdf:ID="_bd7bb012-f7b9-45e0-9e15-4e2aa3592829">
-    <nc:Contingency.EquipmentOperator rdf:resource="#X1001A1001A361"/>
+    <nc:Contingency.EquipmentOperator rdf:resource="#_2ec42376-eee2-4ab9-b79a-165e1df2a185"/>
     <nc:Contingency.normalMustStudy>true</nc:Contingency.normalMustStudy>
     <cim:IdentifiedObject.description>This is an example of an ordinary contingency; Loss of generation</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>bd7bb012-f7b9-45e0-9e15-4e2aa3592829</cim:IdentifiedObject.mRID>
@@ -55,7 +55,7 @@
     <cim:IdentifiedObject.name>HVDC_2</cim:IdentifiedObject.name>
   </cim:ContingencyEquipment>
   <nc:OrdinaryContingency rdf:ID="_a4f7a22a-736f-4d36-a476-3559828e4c7a">
-    <nc:Contingency.EquipmentOperator rdf:resource="#X1001A1001A361"/>
+    <nc:Contingency.EquipmentOperator rdf:resource="#_2ec42376-eee2-4ab9-b79a-165e1df2a185"/>
     <nc:Contingency.normalMustStudy>true</nc:Contingency.normalMustStudy>
     <cim:IdentifiedObject.description>This is an example of an ordinary contingency;Loss of HVDC converter</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>a4f7a22a-736f-4d36-a476-3559828e4c7a</cim:IdentifiedObject.mRID>

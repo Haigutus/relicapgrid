@@ -50,7 +50,7 @@
     
   <nc:RemedialActionScheduleOutcomeValue rdf:ID="_ac45dd32-c3de-49d3-9664-689b5a762fd5">
     <nc:OutcomeValue.ImpactAssessmentMatrix rdf:resource="#_c8bcbf59-bbe6-44de-aa03-f97778468d65"/>
-    <nc:OutcomeValue.ImpactedSystemOperator rdf:resource="#_31cf0436-1ede-452a-8b59-2a65bfdc9006"/>
+    <nc:OutcomeValue.ImpactedSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
     <nc:OutcomeValue.mRID>ac45dd32-c3de-49d3-9664-689b5a762fd5</nc:OutcomeValue.mRID>
     <nc:OutcomeValue.outcome rdf:resource="https://cim4.eu/ns/nc#OutcomeImpactAssessmentKind.true"/>
     <nc:RemedialActionScheduleOutcomeValue.RemedialActionSchedule rdf:resource="#_742acf52-139c-4c8f-a90c-a2090de6a619"/>

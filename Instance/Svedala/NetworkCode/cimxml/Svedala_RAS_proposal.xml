@@ -56,7 +56,7 @@
     <nc:RemedialActionScheduleAcceptance.mRID>96f93b71-420f-456f-932e-9ac3f724b683</nc:RemedialActionScheduleAcceptance.mRID>
     <nc:RemedialActionScheduleAcceptance.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleAcceptanceKind.refused"/>
     <nc:RemedialActionScheduleAcceptance.RemedialActionSchedule rdf:resource="#_17527637-6099-4ee6-8b21-fea8dfec4c75"/>	
-    <nc:RemedialActionScheduleAcceptance.RespondingEntity rdf:resource="https://energy.referencedata.eu/Test/Party/Svedala"/>
+    <nc:RemedialActionScheduleAcceptance.RespondingEntity rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
   </nc:RemedialActionScheduleAcceptance>
 
   <nc:RemedialActionScheduleDependency rdf:ID="_f7231aa5-d497-41f3-a5d5-9d4af74444f0">
