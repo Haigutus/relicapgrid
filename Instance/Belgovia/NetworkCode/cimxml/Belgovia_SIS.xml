@@ -132,9 +132,6 @@
     <nc:ParticipationFactorTimePoint.atTime>2024-02-22T17:30:00Z</nc:ParticipationFactorTimePoint.atTime>
     <nc:ParticipationFactorTimePoint.participationFactor>0.5</nc:ParticipationFactorTimePoint.participationFactor>
     <nc:PowerBidScheduleTimePoint.PowerShiftKeySchedule rdf:resource="#_3b5748de-39f2-45d7-9a66-65819c667e91"/>
-    <cim:IdentifiedObject.description>Participation Factor Time Point 1 sample</cim:IdentifiedObject.description>
-  <cim:IdentifiedObject.mRID>06dea5a7-512e-48da-a2fc-5e0ec83a5b8e</cim:IdentifiedObject.mRID>
-  <cim:IdentifiedObject.name>PF Timepoint 1</cim:IdentifiedObject.name>
 </nc:ParticipationFactorTimePoint>
 
 <!-- 7.1.8.3.3 Redispatch Remedial Action - example 2 -->
