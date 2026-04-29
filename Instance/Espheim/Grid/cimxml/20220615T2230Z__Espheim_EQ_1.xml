@@ -55909,11 +55909,6 @@
     <cim:IdentifiedObject.name>Voltage limits for Espheim BB10.5</cim:IdentifiedObject.name>
     <cim:OperationalLimitSet.Terminal rdf:resource="#_352ae045-5482-5a86-e640-ffe29172a017" />
   </cim:OperationalLimitSet>
-  <cim:OperationalLimitSet rdf:ID="_15403b4d-9f81-b474-49c1-94c37ff5b597">
-    <cim:IdentifiedObject.mRID>15403b4d-9f81-b474-49c1-94c37ff5b597</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Voltage limits for BP Portheim-Espheim</cim:IdentifiedObject.name>
-    <cim:OperationalLimitSet.Terminal rdf:resource="#_63699c95-8309-42fa-7297-2fcf2094c93c" />
-  </cim:OperationalLimitSet>
   <cim:OperationalLimitType rdf:ID="_b92010a9-b093-04eb-a4da-91312c9458d3">
     <cim:IdentifiedObject.mRID>b92010a9-b093-04eb-a4da-91312c9458d3</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>highVoltage</cim:IdentifiedObject.name>
@@ -56190,13 +56185,6 @@
     <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_6521ecb3-99d4-9d6f-d80b-98cc5b1ef7aa" />
     <cim:OperationalLimit.OperationalLimitType rdf:resource="#_b92010a9-b093-04eb-a4da-91312c9458d3" />
     <cim:VoltageLimit.normalValue>11.025</cim:VoltageLimit.normalValue>
-  </cim:VoltageLimit>
-  <cim:VoltageLimit rdf:ID="_1cb91fbf-8b61-c2e4-98e9-b3ae0197ea98">
-    <cim:IdentifiedObject.mRID>1cb91fbf-8b61-c2e4-98e9-b3ae0197ea98</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>high limit for BP Portheim-Espheim</cim:IdentifiedObject.name>
-    <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_15403b4d-9f81-b474-49c1-94c37ff5b597" />
-    <cim:OperationalLimit.OperationalLimitType rdf:resource="#_b92010a9-b093-04eb-a4da-91312c9458d3" />
-    <cim:VoltageLimit.normalValue>420</cim:VoltageLimit.normalValue>
   </cim:VoltageLimit>
   <cim:LinearShuntCompensator rdf:ID="_9a1b18ca-c6b1-4b1a-b03c-d85c96fe6447">
     <cim:Equipment.EquipmentContainer rdf:resource="#_b7630cf0-3bd1-4813-8be3-404a1c4cfc7a" />
