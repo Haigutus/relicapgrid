@@ -45,7 +45,6 @@
     <nc:SchedulingArea.ControlArea rdf:resource="#_1f9ecd81-e069-4040-bd64-f34b0fac3a60"/>
   </nc:SchedulingArea>
   <nc:EquivalentGeneratingUnit rdf:ID="_0b23d814-7559-4edf-8c55-40af585209e6">
-    <nc:GeneratingUnit.isRamping>false</nc:GeneratingUnit.isRamping>
     <!-- Associations to ExternalNetworkInjection -->
     <cim:EquivalentGeneratingUnit.ExternalNetworkInjection rdf:resource="#_e349f93c-3685-4ea9-a791-a8c1ed359737"/>
     <cim:EquivalentGeneratingUnit.ExternalNetworkInjection rdf:resource="#_6843c26a-5265-4cc7-b88b-6346257770bd"/>
