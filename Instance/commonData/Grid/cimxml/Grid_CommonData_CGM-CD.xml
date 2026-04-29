@@ -190,7 +190,6 @@
   </cim:EnergySchedulingType>
   <cim:GeographicalRegion rdf:ID="_fb980bdf-ced5-4f87-8264-998e95e065a5">
     <cim:IdentifiedObject.description>Economic and political union of member states located primarily in the NineRealms</cim:IdentifiedObject.description>
-    <eu:IdentifiedObject.energyIdentCodeEic>10T-NR-NR-000001</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>fb980bdf-ced5-4f87-8264-998e95e065a5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>NineRealms</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>NR</eu:IdentifiedObject.shortName>
@@ -208,42 +207,57 @@
     <cim:SubGeographicalRegion.Region rdf:resource="#_9356077b-f716-0d6c-0cac-32c074bd8fa3" />
   </cim:SubGeographicalRegion>  
   <cim:GeographicalRegion rdf:ID="_9356077b-f716-0d6c-0cac-32c074bd8fa3">
+    <cim:IdentifiedObject.description>Nordheim geographical region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>9356077b-f716-0d6c-0cac-32c074bd8fa3</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>NH</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>NH</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_c50c9112-19fc-6543-9d6d-447aadc6f313">
+    <cim:IdentifiedObject.description>Britheim geographical region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>c50c9112-19fc-6543-9d6d-447aadc6f313</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Britheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>BH</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_7bf89875-1476-4d1a-a56d-a2965cce3575">
+    <cim:IdentifiedObject.description>Belgovia geographical region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>7bf89875-1476-4d1a-a56d-a2965cce3575</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Belgovia</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>BO</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_764bc018-fa90-4c17-9fb3-c74e64c7d6c9">
+    <cim:IdentifiedObject.description>Svedala geographical region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>764bc018-fa90-4c17-9fb3-c74e64c7d6c9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Svedala</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>SD</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_efc79870-d704-485e-a37b-0cf2e8e7657b">
+    <cim:IdentifiedObject.description>Galia geographical region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>efc79870-d704-485e-a37b-0cf2e8e7657b</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Galia</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>GA</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_d121cf41-5b6d-47c9-87a4-67bfb994d8ec">
     <cim:IdentifiedObject.description>GA-NH HVDC link</cim:IdentifiedObject.description>
-    <eu:IdentifiedObject.energyIdentCodeEic>10T-GA-NH-123456</eu:IdentifiedObject.energyIdentCodeEic>
     <cim:IdentifiedObject.mRID>d121cf41-5b6d-47c9-87a4-67bfb994d8ec</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Nordheim-Galia</cim:IdentifiedObject.name>
     <eu:IdentifiedObject.shortName>GA-NH</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_24823ed9-4605-4e20-bb9e-48dcf487d544">
+    <cim:IdentifiedObject.description>Portheim geographical region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>24823ed9-4605-4e20-bb9e-48dcf487d544</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Portheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>PH</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_0472f5a6-c766-11e1-8775-005056c00008">
+    <cim:IdentifiedObject.description>Espheim geographical region</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>0472f5a6-c766-11e1-8775-005056c00008</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Espheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>EH</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
   <cim:GeographicalRegion rdf:ID="_75937a43-c47d-4431-9857-7a0333ed50be">
+    <cim:IdentifiedObject.description>EH-SD HVDC link</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>75937a43-c47d-4431-9857-7a0333ed50be</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Espheim-Svedala</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>EH-SD</eu:IdentifiedObject.shortName>
   </cim:GeographicalRegion>
 </rdf:RDF>
