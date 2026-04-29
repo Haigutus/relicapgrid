@@ -138,18 +138,25 @@
 </nc:ParticipationFactorTimePoint>
 
 <!-- 7.1.8.3.3 Redispatch Remedial Action - example 2 -->
-<nc:PowerShiftKeyDistribution rdf:ID="_7ab20445-576c-4162-aad5-d097d894a8e0">
-    <nc:PowerShiftKeyDistribution.PowerShiftKeyStrategy rdf:resource="#_9287b1c3-3747-47e6-8918-d82c7a0d7718"/>
-    <nc:PowerShiftKeyDistribution.PowerShiftKeySchedule rdf:resource="#_3b5748de-39f2-45d7-9a66-65819c667e91"/>
-    <cim:IdentifiedObject.description>Power Shift Key Distribution 1</cim:IdentifiedObject.description>
-  <cim:IdentifiedObject.mRID>7ab20445-576c-4162-aad5-d097d894a8e0</cim:IdentifiedObject.mRID>
-  <cim:IdentifiedObject.name>PSKD1</cim:IdentifiedObject.name>
+<nc:PowerShiftKeyDistribution rdf:ID="_eac85d97-77f3-4ab7-a63d-52f557f2f56d">
+  <nc:PowerShiftKeyDistribution.PowerShiftKeyStrategy rdf:resource="#_9287b1c3-3747-47e6-8918-d82c7a0d7718"/>
+  <nc:PowerShiftKeyDistribution.PowerShiftKeySchedule rdf:resource="#_853f94cd-a6d6-4edd-bc83-4a2bf937590d"/>
+  <cim:IdentifiedObject.description>Power Shift Key Distribution Option 4</cim:IdentifiedObject.description>
+  <cim:IdentifiedObject.mRID>eac85d97-77f3-4ab7-a63d-52f557f2f56d</cim:IdentifiedObject.mRID>
+  <cim:IdentifiedObject.name>PSKD Option 4</cim:IdentifiedObject.name>
 </nc:PowerShiftKeyDistribution>
-<nc:PowerShiftKeySchedule rdf:ID="_3b5748de-39f2-45d7-9a66-65819c667e91">
-    <cim:IdentifiedObject.description>Power Shift Key Schedule 1</cim:IdentifiedObject.description>
-  <cim:IdentifiedObject.mRID>3b5748de-39f2-45d7-9a66-65819c667e91</cim:IdentifiedObject.mRID>
-  <cim:IdentifiedObject.name>PSKS1</cim:IdentifiedObject.name>
+<nc:PowerShiftKeySchedule rdf:ID="_853f94cd-a6d6-4edd-bc83-4a2bf937590d">
+  <cim:IdentifiedObject.description>Power Shift Key Schedule Option 4</cim:IdentifiedObject.description>
+  <cim:IdentifiedObject.mRID>853f94cd-a6d6-4edd-bc83-4a2bf937590d</cim:IdentifiedObject.mRID>
+  <cim:IdentifiedObject.name>PSKS Option 4</cim:IdentifiedObject.name>
 </nc:PowerShiftKeySchedule>
-
+<nc:ParticipationFactorTimePoint rdf:ID="_06dea5a7-512e-48da-a2fc-5e0ec83a5b8e">
+  <nc:ParticipationFactorTimePoint.atTime>2024-02-22T17:30:00Z</nc:ParticipationFactorTimePoint.atTime>
+  <nc:ParticipationFactorTimePoint.participationFactor>0.5</nc:ParticipationFactorTimePoint.participationFactor>
+  <nc:PowerBidScheduleTimePoint.PowerShiftKeySchedule rdf:resource="#_853f94cd-a6d6-4edd-bc83-4a2bf937590d"/>
+  <cim:IdentifiedObject.description>Participation Factor Time Point 1 sample</cim:IdentifiedObject.description>
+  <cim:IdentifiedObject.mRID>06dea5a7-512e-48da-a2fc-5e0ec83a5b8e</cim:IdentifiedObject.mRID>
+  <cim:IdentifiedObject.name>PF Timepoint 1</cim:IdentifiedObject.name>
+</nc:ParticipationFactorTimePoint>
 
 </rdf:RDF>
