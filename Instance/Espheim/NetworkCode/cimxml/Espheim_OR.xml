@@ -33,8 +33,6 @@
   </dcat:Dataset>
   <nc:ObjectType rdf:ID="_3dacaa80-ee35-458c-bccd-7b6530a292c9">
     <nc:ObjectType.type>DSO_Injection</nc:ObjectType.type>
-    <cim:IdentifiedObject.mRID>3dacaa80-ee35-458c-bccd-7b6530a292c9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>DSO_Injection type</cim:IdentifiedObject.name>
   </nc:ObjectType>
   <cim:IdentifiedObject rdf:ID="_984d2aa1-1c0c-432a-acc8-c8e35133aee9">
     <nc:IdentifiedObject.ObjectType rdf:resource="#_3dacaa80-ee35-458c-bccd-7b6530a292c9"/>

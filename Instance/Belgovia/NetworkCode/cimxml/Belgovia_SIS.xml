@@ -129,9 +129,9 @@
   <nc:PowerBidScheduleTimePoint.price>325.00</nc:PowerBidScheduleTimePoint.price>
 </nc:PowerBidScheduleTimePoint>
 <nc:ParticipationFactorTimePoint rdf:ID="_06dea5a7-512e-48da-a2fc-5e0ec83a5b8e">
-  <nc:ParticipationFactorTimePoint.atTime>2024-02-22T17:30:00Z</nc:ParticipationFactorTimePoint.atTime>
-  <nc:ParticipationFactorTimePoint.participationFactor>0.5</nc:ParticipationFactorTimePoint.participationFactor>
-  <nc:PowerBidScheduleTimePoint.PowerShiftKeySchedule rdf:resource="#_3b5748de-39f2-45d7-9a66-65819c667e91"/>
+    <nc:ParticipationFactorTimePoint.atTime>2024-02-22T17:30:00Z</nc:ParticipationFactorTimePoint.atTime>
+    <nc:ParticipationFactorTimePoint.participationFactor>0.5</nc:ParticipationFactorTimePoint.participationFactor>
+    <nc:PowerBidScheduleTimePoint.PowerShiftKeySchedule rdf:resource="#_3b5748de-39f2-45d7-9a66-65819c667e91"/>
 </nc:ParticipationFactorTimePoint>
 
 <!-- 7.1.8.3.3 Redispatch Remedial Action - example 2 -->
