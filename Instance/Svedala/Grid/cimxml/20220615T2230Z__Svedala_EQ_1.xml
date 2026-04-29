@@ -55971,6 +55971,6 @@
     <cim:OperationalLimitType.isInfiniteDuration>false</cim:OperationalLimitType.isInfiniteDuration>
     <eu:OperationalLimitType.kind rdf:resource="http://iec.ch/TC57/CIM100-European#LimitKind.tatl"/>
     <cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>
-	</cim:OperationalLimitType>9
+	</cim:OperationalLimitType>
 
 </rdf:RDF>
