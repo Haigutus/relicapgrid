@@ -386,10 +386,6 @@
     <cim:IdentifiedObject.mRID>c50c9112-19fc-6543-9d6d-447aadc6f313</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Britheim</cim:IdentifiedObject.name>
   </cim:GeographicalRegion>
-  <cim:GeographicalRegion rdf:ID="_f0da537d-3488-4fd0-a762-904e16e02296">
-    <cim:IdentifiedObject.mRID>f0da537d-3488-4fd0-a762-904e16e02296</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Britheim</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:Line rdf:ID="_4a443c55-86f2-45f4-6647-b668653225bf">
     <cim:IdentifiedObject.mRID>4a443c55-86f2-45f4-6647-b668653225bf</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>ACLineBH1</cim:IdentifiedObject.name>
@@ -621,7 +617,7 @@
   <cim:SubGeographicalRegion rdf:ID="_8cc3bcf9-8602-46c5-bcc0-b063f621f4a1">
     <cim:IdentifiedObject.mRID>8cc3bcf9-8602-46c5-bcc0-b063f621f4a1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>HVDC Subarea</cim:IdentifiedObject.name>
-    <cim:SubGeographicalRegion.Region rdf:resource="#_f0da537d-3488-4fd0-a762-904e16e02296"/>
+    <cim:SubGeographicalRegion.Region rdf:resource="#_c50c9112-19fc-6543-9d6d-447aadc6f313"/>
   </cim:SubGeographicalRegion>
   <cim:SubGeographicalRegion rdf:ID="_c2591cd9-ef27-30fb-ef22-80cbeff5eef1">
     <cim:IdentifiedObject.mRID>c2591cd9-ef27-30fb-ef22-80cbeff5eef1</cim:IdentifiedObject.mRID>
