@@ -333,10 +333,6 @@
     <cim:IdentifiedObject.mRID>b8a39d36-f5e3-9995-ba5a-e77d3392890f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BoundaryInjectionEq</cim:IdentifiedObject.name>
   </cim:EquivalentInjection>
-  <cim:GeographicalRegion rdf:ID="_75937a43-c47d-4431-9857-7a0333ed50be">
-    <cim:IdentifiedObject.mRID>75937a43-c47d-4431-9857-7a0333ed50be</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Espheim-Svedala</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:LinearShuntCompensator rdf:ID="_51584a9f-914e-4f09-a866-71e2df50150f">
     <cim:Equipment.EquipmentContainer rdf:resource="#_800afa6a-9910-4fb7-a88b-9fb1e66920ff"/>
     <cim:IdentifiedObject.mRID>51584a9f-914e-4f09-a866-71e2df50150f</cim:IdentifiedObject.mRID>
