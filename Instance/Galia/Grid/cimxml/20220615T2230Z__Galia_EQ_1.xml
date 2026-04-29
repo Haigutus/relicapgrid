@@ -685,10 +685,6 @@
     <cim:IdentifiedObject.mRID>6abc98ff-2596-a3ed-4540-f77045fad7bc</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Gen-12910</cim:IdentifiedObject.name>
   </cim:GeneratingUnit>
-  <cim:GeographicalRegion rdf:ID="_efc79870-d704-485e-a37b-0cf2e8e7657b">
-    <cim:IdentifiedObject.mRID>efc79870-d704-485e-a37b-0cf2e8e7657b</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Galia</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:LinearShuntCompensator rdf:ID="_fbfed7e3-3dec-4829-a286-029e73535685">
     <cim:Equipment.EquipmentContainer rdf:resource="#_b7998ae6-0cc6-4dfe-8fec-0b549b07b6c3"/>
     <cim:IdentifiedObject.description>shunt</cim:IdentifiedObject.description>

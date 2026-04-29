@@ -44,10 +44,6 @@
     <cim:IdentifiedObject.mRID>8c633952-d902-21af-1b3c-873296e155af</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>SM_NO1</cim:IdentifiedObject.name>
   </cim:GeneratingUnit>
-  <cim:GeographicalRegion rdf:ID="_9356077b-f716-0d6c-0cac-32c074bd8fa3">
-    <cim:IdentifiedObject.mRID>9356077b-f716-0d6c-0cac-32c074bd8fa3</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:LoadArea rdf:ID="_0dbeb8b8-1bce-498b-0b76-50ae68610301">
     <cim:IdentifiedObject.mRID>0dbeb8b8-1bce-498b-0b76-50ae68610301</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>General Load_NO1</cim:IdentifiedObject.name>

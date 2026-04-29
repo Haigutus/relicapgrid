@@ -22132,10 +22132,6 @@
     <cim:IdentifiedObject.mRID>5702cc51-e23a-c56e-a7e8-4689c6c3be21</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>KÄRNAN_G1</cim:IdentifiedObject.name>
   </cim:FossilFuel>
-  <cim:GeographicalRegion rdf:ID="_764bc018-fa90-4c17-9fb3-c74e64c7d6c9">
-    <cim:IdentifiedObject.mRID>764bc018-fa90-4c17-9fb3-c74e64c7d6c9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Svedala</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:HydroGeneratingUnit rdf:ID="_78fe254d-4c5a-b422-08a7-77f783acf3a7">
     <cim:Equipment.EquipmentContainer rdf:resource="#_7c56f1c0-7323-45ec-afad-3a9bb3476270"/>
     <cim:GeneratingUnit.maxOperatingP>315</cim:GeneratingUnit.maxOperatingP>

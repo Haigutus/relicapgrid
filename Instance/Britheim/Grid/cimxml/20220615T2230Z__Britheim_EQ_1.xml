@@ -382,10 +382,6 @@
     <cim:IdentifiedObject.mRID>79e1f8ba-628d-e096-3a3c-3d6d304a9276</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>SM_BH1</cim:IdentifiedObject.name>
   </cim:GeneratingUnit>
-  <cim:GeographicalRegion rdf:ID="_c50c9112-19fc-6543-9d6d-447aadc6f313">
-    <cim:IdentifiedObject.mRID>c50c9112-19fc-6543-9d6d-447aadc6f313</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Britheim</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:Line rdf:ID="_4a443c55-86f2-45f4-6647-b668653225bf">
     <cim:IdentifiedObject.mRID>4a443c55-86f2-45f4-6647-b668653225bf</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>ACLineBH1</cim:IdentifiedObject.name>
