@@ -17820,9 +17820,6 @@
   <cim:Terminal rdf:about="#_6cfef5bf-d226-4ce3-8a2e-f36a308c0f64">
     <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
   </cim:Terminal>
-  <cim:Terminal rdf:about="#_ee433f38-c62f-4cb1-c431-fcdffe4e0983">
-    <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
-  </cim:Terminal>
   <cim:Terminal rdf:about="#_31bea36a-d188-4059-92fa-3939e8af7f00">
     <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
   </cim:Terminal>
@@ -20882,9 +20879,6 @@
   </cim:VoltageLimit>
   <cim:VoltageLimit rdf:about="#_90a95d75-c23e-fc27-60cc-cda07f9be2aa">
     <cim:VoltageLimit.value>3996</cim:VoltageLimit.value>
-  </cim:VoltageLimit>
-  <cim:VoltageLimit rdf:about="#_eea01e1b-1682-d8a8-372f-8eafb5f3af8d">
-    <cim:VoltageLimit.value>420</cim:VoltageLimit.value>
   </cim:VoltageLimit>
   <cim:ExternalNetworkInjection rdf:about="#_e349f93c-3685-4ea9-a791-a8c1ed359737">
     <cim:Equipment.inService>true</cim:Equipment.inService>

@@ -55459,14 +55459,6 @@
     <cim:VoltageLimit.normalValue>420</cim:VoltageLimit.normalValue>
   </cim:VoltageLimit>
 
-  <!-- Instances around EH_31 busbar -->
-  <cim:Terminal rdf:ID="_ee433f38-c62f-4cb1-c431-fcdffe4e0983">
-    <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
-    <cim:IdentifiedObject.mRID>ee433f38-c62f-4cb1-c431-fcdffe4e0983</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
-    <cim:Terminal.ConductingEquipment rdf:resource="#_050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a"/>
-    <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
-  </cim:Terminal>
   <cim:Terminal rdf:ID="_5f5512ab-99af-c355-9703-454c8c77392c">
     <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
     <cim:IdentifiedObject.mRID>5f5512ab-99af-c355-9703-454c8c77392c</cim:IdentifiedObject.mRID>
@@ -55481,18 +55473,6 @@
     <cim:Terminal.ConductingEquipment rdf:resource="#_2c9a0753-421a-489b-9761-9452f60b3157"/>
     <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
   </cim:Terminal>
-  <cim:OperationalLimitSet rdf:ID="_7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea">
-    <cim:IdentifiedObject.mRID>7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Voltage limits for EH_31</cim:IdentifiedObject.name>
-    <cim:OperationalLimitSet.Terminal rdf:resource="#_ee433f38-c62f-4cb1-c431-fcdffe4e0983"/>
-  </cim:OperationalLimitSet>
-  <cim:VoltageLimit rdf:ID="_eea01e1b-1682-d8a8-372f-8eafb5f3af8d">
-    <cim:IdentifiedObject.mRID>eea01e1b-1682-d8a8-372f-8eafb5f3af8d</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>high limit for EH_31</cim:IdentifiedObject.name>
-    <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea"/>
-    <cim:OperationalLimit.OperationalLimitType rdf:resource="#_faef57d9-24e7-2c9b-0b0f-e4c2e09e707d"/>
-    <cim:VoltageLimit.normalValue>420</cim:VoltageLimit.normalValue>
-  </cim:VoltageLimit>
   <!-- Portheim-Espheim AC Substation boundary: Espheim part -->
   <cim:Bay rdf:ID="_58f6c780-5e10-46e0-a0bb-044e1fc84c52">
     <cim:Bay.VoltageLevel rdf:resource="#_b7630cf0-3bd1-4813-8be3-404a1c4cfc7a" />

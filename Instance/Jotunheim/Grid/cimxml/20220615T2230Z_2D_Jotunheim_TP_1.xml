@@ -3025,9 +3025,6 @@
   <cim:Terminal rdf:about="#_5927b596-1ddb-42ca-a09f-0c8ef68af46a">
     <cim:Terminal.TopologicalNode rdf:resource="#_000d5254-7bcb-1315-12f7-398b1e5400b3" />
   </cim:Terminal>
-  <cim:Terminal rdf:about="#_ee433f38-c62f-4cb1-c431-fcdffe4e0983">
-    <cim:Terminal.TopologicalNode rdf:resource="#_5ee2f76f-d4f0-d789-2752-ee25f5c2a45f" />
-  </cim:Terminal>
   <cim:Terminal rdf:about="#_4d3b0d52-ffe8-42a0-95b9-be5c83d883a2">
     <cim:Terminal.TopologicalNode rdf:resource="#_f9753232-5d20-092f-f95d-1720ce10173c" />
   </cim:Terminal>
