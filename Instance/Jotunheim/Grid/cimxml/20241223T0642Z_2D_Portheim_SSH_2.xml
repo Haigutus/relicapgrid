@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:cim="http://iec.ch/TC57/CIM100#" xmlns:eu="http://iec.ch/TC57/CIM100-European#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <md:FullModel rdf:about="urn:uuid:76bea528-aec5-4235-8f96-19e155278d63">
+  <md:FullModel rdf:about="urn:uuid:7aeb7915-d4c6-4b43-80e9-386556516d9b">
     <md:Model.DependentOn rdf:resource="urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f" />
-    <md:Model.created>2026-04-07T12:58:24Z</md:Model.created>
-    <md:Model.description>This is a text model for boundary.</md:Model.description>
-    <md:Model.modelingAuthoritySet>http://portheim.ph</md:Model.modelingAuthoritySet>
+    <md:Model.Supersedes rdf:resource="urn:uuid:76bea528-aec5-4235-8f96-19e155278d63" />
+    <md:Model.created>2026-04-29T00:00:00Z</md:Model.created>
+    <md:Model.description>The steady-state hypothesis dataset for Portheim, updated by Jotunheim.</md:Model.description>
+    <md:Model.modelingAuthoritySet>http://portheim.ph/CGMES</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2024-12-23T06:42:14Z</md:Model.scenarioTime>
-    <md:Model.version>1</md:Model.version>
+    <md:Model.version>2</md:Model.version>
   </md:FullModel>
   <cim:Equipment rdf:ID="_c724d1f1-83d7-4675-91f0-acf022bdccd7">
     <cim:Equipment.inService>true</cim:Equipment.inService>
