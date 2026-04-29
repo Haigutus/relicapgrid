@@ -33496,7 +33496,7 @@
   <cim:Terminal rdf:ID="_154e63fe-c346-2390-cb35-54f1f81e82e2">
     <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
     <cim:IdentifiedObject.mRID>154e63fe-c346-2390-cb35-54f1f81e82e2</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Terminal</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Term_2_Aac_TR</cim:IdentifiedObject.name>
     <cim:Terminal.ConductingEquipment rdf:resource="#_2c9a0753-421a-489b-9761-9452f60b3157"/>
     <cim:Terminal.ConnectivityNode rdf:resource="#_59aeee64-a914-4862-8b34-f23649ab764a"/>
   </cim:Terminal>
@@ -42303,7 +42303,7 @@
   <cim:Terminal rdf:ID="_d092de5e-7806-efcb-eda7-1a97044bc846">
     <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     <cim:IdentifiedObject.mRID>d092de5e-7806-efcb-eda7-1a97044bc846</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Cub_1</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Term_1_EH_line1</cim:IdentifiedObject.name>
     <cim:Terminal.ConductingEquipment rdf:resource="#_bb8787ff-96b9-4618-85d5-d1bcad51337f"/>
     <cim:Terminal.ConnectivityNode rdf:resource="#_89920b09-bf9d-4934-a6d5-464ca938b3d7"/>
   </cim:Terminal>
@@ -55462,14 +55462,14 @@
   <cim:Terminal rdf:ID="_5f5512ab-99af-c355-9703-454c8c77392c">
     <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
     <cim:IdentifiedObject.mRID>5f5512ab-99af-c355-9703-454c8c77392c</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Cub_2</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Term_2_EH_line1</cim:IdentifiedObject.name>
     <cim:Terminal.ConductingEquipment rdf:resource="#_bb8787ff-96b9-4618-85d5-d1bcad51337f"/>
     <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
   </cim:Terminal>
   <cim:Terminal rdf:ID="_147eb269-c3af-51ee-4aa2-771733789022">
     <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     <cim:IdentifiedObject.mRID>147eb269-c3af-51ee-4aa2-771733789022</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Cub_1</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Term_1_Aac_TR</cim:IdentifiedObject.name>
     <cim:Terminal.ConductingEquipment rdf:resource="#_2c9a0753-421a-489b-9761-9452f60b3157"/>
     <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9"/>
   </cim:Terminal>
