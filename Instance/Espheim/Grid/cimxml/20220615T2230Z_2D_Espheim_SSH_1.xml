@@ -9348,10 +9348,7 @@
     <cim:IdentifiedObject.mRID>0447c6f1-c766-11e1-8775-005056c00008</cim:IdentifiedObject.mRID>
     <cim:Equipment.inService>true</cim:Equipment.inService>
   </cim:Equipment>
-  <cim:Equipment rdf:about="#_050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a">
-    <cim:IdentifiedObject.mRID>050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a</cim:IdentifiedObject.mRID>
-    <cim:Equipment.inService>true</cim:Equipment.inService>
-  </cim:Equipment>
+
   <cim:Equipment rdf:about="#_04653a02-c766-11e1-8775-005056c00008">
     <cim:IdentifiedObject.mRID>04653a02-c766-11e1-8775-005056c00008</cim:IdentifiedObject.mRID>
     <cim:Equipment.inService>true</cim:Equipment.inService>

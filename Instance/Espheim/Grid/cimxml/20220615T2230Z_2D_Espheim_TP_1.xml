@@ -2887,9 +2887,7 @@
   <cim:ConnectivityNode rdf:about="#_a2b1386d-8d23-490a-b838-3cea5dad5383">
     <cim:ConnectivityNode.TopologicalNode rdf:resource="#_0470c882-08a6-91a4-c605-7a861f9e6e49"/>
   </cim:ConnectivityNode>
-  <cim:ConnectivityNode rdf:about="#_221d599c-4098-47fd-859d-c8be218abcb4">
-    <cim:ConnectivityNode.TopologicalNode rdf:resource="#_5ee2f76f-d4f0-d789-2752-ee25f5c2a45f"/>
-  </cim:ConnectivityNode>
+
   <cim:ConnectivityNode rdf:about="#_5f7ebba2-1bde-4778-b79a-882e00e2ca87">
     <cim:ConnectivityNode.TopologicalNode rdf:resource="#_abd9b542-b39d-f7b0-164a-e5ae79f5f84d"/>
   </cim:ConnectivityNode>

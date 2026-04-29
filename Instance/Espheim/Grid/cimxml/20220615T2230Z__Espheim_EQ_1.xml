@@ -55462,25 +55462,7 @@
     <cim:OperationalLimit.OperationalLimitType rdf:resource="#_faef57d9-24e7-2c9b-0b0f-e4c2e09e707d"/>
     <cim:VoltageLimit.normalValue>420</cim:VoltageLimit.normalValue>
   </cim:VoltageLimit>
-  <!-- Instances around EH_31 busbar deleted -->
-  <!-- 
-  <cim:BusbarSection rdf:ID="_050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a">
-    <cim:Equipment.EquipmentContainer rdf:resource="#_4da02ca4-ccdb-0e71-a8ae-86d6343108b4"/>
-    <cim:IdentifiedObject.mRID>050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
-  </cim:BusbarSection>
-  <cim:ConnectivityNode rdf:ID="_221d599c-4098-47fd-859d-c8be218abcb4">
-    <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_4da02ca4-ccdb-0e71-a8ae-86d6343108b4"/>
-    <cim:IdentifiedObject.mRID>221d599c-4098-47fd-859d-c8be218abcb4</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
-  </cim:ConnectivityNode>
-  <cim:VoltageLevel rdf:ID="_4da02ca4-ccdb-0e71-a8ae-86d6343108b4">
-    <cim:IdentifiedObject.mRID>4da02ca4-ccdb-0e71-a8ae-86d6343108b4</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
-    <cim:VoltageLevel.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14"/>
-    <cim:VoltageLevel.Substation rdf:resource="#_f8025dcb-09a5-c5b6-58db-bc9ce65ebd3f"/>
-  </cim:VoltageLevel>
-  -->
+
   <!-- Instances around EH_31 busbar -->
   <cim:Terminal rdf:ID="_ee433f38-c62f-4cb1-c431-fcdffe4e0983">
     <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
@@ -56171,7 +56153,6 @@
     <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
   </cim:PowerTransformerEnd>
   <cim:EquivalentInjection rdf:ID="_5c3c6f3f-dd78-4282-a50f-b8a0842b21f3">
-    <cim:ConductingEquipment.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
     <cim:Equipment.EquipmentContainer rdf:resource="#_0c4f41f8-9797-44eb-bdbe-1a28efa083b9" />
     <cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
     <cim:IdentifiedObject.mRID>5c3c6f3f-dd78-4282-a50f-b8a0842b21f3</cim:IdentifiedObject.mRID>
