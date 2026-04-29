@@ -550,7 +550,7 @@
     <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
     <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
-  <nc:StageTrigger rdf:ID="83b5c01d-2c91-4404-b525-b48c9f6cc3f0">
+  <nc:StageTrigger rdf:ID="_83b5c01d-2c91-4404-b525-b48c9f6cc3f0">
     <cim:IdentifiedObject.mRID>83b5c01d-2c91-4404-b525-b48c9f6cc3f0</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Power flows through BO-TR2_1 and TieLine_SD_BO3 is less than 1 MW</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_b673e5fe-2d75-4c11-b2ee-0c49caf48361" />
