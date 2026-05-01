@@ -6,6 +6,7 @@ from pathlib import Path
 import pandas
 import pytest
 from triplets.cgmes_tools import get_dangling_references
+import uuid
 
 # Add buildScripts to path to reuse create_cgm_zip
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -30,11 +31,9 @@ def grid_data():
 def test_dangling_references(grid_data):
     print("Checking for dangling references...")
 
-
-
     # Get detailed dangling references
     dangling = get_dangling_references(grid_data, detailed=True)
-    
+
     if not dangling.empty:
 
         # Filename mapping
@@ -53,25 +52,132 @@ def test_dangling_references(grid_data):
         message = f"Found {len(dangling)} dangling references:\n{summary.to_string(index=False)}"
         assert dangling.empty, message
 
-def test_duplicate_ids(grid_data):
-    print("Checking for duplicated IDs...")
-    ids = grid_data.query("KEY == 'Type'")
-    
-    # Check for IDs that have more than one distinct type
-    # We allow 'Equipment' or 'Dataset' as a generic type if a more specific one exists
-    def get_distinct_types(types):
-        unique_types = set(types)
-        if len(unique_types) > 1:
-            for generic in ['Equipment', 'Dataset']:
-                if generic in unique_types:
-                    unique_types.remove(generic)
-        return list(unique_types)
 
-    type_counts = ids.groupby('ID')['VALUE'].apply(get_distinct_types)
-    inconsistent_ids = type_counts[type_counts.apply(len) > 1]
-    
-    if not inconsistent_ids.empty:
-        # Prepare a readable summary of inconsistent types
-        details = ids[ids.ID.isin(inconsistent_ids.index)].sort_values("ID")
-        summary = details.groupby(['ID', 'VALUE']).size().reset_index(name='count')
-        assert inconsistent_ids.empty, f"Found {len(inconsistent_ids)} IDs with inconsistent types:\n{summary.to_string(index=False)}"
+def test_no_duplicate_type_ids_per_instance(grid_data):
+    """Ensure no ID is used more than once as 'Type' within the same file."""
+    # Filter Type entries
+    type_entries = grid_data[grid_data['KEY'] == 'Type'].copy()
+
+    # === Get Filename Mapping ===
+    filename_mapping = grid_data[grid_data['KEY'] == 'label'][['INSTANCE_ID', 'VALUE']].rename(columns={'VALUE': 'Filename'})
+    type_entries = type_entries.merge(filename_mapping, on='INSTANCE_ID', how='left')
+
+    # Step 1: Count occurrences of each (INSTANCE_ID, ID) pair
+    counts = type_entries.groupby(['INSTANCE_ID', 'ID']).size().reset_index(name='count')
+    dup_keys = counts[counts['count'] > 1][['INSTANCE_ID', 'ID']]
+
+    # Step 2: Keep only the duplicated rows
+    if not dup_keys.empty:
+        duplicates = type_entries.merge(dup_keys, on=['INSTANCE_ID', 'ID'], how='inner')
+    else:
+        duplicates = type_entries.iloc[0:0].copy()  # empty DataFrame with same columns
+
+    if not duplicates.empty:
+        summary = (
+            duplicates.groupby(['Filename', 'VALUE', 'ID'])
+            .size()
+            .reset_index(name='Count')
+            .sort_values(['Count', 'Filename'], ascending=[False, True])
+        )
+        message = (
+            f"Found {len(duplicates)} duplicated 'Type' ID entries across files.\n\n"
+            f"{summary.to_string(index=False)}\n\n"
+            "Each ID should appear only once as 'Type' per file."
+        )
+    else:
+        message = "No duplicate IDs found within instances"
+
+    assert duplicates.empty, message
+
+
+def test_duplicate_detection_logic():
+    """Negative test: Verify our duplicate detection logic works correctly (fast version)."""
+    # Create a minimal reproducible example
+    test_data = pandas.DataFrame({
+        'INSTANCE_ID': [101, 101, 102, 102, 103],
+        'KEY': ['Type', 'Type', 'Type', 'Other', 'Type'],
+        'ID': ['A01', 'A01', 'B01', 'X01', 'C01']  # A01 is duplicated in instance 101
+    })
+
+    # === Same fast logic as the main test ===
+    type_entries = test_data[test_data['KEY'] == 'Type'].copy()
+    counts = type_entries.groupby(['INSTANCE_ID', 'ID']).size().reset_index(name='count')
+    dup_keys = counts[counts['count'] > 1][['INSTANCE_ID', 'ID']]
+    duplicates = type_entries.merge(dup_keys, on=['INSTANCE_ID', 'ID'], how='inner')
+
+    assert not duplicates.empty, "Duplicate detection logic failed"
+    assert len(duplicates) == 2, f"Expected 2 duplicate rows, got {len(duplicates)}"
+    assert duplicates['INSTANCE_ID'].nunique() == 1, "Duplicates should be within the same instance"
+
+
+def is_valid_uuid(val):
+    """Helper function to check if a value is a valid UUID."""
+    if pandas.isna(val):
+        return False
+    try:
+        uuid.UUID(str(val))
+        return True
+    except (ValueError, TypeError, AttributeError):
+        return False
+
+
+def test_uuid_validation_logic():
+    """Negative test: Verify UUID validation logic works correctly with invalid data."""
+    # Create test data with mix of valid and invalid UUIDs
+    test_data = pandas.DataFrame({
+        'ID': [
+            '123e4567-e89b-12d3-a456-426614174000',  # valid
+            'invalid-uuid-string',  # invalid
+            'not-a-uuid-at-all',  # invalid
+            None,  # invalid (missing)
+            '550e8400-e29b-41d4-a716-446655440000',  # valid
+            '123e4567-e89b-12d3-a456-42661417400',  # invalid (too short)
+            'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',  # invalid characters
+        ]
+    })
+
+    test_data['is_valid_uuid'] = test_data['ID'].apply(is_valid_uuid)
+    invalid_count = (~test_data['is_valid_uuid']).sum()
+
+    assert invalid_count == 5, f"Expected 5 invalid UUIDs, got {invalid_count}"
+    assert not test_data.loc[1, 'is_valid_uuid'], "Second row should be invalid"
+    assert not test_data.loc[2, 'is_valid_uuid'], "Third row should be invalid"
+    assert not test_data.loc[3, 'is_valid_uuid'], "Fourth row (None) should be invalid"
+
+
+def test_valid_uuids_in_data(grid_data):
+    """Ensure all values in the 'ID' column are valid UUIDs."""
+    print("Validating UUIDs in ID column...")
+
+    # Apply UUID validation
+    grid_data = grid_data.copy()
+    grid_data['is_valid_uuid'] = grid_data['ID'].apply(is_valid_uuid)
+
+    invalid_ids = grid_data[~grid_data['is_valid_uuid']].copy()
+
+    if not invalid_ids.empty:
+        # Get Filename mapping for better error reporting
+        filename_mapping = grid_data[grid_data['KEY'] == 'label'][['INSTANCE_ID', 'VALUE']].rename(
+            columns={'VALUE': 'Filename'})
+        invalid_ids = invalid_ids.merge(filename_mapping, on='INSTANCE_ID', how='left')
+
+        # Create nice summary
+        summary = (
+            invalid_ids.groupby(['Filename', 'KEY', 'ID'])
+            .size()
+            .reset_index(name='Count')
+            .sort_values(['Filename', 'KEY'])
+        )
+
+        message = (
+            f"Found {len(invalid_ids)} rows with INVALID UUIDs in 'ID' column.\n\n"
+            f"{summary.to_string(index=False)}\n\n"
+            "All IDs must be valid UUID format (e.g. 123e4567-e89b-12d3-a456-426614174000)."
+        )
+    else:
+        message = "All IDs are valid UUIDs"
+
+    assert invalid_ids.empty, message
+
+
+
