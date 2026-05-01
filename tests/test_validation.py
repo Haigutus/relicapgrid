@@ -36,14 +36,11 @@ def test_dangling_references(grid_data):
         # Filter out valid missing references or references to profiles not loaded
         to_ignore = [
             'Model.Supersedes',
-            'GridStateAlteration.PropertyReference',
-            'StaticPropertyRange.PropertyReference',
-            'Name.NameType'
         ]
         dangling = dangling[~dangling['KEY_FROM'].isin(to_ignore)]
 
     if not dangling.empty:
-        summary = dangling.groupby(['KEY_FROM', 'VALUE_FROM']).size().reset_index(name='count')
+        summary = dangling.groupby("Filename")["KEY_FROM"].value_counts().reset_index(name='Count')
         message = f"Found {len(dangling)} dangling references:\n{summary.to_string(index=False)}"
         assert dangling.empty, message
 
