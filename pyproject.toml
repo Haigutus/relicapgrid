@@ -4,8 +4,8 @@ version = "0.1.0"
 description = "Synthetic grid model for ENTSO-E Regional Coordination Processes data exchange use cases"
 readme = ".github/README.md"
 authors = [
-    { name = "Eduardo RelAlg", email = "cim@entsoe.eu" },
-    { name = "Haris Vranaj", email = "cim@entsoe.eu" },
+    { name = "Eduardo RelAlg" },
+    { name = "Haris Vranaj" },
     { name = "Svein Harald Olsen"},
     { name = "Kristjan Vilgo"}
 ]
@@ -29,6 +29,7 @@ package = false
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["buildScripts"]
+addopts = "--tb=short --no-header -v"
 
 [build-system]
 requires = ["uv_build>=0.11.8,<0.12.0"]

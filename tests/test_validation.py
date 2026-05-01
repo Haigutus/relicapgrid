@@ -29,10 +29,19 @@ def grid_data():
 
 def test_dangling_references(grid_data):
     print("Checking for dangling references...")
+
+
+
     # Get detailed dangling references
     dangling = get_dangling_references(grid_data, detailed=True)
     
     if not dangling.empty:
+
+        # Filename mapping
+        filename_mapping = grid_data[grid_data['KEY'] == 'label'][['INSTANCE_ID', 'VALUE']].rename(columns={'VALUE': 'Filename'})
+
+        dangling = dangling.merge(filename_mapping, left_on='INSTANCE_ID_FROM', right_on='INSTANCE_ID', how='left').drop(columns=['INSTANCE_ID'])
+
         # Filter out valid missing references or references to profiles not loaded
         to_ignore = [
             'Model.Supersedes',
