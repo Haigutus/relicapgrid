@@ -1,0 +1,35 @@
+[project]
+name = "relicapgrid"
+version = "0.1.0"
+description = "Synthetic grid model for ENTSO-E Regional Coordination Processes data exchange use cases"
+readme = ".github/README.md"
+authors = [
+    { name = "Eduardo RelAlg", email = "cim@entsoe.eu" },
+    { name = "Haris Vranaj", email = "cim@entsoe.eu" },
+    { name = "Svein Harald Olsen"},
+    { name = "Kristjan Vilgo"}
+]
+license = "CC-BY-SA-4.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "triplets",
+    "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/entsoe/relicapgrid"
+Repository = "https://github.com/entsoe/relicapgrid"
+Issues = "https://github.com/entsoe/relicapgrid/issues"
+
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["buildScripts"]
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"

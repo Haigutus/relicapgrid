@@ -1,3 +1,4 @@
+""" Author: kristjan.vilgo """
 from pathlib import Path
 import pandas
 from triplets.cgmes_tools import get_dangling_references
