@@ -14,4 +14,4 @@ jobs:
           enable-cache: true
 
       - name: Run Tests
-        run: uv run pytest tests/test_validation.py
+        run: uv run --quiet pytest
