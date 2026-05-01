@@ -6,8 +6,22 @@ readme = ".github/README.md"
 authors = [
     { name = "Eduardo RelAlg" },
     { name = "Haris Vranaj" },
-    { name = "Svein Harald Olsen"},
-    { name = "Kristjan Vilgo"}
+    { name = "Svein Harald Olsen" },
+    { name = "Kristjan Vilgo" },
+    { name = "Thomas Viegut" },
+    { name = "Faris Malicevic" },
+    { name = "Lars Truelsen" },
+    { name = "Holdersen" },
+    { name = "Decodre" },
+    { name = "Bence Szirbik" },
+    { name = "Benedek Fodor" },
+    { name = "Jakub" },
+    { name = "Philip Weaver" },
+    { name = "Sindre VH" },
+    { name = "emhg23" },
+    { name = "Daria" },
+    { name = "Pavel Kocica" },
+    { name = "Makkes" }
 ]
 license = "CC-BY-SA-4.0"
 requires-python = ">=3.12"
