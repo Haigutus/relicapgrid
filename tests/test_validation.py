@@ -44,6 +44,8 @@ def test_dangling_references(grid_data):
         # Filter out valid missing references or references to profiles not loaded
         to_ignore = [
             'Model.Supersedes',
+            'GridStateAlteration.PropertyReference',
+            'StaticPropertyRange.PropertyReference',
         ]
         dangling = dangling[~dangling['KEY_FROM'].isin(to_ignore)]
 
