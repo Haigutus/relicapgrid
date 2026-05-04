@@ -92,7 +92,7 @@
     <cim:IdentifiedObject.mRID>347f4f7e-a2b6-4880-846a-8bd1effb00d5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA1</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -105,7 +105,7 @@
     <cim:IdentifiedObject.mRID>7e422768-207d-455f-976e-0b1cb2338509</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationA_quarterbar1B</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -177,7 +177,7 @@
     <cim:IdentifiedObject.mRID>fa3e3533-345a-4ef1-a46d-3ab6d251924a</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationB_2N</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -513,7 +513,7 @@
     <cim:IdentifiedObject.mRID>6d2c8901-d068-4d22-8ce9-7379644b4f17</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Topology RA one Switch</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://data.europa.eu/energy/EIC/TSOA------Q"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>

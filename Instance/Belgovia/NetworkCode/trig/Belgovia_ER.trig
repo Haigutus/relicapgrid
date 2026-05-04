@@ -40,7 +40,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:cef9011e-3753-453b-93bd-fb36eb3daac1>
             rdf:type                   nc:LineCircuit;
             cim:IdentifiedObject.mRID  "cef9011e-3753-453b-93bd-fb36eb3daac1";
-            nc:Circuit.positiveFlowIn  "True"^^xsd:boolean .
+            nc:Circuit.positiveFlowIn  "true"^^xsd:boolean .
     
     <urn:uuid:52a42184-83c4-4d03-853a-e92b1a7dc79a>
             rdf:type               cim:CurveData;
@@ -124,7 +124,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:c31ae69b-423d-47c0-bacc-083d64e34d4a>
             rdf:type                   nc:PowerTransformerCircuit;
             cim:IdentifiedObject.mRID  "c31ae69b-423d-47c0-bacc-083d64e34d4a";
-            nc:Circuit.positiveFlowIn  "True"^^xsd:boolean .
+            nc:Circuit.positiveFlowIn  "true"^^xsd:boolean .
     
     <urn:uuid:91e89a38-ca68-44c1-8ed4-a7db8e435f4f>
             rdf:type                       nc:BiddingZone;

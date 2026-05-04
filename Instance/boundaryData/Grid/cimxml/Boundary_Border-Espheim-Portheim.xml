@@ -153,4 +153,23 @@
     <cim:Terminal.ConductingEquipment rdf:resource="#_00c7faff-a1ed-4b64-bbf8-527d4efefb76" />
     <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
   </cim:Terminal>
+  <cim:VoltageLimit rdf:ID="_1cb91fbf-8b61-c2e4-98e9-b3ae0197ea98">
+    <cim:IdentifiedObject.mRID>1cb91fbf-8b61-c2e4-98e9-b3ae0197ea98</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>high limit for BP Portheim-Espheim</cim:IdentifiedObject.name>
+    <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_15403b4d-9f81-b474-49c1-94c37ff5b597" />
+    <cim:OperationalLimit.OperationalLimitType rdf:resource="#_3192156f-1201-4607-be08-83213d4317b2" />
+    <cim:VoltageLimit.normalValue>420</cim:VoltageLimit.normalValue>
+  </cim:VoltageLimit>
+  <cim:OperationalLimitSet rdf:ID="_15403b4d-9f81-b474-49c1-94c37ff5b597">
+    <cim:IdentifiedObject.mRID>15403b4d-9f81-b474-49c1-94c37ff5b597</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Voltage limits for BP Portheim-Espheim</cim:IdentifiedObject.name>
+    <cim:OperationalLimitSet.Terminal rdf:resource="#_a414d08b-918b-41ac-a242-82a2915ab810" />
+  </cim:OperationalLimitSet>
+  <cim:OperationalLimitType rdf:ID="_3192156f-1201-4607-be08-83213d4317b2">
+    <cim:IdentifiedObject.mRID>3192156f-1201-4607-be08-83213d4317b2</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>highVoltage</cim:IdentifiedObject.name>
+    <cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/CIM100#OperationalLimitDirectionKind.high" />
+    <cim:OperationalLimitType.isInfiniteDuration>true</cim:OperationalLimitType.isInfiniteDuration>
+    <eu:OperationalLimitType.kind rdf:resource="http://iec.ch/TC57/CIM100-European#LimitKind.highVoltage" />
+  </cim:OperationalLimitType>
 </rdf:RDF>

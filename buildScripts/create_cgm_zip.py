@@ -12,10 +12,10 @@ CGM package contents (per README):
     - Instance/commonData/NetworkCode/cimxml/Org-NineRealms_CD.xml
 
 Usage:
-    python tools/create_cgm_zip.py
-    python tools/create_cgm_zip.py --ncp
-    python tools/create_cgm_zip.py --tsos Espheim Svedala --ncp
-    python tools/create_cgm_zip.py --output my_cgm_package.zip
+    python buildScripts/create_cgm_zip.py
+    python buildScripts/create_cgm_zip.py --ncp
+    python buildScripts/create_cgm_zip.py --tsos Espheim Svedala --ncp
+    python buildScripts/create_cgm_zip.py --output my_cgm_package.zip
 """
 
 import argparse
@@ -135,7 +135,9 @@ def main():
         for m in missing:
             print(f"  {m}")
 
-    output_path = Path(args.output)
+    base = Path(args.output)
+    suffixes = "_NCP" if args.ncp else ""
+    output_path = (base.parent / (base.stem + suffixes + base.suffix)).resolve()
     with zipfile.ZipFile(output_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for abs_path, arc_name in entries:
             zf.write(abs_path, arc_name)
