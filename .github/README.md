@@ -65,7 +65,7 @@ The following guidance describes which files to combine when creating import pac
 - The EQ profile from **each** `Instance/<TSO>/Grid/cimxml` folder
 - All files from `Instance/Jotunheim/Grid/cimxml` (SSH, TP, SV)
 - All relevant per-border boundary file(s) from `Instance/boundaryData/Grid/cimxml`
-- `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
+- CommonData for Grids: `Instance/Grid/CommonAndBoundaryData/Grid_CommonData_CGM-CD.xml`
 
   additionally the Network Code Profiles:
 
