@@ -936,10 +936,6 @@
     <cim:IdentifiedObject.mRID>413bbc8a-683c-7e07-4fb9-aa6ec83278e0</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Gen-1229753060</cim:IdentifiedObject.name>
   </cim:GeneratingUnit>
-  <cim:GeographicalRegion rdf:ID="_7bf89875-1476-4d1a-a56d-a2965cce3575">
-    <cim:IdentifiedObject.mRID>7bf89875-1476-4d1a-a56d-a2965cce3575</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Belgovia</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:Line rdf:ID="_b5d6ed2b-c961-4521-8aef-b943d7dc6c15">
     <cim:IdentifiedObject.mRID>b5d6ed2b-c961-4521-8aef-b943d7dc6c15</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>container of BO-Line_2</cim:IdentifiedObject.name>

@@ -6,3 +6,5 @@
 ############
 /Snippets/
 /.idea
+*.iml
+validation_report/

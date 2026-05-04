@@ -22132,10 +22132,6 @@
     <cim:IdentifiedObject.mRID>5702cc51-e23a-c56e-a7e8-4689c6c3be21</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>KÄRNAN_G1</cim:IdentifiedObject.name>
   </cim:FossilFuel>
-  <cim:GeographicalRegion rdf:ID="_764bc018-fa90-4c17-9fb3-c74e64c7d6c9">
-    <cim:IdentifiedObject.mRID>764bc018-fa90-4c17-9fb3-c74e64c7d6c9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Svedala</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:HydroGeneratingUnit rdf:ID="_78fe254d-4c5a-b422-08a7-77f783acf3a7">
     <cim:Equipment.EquipmentContainer rdf:resource="#_7c56f1c0-7323-45ec-afad-3a9bb3476270"/>
     <cim:GeneratingUnit.maxOperatingP>315</cim:GeneratingUnit.maxOperatingP>
@@ -55948,7 +55944,7 @@
 		<cim:IdentifiedObject.name>Limit_export</cim:IdentifiedObject.name>
 		<cim:IdentifiedObject.mRID>a331310f-a6b9-4e30-be2e-a6f62b0b5430</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.description>Limit of Power Transfer Corridor for UseCaseNCP436</cim:IdentifiedObject.description>
-		<cim:ActivePowerLimit.value>2500</cim:ActivePowerLimit.value>
+		<cim:ActivePowerLimit.normalValue>2500</cim:ActivePowerLimit.normalValue>
 		<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f11220b0-3c3c-cc6a-105c-8ffd33f5a790"/>
 		<cim:OperationalLimit.OperationalLimitType rdf:resource="#_98cf1d8f-f84f-4d77-9616-43aa5a21c82c"/>
 	</cim:ActivePowerLimit>
@@ -55956,7 +55952,7 @@
 		<cim:IdentifiedObject.name>Limit_import</cim:IdentifiedObject.name>
 		<cim:IdentifiedObject.mRID>ec2a2385-872d-4cf7-b50b-f9e8a7210dbb</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.description>Limit of Power Transfer Corridor for UseCaseNCP436</cim:IdentifiedObject.description>
-		<cim:ActivePowerLimit.value>-2500</cim:ActivePowerLimit.value>
+		<cim:ActivePowerLimit.normalValue>-2500</cim:ActivePowerLimit.normalValue>
 		<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_89de3c44-8a85-3cb9-6d7c-af2339a5a047"/>
 		<cim:OperationalLimit.OperationalLimitType rdf:resource="#_784a84a0-0d21-4d8c-bc63-94f7312a1eb2"/>
 	</cim:ActivePowerLimit>
@@ -55964,11 +55960,17 @@
 		<cim:OperationalLimitType.direction rdf:resource="https://cim.ucaiug.io/ns#OperationalLimitDirectionKind.high"/>
 		<cim:IdentifiedObject.name>PTC_limit_import</cim:IdentifiedObject.name>
 		<cim:IdentifiedObject.mRID>784a84a0-0d21-4d8c-bc63-94f7312a1eb2</cim:IdentifiedObject.mRID>
+    <cim:OperationalLimitType.isInfiniteDuration>false</cim:OperationalLimitType.isInfiniteDuration>
+    <eu:OperationalLimitType.kind rdf:resource="http://iec.ch/TC57/CIM100-European#LimitKind.tatl"/>
+    <cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>
 	</cim:OperationalLimitType>
 	<cim:OperationalLimitType rdf:ID="_98cf1d8f-f84f-4d77-9616-43aa5a21c82c">
 		<cim:OperationalLimitType.direction rdf:resource="https://cim.ucaiug.io/ns#OperationalLimitDirectionKind.low"/>
 		<cim:IdentifiedObject.name>PTC_limit_export</cim:IdentifiedObject.name>
 		<cim:IdentifiedObject.mRID>98cf1d8f-f84f-4d77-9616-43aa5a21c82c</cim:IdentifiedObject.mRID>
+    <cim:OperationalLimitType.isInfiniteDuration>false</cim:OperationalLimitType.isInfiniteDuration>
+    <eu:OperationalLimitType.kind rdf:resource="http://iec.ch/TC57/CIM100-European#LimitKind.tatl"/>
+    <cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>
 	</cim:OperationalLimitType>
 
 </rdf:RDF>

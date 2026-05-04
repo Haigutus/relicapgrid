@@ -514,13 +514,6 @@
     <cim:IdentifiedObject.mRID>b24417f8-c669-44e5-6525-17fce5cd57d1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BoundaryInjectionEq</cim:IdentifiedObject.name>
   </cim:EquivalentInjection>
-  <cim:GeographicalRegion rdf:ID="_d121cf41-5b6d-47c9-87a4-67bfb994d8ec">
-    <cim:IdentifiedObject.description>GA-NH HVDC link</cim:IdentifiedObject.description>
-    <eu:IdentifiedObject.energyIdentCodeEic>10T-GA-NH-123456</eu:IdentifiedObject.energyIdentCodeEic>
-    <cim:IdentifiedObject.mRID>d121cf41-5b6d-47c9-87a4-67bfb994d8ec</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Nordheim-Galia</cim:IdentifiedObject.name>
-    <eu:IdentifiedObject.shortName>GA-NH</eu:IdentifiedObject.shortName>
-  </cim:GeographicalRegion>
   <cim:LoadArea rdf:ID="_7cf58e7f-eadf-48ca-bed5-79bfe2dd41ad">
     <cim:IdentifiedObject.mRID>7cf58e7f-eadf-48ca-bed5-79bfe2dd41ad</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>General Load_HVDC</cim:IdentifiedObject.name>

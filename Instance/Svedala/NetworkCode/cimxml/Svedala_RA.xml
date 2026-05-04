@@ -596,8 +596,8 @@
     <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange> 
-  <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
-    <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
+  <nc:StageTrigger rdf:ID="_b6617e31-c8f1-4e44-b157-d630948695f1">
+    <cim:IdentifiedObject.mRID>b6617e31-c8f1-4e44-b157-d630948695f1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_2f60b546-dfcf-4e0c-b0d6-40264de45cbd" />

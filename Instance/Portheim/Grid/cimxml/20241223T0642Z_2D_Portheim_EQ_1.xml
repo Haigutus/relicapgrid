@@ -849,10 +849,6 @@
     <cim:Terminal.ConductingEquipment rdf:resource="#_87a9983e-64e1-42db-bfb3-50c110a69001" />
     <cim:Terminal.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
   </cim:Terminal>
-  <cim:GeographicalRegion rdf:ID="_24823ed9-4605-4e20-bb9e-48dcf487d544">
-    <cim:IdentifiedObject.mRID>24823ed9-4605-4e20-bb9e-48dcf487d544</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Portheim</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:PowerTransformer rdf:ID="_c724d1f1-83d7-4675-91f0-acf022bdccd7">
     <cim:Equipment.EquipmentContainer rdf:resource="#_42b7f03a-db7a-415a-9e15-25f634f5ea9c" />
     <cim:IdentifiedObject.mRID>c724d1f1-83d7-4675-91f0-acf022bdccd7</cim:IdentifiedObject.mRID>
