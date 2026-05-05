@@ -15,6 +15,11 @@ from create_cgm_zip import discover_tsos, collect_cgm_files
 
 INSTANCE_DIR = REPO_ROOT / "Instance"
 
+
+def readable_path(path):
+    """Make absolute path relative to repo root."""
+    return str(path).replace(str(REPO_ROOT) + '/', '', 1)
+
 @pytest.fixture(scope="module")
 def grid_data():
     tsos = discover_tsos(INSTANCE_DIR)
@@ -50,9 +55,8 @@ def test_dangling_references(grid_data):
         dangling = dangling[~dangling['KEY_FROM'].isin(to_ignore)]
 
     if not dangling.empty:
-        # Make paths relative
         dangling = dangling.copy()
-        dangling['Filename'] = dangling['Filename'].str.replace(str(REPO_ROOT) + '/', '', regex=False)
+        dangling['Filename'] = dangling['Filename'].apply(readable_path)
 
         summary = (
             dangling.groupby("Filename")["KEY_FROM"]
@@ -61,15 +65,27 @@ def test_dangling_references(grid_data):
             .sort_values(['Count', 'Filename'], ascending=[False, True])
         )
 
-        # Create Markdown table (limit to 15 rows)
         max_rows = 15
-        table = summary.head(max_rows).to_markdown(index=False)
+        summary_table = summary.head(max_rows).to_markdown(index=False)
         if len(summary) > max_rows:
-            table += f"\n\n... and **{len(summary) - max_rows}** more"
+            summary_table += f"\n\n... and **{len(summary) - max_rows}** more"
+
+        # Detailed table with missing target IDs
+        details = (
+            dangling[['Filename', 'KEY_FROM', 'ID_FROM', 'VALUE_FROM']]
+            .rename(columns={'VALUE_FROM': 'ID_TO'})
+            .sort_values(['Filename', 'KEY_FROM'])
+            .reset_index(drop=True)
+        )
+
+        details_table = details.head(max_rows).to_markdown(index=False)
+        if len(details) > max_rows:
+            details_table += f"\n\n... and **{len(details) - max_rows}** more"
 
         message = (
             f"**Found {len(dangling)} dangling references:**\n\n"
-            f"{table}"
+            f"**Summary:**\n\n{summary_table}\n\n"
+            f"**Details:**\n\n{details_table}"
         )
         pytest.fail(message)
 
@@ -94,9 +110,8 @@ def test_no_duplicate_type_ids_per_instance(grid_data):
         duplicates = type_entries.iloc[0:0].copy()  # empty DataFrame with same columns
 
     if not duplicates.empty:
-        # Make paths relative
         duplicates = duplicates.copy()
-        duplicates['Filename'] = duplicates['Filename'].str.replace(str(REPO_ROOT) + '/', '', regex=False)
+        duplicates['Filename'] = duplicates['Filename'].apply(readable_path)
 
         summary = (
             duplicates.groupby(['Filename', 'VALUE', 'ID'])
@@ -189,8 +204,7 @@ def test_valid_uuids_in_data(grid_data):
             columns={'VALUE': 'Filename'})
         invalid_ids = invalid_ids.merge(filename_mapping, on='INSTANCE_ID', how='left')
 
-        # Make paths relative
-        invalid_ids['Filename'] = invalid_ids['Filename'].str.replace(str(REPO_ROOT) + '/', '', regex=False)
+        invalid_ids['Filename'] = invalid_ids['Filename'].apply(readable_path)
 
         summary = (
             invalid_ids.groupby(['Filename', 'KEY', 'ID'])

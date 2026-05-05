@@ -6,6 +6,7 @@ jobs:
   test:
     name: Pytest Validation
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -17,7 +18,7 @@ jobs:
       - name: Run Tests
         run: |
           mkdir -p reports
-          uv run pytest --junitxml=reports/junit.xml -q
+          uv run pytest --junitxml=reports/junit.xml -q --tb=no
 
       - name: Publish Test Report
         uses: dorny/test-reporter@v3
@@ -27,3 +28,11 @@ jobs:
           path: reports/junit.xml
           reporter: java-junit
           fail-on-error: false          # Keep main job status as source of truth
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pytest-results
+          path: reports/junit.xml
+          retention-days: 7
