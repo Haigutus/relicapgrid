@@ -50,9 +50,28 @@ def test_dangling_references(grid_data):
         dangling = dangling[~dangling['KEY_FROM'].isin(to_ignore)]
 
     if not dangling.empty:
-        summary = dangling.groupby("Filename")["KEY_FROM"].value_counts().reset_index(name='Count')
-        message = f"Found {len(dangling)} dangling references:\n{summary.to_string(index=False)}"
-        assert dangling.empty, message
+        # Make paths relative
+        dangling = dangling.copy()
+        dangling['Filename'] = dangling['Filename'].str.replace(str(REPO_ROOT) + '/', '', regex=False)
+
+        summary = (
+            dangling.groupby("Filename")["KEY_FROM"]
+            .value_counts()
+            .reset_index(name='Count')
+            .sort_values(['Count', 'Filename'], ascending=[False, True])
+        )
+
+        # Create Markdown table (limit to 15 rows)
+        max_rows = 15
+        table = summary.head(max_rows).to_markdown(index=False)
+        if len(summary) > max_rows:
+            table += f"\n\n... and **{len(summary) - max_rows}** more"
+
+        message = (
+            f"**Found {len(dangling)} dangling references:**\n\n"
+            f"{table}"
+        )
+        pytest.fail(message)
 
 
 def test_no_duplicate_type_ids_per_instance(grid_data):
@@ -75,21 +94,28 @@ def test_no_duplicate_type_ids_per_instance(grid_data):
         duplicates = type_entries.iloc[0:0].copy()  # empty DataFrame with same columns
 
     if not duplicates.empty:
+        # Make paths relative
+        duplicates = duplicates.copy()
+        duplicates['Filename'] = duplicates['Filename'].str.replace(str(REPO_ROOT) + '/', '', regex=False)
+
         summary = (
             duplicates.groupby(['Filename', 'VALUE', 'ID'])
             .size()
             .reset_index(name='Count')
             .sort_values(['Count', 'Filename'], ascending=[False, True])
         )
+
+        max_rows = 15
+        table = summary.head(max_rows).to_markdown(index=False)
+        if len(summary) > max_rows:
+            table += f"\n\n... and **{len(summary) - max_rows}** more"
+
         message = (
-            f"Found {len(duplicates)} duplicated 'Type' ID entries across files.\n\n"
-            f"{summary.to_string(index=False)}\n\n"
+            f"**Found {len(duplicates)} duplicated 'Type' ID entries:**\n\n"
+            f"{table}\n\n"
             "Each ID should appear only once as 'Type' per file."
         )
-    else:
-        message = "No duplicate IDs found within instances"
-
-    assert duplicates.empty, message
+        pytest.fail(message)
 
 
 def test_duplicate_detection_logic():
@@ -163,7 +189,9 @@ def test_valid_uuids_in_data(grid_data):
             columns={'VALUE': 'Filename'})
         invalid_ids = invalid_ids.merge(filename_mapping, on='INSTANCE_ID', how='left')
 
-        # Create nice summary
+        # Make paths relative
+        invalid_ids['Filename'] = invalid_ids['Filename'].str.replace(str(REPO_ROOT) + '/', '', regex=False)
+
         summary = (
             invalid_ids.groupby(['Filename', 'KEY', 'ID'])
             .size()
@@ -171,15 +199,17 @@ def test_valid_uuids_in_data(grid_data):
             .sort_values(['Filename', 'KEY'])
         )
 
-        message = (
-            f"Found {len(invalid_ids)} rows with INVALID UUIDs in 'ID' column.\n\n"
-            f"{summary.to_string(index=False)}\n\n"
-            "All IDs must be valid UUID format (e.g. 123e4567-e89b-12d3-a456-426614174000)."
-        )
-    else:
-        message = "All IDs are valid UUIDs"
+        max_rows = 15
+        table = summary.head(max_rows).to_markdown(index=False)
+        if len(summary) > max_rows:
+            table += f"\n\n... and **{len(summary) - max_rows}** more"
 
-    assert invalid_ids.empty, message
+        message = (
+            f"**Found {len(invalid_ids)} rows with INVALID UUIDs in 'ID' column:**\n\n"
+            f"{table}\n\n"
+            "All IDs must be valid UUID format (e.g. `123e4567-e89b-12d3-a456-426614174000`)."
+        )
+        pytest.fail(message)
 
 
 

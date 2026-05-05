@@ -29,6 +29,7 @@ dependencies = [
     "pandas",
     "triplets",
     "pytest",
+    "tabulate>=0.10.0",
 ]
 
 [project.urls]
