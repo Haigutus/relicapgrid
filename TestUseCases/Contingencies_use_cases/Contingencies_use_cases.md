@@ -32,6 +32,6 @@ This use case validates the handling of contingency data **Contingency (CO) Prof
 ### Expected outcome
 
 - Contingencies are correctly resolved against the CGMES network model
-- Execution does not permanently modify the base network state
+- Execution does not permanently modify the base network state 
 - Updates to contingencies are preserved in the exported CO dataset
 - Exported data remains compliant with the CGMES Contingency Profile
