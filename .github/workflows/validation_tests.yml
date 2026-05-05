@@ -25,7 +25,19 @@ jobs:
           mkdir -p reports
           uv run pytest --junitxml=reports/junit.xml -q --tb=no
 
-      - name: Publish Test Results
+      # Detailed view in Checks tab (best error details)
+      - name: Publish Detailed Report
+        uses: dorny/test-reporter@v3
+        if: always()
+        with:
+          name: Pytest Results
+          path: reports/junit.xml
+          reporter: java-junit
+          list-tests: failed
+          list-suites: failed
+
+      # Nice comment in Pull Requests
+      - name: Publish PR Comment
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
@@ -33,3 +45,12 @@ jobs:
           check_name: Pytest Results
           comment_mode: always
           fail_on: test failures
+
+      # Optional but useful: Downloadable report
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pytest-junit-report
+          path: reports/junit.xml
+          retention-days: 7
