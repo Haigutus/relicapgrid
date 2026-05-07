@@ -53,24 +53,24 @@ The following guidance describes which files to combine when creating import pac
 
 - All profiles from the respective `Instance/<TSO>/Grid/cimxml` folder (EQ, SSH, SV, TP)
 - The relevant per-border boundary file(s) from `Instance/boundaryData/Grid/cimxml`
-- CommonData for Grids: `Instance/commonData/Grid/cimxml/Grid_CommonData_CGM-CD.xml`
+- All CommonData for Grids files from `Instance/commonData/Grid/cimxml`
 
   additionally the Network Code Profiles:
 
 - Desired profiles from the respective `Instance/<TSO>/NetworkCode/cimxml` folder
-- CommonData for Network Code: `Instance/commonData/NetworkCode/cimxml/Org-NineRealms_CD.xml`
+- All CommonData for Network Code files from `Instance/commonData/NetworkCode/cimxml`
 
 #### Common Grid Model creation - CGM
 
 - The EQ profile from **each** `Instance/<TSO>/Grid/cimxml` folder
 - All files from `Instance/Jotunheim/Grid/cimxml` (SSH, TP, SV)
 - All relevant per-border boundary file(s) from `Instance/boundaryData/Grid/cimxml`
-- CommonData for Grids: `Instance/commonData/Grid/cimxml/Grid_CommonData_CGM-CD.xml`
+- All CommonData for Grids files from `Instance/commonData/Grid/cimxml`
 
   additionally the Network Code Profiles:
 
 - Desired profiles from the respective `Instance/<TSO>/NetworkCode/cimxml` folder
-- CommonData for Network Code: `Instance/commonData/NetworkCode/cimxml/Org-NineRealms_CD.xml`
+- All CommonData for Network Code files from `Instance/commonData/NetworkCode/cimxml`
 
 
 The load flow calculation parameters are documented in the [power flow settings document](../docs/PowerFlowCalculationSettings.adoc).

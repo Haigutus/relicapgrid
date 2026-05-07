@@ -6,10 +6,10 @@ CGM package contents (per README):
     - EQ profile from each TSO's Instance/<TSO>/Grid/cimxml/ folder
     - All files from Instance/Jotunheim/Grid/cimxml/ (SSH, TP, SV)
     - All boundary files from Instance/boundaryData/Grid/cimxml/
-    - Instance/commonData/Grid/cimxml/Grid_CommonData_CGM-CD.xml
+    - All files from Instance/commonData/Grid/cimxml/
   Network Code Profiles (optional, --ncp flag):
     - All files from Instance/<TSO>/NetworkCode/cimxml/ for each TSO that has them
-    - Instance/commonData/NetworkCode/cimxml/Org-NineRealms_CD.xml
+    - All files from Instance/commonData/NetworkCode/cimxml/
 
 Usage:
     python buildScripts/create_cgm_zip.py
@@ -64,11 +64,12 @@ def collect_cgm_files(instance_dir: Path, tsos: list[str], include_ncp: bool) ->
             entries.append((f, f.name))
 
     # Grid CommonData
-    grid_cd = instance_dir / "commonData" / "Grid" / "cimxml" / "Grid_CommonData_CGM-CD.xml"
-    if not grid_cd.exists():
-        missing.append(f"Grid CommonData not found: {grid_cd}")
+    grid_cd_dir = instance_dir / "commonData" / "Grid" / "cimxml"
+    if not grid_cd_dir.exists():
+        missing.append(f"Grid CommonData dir not found: {grid_cd_dir}")
     else:
-        entries.append((grid_cd, grid_cd.name))
+        for f in sorted(grid_cd_dir.glob("*.xml")):
+            entries.append((f, f.name))
 
     if include_ncp:
         # NetworkCode profiles for each TSO that has them
@@ -79,11 +80,12 @@ def collect_cgm_files(instance_dir: Path, tsos: list[str], include_ncp: bool) ->
                     entries.append((f, f.name))
 
         # NetworkCode CommonData
-        ncp_cd = instance_dir / "commonData" / "NetworkCode" / "cimxml" / "Org-NineRealms_CD.xml"
-        if not ncp_cd.exists():
-            missing.append(f"NetworkCode CommonData not found: {ncp_cd}")
+        ncp_cd_dir = instance_dir / "commonData" / "NetworkCode" / "cimxml"
+        if not ncp_cd_dir.exists():
+            missing.append(f"NetworkCode CommonData dir not found: {ncp_cd_dir}")
         else:
-            entries.append((ncp_cd, ncp_cd.name))
+            for f in sorted(ncp_cd_dir.glob("*.xml")):
+                entries.append((f, f.name))
 
     return entries, missing
 
