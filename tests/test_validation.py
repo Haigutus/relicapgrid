@@ -15,6 +15,11 @@ from create_cgm_zip import discover_tsos, collect_cgm_files
 
 INSTANCE_DIR = REPO_ROOT / "Instance"
 
+
+def readable_path(path):
+    """Make absolute path relative to repo root."""
+    return str(path).replace(str(REPO_ROOT) + '/', '', 1)
+
 @pytest.fixture(scope="module")
 def grid_data():
     tsos = discover_tsos(INSTANCE_DIR)
@@ -50,9 +55,39 @@ def test_dangling_references(grid_data):
         dangling = dangling[~dangling['KEY_FROM'].isin(to_ignore)]
 
     if not dangling.empty:
-        summary = dangling.groupby("Filename")["KEY_FROM"].value_counts().reset_index(name='Count')
-        message = f"Found {len(dangling)} dangling references:\n{summary.to_string(index=False)}"
-        assert dangling.empty, message
+        dangling = dangling.copy()
+        dangling['Filename'] = dangling['Filename'].apply(readable_path)
+
+        summary = (
+            dangling.groupby("Filename")["KEY_FROM"]
+            .value_counts()
+            .reset_index(name='Count')
+            .sort_values(['Count', 'Filename'], ascending=[False, True])
+        )
+
+        max_rows = 15
+        summary_table = summary.head(max_rows).to_markdown(index=False)
+        if len(summary) > max_rows:
+            summary_table += f"\n\n... and **{len(summary) - max_rows}** more"
+
+        # Detailed table with missing target IDs
+        details = (
+            dangling[['Filename', 'KEY_FROM', 'ID_FROM', 'VALUE_FROM']]
+            .rename(columns={'VALUE_FROM': 'ID_TO'})
+            .sort_values(['Filename', 'KEY_FROM'])
+            .reset_index(drop=True)
+        )
+
+        details_table = details.head(max_rows).to_markdown(index=False)
+        if len(details) > max_rows:
+            details_table += f"\n\n... and **{len(details) - max_rows}** more"
+
+        message = (
+            f"**Found {len(dangling)} dangling references:**\n\n"
+            f"**Summary:**\n\n{summary_table}\n\n"
+            f"**Details:**\n\n{details_table}"
+        )
+        pytest.fail(message)
 
 
 def test_no_duplicate_type_ids_per_instance(grid_data):
@@ -75,21 +110,27 @@ def test_no_duplicate_type_ids_per_instance(grid_data):
         duplicates = type_entries.iloc[0:0].copy()  # empty DataFrame with same columns
 
     if not duplicates.empty:
+        duplicates = duplicates.copy()
+        duplicates['Filename'] = duplicates['Filename'].apply(readable_path)
+
         summary = (
             duplicates.groupby(['Filename', 'VALUE', 'ID'])
             .size()
             .reset_index(name='Count')
             .sort_values(['Count', 'Filename'], ascending=[False, True])
         )
+
+        max_rows = 15
+        table = summary.head(max_rows).to_markdown(index=False)
+        if len(summary) > max_rows:
+            table += f"\n\n... and **{len(summary) - max_rows}** more"
+
         message = (
-            f"Found {len(duplicates)} duplicated 'Type' ID entries across files.\n\n"
-            f"{summary.to_string(index=False)}\n\n"
+            f"**Found {len(duplicates)} duplicated 'Type' ID entries:**\n\n"
+            f"{table}\n\n"
             "Each ID should appear only once as 'Type' per file."
         )
-    else:
-        message = "No duplicate IDs found within instances"
-
-    assert duplicates.empty, message
+        pytest.fail(message)
 
 
 def test_duplicate_detection_logic():
@@ -163,7 +204,8 @@ def test_valid_uuids_in_data(grid_data):
             columns={'VALUE': 'Filename'})
         invalid_ids = invalid_ids.merge(filename_mapping, on='INSTANCE_ID', how='left')
 
-        # Create nice summary
+        invalid_ids['Filename'] = invalid_ids['Filename'].apply(readable_path)
+
         summary = (
             invalid_ids.groupby(['Filename', 'KEY', 'ID'])
             .size()
@@ -171,15 +213,17 @@ def test_valid_uuids_in_data(grid_data):
             .sort_values(['Filename', 'KEY'])
         )
 
-        message = (
-            f"Found {len(invalid_ids)} rows with INVALID UUIDs in 'ID' column.\n\n"
-            f"{summary.to_string(index=False)}\n\n"
-            "All IDs must be valid UUID format (e.g. 123e4567-e89b-12d3-a456-426614174000)."
-        )
-    else:
-        message = "All IDs are valid UUIDs"
+        max_rows = 15
+        table = summary.head(max_rows).to_markdown(index=False)
+        if len(summary) > max_rows:
+            table += f"\n\n... and **{len(summary) - max_rows}** more"
 
-    assert invalid_ids.empty, message
+        message = (
+            f"**Found {len(invalid_ids)} rows with INVALID UUIDs in 'ID' column:**\n\n"
+            f"{table}\n\n"
+            "All IDs must be valid UUID format (e.g. `123e4567-e89b-12d3-a456-426614174000`)."
+        )
+        pytest.fail(message)
 
 
 
