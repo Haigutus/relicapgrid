@@ -68,8 +68,8 @@
   <!-- 7.1.8.3.3 Redispatch Remedial Action - example 2 -->
   <nc:PowerShiftKeyStrategy rdf:ID="_9287b1c3-3747-47e6-8918-d82c7a0d7718">
     <nc:PowerShiftKeyStrategy.SchedulingArea rdf:resource="#_58f0bd4b-c949-4189-8319-1a5f5bb3a1ce"/>
-    <nc:PowerShiftKeyStrategy.method rdf:resource="http://entsoe.eu/ns/nc#ShiftMethodKind.shared"/>
-    <nc:PowerShiftKeyStrategy.powerShiftKey rdf:resource="http://entsoe.eu/ns/nc#PowerShiftKeyKind.explicitDistribution"/>
+    <nc:PowerShiftKeyStrategy.method rdf:resource="https://cim4.eu/ns/nc#ShiftMethodKind.shared"/>
+    <nc:PowerShiftKeyStrategy.powerShiftKey rdf:resource="https://cim4.eu/ns/nc#PowerShiftKeyKind.explicitDistribution"/>
     <nc:PowerShiftKeyStrategy.dispatchableUnitOnly>true</nc:PowerShiftKeyStrategy.dispatchableUnitOnly>
     <nc:PowerShiftKeyStrategy.normalEnabled>false</nc:PowerShiftKeyStrategy.normalEnabled>
     <cim:IdentifiedObject.description>Power Shift Key Strategy 1</cim:IdentifiedObject.description>
