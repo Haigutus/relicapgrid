@@ -8,27 +8,28 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:126cd132-af5b-420c-9998-a646e338997e">
-    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
-    <dcterms:conformsTo>https://ap.cim4.eu/AssessedElement/2.4</dcterms:conformsTo>
-    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/AssessedElement/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://cim4.eu/ns/nc/2.4#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description xml:lang="en">This is assessed element dataset for Svedala part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>126cd132-af5b-420c-9998-a646e338997e</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-AE"/>
     <dcat:keyword>AE</dcat:keyword>
-    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher>https://energy.referencedata.eu/Test/Party/Svedala</dcterms:publisher>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/Test/Party/Svedala"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
+    <dcterms:requires rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
     <dcterms:title>20220615_Svedala_AE_1.0.0</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-AE</prov:wasGeneratedBy>
-    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-AE"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:AssessedElement rdf:ID="_662cc3bd-25bf-4b7f-96e9-eab3bec328f7">
@@ -126,7 +127,7 @@
     <nc:AssessedElement.ConductingEquipment rdf:resource="#_2ab1b800-0c93-4517-86b5-8fd6a3a24ee7"/>
     <nc:AssessedElement.OperationalLimit rdf:resource="#_27b21fb5-7b8b-9818-dc11-7053f69b7aaf"/>
     <nc:AssessedElement.ScannedForRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:AssessedElement.CrossBorderRelevance rdf:resource = "#_dd12129d-1807-408b-84c7-d670958e8e64"/>
+    <nc:AssessedElement.CrossBorderRelevance rdf:resource = "#_43587d4c-c6fa-4949-9c3b-466d1cf2a693"/>
     <nc:AssessedElement.inBaseCase>true</nc:AssessedElement.inBaseCase>
     <nc:AssessedElement.isCombinableWithRemedialAction>true</nc:AssessedElement.isCombinableWithRemedialAction>
     <cim:IdentifiedObject.description>This is an example of Assessed Element (XNE) that can only be solved with a specific Curative Remedial Action.</cim:IdentifiedObject.description>
@@ -141,7 +142,7 @@
     <nc:AssessedElementWithRemedialAction.normalEnabled>true</nc:AssessedElementWithRemedialAction.normalEnabled>
   </nc:AssessedElementWithRemedialAction>
   <nc:CrossBorderRelevance rdf:ID="_43587d4c-c6fa-4949-9c3b-466d1cf2a693">
-    <nc:CrossBorderRelevance.AssessedElement rdf:resource="#_dd12129d-1807-408b-84c7-d670958e8e64"/>
+    <nc:CrossBorderRelevance.AssessedElement rdf:resource="#_bde1ef4b-58f2-4a6d-8102-f6e3898d0931"/>
     <nc:CrossBorderRelevance.mRID>43587d4c-c6fa-4949-9c3b-466d1cf2a693</nc:CrossBorderRelevance.mRID>
     <nc:CrossBorderRelevance.normalEnabled>true</nc:CrossBorderRelevance.normalEnabled>
   </nc:CrossBorderRelevance>

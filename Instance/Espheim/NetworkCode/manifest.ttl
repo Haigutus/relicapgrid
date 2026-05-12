@@ -1,6 +1,5 @@
 PREFIX adms:    <http://www.w3.org/ns/adms#>
 PREFIX cim:     <https://cim.ucaiug.io/ns#>
-PREFIX datacim: <https://cim4.eu/ns/datacim#>
 PREFIX dcat:    <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX eu:      <https://cim.ucaiug.io/ns/eu#>
@@ -114,12 +113,12 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         prov:generatedAtTime  "2022-06-10T07:06:25Z";
         prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RAS" .
 
-<urn:uuid:79e8ace6-d345-4855-a279-95220d646012>
+<urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  "https://energy.referencedata.eu/Confidentiality/Public";
         dcterms:conformsTo    "https://ap.cim4.eu/ObjectRegistry/2.2" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "http://iec.ch/TC57/CIM100#";
         dcterms:description   "This is the object registry profile dataset for Espheim part of ReliCapGrid."@en;
-        dcterms:identifier    "79e8ace6-d345-4855-a279-95220d646012";
+        dcterms:identifier    "c29d23f7-1955-46dc-8bfd-56e082ce9b18";
         dcterms:issued        "2022-06-15T22:30:00Z";
         dcterms:license       "https://creativecommons.org/licenses/by/4.0/";
         dcterms:publisher     "https://energy.referencedata.eu/test/party/Espheim";
@@ -141,7 +140,7 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         dcterms:conformsTo    "http://iec.ch/TC57/2013/CIM-schema-cim16#" , "https://cim4.eu/ns/nc/2.4#" , "https://ap.cim4.eu/ObjectRegistry/2.2" , "http://iec.ch/TC57/CIM100#";
         dcterms:description   "This is the object registry profile dataset for Espheim part of ReliCapGrid."@en;
         dcat:accessURL        <file://cimxml/Espheim_OR.xml>;
-        dcat:distributionOf   <urn:uuid:79e8ace6-d345-4855-a279-95220d646012>;
+        dcat:distributionOf   <urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18>;
         dcat:mediaType        <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime  "2022-06-10T07:06:25Z";
         prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-OR" .
@@ -170,7 +169,7 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         dcterms:spatial       "https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System";
         dcterms:title         "Manifest";
         adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12> , <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda> , <urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907> , <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337> , <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965> , <urn:uuid:962cc3bd-25bf-4b7f-96e9-eab3bec328f7> , <urn:uuid:79e8ace6-d345-4855-a279-95220d646012> , <urn:uuid:85dd3d01-ccdd-4a59-a6e8-2f66205f6cbe>;
+        dcat:dataset          <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12> , <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda> , <urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907> , <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337> , <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965> , <urn:uuid:962cc3bd-25bf-4b7f-96e9-eab3bec328f7> , <urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18> , <urn:uuid:85dd3d01-ccdd-4a59-a6e8-2f66205f6cbe>;
         dcat:version          "1.0.0" .
 
 <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>

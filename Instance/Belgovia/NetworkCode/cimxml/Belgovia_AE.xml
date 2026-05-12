@@ -8,27 +8,28 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:32e52e36-11d9-428c-8a0b-d521e43a18a9">
-    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
-    <dcterms:conformsTo>https://ap.cim4.eu/AssessedElement/2.4</dcterms:conformsTo>
-    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/AssessedElement/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://cim4.eu/ns/nc/2.4#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description xml:lang="en">This is the assessed element dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>32e52e36-11d9-428c-8a0b-d521e43a18a9</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-AE"/>
     <dcat:keyword>AE</dcat:keyword>
-    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher>https://energy.referencedata.eu/test/party/Belgovia</dcterms:publisher>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc"/>
+    <dcterms:requires rdf:resource="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
     <dcterms:title>20220615_Belgovia_AE_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-AE</prov:wasGeneratedBy>
-    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-AE"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:AssessedElement rdf:ID="_d463cbba-c89c-4199-bbb9-1a33d90cae2c">
@@ -137,8 +138,8 @@
     <cim:IdentifiedObject.description>This is an example of Assessed Element with Remedial Action.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>13d17257-977e-43bc-971a-25022282688a</cim:IdentifiedObject.mRID>
     <nc:AssessedElement.ConductingEquipment rdf:resource="#_550ebe0d-f2b2-48c1-991f-cebea43a21aa"/>
-    <nc:AssessedElement.ScannedForRegion rdf:resource="#_5179eb50-d943-451c-af81-194bdf9505e5"/>
-    <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_517cc7b9-df0c-4065-a5f2-2b8d7d9c1457"/>
+    <nc:AssessedElement.ScannedForRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
+    <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
     <nc:AssessedElement.isCombinableWithRemedialAction>false</nc:AssessedElement.isCombinableWithRemedialAction>
     <nc:AssessedElement.inBaseCase>true</nc:AssessedElement.inBaseCase>
   </nc:AssessedElement>

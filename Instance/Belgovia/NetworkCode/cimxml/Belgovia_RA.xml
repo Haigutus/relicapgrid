@@ -8,27 +8,28 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc">
-    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
-    <dcterms:conformsTo>https://ap.cim4.eu/RemedialAction/2.4</dcterms:conformsTo>
-    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://cim4.eu/ns/nc/2.4#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description xml:lang="en">This is the remedial action dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>7528537a-551c-45bf-9e4f-1854287d5cdc</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-RA"/>
     <dcat:keyword>RA</dcat:keyword>
-    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher>https://energy.referencedata.eu/test/party/Belgovia</dcterms:publisher>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b"/>
+    <dcterms:requires rdf:resource="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
     <dcterms:title>20220615_Belgovia_RA_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-RA</prov:wasGeneratedBy>
-    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RA"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:ContingencyWithRemedialAction rdf:ID="_87714f02-507a-4d20-8a6e-186bb23ae0d3">
@@ -57,7 +58,7 @@
     <cim:IdentifiedObject.name>RA18</cim:IdentifiedObject.name>
     <nc:PowerRemedialAction.BiddingZone rdf:resource="#_91e89a38-ca68-44c1-8ed4-a7db8e435f4f"/>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#YBO----------2"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -291,8 +292,9 @@
   <nc:Gate rdf:ID="_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27">
     <nc:Gate.kind rdf:resource="https://cim4.eu/ns/nc#GateLogicKind.or" />
     <cim:IdentifiedObject.mRID>b73c5258-2fb6-4e8a-8b0a-61d84a52ee27</cim:IdentifiedObject.mRID>
-<cim:IdentifiedObject.name>check if one of the lines tripped - contingency applied</cim:IdentifiedObject.name>
-    <cim:IdentifiedObject.description>Check if one of the lines SLK-DUN (BO-Line_2), or SLK-ZRC (BO-Line_6), or MON-DUN tripped - contingency applied</cim:IdentifiedObject.description>  </nc:Gate>
+    <cim:IdentifiedObject.name>check if one of the lines tripped - contingency applied</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Check if one of the lines SLK-DUN (BO-Line_2), or SLK-ZRC (BO-Line_6), or MON-DUN tripped - contingency applied</cim:IdentifiedObject.description> 
+  </nc:Gate>
   <nc:PinContingency rdf:ID="_86b26849-bc10-462b-97ef-1d339cd6614e">
     <nc:GateInputPin.Gate rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
     <nc:GateInputPin.absoluteValue>true</nc:GateInputPin.absoluteValue>
@@ -301,7 +303,7 @@
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <cim:IdentifiedObject.mRID>86b26849-bc10-462b-97ef-1d339cd6614e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>line BO-Line_2 tripped - contingency applied</cim:IdentifiedObject.name>
-    <nc:PinContingency.Contingency rdf:resource="#_83ef276e-86ae-4d95-a877-6eb89d6ffd45" />
+    <nc:PinContingency.Contingency rdf:resource="#_7e31c67d-67ba-4592-8ac1-9e806d697c8e" />
   </nc:PinContingency>
   <nc:PinContingency rdf:ID="_cbd14cdc-d4f5-42f8-a0a6-af0dfba9b34e">
     <nc:GateInputPin.Gate rdf:resource="#_b73c5258-2fb6-4e8a-8b0a-61d84a52ee27" />
@@ -311,7 +313,7 @@
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <cim:IdentifiedObject.mRID>cbd14cdc-d4f5-42f8-a0a6-af0dfba9b34e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>line BO-Line_6 tripped - contingency applied</cim:IdentifiedObject.name>
-    <nc:PinContingency.Contingency rdf:resource="#_2084c569-ff2f-4f21-b67e-720384ce23ba" />
+    <nc:PinContingency.Contingency rdf:resource="#_e9eab3fe-c328-4f78-9bc1-77adb59f6ba7" />
   </nc:PinContingency>
   <!-- SIPS_UC_3 Automatic Line Shedding -->  
    <nc:RemedialActionScheme rdf:ID="_91d9f965-3934-4e27-8da5-7c7ed7372904">
@@ -549,7 +551,7 @@
     <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p"/>
     <nc:RangeConstraint.normalValue>-10</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange>
-  <nc:StageTrigger rdf:ID="83b5c01d-2c91-4404-b525-b48c9f6cc3f0">
+  <nc:StageTrigger rdf:ID="_83b5c01d-2c91-4404-b525-b48c9f6cc3f0">
     <cim:IdentifiedObject.mRID>83b5c01d-2c91-4404-b525-b48c9f6cc3f0</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Power flows through BO-TR2_1 and TieLine_SD_BO3 is less than 1 MW</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_b673e5fe-2d75-4c11-b2ee-0c49caf48361" />
@@ -594,7 +596,7 @@
     <cim:IdentifiedObject.description>Redispatch RA sample</cim:IdentifiedObject.description>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
-    <nc:RemedialAction.kind rdf:resource="http://entsoe.eu/ns/nc#RemedialActionKind.curative"/>
+    <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <cim:IdentifiedObject.mRID>fa73cfee-ff54-43cd-816b-51394cd76f0f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RD RA1</cim:IdentifiedObject.name>
@@ -607,12 +609,12 @@
     <cim:IdentifiedObject.description>Redispatch RA sample</cim:IdentifiedObject.description>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
-    <nc:RemedialAction.kind rdf:resource="http://entsoe.eu/ns/nc#RemedialActionKind.curative"/>
+    <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
     <cim:IdentifiedObject.mRID>9d72d12a-f135-437a-83fa-ef3e5b23f41f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RD RA1</cim:IdentifiedObject.name>
   </nc:RedispatchRemedialAction>
-  <nc:PowerShiftKeyStrategy rdf:about="_9287b1c3-3747-47e6-8918-d82c7a0d7718">
+  <nc:PowerShiftKeyStrategy rdf:about="#_9287b1c3-3747-47e6-8918-d82c7a0d7718">
     <nc:PowerShiftKeyStrategy.PowerRemedialAction rdf:resource="#_9d72d12a-f135-437a-83fa-ef3e5b23f41f"/>
     <cim:IdentifiedObject.mRID>9287b1c3-3747-47e6-8918-d82c7a0d7718</cim:IdentifiedObject.mRID>
   </nc:PowerShiftKeyStrategy>

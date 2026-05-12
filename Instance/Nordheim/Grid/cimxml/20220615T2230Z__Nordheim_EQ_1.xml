@@ -44,10 +44,6 @@
     <cim:IdentifiedObject.mRID>8c633952-d902-21af-1b3c-873296e155af</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>SM_NO1</cim:IdentifiedObject.name>
   </cim:GeneratingUnit>
-  <cim:GeographicalRegion rdf:ID="_9356077b-f716-0d6c-0cac-32c074bd8fa3">
-    <cim:IdentifiedObject.mRID>9356077b-f716-0d6c-0cac-32c074bd8fa3</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
-  </cim:GeographicalRegion>
   <cim:LoadArea rdf:ID="_0dbeb8b8-1bce-498b-0b76-50ae68610301">
     <cim:IdentifiedObject.mRID>0dbeb8b8-1bce-498b-0b76-50ae68610301</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>General Load_NO1</cim:IdentifiedObject.name>
@@ -81,6 +77,12 @@
     <cim:RegulatingControl.Terminal rdf:resource="#_70a8601c-3cbc-76fb-bea8-96a644f3915c"/>
     <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/CIM100#RegulatingControlModeKind.voltage"/>
   </cim:RegulatingControl>
+  <cim:GeographicalRegion rdf:ID="_9356077b-f716-0d6c-0cac-32c074bd8fa3">
+    <cim:IdentifiedObject.description>Nordheim geographical region. Duplicated instance definition in CommonData and EQ file.</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>9356077b-f716-0d6c-0cac-32c074bd8fa3</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
+    <eu:IdentifiedObject.shortName>NH</eu:IdentifiedObject.shortName>
+  </cim:GeographicalRegion>
   <cim:SubGeographicalRegion rdf:ID="_77467625-a8fe-8792-7cf2-06c5dfd5fba9">
     <cim:IdentifiedObject.mRID>77467625-a8fe-8792-7cf2-06c5dfd5fba9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
