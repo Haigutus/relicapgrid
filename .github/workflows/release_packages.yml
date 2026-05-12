@@ -1,0 +1,78 @@
+name: Build Release Packages
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version tag for the package (e.g. v1.0.0)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build CGM Packages
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Get version
+        id: version
+        run: echo "version=${{ github.event.release.tag_name || inputs.version }}" >> "$GITHUB_OUTPUT"
+
+      - name: Build CGM package (Grid only)
+        run: |
+          uv run python buildScripts/create_cgm_zip.py \
+            --output "ReliCapGrid_CGM_${{ steps.version.outputs.version }}.zip"
+
+      - name: Build CGM package (Grid + Network Code Profiles)
+        run: |
+          uv run python buildScripts/create_cgm_zip.py --ncp \
+            --output "ReliCapGrid_CGM_${{ steps.version.outputs.version }}.zip"
+
+      - name: Build per-TSO IGM packages
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          for tso in Belgovia Britheim DC-Espheim-Svedala DC-Nordheim-Galia Espheim Galia Nordheim Portheim Svedala; do
+            zip_name="ReliCapGrid_IGM_${tso}_${VERSION}.zip"
+            cd Instance
+            files=""
+            if [ -d "$tso/Grid/cimxml" ]; then
+              files="$files $(find "$tso/Grid/cimxml" -name '*.xml')"
+            fi
+            if [ -d "$tso/NetworkCode/cimxml" ]; then
+              files="$files $(find "$tso/NetworkCode/cimxml" -name '*.xml')"
+            fi
+            if [ -n "$files" ]; then
+              zip -j "../$zip_name" $files
+              echo "Created $zip_name"
+            fi
+            cd ..
+          done
+
+      - name: Upload release assets
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for zip in ReliCapGrid_*.zip; do
+            gh release upload "${{ github.event.release.tag_name }}" "$zip" --clobber
+          done
+
+      - name: Upload workflow artifacts
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: relicapgrid-packages-${{ steps.version.outputs.version }}
+          path: ReliCapGrid_*.zip
