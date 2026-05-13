@@ -33,7 +33,6 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RAS-FAP"/>
     <!--Additions to reflect provenance information in the RAS header-->
     <prov:wasAssociatedWith rdf:resource="https://energy.referencedata.eu/CGM/SoftwareAgent/3f4ed5cb-b627-4922-b9ea-19ba419a1c7a"/>
-    <prov:wasInfluencedBy rdf:resource="urn:uuid:4129d214-f57e-4a2b-b14c-c5ef458b6703" /> <!--Point to SAR dataset-->
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:issued>2025-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
