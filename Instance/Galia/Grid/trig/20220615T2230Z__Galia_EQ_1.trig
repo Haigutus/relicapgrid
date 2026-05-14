@@ -2403,11 +2403,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:4853e915-48e5-4527-a4db-cce11ab18f73>;
             cim:Terminal.ConnectivityNode  <urn:uuid:e4743b84-976a-414d-a888-4362532c39e6> .
     
-    <urn:uuid:efc79870-d704-485e-a37b-0cf2e8e7657b>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "efc79870-d704-485e-a37b-0cf2e8e7657b";
-            cim:IdentifiedObject.name  "Galia" .
-    
     <urn:uuid:7c0d89db-0492-6ea7-484c-53da9ab7f624>
             rdf:type                        cim:RatioTapChangerTablePoint;
             cim:RatioTapChangerTablePoint.RatioTapChangerTable

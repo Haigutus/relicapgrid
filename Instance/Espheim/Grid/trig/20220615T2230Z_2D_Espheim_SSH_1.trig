@@ -87,6 +87,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:0cafb199-a998-9c9a-80af-cc08132b437e>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:c2e084fe-f28f-4359-878b-8a31704d5842>
             rdf:type                 cim:Disconnector;
             cim:Equipment.inService  true;
@@ -173,10 +177,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:c6e55858-feb0-40dd-b489-f6fb3a5dacab>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
-    
-    <urn:uuid:eea01e1b-1682-d8a8-372f-8eafb5f3af8d>
-            rdf:type                cim:VoltageLimit;
-            cim:VoltageLimit.value  "420"^^xsd:float .
     
     <urn:uuid:5e247d84-0ec9-4123-b760-d791955d2e4f>
             rdf:type                    cim:Terminal;
@@ -1597,6 +1597,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:0ff60654-8c1d-3967-b1f0-f3912c736215>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:e3cc6905-4b0d-46bc-b228-682110f72930>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -1928,6 +1932,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:7cddf410-7e09-4f0e-9960-24a92a6b0b2b>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:05737d32-c015-859e-bd40-f3a347f5cd12>
+            rdf:type                cim:CurrentLimit;
+            cim:CurrentLimit.value  "14021.4"^^xsd:float .
     
     <urn:uuid:5f1cf02f-fdb9-482c-a25b-223e17005cae>
             rdf:type                    cim:Terminal;
@@ -2667,6 +2675,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          false .
     
+    <urn:uuid:ac7eddfd-4b3d-0966-5803-fbd3bf3e9b2a>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:dbc297ed-b505-4237-bd77-295063263646>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -3244,6 +3256,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                   cim:Equipment;
             cim:Equipment.inService    true;
             cim:IdentifiedObject.mRID  "045c3958-c766-11e1-8775-005056c00008" .
+    
+    <urn:uuid:a8de3ea2-8de4-9c16-cc38-0f58dd5c0492>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:cf43f20e-933f-4548-969e-e8eafbef70af>
             rdf:type                 cim:Disconnector;
@@ -3945,6 +3961,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:346606c7-a84f-48b0-bcf4-8eeee79dd09e>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:675b23c2-4a4b-f929-5c12-8ba9a8451957>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -5443,6 +5463,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:425a0ae5-f248-00a8-5295-99b8a0206298>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:60c9acb3-954a-438f-b568-1b056c74426b>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -5851,6 +5875,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:654b8bb1-e5fb-49e1-8d95-5661bf02be78>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:35ffa96f-ccce-4835-904c-38b6bda760d1>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
     
     <urn:uuid:78efe7c0-5969-4cd6-9a9b-0c48ee978825>
             rdf:type                    cim:Terminal;
@@ -6363,6 +6393,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:fc53e244-a2b2-9361-f709-ca7ccb7a70e9>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:02812c23-7ba9-f07d-8584-4925228717d2>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
@@ -6596,10 +6630,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Equipment.inService  true;
             cim:Switch.locked        false;
             cim:Switch.open          false .
-    
-    <urn:uuid:ee433f38-c62f-4cb1-c431-fcdffe4e0983>
-            rdf:type                    cim:Terminal;
-            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:5810d882-9e34-4c49-b8b4-bffa567265e1>
             rdf:type                    cim:Terminal;
@@ -7054,6 +7084,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
     
+    <urn:uuid:3552cb05-826a-142b-cd76-82b8eeb81407>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:1680270e-bda6-0413-98d8-834d8340d792>
             rdf:type                   cim:Equipment;
             cim:Equipment.inService    true;
@@ -7117,6 +7151,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:51397fe2-3cc1-ac29-4c6d-cc7e610133d6>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "1000"^^xsd:float .
+    
+    <urn:uuid:26331308-c1e0-b845-4852-c1a7a4755040>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:616fcdb3-cc19-4105-ac69-1a2722d6f036>
             rdf:type                    cim:Terminal;
@@ -7211,6 +7249,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.open          true .
     
     <urn:uuid:84278497-cac9-49c7-935f-ad2d4da3cd8b>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:66e3dd9e-7f0b-cd3b-12ce-a0667500a9e5>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -7390,6 +7432,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:f18bc2b1-b591-4125-be5d-bccc573aea87>
+            rdf:type                 cim:Breaker;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:b97caa7f-59a7-4e40-b7a5-66e4188f74ca>
             rdf:type                 cim:Disconnector;
             cim:Equipment.inService  true;
@@ -7397,6 +7445,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.open          false .
     
     <urn:uuid:9983f2cf-2e2d-4849-8e2b-5e244cabce35>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:e3b2ba02-608d-8717-a209-4bbec1162400>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -7566,6 +7618,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Equipment.inService  true;
             cim:Switch.locked        false;
             cim:Switch.open          false .
+    
+    <urn:uuid:5049050f-41b1-f334-3839-7d0a730a3859>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:72911420-d159-483b-aaa3-6e6dc39f6273>
             rdf:type                 cim:Disconnector;
@@ -8005,6 +8061,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          true .
     
+    <urn:uuid:f6315393-17f7-406c-bb16-e77372f85ff9>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:1d3a8f3c-2568-4381-9beb-ddbd4910a00d>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -8172,6 +8234,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:6f2eacf7-e95c-41fa-95fd-ed90b6b4d3f2>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:4b62e70e-41fd-3615-d8b0-36d0adf2e35b>
+            rdf:type                 cim:Equipment;
+            cim:Equipment.inService  true .
     
     <urn:uuid:e3d6097b-5b04-4e1c-89dd-15c94de13f75>
             rdf:type                    cim:Terminal;
@@ -8399,6 +8465,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.open          false .
     
     <urn:uuid:db4e9bc2-7fc5-41fe-a4c3-e8e77df46850>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:242ad71f-4e1e-6b24-b0e1-ab01c391d70a>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -8632,6 +8702,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          false .
     
+    <urn:uuid:1b4e33f8-959c-47da-b19a-f71a0f9f9b03>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:4624d03e-567c-36fd-1513-453a930d4dff>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
@@ -8693,6 +8769,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:047df222-c766-11e1-8775-005056c00008>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:09a25351-f649-4a92-810d-3f740534c637>
+            rdf:type                 cim:ConformLoad;
+            cim:EnergyConsumer.p     "2"^^xsd:float;
+            cim:EnergyConsumer.q     "1"^^xsd:float;
+            cim:Equipment.inService  true .
     
     <urn:uuid:bbb056da-76fd-40cc-97ec-bed4b916dd43>
             rdf:type                    cim:Terminal;
@@ -9004,6 +9086,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          false .
     
+    <urn:uuid:aeae4cc3-b323-63d4-e8c7-48997c4281c2>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:eb03ee86-64e4-497c-bd2a-a3069bb05aae>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -9133,6 +9219,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:f5fc210d-4cf3-48a7-ba94-063a803f67ca>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
+    <urn:uuid:a097a1fa-e454-4152-ae05-b6f2c16701da>
             rdf:type                 cim:Disconnector;
             cim:Equipment.inService  true;
             cim:Switch.locked        false;
@@ -10234,6 +10326,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:5cc1ca38-7fd4-4a4e-aa29-54650ef13d5b>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:b29be4d0-4918-2f41-5dc2-07cd8f0b489b>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
@@ -10566,6 +10664,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:ff1db38c-8fbc-4b1d-a5ff-46cd02a2df74>
+            rdf:type                 cim:Breaker;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:28ae1a80-ddd1-49bb-9aba-4c219a7a417a>
             rdf:type                 cim:Breaker;
             cim:Equipment.inService  true;
@@ -10810,6 +10914,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:047602e5-c766-11e1-8775-005056c00008>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:3e9fa947-89b9-67a6-154b-a83f4447f7c2>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -11270,6 +11378,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:7dce8500-a8bf-4414-a78a-d5aadeaad6fb>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:017850c3-3dbd-d2d6-884a-48b0d3388451>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -13172,6 +13284,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:EnergyConsumer.q     "0"^^xsd:float;
             cim:Equipment.inService  true .
     
+    <urn:uuid:7db92cd4-c868-913e-7883-c79fbcd536c5>
+            rdf:type                cim:CurrentLimit;
+            cim:CurrentLimit.value  "368.061"^^xsd:float .
+    
     <urn:uuid:ef33ecae-b25f-409b-bc53-2aaa8b396584>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -13644,6 +13760,11 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:fb847d00-7b51-9705-74f2-15261d45b37f>
+            rdf:type                     cim:GeneratingUnit;
+            cim:Equipment.inService      true;
+            cim:GeneratingUnit.normalPF  "100"^^xsd:float .
+    
     <urn:uuid:fdb0aef7-a217-957b-91f2-56b4632f5e1a>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
@@ -13738,6 +13859,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:1676b1c1-8528-57f7-4007-692c5edbde4e>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "1000"^^xsd:float .
+    
+    <urn:uuid:a6bcf14d-6fb2-4625-52de-15229561ccb0>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:c4d28301-8334-43ad-aec2-09560422d28c>
             rdf:type                 cim:Breaker;
@@ -13845,6 +13970,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:9c97f017-0cae-4011-ad66-2637cb96b8b6>
+            rdf:type                 cim:Equipment;
+            cim:Equipment.inService  true .
+    
     <urn:uuid:693dcd8d-4d28-4cdb-9ac4-d82358ed71c9>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -13865,6 +13994,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                   cim:Equipment;
             cim:Equipment.inService    true;
             cim:IdentifiedObject.mRID  "046e61c8-c766-11e1-8775-005056c00008" .
+    
+    <urn:uuid:07db7f20-62a8-85a6-3c63-52aaa1b59e8c>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:b14f50ad-d6b8-4f75-82a7-0b385a2513f6>
             rdf:type                    cim:Terminal;
@@ -14018,6 +14151,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:9eee5de7-a4ad-b2df-71d4-6dbabc594857>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:67904c90-470d-4ea9-82d0-8e5a1b9581ea>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -14027,6 +14164,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Equipment.inService  true;
             cim:Switch.locked        false;
             cim:Switch.open          false .
+    
+    <urn:uuid:5c3c6f3f-dd78-4282-a50f-b8a0842b21f3>
+            rdf:type                   cim:EquivalentInjection;
+            cim:Equipment.inService    true;
+            cim:EquivalentInjection.p  "9.99999"^^xsd:float;
+            cim:EquivalentInjection.q  "21.4291"^^xsd:float .
     
     <urn:uuid:4a42519c-0f4e-598f-e45c-59cc7b6494bb>
             rdf:type                cim:CurrentLimit;
@@ -14105,6 +14248,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:af8b5dc5-9496-4f16-8f25-2d64937e06bb>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:86978cfb-8057-4578-a419-d4efe70609a1>
+            rdf:type                 cim:Breaker;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
     
     <urn:uuid:ca6d6364-b068-be62-aeb9-1f975062221b>
             rdf:type                cim:CurrentLimit;
@@ -15533,6 +15682,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Equipment.inService    true;
             cim:IdentifiedObject.mRID  "048badc5-c766-11e1-8775-005056c00008" .
     
+    <urn:uuid:778def94-cf30-d78d-6978-955025609a0d>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:c54052db-2b97-49ad-b9a8-bcc5d2ae0b7b>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -15958,6 +16111,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:8c2606ce-7610-4f8d-af1e-123d7514c44b>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:9a1b18ca-c6b1-4b1a-b03c-d85c96fe6447>
+            rdf:type                       cim:LinearShuntCompensator;
+            cim:Equipment.inService        true;
+            cim:RegulatingCondEq.controlEnabled
+                    false;
+            cim:ShuntCompensator.sections  "1"^^xsd:float .
     
     <urn:uuid:655bc79f-e7c5-4b50-8c58-9dc097c2d8ac>
             rdf:type                    cim:Terminal;
@@ -16985,6 +17145,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
     
+    <urn:uuid:6a714a8d-54a8-4653-9daf-982af14eae88>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:00126253-b090-4763-ad0d-00f5256a4272>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -17053,6 +17219,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "048963d9-c766-11e1-8775-005056c00008" .
     
     <urn:uuid:02f94b6d-e63f-4733-8c58-d20866e02b1b>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:63699c95-8309-42fa-7297-2fcf2094c93c>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:352ae045-5482-5a86-e640-ffe29172a017>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -17163,14 +17337,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
-    <urn:uuid:044c33c9-c766-11e1-8775-005056c00008>
+    <urn:uuid:fb8ab5b0-794a-d9ad-c1f7-3530e4c904dd>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
-    <urn:uuid:050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a>
-            rdf:type                   cim:Equipment;
-            cim:Equipment.inService    true;
-            cim:IdentifiedObject.mRID  "050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a" .
+    <urn:uuid:044c33c9-c766-11e1-8775-005056c00008>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:a2095dca-8ba5-421b-bee7-29e414e3bc0f>
             rdf:type                    cim:Terminal;
@@ -17453,6 +17626,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:CurrentLimit.value  "500"^^xsd:float .
     
     <urn:uuid:e2308108-2839-4b08-8f14-36a2b939224f>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:6ee9deb0-6556-5087-de8f-e01599780734>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -18551,6 +18728,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:c5eee612-6eaa-439c-b68e-a150f178298c>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:57166dcb-e437-4990-b24d-92dbb829069a>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -19286,6 +19469,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:a90ae8d5-858f-c8b0-140f-1c0f4fca96c8>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:741c3e10-280e-4cf7-a0d9-35763a13e2e6>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -19642,6 +19829,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:7ef4bf46-e88b-4dc9-a5e4-abbc0efdc6cc>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
+    <urn:uuid:aa72cb02-267d-403f-a667-f317f5e76413>
             rdf:type                 cim:Disconnector;
             cim:Equipment.inService  true;
             cim:Switch.locked        false;
@@ -20615,6 +20808,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:eb6f1f00-793e-ca31-8440-c90a77a2221c>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:bc9ff4df-5b21-43dc-b406-149a9832e3fc>
             rdf:type                 cim:Disconnector;
             cim:Equipment.inService  true;
@@ -20662,6 +20859,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:044afb45-c766-11e1-8775-005056c00008>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:41c15025-9bc0-8dc5-a927-8db80bd21cdb>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -20990,6 +21191,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:caaaec78-564f-4cf6-82f7-f1153418d795>
+            rdf:type                 cim:Breaker;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:32eae4a3-f50a-47df-8ce5-3413ed28383c>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -21103,6 +21310,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:3dd99ea9-a12f-6abf-76aa-840815a97329>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
+    
+    <urn:uuid:8f0c8f3b-a558-8672-5c25-ff43a3cdcbe1>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:2893f421-e001-7bf6-d199-c66d0c731e50>
             rdf:type                    cim:Terminal;
@@ -21375,6 +21586,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:0cf37745-6655-f5a8-0b7b-9195e2821bfe>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "1000"^^xsd:float .
+    
+    <urn:uuid:a90d3078-dc13-8f9c-e188-2a219c5bbd8b>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:55ad8bd8-1384-4749-8ff3-6f2221514ffa>
             rdf:type                    cim:Terminal;
@@ -21914,6 +22129,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:8211fc3c-0f49-49b7-a20f-d5c9ec874f0c>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:dcaff454-0e14-e749-a2a9-7b5d6b93cd34>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -22044,6 +22265,18 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:04893ccc-c766-11e1-8775-005056c00008>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:419a8edf-36f1-4af7-9a76-ec197f5712fd>
+            rdf:type                 cim:SynchronousMachine;
+            cim:Equipment.inService  true;
+            cim:RegulatingCondEq.controlEnabled
+                    true;
+            cim:RotatingMachine.p    "-5"^^xsd:float;
+            cim:RotatingMachine.q    "0"^^xsd:float;
+            cim:SynchronousMachine.operatingMode
+                    cim:SynchronousMachineOperatingMode.generator;
+            cim:SynchronousMachine.referencePriority
+                    0 .
     
     <urn:uuid:f4fd671f-4b9b-bb92-432b-e255c61efcda>
             rdf:type                    cim:Terminal;
@@ -22413,6 +22646,11 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          false .
     
+    <urn:uuid:8452b030-2224-208f-0c9d-77fe0df02ec7>
+            rdf:type                       cim:RatioTapChanger;
+            cim:TapChanger.controlEnabled  false;
+            cim:TapChanger.step            "0"^^xsd:float .
+    
     <urn:uuid:f9c70f9c-d2ea-bdb2-f2cc-40219f1e5bb0>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
@@ -22430,6 +22668,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:d0630997-b516-e6ab-4d08-41cc9e919f05>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
+    
+    <urn:uuid:adba41ab-bb26-f27d-3c57-261ce3dfdf6c>
+            rdf:type                cim:VoltageLimit;
+            cim:VoltageLimit.value  "11.025"^^xsd:float .
     
     <urn:uuid:c5590bae-ce1c-4afb-96ba-c0a79496d803>
             rdf:type                    cim:Terminal;
@@ -22496,6 +22738,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:b4b73f09-046d-84b6-0e3a-38eac983841e>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:16bf4dbf-742a-a5e5-6e6b-407a52fd2526>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -23191,6 +23437,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "500"^^xsd:float .
     
+    <urn:uuid:7bc6afd6-353f-fb08-897a-fe53ae28aef8>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:3860bb0a-60ec-4302-8f7b-48de954e612d>
             rdf:type                 cim:Disconnector;
             cim:Equipment.inService  true;
@@ -23449,6 +23699,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.open          true .
     
     <urn:uuid:c7f560e9-9be6-4df6-9c14-48bd7bd93987>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:ed6b4c8b-ffd7-d7e4-d867-52aee785185f>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -24112,6 +24366,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          false .
     
+    <urn:uuid:733d79e0-c71b-da8f-3bb0-e5ac20f10ed0>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:105835f3-0738-c994-d4a1-944972e50369>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "1000"^^xsd:float .
@@ -24404,6 +24662,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:42327327-0261-4af5-9d4a-af8cfbafd852>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:389f64cd-db57-4e4b-ad05-33fa7fac4db2>
+            rdf:type                 cim:Disconnector;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
     
     <urn:uuid:ab58c1c4-43e0-4346-8976-739adc306ac1>
             rdf:type                 cim:Disconnector;
@@ -25062,6 +25326,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          false .
     
+    <urn:uuid:17d0a4c9-7451-b629-9ac5-6de970664c23>
+            rdf:type                        cim:RegulatingControl;
+            cim:RegulatingControl.discrete  false;
+            cim:RegulatingControl.enabled   true;
+            cim:RegulatingControl.targetValue
+                    "10.5"^^xsd:float;
+            cim:RegulatingControl.targetValueUnitMultiplier
+                    cim:UnitMultiplier.k .
+    
     <urn:uuid:0b99fabd-cb09-475e-ba48-bd3e9982a646>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -25280,6 +25553,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:5e839194-0ede-ce03-a0d1-de62aa3eba79>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "1000"^^xsd:float .
+    
+    <urn:uuid:fe3610d4-e86a-934e-7f04-eb95e36126e4>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
     
     <urn:uuid:c1fe09e2-71e3-401f-98fd-da8995c44f11>
             rdf:type                 cim:Disconnector;
@@ -25695,6 +25972,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "1000"^^xsd:float .
     
+    <urn:uuid:a37f594e-e546-4a10-b375-6a705112b937>
+            rdf:type                 cim:Breaker;
+            cim:Equipment.inService  true;
+            cim:Switch.locked        false;
+            cim:Switch.open          false .
+    
     <urn:uuid:b6fbbc59-1eeb-4e65-8566-a9ff358afe42>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -25733,6 +26016,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:2cdcf79f-5cd1-64c4-fb67-a776d4aa865a>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:8df11312-7c42-4715-a3d3-bb714c3cb7a1>
             rdf:type                 cim:Breaker;
             cim:Equipment.inService  true;
@@ -25766,6 +26053,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:c1f1cb15-5076-4624-b777-cb8871db5a65>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:1cb91fbf-8b61-c2e4-98e9-b3ae0197ea98>
+            rdf:type                cim:VoltageLimit;
+            cim:VoltageLimit.value  "420"^^xsd:float .
     
     <urn:uuid:d22b3317-9b16-ca38-f909-8f85c5c92ec0>
             rdf:type                cim:CurrentLimit;
@@ -26429,6 +26720,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                cim:CurrentLimit;
             cim:CurrentLimit.value  "1000"^^xsd:float .
     
+    <urn:uuid:4b4f08a4-e351-0d04-9a9f-7ed1bb9d0dfe>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
     <urn:uuid:ed8613d9-d80c-0e29-0b7f-cb7b1577631e>
             rdf:type                       cim:RatioTapChanger;
             cim:TapChanger.controlEnabled  false;
@@ -26545,6 +26840,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:d221714a-959b-407c-93c4-5b0ed2d301ad>
+            rdf:type                        cim:ControlArea;
+            cim:ControlArea.netInterchange  "-10"^^xsd:float .
+    
     <urn:uuid:044c33c1-c766-11e1-8775-005056c00008>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -26606,6 +26905,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.open          false .
     
     <urn:uuid:60dcd2b6-8a82-4a02-9f23-8240fab4800c>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:9a083e1d-0b96-96a3-e13c-9e8d444de329>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     

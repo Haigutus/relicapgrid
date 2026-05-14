@@ -54,17 +54,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/Contingency/2.3" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is an example of the last contingency dataset version update. The version notes provide additional information. We observe one contingency studying the loss of G1, L2, L1 and NonConformLoad_1."@en;
             dct:identifier        "b2d1215a-a124-4b6e-9df5-85ecdce9793b";
             dct:issued            "2025-05-18T18:00:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Belgovia";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Belgovia>;
             dct:requires          <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
             dct:title             "20250520_Belgovia_CO_1.0.0";
             adms:versionNotes     "This is initial version";
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-CO>;
@@ -74,7 +74,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2025-05-18T18:00:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2025-05-15T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-CO" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-CO> .
     
     <urn:uuid:19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae>
             rdf:type                   cim:ContingencyEquipment;

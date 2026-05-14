@@ -25,7 +25,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID      "e43a18a9-cd28-49ce-b6b1-7db8255462e2";
             cim:IdentifiedObject.name      "AE1";
             nc:AssessedElement.AssessedSystemOperator
-                    <https://energy.referencedata.eu/Test/Model/Galia-AE#X1001A1001A361>;
+                    <urn:uuid:2ec42376-eee2-4ab9-b79a-165e1df2a185>;
             nc:AssessedElement.ConductingEquipment
                     <urn:uuid:1dc9afba-23b5-41a0-8540-b479ed8baf4b>;
             nc:AssessedElement.ScannedForRegion
@@ -34,17 +34,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://ap.cim4.eu/AssessedElement/2.4" , "https://cim.ucaiug.io/ns#" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4>;
             dct:description       "This is the assessed element dataset for Galia part of ReliCapGrid."@en;
             dct:identifier        "447dc560-28a7-41ff-b1ce-15dd3f0d5e87";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Galia";
-            dct:requires          <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Galia>;
+            dct:requires          <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a> , <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
             dct:title             "20220615_Galia_AE_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-AE>;
@@ -52,7 +52,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-AE" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-AE> .
     
     <urn:uuid:e3165c3a-87a0-44b7-a209-939bda47778f>
             rdf:type  nc:AssessedElementWithContingency;
@@ -74,7 +74,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID      "e43a18a9-cd28-49ce-b6b1-7db8255462e3";
             cim:IdentifiedObject.name      "AE2";
             nc:AssessedElement.AssessedSystemOperator
-                    <https://energy.referencedata.eu/Test/Model/Galia-AE#X1001A1001A361>;
+                    <urn:uuid:2ec42376-eee2-4ab9-b79a-165e1df2a185>;
             nc:AssessedElement.ConductingEquipment
                     <urn:uuid:1dc9afba-23b5-41a0-8540-b479ed8baf4b>;
             nc:AssessedElement.ScannedForRegion

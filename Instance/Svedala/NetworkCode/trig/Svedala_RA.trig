@@ -482,6 +482,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:StaticPropertyRange.PropertyReference
                     <https://energy.referencedata.eu/PropertyReference/RotatingMachine.p> .
     
+    <urn:uuid:b6617e31-c8f1-4e44-b157-d630948695f1>
+            rdf:type                     nc:StageTrigger;
+            cim:IdentifiedObject.mRID    "b6617e31-c8f1-4e44-b157-d630948695f1";
+            cim:IdentifiedObject.name    "Current flow through the line CL6 is higher than TATL";
+            nc:StageTrigger.GateTrigger  <urn:uuid:068d8431-c5b8-4908-8af0-9642779347c0>;
+            nc:StageTrigger.Stage        <urn:uuid:2f60b546-dfcf-4e0c-b0d6-40264de45cbd>;
+            nc:StageTrigger.normalArmed  true;
+            nc:StageTrigger.priority     0 .
+    
     <urn:uuid:ea6979c2-2ad4-484a-9f41-bec157a0eedd>
             rdf:type                   nc:GridStateAlterationCollection;
             cim:IdentifiedObject.mRID  "ea6979c2-2ad4-484a-9f41-bec157a0eedd";
@@ -730,7 +739,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.RemedialActionSystemOperator
-                    <https://data.europa.eu/energy/EIC/TSOA------Q>;
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
             nc:RemedialAction.isCrossBorderRelevant
                     true;
             nc:RemedialAction.kind     nc:RemedialActionKind.preventive;
@@ -907,7 +916,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.RemedialActionSystemOperator
-                    <https://energy.referencedata.eu/test/party/Svedala>;
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
             nc:RemedialAction.isCrossBorderRelevant
                     true;
             nc:RemedialAction.kind     nc:RemedialActionKind.preventive;
@@ -1026,7 +1035,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID    "958419bd-309d-4946-bf90-b4ce1819b3c7";
             cim:IdentifiedObject.name    "Current flow through the line CL6 is higher than TATL";
             nc:StageTrigger.GateTrigger  <urn:uuid:068d8431-c5b8-4908-8af0-9642779347c0>;
-            nc:StageTrigger.Stage        <urn:uuid:7d2d969e-6b11-45c5-ba66-9637072b3be5> , <urn:uuid:2f60b546-dfcf-4e0c-b0d6-40264de45cbd>;
+            nc:StageTrigger.Stage        <urn:uuid:7d2d969e-6b11-45c5-ba66-9637072b3be5>;
             nc:StageTrigger.normalArmed  true;
             nc:StageTrigger.priority     0 .
     
@@ -1131,7 +1140,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.RemedialActionSystemOperator
-                    <https://energy.referencedata.eu/test/party/Svedala>;
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
             nc:RemedialAction.isCrossBorderRelevant
                     true;
             nc:RemedialAction.kind     nc:RemedialActionKind.preventive;
@@ -1153,7 +1162,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:RemedialAction.ContingencyWithRemedialAction
                     <urn:uuid:3a364a5b-7aba-4e48-abd5-4cd79e2e8676>;
             nc:RemedialAction.RemedialActionSystemOperator
-                    <https://energy.referencedata.eu/test/party/Svedala>;
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
             nc:RemedialAction.isCrossBorderRelevant
                     true;
             nc:RemedialAction.kind     nc:RemedialActionKind.curative;
@@ -1162,17 +1171,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/RemedialAction/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        <https://ap.cim4.eu/RemedialAction/2.4> , cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is the remedial action dataset for Svedala part of ReliCapGrid."@en;
             dct:identifier        "f7b94ef6-e043-4d2a-a359-2718e6e20507";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Svedala";
-            dct:requires          <urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202>;
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Svedala>;
+            dct:requires          <urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202> , <urn:uuid:e6b94ef6-e043-4d29-a258-1718d6d2f507>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System>;
             dct:title             "20220615_Svedala_RA_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Svedala-RA>;
@@ -1180,7 +1189,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RA" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-RA> .
     
     <urn:uuid:54174158-33fb-43ad-9c2d-e733165c3acb>
             rdf:type                   nc:RegulatingControlAction;

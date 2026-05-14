@@ -1146,16 +1146,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "9ba30534-4b14-3924-4dac-5cd5ba47464a";
             cim:IdentifiedObject.name  "Cub_2" .
     
-    <urn:uuid:d121cf41-5b6d-47c9-87a4-67bfb994d8ec>
-            rdf:type                       cim:GeographicalRegion;
-            cim:IdentifiedObject.description
-                    "GA-NH HVDC link";
-            cim:IdentifiedObject.mRID      "d121cf41-5b6d-47c9-87a4-67bfb994d8ec";
-            cim:IdentifiedObject.name      "Nordheim-Galia";
-            eu:IdentifiedObject.energyIdentCodeEic
-                    "10T-GA-NH-123456";
-            eu:IdentifiedObject.shortName  "GA-NH" .
-    
     <urn:uuid:6a460b27-ee5c-4f31-aa4c-5ed99b640135>
             rdf:type                    cim:ControlArea;
             cim:ControlArea.EnergyArea  <urn:uuid:7cf58e7f-eadf-48ca-bed5-79bfe2dd41ad>;

@@ -178,17 +178,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://ap.cim4.eu/AssessedElement/2.4" , "https://cim.ucaiug.io/ns#" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4>;
             dct:description       "This is the assessed element dataset for Espheim part of ReliCapGrid."@en;
             dct:identifier        "972cd4cd-25b0-4b70-96f9-eab4bfd32907";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Espheim";
-            dct:requires          <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Espheim>;
+            dct:requires          <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12> , <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System>;
             dct:title             "20220615_Espheim_AE_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Espheim-AE>;
@@ -196,7 +196,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-AE" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-AE> .
     
     <urn:uuid:2cc84c47-b6b7-481c-aa0e-6c46589d458a>
             rdf:type                       nc:AssessedElement;

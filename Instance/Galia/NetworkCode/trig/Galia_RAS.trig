@@ -34,16 +34,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd>
             rdf:type              dcat:Dataset;
             dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/RemedialActionSchedule/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:conformsTo        <https://ap.cim4.eu/RemedialActionSchedule/2.4> , cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is the remedial action schedule dataset for Galia part of ReliCapGrid."@en;
             dct:identifier        "dc15a1c0-75ee-49f1-90ac-ccd579376bcd";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/JOTUNHEIM";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/JOTUNHEIM>;
             dct:requires          <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
             dct:title             "20220615_Galia_RAS_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-RAS>;
@@ -51,7 +51,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RAS" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-RAS> .
     
     <urn:uuid:3bf7b894-12e6-401b-83db-4bb3d35da4b1>
             rdf:type                        nc:GenericValueTimePoint;
@@ -59,7 +59,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:2391985f-1e21-4184-a2ca-99ec573e5aaf>;
             nc:GenericValueTimePoint.atTime
                     "2022-06-15T15:30:00Z"^^xsd:dateTime;
-            nc:GenericValueTimePoint.value  "0.7"^^xsd:float .
+            nc:GenericValueTimePoint.value  "667.7734"^^xsd:float .
     
     <urn:uuid:2391985f-1e21-4184-a2ca-99ec573e5aaf>
             rdf:type                   nc:GridStateIntensitySchedule;
