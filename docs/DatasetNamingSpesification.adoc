@@ -62,7 +62,7 @@ For the next version of Metadata Specification we have added [dcterms:spatial] t
 
 To support this use case, the following naming recommendation will be added:
 
-`[dcat:startDate]_dcterms:publisher_[dcterms:spatial]_prov:wasGeneratedBy_[dcat:version]`
+`[dcat:startDate_]dcterms:publisher_[dcterms:spatial_]prov:wasGeneratedBy[_dcat:version]`
 
 Where:
 
