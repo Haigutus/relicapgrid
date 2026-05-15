@@ -67,7 +67,7 @@ To support this use case, the following naming recommendation will be added:
 Where:
 
 * `dcat:startDate` — optional validity date/time;
-* `dcterms:publisher` — dataset publisher;
+* `dcterms:publisher` — mandatory, dataset publisher;
 * `dcterms:spatial` — optional neighbouring Frame or spatial reference;
 * `prov:wasGeneratedBy` — generating activity or process;
 * `dcat:version` — optional dataset version.
