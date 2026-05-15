@@ -26,7 +26,7 @@ The core idea of having manifest dataset and DCAT is to avoid implementation to 
 
 However, for human readability, the following file naming convention is recommended:
 
-`dcat:startDate dcterms:publisher prov:wasGeneratedBy [_dcat:version]`
+`dcat:startDate_dcterms:publisher_prov:wasGeneratedBy[_dcat:version]`
 ____
 
 The corresponding metadata elements are:
