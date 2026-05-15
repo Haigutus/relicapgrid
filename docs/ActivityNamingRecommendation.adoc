@@ -2,7 +2,7 @@
 
 === Purpose
 
-The `prov:wasGeneratedBy` property identifies the activity that generated a dataset entity.
+The `prov:wasGeneratedBy` property provides an identifiable name for the activity that generated a dataset entity.
 
 As dataset entities may contain instances conforming to one or more profiles, and the same profile may be generated in different operational or business contexts, the activity naming shall not be derived solely from profile names.
 
@@ -22,18 +22,18 @@ The recommended naming structure is:
 
 [source]
 ----
-<ActivityType>-<Profile>[-<Process>][-<TimeHorizon>][-<Run>]
+<ActivityCode>-<Profile>[-<Process>][-<TimeHorizon>][-<Run>]
 ----
 
 Where:
 
-* `ActivityType` is mandatory;
+* `ActivityCode` is mandatory;
 * `Profile` is mandatory;
 * `Process` is optional;
 * `TimeHorizon` is optional;
 * `Run` is optional.
 
-Elements shall appear in the defined order.
+Elements shall appear in the defined order with the '-' as separator.
 
 === Naming Elements
 
@@ -64,104 +64,453 @@ Elements shall appear in the defined order.
 
 === Activity Types
 
-The following controlled vocabulary shall be used for `ActivityType`.
+The `ActivityType` element identifies the nature of the activity that generated the dataset entity.
 
-[cols="1,4",options="header"]
+Its purpose is to distinguish datasets generated through different operational, analytical, planning, validation, or publication activities, even when the same profile is involved.
+
+The activity type represents the semantic nature of the generating action, not the internal implementation or technical execution mechanism.
+
+To support practical use in provenance metadata, dataset titles, and filenames, each activity type is associated with a compact activity code.
+
+The compact activity code:
+
+* shall be used in generated activity identifiers;
+* shall be stable across implementations;
+* shall remain concise and human-readable;
+* shall avoid unnecessary verbosity in filenames and metadata values.
+
+Tool implementations may present the full activity definition or description to users while storing or generating the compact code.
+
+==== Controlled Vocabulary
+
+[cols="1,1,4",options="header"]
 |===
-| Activity Type | Definition
+| Activity Type | Code | Definition
 
 | StructuralRepresentation
-| Creation of structural, topological, or functional representations of the power system, including detailed models, reduced representations, equivalents, and abstractions.
+| SR
+| Creation of structural, topological, or functional representations of the power system, including detailed equipment models, reduced models, equivalents, abstractions, and derived structural views.
 
 | AssumptionDefinition
-| Creation of assumed operational conditions used as input to studies, simulations, planning, or operational analysis.
+| AD
+| Creation of assumed operational conditions used as input to studies, simulations, planning, or operational coordination, including switching states, injections, availability assumptions, and scenario preparation.
 
 | ScheduleDefinition
-| Creation of planned future operational schedules, allocations, commitments, or declared availability information.
+| SD
+| Creation of planned future operational schedules, allocations, commitments, or declared availability information representing intended operation.
 
 | AnalyticalComputation
-| Creation of datasets containing calculated analytical results derived from deterministic or algorithmic processing.
+| AC
+| Creation of datasets containing calculated analytical results derived from deterministic or algorithmic processing, including power flow, state estimation, contingency analysis, optimisation, and capacity calculations.
 
 | MeasurementAcquisition
-| Creation of datasets originating from direct observation, telemetry, metering, or real-time acquisition.
+| MA
+| Creation of datasets originating from direct observation, telemetry, metering, monitoring systems, or real-time acquisition.
 
 | Assessment
-| Creation of datasets resulting from evaluation or analysis of submitted requests, system conditions, or operational scenarios.
+| AS
+| Creation of datasets resulting from evaluation or analysis of submitted requests, operational conditions, planning scenarios, or market situations.
 
 | Verification
-| Creation of datasets representing validation or conformance checking against specifications, business rules, or semantic constraints.
+| VF
+| Creation of datasets representing validation or conformance checking against profile specifications, business rules, schema constraints, or semantic consistency requirements.
 
 | Request
+| REQ
 | Creation of formal request datasets intended to trigger assessment, approval, or further business processing.
 
 | Response
-| Creation of datasets responding to a prior request, submission, or assessment.
+| RES
+| Creation of datasets representing formal responses to a prior request, submission, or assessment.
 
 | Publication
-| Creation of authoritative datasets intended for publication and reuse.
+| PUB
+| Creation of authoritative datasets intended for publication and reuse as common, boundary, reference, or officially distributed information.
 |===
+
+ 
 
 === Profile
 
-The `Profile` element identifies the information structure and reference the primary ConformTo or dataset type generated by the activity.
+The `Profile` element identifies the information structure and reference the primary ConformTo or dataset type generated by the activity. The controlled vocabulary are maintained outside this document
 
 Examples include:
 
-* `EQ` - Equipment
-* `SSH`
-* `SV`
-* `TP`
-* `DL`
-* `GL`
-* `BD`
-* `CD`
-* `RD`
-* `RAS`
+[cols="2,1,1",options="header"]
+|===
+| Title | Keyword | Version
 
-The profile shall reflect the generated entity, not the source data.
+| Core Equipment Vocabulary
+| EQ
+| 3.0.0
+
+| Operation Vocabulary
+| OP
+| 3.0.0
+
+| Short Circuit Vocabulary
+| SC
+| 3.0.0
+
+| Steady State Hypothesis Vocabulary
+| SSH
+| 3.0.0
+
+| Topology Vocabulary
+| TP
+| 3.0.0
+
+| State Variables Vocabulary
+| SV
+| 3.0.0
+
+|===
+
+
 
 === Process
 
-The `Process` element identifies the optional business or operational context.
+The `Process` element identifies the optional business or operational context in the case the action is dedicated to a given process.
 
 Examples include:
 
-* `CGM` - Common Grid Model
-* `TYNDP`
-* `CSA`
-* `OPC`
+[cols="2,1,4,2,2",options="header"]
+|===
+| Title | Keyword | Description | Category | Typical Profiles
+
+| Common Grid Model
+| CGM
+| Creation and exchange of a Common Grid Model assembled from Individual Grid Models used as the analytical basis for coordinated operational services.
+| Operational Planning
+| EQ, SSH, TP, DL, GL
+
+| Common Grid Model Alignment
+| CGMA
+| Alignment process ensuring the Common Grid Model is electrically balanced and internally consistent before analytical use.
+| Operational Planning
+| PS
+
+| Outage Planning Coordination
+| OPC
+| Coordination of planned outages to maximise operational security while minimising market impact.
+| Operational Planning
+| EQ, SSH, AS, PS
+
+| Coordinated Security Analysis
+| CSA
+| Coordinated assessment of operational security following market outcomes and identification of required operational actions.
+| Operational Planning
+| EQ, SSH, RA, RAS, SAR, AE
+
+| Coordinated Capacity Calculation
+| CCC
+| Calculation of safe cross-zonal market capacities based on coordinated grid analysis.
+| Operational Planning
+| EQ, SSH, GC
+
+| Short Term Adequacy
+| STA
+| Forecast-based adequacy assessment of available generation and transmission capacity over the short-term horizon.
+| Operational Planning
+| EQ, SSH, PS
+
+| Critical Grid Situation
+| CGS
+| Regional or cross-regional coordination support in critical operational grid situations.
+| Operational Planning
+| SSH, SV, 
+
+| Reliability Margins Calculation
+| RMC
+| Determination of reliability margins used as input to coordinated capacity calculations.
+| Operational Planning
+| EQ, SSH, SV
+
+| Remedial Action Optimisation
+| RAO
+| Optimisation of remedial actions to maximise secure transmission capacity while maintaining operational security.
+| Security Optimisation
+| RAS, SSH, SV
+
+| Individual Grid Model
+| IGM
+| Creation or maintenance of a TSO-specific grid model contributing to a Common Grid Model.
+| Core Grid Model
+| EQ, SSH, TP
+
+
+| Ten-Year Network Development Plan
+| TYNDP
+| Long-term network development planning and infrastructure assessment process.
+| Long-Term Planning
+| EQ, SSH, 
+
+| Scenario Development
+| SCEN
+| Creation of planning scenarios supporting adequacy or infrastructure studies.
+| Long-Term Planning
+| SSH
+
+| Cost Benefit Analysis
+| CBA
+| Economic and technical evaluation of network investment alternatives.
+| Long-Term Planning
+| 
+|===
 
 The controlled vocabulary for processes shall be defined by the applicable implementation or business domain.
 
 === Time Horizon
 
-The `TimeHorizon` element identifies the optional temporal context for the activity.
+The `TimeHorizon` element identifies the temporal relationship between the generating activity and the operational delivery time or other relevant reference time.
 
-ISO 8601 duration notation is recommended.
+Its purpose is to provide sufficient temporal context to distinguish otherwise identical activities and thereby support creation of unique, human-readable, and machine-friendly activity identifiers.
+
+The `TimeHorizon` element is optional and shall only be included when required to distinguish activities.
+
+==== Design Principles
+
+The notation shall:
+
+* be concise and human-readable;
+* be deterministic and easy to interpret;
+* be suitable for use in `prov:wasGeneratedBy`;
+* be safe for reuse in dataset titles (`dcterms:title`) and physical file names;
+* avoid special characters that may create interoperability or portability issues across tools, operating systems, scripting environments, and identifier processing;
+* provide sufficient uniqueness for operational, planning, and settlement processes.
+
+==== Naming Convention
+
+The notation distinguishes three temporal contexts:
+
+* pre-delivery activities;
+* real-time activities;
+* post-delivery activities.
+
+The notation is inspired by ISO 8601 duration expressions, but intentionally simplified for operational readability and activity naming.
+
+The format shall be one of:
+
+----
+<offset><unit>
+<unit><offset>
+RT
+----
+
+Where:
+
+* `<offset><unit>` identifies time before delivery or reference time;
+* `<unit><offset>` identifies time after delivery or reference time;
+* `RT` identifies the real-time operational reference point.
+
+Supported units:
+
+* `H` — hour
+* `D` — day
+* `W` — week
+* `M` — month
+* `Y` — year
+
+Special value:
+
+* `RT` — real-time operational execution, observation, or snapshot
 
 Examples:
 
-* `P1Y` — year-ahead
-* `P1M` — month-ahead
-* `P1W` — week-ahead
-* `P3D` — three days ahead
-* `P2D` — two days ahead
-* `P1D` — day-ahead
-* `PT0H` — intraday / current operational timeframe
+[cols="1,3",options="header"]
+|===
+| Value | Meaning
+
+| 10Y
+| Ten years before delivery
+
+| 1Y
+| One year before delivery
+
+| 3M
+| Three months before delivery
+
+| 1M
+| One month before delivery
+
+| 2W
+| Two weeks before delivery
+
+| 1W
+| One week before delivery
+
+| 7D
+| Seven days before delivery
+
+| 2D
+| Two days before delivery
+
+| 1D
+| One day before delivery
+
+| 12H
+| Twelve hours before delivery
+
+| 6H
+| Six hours before delivery
+
+| 1H
+| One hour before delivery
+
+| RT
+| Real-time operational snapshot or execution
+
+| H1
+| One hour after delivery
+
+| D1
+| One day after delivery
+
+| D2
+| Two days after delivery
+
+| D7
+| Seven days after delivery
+|===
+
+==== Rationale
+
+===== ISO 8601 Inspiration and Simplification
+
+The notation is conceptually inspired by ISO 8601 duration expressions, but intentionally simplified for operational naming purposes.
+
+Examples:
+
+* ISO 8601 `P1D` corresponds conceptually to `1D`
+* ISO 8601 `PT6H` corresponds conceptually to `6H`
+
+The ISO 8601 prefixes `P` (period) and `R` (recurrence) are intentionally not used because:
+
+* their meaning is not immediately intuitive for many operational users;
+* they add unnecessary verbosity to identifiers;
+* the naming convention is intended for activity identification rather than formal temporal arithmetic;
+* shorter identifiers improve readability in provenance metadata, dashboards, logs, dataset titles, and filenames;
+* `R` may introduce ambiguity with run identifiers such as `R1` or `R2`.
+
+Thus:
+
+----
+P1D
+----
+
+becomes:
+
+----
+1D
+----
+
+===== Alternative Relative Notations
+
+Alternative notations such as:
+
+----
+D+1
+D-1
+T+2
+T-6H
+----
+
+are recognised and may be familiar from other standards or operational contexts.
+
+However, these forms are intentionally not used because:
+
+* they rely on special characters that may require escaping or special handling in some tools;
+* they are less suitable for consistent reuse in filenames, identifiers, and metadata values;
+* compact alphanumeric identifiers improve portability and interoperability.
+
+Thus:
+
+----
+D+1
+----
+
+is represented as:
+
+----
+D1
+----
+
+and:
+
+----
+D-1
+----
+
+is represented as:
+
+----
+1D
+----
+
+==== Guidance
+
+The purpose of the `TimeHorizon` element is practical identification rather than formal temporal modelling.
+
+Implementations should therefore prioritise:
+
+* operational familiarity;
+* naming consistency;
+* deterministic interpretation;
+* uniqueness;
+* safe reuse across provenance metadata, dataset titles, and physical file names.
 
 === Run
 
-The `Run` element identifies repeated executions of the same activity within the same process and horizon.
+The `Run` element identifies a planned repeated execution of the same activity within the same process and time horizon.
+
+Its purpose is to distinguish formally defined iterations that are part of the business or operational process.
+
+Examples include:
+
+* first coordinated day-ahead security analysis;
+* second coordinated day-ahead security analysis;
+* multiple scheduled market or coordination runs within the same operational horizon.
+
+The `Run` element shall only be used when repetition is an intentional part of the defined process.
+
+It shall *not* be used to distinguish:
+
+* technical retries due to failed execution;
+* retransmission of corrected data;
+* resubmission of improved or updated datasets;
+* replacement of previously published data.
+
+Such cases represent correction, replacement, or retransmission events and should be handled through dataset versioning, provenance metadata, or process-specific mechanisms rather than by incrementing the run identifier.
+
+==== Naming Convention
+
+The format shall be:
+
+----
+R<run number>
+----
+
+Where:
+
+* `R` identifies the run qualifier;
+* `<run number>` identifies the planned iteration number within the same process and time horizon.
 
 Examples:
 
-* `Run1`
-* `Run2`
+[cols="1,3",options="header"]
+|===
+| Value | Meaning
 
-Compact forms may be used where agreed:
+| R1
+| First planned execution of the activity
 
-* `R1`
-* `R2`
+| R2
+| Second planned execution of the activity
+
+| R3
+| Third planned execution of the activity
+|===
+
 
 === Naming Rules
 
