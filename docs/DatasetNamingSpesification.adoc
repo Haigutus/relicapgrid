@@ -37,7 +37,7 @@ Examples:
 ** `20180118T0930Z`
 ** `20180118` (for daily datasets)
 
-* `dcterms:publisher` — The party publishing or sending the dataset.
+* `dcterms:publisher` — The party publishing or sending the dataset. The last path segment of the URI is used.
 +
 Examples:
 ** `TSO-Belgovia`
