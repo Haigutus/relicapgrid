@@ -34,7 +34,7 @@ The corresponding metadata elements are:
 * `dcat:startDate` — Date and time for which the dataset is valid (`YYYYMMDDThhmm`).
 +
 Examples:
-** `20180118T0930`
+** `20180118T0930Z`
 ** `20180118` (for daily datasets)
 
 * `dcterms:publisher` — The party publishing or sending the dataset.
