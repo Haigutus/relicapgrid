@@ -70,7 +70,7 @@ Where:
 * `dcterms:publisher` — mandatory, dataset publisher;
 * `dcterms:spatial` — optional neighbouring Frame or spatial reference;
 * `prov:wasGeneratedBy` — mandatory, generating activity or process;
-* `dcat:version` — optional dataset version.
+* `dcat:version` — optional, dataset version.
 
 Additional guidance:
 
