@@ -23,6 +23,7 @@ DIRS_NEW = $(patsubst %, %/trig, $(DIRS))
 CIMXML   = $(wildcard $(patsubst %,%/cimxml/*.xml,$(DIRS)))
 TRIG     = $(subst cimxml,trig,$(subst .xml,.trig,$(CIMXML)))
 TTL      = $(patsubst %,%/manifest.ttl,$(DIRS)) $(wildcard referenceData/*/ttl/*)
+TOOLS    = ../semantic-tools
 
 targets:
 	echo targets: dirs, echo, trig, validate, zip
@@ -38,9 +39,9 @@ dirs:
 
 define CIMXML2TRIG
 $(2): $(1)
-	perl ../tools/fix-namespaces.pl $(1) | perl ../tools/cim-urn-uuid.pl > temp.xml
-	perl ../tools/cim-trig.pl -r temp.xml > temp.trig
-	update.bat --update=../tools/fix-datatypes-and-model.ru --data=temp.trig --dump > $(2)
+	perl $(TOOLS)/fix-namespaces.pl $(1) | perl $(TOOLS)/cim-urn-uuid.pl > temp.xml
+	perl $(TOOLS)/cim-trig.pl -r temp.xml > temp.trig
+	update.bat --update=$(TOOLS)/fix-datatypes-and-model.ru --data=temp.trig --dump > $(2)
 	rm temp.xml temp.trig
 endef
 

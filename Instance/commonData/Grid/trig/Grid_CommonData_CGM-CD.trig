@@ -27,12 +27,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name       "50.00 kV";
             eu:IdentifiedObject.shortName   "50.00 kV" .
     
-    <urn:uuid:77467625-a8fe-8792-7cf2-06c5dfd5fba9>
-            rdf:type                   cim:SubGeographicalRegion;
-            cim:IdentifiedObject.mRID  "77467625-a8fe-8792-7cf2-06c5dfd5fba9";
-            cim:IdentifiedObject.name  "Nordheim";
-            cim:SubGeographicalRegion.Region
-                    <urn:uuid:9356077b-f716-0d6c-0cac-32c074bd8fa3> .
+    <urn:uuid:764bc018-fa90-4c17-9fb3-c74e64c7d6c9>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Svedala geographical region";
+            cim:IdentifiedObject.mRID      "764bc018-fa90-4c17-9fb3-c74e64c7d6c9";
+            cim:IdentifiedObject.name      "Svedala";
+            eu:IdentifiedObject.shortName  "SD" .
     
     <urn:uuid:1CDFB476-4E01-4488-B5A2-FDDEA0488C59>
             rdf:type                       cim:EnergySchedulingType;
@@ -41,6 +42,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID      "1CDFB476-4E01-4488-B5A2-FDDEA0488C59";
             cim:IdentifiedObject.name      "Geothermal";
             eu:IdentifiedObject.shortName  "Geotherm" .
+    
+    <urn:uuid:c50c9112-19fc-6543-9d6d-447aadc6f313>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Britheim geographical region";
+            cim:IdentifiedObject.mRID      "c50c9112-19fc-6543-9d6d-447aadc6f313";
+            cim:IdentifiedObject.name      "Britheim";
+            eu:IdentifiedObject.shortName  "BH" .
     
     <urn:uuid:f61a400c-1523-9ab0-b15a-aeb120740bae>
             rdf:type                        cim:BaseVoltage;
@@ -121,6 +130,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name       "20.00 kV";
             eu:IdentifiedObject.shortName   "20.00 kV" .
     
+    <urn:uuid:0472f5a6-c766-11e1-8775-005056c00008>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Espheim geographical region";
+            cim:IdentifiedObject.mRID      "0472f5a6-c766-11e1-8775-005056c00008";
+            cim:IdentifiedObject.name      "Espheim";
+            eu:IdentifiedObject.shortName  "EH" .
+    
     <urn:uuid:A43C7A90-B4C7-460c-A607-942EFA3EFB79>
             rdf:type                       cim:EnergySchedulingType;
             cim:IdentifiedObject.description
@@ -153,8 +170,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "Economic and political union of member states located primarily in the NineRealms";
             cim:IdentifiedObject.mRID      "fb980bdf-ced5-4f87-8264-998e95e065a5";
             cim:IdentifiedObject.name      "NineRealms";
-            eu:IdentifiedObject.energyIdentCodeEic
-                    "10T-NR-NR-000001";
             eu:IdentifiedObject.shortName  "NR" .
     
     <urn:uuid:9a73490b-5902-c619-abc0-27a2dcd5fc08>
@@ -209,6 +224,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name       "400 kV";
             eu:IdentifiedObject.shortName   "400" .
     
+    <urn:uuid:7bf89875-1476-4d1a-a56d-a2965cce3575>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Belgovia geographical region";
+            cim:IdentifiedObject.mRID      "7bf89875-1476-4d1a-a56d-a2965cce3575";
+            cim:IdentifiedObject.name      "Belgovia";
+            eu:IdentifiedObject.shortName  "BO" .
+    
     <urn:uuid:08a35d61-b276-247a-1f63-1bbfabcdb4a8>
             rdf:type                        cim:BaseVoltage;
             cim:BaseVoltage.nominalVoltage  "17"^^xsd:float;
@@ -218,6 +241,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name       "17.00 kV";
             eu:IdentifiedObject.shortName   "17.00 kV" .
     
+    <urn:uuid:efc79870-d704-485e-a37b-0cf2e8e7657b>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Galia geographical region";
+            cim:IdentifiedObject.mRID      "efc79870-d704-485e-a37b-0cf2e8e7657b";
+            cim:IdentifiedObject.name      "Galia";
+            eu:IdentifiedObject.shortName  "GA" .
+    
     <urn:uuid:5ff755c5-dd8d-b345-1221-44482d996bb3>
             rdf:type                        cim:BaseVoltage;
             cim:BaseVoltage.nominalVoltage  "150"^^xsd:float;
@@ -226,6 +257,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID       "5ff755c5-dd8d-b345-1221-44482d996bb3";
             cim:IdentifiedObject.name       "150.00 kV";
             eu:IdentifiedObject.shortName   "150.00 kV" .
+    
+    <urn:uuid:d121cf41-5b6d-47c9-87a4-67bfb994d8ec>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "GA-NH HVDC link";
+            cim:IdentifiedObject.mRID      "d121cf41-5b6d-47c9-87a4-67bfb994d8ec";
+            cim:IdentifiedObject.name      "Nordheim-Galia";
+            eu:IdentifiedObject.shortName  "GA-NH" .
     
     <urn:uuid:FB6F43D6-E71E-423a-8CEB-084BC504FD1A>
             rdf:type                       cim:EnergySchedulingType;
@@ -244,6 +283,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name       "11.00 kV";
             eu:IdentifiedObject.shortName   "11.00 kV" .
     
+    <urn:uuid:24823ed9-4605-4e20-bb9e-48dcf487d544>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Portheim geographical region";
+            cim:IdentifiedObject.mRID      "24823ed9-4605-4e20-bb9e-48dcf487d544";
+            cim:IdentifiedObject.name      "Portheim";
+            eu:IdentifiedObject.shortName  "PH" .
+    
     <urn:uuid:24C12434-E42B-497f-928F-119C6AE92079>
             rdf:type                       cim:EnergySchedulingType;
             cim:IdentifiedObject.description
@@ -253,9 +300,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             eu:IdentifiedObject.shortName  "EHT-Biomass" .
     
     <urn:uuid:9356077b-f716-0d6c-0cac-32c074bd8fa3>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "9356077b-f716-0d6c-0cac-32c074bd8fa3";
-            cim:IdentifiedObject.name  "NH" .
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Nordheim geographical region. Duplicated instance definition in CommonData and EQ file.";
+            cim:IdentifiedObject.mRID      "9356077b-f716-0d6c-0cac-32c074bd8fa3";
+            cim:IdentifiedObject.name      "Nordheim";
+            eu:IdentifiedObject.shortName  "NH" .
     
     <urn:uuid:a7885fdc-2ac1-0ad1-8aa5-32174aa7d3ac>
             rdf:type                        cim:BaseVoltage;
@@ -283,6 +333,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID       "6173a8a3-9ede-c7b9-4d0d-c6f11725bc99";
             cim:IdentifiedObject.name       "10.50 kV";
             eu:IdentifiedObject.shortName   "10.50 kV" .
+    
+    <urn:uuid:75937a43-c47d-4431-9857-7a0333ed50be>
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "EH-SD HVDC link";
+            cim:IdentifiedObject.mRID      "75937a43-c47d-4431-9857-7a0333ed50be";
+            cim:IdentifiedObject.name      "Espheim-Svedala";
+            eu:IdentifiedObject.shortName  "EH-SD" .
     
     <urn:uuid:fbcc6679-6da5-4cfd-b50c-8ce23f450c78>
             rdf:type                       cim:SubGeographicalRegion;

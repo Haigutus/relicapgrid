@@ -927,11 +927,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID   "038ce404-30dc-4289-b9db-7076cb870b8e";
             cim:IdentifiedObject.name   "DC-3P-Convert-1" .
     
-    <urn:uuid:75937a43-c47d-4431-9857-7a0333ed50be>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "75937a43-c47d-4431-9857-7a0333ed50be";
-            cim:IdentifiedObject.name  "Espheim-Svedala" .
-    
     <urn:uuid:6163d1e1-7904-d404-2a1c-70057f17dc15>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber

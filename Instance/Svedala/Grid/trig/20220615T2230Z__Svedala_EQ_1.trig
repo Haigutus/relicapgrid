@@ -1803,6 +1803,18 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:ec268152-e2cc-440b-b2e5-80eb4b2e1eea>;
             cim:Terminal.ConnectivityNode  <urn:uuid:72fea4c2-b607-4493-a4e2-e4c7d2e5d5f8> .
     
+    <urn:uuid:784a84a0-0d21-4d8c-bc63-94f7312a1eb2>
+            rdf:type                      cim:OperationalLimitType;
+            cim:IdentifiedObject.mRID     "784a84a0-0d21-4d8c-bc63-94f7312a1eb2";
+            cim:IdentifiedObject.name     "PTC_limit_import";
+            cim:OperationalLimitType.acceptableDuration
+                    "900"^^xsd:float;
+            cim:OperationalLimitType.direction
+                    cim:OperationalLimitDirectionKind.high;
+            cim:OperationalLimitType.isInfiniteDuration
+                    false;
+            eu:OperationalLimitType.kind  eu:LimitKind.tatl .
+    
     <urn:uuid:4cec73c4-a641-4045-86ba-48801b8cad9a>
             rdf:type                      cim:VoltageLevel;
             cim:IdentifiedObject.mRID     "4cec73c4-a641-4045-86ba-48801b8cad9a";
@@ -6034,11 +6046,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:e2c00d43-02fe-64d9-afe5-efc9b8179528>;
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:6286de91-95ca-75a2-db02-e5a6331d18fb> .
-    
-    <urn:uuid:764bc018-fa90-4c17-9fb3-c74e64c7d6c9>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "764bc018-fa90-4c17-9fb3-c74e64c7d6c9";
-            cim:IdentifiedObject.name  "Svedala" .
     
     <urn:uuid:8a705292-6eea-60c6-b9fb-886d625921dc>
             rdf:type                        cim:RegulatingControl;
@@ -29318,6 +29325,19 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "0.1"^^xsd:float;
             cim:SynchronousMachine.type  cim:SynchronousMachineKind.generatorOrCondenser .
     
+    <urn:uuid:ec2a2385-872d-4cf7-b50b-f9e8a7210dbb>
+            rdf:type                   cim:ActivePowerLimit;
+            cim:ActivePowerLimit.normalValue
+                    "-2500"^^xsd:float;
+            cim:IdentifiedObject.description
+                    "Limit of Power Transfer Corridor for UseCaseNCP436";
+            cim:IdentifiedObject.mRID  "ec2a2385-872d-4cf7-b50b-f9e8a7210dbb";
+            cim:IdentifiedObject.name  "Limit_import";
+            cim:OperationalLimit.OperationalLimitSet
+                    <urn:uuid:89de3c44-8a85-3cb9-6d7c-af2339a5a047>;
+            cim:OperationalLimit.OperationalLimitType
+                    <urn:uuid:784a84a0-0d21-4d8c-bc63-94f7312a1eb2> .
+    
     <urn:uuid:7775953d-fdd4-4b39-b5ea-e741b17c03b1>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -50417,6 +50437,19 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:aed5cf47-54d2-4bf3-8455-29b288fe54a9>;
             cim:Terminal.ConnectivityNode  <urn:uuid:3d5700f4-a95e-4228-a05e-2464863d61e3> .
+    
+    <urn:uuid:a331310f-a6b9-4e30-be2e-a6f62b0b5430>
+            rdf:type                   cim:ActivePowerLimit;
+            cim:ActivePowerLimit.normalValue
+                    "2500"^^xsd:float;
+            cim:IdentifiedObject.description
+                    "Limit of Power Transfer Corridor for UseCaseNCP436";
+            cim:IdentifiedObject.mRID  "a331310f-a6b9-4e30-be2e-a6f62b0b5430";
+            cim:IdentifiedObject.name  "Limit_export";
+            cim:OperationalLimit.OperationalLimitSet
+                    <urn:uuid:f11220b0-3c3c-cc6a-105c-8ffd33f5a790>;
+            cim:OperationalLimit.OperationalLimitType
+                    <urn:uuid:98cf1d8f-f84f-4d77-9616-43aa5a21c82c> .
     
     <urn:uuid:690ace13-2584-4b8b-aaa9-d41e0e6a759b>
             rdf:type                       cim:Terminal;
@@ -76862,6 +76895,18 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:3858c1c8-47b1-4861-ac73-417e5db175d9>;
             cim:Terminal.ConnectivityNode  <urn:uuid:de7f99bc-7ebc-431c-95cb-f6c782a0da26> .
+    
+    <urn:uuid:98cf1d8f-f84f-4d77-9616-43aa5a21c82c>
+            rdf:type                      cim:OperationalLimitType;
+            cim:IdentifiedObject.mRID     "98cf1d8f-f84f-4d77-9616-43aa5a21c82c";
+            cim:IdentifiedObject.name     "PTC_limit_export";
+            cim:OperationalLimitType.acceptableDuration
+                    "900"^^xsd:float;
+            cim:OperationalLimitType.direction
+                    cim:OperationalLimitDirectionKind.low;
+            cim:OperationalLimitType.isInfiniteDuration
+                    false;
+            eu:OperationalLimitType.kind  eu:LimitKind.tatl .
     
     <urn:uuid:e34994fb-d12c-408a-a016-b2148c6d28e3>
             rdf:type                   cim:ACLineSegment;

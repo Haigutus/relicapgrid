@@ -29,17 +29,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/RemedialActionSchedule/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        <https://ap.cim4.eu/RemedialActionSchedule/2.4> , cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is an example of remedial action schedule profile that Belgovia proposes in answer to the FAP process."@en;
             dct:identifier        "87e76d11-6689-4e96-8094-0db3730fa60d";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Belgovia";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Belgovia>;
             dct:requires          <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
             dct:title             "20220615_Belgovia_RAS-FAP_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-RAS>;
@@ -47,7 +47,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RAS-FAP" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-RAS-FAP> .
     
     <urn:uuid:51592d48-9943-4e13-9ce3-51b79db43109>
             rdf:type  nc:RemedialActionScheduleDependency;
@@ -67,16 +67,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:RemedialActionScheduleResponse.RemedialActionSchedule
                     <urn:uuid:17527637-6099-4ee6-8b21-fea8dfec4c75>;
             nc:RemedialActionScheduleResponse.RespondingEntity
-                    <https://energy.referencedata.eu/test/party/22XSvedala-----S>;
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
             nc:RemedialActionScheduleResponse.kind
-                    nc:RemedialActionScheduleResponseKInd.accepted .
+                    nc:RemedialActionScheduleResponseKind.accepted .
     
     <urn:uuid:091f8931-34c1-40ad-8e14-af493bcc8bda>
             rdf:type                   nc:RemedialActionSchedule;
             cim:IdentifiedObject.mRID  "091f8931-34c1-40ad-8e14-af493bcc8bda";
             cim:IdentifiedObject.name  "FAP proposing costly preventive redispatch";
             nc:RemedialActionSchedule.RemedialAction
-                    <urn:uuid:fdabc5da-fc4f-488e-8d9b-3f63680566ad>;
+                    <urn:uuid:d874f8e3-7272-44b8-95ba-18f10449f036>;
             nc:RemedialActionSchedule.statusKind
                     nc:RemedialActionScheduleStatusKind.ordered .
     

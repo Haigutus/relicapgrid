@@ -203,9 +203,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:RegulatingControl.mode      cim:RegulatingControlModeKind.voltage .
     
     <urn:uuid:9356077b-f716-0d6c-0cac-32c074bd8fa3>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "9356077b-f716-0d6c-0cac-32c074bd8fa3";
-            cim:IdentifiedObject.name  "Nordheim" .
+            rdf:type                       cim:GeographicalRegion;
+            cim:IdentifiedObject.description
+                    "Nordheim geographical region. Duplicated instance definition in CommonData and EQ file.";
+            cim:IdentifiedObject.mRID      "9356077b-f716-0d6c-0cac-32c074bd8fa3";
+            cim:IdentifiedObject.name      "Nordheim";
+            eu:IdentifiedObject.shortName  "NH" .
     
     <urn:uuid:e61f8ecf-8129-4702-a3a2-826bdf5ad13d>
             rdf:type                      cim:VoltageLevel;
