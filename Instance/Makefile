@@ -22,14 +22,14 @@ DIRS =                          \
 DIRS_NEW = $(patsubst %, %/trig, $(DIRS))
 CIMXML   = $(wildcard $(patsubst %,%/cimxml/*.xml,$(DIRS)))
 TRIG     = $(subst cimxml,trig,$(subst .xml,.trig,$(CIMXML)))
-TTL      = $(patsubst %,%/manifest.ttl,$(DIRS)) $(wildcard referenceData/*/ttl/*)
+TTL      = $(patsubst %,%/manifest.ttl,$(DIRS)) $(wildcard ./referenceData/*/ttl/*)
 TOOLS    = ../semantic-tools
 
 targets:
 	echo targets: dirs, echo, trig, validate, zip
 
 echo:
-	@echo $(TRIG) $(TTL)
+	@echo $(TRIG) $(TTL) | tr " " "\n"
 
 validate:
 	riot --validate $(TRIG) $(TTL)
