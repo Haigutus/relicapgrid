@@ -95,38 +95,47 @@ Tool implementations may present the full activity definition or description to 
 | AssumptionDefinition
 | AD
 | Creation of assumed operational conditions used as input to studies, simulations, planning, or operational coordination, including switching states, injections, availability assumptions, and scenario preparation.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | ScheduleDefinition
 | SD
 | Creation of planned future operational schedules, allocations, commitments, or declared availability information representing intended operation.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | AnalyticalComputation
 | AC
 | Creation of datasets containing calculated analytical results derived from deterministic or algorithmic processing, including power flow, state estimation, contingency analysis, optimisation, and capacity calculations.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | MeasurementAcquisition
 | MA
 | Creation of datasets originating from direct observation, telemetry, metering, monitoring systems, or real-time acquisition.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | Assessment
 | AS
 | Creation of datasets resulting from evaluation or analysis of submitted requests, operational conditions, planning scenarios, or market situations.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | Verification
 | VF
 | Creation of datasets representing validation or conformance checking against profile specifications, business rules, schema constraints, or semantic consistency requirements.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | Request
 | REQ
 | Creation of formal request datasets intended to trigger assessment, approval, or further business processing.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | Response
 | RES
 | Creation of datasets representing formal responses to a prior request, submission, or assessment.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 
 | Publication
 | PUB
 | Creation of authoritative datasets intended for publication and reuse as common, boundary, reference, or officially distributed information.
+| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
 |===
 
  
