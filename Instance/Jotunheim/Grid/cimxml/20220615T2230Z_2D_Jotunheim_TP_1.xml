@@ -3025,9 +3025,6 @@
   <cim:Terminal rdf:about="#_5927b596-1ddb-42ca-a09f-0c8ef68af46a">
     <cim:Terminal.TopologicalNode rdf:resource="#_000d5254-7bcb-1315-12f7-398b1e5400b3" />
   </cim:Terminal>
-  <cim:Terminal rdf:about="#_ee433f38-c62f-4cb1-c431-fcdffe4e0983">
-    <cim:Terminal.TopologicalNode rdf:resource="#_5ee2f76f-d4f0-d789-2752-ee25f5c2a45f" />
-  </cim:Terminal>
   <cim:Terminal rdf:about="#_4d3b0d52-ffe8-42a0-95b9-be5c83d883a2">
     <cim:Terminal.TopologicalNode rdf:resource="#_f9753232-5d20-092f-f95d-1720ce10173c" />
   </cim:Terminal>
@@ -22267,9 +22264,7 @@
   <cim:ConnectivityNode rdf:about="#_0abe9ffe-1d45-4908-bb39-aac8e851225c">
     <cim:ConnectivityNode.TopologicalNode rdf:resource="#_d49221b6-5032-d605-f332-d2a3746f70ce" />
   </cim:ConnectivityNode>
-  <cim:ConnectivityNode rdf:about="#_221d599c-4098-47fd-859d-c8be218abcb4">
-    <cim:ConnectivityNode.TopologicalNode rdf:resource="#_5ee2f76f-d4f0-d789-2752-ee25f5c2a45f" />
-  </cim:ConnectivityNode>
+
   <cim:ConnectivityNode rdf:about="#_be53ab83-e4ce-48cb-a171-7bb5a9056f07">
     <cim:ConnectivityNode.TopologicalNode rdf:resource="#_ce86952d-91a1-1094-4c66-d625064b55cf" />
   </cim:ConnectivityNode>
@@ -29276,7 +29271,7 @@
     <cim:IdentifiedObject.mRID>5ee2f76f-d4f0-d789-2752-ee25f5c2a45f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>EH_31</cim:IdentifiedObject.name>
     <cim:TopologicalNode.BaseVoltage rdf:resource="#_597e44dc-2a6e-4c62-82f3-f82cc46e0e14" />
-    <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_4da02ca4-ccdb-0e71-a8ae-86d6343108b4" />
+    <cim:TopologicalNode.ConnectivityNodeContainer rdf:resource="#_f8025dcb-09a5-c5b6-58db-bc9ce65ebd3f" />
   </cim:TopologicalNode>
   <cim:TopologicalNode rdf:ID="_921cbcb4-f9c6-1d76-92ef-f2a2b7be9123">
     <cim:IdentifiedObject.mRID>921cbcb4-f9c6-1d76-92ef-f2a2b7be9123</cim:IdentifiedObject.mRID>

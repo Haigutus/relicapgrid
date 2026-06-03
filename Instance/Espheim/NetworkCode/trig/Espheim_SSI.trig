@@ -22,19 +22,23 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                        nc:TopologyAction;
             nc:GridStateAlteration.enabled  true .
     
+    <urn:uuid:0b23d814-7559-4edf-8c55-40af585209e6>
+            rdf:type                     nc:EquivalentGeneratingUnit;
+            nc:GeneratingUnit.isRamping  "false" .
+    
     <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://ap.cim4.eu/SteadyStateInstruction/2.4" , "https://cim.ucaiug.io/ns#" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/SteadyStateInstruction/2.4>;
             dct:description       "This is the Steady State Instruction dataset for Espheim part of ReliCapGrid."@en;
             dct:identifier        "0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda";
             dct:issued            "2022-06-15T23:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Espheim";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Espheim>;
             dct:requires          <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System>;
             dct:title             "20220615_Espheim_SSI_1.0.0";
             dcat:endDate          "2022-06-16T00:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Espheim-SSI>;
@@ -42,5 +46,5 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T23:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-SSI" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-SSI> .
 }

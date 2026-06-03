@@ -38,6 +38,8 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "This is an example of Curative RA: TopologyAction (generator trip)";
             cim:IdentifiedObject.mRID  "d856a2a2-3de4-4a7b-aea4-d363c13d9014";
             cim:IdentifiedObject.name  "RA22";
+            nc:GridStateAlterationRemedialAction.isActivationRestricted
+                    "false";
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.isCrossBorderRelevant
@@ -68,6 +70,8 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "This is an example of Curative RA: TopologyAction (transformer trip)";
             cim:IdentifiedObject.mRID  "fb487cc2-0f7b-4958-8f66-1d3fabf7840d";
             cim:IdentifiedObject.name  "RA21";
+            nc:GridStateAlterationRemedialAction.isActivationRestricted
+                    "false";
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.isCrossBorderRelevant
@@ -109,6 +113,8 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "This is an example Curative RA: TopologyAction (generator trip)";
             cim:IdentifiedObject.mRID  "c8bf6b19-1c3b-4ce6-a15c-99995a3c88ce";
             cim:IdentifiedObject.name  "RA14";
+            nc:GridStateAlterationRemedialAction.isActivationRestricted
+                    "false";
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.isCrossBorderRelevant
@@ -165,6 +171,8 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "Curative RA: TapPositionAction (Tap position = 1) TapChanger ID created : a1bfbf15-e8af-471e-9dd7-9308425f425f";
             cim:IdentifiedObject.mRID  "2e4f4212-7b30-4316-9fce-ca618f2a8a05";
             cim:IdentifiedObject.name  "RA16";
+            nc:GridStateAlterationRemedialAction.isActivationRestricted
+                    "false";
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.isCrossBorderRelevant
@@ -202,17 +210,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/RemedialAction/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        <https://ap.cim4.eu/RemedialAction/2.4> , cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is the remedial action dataset for Espheim part of ReliCapGrid."@en;
             dct:identifier        "2149e514-b933-4d45-94e1-1129bd7baf12";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Espheim";
-            dct:requires          <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Espheim>;
+            dct:requires          <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337> , <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System>;
             dct:title             "20220615_Espheim_RA_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Espheim-RA>;
@@ -220,7 +228,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RA" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-RA> .
     
     <urn:uuid:d49b72bc-7677-4e4c-949a-0b4c40a8c62b>
             rdf:type  nc:ContingencyWithRemedialAction;

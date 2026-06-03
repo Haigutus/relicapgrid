@@ -23,7 +23,7 @@ The dataset demonstrates the following modelling patterns:
 
 == Boundary types
 . *AC Tie-Line Boundary* — classical approach with a ConnectivityNode splitting a tie-line
-. *AC Substation Boundary* — two-point substation boundary configuration
+. *AC Substation Boundary* — substation boundary configuration with common busbar section
 . *HVDC boundary modelling* — bidirectional converter station boundary points with own IGM files
 
 == Borders in detail
@@ -62,5 +62,5 @@ The dataset demonstrates the following modelling patterns:
 | BP_EH-PH1 | Madgar1 (EH) | Lysaborg1 (PH) | 132 kV | AC Line
 | BP_EH-PH2 | Madgar2 (EH) | Lysaborg2 (PH) | 132 kV | AC Line
 | BP_EH-PH3 | Madgar3 (EH) | Lysaborg3 (PH) | 220 kV | AC Line
-| BP_PH-EH | Substation PH-EH (EH) | Substation PH-EH (PH) | 400 kV | AC Substation Boundary
+| BP_PH-EH | Substation PH-EH (EH) | Substation PH-EH (PH) | 400 kV | link:../.github/Media/AC_Substation_Boundary_Portheim-Espheim_2.png[AC Substation Boundary]
 |===

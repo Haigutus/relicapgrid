@@ -5312,10 +5312,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                      cim:Terminal;
             cim:Terminal.TopologicalNode  <urn:uuid:33ce9676-a61f-bb48-134b-2c8783c721a1> .
     
-    <urn:uuid:ee433f38-c62f-4cb1-c431-fcdffe4e0983>
-            rdf:type                      cim:Terminal;
-            cim:Terminal.TopologicalNode  <urn:uuid:5ee2f76f-d4f0-d789-2752-ee25f5c2a45f> .
-    
     <urn:uuid:5810d882-9e34-4c49-b8b4-bffa567265e1>
             rdf:type                      cim:Terminal;
             cim:Terminal.TopologicalNode  <urn:uuid:cacc578d-03e8-671c-9709-88c2ae524ba5> .
@@ -16055,11 +16051,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                      cim:Terminal;
             cim:Terminal.TopologicalNode  <urn:uuid:7fe098d2-b3d1-d2aa-efaa-2e45f7369ba1> .
     
-    <urn:uuid:221d599c-4098-47fd-859d-c8be218abcb4>
-            rdf:type  cim:ConnectivityNode;
-            cim:ConnectivityNode.TopologicalNode
-                    <urn:uuid:5ee2f76f-d4f0-d789-2752-ee25f5c2a45f> .
-    
     <urn:uuid:49240cbb-22a5-4c79-b83b-d5695d92a111>
             rdf:type                      cim:Terminal;
             cim:Terminal.TopologicalNode  <urn:uuid:8cf61c4b-e6b7-5023-3437-527f4fbd92a7> .
@@ -18560,7 +18551,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:TopologicalNode.BaseVoltage
                     <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
             cim:TopologicalNode.ConnectivityNodeContainer
-                    <urn:uuid:4da02ca4-ccdb-0e71-a8ae-86d6343108b4> .
+                    <urn:uuid:f8025dcb-09a5-c5b6-58db-bc9ce65ebd3f> .
     
     <urn:uuid:6e9d3278-1ce4-4c6e-b824-3820ec0c7bdb>
             rdf:type  cim:ConnectivityNode;

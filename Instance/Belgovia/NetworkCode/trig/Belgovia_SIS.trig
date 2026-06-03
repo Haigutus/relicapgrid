@@ -18,6 +18,24 @@ PREFIX rdfg:     <http://www.w3.org/2004/03/trix/rdfg-1/>
 PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 
 <urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c> {
+    <urn:uuid:853f94cd-a6d6-4edd-bc83-4a2bf937590d>
+            rdf:type                   nc:PowerShiftKeySchedule;
+            cim:IdentifiedObject.description
+                    "Power Shift Key Schedule Option 4";
+            cim:IdentifiedObject.mRID  "853f94cd-a6d6-4edd-bc83-4a2bf937590d";
+            cim:IdentifiedObject.name  "PSKS Option 4";
+            nc:BaseTimeSeries.interpolationKind
+                    nc:TimeSeriesInterpolationKind.none .
+    
+    <urn:uuid:31e2e93e-47d4-47e4-b5b4-fbbee7efb0c3>
+            rdf:type  nc:ParticipationFactorTimePoint;
+            nc:ParticipationFactorTimePoint.PowerShiftKeySchedule
+                    <urn:uuid:853f94cd-a6d6-4edd-bc83-4a2bf937590d>;
+            nc:ParticipationFactorTimePoint.atTime
+                    "2024-02-22T17:30:00Z"^^xsd:dateTime;
+            nc:ParticipationFactorTimePoint.participationFactor
+                    "0.5"^^xsd:float .
+    
     <urn:uuid:7221ae31-f736-4ae2-8ce1-f3dd605cefd6>
             rdf:type                   nc:AssessedElementSchedule;
             cim:IdentifiedObject.description
@@ -45,16 +63,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/StateInstructionSchedule/2.4>;
             dct:description       "This is the State Instruction Schedule dataset for Belgovia part of ReliCapGrid."@en;
             dct:identifier        "fc3c4b17-cce7-4c2f-9c13-8240e514c87c";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
             dct:requires          <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
             dct:title             "20230722_Belgovia_SIS_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-SIS>;
@@ -87,17 +105,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     325.00 .
     
     <urn:uuid:06dea5a7-512e-48da-a2fc-5e0ec83a5b8e>
-            rdf:type                   nc:ParticipationFactorTimePoint;
-            cim:IdentifiedObject.description
-                    "Participation Factor Time Point 1 sample";
-            cim:IdentifiedObject.mRID  "06dea5a7-512e-48da-a2fc-5e0ec83a5b8e";
-            cim:IdentifiedObject.name  "PF Timepoint 1";
+            rdf:type  nc:ParticipationFactorTimePoint;
+            nc:ParticipationFactorTimePoint.PowerShiftKeySchedule
+                    <urn:uuid:3b5748de-39f2-45d7-9a66-65819c667e91>;
             nc:ParticipationFactorTimePoint.atTime
                     "2024-02-22T17:30:00Z"^^xsd:dateTime;
             nc:ParticipationFactorTimePoint.participationFactor
-                    "0.5"^^xsd:float;
-            nc:PowerBidScheduleTimePoint.PowerShiftKeySchedule
-                    <urn:uuid:3b5748de-39f2-45d7-9a66-65819c667e91> .
+                    "0.5"^^xsd:float .
     
     <urn:uuid:7ab20445-576c-4162-aad5-d097d894a8e0>
             rdf:type                   nc:PowerShiftKeyDistribution;
@@ -108,9 +122,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:PowerShiftKeyDistribution.PowerBidSchedule
                     <urn:uuid:6c0ba4c5-5ac0-43f8-87d9-ec2fb41a3dec>;
             nc:PowerShiftKeyDistribution.PowerShiftKeySchedule
-                    <urn:uuid:3b5748de-39f2-45d7-9a66-65819c667e91>;
-            nc:PowerShiftKeyDistribution.PowerShiftKeyStrategy
-                    <urn:uuid:9287b1c3-3747-47e6-8918-d82c7a0d7718> .
+                    <urn:uuid:3b5748de-39f2-45d7-9a66-65819c667e91> .
     
     <urn:uuid:42f85661-6877-4d5c-a87b-a97938642835>
             rdf:type                       nc:PowerBidSchedule;
@@ -128,10 +140,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:9439f6fe-3da6-428b-95aa-9fac541e6a7b>
             rdf:type                     nc:PowerBidDependency;
+            nc:PowerBidDependency.DependeePowerBidSchedule
+                    <urn:uuid:ae6a5ddd-fe7e-40b2-bcb6-cbd2882434e7>;
             nc:PowerBidDependency.DependentPowerBidSchedule
                     <urn:uuid:42f85661-6877-4d5c-a87b-a97938642835>;
-            nc:PowerBidDependency.MainPowerBidSchedule
-                    <urn:uuid:ae6a5ddd-fe7e-40b2-bcb6-cbd2882434e7>;
             nc:PowerBidDependency.delay  "PT1H"^^xsd:duration;
             nc:PowerBidDependency.kind   nc:PowerBidDependencyKind.restrictive;
             nc:PowerBidDependency.mRID   "_9439f6fe-3da6-428b-95aa-9fac541e6a7b" .
@@ -154,13 +166,24 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:0ba48b90-9ce6-4a38-8b11-ab66cc23f04e>
             rdf:type                     nc:PowerBidDependency;
+            nc:PowerBidDependency.DependeePowerBidSchedule
+                    <urn:uuid:ae6a5ddd-fe7e-40b2-bcb6-cbd2882434e7>;
             nc:PowerBidDependency.DependentPowerBidSchedule
                     <urn:uuid:5e08ba42-c0b5-45ed-bc8b-dbb854ed0897>;
-            nc:PowerBidDependency.MainPowerBidSchedule
-                    <urn:uuid:ae6a5ddd-fe7e-40b2-bcb6-cbd2882434e7>;
             nc:PowerBidDependency.delay  "PT1H"^^xsd:duration;
             nc:PowerBidDependency.kind   nc:PowerBidDependencyKind.inclusive;
             nc:PowerBidDependency.mRID   "_0ba48b90-9ce6-4a38-8b11-ab66cc23f04e" .
+    
+    <urn:uuid:eac85d97-77f3-4ab7-a63d-52f557f2f56d>
+            rdf:type                   nc:PowerShiftKeyDistribution;
+            cim:IdentifiedObject.description
+                    "Power Shift Key Distribution Option 4";
+            cim:IdentifiedObject.mRID  "eac85d97-77f3-4ab7-a63d-52f557f2f56d";
+            cim:IdentifiedObject.name  "PSKD Option 4";
+            nc:PowerShiftKeyDistribution.PowerShiftKeySchedule
+                    <urn:uuid:853f94cd-a6d6-4edd-bc83-4a2bf937590d>;
+            nc:PowerShiftKeyDistribution.PowerShiftKeyStrategy
+                    <urn:uuid:9287b1c3-3747-47e6-8918-d82c7a0d7718> .
     
     <urn:uuid:a26e3ae0-0a7d-4f42-ad64-e9105ec3cd41>
             rdf:type  nc:AssessedElementTimePoint;
@@ -180,5 +203,5 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "3b5748de-39f2-45d7-9a66-65819c667e91";
             cim:IdentifiedObject.name  "PSKS1";
             nc:PowerShiftKeySchedule.GeneratingUnit
-                    <urn:uuid:18993b11-2966-4bce-bab9-d86103f83b53> .
+                    <urn:uuid:413bbc8a-683c-7e07-4fb9-aa6ec83278e0> .
 }

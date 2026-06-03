@@ -1,0 +1,132 @@
+= Power Flow Calculation Settings
+
+== Settings Definition
+
+[cols="3,3,6,3", options="header"]
+|===
+| Name
+| Type
+| Enumerated values
+| ReliCapGrid
+
+| algorithmKind
+| PowerFlowAlgorithmKind
+| fullNewtonRaphson, fixedSlopeNewtonRaphson, fastDecoupled, gaussSeidel, modifiedGaussSeidel, dcPowerFlow
+| fullNewtonRaphson
+
+| flatStart
+| Boolean: true/false
+|
+| true
+
+| flatStartInitialisationKind
+| FlatStartInitialisationKind
+| allNodesOneCondition; dcInitialisation; other
+| allNodesOneCondition
+
+| slackDistributionKind
+| SlackDistributionKind
+| loadDistribution, conformLoadDistribution, generationDistributionParticipationFactor, generationDistributionActivePowerAndVoltageNodesOnly, singleReferenceMachine, generationActivePowerDistribution, generationMaxActivePowerDistribution, generationRemainingMargin
+| singleReferenceMachine
+
+| activePowerTolerance
+| ActivePower
+|
+| 0.001 MW
+
+| reactivePowerTolerance
+| ReactivePower
+|
+| 0.001 Mvar
+
+| voltageTolerance
+| pu (per unit)
+|
+| -
+
+| impedanceThreshold
+| pu (per unit)
+|
+|
+
+| loadVoltageDependency
+| Boolean: true/false
+|
+| false
+
+| respectReactivePowerLimits
+| Boolean: true/false
+|
+| true
+
+| respectActivePowerLimits
+| Boolean: true/false
+|
+| true
+
+| excludeFromLimitCheck
+| LimitCheckExclusionKind
+| initialViolation; noExclusion
+| noExclusion
+
+| maxIterationsInnerLoop
+| Integer
+|
+| 25
+
+| maxIterationsOuterLoop
+| Integer
+|
+| 20
+
+| transformerRatioTapControl
+| Boolean: true/false
+|
+| true
+
+| transformerRatioTapControlPriority
+| Integer: 1/2/3/4
+|
+| 2 [1, 3, 4]
+
+| transformerPhaseTapControl
+| Boolean: true/false
+|
+| true
+
+| transformerPhaseTapControlPriority
+| Integer: 1/2/3/4
+|
+| 2 [1, 3, 4]
+
+| switchedShuntControl
+| Boolean: true/false
+|
+| true
+
+| switchedShuntControlPriority
+| Integer: 1/2/3/4
+|
+| 2 [1, 3, 4]
+
+| continuousControlPriority (old name: staticVarCompensatorControlPriority)
+| Integer: 1/2/3/4
+|
+| 1
+
+| interchangeControlEnabled
+| Boolean: true/false
+|
+| false
+
+| shiftKind
+| PowerShiftKind
+| conformLoadShift, allLoadShift, generationShift, generationAndLoadShiftKey
+|
+
+| voltageAngleLimit
+| AngleDegrees
+|
+|
+
+|===

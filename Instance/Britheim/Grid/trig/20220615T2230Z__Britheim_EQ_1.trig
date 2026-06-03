@@ -196,11 +196,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:94051cae-0f9c-4594-026a-b1314890a13e>;
             cim:VoltageLimit.normalValue  "315"^^xsd:float .
     
-    <urn:uuid:c50c9112-19fc-6543-9d6d-447aadc6f313>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "c50c9112-19fc-6543-9d6d-447aadc6f313";
-            cim:IdentifiedObject.name  "Britheim" .
-    
     <urn:uuid:088d0e3a-2650-0677-c812-de9589edd333>
             rdf:type                   cim:OperationalLimitSet;
             cim:IdentifiedObject.mRID  "088d0e3a-2650-0677-c812-de9589edd333";
@@ -372,11 +367,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:d64c0699-50b3-40b0-5dfa-d1748080d93c> .
     
-    <urn:uuid:f0da537d-3488-4fd0-a762-904e16e02296>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "f0da537d-3488-4fd0-a762-904e16e02296";
-            cim:IdentifiedObject.name  "Britheim" .
-    
     <urn:uuid:00054345-3d84-4279-b84e-f177d3a6f607>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -463,7 +453,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "8cc3bcf9-8602-46c5-bcc0-b063f621f4a1";
             cim:IdentifiedObject.name  "HVDC Subarea";
             cim:SubGeographicalRegion.Region
-                    <urn:uuid:f0da537d-3488-4fd0-a762-904e16e02296> .
+                    <urn:uuid:c50c9112-19fc-6543-9d6d-447aadc6f313> .
     
     <urn:uuid:de8e03e6-094d-cdca-add2-14efe2a1de53>
             rdf:type                   cim:Substation;

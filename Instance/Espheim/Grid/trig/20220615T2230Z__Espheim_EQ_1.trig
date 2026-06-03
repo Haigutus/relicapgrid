@@ -232,6 +232,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Container for 27-32";
             cim:Line.Region            <urn:uuid:0472a781-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:0cafb199-a998-9c9a-80af-cc08132b437e>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "0cafb199-a998-9c9a-80af-cc08132b437e";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:a37f594e-e546-4a10-b375-6a705112b937>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:0023f3ca-bd59-4d28-bf1b-742893b40d5e> .
+    
     <urn:uuid:c2e084fe-f28f-4359-878b-8a31704d5842>
             rdf:type                   cim:Disconnector;
             cim:Equipment.EquipmentContainer
@@ -321,6 +331,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "044e56a1-c766-11e1-8775-005056c00008";
             cim:IdentifiedObject.name  "Crickhollow";
             cim:Substation.Region      <urn:uuid:0472a781-c766-11e1-8775-005056c00008> .
+    
+    <urn:uuid:58f6c780-5e10-46e0-a0bb-044e1fc84c52>
+            rdf:type                   cim:Bay;
+            cim:Bay.VoltageLevel       <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID  "58f6c780-5e10-46e0-a0bb-044e1fc84c52";
+            cim:IdentifiedObject.name  "3" .
     
     <urn:uuid:e7ea1f56-22bc-4ffb-a571-d92593409f15>
             rdf:type                       cim:Terminal;
@@ -489,16 +505,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04664b78-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "19e43ff1-05da-4869-8289-889cdea6d01d";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE193" .
-    
-    <urn:uuid:eea01e1b-1682-d8a8-372f-8eafb5f3af8d>
-            rdf:type                      cim:VoltageLimit;
-            cim:IdentifiedObject.mRID     "eea01e1b-1682-d8a8-372f-8eafb5f3af8d";
-            cim:IdentifiedObject.name     "high limit for EH_31";
-            cim:OperationalLimit.OperationalLimitSet
-                    <urn:uuid:7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea>;
-            cim:OperationalLimit.OperationalLimitType
-                    <urn:uuid:faef57d9-24e7-2c9b-0b0f-e4c2e09e707d>;
-            cim:VoltageLimit.normalValue  "420"^^xsd:float .
     
     <urn:uuid:5e247d84-0ec9-4123-b760-d791955d2e4f>
             rdf:type                       cim:Terminal;
@@ -2674,6 +2680,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:cc5bb42e-3fc4-484f-ae20-512741af009b>;
             cim:Terminal.ConnectivityNode  <urn:uuid:548ee557-56b5-4f99-885e-c7cac3f91f5d> .
     
+    <urn:uuid:7332b792-5f2c-4194-9cd3-680bb3eaaadd>
+            rdf:type                   cim:Bay;
+            cim:Bay.VoltageLevel       <urn:uuid:0c4f41f8-9797-44eb-bdbe-1a28efa083b9>;
+            cim:IdentifiedObject.mRID  "7332b792-5f2c-4194-9cd3-680bb3eaaadd";
+            cim:IdentifiedObject.name  "R4" .
+    
     <urn:uuid:9103f9da-e245-4eb9-b43d-50635061f0e0>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -4530,6 +4542,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:34e995c4-5bcf-4fd4-8f58-770cfba613a9>;
             cim:Terminal.ConnectivityNode  <urn:uuid:648a1b9b-952b-4dbe-98e0-87bbc753439e> .
     
+    <urn:uuid:0ff60654-8c1d-3967-b1f0-f3912c736215>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "0ff60654-8c1d-3967-b1f0-f3912c736215";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:a097a1fa-e454-4152-ae05-b6f2c16701da>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:d32ad1f0-278e-4426-890d-944511e67f74> .
+    
     <urn:uuid:e3cc6905-4b0d-46bc-b228-682110f72930>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -5386,6 +5408,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:61ff5ad0-24c4-4f5f-853a-46c05a7329fa>;
             cim:Terminal.ConnectivityNode  <urn:uuid:3c1c1608-db87-4753-b286-eb176dfb1926> .
+    
+    <urn:uuid:05737d32-c015-859e-bd40-f3a347f5cd12>
+            rdf:type                      cim:CurrentLimit;
+            cim:CurrentLimit.normalValue  "14021.4"^^xsd:float;
+            cim:IdentifiedObject.mRID     "05737d32-c015-859e-bd40-f3a347f5cd12";
+            cim:IdentifiedObject.name     "patl for T2";
+            cim:OperationalLimit.OperationalLimitSet
+                    <urn:uuid:5098bf8f-55b3-2e67-36e5-de58c28217c5>;
+            cim:OperationalLimit.OperationalLimitType
+                    <urn:uuid:67c578dc-7a4e-5263-1e44-c1f535849e8b> .
     
     <urn:uuid:5f1cf02f-fdb9-482c-a25b-223e17005cae>
             rdf:type                       cim:Terminal;
@@ -6980,6 +7012,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
     
+    <urn:uuid:f3c2f60e-6732-438c-9318-d239f584eb62>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:3d2b0942-3e8f-4f06-bddc-e8cf848c94e3>;
+            cim:IdentifiedObject.mRID  "f3c2f60e-6732-438c-9318-d239f584eb62";
+            cim:IdentifiedObject.name  "T2.2" .
+    
     <urn:uuid:5c712499-11b6-26d7-9a9a-ab5755fb6345>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "500"^^xsd:float;
@@ -7577,6 +7616,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimitSet.Terminal
                     <urn:uuid:045cae80-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:ac7eddfd-4b3d-0966-5803-fbd3bf3e9b2a>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "ac7eddfd-4b3d-0966-5803-fbd3bf3e9b2a";
+            cim:IdentifiedObject.name      "Cub_1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:419a8edf-36f1-4af7-9a76-ec197f5712fd>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:2448c545-4643-4c74-a53b-f6f3fe4b056c> .
+    
     <urn:uuid:59aeee64-a914-4862-8b34-f23649ab764a>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -7632,6 +7681,11 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name     "NEE132KV";
             cim:VoltageLevel.BaseVoltage  <urn:uuid:0753bbfb-6f92-863c-67b6-5bee9d3f96d1>;
             cim:VoltageLevel.Substation   <urn:uuid:045de701-c766-11e1-8775-005056c00008> .
+    
+    <urn:uuid:b3db9960-92c8-3b85-2f89-ef5329c58c15>
+            rdf:type                   cim:LoadArea;
+            cim:IdentifiedObject.mRID  "b3db9960-92c8-3b85-2f89-ef5329c58c15";
+            cim:IdentifiedObject.name  "L5" .
     
     <urn:uuid:a53f96df-7db3-467f-ae1d-de9c5e9debdf>
             rdf:type                   cim:ConnectivityNode;
@@ -8283,6 +8337,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "DISCONNECTOR49";
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
+    
+    <urn:uuid:f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e>
+            rdf:type                   cim:Bay;
+            cim:Bay.VoltageLevel       <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID  "f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e";
+            cim:IdentifiedObject.name  "4" .
     
     <urn:uuid:5fd4450c-bed2-4611-1086-aaf5507429c6>
             rdf:type                   cim:BusbarSection;
@@ -9207,6 +9267,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "045c3958-c766-11e1-8775-005056c00008";
             cim:IdentifiedObject.name  "53-54" .
     
+    <urn:uuid:a8de3ea2-8de4-9c16-cc38-0f58dd5c0492>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "a8de3ea2-8de4-9c16-cc38-0f58dd5c0492";
+            cim:IdentifiedObject.name      "Cub_5";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:5c3c6f3f-dd78-4282-a50f-b8a0842b21f3>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:ceafce7b-5485-4cb8-9e06-c85ba137ffa9> .
+    
     <urn:uuid:cf43f20e-933f-4548-969e-e8eafbef70af>
             rdf:type                   cim:Disconnector;
             cim:Equipment.EquipmentContainer
@@ -9804,6 +9874,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:0bbf15b4-d221-4511-b9d7-b6171d8d3f77>;
             cim:Terminal.ConnectivityNode  <urn:uuid:de0c9269-cb0b-4f55-b5f4-abad8df262ff> .
     
+    <urn:uuid:99eb7434-e261-bffa-d936-7bb64e0817d1>
+            rdf:type                   cim:ConformLoadGroup;
+            cim:IdentifiedObject.mRID  "99eb7434-e261-bffa-d936-7bb64e0817d1";
+            cim:IdentifiedObject.name  "L5";
+            cim:LoadGroup.SubLoadArea  <urn:uuid:fa3972a6-d4ea-6e0e-d8df-2f11f67f6d0f> .
+    
     <urn:uuid:cb90fbdd-9330-4b26-9327-08b453eb6867>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -10007,6 +10083,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:96e619eb-d70e-4704-82ae-118e973245e9>;
             cim:Terminal.ConnectivityNode  <urn:uuid:87b8fefd-af71-470e-8159-4ad0a10da74f> .
+    
+    <urn:uuid:67c578dc-7a4e-5263-1e44-c1f535849e8b>
+            rdf:type                      cim:OperationalLimitType;
+            cim:IdentifiedObject.mRID     "67c578dc-7a4e-5263-1e44-c1f535849e8b";
+            cim:IdentifiedObject.name     "patl";
+            cim:OperationalLimitType.direction
+                    cim:OperationalLimitDirectionKind.absoluteValue;
+            cim:OperationalLimitType.isInfiniteDuration
+                    true;
+            eu:OperationalLimitType.kind  eu:LimitKind.patl .
     
     <urn:uuid:502c9399-8b9d-4683-a38d-8ea04fcd1db7>
             rdf:type                       cim:Terminal;
@@ -10572,6 +10658,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:9f3f95b7-2a51-5ea6-d1c1-42cae078cb81>;
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:adcebf11-e0c5-3c88-6f93-41180ae7a0ca> .
+    
+    <urn:uuid:c70d13f2-cca1-40ce-96b4-a2cf6839fc6c>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:58f6c780-5e10-46e0-a0bb-044e1fc84c52>;
+            cim:IdentifiedObject.mRID  "c70d13f2-cca1-40ce-96b4-a2cf6839fc6c";
+            cim:IdentifiedObject.name  "T3.1" .
     
     <urn:uuid:9042df9c-d8a7-491c-bd66-87f54f7ae912>
             rdf:type                   cim:ConnectivityNode;
@@ -11297,6 +11390,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:0468bc77-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "37b257d8-d5ae-4ad8-bae0-5a1913e0b8e4";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE1052" .
+    
+    <urn:uuid:675b23c2-4a4b-f929-5c12-8ba9a8451957>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "675b23c2-4a4b-f929-5c12-8ba9a8451957";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:a37f594e-e546-4a10-b375-6a705112b937>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:3c4708e3-709e-44c6-9c2f-f1a2683fbb0b> .
     
     <urn:uuid:eca992ae-954a-a852-e1db-ca8a7c9b40c6>
             rdf:type                       cim:Terminal;
@@ -13604,6 +13707,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
     
+    <urn:uuid:0933a58b-86aa-4b68-9dda-65bc0aa74899>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:7332b792-5f2c-4194-9cd3-680bb3eaaadd>;
+            cim:IdentifiedObject.mRID  "0933a58b-86aa-4b68-9dda-65bc0aa74899";
+            cim:IdentifiedObject.name  "T.R4.2" .
+    
     <urn:uuid:f26de2e6-37f9-e8ff-4cfa-86806a96ef87>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "500"^^xsd:float;
@@ -13837,6 +13947,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04767817-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "6d30a59b-1ea2-48e5-a883-49e1f7978105";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE632" .
+    
+    <urn:uuid:2448c545-4643-4c74-a53b-f6f3fe4b056c>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:3d2b0942-3e8f-4f06-bddc-e8cf848c94e3>;
+            cim:IdentifiedObject.mRID  "2448c545-4643-4c74-a53b-f6f3fe4b056c";
+            cim:IdentifiedObject.name  "2" .
     
     <urn:uuid:56b4e4fc-f876-fd0f-137a-dc6fcd57e146>
             rdf:type                   cim:OperationalLimitSet;
@@ -14244,10 +14361,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.sequenceNumber
                     1;
             cim:IdentifiedObject.mRID      "147eb269-c3af-51ee-4aa2-771733789022";
-            cim:IdentifiedObject.name      "Cub_1";
+            cim:IdentifiedObject.name      "Term_1_Aac_TR";
             cim:Terminal.ConductingEquipment
                     <urn:uuid:2c9a0753-421a-489b-9761-9452f60b3157>;
-            cim:Terminal.ConnectivityNode  <urn:uuid:221d599c-4098-47fd-859d-c8be218abcb4> .
+            cim:Terminal.ConnectivityNode  <urn:uuid:ceafce7b-5485-4cb8-9e06-c85ba137ffa9> .
     
     <urn:uuid:7dec1ccf-447a-9da4-2e6c-b1416421d078>
             rdf:type                      cim:CurrentLimit;
@@ -14655,6 +14772,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Bay.VoltageLevel       <urn:uuid:046b7b99-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "ff991495-2410-4b79-9a91-69ec642e633f";
             cim:IdentifiedObject.name  "BAY_109-110_0" .
+    
+    <urn:uuid:0023f3ca-bd59-4d28-bf1b-742893b40d5e>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e>;
+            cim:IdentifiedObject.mRID  "0023f3ca-bd59-4d28-bf1b-742893b40d5e";
+            cim:IdentifiedObject.name  "T4.2" .
     
     <urn:uuid:8063fc13-2295-4453-bc3f-0b36182c744f>
             rdf:type                       cim:Terminal;
@@ -15536,6 +15660,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "278458d3-9d30-4cf2-87f2-215bed916412";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE189" .
     
+    <urn:uuid:b1d9fa71-9281-49bd-91de-0ef1cdbce84d>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:ad8500db-1ec6-4a5f-b39e-532b200db86a>;
+            cim:IdentifiedObject.mRID  "b1d9fa71-9281-49bd-91de-0ef1cdbce84d";
+            cim:IdentifiedObject.name  "T1.2" .
+    
     <urn:uuid:04667287-c766-11e1-8775-005056c00008>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -15643,6 +15774,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:04529c61-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:2af451fa-f537-460c-a797-8c6060d77320> .
+    
+    <urn:uuid:425a0ae5-f248-00a8-5295-99b8a0206298>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "425a0ae5-f248-00a8-5295-99b8a0206298";
+            cim:IdentifiedObject.name      "Cubicle_S1.1.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:f6315393-17f7-406c-bb16-e77372f85ff9>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:ae5cf481-2193-4687-83a6-88fd07ae5cdb> .
     
     <urn:uuid:c85c912a-2260-d9f1-be08-e0af85b0826a>
             rdf:type                   cim:OperationalLimitSet;
@@ -16896,6 +17037,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:88f000b9-cc0d-4349-b816-7b3d3de20308>;
             cim:Terminal.ConnectivityNode  <urn:uuid:02eeb807-5963-48dd-b465-76e410425120> .
     
+    <urn:uuid:35ffa96f-ccce-4835-904c-38b6bda760d1>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:7332b792-5f2c-4194-9cd3-680bb3eaaadd>;
+            cim:IdentifiedObject.mRID  "35ffa96f-ccce-4835-904c-38b6bda760d1";
+            cim:IdentifiedObject.name  "IS.R4.3";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        true .
+    
     <urn:uuid:78efe7c0-5969-4cd6-9a9b-0c48ee978825>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -18035,6 +18185,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:047ae4ea-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:ddb2e85c-3e9b-4884-b5b3-f47a552455b8> .
     
+    <urn:uuid:b92010a9-b093-04eb-a4da-91312c9458d3>
+            rdf:type                      cim:OperationalLimitType;
+            cim:IdentifiedObject.mRID     "b92010a9-b093-04eb-a4da-91312c9458d3";
+            cim:IdentifiedObject.name     "highVoltage";
+            cim:OperationalLimitType.direction
+                    cim:OperationalLimitDirectionKind.high;
+            cim:OperationalLimitType.isInfiniteDuration
+                    true;
+            eu:OperationalLimitType.kind  eu:LimitKind.highVoltage .
+    
     <urn:uuid:6c8b35f0-04dc-4be4-922b-705302500b36>
             rdf:type                   cim:Bay;
             cim:Bay.VoltageLevel       <urn:uuid:0457f396-c766-11e1-8775-005056c00008>;
@@ -18351,6 +18511,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:044c81e3-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:4a6eb8be-2665-49f2-a0cf-4bdf1c566ad6> .
+    
+    <urn:uuid:fc53e244-a2b2-9361-f709-ca7ccb7a70e9>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "fc53e244-a2b2-9361-f709-ca7ccb7a70e9";
+            cim:IdentifiedObject.name      "Cubicle_S0.4.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:5cc1ca38-7fd4-4a4e-aa29-54650ef13d5b>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:7fad6e51-227c-45b2-a023-8d92979f3db2> .
     
     <urn:uuid:02812c23-7ba9-f07d-8584-4925228717d2>
             rdf:type                      cim:CurrentLimit;
@@ -19008,16 +19178,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "BREAKER45";
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
-    
-    <urn:uuid:ee433f38-c62f-4cb1-c431-fcdffe4e0983>
-            rdf:type                       cim:Terminal;
-            cim:ACDCTerminal.sequenceNumber
-                    1;
-            cim:IdentifiedObject.mRID      "ee433f38-c62f-4cb1-c431-fcdffe4e0983";
-            cim:IdentifiedObject.name      "EH_31";
-            cim:Terminal.ConductingEquipment
-                    <urn:uuid:050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a>;
-            cim:Terminal.ConnectivityNode  <urn:uuid:221d599c-4098-47fd-859d-c8be218abcb4> .
     
     <urn:uuid:5810d882-9e34-4c49-b8b4-bffa567265e1>
             rdf:type                       cim:Terminal;
@@ -19701,6 +19861,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Hogsmeade";
             cim:Substation.Region      <urn:uuid:0472a781-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:6994435b-9f22-ab76-134a-c07ab832dc73>
+            rdf:type                   cim:LoadResponseCharacteristic;
+            cim:IdentifiedObject.mRID  "6994435b-9f22-ab76-134a-c07ab832dc73";
+            cim:IdentifiedObject.name  "Lod-1";
+            cim:LoadResponseCharacteristic.exponentModel
+                    true;
+            cim:LoadResponseCharacteristic.pVoltageExponent
+                    "1.6"^^xsd:float;
+            cim:LoadResponseCharacteristic.qVoltageExponent
+                    "1.8"^^xsd:float .
+    
     <urn:uuid:abc5ce46-2bd4-4b25-a1f2-5d9ff852c82d>
             rdf:type                   cim:Bay;
             cim:Bay.VoltageLevel       <urn:uuid:04878f10-c766-11e1-8775-005056c00008>;
@@ -20224,6 +20395,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:ce2cd3eb-2bf9-d825-01a0-2fb2afc0e874> .
     
+    <urn:uuid:3552cb05-826a-142b-cd76-82b8eeb81407>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "3552cb05-826a-142b-cd76-82b8eeb81407";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:f18bc2b1-b591-4125-be5d-bccc573aea87>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:b1d9fa71-9281-49bd-91de-0ef1cdbce84d> .
+    
     <urn:uuid:3be9367d-294a-496e-8b04-dae05ed5cf7d>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -20418,6 +20599,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Ratings(59)";
             cim:OperationalLimitSet.Terminal
                     <urn:uuid:04605808-c766-11e1-8775-005056c00008> .
+    
+    <urn:uuid:26331308-c1e0-b845-4852-c1a7a4755040>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "26331308-c1e0-b845-4852-c1a7a4755040";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:aa72cb02-267d-403f-a667-f317f5e76413>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:ef31fafc-8002-464a-9224-fb16e4db1c1d> .
     
     <urn:uuid:616fcdb3-cc19-4105-ac69-1a2722d6f036>
             rdf:type                       cim:Terminal;
@@ -20690,6 +20881,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:a83b15c6-88e2-3e49-7718-dbf28e652a16>;
             cim:IdentifiedObject.mRID  "f535e797-99f7-fd31-161f-92bc28d67559";
             cim:IdentifiedObject.name  "SynM-240675702" .
+    
+    <urn:uuid:66e3dd9e-7f0b-cd3b-12ce-a0667500a9e5>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "66e3dd9e-7f0b-cd3b-12ce-a0667500a9e5";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:6a714a8d-54a8-4653-9daf-982af14eae88>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:95f1e43a-760d-4a74-abe5-abc7bccae910> .
     
     <urn:uuid:46212a72-a073-4d5a-94ff-fee124220ec9>
             rdf:type                       cim:Terminal;
@@ -21186,6 +21387,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:fc42665f-6703-488b-8968-11a6033d41eb>;
             cim:Terminal.ConnectivityNode  <urn:uuid:695f336a-b31a-487a-a305-44215b53d2db> .
     
+    <urn:uuid:f18bc2b1-b591-4125-be5d-bccc573aea87>
+            rdf:type                   cim:Breaker;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:ad8500db-1ec6-4a5f-b39e-532b200db86a>;
+            cim:IdentifiedObject.mRID  "f18bc2b1-b591-4125-be5d-bccc573aea87";
+            cim:IdentifiedObject.name  "CB1";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:b97caa7f-59a7-4e40-b7a5-66e4188f74ca>
             rdf:type                   cim:Disconnector;
             cim:Equipment.EquipmentContainer
@@ -21204,6 +21414,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:2bdd5f9e-4eb4-4a94-b496-80df40d268a1>;
             cim:Terminal.ConnectivityNode  <urn:uuid:1c6df208-ecf6-47fe-a8bb-deb8084a4c3b> .
+    
+    <urn:uuid:e3b2ba02-608d-8717-a209-4bbec1162400>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "e3b2ba02-608d-8717-a209-4bbec1162400";
+            cim:IdentifiedObject.name      "Cubicle_S1.1.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:ff1db38c-8fbc-4b1d-a5ff-46cd02a2df74>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:041de809-45d5-45cc-8f55-8ada9d997294> .
     
     <urn:uuid:1e02e2ec-953c-4556-a5f4-a78dc53b1588>
             rdf:type                       cim:Terminal;
@@ -21675,6 +21895,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "DISCONNECTOR590";
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
+    
+    <urn:uuid:5049050f-41b1-f334-3839-7d0a730a3859>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "5049050f-41b1-f334-3839-7d0a730a3859";
+            cim:IdentifiedObject.name      "Cubicle_S1.1.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:ff1db38c-8fbc-4b1d-a5ff-46cd02a2df74>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:0933a58b-86aa-4b68-9dda-65bc0aa74899> .
     
     <urn:uuid:72911420-d159-483b-aaa3-6e6dc39f6273>
             rdf:type                   cim:Disconnector;
@@ -22958,6 +23188,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "dd3fe817-1148-475e-a2b8-9717f80c509e";
             cim:IdentifiedObject.name  "BAY_83-84_1" .
     
+    <urn:uuid:f6315393-17f7-406c-bb16-e77372f85ff9>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:7332b792-5f2c-4194-9cd3-680bb3eaaadd>;
+            cim:IdentifiedObject.mRID  "f6315393-17f7-406c-bb16-e77372f85ff9";
+            cim:IdentifiedObject.name  "IS.R4.1";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:047b0bf4-c766-11e1-8775-005056c00008>
             rdf:type                      cim:VoltageLevel;
             cim:IdentifiedObject.mRID     "047b0bf4-c766-11e1-8775-005056c00008";
@@ -23432,6 +23671,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "8fc6cba6-788d-448e-b96b-47cf75491a53";
             cim:IdentifiedObject.name  "BAY_92-102_1" .
     
+    <urn:uuid:4b62e70e-41fd-3615-d8b0-36d0adf2e35b>
+            rdf:type                   cim:BusbarSection;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID  "4b62e70e-41fd-3615-d8b0-36d0adf2e35b";
+            cim:IdentifiedObject.name  "Espheim BB10.5" .
+    
     <urn:uuid:e3d6097b-5b04-4e1c-89dd-15c94de13f75>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -23493,6 +23739,24 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:1c7cf86b-bbaf-465f-89fb-525996fbd967>;
             cim:Terminal.ConnectivityNode  <urn:uuid:034fbebd-22ca-4360-881e-8e5af3fb6c3a> .
+    
+    <urn:uuid:bb246e3e-550a-9177-7c3d-a9888f5e9181>
+            rdf:type                        cim:PowerTransformerEnd;
+            cim:IdentifiedObject.mRID       "bb246e3e-550a-9177-7c3d-a9888f5e9181";
+            cim:IdentifiedObject.name       "T2";
+            cim:PowerTransformerEnd.PowerTransformer
+                    <urn:uuid:9c97f017-0cae-4011-ad66-2637cb96b8b6>;
+            cim:PowerTransformerEnd.b       "0"^^xsd:float;
+            cim:PowerTransformerEnd.connectionKind
+                    cim:WindingConnection.D;
+            cim:PowerTransformerEnd.g       "0"^^xsd:float;
+            cim:PowerTransformerEnd.r       "0"^^xsd:float;
+            cim:PowerTransformerEnd.ratedS  "255"^^xsd:float;
+            cim:PowerTransformerEnd.ratedU  "10.5"^^xsd:float;
+            cim:PowerTransformerEnd.x       "0"^^xsd:float;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:c33fa347-75df-2fc2-4ae5-0d1456576b35>;
+            cim:TransformerEnd.Terminal     <urn:uuid:fb8ab5b0-794a-d9ad-c1f7-3530e4c904dd>;
+            cim:TransformerEnd.endNumber    2 .
     
     <urn:uuid:41638efa-6841-4ede-91d5-01ae3f56f39a>
             rdf:type                       cim:Terminal;
@@ -24020,6 +24284,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimitSet.Terminal
                     <urn:uuid:0461dea7-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:242ad71f-4e1e-6b24-b0e1-ab01c391d70a>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "242ad71f-4e1e-6b24-b0e1-ab01c391d70a";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:f18bc2b1-b591-4125-be5d-bccc573aea87>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:5629cecf-f17c-4b7a-9d61-1013ace9f233> .
+    
     <urn:uuid:66418b34-4155-49c7-9dfd-498fa55cf959>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -24139,6 +24413,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:188d39c6-52ed-46ef-9eda-0bfa53337837>;
             cim:Terminal.ConnectivityNode  <urn:uuid:8900b7bf-8e0a-4616-9854-65c3a34ff6e3> .
+    
+    <urn:uuid:5629cecf-f17c-4b7a-9d61-1013ace9f233>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:ad8500db-1ec6-4a5f-b39e-532b200db86a>;
+            cim:IdentifiedObject.mRID  "5629cecf-f17c-4b7a-9d61-1013ace9f233";
+            cim:IdentifiedObject.name  "T1.1" .
     
     <urn:uuid:22ac6f60-34dd-4e1a-937c-12ff7a4be38a>
             rdf:type                   cim:ConnectivityNode;
@@ -24680,6 +24961,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "4e7249b2-1af6-4bae-a3a4-5952ac0841c0";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE271" .
     
+    <urn:uuid:1b4e33f8-959c-47da-b19a-f71a0f9f9b03>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:ad8500db-1ec6-4a5f-b39e-532b200db86a>;
+            cim:IdentifiedObject.mRID  "1b4e33f8-959c-47da-b19a-f71a0f9f9b03";
+            cim:IdentifiedObject.name  "IS1.2";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:4624d03e-567c-36fd-1513-453a930d4dff>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "500"^^xsd:float;
@@ -24843,6 +25133,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:045cfca4-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "3f20ea3d-f0e2-48f1-a228-ec623ba2b5be";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE547" .
+    
+    <urn:uuid:09a25351-f649-4a92-810d-3f740534c637>
+            rdf:type                   cim:ConformLoad;
+            cim:ConformLoad.LoadGroup  <urn:uuid:99eb7434-e261-bffa-d936-7bb64e0817d1>;
+            cim:EnergyConsumer.LoadResponse
+                    <urn:uuid:6994435b-9f22-ab76-134a-c07ab832dc73>;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID  "09a25351-f649-4a92-810d-3f740534c637";
+            cim:IdentifiedObject.name  "L5" .
     
     <urn:uuid:bbb056da-76fd-40cc-97ec-bed4b916dd43>
             rdf:type                       cim:Terminal;
@@ -25452,6 +25752,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:0480b14b-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:08f5ca3d-d380-4b2b-ab9c-816e7a6600fd> .
     
+    <urn:uuid:fa3972a6-d4ea-6e0e-d8df-2f11f67f6d0f>
+            rdf:type                   cim:SubLoadArea;
+            cim:IdentifiedObject.mRID  "fa3972a6-d4ea-6e0e-d8df-2f11f67f6d0f";
+            cim:IdentifiedObject.name  "L5";
+            cim:SubLoadArea.LoadArea   <urn:uuid:b3db9960-92c8-3b85-2f89-ef5329c58c15> .
+    
     <urn:uuid:7bde3ffd-fe52-4fe5-b7ae-f599b3c4f004>
             rdf:type                   cim:Disconnector;
             cim:Equipment.EquipmentContainer
@@ -25711,6 +26017,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
     
+    <urn:uuid:aeae4cc3-b323-63d4-e8c7-48997c4281c2>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "aeae4cc3-b323-63d4-e8c7-48997c4281c2";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:86978cfb-8057-4578-a419-d4efe70609a1>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:c70d13f2-cca1-40ce-96b4-a2cf6839fc6c> .
+    
     <urn:uuid:d107b368-90cd-f020-ddd3-a0e758a55952>
             rdf:type                   cim:Line;
             cim:IdentifiedObject.mRID  "d107b368-90cd-f020-ddd3-a0e758a55952";
@@ -25879,11 +26195,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:496e4410-2e39-4973-9135-6dde4bb7cff8>;
             cim:Terminal.ConnectivityNode  <urn:uuid:d83fa340-aed6-4553-a0e9-dbd7aceea6d7> .
-    
-    <urn:uuid:0472f5a6-c766-11e1-8775-005056c00008>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "0472f5a6-c766-11e1-8775-005056c00008";
-            cim:IdentifiedObject.name  "Espheim" .
     
     <urn:uuid:d27c1aa0-9500-4cf3-ad1e-72527ad8fde7>
             rdf:type                   cim:Disconnector;
@@ -26063,6 +26374,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04808a33-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "5319fecc-4daf-4113-876b-0036bf124473";
             cim:IdentifiedObject.name  "Bus-490936099" .
+    
+    <urn:uuid:a097a1fa-e454-4152-ae05-b6f2c16701da>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e>;
+            cim:IdentifiedObject.mRID  "a097a1fa-e454-4152-ae05-b6f2c16701da";
+            cim:IdentifiedObject.name  "IS4.1";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
     
     <urn:uuid:048963d8-c766-11e1-8775-005056c00008>
             rdf:type                   cim:ACLineSegment;
@@ -28456,10 +28776,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.sequenceNumber
                     2;
             cim:IdentifiedObject.mRID      "5f5512ab-99af-c355-9703-454c8c77392c";
-            cim:IdentifiedObject.name      "Cub_2";
+            cim:IdentifiedObject.name      "Term_2_EH_line1";
             cim:Terminal.ConductingEquipment
                     <urn:uuid:bb8787ff-96b9-4618-85d5-d1bcad51337f>;
-            cim:Terminal.ConnectivityNode  <urn:uuid:221d599c-4098-47fd-859d-c8be218abcb4> .
+            cim:Terminal.ConnectivityNode  <urn:uuid:ceafce7b-5485-4cb8-9e06-c85ba137ffa9> .
     
     <urn:uuid:046b066b-c766-11e1-8775-005056c00008>
             rdf:type                       cim:Terminal;
@@ -29087,6 +29407,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:bd71681c-482e-4417-b2a1-f159e632b44c>;
             cim:Terminal.ConnectivityNode  <urn:uuid:208094db-e1d3-42da-82e3-c7a81969d31c> .
+    
+    <urn:uuid:5cc1ca38-7fd4-4a4e-aa29-54650ef13d5b>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e>;
+            cim:IdentifiedObject.mRID  "5cc1ca38-7fd4-4a4e-aa29-54650ef13d5b";
+            cim:IdentifiedObject.name  "IS4.2";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
     
     <urn:uuid:b29be4d0-4918-2f41-5dc2-07cd8f0b489b>
             rdf:type                      cim:CurrentLimit;
@@ -30052,6 +30381,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:VoltageLevel.BaseVoltage  <urn:uuid:0753bbfb-6f92-863c-67b6-5bee9d3f96d1>;
             cim:VoltageLevel.Substation   <urn:uuid:045fe2d2-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:ff1db38c-8fbc-4b1d-a5ff-46cd02a2df74>
+            rdf:type                   cim:Breaker;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:7332b792-5f2c-4194-9cd3-680bb3eaaadd>;
+            cim:IdentifiedObject.mRID  "ff1db38c-8fbc-4b1d-a5ff-46cd02a2df74";
+            cim:IdentifiedObject.name  "CB.R4";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:28ae1a80-ddd1-49bb-9aba-4c219a7a417a>
             rdf:type                   cim:Breaker;
             cim:Equipment.EquipmentContainer
@@ -30726,6 +31064,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Ratings(93)";
             cim:OperationalLimitSet.Terminal
                     <urn:uuid:04817494-c766-11e1-8775-005056c00008> .
+    
+    <urn:uuid:3e9fa947-89b9-67a6-154b-a83f4447f7c2>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "3e9fa947-89b9-67a6-154b-a83f4447f7c2";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:1b4e33f8-959c-47da-b19a-f71a0f9f9b03>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:b1d9fa71-9281-49bd-91de-0ef1cdbce84d> .
     
     <urn:uuid:03439e78-edb8-cb5e-2e36-ae43e605a33d>
             rdf:type                   cim:Line;
@@ -31662,6 +32010,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:f8087744-d60a-4cb2-a38a-dc1cb4787121>;
             cim:Terminal.ConnectivityNode  <urn:uuid:5aecd9c2-e9f3-42fb-8421-99e797865736> .
     
+    <urn:uuid:7fad6e51-227c-45b2-a023-8d92979f3db2>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID  "7fad6e51-227c-45b2-a023-8d92979f3db2";
+            cim:IdentifiedObject.name  "Espheim BB10.5" .
+    
     <urn:uuid:0460a627-c766-11e1-8775-005056c00008>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -32067,6 +32422,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:isVersionOf   <http://espheim.eh/CGMES>;
             dcat:version       "1";
             json-ld:base       "http://espheim.eh/CGMES#" .
+    
+    <urn:uuid:017850c3-3dbd-d2d6-884a-48b0d3388451>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "017850c3-3dbd-d2d6-884a-48b0d3388451";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:caaaec78-564f-4cf6-82f7-f1153418d795>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:f3c2f60e-6732-438c-9318-d239f584eb62> .
     
     <urn:uuid:3d997213-109c-d845-0e29-7f32f3f9dc5a>
             rdf:type                      cim:CurrentLimit;
@@ -34508,6 +34873,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:763f049b-181c-4d5e-89d0-6be2c6a1121c>;
             cim:Terminal.ConnectivityNode  <urn:uuid:f9b3ac80-67a8-47b2-8696-79e06d1d7d0c> .
     
+    <urn:uuid:041de809-45d5-45cc-8f55-8ada9d997294>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:7332b792-5f2c-4194-9cd3-680bb3eaaadd>;
+            cim:IdentifiedObject.mRID  "041de809-45d5-45cc-8f55-8ada9d997294";
+            cim:IdentifiedObject.name  "T.R4.1" .
+    
     <urn:uuid:8534dc94-47d9-c54c-8817-bf099da7048b>
             rdf:type                   cim:Line;
             cim:IdentifiedObject.mRID  "8534dc94-47d9-c54c-8817-bf099da7048b";
@@ -35848,6 +36220,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:c198ae04-0142-4d1b-a881-b8a66b0c56a7>;
             cim:Terminal.ConnectivityNode  <urn:uuid:30589b63-caee-4d4a-bc76-835cdf492616> .
+    
+    <urn:uuid:0c4f41f8-9797-44eb-bdbe-1a28efa083b9>
+            rdf:type                       cim:VoltageLevel;
+            cim:IdentifiedObject.description
+                    "Portheim-Espheim Voltage Level 400kV in the Boundary Substation, this instance appears in two EQ files and in the Boundary.";
+            cim:IdentifiedObject.mRID      "0c4f41f8-9797-44eb-bdbe-1a28efa083b9";
+            cim:IdentifiedObject.name      "Portheim-Espheim Voltage Level 400kV";
+            cim:VoltageLevel.BaseVoltage   <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+            cim:VoltageLevel.Substation    <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c>;
+            eu:IdentifiedObject.shortName  "PH-EH-400kV" .
     
     <urn:uuid:d2097ce7-d8db-4440-807f-a9890ec12889>
             rdf:type                       cim:Terminal;
@@ -37364,6 +37746,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "bfd53eb1-6113-4f70-8317-4b4703ac2177";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE477" .
     
+    <urn:uuid:7db92cd4-c868-913e-7883-c79fbcd536c5>
+            rdf:type                      cim:CurrentLimit;
+            cim:CurrentLimit.normalValue  "368.061"^^xsd:float;
+            cim:IdentifiedObject.mRID     "7db92cd4-c868-913e-7883-c79fbcd536c5";
+            cim:IdentifiedObject.name     "patl for T2";
+            cim:OperationalLimit.OperationalLimitSet
+                    <urn:uuid:91af5f54-c3b4-c093-1818-fcbf13f7a38a>;
+            cim:OperationalLimit.OperationalLimitType
+                    <urn:uuid:67c578dc-7a4e-5263-1e44-c1f535849e8b> .
+    
     <urn:uuid:4c8c8182-24d7-459b-96ef-2b197ce60f8f>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -38033,6 +38425,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04878f10-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "5d2c8145-d246-4b0f-b940-7675b2e3da19";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE514" .
+    
+    <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>
+            rdf:type                      cim:VoltageLevel;
+            cim:IdentifiedObject.mRID     "b7630cf0-3bd1-4813-8be3-404a1c4cfc7a";
+            cim:IdentifiedObject.name     "VL10.5";
+            cim:VoltageLevel.BaseVoltage  <urn:uuid:c33fa347-75df-2fc2-4ae5-0d1456576b35>;
+            cim:VoltageLevel.Substation   <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c> .
     
     <urn:uuid:61c9a8ca-8178-42de-bbdb-51ca3da49965>
             rdf:type                   cim:ConnectivityNode;
@@ -38755,6 +39154,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:744e5d32-23bb-412d-bfb8-f463e8dc1a5a>;
             cim:Terminal.ConnectivityNode  <urn:uuid:3aa4809e-3eee-4fdd-94db-406de5fa92fc> .
     
+    <urn:uuid:fb847d00-7b51-9705-74f2-15261d45b37f>
+            rdf:type                   cim:GeneratingUnit;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c>;
+            cim:GeneratingUnit.maxOperatingP
+                    "204"^^xsd:float;
+            cim:GeneratingUnit.minOperatingP
+                    "0"^^xsd:float;
+            cim:IdentifiedObject.mRID  "fb847d00-7b51-9705-74f2-15261d45b37f";
+            cim:IdentifiedObject.name  "G1" .
+    
     <urn:uuid:fdb0aef7-a217-957b-91f2-56b4632f5e1a>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "500"^^xsd:float;
@@ -39009,6 +39419,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "c927aac5-01f0-4cf0-ac5e-3227e30a2bc9";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE468" .
     
+    <urn:uuid:a6bcf14d-6fb2-4625-52de-15229561ccb0>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "a6bcf14d-6fb2-4625-52de-15229561ccb0";
+            cim:IdentifiedObject.name      "Cubicle_S1.1.3";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:35ffa96f-ccce-4835-904c-38b6bda760d1>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:0933a58b-86aa-4b68-9dda-65bc0aa74899> .
+    
     <urn:uuid:b57fffc4-6b3a-4001-a6bc-e95b771da3dd>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -39057,6 +39477,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Bay.VoltageLevel       <urn:uuid:04728074-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "721406ff-e711-40b1-9a02-68e8c4171755";
             cim:IdentifiedObject.name  "BAY_82-83_1" .
+    
+    <urn:uuid:b36a3f1b-9a5f-4823-bd2a-5a0e9196a816>
+            rdf:type                   cim:SubGeographicalRegion;
+            cim:IdentifiedObject.mRID  "b36a3f1b-9a5f-4823-bd2a-5a0e9196a816";
+            cim:IdentifiedObject.name  "Espheim-TSO";
+            cim:SubGeographicalRegion.Region
+                    <urn:uuid:0472f5a6-c766-11e1-8775-005056c00008> .
     
     <urn:uuid:176c94a7-679b-4371-9091-067c30901ad8>
             rdf:type                       cim:Terminal;
@@ -39289,6 +39716,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "3c1fe47e-214b-45a2-8240-8f0880b5eaee";
             cim:IdentifiedObject.name  "Bus-886597915" .
     
+    <urn:uuid:9c97f017-0cae-4011-ad66-2637cb96b8b6>
+            rdf:type                   cim:PowerTransformer;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c>;
+            cim:IdentifiedObject.mRID  "9c97f017-0cae-4011-ad66-2637cb96b8b6";
+            cim:IdentifiedObject.name  "T2" .
+    
     <urn:uuid:693dcd8d-4d28-4cdb-9ac4-d82358ed71c9>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -39349,6 +39783,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:11d728e0-7076-80fa-4233-5bf3daf5565f>;
             cim:IdentifiedObject.mRID  "046e61c8-c766-11e1-8775-005056c00008";
             cim:IdentifiedObject.name  "69-75" .
+    
+    <urn:uuid:07db7f20-62a8-85a6-3c63-52aaa1b59e8c>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "07db7f20-62a8-85a6-3c63-52aaa1b59e8c";
+            cim:IdentifiedObject.name      "Cub_1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:9a1b18ca-c6b1-4b1a-b03c-d85c96fe6447>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:d32ad1f0-278e-4426-890d-944511e67f74> .
     
     <urn:uuid:cca0ff87-b937-0074-71dd-98e7daae4d65>
             rdf:type                   cim:Line;
@@ -39832,6 +40276,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:3b9646e9-8fe3-4114-968b-d61ac3a8181a>;
             cim:Terminal.ConnectivityNode  <urn:uuid:045f4b21-44bf-4d5d-afff-ade7683ea4e8> .
     
+    <urn:uuid:9eee5de7-a4ad-b2df-71d4-6dbabc594857>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "9eee5de7-a4ad-b2df-71d4-6dbabc594857";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:389f64cd-db57-4e4b-ad05-33fa7fac4db2>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:5629cecf-f17c-4b7a-9d61-1013ace9f233> .
+    
     <urn:uuid:67904c90-470d-4ea9-82d0-8e5a1b9581ea>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -39857,6 +40311,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Container for 16-17";
             cim:Line.Region            <urn:uuid:0472a781-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:5c3c6f3f-dd78-4282-a50f-b8a0842b21f3>
+            rdf:type                   cim:EquivalentInjection;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:0c4f41f8-9797-44eb-bdbe-1a28efa083b9>;
+            cim:EquivalentInjection.regulationCapability
+                    false;
+            cim:IdentifiedObject.mRID  "5c3c6f3f-dd78-4282-a50f-b8a0842b21f3";
+            cim:IdentifiedObject.name  "EI Portheim-Espheim (Espheim side)" .
+    
     <urn:uuid:4a42519c-0f4e-598f-e45c-59cc7b6494bb>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "500"^^xsd:float;
@@ -39876,6 +40339,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:0483e594-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:5871bb84-d2a2-4785-b6f1-60d9e450ec2f> .
+    
+    <urn:uuid:9002d64b-e1ec-b7bc-caa6-44c98b8d6cdd>
+            rdf:type                   cim:ControlAreaGeneratingUnit;
+            cim:ControlAreaGeneratingUnit.ControlArea
+                    <urn:uuid:d221714a-959b-407c-93c4-5b0ed2d301ad>;
+            cim:ControlAreaGeneratingUnit.GeneratingUnit
+                    <urn:uuid:fb847d00-7b51-9705-74f2-15261d45b37f>;
+            cim:IdentifiedObject.mRID  "9002d64b-e1ec-b7bc-caa6-44c98b8d6cdd";
+            cim:IdentifiedObject.name  "G1" .
     
     <urn:uuid:d23014a8-5ac3-43eb-b8b0-614f8a8284ac>
             rdf:type                   cim:ConnectivityNode;
@@ -40070,6 +40542,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:ca87e586-22ff-4aca-8890-b2e43e3f7cc4>;
             cim:Terminal.ConnectivityNode  <urn:uuid:1b60afe5-2138-49dc-a29d-c53cb38b93f8> .
+    
+    <urn:uuid:86978cfb-8057-4578-a419-d4efe70609a1>
+            rdf:type                   cim:Breaker;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:58f6c780-5e10-46e0-a0bb-044e1fc84c52>;
+            cim:IdentifiedObject.mRID  "86978cfb-8057-4578-a419-d4efe70609a1";
+            cim:IdentifiedObject.name  "CB3";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
     
     <urn:uuid:b926f949-0bca-4ada-81ed-e0b951e84039>
             rdf:type                   cim:ConnectivityNode;
@@ -44126,6 +44607,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "048badc5-c766-11e1-8775-005056c00008";
             cim:IdentifiedObject.name  "60-61" .
     
+    <urn:uuid:778def94-cf30-d78d-6978-955025609a0d>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "778def94-cf30-d78d-6978-955025609a0d";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:5cc1ca38-7fd4-4a4e-aa29-54650ef13d5b>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:0023f3ca-bd59-4d28-bf1b-742893b40d5e> .
+    
     <urn:uuid:c54052db-2b97-49ad-b9a8-bcc5d2ae0b7b>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -45257,6 +45748,23 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04791027-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "18fdf59d-f141-4844-812d-c2d5e6f722aa";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE815" .
+    
+    <urn:uuid:9a1b18ca-c6b1-4b1a-b03c-d85c96fe6447>
+            rdf:type                       cim:LinearShuntCompensator;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID      "9a1b18ca-c6b1-4b1a-b03c-d85c96fe6447";
+            cim:IdentifiedObject.name      "Cap 2";
+            cim:LinearShuntCompensator.bPerSection
+                    "0.00870748"^^xsd:float;
+            cim:LinearShuntCompensator.gPerSection
+                    "0"^^xsd:float;
+            cim:ShuntCompensator.grounded  false;
+            cim:ShuntCompensator.maximumSections
+                    1;
+            cim:ShuntCompensator.nomU      "10.5"^^xsd:float;
+            cim:ShuntCompensator.normalSections
+                    1 .
     
     <urn:uuid:655bc79f-e7c5-4b50-8c58-9dc097c2d8ac>
             rdf:type                       cim:Terminal;
@@ -47499,13 +48007,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:adcebf11-e0c5-3c88-6f93-41180ae7a0ca> .
     
-    <urn:uuid:4da02ca4-ccdb-0e71-a8ae-86d6343108b4>
-            rdf:type                      cim:VoltageLevel;
-            cim:IdentifiedObject.mRID     "4da02ca4-ccdb-0e71-a8ae-86d6343108b4";
-            cim:IdentifiedObject.name     "EH_31";
-            cim:VoltageLevel.BaseVoltage  <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
-            cim:VoltageLevel.Substation   <urn:uuid:f8025dcb-09a5-c5b6-58db-bc9ce65ebd3f> .
-    
     <urn:uuid:6bcbc2fe-d3a9-4764-8d31-329f7dd63f05>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -48096,6 +48597,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "82a5d5d9-21ca-40c8-9ecf-dfa9230cb1d4";
             cim:IdentifiedObject.name  "BAY_56-58_0" .
     
+    <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c>
+            rdf:type                       cim:Substation;
+            cim:IdentifiedObject.description
+                    "AC Substation Boundary for Portheim-Espheim, this instance appears in two EQ files and in the Boundary.";
+            cim:IdentifiedObject.mRID      "42b7f03a-db7a-415a-9e15-25f634f5ea9c";
+            cim:IdentifiedObject.name      "Substation Portheim-Espheim";
+            cim:Substation.Region          <urn:uuid:f69de45f-9681-4147-9d1f-9e0336fc8635>;
+            eu:IdentifiedObject.shortName  "Subst-PH-EH" .
+    
     <urn:uuid:df5744f4-6ae4-7d71-e8a1-ca5d7e615588>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "500"^^xsd:float;
@@ -48105,6 +48615,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:8ac1ed5c-92e6-ba32-9c88-0777f352de5a>;
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:adcebf11-e0c5-3c88-6f93-41180ae7a0ca> .
+    
+    <urn:uuid:6a714a8d-54a8-4653-9daf-982af14eae88>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:58f6c780-5e10-46e0-a0bb-044e1fc84c52>;
+            cim:IdentifiedObject.mRID  "6a714a8d-54a8-4653-9daf-982af14eae88";
+            cim:IdentifiedObject.name  "IS3.2";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
     
     <urn:uuid:00126253-b090-4763-ad0d-00f5256a4272>
             rdf:type                       cim:Terminal;
@@ -48290,11 +48809,31 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:5e54a90e-8fe3-4bdb-ae1c-06ef06727fa4>;
             cim:Terminal.ConnectivityNode  <urn:uuid:2bcdc020-c668-4fc6-8d74-81e4c854554d> .
     
+    <urn:uuid:63699c95-8309-42fa-7297-2fcf2094c93c>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "63699c95-8309-42fa-7297-2fcf2094c93c";
+            cim:IdentifiedObject.name      "Cubicle_S1.4.3";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:35ffa96f-ccce-4835-904c-38b6bda760d1>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:ceafce7b-5485-4cb8-9e06-c85ba137ffa9> .
+    
     <urn:uuid:0488eea4-c766-11e1-8775-005056c00008>
             rdf:type                   cim:Substation;
             cim:IdentifiedObject.mRID  "0488eea4-c766-11e1-8775-005056c00008";
             cim:IdentifiedObject.name  "Tuckborough";
             cim:Substation.Region      <urn:uuid:0472a781-c766-11e1-8775-005056c00008> .
+    
+    <urn:uuid:352ae045-5482-5a86-e640-ffe29172a017>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "352ae045-5482-5a86-e640-ffe29172a017";
+            cim:IdentifiedObject.name      "Espheim BB10.5";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:4b62e70e-41fd-3615-d8b0-36d0adf2e35b>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:7fad6e51-227c-45b2-a023-8d92979f3db2> .
     
     <urn:uuid:0463da78-c766-11e1-8775-005056c00008>
             rdf:type                      cim:VoltageLevel;
@@ -48589,6 +49128,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:1cea515c-89a5-4eee-80fc-14bfc0cc430b>;
             cim:Terminal.ConnectivityNode  <urn:uuid:9358ca55-1704-4d26-ae92-89b22dc243ac> .
     
+    <urn:uuid:fb8ab5b0-794a-d9ad-c1f7-3530e4c904dd>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "fb8ab5b0-794a-d9ad-c1f7-3530e4c904dd";
+            cim:IdentifiedObject.name      "Cub_1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:9c97f017-0cae-4011-ad66-2637cb96b8b6>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:959bad76-b693-4f00-ab8d-a72126027363> .
+    
     <urn:uuid:044c33c9-c766-11e1-8775-005056c00008>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -48598,13 +49147,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:046009e3-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:1e0bf234-6056-457f-98dc-ff4baa9a3197> .
-    
-    <urn:uuid:050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a>
-            rdf:type                   cim:BusbarSection;
-            cim:Equipment.EquipmentContainer
-                    <urn:uuid:4da02ca4-ccdb-0e71-a8ae-86d6343108b4>;
-            cim:IdentifiedObject.mRID  "050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a";
-            cim:IdentifiedObject.name  "EH_31" .
     
     <urn:uuid:ee23258b-8860-4ead-b59b-09ca9a085c15>
             rdf:type                   cim:ConnectivityNode;
@@ -49388,6 +49930,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:8f387a15-b3ac-41e7-a28d-61274822648a>;
             cim:Terminal.ConnectivityNode  <urn:uuid:b4a802c8-9f57-4417-82d6-2391eb43188c> .
+    
+    <urn:uuid:6ee9deb0-6556-5087-de8f-e01599780734>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "6ee9deb0-6556-5087-de8f-e01599780734";
+            cim:IdentifiedObject.name      "Cubicle_S0.2.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:c5eee612-6eaa-439c-b68e-a150f178298c>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:7fad6e51-227c-45b2-a023-8d92979f3db2> .
     
     <urn:uuid:5b14c217-31dd-4ee3-ad7b-81094f21eb07>
             rdf:type                       cim:Terminal;
@@ -52393,6 +52945,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:dec28635-78f0-4cf8-927a-29b548d02002>;
             cim:Terminal.ConnectivityNode  <urn:uuid:6b157e0e-e51c-40e1-ab15-494a28e8dbfd> .
     
+    <urn:uuid:c5eee612-6eaa-439c-b68e-a150f178298c>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:3d2b0942-3e8f-4f06-bddc-e8cf848c94e3>;
+            cim:IdentifiedObject.mRID  "c5eee612-6eaa-439c-b68e-a150f178298c";
+            cim:IdentifiedObject.name  "IS2.2";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:57166dcb-e437-4990-b24d-92dbb829069a>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -54280,6 +54841,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Container for 100-101";
             cim:Line.Region            <urn:uuid:0472a781-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:d32ad1f0-278e-4426-890d-944511e67f74>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e>;
+            cim:IdentifiedObject.mRID  "d32ad1f0-278e-4426-890d-944511e67f74";
+            cim:IdentifiedObject.name  "4" .
+    
     <urn:uuid:cfd3b80f-c4d8-718f-85d4-09dbe43fed18>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "1000"^^xsd:float;
@@ -54498,7 +55066,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.sequenceNumber
                     2;
             cim:IdentifiedObject.mRID      "154e63fe-c346-2390-cb35-54f1f81e82e2";
-            cim:IdentifiedObject.name      "Terminal";
+            cim:IdentifiedObject.name      "Term_2_Aac_TR";
             cim:Terminal.ConductingEquipment
                     <urn:uuid:2c9a0753-421a-489b-9761-9452f60b3157>;
             cim:Terminal.ConnectivityNode  <urn:uuid:59aeee64-a914-4862-8b34-f23649ab764a> .
@@ -54562,6 +55130,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimitSet.Terminal
                     <urn:uuid:046958b0-c766-11e1-8775-005056c00008> .
     
+    <urn:uuid:a90ae8d5-858f-c8b0-140f-1c0f4fca96c8>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "a90ae8d5-858f-c8b0-140f-1c0f4fca96c8";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:a097a1fa-e454-4152-ae05-b6f2c16701da>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:3c4708e3-709e-44c6-9c2f-f1a2683fbb0b> .
+    
     <urn:uuid:741c3e10-280e-4cf7-a0d9-35763a13e2e6>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -54618,6 +55196,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:f7fbb5e0-d8af-4c6f-a34f-a0f16ea1942f>;
             cim:IdentifiedObject.mRID  "ca922f80-1922-4ced-9d38-ac6140eaaaca";
             cim:IdentifiedObject.name  "Bus-1431295692" .
+    
+    <urn:uuid:ae5cf481-2193-4687-83a6-88fd07ae5cdb>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:7332b792-5f2c-4194-9cd3-680bb3eaaadd>;
+            cim:IdentifiedObject.mRID  "ae5cf481-2193-4687-83a6-88fd07ae5cdb";
+            cim:IdentifiedObject.name  "R4" .
     
     <urn:uuid:ee360e8b-f8ca-47cf-b7f9-14dd68ac67a4>
             rdf:type                   cim:Breaker;
@@ -55596,6 +56181,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
     
+    <urn:uuid:aa72cb02-267d-403f-a667-f317f5e76413>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:3d2b0942-3e8f-4f06-bddc-e8cf848c94e3>;
+            cim:IdentifiedObject.mRID  "aa72cb02-267d-403f-a667-f317f5e76413";
+            cim:IdentifiedObject.name  "IS2.1";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:044fb634-c766-11e1-8775-005056c00008>
             rdf:type                      cim:VoltageLevel;
             cim:IdentifiedObject.mRID     "044fb634-c766-11e1-8775-005056c00008";
@@ -56454,13 +57048,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:9d1c8408-5ab1-4c5e-a1d5-bc113b74e57d>;
             cim:Terminal.ConnectivityNode  <urn:uuid:1736df72-ac1d-4f75-b8b0-c828853c93c0> .
-    
-    <urn:uuid:221d599c-4098-47fd-859d-c8be218abcb4>
-            rdf:type                   cim:ConnectivityNode;
-            cim:ConnectivityNode.ConnectivityNodeContainer
-                    <urn:uuid:4da02ca4-ccdb-0e71-a8ae-86d6343108b4>;
-            cim:IdentifiedObject.mRID  "221d599c-4098-47fd-859d-c8be218abcb4";
-            cim:IdentifiedObject.name  "EH_31" .
     
     <urn:uuid:fb52a60a-6298-49cd-a374-5b679a39bec8>
             rdf:type                   cim:Bay;
@@ -58340,6 +58927,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:047e1936-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:321acef5-98d0-407f-b03b-f654bbd9a6c8> .
     
+    <urn:uuid:eb6f1f00-793e-ca31-8440-c90a77a2221c>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "eb6f1f00-793e-ca31-8440-c90a77a2221c";
+            cim:IdentifiedObject.name      "Cubicle_S1.1.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:f6315393-17f7-406c-bb16-e77372f85ff9>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:041de809-45d5-45cc-8f55-8ada9d997294> .
+    
     <urn:uuid:bc9ff4df-5b21-43dc-b406-149a9832e3fc>
             rdf:type                   cim:Disconnector;
             cim:Equipment.EquipmentContainer
@@ -58460,6 +59057,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:048ac367-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:d9265c90-dd93-47df-b74c-418810674d0d> .
+    
+    <urn:uuid:41c15025-9bc0-8dc5-a927-8db80bd21cdb>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "41c15025-9bc0-8dc5-a927-8db80bd21cdb";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:86978cfb-8057-4578-a419-d4efe70609a1>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:95f1e43a-760d-4a74-abe5-abc7bccae910> .
     
     <urn:uuid:1976c3d1-2d10-4334-a86b-b75983d7a235>
             rdf:type                       cim:Terminal;
@@ -59276,6 +59883,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:3b9f122d-fa93-403b-9567-2a5602e30051>;
             cim:Terminal.ConnectivityNode  <urn:uuid:53304131-5704-4ec7-8ab2-920193543679> .
     
+    <urn:uuid:caaaec78-564f-4cf6-82f7-f1153418d795>
+            rdf:type                   cim:Breaker;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:3d2b0942-3e8f-4f06-bddc-e8cf848c94e3>;
+            cim:IdentifiedObject.mRID  "caaaec78-564f-4cf6-82f7-f1153418d795";
+            cim:IdentifiedObject.name  "CB2";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:a310bb52-fde7-d6f0-30c2-492beefe02ee>
             rdf:type                   cim:OperationalLimitSet;
             cim:IdentifiedObject.mRID  "a310bb52-fde7-d6f0-30c2-492beefe02ee";
@@ -59552,6 +60168,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:a618a610-1786-0abb-25d3-646d11be4b53>;
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:ce2cd3eb-2bf9-d825-01a0-2fb2afc0e874> .
+    
+    <urn:uuid:8f0c8f3b-a558-8672-5c25-ff43a3cdcbe1>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "8f0c8f3b-a558-8672-5c25-ff43a3cdcbe1";
+            cim:IdentifiedObject.name      "Cubicle_S0.1.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:1b4e33f8-959c-47da-b19a-f71a0f9f9b03>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:7fad6e51-227c-45b2-a023-8d92979f3db2> .
     
     <urn:uuid:f85a5349-2e43-43ed-a9dd-b91cda6cb952>
             rdf:type                   cim:ConnectivityNode;
@@ -60236,6 +60862,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "9562d81d-a52a-4f7d-8a4d-d766d6f480a8";
             cim:IdentifiedObject.name  "BAY_60-62_0" .
     
+    <urn:uuid:3d2b0942-3e8f-4f06-bddc-e8cf848c94e3>
+            rdf:type                   cim:Bay;
+            cim:Bay.VoltageLevel       <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID  "3d2b0942-3e8f-4f06-bddc-e8cf848c94e3";
+            cim:IdentifiedObject.name  "2" .
+    
     <urn:uuid:6226a89a-423f-4934-8c8b-8042772bcc1f>
             rdf:type                   cim:Disconnector;
             cim:Equipment.EquipmentContainer
@@ -60351,6 +60983,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:dae58e46-ebbe-976c-491b-6b38b44b1c14>;
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:adcebf11-e0c5-3c88-6f93-41180ae7a0ca> .
+    
+    <urn:uuid:a90d3078-dc13-8f9c-e188-2a219c5bbd8b>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "a90d3078-dc13-8f9c-e188-2a219c5bbd8b";
+            cim:IdentifiedObject.name      "Cub_1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:09a25351-f649-4a92-810d-3f740534c637>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:8b16b65f-bded-41ce-83ba-55153cd563dd> .
     
     <urn:uuid:b0396e46-ed89-4858-9085-631a0a710825>
             rdf:type                   cim:ConnectivityNode;
@@ -61064,13 +61706,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:adcebf11-e0c5-3c88-6f93-41180ae7a0ca> .
     
-    <urn:uuid:7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea>
-            rdf:type                   cim:OperationalLimitSet;
-            cim:IdentifiedObject.mRID  "7d8a5f70-fc05-f1c6-17b8-9c3d8c0b30ea";
-            cim:IdentifiedObject.name  "Voltage limits for EH_31";
-            cim:OperationalLimitSet.Terminal
-                    <urn:uuid:ee433f38-c62f-4cb1-c431-fcdffe4e0983> .
-    
     <urn:uuid:f116418d-2bdb-413d-9db2-36482de69378>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -61519,6 +62154,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04791027-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "4a2364ff-8a8e-4cff-9b51-29fce18b4e39";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE816" .
+    
+    <urn:uuid:91af5f54-c3b4-c093-1818-fcbf13f7a38a>
+            rdf:type                   cim:OperationalLimitSet;
+            cim:IdentifiedObject.mRID  "91af5f54-c3b4-c093-1818-fcbf13f7a38a";
+            cim:IdentifiedObject.name  "Current rating for T2";
+            cim:OperationalLimitSet.Terminal
+                    <urn:uuid:7bc6afd6-353f-fb08-897a-fe53ae28aef8> .
     
     <urn:uuid:8b7c1305-25f6-4b16-898c-6397001d22c9>
             rdf:type                   cim:Bay;
@@ -62003,6 +62645,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:ab58c1c4-43e0-4346-8976-739adc306ac1>;
             cim:Terminal.ConnectivityNode  <urn:uuid:72f28d91-b351-485f-9278-d0d1e87e9120> .
     
+    <urn:uuid:8211fc3c-0f49-49b7-a20f-d5c9ec874f0c>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:58f6c780-5e10-46e0-a0bb-044e1fc84c52>;
+            cim:IdentifiedObject.mRID  "8211fc3c-0f49-49b7-a20f-d5c9ec874f0c";
+            cim:IdentifiedObject.name  "IS3.1";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
+    
     <urn:uuid:e1b33fc9-85ea-40a2-a2d7-6a5d572e27b4>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -62481,6 +63132,26 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04558293-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:74a2dc80-79a5-42e9-82b2-d09e41794a67> .
     
+    <urn:uuid:419a8edf-36f1-4af7-9a76-ec197f5712fd>
+            rdf:type                     cim:SynchronousMachine;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID    "419a8edf-36f1-4af7-9a76-ec197f5712fd";
+            cim:IdentifiedObject.name    "G1";
+            cim:RegulatingCondEq.RegulatingControl
+                    <urn:uuid:17d0a4c9-7451-b629-9ac5-6de970664c23>;
+            cim:RotatingMachine.GeneratingUnit
+                    <urn:uuid:fb847d00-7b51-9705-74f2-15261d45b37f>;
+            cim:RotatingMachine.ratedPowerFactor
+                    "0.8"^^xsd:float;
+            cim:RotatingMachine.ratedS   "255"^^xsd:float;
+            cim:RotatingMachine.ratedU   "10.5"^^xsd:float;
+            cim:SynchronousMachine.maxQ  "255"^^xsd:float;
+            cim:SynchronousMachine.minQ  "-255"^^xsd:float;
+            cim:SynchronousMachine.qPercent
+                    "100"^^xsd:float;
+            cim:SynchronousMachine.type  cim:SynchronousMachineKind.generatorOrCondenser .
+    
     <urn:uuid:30c3464e-e601-4746-bb43-c4a4e83e26e2>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -62759,6 +63430,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:a0db9f3c-3d0c-4d77-a760-d77d85a488f4>;
             cim:Terminal.ConnectivityNode  <urn:uuid:d918b035-9390-4ee6-b7c1-3ef06b2198ac> .
+    
+    <urn:uuid:95f1e43a-760d-4a74-abe5-abc7bccae910>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:58f6c780-5e10-46e0-a0bb-044e1fc84c52>;
+            cim:IdentifiedObject.mRID  "95f1e43a-760d-4a74-abe5-abc7bccae910";
+            cim:IdentifiedObject.name  "T3.2" .
     
     <urn:uuid:df1fe7b7-4c45-4653-8f55-fd614db99161>
             rdf:type                       cim:Terminal;
@@ -63539,6 +64217,21 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
     
+    <urn:uuid:8452b030-2224-208f-0c9d-77fe0df02ec7>
+            rdf:type                    cim:RatioTapChanger;
+            cim:IdentifiedObject.mRID   "8452b030-2224-208f-0c9d-77fe0df02ec7";
+            cim:IdentifiedObject.name   "T2";
+            cim:RatioTapChanger.TransformerEnd
+                    <urn:uuid:3f90f62e-8c68-9066-bb03-de6758299e16>;
+            cim:RatioTapChanger.stepVoltageIncrement
+                    "2.5"^^xsd:float;
+            cim:TapChanger.highStep     2;
+            cim:TapChanger.lowStep      -2;
+            cim:TapChanger.ltcFlag      false;
+            cim:TapChanger.neutralStep  0;
+            cim:TapChanger.neutralU     "400"^^xsd:float;
+            cim:TapChanger.normalStep   0 .
+    
     <urn:uuid:f9c70f9c-d2ea-bdb2-f2cc-40219f1e5bb0>
             rdf:type                      cim:CurrentLimit;
             cim:CurrentLimit.normalValue  "500"^^xsd:float;
@@ -63590,6 +64283,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:11b5831d-1539-5828-c513-1b341a6f7f4d>;
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:ce2cd3eb-2bf9-d825-01a0-2fb2afc0e874> .
+    
+    <urn:uuid:adba41ab-bb26-f27d-3c57-261ce3dfdf6c>
+            rdf:type                      cim:VoltageLimit;
+            cim:IdentifiedObject.mRID     "adba41ab-bb26-f27d-3c57-261ce3dfdf6c";
+            cim:IdentifiedObject.name     "high limit for Espheim BB10.5";
+            cim:OperationalLimit.OperationalLimitSet
+                    <urn:uuid:6521ecb3-99d4-9d6f-d80b-98cc5b1ef7aa>;
+            cim:OperationalLimit.OperationalLimitType
+                    <urn:uuid:b92010a9-b093-04eb-a4da-91312c9458d3>;
+            cim:VoltageLimit.normalValue  "11.025"^^xsd:float .
     
     <urn:uuid:c5590bae-ce1c-4afb-96ba-c0a79496d803>
             rdf:type                       cim:Terminal;
@@ -63822,6 +64525,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:4fd60b1f-812f-37c8-3f80-6c35e68eddad>;
             cim:Terminal.ConnectivityNode  <urn:uuid:f10c4e18-0633-4309-8a23-edbd6c21d9b1> .
+    
+    <urn:uuid:16bf4dbf-742a-a5e5-6e6b-407a52fd2526>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "16bf4dbf-742a-a5e5-6e6b-407a52fd2526";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:8211fc3c-0f49-49b7-a20f-d5c9ec874f0c>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:c70d13f2-cca1-40ce-96b4-a2cf6839fc6c> .
     
     <urn:uuid:fd7f014e-167a-7bd9-5f9c-9f53b5436b8c>
             rdf:type                      cim:CurrentLimit;
@@ -64603,6 +65316,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:af75250a-8abf-4e72-ac65-6d9504aef741>;
             cim:Terminal.ConnectivityNode  <urn:uuid:4e04ed8e-2656-4c1f-b33a-de4ca00cf4b9> .
     
+    <urn:uuid:ef31fafc-8002-464a-9224-fb16e4db1c1d>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:3d2b0942-3e8f-4f06-bddc-e8cf848c94e3>;
+            cim:IdentifiedObject.mRID  "ef31fafc-8002-464a-9224-fb16e4db1c1d";
+            cim:IdentifiedObject.name  "T2.1" .
+    
     <urn:uuid:9316a6de-4eef-433e-8ea9-2555c355176b>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -65290,6 +66010,24 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
     
+    <urn:uuid:3f90f62e-8c68-9066-bb03-de6758299e16>
+            rdf:type                        cim:PowerTransformerEnd;
+            cim:IdentifiedObject.mRID       "3f90f62e-8c68-9066-bb03-de6758299e16";
+            cim:IdentifiedObject.name       "T2";
+            cim:PowerTransformerEnd.PowerTransformer
+                    <urn:uuid:9c97f017-0cae-4011-ad66-2637cb96b8b6>;
+            cim:PowerTransformerEnd.b       "0"^^xsd:float;
+            cim:PowerTransformerEnd.connectionKind
+                    cim:WindingConnection.Yn;
+            cim:PowerTransformerEnd.g       "0"^^xsd:float;
+            cim:PowerTransformerEnd.r       "0.762784"^^xsd:float;
+            cim:PowerTransformerEnd.ratedS  "255"^^xsd:float;
+            cim:PowerTransformerEnd.ratedU  "400"^^xsd:float;
+            cim:PowerTransformerEnd.x       "100.389"^^xsd:float;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+            cim:TransformerEnd.Terminal     <urn:uuid:7bc6afd6-353f-fb08-897a-fe53ae28aef8>;
+            cim:TransformerEnd.endNumber    1 .
+    
     <urn:uuid:f1804486-f13b-43a8-aef9-bdf8be32ffd4>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -65836,6 +66574,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:TransformerEnd.BaseVoltage  <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
             cim:TransformerEnd.Terminal     <urn:uuid:022bebc0-76e1-0ebc-c8ca-aacf10264ef2>;
             cim:TransformerEnd.endNumber    1 .
+    
+    <urn:uuid:7bc6afd6-353f-fb08-897a-fe53ae28aef8>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "7bc6afd6-353f-fb08-897a-fe53ae28aef8";
+            cim:IdentifiedObject.name      "Cub_2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:9c97f017-0cae-4011-ad66-2637cb96b8b6>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:ae5cf481-2193-4687-83a6-88fd07ae5cdb> .
     
     <urn:uuid:f7fbb5e0-d8af-4c6f-a34f-a0f16ea1942f>
             rdf:type                      cim:VoltageLevel;
@@ -66484,6 +67232,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "82b4512c-0c91-4c6f-a420-f099dec58eda";
             cim:IdentifiedObject.name  "Container for EH_line1";
             cim:Line.Region            <urn:uuid:0472a781-c766-11e1-8775-005056c00008> .
+    
+    <urn:uuid:ed6b4c8b-ffd7-d7e4-d867-52aee785185f>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "ed6b4c8b-ffd7-d7e4-d867-52aee785185f";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:389f64cd-db57-4e4b-ad05-33fa7fac4db2>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:959bad76-b693-4f00-ab8d-a72126027363> .
     
     <urn:uuid:a53cd964-0160-893c-8453-0750a3234290>
             rdf:type                   cim:OperationalLimitSet;
@@ -67749,7 +68507,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.sequenceNumber
                     1;
             cim:IdentifiedObject.mRID      "d092de5e-7806-efcb-eda7-1a97044bc846";
-            cim:IdentifiedObject.name      "Cub_1";
+            cim:IdentifiedObject.name      "Term_1_EH_line1";
             cim:Terminal.ConductingEquipment
                     <urn:uuid:bb8787ff-96b9-4618-85d5-d1bcad51337f>;
             cim:Terminal.ConnectivityNode  <urn:uuid:89920b09-bf9d-4934-a6d5-464ca938b3d7> .
@@ -67955,6 +68713,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:b0ed136b-cd88-44e6-bab1-3505ab3c2eda>;
             cim:Terminal.ConnectivityNode  <urn:uuid:ccbe98d5-2c83-418e-ac91-f5216be2eab8> .
+    
+    <urn:uuid:6521ecb3-99d4-9d6f-d80b-98cc5b1ef7aa>
+            rdf:type                   cim:OperationalLimitSet;
+            cim:IdentifiedObject.mRID  "6521ecb3-99d4-9d6f-d80b-98cc5b1ef7aa";
+            cim:IdentifiedObject.name  "Voltage limits for Espheim BB10.5";
+            cim:OperationalLimitSet.Terminal
+                    <urn:uuid:352ae045-5482-5a86-e640-ffe29172a017> .
     
     <urn:uuid:486f1518-2ddb-4b5c-8161-25f663ea6f58>
             rdf:type                   cim:Bay;
@@ -68233,6 +68998,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04845ac7-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:3e38aea3-4334-467d-868a-701a5a19ab89> .
     
+    <urn:uuid:8b16b65f-bded-41ce-83ba-55153cd563dd>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:58f6c780-5e10-46e0-a0bb-044e1fc84c52>;
+            cim:IdentifiedObject.mRID  "8b16b65f-bded-41ce-83ba-55153cd563dd";
+            cim:IdentifiedObject.name  "3" .
+    
     <urn:uuid:6f9a01e7-58e8-4dc9-8bec-e1a96af76d2e>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -68393,6 +69165,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "BREAKER98";
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
+    
+    <urn:uuid:733d79e0-c71b-da8f-3bb0-e5ac20f10ed0>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "733d79e0-c71b-da8f-3bb0-e5ac20f10ed0";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:8211fc3c-0f49-49b7-a20f-d5c9ec874f0c>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:8b16b65f-bded-41ce-83ba-55153cd563dd> .
     
     <urn:uuid:105835f3-0738-c994-d4a1-944972e50369>
             rdf:type                      cim:CurrentLimit;
@@ -69168,6 +69950,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:236f9d20-c75a-470b-88b8-2eb69e2c062c>;
             cim:Terminal.ConnectivityNode  <urn:uuid:9532e9b1-5d28-4053-9644-6136dc29e381> .
+    
+    <urn:uuid:389f64cd-db57-4e4b-ad05-33fa7fac4db2>
+            rdf:type                   cim:Disconnector;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:ad8500db-1ec6-4a5f-b39e-532b200db86a>;
+            cim:IdentifiedObject.mRID  "389f64cd-db57-4e4b-ad05-33fa7fac4db2";
+            cim:IdentifiedObject.name  "IS1.1";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
     
     <urn:uuid:843aef7b-43d1-6887-1dc0-56713fe4ec48>
             rdf:type                   cim:OperationalLimitSet;
@@ -70625,6 +71416,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:1ce3ce31-67e2-4b2d-a09a-74b69a2d194d>;
             cim:Terminal.ConnectivityNode  <urn:uuid:8853d8aa-14bb-4042-980e-189c6db59299> .
     
+    <urn:uuid:5098bf8f-55b3-2e67-36e5-de58c28217c5>
+            rdf:type                   cim:OperationalLimitSet;
+            cim:IdentifiedObject.mRID  "5098bf8f-55b3-2e67-36e5-de58c28217c5";
+            cim:IdentifiedObject.name  "Current rating for T2";
+            cim:OperationalLimitSet.Terminal
+                    <urn:uuid:fb8ab5b0-794a-d9ad-c1f7-3530e4c904dd> .
+    
     <urn:uuid:0447c6f6-c766-11e1-8775-005056c00008>
             rdf:type                       cim:LinearShuntCompensator;
             cim:Equipment.EquipmentContainer
@@ -71052,6 +71850,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Disc-Switch-174070877";
             cim:Switch.normalOpen      false;
             cim:Switch.retained        false .
+    
+    <urn:uuid:17d0a4c9-7451-b629-9ac5-6de970664c23>
+            rdf:type                        cim:RegulatingControl;
+            cim:IdentifiedObject.mRID       "17d0a4c9-7451-b629-9ac5-6de970664c23";
+            cim:IdentifiedObject.name       "G1";
+            cim:RegulatingControl.Terminal  <urn:uuid:ac7eddfd-4b3d-0966-5803-fbd3bf3e9b2a>;
+            cim:RegulatingControl.mode      cim:RegulatingControlModeKind.voltage .
     
     <urn:uuid:0b99fabd-cb09-475e-ba48-bd3e9982a646>
             rdf:type                       cim:Terminal;
@@ -71698,6 +72503,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:0463da78-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "96133695-3b7a-4549-836d-8bcc1e6051fa";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE1197" .
+    
+    <urn:uuid:fe3610d4-e86a-934e-7f04-eb95e36126e4>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "fe3610d4-e86a-934e-7f04-eb95e36126e4";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.0";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:aa72cb02-267d-403f-a667-f317f5e76413>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:2448c545-4643-4c74-a53b-f6f3fe4b056c> .
     
     <urn:uuid:c1fe09e2-71e3-401f-98fd-da8995c44f11>
             rdf:type                   cim:Disconnector;
@@ -72839,6 +73654,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:044a5f09-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:afeb88bf-a164-4d1c-a587-628ca2769900> .
     
+    <urn:uuid:ad8500db-1ec6-4a5f-b39e-532b200db86a>
+            rdf:type                   cim:Bay;
+            cim:Bay.VoltageLevel       <urn:uuid:b7630cf0-3bd1-4813-8be3-404a1c4cfc7a>;
+            cim:IdentifiedObject.mRID  "ad8500db-1ec6-4a5f-b39e-532b200db86a";
+            cim:IdentifiedObject.name  "1" .
+    
     <urn:uuid:8bfe150a-522d-450a-b92d-49002c017d27>
             rdf:type                   cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -72872,6 +73693,24 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.name  "Ratings(89)";
             cim:OperationalLimitSet.Terminal
                     <urn:uuid:0481e9c1-c766-11e1-8775-005056c00008> .
+    
+    <urn:uuid:c33fa347-75df-2fc2-4ae5-0d1456576b35>
+            rdf:type                        cim:BaseVoltage;
+            cim:BaseVoltage.nominalVoltage  "10.5"^^xsd:float;
+            cim:IdentifiedObject.description
+                    "BaseVoltage 10.50 kV";
+            cim:IdentifiedObject.mRID       "c33fa347-75df-2fc2-4ae5-0d1456576b35";
+            cim:IdentifiedObject.name       "10.50 kV";
+            eu:IdentifiedObject.shortName   "10.50 kV" .
+    
+    <urn:uuid:a37f594e-e546-4a10-b375-6a705112b937>
+            rdf:type                   cim:Breaker;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e>;
+            cim:IdentifiedObject.mRID  "a37f594e-e546-4a10-b375-6a705112b937";
+            cim:IdentifiedObject.name  "CB4";
+            cim:Switch.normalOpen      false;
+            cim:Switch.retained        false .
     
     <urn:uuid:70921e24-42dd-4130-bc92-d9f367ecdc4e>
             rdf:type                   cim:ConnectivityNode;
@@ -72996,6 +73835,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:044b2257-c766-11e1-8775-005056c00008>;
             cim:Terminal.ConnectivityNode  <urn:uuid:e8fde9af-481c-474b-98e7-d314b1816265> .
+    
+    <urn:uuid:2cdcf79f-5cd1-64c4-fb67-a776d4aa865a>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.mRID      "2cdcf79f-5cd1-64c4-fb67-a776d4aa865a";
+            cim:IdentifiedObject.name      "Cubicle_S0.3.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:6a714a8d-54a8-4653-9daf-982af14eae88>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:7fad6e51-227c-45b2-a023-8d92979f3db2> .
     
     <urn:uuid:34ae2fd8-006e-41e1-9f68-bfbb5ad541b8>
             rdf:type                   cim:ConnectivityNode;
@@ -74033,6 +74882,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:85647f1f-f507-471b-8c52-ccaf13200a36>;
             cim:Terminal.ConnectivityNode  <urn:uuid:5b439fc3-2eca-4ebc-907b-497e96de6346> .
     
+    <urn:uuid:959bad76-b693-4f00-ab8d-a72126027363>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:ad8500db-1ec6-4a5f-b39e-532b200db86a>;
+            cim:IdentifiedObject.mRID  "959bad76-b693-4f00-ab8d-a72126027363";
+            cim:IdentifiedObject.name  "1" .
+    
     <urn:uuid:8e41e965-25e3-4ec4-a029-f71040439b3c>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -74922,6 +75778,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:OperationalLimit.OperationalLimitType
                     <urn:uuid:adcebf11-e0c5-3c88-6f93-41180ae7a0ca> .
     
+    <urn:uuid:4b4f08a4-e351-0d04-9a9f-7ed1bb9d0dfe>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "4b4f08a4-e351-0d04-9a9f-7ed1bb9d0dfe";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.1";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:caaaec78-564f-4cf6-82f7-f1153418d795>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:ef31fafc-8002-464a-9224-fb16e4db1c1d> .
+    
     <urn:uuid:ed8613d9-d80c-0e29-0b7f-cb7b1577631e>
             rdf:type                    cim:RatioTapChanger;
             cim:IdentifiedObject.mRID   "ed8613d9-d80c-0e29-0b7f-cb7b1577631e";
@@ -75246,6 +76112,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:2531ddd4-edd6-4188-8dec-a21d2af4fa9f>;
             cim:Terminal.ConnectivityNode  <urn:uuid:8c18af0f-3049-439b-a95c-2ec576dbe8c0> .
     
+    <urn:uuid:d221714a-959b-407c-93c4-5b0ed2d301ad>
+            rdf:type                    cim:ControlArea;
+            cim:ControlArea.EnergyArea  <urn:uuid:b3db9960-92c8-3b85-2f89-ef5329c58c15>;
+            cim:ControlArea.type        cim:ControlAreaTypeKind.AGC;
+            cim:IdentifiedObject.mRID   "d221714a-959b-407c-93c4-5b0ed2d301ad";
+            cim:IdentifiedObject.name   "PFC DE" .
+    
     <urn:uuid:044c33c1-c766-11e1-8775-005056c00008>
             rdf:type                       cim:Terminal;
             cim:ACDCTerminal.sequenceNumber
@@ -75408,6 +76281,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:04791027-c766-11e1-8775-005056c00008>;
             cim:IdentifiedObject.mRID  "11f043d4-eb65-4bba-85e7-51f0119764f9";
             cim:IdentifiedObject.name  "CONNECTIVITY_NODE20" .
+    
+    <urn:uuid:9a083e1d-0b96-96a3-e13c-9e8d444de329>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    2;
+            cim:IdentifiedObject.mRID      "9a083e1d-0b96-96a3-e13c-9e8d444de329";
+            cim:IdentifiedObject.name      "Cubicle_S0.0.2";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:c5eee612-6eaa-439c-b68e-a150f178298c>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:f3c2f60e-6732-438c-9318-d239f584eb62> .
     
     <urn:uuid:1e0bf234-6056-457f-98dc-ff4baa9a3197>
             rdf:type                   cim:ConnectivityNode;
@@ -75935,6 +76818,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Terminal.ConductingEquipment
                     <urn:uuid:1e51c389-e7d0-40ea-8c5f-96ae126b893a>;
             cim:Terminal.ConnectivityNode  <urn:uuid:04fbd03a-8de8-487f-871a-437bcbd05499> .
+    
+    <urn:uuid:3c4708e3-709e-44c6-9c2f-f1a2683fbb0b>
+            rdf:type                   cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:f68fcfaa-67e6-4cc3-9f13-d1a71c592b6e>;
+            cim:IdentifiedObject.mRID  "3c4708e3-709e-44c6-9c2f-f1a2683fbb0b";
+            cim:IdentifiedObject.name  "T4.1" .
     
     <urn:uuid:85852433-06e1-48e5-ba56-7b87286b5d58>
             rdf:type                   cim:ConnectivityNode;

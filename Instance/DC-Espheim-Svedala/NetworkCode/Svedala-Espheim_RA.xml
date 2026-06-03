@@ -14,18 +14,18 @@ xmlns:prov="http://www.w3.org/ns/prov#"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <dcat:Dataset rdf:about="urn:uuid:c1413a88-1f17-4b9e-9afe-cd089605c671">
     <dcterms:identifier>c1413a88-1f17-4b9e-9afe-cd089605c671</dcterms:identifier>
-    <dcterms:conformsTo>https://ap.cim4.eu/RemedialAction/2.4</dcterms:conformsTo>
-    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://cim4.eu/ns/nc/2.4#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description>Svedala - HVDC - Espheim  - NC profile</dcterms:description>
     <prov:generatedAtTime>2025-06-19T14:00:00Z</prov:generatedAtTime>
-    <dcterms:publisher>https://ap.cim4.eu/RemedialAction/2.4</dcterms:publisher>
+    <dcterms:publisher rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
     <prov:references rdf:resource="urn:uuid:105893e4-668b-4b00-a351-0e436b53cbc9"/>
     <dcat:startDate>2025-06-19T14:00:00Z</dcat:startDate>
     <dcat:keyword>RA</dcat:keyword>
     <dcat:version>1</dcat:version>
-    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:issued>2025-06-19T14:00:00Z</dcterms:issued>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-Espheim-RA"/>
     <prov:wasGeneratedBy>"https://energy.referencedata.eu/Activity/CGM-RA</prov:wasGeneratedBy>
@@ -174,8 +174,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.equals" />
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <cim:IdentifiedObject.mRID>0e466fa1-6c55-4588-8077-abb6990d72a9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EquipmentTrip_e9a92c08-1020-4810-8126-decb9124fc9a</cim:IdentifiedObject.name>
-    <nc:PinEquipmentTripping.Equipment rdf:resource="#_e9a92c08-1020-4810-8126-decb9124fc9a" />
+    <cim:IdentifiedObject.name>EquipmentTrip_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d</cim:IdentifiedObject.name>
+    <nc:PinEquipmentTripping.Equipment rdf:resource="#_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d" />
   </nc:PinEquipmentTripping>
   <nc:PinEquipmentTripping rdf:ID="_4f2c5ad6-2adb-47fd-a4c3-e43a083527dd">
     <nc:GateInputPin.Gate rdf:resource="#_93ca77f3-221d-430b-861f-35f144d49002" />
@@ -184,8 +184,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <nc:GateInputPin.logicKind rdf:resource="https://cim4.eu/ns/nc#LogicalOperatorsKind.equals" />
     <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
     <cim:IdentifiedObject.mRID>4f2c5ad6-2adb-47fd-a4c3-e43a083527dd</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>EquipmentTrip_f769d7f9-d7d8-40db-b12b-fb</cim:IdentifiedObject.name>
-    <nc:PinEquipmentTripping.Equipment rdf:resource="#_f769d7f9-d7d8-40db-b12b-fb6fdfe5eb5c" />
+    <cim:IdentifiedObject.name>EquipmentTrip_8455f014-d0a0-4712-ad70-8275de3b2ee8</cim:IdentifiedObject.name>
+    <nc:PinEquipmentTripping.Equipment rdf:resource="#_8455f014-d0a0-4712-ad70-8275de3b2ee8" />
   </nc:PinEquipmentTripping>
   <nc:StaticPropertyRange rdf:ID="_ce3e19bd-2e06-4abf-bd35-2f3868816131">
     <cim:IdentifiedObject.mRID>ce3e19bd-2e06-4abf-bd35-2f3868816131</cim:IdentifiedObject.mRID>

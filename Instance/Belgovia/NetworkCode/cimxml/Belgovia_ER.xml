@@ -8,35 +8,30 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c">
-    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
-    <dcterms:conformsTo>https://ap.cim4.eu/EquipmentReliability/2.4</dcterms:conformsTo>
-    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/EquipmentReliability/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://cim4.eu/ns/nc/2.4#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description xml:lang="en">This is the equipment reliability dataset for Belgovia part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>886d71fa-6ca7-4be9-a55d-04c3c49c987c</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-ER"/>
     <dcat:keyword>ER</dcat:keyword>
-    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher>https://energy.referencedata.eu/test/party/Belgovia</dcterms:publisher>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:15c8a8ad-08d5-4b59-8417-db80e273bd1a"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
     <dcterms:title>20220615_Belgovia_ER_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-ER</prov:wasGeneratedBy>
-    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System</dcterms:spatial>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-ER"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
-  <nc:BiddingZone rdf:ID="_91e89a38-ca68-44c1-8ed4-a7db8e435f4f">
-    <nc:BiddingZone.isTradeEnabled>true</nc:BiddingZone.isTradeEnabled>
-    <cim:IdentifiedObject.description>BZ_BO</cim:IdentifiedObject.description>
-    <cim:IdentifiedObject.mRID>91e89a38-ca68-44c1-8ed4-a7db8e435f4f</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Bidding Zone BO</cim:IdentifiedObject.name>
-  </nc:BiddingZone>
+
   <cim:ReactiveCapabilityCurve rdf:ID="_59ff1e53-0e1a-44c0-ada5-7a0b3a660170">
     <nc:ReactiveCapabilityCurve.referenceVoltage>10</nc:ReactiveCapabilityCurve.referenceVoltage>
 	  <cim:IdentifiedObject.mRID>59ff1e53-0e1a-44c0-ada5-7a0b3a660170</cim:IdentifiedObject.mRID>
@@ -52,42 +47,48 @@
     <cim:CurveData.y1value>100</cim:CurveData.y1value>
     <cim:CurveData.Curve rdf:resource="#_59ff1e53-0e1a-44c0-ada5-7a0b3a660170"/>
   </cim:CurveData>
-  <nc:SchedulingArea rdf:ID="_349f0364-d28d-442e-abbb-c868255abc92">
-    <cim:IdentifiedObject.description>Belgovia</cim:IdentifiedObject.description>
-    <cim:IdentifiedObject.mRID>349f0364-d28d-442e-abbb-c868255abc92</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Belgovia</cim:IdentifiedObject.name>
-    <nc:SchedulingArea.BiddingZone rdf:resource="#_91e89a38-ca68-44c1-8ed4-a7db8e435f4f"/>
-    <nc:SchedulingArea.ControlArea rdf:resource="#_50487bb8-be6d-42a8-9358-cc0bbfe6cfa7"/>
-  </nc:SchedulingArea>
+
   <cim:GeneratingUnit rdf:about="#_413bbc8a-683c-7e07-4fb9-aa6ec83278e0">
     <cim:IdentifiedObject.mRID>413bbc8a-683c-7e07-4fb9-aa6ec83278e0</cim:IdentifiedObject.mRID>
     <nc:GeneratingUnit.rampLockTime>PT2H</nc:GeneratingUnit.rampLockTime>
     <nc:GeneratingUnit.maxRampDownCountPerDay>2</nc:GeneratingUnit.maxRampDownCountPerDay>
   </cim:GeneratingUnit>
 
+<!-- Definitions from CommonData -->
+  <nc:BiddingZone rdf:ID="_87fb9f56-fd86-446f-b35d-c0abba19925f">
+    <nc:BiddingZone.CapacityCalculationRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
+    <nc:BiddingZone.isTradeEnabled>true</nc:BiddingZone.isTradeEnabled>
+    <cim:IdentifiedObject.description>Bidding Zone for Belgovia. Duplicated instance definition in CommonData and ER file.</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>87fb9f56-fd86-446f-b35d-c0abba19925f</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>BZ-Belgovia</cim:IdentifiedObject.name>
+  </nc:BiddingZone>
+  <nc:SchedulingArea rdf:ID="_297f533e-77a7-42d9-a683-32babcf6c82f">
+    <cim:IdentifiedObject.description>Scheduling Area (SA) for Belgovia. Duplicated instance definition in CommonData and ER file.</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>297f533e-77a7-42d9-a683-32babcf6c82f</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>SA-Belgovia</cim:IdentifiedObject.name>
+    <nc:SchedulingArea.BiddingZone rdf:resource="#_87fb9f56-fd86-446f-b35d-c0abba19925f"/>
+    <nc:SchedulingArea.ControlArea rdf:resource="#_50487bb8-be6d-42a8-9358-cc0bbfe6cfa7"/>
+    <nc:SchedulingArea.LoadFrequencyControlArea rdf:resource="#_27bd4e95-602b-4db5-815e-e8ccf77dd1ec"/>
+    <nc:SchedulingArea.SynchronousArea rdf:resource="#_9c94e9e9-f499-4a9e-9a49-55cfa6afacd9"/>
+    <nc:SchedulingArea.SystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
+  </nc:SchedulingArea>
+
   <!-- 7.1.8.3.3 Redispatch Remedial Action - example 2 -->
   <nc:PowerShiftKeyStrategy rdf:ID="_9287b1c3-3747-47e6-8918-d82c7a0d7718">
-    <nc:PowerShiftKeyStrategy.SchedulingArea rdf:resource="#_58f0bd4b-c949-4189-8319-1a5f5bb3a1ce"/>
-    <nc:PowerShiftKeyStrategy.method rdf:resource="http://entsoe.eu/ns/nc#ShiftMethodKind.shared"/>
-    <nc:PowerShiftKeyStrategy.powerShiftKey rdf:resource="http://entsoe.eu/ns/nc#PowerShiftKeyKind.explicitDistribution"/>
+    <nc:PowerShiftKeyStrategy.SchedulingArea rdf:resource="#_297f533e-77a7-42d9-a683-32babcf6c82f"/>
+    <nc:PowerShiftKeyStrategy.method rdf:resource="https://cim4.eu/ns/nc#ShiftMethodKind.shared"/>
+    <nc:PowerShiftKeyStrategy.powerShiftKey rdf:resource="https://cim4.eu/ns/nc#PowerShiftKeyKind.explicitDistribution"/>
     <nc:PowerShiftKeyStrategy.dispatchableUnitOnly>true</nc:PowerShiftKeyStrategy.dispatchableUnitOnly>
     <nc:PowerShiftKeyStrategy.normalEnabled>false</nc:PowerShiftKeyStrategy.normalEnabled>
     <cim:IdentifiedObject.description>Power Shift Key Strategy 1</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>9287b1c3-3747-47e6-8918-d82c7a0d7718</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>PSKS1</cim:IdentifiedObject.name>
   </nc:PowerShiftKeyStrategy>
-  <nc:SchedulingArea rdf:ID="_58f0bd4b-c949-4189-8319-1a5f5bb3a1ce">
-    <nc:SchedulingArea.isMeteringGridArea>true</nc:SchedulingArea.isMeteringGridArea>
-    <nc:SchedulingArea.isIslandingEnabled>false</nc:SchedulingArea.isIslandingEnabled>
-    <nc:SchedulingArea.normalParticipationFactor>0.1</nc:SchedulingArea.normalParticipationFactor>
-    <cim:IdentifiedObject.description>Scheduling Area 1</cim:IdentifiedObject.description>
-    <cim:IdentifiedObject.mRID>58f0bd4b-c949-4189-8319-1a5f5bb3a1ce</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>SA 1</cim:IdentifiedObject.name>
-  </nc:SchedulingArea>
+
   <nc:AreaDispatchableUnit rdf:ID="_4a053fac-126a-4a13-8a74-781c11517fae">
     <nc:AreaDispatchableUnit.GeneratingUnit rdf:resource="#_413bbc8a-683c-7e07-4fb9-aa6ec83278e0"/>
     <nc:AreaDispatchableUnit.normalEnabled>true</nc:AreaDispatchableUnit.normalEnabled>
-    <nc:AreaDispatchableUnit.SchedulingArea rdf:resource="#_58f0bd4b-c949-4189-8319-1a5f5bb3a1ce"/>
+    <nc:AreaDispatchableUnit.SchedulingArea rdf:resource="#_297f533e-77a7-42d9-a683-32babcf6c82f"/>
     <cim:IdentifiedObject.description>Area Dispatchable Unit 1</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>4a053fac-126a-4a13-8a74-781c11517fae</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>ADU 1</cim:IdentifiedObject.name>
@@ -119,16 +120,16 @@
   </nc:InfeedTerminal>
   <nc:LineCircuit rdf:ID="_cef9011e-3753-453b-93bd-fb36eb3daac1">
     <cim:IdentifiedObject.mRID>cef9011e-3753-453b-93bd-fb36eb3daac1</cim:IdentifiedObject.mRID>
-    <nc:Circuit.positiveFlowIn>True</nc:Circuit.positiveFlowIn>
+    <nc:Circuit.positiveFlowIn>true</nc:Circuit.positiveFlowIn>
   </nc:LineCircuit>
   <nc:PowerTransformerCircuit rdf:ID="_c31ae69b-423d-47c0-bacc-083d64e34d4a">
     <cim:IdentifiedObject.mRID>c31ae69b-423d-47c0-bacc-083d64e34d4a</cim:IdentifiedObject.mRID>
-    <nc:Circuit.positiveFlowIn>True</nc:Circuit.positiveFlowIn>
+    <nc:Circuit.positiveFlowIn>true</nc:Circuit.positiveFlowIn>
   </nc:PowerTransformerCircuit>
-  <cim:ACLineSegment rdf:about="_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
+  <cim:ACLineSegment rdf:about="#_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
     <nc:Equipment.Circuit rdf:resource="#_cef9011e-3753-453b-93bd-fb36eb3daac1"/>
   </cim:ACLineSegment>
-  <cim:PowerTransformer rdf:about="_b94318f6-6d24-4f56-96b9-df2531ad6543">
+  <cim:PowerTransformer rdf:about="#_b94318f6-6d24-4f56-96b9-df2531ad6543">
     <nc:Equipment.Circuit rdf:resource="#_c31ae69b-423d-47c0-bacc-083d64e34d4a"/>
   </cim:PowerTransformer>
   <nc:OrdinaryPowerTransferCorridor rdf:ID="_0863ac0c-b6af-4553-a00b-cde463a8a7d4">
@@ -136,17 +137,17 @@
     <cim:IdentifiedObject.name>PTC</cim:IdentifiedObject.name>
     <nc:PowerTransferCorridor.normalEnabled>true</nc:PowerTransferCorridor.normalEnabled>
   </nc:OrdinaryPowerTransferCorridor>
-  <cim:OperationalLimitSet rdf:about="_ee1e0ee2-edf6-8968-9c4c-83fa12446800">
+  <cim:OperationalLimitSet rdf:about="#_ee1e0ee2-edf6-8968-9c4c-83fa12446800">
     <nc:OperationalLimitSet.PowerTransferCorridor rdf:resource="#_0863ac0c-b6af-4553-a00b-cde463a8a7d4"/>
     <cim:OperationalLimitSet.Terminal rdf:resource="#_131b654f-eec6-eb63-5084-3fcc46921cfe"/>
   </cim:OperationalLimitSet>
-  <nc:CircuitShare rdf:about="_09a22042-04a9-4414-8a93-a19b5702fca3">
+  <nc:CircuitShare rdf:about="#_09a22042-04a9-4414-8a93-a19b5702fca3">
     <cim:IdentifiedObject.mRID>09a22042-04a9-4414-8a93-a19b5702fca3</cim:IdentifiedObject.mRID>
     <nc:CircuitShare.Circuit rdf:resource="#_cef9011e-3753-453b-93bd-fb36eb3daac1"/>
     <nc:CircuitShare.PowerTransferCorridor rdf:resource="#_0863ac0c-b6af-4553-a00b-cde463a8a7d4"/>
     <nc:CircuitShare.normalContributionFactor>50</nc:CircuitShare.normalContributionFactor>
   </nc:CircuitShare>
-  <nc:CircuitShare rdf:about="_83a19891-4f1b-4eed-ab7d-7c9040b36df2">
+  <nc:CircuitShare rdf:about="#_83a19891-4f1b-4eed-ab7d-7c9040b36df2">
     <cim:IdentifiedObject.mRID>83a19891-4f1b-4eed-ab7d-7c9040b36df2</cim:IdentifiedObject.mRID>
     <nc:CircuitShare.Circuit rdf:resource="#_c31ae69b-423d-47c0-bacc-083d64e34d4a"/>
     <nc:CircuitShare.PowerTransferCorridor rdf:resource="#_0863ac0c-b6af-4553-a00b-cde463a8a7d4"/>

@@ -10,27 +10,28 @@
     xmlns:dcatcim="https://cim4.eu/ns/dcatcim#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507">
-    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
-    <dcterms:conformsTo>https://ap.cim4.eu/RemedialAction/2.4</dcterms:conformsTo>
-    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://cim4.eu/ns/nc/2.4#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description xml:lang="en">This is the remedial action dataset for Svedala part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>f7b94ef6-e043-4d2a-a359-2718e6e20507</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-RA"/>
     <dcat:keyword>RA</dcat:keyword>
-    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher>https://energy.referencedata.eu/test/party/Svedala</dcterms:publisher>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
+    <dcterms:requires rdf:resource="urn:uuid:e6b94ef6-e043-4d29-a258-1718d6d2f507"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
     <dcterms:title>20220615_Svedala_RA_1.0.0</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-RA</prov:wasGeneratedBy>
-    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System</dcterms:spatial>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RA"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:ContingencyWithRemedialAction rdf:ID="_cd289bed-6b17-4cb8-8554-61e1aee3453a">
@@ -92,7 +93,7 @@
     <cim:IdentifiedObject.mRID>347f4f7e-a2b6-4880-846a-8bd1effb00d5</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>CRA1</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -105,7 +106,7 @@
     <cim:IdentifiedObject.mRID>7e422768-207d-455f-976e-0b1cb2338509</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationA_quarterbar1B</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -177,7 +178,7 @@
     <cim:IdentifiedObject.mRID>fa3e3533-345a-4ef1-a46d-3ab6d251924a</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA SubstationB_2N</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://energy.referencedata.eu/test/party/Svedala"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -513,7 +514,7 @@
     <cim:IdentifiedObject.mRID>6d2c8901-d068-4d22-8ce9-7379644b4f17</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Topology RA one Switch</cim:IdentifiedObject.name>
     <nc:RemedialAction.AppointedToRegion rdf:resource="#_56d81c91-4fb8-47a2-9d7c-baa13dedd605"/>
-    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="https://data.europa.eu/energy/EIC/TSOA------Q"/>
+    <nc:RemedialAction.RemedialActionSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.preventive"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
@@ -596,8 +597,8 @@
     <nc:StaticPropertyRange.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:RangeConstraint.normalValue>1</nc:RangeConstraint.normalValue>
   </nc:StaticPropertyRange> 
-  <nc:StageTrigger rdf:ID="_958419bd-309d-4946-bf90-b4ce1819b3c7">
-    <cim:IdentifiedObject.mRID>958419bd-309d-4946-bf90-b4ce1819b3c7</cim:IdentifiedObject.mRID>
+  <nc:StageTrigger rdf:ID="_b6617e31-c8f1-4e44-b157-d630948695f1">
+    <cim:IdentifiedObject.mRID>b6617e31-c8f1-4e44-b157-d630948695f1</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Current flow through the line CL6 is higher than TATL</cim:IdentifiedObject.name>
     <nc:StageTrigger.GateTrigger rdf:resource="#_068d8431-c5b8-4908-8af0-9642779347c0"/> <!-- I used the same gate as for RemedialActionScheme arming and Stage 1 because multiple GateTriggers and RemedialActionSchemes can refer to one Gate -->
     <nc:StageTrigger.Stage rdf:resource="#_2f60b546-dfcf-4e0c-b0d6-40264de45cbd" />

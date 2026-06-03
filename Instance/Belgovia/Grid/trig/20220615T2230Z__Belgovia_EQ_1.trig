@@ -2554,11 +2554,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:TransformerEnd.Terminal     <urn:uuid:76e9ca77-f805-40ea-8120-5a6d58416d34>;
             cim:TransformerEnd.endNumber    1 .
     
-    <urn:uuid:7bf89875-1476-4d1a-a56d-a2965cce3575>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "7bf89875-1476-4d1a-a56d-a2965cce3575";
-            cim:IdentifiedObject.name  "Belgovia" .
-    
     <urn:uuid:64c8809a-17c4-16f9-0b28-439c0535c884>
             rdf:type  cim:NonlinearShuntCompensatorPoint;
             cim:NonlinearShuntCompensatorPoint.NonlinearShuntCompensator

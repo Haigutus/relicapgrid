@@ -77,13 +77,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:de29a7aa-989c-4c0c-9cea-807b38fd533a>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/Contingency/2.3" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is an example of Svedala's exporting contingency dataset (i.e. defining external contingencies) of the neighbour Belgovia."@en;
             dct:identifier        "de29a7aa-989c-4c0c-9cea-807b38fd533a";
             dct:issued            "2025-05-20T18:00:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/Test/Party/Svedala";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/Test/Party/Svedala>;
             dct:requires          <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
@@ -95,7 +95,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2025-05-20T18:00:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2025-05-15T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/IGMx-CO" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/IGMx-CO> .
     
     <urn:uuid:7ec56068-a714-4445-ae19-dd34429ec722>
             rdf:type                   cim:ContingencyEquipment;

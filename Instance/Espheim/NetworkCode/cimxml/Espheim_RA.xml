@@ -8,27 +8,28 @@
     xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12">
-    <dcterms:accessRights>https://energy.referencedata.eu/Confidentiality/Public</dcterms:accessRights>
-    <dcterms:conformsTo>https://ap.cim4.eu/RemedialAction/2.4</dcterms:conformsTo>
-    <dcterms:conformsTo>https://cim4.eu/ns/nc/2.4#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/CIM100#</dcterms:conformsTo>
-    <dcterms:conformsTo>http://iec.ch/TC57/2013/CIM-schema-cim16#</dcterms:conformsTo>
+    <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
+    <dcterms:conformsTo rdf:resource="https://cim4.eu/ns/nc/2.4#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
+    <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description xml:lang="en">This is the remedial action dataset for Espheim part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>2149e514-b933-4d45-94e1-1129bd7baf12</dcterms:identifier>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-RA"/>
     <dcat:keyword>RA</dcat:keyword>
-    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-    <dcterms:publisher>https://energy.referencedata.eu/test/party/Espheim</dcterms:publisher>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Espheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
     <dcterms:requires rdf:resource="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965"/>
+    <dcterms:requires rdf:resource="urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
     <dcterms:title>20220615_Espheim_RA_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <prov:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-RA</prov:wasGeneratedBy>
-    <dcterms:spatial>https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System</dcterms:spatial>
+    <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RA"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:ContingencyWithRemedialAction rdf:ID="_d49b72bc-7677-4e4c-949a-0b4c40a8c62b">
@@ -78,6 +79,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_d856a2a2-3de4-4a7b-aea4-d363c13d9014">
     <cim:IdentifiedObject.description>This is an example of Curative RA: TopologyAction (generator trip)</cim:IdentifiedObject.description>
@@ -87,6 +89,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_fb487cc2-0f7b-4958-8f66-1d3fabf7840d">
     <cim:IdentifiedObject.description>This is an example of Curative RA: TopologyAction (transformer trip)</cim:IdentifiedObject.description>
@@ -96,6 +99,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_5898c268-9b32-4ab5-9cfc-64546135a337">
     <cim:IdentifiedObject.description>This is an example. Curative RA: TapPositionAction on PST (Tap position = 6). TapChangerID: f6e8823f-d431-6fc7-37cf-b7a0d80035dd</cim:IdentifiedObject.description>
@@ -125,6 +129,7 @@
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
+    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <nc:GridStateAlterationRemedialAction rdf:ID="_1fd630a9-b9d8-414b-ac84-b47a093af936">
     <cim:IdentifiedObject.description>This is an example Curative RA: TopologyAction (wind generator trip)</cim:IdentifiedObject.description>
