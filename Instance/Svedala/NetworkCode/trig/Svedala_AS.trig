@@ -51,7 +51,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:keyword             "AS";
             dcat:startDate           "2024-12-03T10:00:00Z"^^xsd:dateTime;
             dcat:version             "1.0.0";
-            prov:wasGeneratedAtTime  "2024-12-03T10:00:00Z";
+            prov:generatedAtTime     "2024-12-03T10:00:00Z"^^xsd:dateTime;
             prov:wasGeneratedBy      <https://energy.referencedata.eu/Activity/OPC-AS> .
     
     <urn:uuid:0d4d4078-f3ad-409d-8882-73dafef11b80>
