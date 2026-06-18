@@ -171,7 +171,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dct:conformsTo           <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
             dct:description          "The steady-state hypothesis dataset for Portheim, updated by Jotunheim.";
             dct:identifier           "7aeb7915-d4c6-4b43-80e9-386556516d9b";
-            dct:issued               "2026-04-29"^^xsd:date;
+            dct:issued               "2026-04-29T00:00:00Z"^^xsd:dateTime;
             dct:requires             <urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f>;
             dct:temporal             [ rdf:type        dct:PeriodOfTime;
                                        dcat:endDate    "2024-12-23T07:42:14Z"^^xsd:dateTime;
