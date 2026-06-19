@@ -125,7 +125,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "Portheim-Espheim Voltage Level 400kV in the Boundary Substation, this instance appears in two EQ files and in the Boundary.";
             cim:IdentifiedObject.mRID      "0c4f41f8-9797-44eb-bdbe-1a28efa083b9";
             cim:IdentifiedObject.name      "Portheim-Espheim Voltage Level 400kV";
-            cim:VoltageLevel.BaseVoltage   <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+            cim:VoltageLevel.BaseVoltage   <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:VoltageLevel.Substation    <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c>;
             eu:IdentifiedObject.shortName  "PH-EH-400kV" .
     
