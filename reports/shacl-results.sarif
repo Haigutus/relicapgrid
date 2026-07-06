@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "shacl-validator",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://github.com/Haigutus/relicapgrid",
+          "rules": [
+            {
+              "id": "OperationalLimitSet.OperationalLimitValue-cardinality",
+              "name": "OperationalLimitSet.OperationalLimitValue-cardinality",
+              "shortDescription": {
+                "text": "SHACL constraint violation (OperationalLimitSet.OperationalLimitValue-cardinality)."
+              },
+              "fullDescription": {
+                "text": "SHACL validation failed for rule OperationalLimitSet.OperationalLimitValue-cardinality."
+              },
+              "helpUri": "https://www.w3.org/TR/shacl/",
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "MinCountConstraintComponent",
+              "name": "MinCountConstraintComponent",
+              "shortDescription": {
+                "text": "SHACL constraint violation (MinCountConstraintComponent)."
+              },
+              "fullDescription": {
+                "text": "SHACL validation failed for rule MinCountConstraintComponent."
+              },
+              "helpUri": "https://www.w3.org/TR/shacl/",
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "OperationalLimitSet.OperationalLimitValue-cardinality",
+          "level": "error",
+          "message": {
+            "text": "Technical Error: Entity is referenced by 0 objects via OperationalLimit.OperationalLimitSet, minimum required is 1. Focus node: 89de3c44-8a85-3cb9-6d7c-af2339a5a047, Path: OperationalLimit.OperationalLimitSet"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/Svedala/NetworkCode/cimxml/Svedala_ER.xml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "24c4050c4873:1"
+          },
+          "properties": {
+            "focusNode": "89de3c44-8a85-3cb9-6d7c-af2339a5a047",
+            "resultPath": "OperationalLimit.OperationalLimitSet",
+            "resultValue": null,
+            "sourceShape": "https://ap-con.cim4.eu/EquipmentReliability-Simple/2.4#OperationalLimitSet.OperationalLimitValue-cardinality",
+            "sourceConstraintComponent": null,
+            "resultSeverity": "Violation",
+            "resultMessages": [
+              "Technical Error: Entity is referenced by 0 objects via OperationalLimit.OperationalLimitSet, minimum required is 1",
+              "Cardinality violation. Lower bound shall be 1",
+              "Description: This constraint validates the cardinality of the association at the inverse direction."
+            ]
+          },
+          "ruleIndex": 0
+        },
+        {
+          "ruleId": "OperationalLimitSet.OperationalLimitValue-cardinality",
+          "level": "error",
+          "message": {
+            "text": "Technical Error: Entity is referenced by 0 objects via OperationalLimit.OperationalLimitSet, minimum required is 1. Focus node: f11220b0-3c3c-cc6a-105c-8ffd33f5a790, Path: OperationalLimit.OperationalLimitSet"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/Svedala/NetworkCode/cimxml/Svedala_ER.xml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "61e5ea26c778:1"
+          },
+          "properties": {
+            "focusNode": "f11220b0-3c3c-cc6a-105c-8ffd33f5a790",
+            "resultPath": "OperationalLimit.OperationalLimitSet",
+            "resultValue": null,
+            "sourceShape": "https://ap-con.cim4.eu/EquipmentReliability-Simple/2.4#OperationalLimitSet.OperationalLimitValue-cardinality",
+            "sourceConstraintComponent": null,
+            "resultSeverity": "Violation",
+            "resultMessages": [
+              "Technical Error: Entity is referenced by 0 objects via OperationalLimit.OperationalLimitSet, minimum required is 1",
+              "Cardinality violation. Lower bound shall be 1",
+              "Description: This constraint validates the cardinality of the association at the inverse direction."
+            ]
+          },
+          "ruleIndex": 0
+        },
+        {
+          "ruleId": "MinCountConstraintComponent",
+          "level": "error",
+          "message": {
+            "text": "Technical Error: Property OperationalLimitSet.Terminal has 0 values, minimum required is 1. Focus node: 89de3c44-8a85-3cb9-6d7c-af2339a5a047, Path: OperationalLimitSet.Terminal"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/Svedala/NetworkCode/cimxml/Svedala_ER.xml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1d6999af8bf3:1"
+          },
+          "properties": {
+            "focusNode": "89de3c44-8a85-3cb9-6d7c-af2339a5a047",
+            "resultPath": "OperationalLimitSet.Terminal",
+            "resultValue": null,
+            "sourceShape": "https://ap-con.cim4.eu/EquipmentReliability-Simple/2.4#OperationalLimitSet.Terminal-cardinality",
+            "sourceConstraintComponent": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+            "resultSeverity": "Violation",
+            "resultMessages": [
+              "Technical Error: Property OperationalLimitSet.Terminal has 0 values, minimum required is 1",
+              "Association with cardinality violation at the used direction.",
+              "Description: This constraint validates the cardinality of the association at the used direction."
+            ]
+          },
+          "ruleIndex": 1
+        },
+        {
+          "ruleId": "MinCountConstraintComponent",
+          "level": "error",
+          "message": {
+            "text": "Technical Error: Property OperationalLimitSet.Terminal has 0 values, minimum required is 1. Focus node: f11220b0-3c3c-cc6a-105c-8ffd33f5a790, Path: OperationalLimitSet.Terminal"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/Svedala/NetworkCode/cimxml/Svedala_ER.xml",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "a94b7ae53a2c:1"
+          },
+          "properties": {
+            "focusNode": "f11220b0-3c3c-cc6a-105c-8ffd33f5a790",
+            "resultPath": "OperationalLimitSet.Terminal",
+            "resultValue": null,
+            "sourceShape": "https://ap-con.cim4.eu/EquipmentReliability-Simple/2.4#OperationalLimitSet.Terminal-cardinality",
+            "sourceConstraintComponent": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+            "resultSeverity": "Violation",
+            "resultMessages": [
+              "Technical Error: Property OperationalLimitSet.Terminal has 0 values, minimum required is 1",
+              "Association with cardinality violation at the used direction.",
+              "Description: This constraint validates the cardinality of the association at the used direction."
+            ]
+          },
+          "ruleIndex": 1
+        }
+      ]
+    }
+  ]
+}

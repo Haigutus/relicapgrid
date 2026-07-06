@@ -1,0 +1,32 @@
+name: SHACL SARIF POC
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [dlr-usecase]
+    paths:
+      - reports/sample_shacl_report.rdf
+      - reports/shacl-results.sarif
+      - buildScripts/shacl_report_to_sarif.py
+      - .github/workflows/shacl_sarif_poc.yml
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  upload-shacl-sarif:
+    name: Upload SHACL results to code scanning
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate SARIF from sample SHACL report
+        run: python buildScripts/shacl_report_to_sarif.py
+
+      - name: Upload SHACL SARIF results
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: reports/shacl-results.sarif
+          category: shacl-validation
+          tool_name: shacl-validator
