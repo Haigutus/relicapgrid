@@ -3,7 +3,7 @@ name: SHACL SARIF POC
 on:
   workflow_dispatch:
   push:
-    branches: [dlr-usecase]
+    branches: [shacl-sarif-poc]
     paths:
       - reports/sample_shacl_report.rdf
       - reports/shacl-results.sarif
