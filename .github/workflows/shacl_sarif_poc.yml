@@ -29,4 +29,3 @@ jobs:
         with:
           sarif_file: reports/shacl-results.sarif
           category: shacl-validation
-          tool_name: shacl-validator
