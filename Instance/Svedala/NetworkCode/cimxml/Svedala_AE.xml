@@ -41,6 +41,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>662cc3bd-25bf-4b7f-96e9-eab3bec328f7</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE2</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_65174269-44fb-44ae-9d3e-f743176c4bcb">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -51,6 +52,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>65174269-44fb-44ae-9d3e-f743176c4bcb</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE1</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_07c95f06-f154-4e3a-a359-2829e6e21618">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -61,6 +63,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>07c95f06-f154-4e3a-a359-2829e6e21618</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE4</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_05675c5e-985b-4859-a774-f7e371623b87">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -71,6 +74,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>05675c5e-985b-4859-a774-f7e371623b87</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE5</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_2cb8db8c-faa6-42a2-9949-56ea98dc4a24">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -80,6 +84,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>2cb8db8c-faa6-42a2-9949-56ea98dc4a24</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE6</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_53aec823-9237-4625-bd68-c5a5b2925384">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -90,6 +95,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>53aec823-9237-4625-bd68-c5a5b2925384</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE7</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_808b9ea1-bf10-448d-b03a-822ce473dbbb">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -100,6 +106,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>808b9ea1-bf10-448d-b03a-822ce473dbbb</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE3</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_614648d2-457e-4d67-838b-821102ce16ee">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -110,6 +117,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>614648d2-457e-4d67-838b-821102ce16ee</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE8</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElement rdf:ID="_57246b44-8564-4b4d-b74a-759c7733bd2a">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_b9fbb881-573b-4e98-9b7b-31f00a45ebe0"/>
@@ -120,6 +128,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>57246b44-8564-4b4d-b74a-759c7733bd2a</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE10</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <!---Example of Assessed Element (XNE) that can only be solved with a specific Curative Remedial Action -->
   <nc:AssessedElement rdf:ID="_bde1ef4b-58f2-4a6d-8102-f6e3898d0931">
@@ -132,6 +141,7 @@
     <cim:IdentifiedObject.description>This is an example of Assessed Element (XNE) that can only be solved with a specific Curative Remedial Action.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>bde1ef4b-58f2-4a6d-8102-f6e3898d0931</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE11_Exclusive_CRA</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElementWithRemedialAction rdf:ID="_abb23ba4-0fb8-46cf-8bac-aaec71c1c9aa">
     <nc:AssessedElementWithRemedialAction.AssessedElement rdf:resource="#_bde1ef4b-58f2-4a6d-8102-f6e3898d0931"/>
