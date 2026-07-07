@@ -29,12 +29,10 @@ SSI: No `nc:ContingencyWithRemedialAction.enabled` found in any SSI file.
 
 | Name / mRID | File | Linked Contingency | Linked RemedialAction | normalEnabled | SIS | SSI |
 |---|---|---|---|---|---|---|
-| `_87714f02` | `Belgovia_RA.xml` | `_37997e71` | RA18 CountertradeRA `_30f6377d` | *not set* | N/A | N/A |
-| `_112c79d2` | `Belgovia_RA.xml` | `_7e31c67d` | TapRA2 GSAltRA `_5e5ff13e` | *not set* | N/A | N/A |
-| `_5c7acbe4` | `Belgovia_RA.xml` | `_e9eab3fe` | shunt RA GSAltRA `_7acbe48a` | *not set* | N/A | N/A |
-| `_e3512f27` | `Galia_RA.xml` | `_bd7bb012` | RA15 GSAltRA `_f4d57bc2` | *not set* | N/A | N/A |
-
-> None of the 4 CWRA instances carry `nc:ContingencyWithRemedialAction.normalEnabled`.
+| `_87714f02` | `Belgovia_RA.xml` | `_37997e71` | RA18 CountertradeRA `_30f6377d` | **true** | N/A | N/A |
+| `_112c79d2` | `Belgovia_RA.xml` | `_7e31c67d` | TapRA2 GSAltRA `_5e5ff13e` | **true** | N/A | N/A |
+| `_5c7acbe4` | `Belgovia_RA.xml` | `_e9eab3fe` | shunt RA GSAltRA `_7acbe48a` | **true** | N/A | N/A |
+| `_e3512f27` | `Galia_RA.xml` | `_bd7bb012` | RA15 GSAltRA `_f4d57bc2` | **true** | N/A | N/A |
 
 ---
 
@@ -171,7 +169,7 @@ No SIS schedule entries and no SSI entries found linking to this RA.
 
 | Class | Total instances | normalAvailable / normalEnabled values | SIS entries | SSI entries |
 |---|---|---|---|---|
-| `nc:ContingencyWithRemedialAction` | 4 | *not set* on any instance | None | None |
+| `nc:ContingencyWithRemedialAction` | 4 | all `true` | None | None |
 | `nc:GridStateAlterationRemedialAction` | 24 | all `true` | 2 RAs have SIS data via child actions | 2 RAs have SSI data via child actions |
 | `nc:SchemeRemedialAction` | 1 | `true` | None | None |
 | `nc:RedispatchRemedialAction` | 2 | all `true` | PowerBidSchedule link exists but no enabled flag | None (no Belgovia SSI) |
