@@ -29,6 +29,7 @@ List of the people and organisations contributing to this repository.
 - [@tviegut](https://github.com/viegut) - AspenTech
 - [@fmalicevicdigsilent](https://github.com/fmalicevicdigsilent) - DIgSILENT
 - [@LarsTruelsenEnerginet](https://github.com/LarsTruelsenEnerginet) and [@Holdersen](https://github.com/Holdersen) - Energinet
+- [@VladimirAlexiev] - Graphwise (Ontotext)
 - [@griddigit-ci](https://github.com/griddigit-ci), [@Decodre](https://github.com/Decodre), [@benceszirbik](https://github.com/benceszirbik), [@benedekfodor](https://github.com/benedekfodor) - gridDigIt
 - [@jakubscg](https://github.com/jakubscg) - PSE
 - [@pweaver-rte](https://github.com/pweaver-rte) - RTE
