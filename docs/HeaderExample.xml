@@ -55,15 +55,11 @@
 		<dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
 		<dcat:version>1.0.0</dcat:version>
 		<adms:versionNotes xml:lang ="en">This is the first version.</adms:versionNotes>
-		<!-- prov:wasGeneratedBy and prov:generatedAtTime belongs ot he distribution and not the dataset. 
-		it is therefor tagged as "Deprecated". The plan is to include it in the manifest. -->
+		<!-- prov:wasGeneratedBy and prov:generatedAtTime belongs to the distribution and not the dataset. 
+		it is therefor tagged as "Deprecated". The plan is to include it in the manifest. 
+		we keep prov:generatedAtTime until we have the Provenance profile. -->
 		<prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Action/CGM-RA"/>
 		<prov:generatedAtTime>2024-04-08T05:00:00Z</prov:generatedAtTime>
-		<!-- Deprecated - the plan is to include them in a provenance profile -->
-		<eumd:applicationSoftware>BestPowerFlow Application v2.4.2</eumd:applicationSoftware>
-		<dcterms:source rdf:resource="urn:uuid:1faa6263-d57d-40df-a08b-6d88d2be18d7"/>
-		<dcterms:source rdf:resource="urn:uuid:3aa6e138-fb6e-4c5f-b78f-fad993db2526"/>
-		<eumd:usedSettings rdf:resource="https://energy.referencedata.eu/PowerFlowSettings/IGM-Convergence"/>
-		<eumd:usedSettings rdf:resource="https://energy.referencedata.eu/PowerFlowSettings/CGM-Releax-1"/>
+
 	</dcat:Dataset>
 </rdf:RDF>
