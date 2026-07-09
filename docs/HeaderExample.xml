@@ -55,6 +55,11 @@
 		<dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
 		<dcat:version>1.0.0</dcat:version>
 		<adms:versionNotes xml:lang ="en">This is the first version.</adms:versionNotes>
-	
+		<!-- prov:wasGeneratedBy and prov:generatedAtTime belongs to the distribution and not the dataset. 
+		it is therefor tagged as "Deprecated". The plan is to include it in the manifest. 
+		we keep prov:generatedAtTime until we have the Provenance profile. -->
+		<prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Action/CGM-RA"/>
+		<prov:generatedAtTime>2024-04-08T05:00:00Z</prov:generatedAtTime>
+
 	</dcat:Dataset>
 </rdf:RDF>
