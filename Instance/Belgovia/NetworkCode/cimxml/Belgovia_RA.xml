@@ -37,18 +37,21 @@
     <nc:ContingencyWithRemedialAction.RemedialAction rdf:resource="#_30f6377d-5e35-4dd0-a53d-c1992043855e"/>
     <nc:ContingencyWithRemedialAction.combinationConstraintKind rdf:resource="https://cim4.eu/ns/nc#ElementCombinationConstraintKind.included"/>
     <nc:ContingencyWithRemedialAction.mRID>87714f02-507a-4d20-8a6e-186bb23ae0d3</nc:ContingencyWithRemedialAction.mRID>
+    <nc:ContingencyWithRemedialAction.normalEnabled>true</nc:ContingencyWithRemedialAction.normalEnabled>
   </nc:ContingencyWithRemedialAction>
   <nc:ContingencyWithRemedialAction rdf:ID="_112c79d2-0739-480f-83c7-6d9ebc9bcb0c">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_7e31c67d-67ba-4592-8ac1-9e806d697c8e"/>
     <nc:ContingencyWithRemedialAction.RemedialAction rdf:resource="#_5e5ff13e-2043-4468-9351-01920d3d9504"/>
     <nc:ContingencyWithRemedialAction.combinationConstraintKind rdf:resource="https://cim4.eu/ns/nc#ElementCombinationConstraintKind.included"/>
     <nc:ContingencyWithRemedialAction.mRID>112c79d2-0739-480f-83c7-6d9ebc9bcb0c</nc:ContingencyWithRemedialAction.mRID>
+    <nc:ContingencyWithRemedialAction.normalEnabled>true</nc:ContingencyWithRemedialAction.normalEnabled>
   </nc:ContingencyWithRemedialAction>
   <nc:ContingencyWithRemedialAction rdf:ID="_5c7acbe4-4bbe-4609-b79f-2e87778424c5">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_e9eab3fe-c328-4f78-9bc1-77adb59f6ba7"/>
     <nc:ContingencyWithRemedialAction.RemedialAction rdf:resource="#_7acbe48a-bd54-4cd7-af2e-87768357c559"/>
     <nc:ContingencyWithRemedialAction.combinationConstraintKind rdf:resource="https://cim4.eu/ns/nc#ElementCombinationConstraintKind.included"/>
     <nc:ContingencyWithRemedialAction.mRID>5c7acbe4-4bbe-4609-b79f-2e87778424c5</nc:ContingencyWithRemedialAction.mRID>
+    <nc:ContingencyWithRemedialAction.normalEnabled>true</nc:ContingencyWithRemedialAction.normalEnabled>
   </nc:ContingencyWithRemedialAction>
   <nc:CountertradeRemedialAction rdf:ID="_30f6377d-5e35-4dd0-a53d-c1992043855e">
     <nc:CountertradeRemedialAction.powerShiftKey rdf:resource="https://cim4.eu/ns/nc#GLSKStrategyKind.generatorPmax"/>

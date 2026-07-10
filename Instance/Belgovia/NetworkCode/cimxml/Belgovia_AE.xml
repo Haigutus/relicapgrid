@@ -41,6 +41,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>d463cbba-c89c-4199-bbb9-1a33d90cae2c</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE2</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
     <!-- Scanned Assessed Element example  -->
     <!-- Exclude Assessed Element example  -->
@@ -65,6 +66,7 @@
     <cim:IdentifiedObject.description>This is an example of assessed element.</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>3686af46-791f-4893-9ada-42324e138115</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>AE4</cim:IdentifiedObject.name>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <!-- Secured Assessed Element example  -->
   <!-- Assessed Element with Contingency – Scenario 2. Limited exclusion  -->
@@ -142,6 +144,7 @@
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
     <nc:AssessedElement.isCombinableWithRemedialAction>false</nc:AssessedElement.isCombinableWithRemedialAction>
     <nc:AssessedElement.inBaseCase>true</nc:AssessedElement.inBaseCase>
+    <nc:AssessedElement.normalEnabled>true</nc:AssessedElement.normalEnabled>
   </nc:AssessedElement>
   <nc:AssessedElementWithRemedialAction rdf:ID="_66f786ce-5e2a-427d-9eb8-4e1462045c27">
     <nc:AssessedElementWithRemedialAction.mRID>66f786ce-5e2a-427d-9eb8-4e1462045c27</nc:AssessedElementWithRemedialAction.mRID>
