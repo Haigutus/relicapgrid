@@ -5,8 +5,9 @@
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+    xmlns:dcatcim="https://cim4.eu/ns/dcatcim#"
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/ObjectRegistry/2.2"/>
@@ -30,6 +31,14 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-OR"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
+    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-OR"/>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
+    <dcterms:hasPart rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
+    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
+    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18"/>
+    <dcterms:references rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Espheim OR dataset.</adms:versionNotes>
   </dcat:Dataset>
 
   <cim:IdentifiedObject rdf:about="#_0b23d814-7559-4edf-8c55-40af585209e6">

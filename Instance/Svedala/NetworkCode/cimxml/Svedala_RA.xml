@@ -3,12 +3,11 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:dcatcim="https://cim4.eu/ns/dcatcim#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+    xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
@@ -33,6 +32,14 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RA"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
+    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-RA"/>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
+    <dcterms:hasPart rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
+    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
+    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
+    <dcterms:references rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Svedala RA dataset.</adms:versionNotes>
   </dcat:Dataset>
   <nc:ContingencyWithRemedialAction rdf:ID="_cd289bed-6b17-4cb8-8554-61e1aee3453a">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_e05bbe20-9d4a-40da-9777-8424d216785d"/>
@@ -579,18 +586,18 @@
   </nc:Stage>
   <nc:GridStateAlterationCollection rdf:ID="_332b7627-e0ad-4bd5-a678-aebb305727a6">
     <cim:IdentifiedObject.mRID>332b7627-e0ad-4bd5-a678-aebb305727a6</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G1</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Disconnect generator HÃ„LLAN_G1</cim:IdentifiedObject.name>
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_e2a19b7e-6d21-4987-b138-f746bba325e6">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_332b7627-e0ad-4bd5-a678-aebb305727a6" />
     <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>e2a19b7e-6d21-4987-b138-f746bba325e6</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_ecc7d452-3cc6-4a6f-ac55-cfc80f3aac53" />
   </nc:TopologyAction>
   <nc:StaticPropertyRange rdf:ID="_5d65b3b1-1c66-4045-8d6b-0accc85043ed">
     <cim:IdentifiedObject.mRID>5d65b3b1-1c66-4045-8d6b-0accc85043ed</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_e2a19b7e-6d21-4987-b138-f746bba325e6"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
@@ -615,18 +622,18 @@
   </nc:Stage>
   <nc:GridStateAlterationCollection rdf:ID="_124a56f0-22cc-47b0-a9ab-219641b76e25">
     <cim:IdentifiedObject.mRID>124a56f0-22cc-47b0-a9ab-219641b76e25</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G3</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Disconnect generator HÃ„LLAN_G3</cim:IdentifiedObject.name>
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_d101c17c-c67a-4a33-b8ad-aaee4ca6563e">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_124a56f0-22cc-47b0-a9ab-219641b76e25" />
     <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>d101c17c-c67a-4a33-b8ad-aaee4ca6563e</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G3 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G3 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_dafeb217-8a10-4068-b88a-2e884a2bdc32" />
   </nc:TopologyAction>
   <nc:StaticPropertyRange rdf:ID="_fe2f9b5c-7a78-4f3d-983a-d9602f9e5fe7">
     <cim:IdentifiedObject.mRID>fe2f9b5c-7a78-4f3d-983a-d9602f9e5fe7</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G3 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G3 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_d101c17c-c67a-4a33-b8ad-aaee4ca6563e"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
@@ -651,18 +658,18 @@
   </nc:Stage>
   <nc:GridStateAlterationCollection rdf:ID="_b7a0d8df-2809-4bd3-952c-474ba032aa46">
     <cim:IdentifiedObject.mRID>b7a0d8df-2809-4bd3-952c-474ba032aa46</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to 0 MW</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Set generator HÃ„LLAN_G3 power to 0 MW</cim:IdentifiedObject.name>
   </nc:GridStateAlterationCollection>
   <nc:RotatingMachineAction rdf:ID="_884fd5ca-afa6-4b5b-a0f7-2daee3f1959f">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_b7a0d8df-2809-4bd3-952c-474ba032aa46" />
     <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
     <cim:IdentifiedObject.mRID>884fd5ca-afa6-4b5b-a0f7-2daee3f1959f</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Set generator HÃ„LLAN_G3 power to Pmin</cim:IdentifiedObject.name>
     <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_2a35657f-a1a8-45dc-911e-e71535b35d87" />
   </nc:RotatingMachineAction>
   <nc:StaticPropertyRange rdf:ID="_f4d38a37-bb34-477b-aba3-b68c934077b5">
     <cim:IdentifiedObject.mRID>f4d38a37-bb34-477b-aba3-b68c934077b5</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin = 10 MW</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Set generator HÃ„LLAN_G3 power to Pmin = 10 MW</cim:IdentifiedObject.name>
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_884fd5ca-afa6-4b5b-a0f7-2daee3f1959f"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
@@ -778,18 +785,18 @@
   </nc:Stage>
   <nc:GridStateAlterationCollection rdf:ID="_02a420c3-dcc2-413e-9f7d-a4997c42e155">
     <cim:IdentifiedObject.mRID>02a420c3-dcc2-413e-9f7d-a4997c42e155</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Set generator HÃ„LLAN_G3 power to Pmin</cim:IdentifiedObject.name>
   </nc:GridStateAlterationCollection>
   <nc:RotatingMachineAction rdf:ID="_8e60eea4-9c86-4e9d-8012-6645d5efb96d">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_02a420c3-dcc2-413e-9f7d-a4997c42e155" />
     <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/RotatingMachine.p" />
     <cim:IdentifiedObject.mRID>8e60eea4-9c86-4e9d-8012-6645d5efb96d</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Set generator HÃ„LLAN_G3 power to Pmin</cim:IdentifiedObject.name>
     <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_2a35657f-a1a8-45dc-911e-e71535b35d87" />
   </nc:RotatingMachineAction>
   <nc:StaticPropertyRange rdf:ID="_3997ac30-8d9f-432c-9a38-db6a465be999">
     <cim:IdentifiedObject.mRID>3997ac30-8d9f-432c-9a38-db6a465be999</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Set generator HÄLLAN_G3 power to Pmin = 10 MW</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Set generator HÃ„LLAN_G3 power to Pmin = 10 MW</cim:IdentifiedObject.name>
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_8e60eea4-9c86-4e9d-8012-6645d5efb96d"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
@@ -814,18 +821,18 @@
   </nc:Stage>
   <nc:GridStateAlterationCollection rdf:ID="_12097f09-e5cc-4fdc-98eb-0675d0f2af11">
     <cim:IdentifiedObject.mRID>12097f09-e5cc-4fdc-98eb-0675d0f2af11</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G1</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Disconnect generator HÃ„LLAN_G1</cim:IdentifiedObject.name>
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_0bec00cd-cf46-40d8-931a-efb35bc417af">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_12097f09-e5cc-4fdc-98eb-0675d0f2af11" />
     <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>0bec00cd-cf46-40d8-931a-efb35bc417af</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_ecc7d452-3cc6-4a6f-ac55-cfc80f3aac53" />
   </nc:TopologyAction>
   <nc:StaticPropertyRange rdf:ID="_d84509e2-2d21-4c03-9d3e-941e3777d4d6">
     <cim:IdentifiedObject.mRID>d84509e2-2d21-4c03-9d3e-941e3777d4d6</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G1 breaker CT72_G1-S OPEN</cim:IdentifiedObject.name>
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_0bec00cd-cf46-40d8-931a-efb35bc417af"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>
@@ -865,18 +872,18 @@
   </nc:Stage>
   <nc:GridStateAlterationCollection rdf:ID="_ea6979c2-2ad4-484a-9f41-bec157a0eedd">
     <cim:IdentifiedObject.mRID>ea6979c2-2ad4-484a-9f41-bec157a0eedd</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Disconnect generator HÄLLAN_G3</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Disconnect generator HÃ„LLAN_G3</cim:IdentifiedObject.name>
   </nc:GridStateAlterationCollection>
   <nc:TopologyAction rdf:ID="_0725050a-0ece-49d0-8822-f5e0c8fb99c9">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_ea6979c2-2ad4-484a-9f41-bec157a0eedd" />
     <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open" />
     <cim:IdentifiedObject.mRID>0725050a-0ece-49d0-8822-f5e0c8fb99c9</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G1 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
     <nc:TopologyAction.Switch rdf:resource="#_dafeb217-8a10-4068-b88a-2e884a2bdc32" />
   </nc:TopologyAction>
   <nc:StaticPropertyRange rdf:ID="_34676da6-a62d-4f41-b9bc-0a7e3d95efe7">
     <cim:IdentifiedObject.mRID>34676da6-a62d-4f41-b9bc-0a7e3d95efe7</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Generator HÄLLAN_G1 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.name>Generator HÃ„LLAN_G1 breaker CT72_G3-S OPEN</cim:IdentifiedObject.name>
     <nc:RangeConstraint.GridStateAlteration rdf:resource="#_0725050a-0ece-49d0-8822-f5e0c8fb99c9"/>
     <nc:RangeConstraint.direction rdf:resource="https://cim4.eu/ns/nc#RelativeDirectionKind.none"/>
     <nc:RangeConstraint.valueKind rdf:resource="https://cim4.eu/ns/nc#ValueOffsetKind.absolute"/>

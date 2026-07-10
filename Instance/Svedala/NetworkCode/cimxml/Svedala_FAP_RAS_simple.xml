@@ -3,7 +3,6 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:prov="http://www.w3.org/ns/prov#"
@@ -35,6 +34,14 @@
     <prov:wasAssociatedWith rdf:resource="https://energy.referencedata.eu/CGM/SoftwareAgent/3f4ed5cb-b627-4922-b9ea-19ba419a1c7a"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:issued>2025-06-15T22:30:00Z</dcterms:issued>
+    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Svedala-RAS-FAP"/>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
+    <dcterms:hasPart rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
+    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
+    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:aa129d49-f7af-4b87-942d-aa1e8e4e14a5"/>
+    <dcterms:references rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Svedala FAP RAS dataset.</adms:versionNotes>
   </dcat:Dataset>
 
    <nc:RemedialActionSchedule rdf:ID="_24fb6a23-3bb3-4e27-9488-597957c10bdc">
