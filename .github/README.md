@@ -132,7 +132,7 @@ This section provides definitions for the technical abbreviations used throughou
 
 #### Organizations & Standards
 * **ENTSO-E**: European Network of Transmission System Operators for Electricity
-* **ICTC**: Inter-TSO Cooperation Committee (ENTSO-E Steering Group)
+* **ICTC**: Information and Communication Technologies Committee (ICTC) is a specialized committee within ENTSO-E
 * **CIM**: Common Information Model (IEC 61970/61968 standards)
 * **CGMES**: Common Grid Model Exchange Standard
 * **RCP DES**: Regional Coordination Processes Data Exchange Specification
