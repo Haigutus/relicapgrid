@@ -31,11 +31,6 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RAS-FAP"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-RAS"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d"/>
     <dcterms:references rdf:resource="urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Belgovia RAS dataset.</adms:versionNotes>

@@ -31,11 +31,6 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RAS"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Galia-RAS"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd"/>
     <dcterms:references rdf:resource="urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Galia RAS dataset.</adms:versionNotes>

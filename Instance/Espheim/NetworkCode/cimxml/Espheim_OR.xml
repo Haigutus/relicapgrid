@@ -31,11 +31,6 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-OR"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-OR"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18"/>
     <dcterms:references rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Espheim OR dataset.</adms:versionNotes>

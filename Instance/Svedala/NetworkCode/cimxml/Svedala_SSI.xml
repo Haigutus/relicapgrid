@@ -31,11 +31,6 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-SSI"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-SSI"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:ba3dc01a-fa68-4886-b053-2737e1276d27"/>
     <dcterms:references rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Svedala SSI dataset.</adms:versionNotes>

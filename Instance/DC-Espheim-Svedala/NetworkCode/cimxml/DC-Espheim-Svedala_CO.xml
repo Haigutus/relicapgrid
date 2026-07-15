@@ -31,11 +31,6 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/DC-Espheim-Svedala-Power-Transmission-System"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/DC-Espheim-Svedala-CO"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:105893e4-668b-4b00-a351-0e436b53cbc9"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:d4b7c91a-3f8e-4c65-b2a1-7e9f035d4812"/>
     <dcterms:references rdf:resource="urn:uuid:105893e4-668b-4b00-a351-0e436b53cbc9"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the DC-Espheim-Svedala CO dataset.</adms:versionNotes>

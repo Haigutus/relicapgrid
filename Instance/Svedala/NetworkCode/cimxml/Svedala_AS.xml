@@ -32,11 +32,6 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/OPC-AS"/>
     <prov:generatedAtTime>2024-12-03T10:00:00Z</prov:generatedAtTime>
     <dcat:endDate>2024-12-03T10:00:00Z</dcat:endDate>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-AS"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:dc9fc9d1-bb73-4b36-a5a6-7fbb9ed5b354"/>
     <dcterms:references rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
   </dcat:Dataset>

@@ -34,11 +34,6 @@
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
     <dcterms:issued>2025-05-18T18:00:00Z</dcterms:issued>
     <dcat:endDate>2026-05-18T18:00:00Z</dcat:endDate>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-CO"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b"/>
     <dcterms:references rdf:resource="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
   </dcat:Dataset>

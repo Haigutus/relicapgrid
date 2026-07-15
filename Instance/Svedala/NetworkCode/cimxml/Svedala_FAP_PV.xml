@@ -34,11 +34,6 @@
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:requires rdf:resource="urn:uuid:aa129d49-f7af-4b87-942d-aa1e8e4e14a5"/>
-    <dcatcim:alternativeVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Svedala-FAP-PV"/>
-    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
-    <dcterms:hasPart rdf:resource="urn:uuid:aa129d49-f7af-4b87-942d-aa1e8e4e14a5"/>
-    <dcat:temporalResolution>PT15M</dcat:temporalResolution>
-    <dcatcim:preferredVersionOf rdf:resource="urn:uuid:501e6690-60d1-4023-ab35-fe41b7310e03"/>
     <dcterms:references rdf:resource="urn:uuid:aa129d49-f7af-4b87-942d-aa1e8e4e14a5"/>
     <dcat:endDate>2025-02-14T12:00:00Z</dcat:endDate>
 </dcat:Dataset>
