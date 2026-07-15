@@ -27,6 +27,7 @@
     <dcterms:title>20220615_Jotunheim_SAR_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-SAR"/>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
   </dcat:Dataset>
  
   <nc:ContingencyPowerFlowResult rdf:ID="_ea1eebe0-7e5e-46c1-8cf6-af110484adf3">

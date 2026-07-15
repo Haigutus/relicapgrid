@@ -24,6 +24,7 @@
     <dcterms:title>20220615_IAM_1.0.0</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
     <dcterms:wasGeneratedBy>https://energy.referencedata.eu/Activity/CGM-IAM</dcterms:wasGeneratedBy>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
   </dcat:Dataset>
   <nc:CalculationBasedImpactAssessmentMatrix rdf:ID="_0849aa80-92dc-48ec-ad1b-b73b26a5a67e">
     <cim:IdentifiedObject.description>Impact Assessment Matrix sample</cim:IdentifiedObject.description>
