@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
+    xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:nc="https://cim4.eu/ns/nc#"
@@ -25,6 +26,7 @@
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-IAM"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Jotunheim IAM dataset.</adms:versionNotes>
   </dcat:Dataset>
   <nc:CalculationBasedImpactAssessmentMatrix rdf:ID="_55df4c2b-3919-4ca0-a2c0-2149e114b933">
     <cim:IdentifiedObject.description>Impact Assessment Matrix sample</cim:IdentifiedObject.description>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
+    xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:time="http://www.w3.org/2006/time#"
     xmlns:eu="http://iec.ch/TC57/CIM100-European#"
@@ -28,6 +29,7 @@
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-SAR"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Jotunheim SAR dataset.</adms:versionNotes>
   </dcat:Dataset>
  
   <nc:ContingencyPowerFlowResult rdf:ID="_ea1eebe0-7e5e-46c1-8cf6-af110484adf3">
