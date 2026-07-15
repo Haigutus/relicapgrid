@@ -30,6 +30,7 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/IGMx-CO"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/HV-Belgovia"/>
     <dcterms:issued>2025-05-20T18:00:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_a851b256-fe75-4dd7-a3f5-899cd1b2e2a7">
     <cim:ContingencyElement.Contingency rdf:resource="#_ee6365ea-2277-422a-a70b-182280debf27"/>

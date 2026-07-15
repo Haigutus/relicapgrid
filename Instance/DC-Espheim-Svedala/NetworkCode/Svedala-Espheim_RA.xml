@@ -26,6 +26,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-Espheim-RA"/>
     <prov:wasGeneratedBy>"https://energy.referencedata.eu/Activity/CGM-RA</prov:wasGeneratedBy>
     <dcterms:title>Svedala-Espheim-RA</dcterms:title>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
 </dcat:Dataset>	
   <nc:RemedialActionScheme rdf:ID="_47eead8b-b257-4e18-9b6a-632e8ad52b8d">
     <cim:IdentifiedObject.mRID>47eead8b-b257-4e18-9b6a-632e8ad52b8d</cim:IdentifiedObject.mRID>
