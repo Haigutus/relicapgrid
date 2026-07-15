@@ -26,7 +26,7 @@
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Svedala"/>
     <dcat:version>1.0.0</dcat:version>
     <dcterms:title>202505_TSO-Svedala_HV-Belgovia_IGMx-CO</dcterms:title>
-    <adms:versionNotes>Inital version.</adms:versionNotes>
+    <adms:versionNotes xml:lang="en">Initial version.</adms:versionNotes>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/IGMx-CO"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/HV-Belgovia"/>
     <dcterms:issued>2025-05-20T18:00:00Z</dcterms:issued>
