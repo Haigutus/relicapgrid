@@ -9,7 +9,7 @@
     xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#"
     xmlns:dcat="http://www.w3.org/ns/dcat#"
     xmlns:cim="http://iec.ch/TC57/CIM100#"
-    xmlns:dcterms="http://purl.org/dc/terms/#" > 
+    xmlns:dcterms="http://purl.org/dc/terms/" > 
   <dcat:Dataset rdf:about="urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/SecurityAnalysisResult/2.5"/>
