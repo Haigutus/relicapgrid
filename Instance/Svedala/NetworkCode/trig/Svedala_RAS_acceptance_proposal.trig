@@ -8,7 +8,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -166,8 +165,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate            "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version              "1.0.0";
             prov:generatedAtTime      "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy       <https://energy.referencedata.eu/Action/CGM-RAS>;
-            eumd:applicationSoftware  "PowerFactory-2022.SP2" .
+            prov:wasGeneratedBy       <https://energy.referencedata.eu/Action/CGM-RAS> .
     
     <urn:uuid:51361821-0a40-4e5a-a49d-29c266ea2ecc>
             rdf:type                   nc:RemedialActionSchedule;
