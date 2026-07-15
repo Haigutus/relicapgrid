@@ -18,7 +18,7 @@
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcat:keyword>IAM</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Jotunheim"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/RCC-Jotunheim"/>
     <dcterms:requires rdf:resource="urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd"/>
     <dcat:startDate>2022-06-16T12:30:00Z</dcat:startDate>
     <dcterms:title>20220615_IAM_1.0.0</dcterms:title> 

@@ -16,7 +16,7 @@
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Jotunheim-IAM"/>
     <dcat:keyword>IAM</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Jotunheim"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/RCC-Jotunheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:67b33697-15a1-4752-aeee-fb9b488defc4"/>
