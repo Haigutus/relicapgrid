@@ -6,7 +6,6 @@
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:dcatcim="https://cim4.eu/ns/dcatcim#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:baf8c34a-4944-4309-8d9f-8f39c3e4bac1">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
