@@ -54,8 +54,6 @@
     <nc:ContingencyWithRemedialAction.normalEnabled>true</nc:ContingencyWithRemedialAction.normalEnabled>
   </nc:ContingencyWithRemedialAction>
   <nc:CountertradeRemedialAction rdf:ID="_30f6377d-5e35-4dd0-a53d-c1992043855e">
-    <nc:CountertradeRemedialAction.powerShiftKey rdf:resource="https://cim4.eu/ns/nc#GLSKStrategyKind.generatorPmax"/>
-    <nc:CountertradeRemedialAction.method rdf:resource="https://cim4.eu/ns/nc#ShiftMethodKind.shared"/>
     <cim:IdentifiedObject.description>Curative RA: Countertrading, BO:-205.5-gt;-251, GA:-438.25-gt;-392.8</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>30f6377d-5e35-4dd0-a53d-c1992043855e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA18</cim:IdentifiedObject.name>
