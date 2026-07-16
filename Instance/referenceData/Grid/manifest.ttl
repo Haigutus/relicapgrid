@@ -8,7 +8,7 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:b459d9e0-cf0e-4879-a011-6e038cf3b17b>
+<urn:uuid:231b587c-6900-4788-9337-7e21620b2053>
         rdf:type               dcat:Distribution;
         dcterms:description    "Reference dataset containing license concepts for use with dcterms:license on datasets and distributions. The scheme distinguishes between fully open, non-commercial, restricted derivation, restricted share-alike derivation, and informational-use-only license patterns."@en;
         dcat:accessURL         <file:Instance/referenceData/Grid/cimxml/LicenseScheme_RD.xml>;
@@ -16,23 +16,6 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2026-03-22T00:00:00Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:24b19c61-b8c9-48b8-b374-a297df4387c3>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <urn:placeholder:conformsTo>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "b19c61-b8c9-48b8-b374-a297df4387c3";
-        dcterms:issued        "2026-03-22T00:00:00Z"^^xsd:dateTime;
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://www.entsoe.eu/>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <urn:placeholder:spatial>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <https://energy.referencedata.eu/LicenseScheme/NCP/1.0> , <https://energy.referencedata.eu/ConfidentialityScheme/NCP/1.0>;
-        dcat:version          "1.0.0" .
 
 <https://energy.referencedata.eu/ConfidentialityScheme/NCP/1.0>
         rdf:type              dcat:Dataset;
@@ -47,8 +30,25 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "ConfidentialityScheme_NCP_v1.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:48dcd8f4-7aad-43c9-9565-f11c847e6e63>;
+        dcat:distribution     <urn:uuid:0cfdfde2-2920-4279-9404-8b9a88d2f92d>;
         dcat:isVersionOf      <https://energy.referencedata.eu/Confidentiality/>;
+        dcat:version          "1.0.0" .
+
+<urn:uuid:452b90bd-d76f-4e10-8bed-99efd0a61249>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <urn:placeholder:conformsTo>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "b90bd-d76f-4e10-8bed-99efd0a61249";
+        dcterms:issued        "2026-03-22T00:00:00Z"^^xsd:dateTime;
+        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
+        dcterms:publisher     <https://www.entsoe.eu/>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <https://energy.referencedata.eu/ConfidentialityScheme/NCP/1.0> , <https://energy.referencedata.eu/LicenseScheme/NCP/1.0>;
         dcat:version          "1.0.0" .
 
 <https://energy.referencedata.eu/LicenseScheme/NCP/1.0>
@@ -64,11 +64,11 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "LicenseScheme-NCP-1.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:b459d9e0-cf0e-4879-a011-6e038cf3b17b>;
+        dcat:distribution     <urn:uuid:231b587c-6900-4788-9337-7e21620b2053>;
         dcat:isVersionOf      <https://energy.referencedata.eu/LicenseScheme>;
         dcat:version          "1.0.0" .
 
-<urn:uuid:48dcd8f4-7aad-43c9-9565-f11c847e6e63>
+<urn:uuid:0cfdfde2-2920-4279-9404-8b9a88d2f92d>
         rdf:type               dcat:Distribution;
         dcterms:description    "Reference dataset containing confidentiality and access-right statements for energy and power system datasets. The dataset is intended for use with dcterms:accessRights and aligns where possible with the Publications Office of the European Union access-right authority table."@en;
         dcat:accessURL         <file:Instance/referenceData/Grid/cimxml/ConfidentialityScheme_RD.xml>;
