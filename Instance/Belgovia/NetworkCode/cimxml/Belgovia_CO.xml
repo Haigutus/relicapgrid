@@ -29,7 +29,7 @@
     <dcat:startDate>2025-05-18T18:00:00Z</dcat:startDate>
     <dcterms:title>20250520_Belgovia_CO_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <adms:versionNotes>This is initial version</adms:versionNotes>
+    <adms:versionNotes xml:lang="en">This is initial version</adms:versionNotes>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
     <dcterms:issued>2025-05-18T18:00:00Z</dcterms:issued>
