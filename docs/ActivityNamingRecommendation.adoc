@@ -83,61 +83,79 @@ Tool implementations may present the full activity definition or description to 
 
 ==== Controlled Vocabulary
 
-[cols="1,1,4",options="header"]
+The activity types are grouped into three families:
+
+* *Origin / production* — describe how the entity's content was produced
+  (`SR`, `MA`, `AD`, `SD`, `FC`, `AC`);
+* *Evaluation* — describe a judgement or conformance result about content
+  (`AS`, `VF`);
+* *Exchange / lifecycle* — describe a transactional or dissemination act; the
+  payload may itself have been produced by an origin/production activity in a
+  preceding, chained activity (`REQ`, `RES`, `PUB`).
+
+`prov:wasGeneratedBy` shall reference the activity that *immediately* generated
+the entity. A published analytical result therefore carries `PUB`; the
+computation that produced its content is a separate, preceding activity.
+
+[cols="2,1,4,4",options="header"]
 |===
-| Activity Type | Code | Definition | Text for generation descriptions of activity
+| Activity Type | Code | Definition | Generation description text
 
 | StructuralRepresentation
 | SR
-| Creation of generated or model structural (master data) that are change due to functional element, replacement of asset with new capabilities or modeling changes to reflect better representation of the power system capabilities. All or part of the dataset can be produced through an aggregation and/or equivalent reduced algorithm that should be considered stable for the validity period. 
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
-
-| AssumptionDefinition
-| AD
-| Creation of assumed operational conditions used as input to studies, simulations, planning, or operational coordination, including switching states, injections, availability assumptions, and scenario preparation.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
-
-| ScheduleDefinition
-| SD
-| Creation of planned future operational schedules, allocations, commitments, or declared availability information representing intended operation.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
-
-| AnalyticalComputation
-| AC
-| Creation of datasets containing calculated analytical results derived from deterministic or algorithmic processing, including power flow, state estimation, contingency analysis, optimisation, and capacity calculations.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
+| Authoring or update of structural / master (network model) data reflecting the modelled capabilities of the power system — including functional changes, asset replacement, or remodelling for better representation. May include aggregated or reduced-equivalent representations that are treated as stable for the validity period.
+| Structural model data complying to <profile title> [for <process description>] [valid at <time horizon description>] [run <run description>]
 
 | MeasurementAcquisition
 | MA
-| Creation of datasets originating from direct observation, telemetry, metering, monitoring systems, or real-time acquisition.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
+| Capture of data originating from direct observation, telemetry, metering, monitoring systems, or real-time acquisition.
+| Measured data complying to <profile title> [for <process description>] [at <time horizon description>]
+
+| AssumptionDefinition
+| AD
+| Definition of assumed (hypothetical) operating conditions used as input to studies, simulations, planning, or coordination — e.g. switching states, injections, availability assumptions, scenario preparation. Does not represent committed operation.
+| Assumed operating conditions complying to <profile title> [for <process description>] [at <time horizon description>] [run <run description>]
+
+| ScheduleDefinition
+| SD
+| Definition of intended future operation: planned schedules, allocations, commitments, or declared availability representing operation that is intended to occur.
+| Planned schedule data complying to <profile title> [for <process description>] [at <time horizon description>] [run <run description>]
+
+| Forecast
+| FC
+| Generation of predictive or probabilistic estimates of future conditions (e.g. load, generation, adequacy) derived from forecasting models. _(Optional — omit if forecasts are treated as AnalyticalComputation.)_
+| Forecast data complying to <profile title> [for <process description>] [at <time horizon description>] [run <run description>]
+
+| AnalyticalComputation
+| AC
+| Generation of quantitative results from deterministic or algorithmic processing — power flow, state estimation, contingency analysis, optimisation, capacity calculation. Produces computed values, not a judgement.
+| Analytical results complying to <profile title> [for <process description>] [at <time horizon description>] [run <run description>]
 
 | Assessment
 | AS
-| Creation of datasets resulting from evaluation or analysis of submitted requests, operational conditions, planning scenarios, or market situations.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
+| Generation of an evaluative outcome (judgement, decision, or recommendation) on submitted requests, operating conditions, scenarios, or market situations against operational or business criteria. Produces a verdict, not raw computed quantities.
+| Assessment results complying to <profile title> [for <process description>] [at <time horizon description>] [run <run description>]
 
 | Verification
 | VF
-| Creation of datasets representing validation or conformance checking against profile specifications, business rules, schema constraints, or semantic consistency requirements.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
+| Generation of conformance / validation results checking a dataset against profile specifications, schema constraints, business rules, or semantic-consistency requirements. Concerns data conformance, not operational acceptability.
+| Validation results for <profile title> [for <process description>] [at <time horizon description>]
 
 | Request
 | REQ
-| Creation of formal request datasets intended to trigger assessment, approval, or further business processing.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
+| Generation of a formal request dataset intended to trigger assessment, approval, or further business processing.
+| Formal request complying to <profile title> [for <process description>] [at <time horizon description>]
 
 | Response
 | RES
-| Creation of datasets representing formal responses to a prior request, submission, or assessment.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
+| Generation of a formal response to a prior request, submission, or assessment.
+| Formal response complying to <profile title> [for <process description>] [at <time horizon description>]
 
 | Publication
 | PUB
-| Creation of authoritative datasets intended for publication and reuse as common, boundary, reference, or officially distributed information.
-| Structure data complying to <profile title> [for <Process description>][at <Time Horizon description][executed <run description>]
+| Generation of authoritative data intended for publication and reuse as common, boundary, reference, or officially distributed information.
+| Published authoritative data complying to <profile title> [for <process description>] [at <time horizon description>]
 |===
-
  
 
 === Profile
@@ -192,7 +210,7 @@ Examples include:
 | CGM
 | Creation and exchange of a Common Grid Model assembled from Individual Grid Models used as the analytical basis for coordinated operational services.
 | Operational Planning
-| EQ, SSH, TP, DL, GL
+| EQ, SSH, TP, SV, DL, GL
 
 | Common Grid Model Alignment
 | CGMA
@@ -204,71 +222,71 @@ Examples include:
 | OPC
 | Coordination of planned outages to maximise operational security while minimising market impact.
 | Operational Planning
-| EQ, SSH, AS, PS
+| EQ, AS, PS
 
 | Coordinated Security Analysis
 | CSA
 | Coordinated assessment of operational security following market outcomes and identification of required operational actions.
 | Operational Planning
-| EQ, SSH, RA, RAS, SAR, AE
+| EQ, SSH, TP, SV, ER, RA, RAS, SAR, AE, SIS, SSI, SM, CO
 
 | Coordinated Capacity Calculation
 | CCC
 | Calculation of safe cross-zonal market capacities based on coordinated grid analysis.
 | Operational Planning
-| EQ, SSH, GC
+| EQ, SSH, TP, SV, ER, AE, SIS, SSI
 
 | Short Term Adequacy
 | STA
 | Forecast-based adequacy assessment of available generation and transmission capacity over the short-term horizon.
 | Operational Planning
-| EQ, SSH, PS
+| EQ, ER, PS
 
 | Critical Grid Situation
 | CGS
 | Regional or cross-regional coordination support in critical operational grid situations.
 | Operational Planning
-| SSH, SV, 
+| EQ, SSH, TP, SV, ER, SIS, SSI, CO 
 
 | Reliability Margins Calculation
 | RMC
 | Determination of reliability margins used as input to coordinated capacity calculations.
 | Operational Planning
-| EQ, SSH, SV
+| EQ, SSH, TP, SV, ER, AE, SIS, SSI
 
 | Remedial Action Optimisation
 | RAO
 | Optimisation of remedial actions to maximise secure transmission capacity while maintaining operational security.
 | Security Optimisation
-| RAS, SSH, SV
+| EQ, SSH, TP, SV, ER, RA, RAS, SAR, AE, SIS, SSI, SM, CO
 
 | Individual Grid Model
 | IGM
 | Creation or maintenance of a TSO-specific grid model contributing to a Common Grid Model.
 | Core Grid Model
-| EQ, SSH, TP
+| EQ, SSH, TP, SV, DL, GL
 
 
 | Ten-Year Network Development Plan
 | TYNDP
 | Long-term network development planning and infrastructure assessment process.
 | Long-Term Planning
-| EQ, SSH, 
+| EQ, SSH, TP, SV, DL, GL, PSP, SSI, SIS
 
 | Scenario Development
 | SCEN
 | Creation of planning scenarios supporting adequacy or infrastructure studies.
 | Long-Term Planning
-| SSH
+| EQ, SSH, AS, PSP, SSI, SIS
 
 | Cost Benefit Analysis
 | CBA
 | Economic and technical evaluation of network investment alternatives.
 | Long-Term Planning
-| 
+| EQ, SSH, AS, PSP, SSI, SIS
 |===
 
-The controlled vocabulary for processes shall be defined by the applicable implementation or business domain.
+The controlled vocabulary for processes, e.g. TYNDP, shall be defined by the applicable implementation or business domain.
 
 === Time Horizon
 
@@ -540,34 +558,34 @@ The following rules apply:
 | Activity Identifier | Meaning
 
 | `SR-EQ`
-| Structural data complying to Core equipment profile.
+| Structural data complying to Core Equipment (EQ) profile.
 
 | `SR-EQ-CGM`
-| Structural data complying to Core equipment profile for Common Grid Model (CGM) process.
+| Structural data complying to Core Equipment (EQ) profile for Common Grid Model (CGM) process.
 
 | `AD-SSH-CGM-1D-R1`
-| (ToDo) AssumptionDefinition Day-ahead assumed operating state for CGM, first run.
+| Assumed operating conditions complying to Steady-State Hypothesis for Common Grid Model (CGM) process at Day-ahead (1D), first run (R1).
 
-| `AC-SV-CSA-1D-R2`
-| (ToDo) AnalyticalComputation Analytical computation of state variables for coordinated security assessment, second run.
+| `AC-SV-CSA-D1-R2`
+| Analytical results complying to State Variable (SV) for Coordinated Security Analysis (CSA) at Day-after (D1) second run (R2)
 
 | `SD-RAS-OPC-1W`
-| (ToDo) ScheduleDefinition Weekly remedial action schedule definition.
+| Planned schedule data complying to Remedial Action Schedule (RAS) for Outage Planning Coordination (OPC) at one week-ahead.
 
 | `VF-EQ`
-| (ToDo)Verification of an equipment dataset.
+| Validation results for Core Equipment (EQ). 
 
 | `REQ-RAS`
-| (ToDo) Formal remedial action request.
+| Formal request complying to Remedial Action Schedule (RAS).
 
 | `RES-RAS`
-| (ToDo) Response to a remedial action request.
+| Formal response complying to Remedial Action Schedule (RAS).
 
-| `PUB-BD`
-| (ToDo)Publication of boundary data.
+| `PUB-SM`
+| Published authoritative data complying to Sensitivity Matrix (SM).
 
 | `MA-SV`
-| (ToDo)  MeasurementAcquisition State variable dataset originating from measurement acquisition.
+|  Measured data complying to State Variable (SV).
 |===
 
 === Notes
