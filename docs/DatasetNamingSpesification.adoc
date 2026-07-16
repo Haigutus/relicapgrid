@@ -114,21 +114,22 @@ Derived test dataset:
 
 [source,xml]
 ----
-<dcterms:title>202505_TSO-Svedala_Belgovia-Transmission_CO</dcterms:title>
+<dcterms:title>20260717_TSO-Svedala_Belgovia-Transmission_SD-CO</dcterms:title>
 ----
 
 Interpretation:
 
-* `202505` → start time for the validity period
+* `20260717` → start time for the validity period
 * `TSO-Svedala` → publisher
 * `Belgovia-Transmission` → neighbouring Frame
-* `CO` → generating activity being Contingency (CO)
+* `SD-CO` → Structural model data complying to Contingency (CO) profile.
+* Version is 1.0.0 as it is missing from the file name
 
 Base dataset:
 
 [source,xml]
 ----
-<dcterms:title>202505_TSO-Svedala_Belgovia-Transmission_CO</dcterms:title>
+<dcterms:title>TSO-Svedala_Belgovia-Transmission_SD-CO</dcterms:title>
 ----
 
 This base dataset may be reused with different validity periods without requiring file renaming.
