@@ -8,12 +8,12 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:a7219c34-8b2e-454f-8297-723746bf1030>
+<urn:uuid:1e1d5db8-b7a9-4e34-b1f0-afcbcf1d5e89>
         rdf:type              dcat:Catalog;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
         dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
         dcterms:description   ""@en;
-        dcterms:identifier    "a7219c34-8b2e-454f-8297-723746bf1030";
+        dcterms:identifier    "e1d5db8-b7a9-4e34-b1f0-afcbcf1d5e89";
         dcterms:issued        "2026-07-03T08:05:19Z"^^xsd:dateTime;
         dcterms:license       <http://example.org/license>;
         dcterms:publisher     <http://jotunheim.jh/CGMES>;
@@ -25,7 +25,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcat:dataset          <urn:uuid:47007c4e-7ff1-49e0-b16a-90197e6a7044> , <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db>;
         dcat:version          "2" .
 
-<urn:uuid:522ee017-de07-4f40-ac14-a7b4ffc129d5>
+<urn:uuid:f37bec8d-5cea-488d-970f-c085ef40e250>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
         dcterms:description    "The state variables dataset for ReliCapGrid, updated by Jotunheim.";
@@ -50,10 +50,20 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Jotunheim_TP_2";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:6bfcd2c0-5804-4709-b853-66e57edb15bc>;
+        dcat:distribution     <urn:uuid:35b7c10a-c14e-4ca2-b2ff-9aac7acaffe8>;
         dcat:keyword          "TP";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "2" .
+
+<urn:uuid:35b7c10a-c14e-4ca2-b2ff-9aac7acaffe8>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
+        dcterms:description    "The topology dataset for ReliCapGrid, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/Grid/cimxml/20220615T2230Z_2D_Jotunheim_TP_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2026-07-03T08:05:19Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:47007c4e-7ff1-49e0-b16a-90197e6a7044>
         rdf:type              dcat:Dataset;
@@ -70,17 +80,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Jotunheim_SV_2";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:522ee017-de07-4f40-ac14-a7b4ffc129d5>;
+        dcat:distribution     <urn:uuid:f37bec8d-5cea-488d-970f-c085ef40e250>;
         dcat:keyword          "SV";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "2" .
-
-<urn:uuid:6bfcd2c0-5804-4709-b853-66e57edb15bc>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description    "The topology dataset for ReliCapGrid, updated by Jotunheim.";
-        dcat:accessURL         <file:Instance/Jotunheim/Grid/cimxml/20220615T2230Z_2D_Jotunheim_TP_2.xml>;
-        dcat:isDistributionOf  <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2026-07-03T08:05:19Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .

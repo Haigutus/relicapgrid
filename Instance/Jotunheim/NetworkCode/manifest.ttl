@@ -22,14 +22,14 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:32ca3b3d-9bd3-425b-a484-a4360b2c277d>;
+        dcat:distribution     <urn:uuid:c96881f2-7e3e-40a0-8b44-9837bc553a9d>;
         dcat:endDate          "2023-06-16T15:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T15:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:c7bcc106-ac9c-49a4-9031-6fa6cb37755a>
+<urn:uuid:09f5c3e8-90dc-4b31-b92c-22460d9fb228>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
@@ -53,12 +53,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:bdf2b0d8-b3e4-4fa9-a838-e67816f549ca>;
+        dcat:distribution     <urn:uuid:0ac47edb-17a7-4e4c-9c5f-9167c61d3adb>;
         dcat:endDate          "2023-06-16T08:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T08:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:b62f2f28-6caa-4263-931f-291fed753a33>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1330Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:5135a227-4529-43cb-9286-37a55119c08e>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:6bcda2b5-0eb1-4eb0-9dd9-5d58c7c892dc>
         rdf:type              dcat:Dataset;
@@ -74,47 +84,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:d77ff079-8b1f-4242-a2d3-849bb09603b8>;
+        dcat:distribution     <urn:uuid:8ce96c66-94dc-4418-9bed-fa9e2ce8077c>;
         dcat:endDate          "2023-06-16T06:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T06:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:5af1ecd0-b525-43a6-917e-896b9dd2c423>
-        rdf:type               dcat:Distribution;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_SAR_1030Z_Jotunheim.xml>;
-        dcat:isDistributionOf  <urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:07:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SAR> .
-
-<urn:uuid:be92046f-3de5-4d7b-8ac9-30eca5adeba7>
+<urn:uuid:f1987d4f-a1f0-4a3b-a3c5-8573660083ea>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0730Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:f625659d-e558-4f93-9249-c931112dbd7f>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
-
-<urn:uuid:68244100-e38e-4804-9e34-44fa4926dcc0>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1430Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:d5aea98d-c4e2-4436-ab23-6c705e17960e>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
-
-<urn:uuid:a02d7d9a-adc6-4714-b2fe-e4875a369d91>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid.This is an example of impact assessment matrix profile."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1930Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:eb688891-35e2-4278-a6e3-1b67d67ba591>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_2330Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:3ce574dc-ccd9-4793-a6bc-da2b50ea1ebf>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -133,39 +115,39 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:8c9e2ea5-1b40-45ad-a724-0f0f3d492ff4>;
+        dcat:distribution     <urn:uuid:e165ea48-acad-4120-ac15-dea844563de8>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:bdf2b0d8-b3e4-4fa9-a838-e67816f549ca>
+<urn:uuid:5ded40ee-99ee-4315-8dd7-3ae28fd9971a>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1030Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:bec228e6-436b-4173-9db5-5f679613334b>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1230Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:6d697c8e-aded-426b-bd18-6f0ac252b999>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
-<urn:uuid:8026d696-294e-452b-b464-4a982c9509b7>
+<urn:uuid:c2f5534e-be25-4941-9817-9efdfd6b3e5c>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_2330Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:3ce574dc-ccd9-4793-a6bc-da2b50ea1ebf>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0630Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:ab91933c-9fca-4e2c-a881-37f6f6c0cb9f>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
-<urn:uuid:b7eee9c7-effd-4b6a-a85a-d5d806670ba4>
+<urn:uuid:ff42a900-b60c-4e05-970f-ee738b989c3e>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0930Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:d226786d-20b5-46c5-9be5-95190f83845c>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1530Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:778424d6-1678-46d6-ba96-c96ad88518f4>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -184,29 +166,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:28ae5c46-60e5-42db-876a-24ce68223bdc>;
+        dcat:distribution     <urn:uuid:98000adb-1b0e-4da7-bd07-da74b0eee641>;
         dcat:endDate          "2023-06-16T18:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T18:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:183a384a-5809-4fba-9126-5422804ba281>
+<urn:uuid:5cd0de57-8d39-438f-8b99-65b865d187ac>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1830Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:76f9eab4-bfd3-4290-9547-c1847ec66168>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:52bf6949-91e4-4f45-8f03-766c707c661a>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0330Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:a9c27d9c-42bb-46bd-8c69-99a246f3389a>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0130Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:237de243-b16c-431d-9aa9-b7470448aa80>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -225,32 +197,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:52bf6949-91e4-4f45-8f03-766c707c661a>;
+        dcat:distribution     <urn:uuid:e4ef99b2-a9c5-407f-a705-4a638143fe1c>;
         dcat:endDate          "2023-06-16T01:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T01:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
-
-<urn:uuid:990744d1-2c7d-4747-9675-1ad75786e28b>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1230Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:6d697c8e-aded-426b-bd18-6f0ac252b999>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
-
-<urn:uuid:15fd408a-b41f-417a-88c2-21ec3173ab03>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_2130Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:f585ecdc-e9bd-43bb-8cdb-3b55eb2eb03d>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:5e401955-387e-45ce-b127-dd142b06b20c>
         rdf:type              dcat:Dataset;
@@ -266,7 +218,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:d58a01a7-3ee5-4844-848c-498c195a47dd>;
+        dcat:distribution     <urn:uuid:e4f8f94a-9027-4fc1-b96a-843b0c0f7555>;
         dcat:endDate          "2023-06-16T14:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
@@ -287,29 +239,29 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:68244100-e38e-4804-9e34-44fa4926dcc0>;
+        dcat:distribution     <urn:uuid:16155720-72c4-4783-9a0b-cfed03e270f5>;
         dcat:endDate          "2023-06-16T12:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T12:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:8c9e2ea5-1b40-45ad-a724-0f0f3d492ff4>
+<urn:uuid:8d71ac6e-f1dc-48d6-ada4-d51ecb1a57a7>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0030Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:43e52f47-22d9-428c-8b1c-d521e54a29b9>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0230Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:42d78e78-c06a-473b-82a4-957e7a8dd4a3>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
-<urn:uuid:ba18b1df-c6b9-41b4-832d-8d042f4ebfe0>
+<urn:uuid:c96881f2-7e3e-40a0-8b44-9837bc553a9d>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1330Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:5135a227-4529-43cb-9286-37a55119c08e>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1730Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:79a9b646-0448-49a8-b42d-78e78c07a73b>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -328,22 +280,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:e3dff08a-93e0-4f2f-a01c-86fc47e0c2f5>;
+        dcat:distribution     <urn:uuid:d99235be-cf4c-4b2e-b990-4a51bc258d2b>;
         dcat:endDate          "2023-06-16T03:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T03:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
-
-<urn:uuid:a6bb367e-5e29-40a4-aba0-92f2ea24ae4e>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1530Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:778424d6-1678-46d6-ba96-c96ad88518f4>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281>
         rdf:type              dcat:Dataset;
@@ -356,12 +298,59 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "2D_SAR_1030Z_Jotunheim";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:5af1ecd0-b525-43a6-917e-896b9dd2c423>;
+        dcat:distribution     <urn:uuid:f2e4b6f6-9f40-4110-a975-6b1a02d0be15>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-SAR>;
         dcat:keyword          "SAR";
         dcat:startDate        "2022-06-15T10:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:e165ea48-acad-4120-ac15-dea844563de8>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0030Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:43e52f47-22d9-428c-8b1c-d521e54a29b9>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
+
+<urn:uuid:d99235be-cf4c-4b2e-b990-4a51bc258d2b>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0530Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:e2426b02-35cb-445e-8696-feedface4cc1>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
+
+<urn:uuid:1d565042-0032-4625-8734-246fde091fe1>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "d565042-0032-4625-8734-246fde091fe1";
+        dcterms:issued        "2026-07-17T11:15:08.655684206Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license> , <https://creativecommons.org/licenses/by/4.0/>;
+        dcterms:publisher     <http://example.org/publisher> , <https://energy.referencedata.eu/test/party/Jotunheim>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:a9c27d9c-42bb-46bd-8c69-99a246f3389a> , <urn:uuid:43e52f47-22d9-428c-8b1c-d521e54a29b9> , <urn:uuid:778424d6-1678-46d6-ba96-c96ad88518f4> , <urn:uuid:bec228e6-436b-4173-9db5-5f679613334b> , <urn:uuid:e2426b02-35cb-445e-8696-feedface4cc1> , <urn:uuid:845cf3c2-b38c-4886-aa2c-021499114b5e> , <urn:uuid:79a9b646-0448-49a8-b42d-78e78c07a73b> , <urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281> , <urn:uuid:d5aea98d-c4e2-4436-ab23-6c705e17960e> , <urn:uuid:3ce574dc-ccd9-4793-a6bc-da2b50ea1ebf> , <urn:uuid:f625659d-e558-4f93-9249-c931112dbd7f> , <urn:uuid:ab91933c-9fca-4e2c-a881-37f6f6c0cb9f> , <urn:uuid:d226786d-20b5-46c5-9be5-95190f83845c> , <urn:uuid:eb688891-35e2-4278-a6e3-1b67d67ba591> , <urn:uuid:42d78e78-c06a-473b-82a4-957e7a8dd4a3> , <urn:uuid:6bcda2b5-0eb1-4eb0-9dd9-5d58c7c892dc> , <urn:uuid:5e401955-387e-45ce-b127-dd142b06b20c> , <urn:uuid:6d697c8e-aded-426b-bd18-6f0ac252b999> , <urn:uuid:76f9eab4-bfd3-4290-9547-c1847ec66168> , <urn:uuid:03b0f466-4b1d-4944-a359-837ee79d6c6d> , <urn:uuid:f585ecdc-e9bd-43bb-8cdb-3b55eb2eb03d> , <urn:uuid:3be2a1a2-7f7a-49e9-8be1-f38cef29812b> , <urn:uuid:237de243-b16c-431d-9aa9-b7470448aa80> , <urn:uuid:5135a227-4529-43cb-9286-37a55119c08e> , <urn:uuid:5c1ea45b-46a9-447f-b8ae-7d7e4b475b6c>;
+        dcat:version          "1.0.0" .
+
+<urn:uuid:15e6ba5b-2c11-40ce-b8ec-7855ae096fa3>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0930Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:d226786d-20b5-46c5-9be5-95190f83845c>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:778424d6-1678-46d6-ba96-c96ad88518f4>
         rdf:type              dcat:Dataset;
@@ -377,29 +366,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "2D_IAM_1530Z_IAM_";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:a6bb367e-5e29-40a4-aba0-92f2ea24ae4e>;
+        dcat:distribution     <urn:uuid:ff42a900-b60c-4e05-970f-ee738b989c3e>;
         dcat:endDate          "2023-06-16T13:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T13:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:787ec95c-f575-4c75-a0f5-ce952251b3d7>
+<urn:uuid:5bba1a60-09d4-4e6c-8abf-8161bdbf59f9>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_2230Z_IAM_.xml>;
         dcat:isDistributionOf  <urn:uuid:845cf3c2-b38c-4886-aa2c-021499114b5e>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
-
-<urn:uuid:d77ff079-8b1f-4242-a2d3-849bb09603b8>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0830Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:6bcda2b5-0eb1-4eb0-9dd9-5d58c7c892dc>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -418,22 +397,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:ba18b1df-c6b9-41b4-832d-8d042f4ebfe0>;
+        dcat:distribution     <urn:uuid:b62f2f28-6caa-4263-931f-291fed753a33>;
         dcat:endDate          "2023-06-16T11:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T11:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:10234fbd-2c12-47e1-b67e-f428dd959780>
+<urn:uuid:0706e009-1f28-4cc0-9ac3-879f313049f3>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0230Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:42d78e78-c06a-473b-82a4-957e7a8dd4a3>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1830Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:76f9eab4-bfd3-4290-9547-c1847ec66168>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:d226786d-20b5-46c5-9be5-95190f83845c>
         rdf:type              dcat:Dataset;
@@ -449,34 +428,14 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "2D_IAM_0930Z_IAM_";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:b7eee9c7-effd-4b6a-a85a-d5d806670ba4>;
+        dcat:distribution     <urn:uuid:15e6ba5b-2c11-40ce-b8ec-7855ae096fa3>;
         dcat:endDate          "2023-06-16T07:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T07:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:8d50c888-8735-4d06-9e32-1cb5457b2eca>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0630Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:ab91933c-9fca-4e2c-a881-37f6f6c0cb9f>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
-
-<urn:uuid:32ca3b3d-9bd3-425b-a484-a4360b2c277d>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1730Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:79a9b646-0448-49a8-b42d-78e78c07a73b>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
-
-<urn:uuid:d58a01a7-3ee5-4844-848c-498c195a47dd>
+<urn:uuid:e4f8f94a-9027-4fc1-b96a-843b0c0f7555>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
@@ -486,12 +445,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
-<urn:uuid:46a76b45-322c-4e59-b8d6-cadcd94ab03c>
+<urn:uuid:16155720-72c4-4783-9a0b-cfed03e270f5>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1130Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:03b0f466-4b1d-4944-a359-837ee79d6c6d>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1430Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:d5aea98d-c4e2-4436-ab23-6c705e17960e>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -510,12 +469,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:8026d696-294e-452b-b464-4a982c9509b7>;
+        dcat:distribution     <urn:uuid:f1987d4f-a1f0-4a3b-a3c5-8573660083ea>;
         dcat:endDate          "2023-06-16T21:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T21:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:275d5f70-528a-4c39-8c12-9c60b7515543>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0730Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:f625659d-e558-4f93-9249-c931112dbd7f>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:845cf3c2-b38c-4886-aa2c-021499114b5e>
         rdf:type              dcat:Dataset;
@@ -531,19 +500,37 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:787ec95c-f575-4c75-a0f5-ce952251b3d7>;
+        dcat:distribution     <urn:uuid:5bba1a60-09d4-4e6c-8abf-8161bdbf59f9>;
         dcat:endDate          "2023-06-16T20:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T20:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:e3dff08a-93e0-4f2f-a01c-86fc47e0c2f5>
+<urn:uuid:e4ef99b2-a9c5-407f-a705-4a638143fe1c>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0530Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:e2426b02-35cb-445e-8696-feedface4cc1>;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0330Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:a9c27d9c-42bb-46bd-8c69-99a246f3389a>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
+
+<urn:uuid:f2e4b6f6-9f40-4110-a975-6b1a02d0be15>
+        rdf:type               dcat:Distribution;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_SAR_1030Z_Jotunheim.xml>;
+        dcat:isDistributionOf  <urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:07:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SAR> .
+
+<urn:uuid:8ce96c66-94dc-4418-9bed-fa9e2ce8077c>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0830Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:6bcda2b5-0eb1-4eb0-9dd9-5d58c7c892dc>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -562,7 +549,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:be92046f-3de5-4d7b-8ac9-30eca5adeba7>;
+        dcat:distribution     <urn:uuid:275d5f70-528a-4c39-8c12-9c60b7515543>;
         dcat:endDate          "2023-06-16T05:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
@@ -583,29 +570,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:9781cb2d-03a4-4e3e-8b30-8eadc0165fc2>;
+        dcat:distribution     <urn:uuid:5cd0de57-8d39-438f-8b99-65b865d187ac>;
         dcat:endDate          "2023-06-15T23:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-15T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:b2311cd4-9165-44d2-81b4-95d236a5c7f1>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "b2311cd4-9165-44d2-81b4-95d236a5c7f1";
-        dcterms:issued        "2026-07-16T13:03:11.111802434Z"^^xsd:dateTime;
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/> , <http://example.org/license>;
-        dcterms:publisher     <http://example.org/publisher> , <https://energy.referencedata.eu/test/party/Jotunheim>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <urn:placeholder:spatial>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:778424d6-1678-46d6-ba96-c96ad88518f4> , <urn:uuid:3be2a1a2-7f7a-49e9-8be1-f38cef29812b> , <urn:uuid:03b0f466-4b1d-4944-a359-837ee79d6c6d> , <urn:uuid:79a9b646-0448-49a8-b42d-78e78c07a73b> , <urn:uuid:eb688891-35e2-4278-a6e3-1b67d67ba591> , <urn:uuid:ab91933c-9fca-4e2c-a881-37f6f6c0cb9f> , <urn:uuid:6d697c8e-aded-426b-bd18-6f0ac252b999> , <urn:uuid:d5aea98d-c4e2-4436-ab23-6c705e17960e> , <urn:uuid:237de243-b16c-431d-9aa9-b7470448aa80> , <urn:uuid:5135a227-4529-43cb-9286-37a55119c08e> , <urn:uuid:5e401955-387e-45ce-b127-dd142b06b20c> , <urn:uuid:f585ecdc-e9bd-43bb-8cdb-3b55eb2eb03d> , <urn:uuid:6bcda2b5-0eb1-4eb0-9dd9-5d58c7c892dc> , <urn:uuid:a9c27d9c-42bb-46bd-8c69-99a246f3389a> , <urn:uuid:d226786d-20b5-46c5-9be5-95190f83845c> , <urn:uuid:3ce574dc-ccd9-4793-a6bc-da2b50ea1ebf> , <urn:uuid:f625659d-e558-4f93-9249-c931112dbd7f> , <urn:uuid:5c1ea45b-46a9-447f-b8ae-7d7e4b475b6c> , <urn:uuid:b59f6b96-1333-44fd-b9cc-23419db61281> , <urn:uuid:76f9eab4-bfd3-4290-9547-c1847ec66168> , <urn:uuid:42d78e78-c06a-473b-82a4-957e7a8dd4a3> , <urn:uuid:43e52f47-22d9-428c-8b1c-d521e54a29b9> , <urn:uuid:bec228e6-436b-4173-9db5-5f679613334b> , <urn:uuid:845cf3c2-b38c-4886-aa2c-021499114b5e> , <urn:uuid:e2426b02-35cb-445e-8696-feedface4cc1>;
-        dcat:version          "1.0.0" .
+<urn:uuid:bd3871a1-cda5-425a-af4c-266c4b2fa504>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_2130Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:f585ecdc-e9bd-43bb-8cdb-3b55eb2eb03d>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:5c1ea45b-46a9-447f-b8ae-7d7e4b475b6c>
         rdf:type              dcat:Dataset;
@@ -621,29 +601,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:c7bcc106-ac9c-49a4-9031-6fa6cb37755a>;
+        dcat:distribution     <urn:uuid:09f5c3e8-90dc-4b31-b92c-22460d9fb228>;
         dcat:endDate          "2023-06-16T02:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T02:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:28ae5c46-60e5-42db-876a-24ce68223bdc>
+<urn:uuid:98000adb-1b0e-4da7-bd07-da74b0eee641>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_2030Z_IAM_.xml>;
         dcat:isDistributionOf  <urn:uuid:3be2a1a2-7f7a-49e9-8be1-f38cef29812b>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
-
-<urn:uuid:9781cb2d-03a4-4e3e-8b30-8eadc0165fc2>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
-        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_0130Z_IAM_.xml>;
-        dcat:isDistributionOf  <urn:uuid:237de243-b16c-431d-9aa9-b7470448aa80>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -662,7 +632,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:fc895dec-8437-4d4d-b52d-624d584fb0ad> , <urn:uuid:46a76b45-322c-4e59-b8d6-cadcd94ab03c>;
+        dcat:distribution     <urn:uuid:fc895dec-8437-4d4d-b52d-624d584fb0ad> , <urn:uuid:1c19d34d-6ccc-4c51-ab6d-8b19a8608d75>;
         dcat:endDate          "2023-06-16T09:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
@@ -683,12 +653,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:10234fbd-2c12-47e1-b67e-f428dd959780>;
+        dcat:distribution     <urn:uuid:8d71ac6e-f1dc-48d6-ada4-d51ecb1a57a7>;
         dcat:endDate          "2023-06-16T00:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T00:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:1c19d34d-6ccc-4c51-ab6d-8b19a8608d75>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1130Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:03b0f466-4b1d-4944-a359-837ee79d6c6d>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:6d697c8e-aded-426b-bd18-6f0ac252b999>
         rdf:type              dcat:Dataset;
@@ -704,7 +684,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:990744d1-2c7d-4747-9675-1ad75786e28b>;
+        dcat:distribution     <urn:uuid:5ded40ee-99ee-4315-8dd7-3ae28fd9971a>;
         dcat:endDate          "2023-06-16T10:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
@@ -725,7 +705,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:8d50c888-8735-4d06-9e32-1cb5457b2eca>;
+        dcat:distribution     <urn:uuid:c2f5534e-be25-4941-9817-9efdfd6b3e5c>;
         dcat:endDate          "2023-06-16T04:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
@@ -738,6 +718,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:///home/runner/work/relicapgrid/relicapgrid/Instance/Jotunheim/NetworkCode/2D_IAM_1130Z_IAM_.xml>;
         dcat:isDistributionOf  <urn:uuid:03b0f466-4b1d-4944-a359-837ee79d6c6d>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
+
+<urn:uuid:0ac47edb-17a7-4e4c-9c5f-9167c61d3adb>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1030Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:bec228e6-436b-4173-9db5-5f679613334b>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
@@ -756,12 +746,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:a02d7d9a-adc6-4714-b2fe-e4875a369d91>;
+        dcat:distribution     <urn:uuid:55fbec23-c39a-4acf-86b1-80d5ea305afe>;
         dcat:endDate          "2023-06-16T17:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
         dcat:startDate        "2022-06-16T17:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:55fbec23-c39a-4acf-86b1-80d5ea305afe>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/ImpactAssessmentMatrix/2.4>;
+        dcterms:description    "This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid.This is an example of impact assessment matrix profile."@en;
+        dcat:accessURL         <file:Instance/Jotunheim/NetworkCode/2D_IAM_1930Z_IAM_.xml>;
+        dcat:isDistributionOf  <urn:uuid:eb688891-35e2-4278-a6e3-1b67d67ba591>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-IAM> .
 
 <urn:uuid:76f9eab4-bfd3-4290-9547-c1847ec66168>
         rdf:type              dcat:Dataset;
@@ -777,7 +777,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:183a384a-5809-4fba-9126-5422804ba281>;
+        dcat:distribution     <urn:uuid:0706e009-1f28-4cc0-9ac3-879f313049f3>;
         dcat:endDate          "2023-06-16T16:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";
@@ -798,7 +798,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615_IAM_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:15fd408a-b41f-417a-88c2-21ec3173ab03>;
+        dcat:distribution     <urn:uuid:bd3871a1-cda5-425a-af4c-266c4b2fa504>;
         dcat:endDate          "2023-06-16T19:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Jotunheim-IAM>;
         dcat:keyword          "IAM";

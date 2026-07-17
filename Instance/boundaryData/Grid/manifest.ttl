@@ -8,22 +8,22 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:8a52a622-3587-45fc-84f0-ef9cbf7d6202>
+<urn:uuid:67feebd9-9b7d-48a8-91ae-612d79394bda>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Galia-Britheim.xml>;
-        dcat:isDistributionOf  <urn:uuid:7205352b-3af5-4bb1-a008-aba810e8a35d>;
+        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Svedala-Espheim.xml>;
+        dcat:isDistributionOf  <urn:uuid:af6450db-fe15-4caf-94a1-e22f3fced32e>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:5a5d057d-e52d-46ad-a00e-c32c9859dd9a>
+<urn:uuid:40f9111d-47e1-4dff-a0ec-74283514ddc5>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Svedala-Belgovia.xml>;
-        dcat:isDistributionOf  <urn:uuid:d11b06e3-b709-4d45-9b49-188b2089be16>;
+        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Galia-Belgovia.xml>;
+        dcat:isDistributionOf  <urn:uuid:7e5e27b6-cb5a-4168-88bf-f395a19cbec1>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
@@ -43,7 +43,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Boundary_Border-Galia-Belgovia";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:cdc6caf8-002a-4ff5-808b-1066405b01c2>;
+        dcat:distribution     <urn:uuid:40f9111d-47e1-4dff-a0ec-74283514ddc5>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
@@ -63,17 +63,17 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Boundary_Border-Espheim-Portheim";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:7ab95879-ac92-48cf-b708-1bd79d5e168f>;
+        dcat:distribution     <urn:uuid:4fa75161-92b7-4a9a-942f-6c172f9588c4>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:cdc6caf8-002a-4ff5-808b-1066405b01c2>
+<urn:uuid:4fa75161-92b7-4a9a-942f-6c172f9588c4>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Galia-Belgovia.xml>;
-        dcat:isDistributionOf  <urn:uuid:7e5e27b6-cb5a-4168-88bf-f395a19cbec1>;
+        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Espheim-Portheim.xml>;
+        dcat:isDistributionOf  <urn:uuid:18883bbd-c850-48eb-8eb9-b6018decdb63>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
@@ -93,44 +93,37 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Boundary_Border-Svedala-Belgovia";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:5a5d057d-e52d-46ad-a00e-c32c9859dd9a>;
+        dcat:distribution     <urn:uuid:905746e8-7dd5-4258-97ca-c3cd3b19d090>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:2ed23098-fed0-4eb0-ab3c-1d89ee71a627>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "ed23098-fed0-4eb0-ab3c-1d89ee71a627";
-        dcterms:issued        "2025-02-06T14:18:22Z"^^xsd:dateTime;
-        dcterms:license       <http://example.org/license>;
-        dcterms:publisher     <http://ninerealms.nr/boundary>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
-        dcterms:spatial       <urn:placeholder:spatial>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:7205352b-3af5-4bb1-a008-aba810e8a35d> , <urn:uuid:d11b06e3-b709-4d45-9b49-188b2089be16> , <urn:uuid:af6450db-fe15-4caf-94a1-e22f3fced32e> , <urn:uuid:18883bbd-c850-48eb-8eb9-b6018decdb63> , <urn:uuid:5f8c11a8-c61c-42c9-925d-8cdbc0146c1a> , <urn:uuid:7e5e27b6-cb5a-4168-88bf-f395a19cbec1>;
-        dcat:version          "1" .
-
-<urn:uuid:7ab95879-ac92-48cf-b708-1bd79d5e168f>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
-        dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Espheim-Portheim.xml>;
-        dcat:isDistributionOf  <urn:uuid:18883bbd-c850-48eb-8eb9-b6018decdb63>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:428783bd-d45d-43d8-8c23-6b2d5cde6fcd>
+<urn:uuid:5b87541b-e3a6-4443-a649-ccafe3ffbd8e>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
         dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Galia-Nordheim.xml>;
         dcat:isDistributionOf  <urn:uuid:5f8c11a8-c61c-42c9-925d-8cdbc0146c1a>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:905746e8-7dd5-4258-97ca-c3cd3b19d090>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
+        dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Svedala-Belgovia.xml>;
+        dcat:isDistributionOf  <urn:uuid:d11b06e3-b709-4d45-9b49-188b2089be16>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:713c0eb5-e975-458e-88f6-1bb26124e409>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
+        dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Galia-Britheim.xml>;
+        dcat:isDistributionOf  <urn:uuid:7205352b-3af5-4bb1-a008-aba810e8a35d>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
@@ -150,7 +143,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Boundary_Border-Galia-Britheim";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:8a52a622-3587-45fc-84f0-ef9cbf7d6202>;
+        dcat:distribution     <urn:uuid:713c0eb5-e975-458e-88f6-1bb26124e409>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
@@ -170,20 +163,27 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Boundary_Border-Galia-Nordheim";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:428783bd-d45d-43d8-8c23-6b2d5cde6fcd>;
+        dcat:distribution     <urn:uuid:5b87541b-e3a6-4443-a649-ccafe3ffbd8e>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:1b6089b0-1bbb-4ddd-aa2b-fd5444de0cab>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
-        dcterms:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/boundaryData/Grid/cimxml/Boundary_Border-Svedala-Espheim.xml>;
-        dcat:isDistributionOf  <urn:uuid:af6450db-fe15-4caf-94a1-e22f3fced32e>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+<urn:uuid:93c18dd1-ae2b-4b77-8bbf-7c12e7454b11>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "c18dd1-ae2b-4b77-8bbf-7c12e7454b11";
+        dcterms:issued        "2025-02-06T14:18:22Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://ninerealms.nr/boundary>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:d11b06e3-b709-4d45-9b49-188b2089be16> , <urn:uuid:7e5e27b6-cb5a-4168-88bf-f395a19cbec1> , <urn:uuid:18883bbd-c850-48eb-8eb9-b6018decdb63> , <urn:uuid:5f8c11a8-c61c-42c9-925d-8cdbc0146c1a> , <urn:uuid:7205352b-3af5-4bb1-a008-aba810e8a35d> , <urn:uuid:af6450db-fe15-4caf-94a1-e22f3fced32e>;
+        dcat:version          "1" .
 
 <urn:uuid:af6450db-fe15-4caf-94a1-e22f3fced32e>
         rdf:type              dcat:Dataset;
@@ -200,7 +200,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Boundary_Border-Svedala-Espheim";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:1b6089b0-1bbb-4ddd-aa2b-fd5444de0cab>;
+        dcat:distribution     <urn:uuid:67feebd9-9b7d-48a8-91ae-612d79394bda>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
