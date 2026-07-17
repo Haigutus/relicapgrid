@@ -85,6 +85,15 @@
     <cim:IdentifiedObject.name>PSKS1</cim:IdentifiedObject.name>
   </nc:PowerShiftKeyStrategy>
 
+  <!-- Power shift key strategy for the Countertrade RA (RA18); carries the GLSK method/powerShiftKey moved off CountertradeRemedialAction -->
+  <nc:PowerShiftKeyStrategy rdf:ID="_52958168-c198-4dd0-924f-f3953ba17988">
+    <nc:PowerShiftKeyStrategy.method rdf:resource="https://cim4.eu/ns/nc#ShiftMethodKind.shared"/>
+    <nc:PowerShiftKeyStrategy.powerShiftKey rdf:resource="https://cim4.eu/ns/nc#PowerShiftKeyKind.generatorsPmax"/>
+    <cim:IdentifiedObject.description>Power Shift Key Strategy for Countertrade RA (RA18)</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>52958168-c198-4dd0-924f-f3953ba17988</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>PSKS-CT</cim:IdentifiedObject.name>
+  </nc:PowerShiftKeyStrategy>
+
   <nc:AreaDispatchableUnit rdf:ID="_4a053fac-126a-4a13-8a74-781c11517fae">
     <nc:AreaDispatchableUnit.GeneratingUnit rdf:resource="#_413bbc8a-683c-7e07-4fb9-aa6ec83278e0"/>
     <nc:AreaDispatchableUnit.normalEnabled>true</nc:AreaDispatchableUnit.normalEnabled>
