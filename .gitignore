@@ -8,3 +8,4 @@
 /.idea
 *.iml
 validation_report/
+.shacl_cache/

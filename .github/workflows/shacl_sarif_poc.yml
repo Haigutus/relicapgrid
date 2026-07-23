@@ -5,26 +5,34 @@ on:
   push:
     branches: [shacl-sarif-poc]
     paths:
-      - reports/sample_shacl_report.rdf
-      - reports/shacl-results.sarif
-      - buildScripts/shacl_report_to_sarif.py
+      - buildScripts/validate_shacl_sarif.py
       - .github/workflows/shacl_sarif_poc.yml
+      - pyproject.toml
 
 permissions:
   contents: read
   security-events: write
 
 jobs:
-  upload-shacl-sarif:
-    name: Upload SHACL results to code scanning
+  shacl-sarif:
+    name: Validate and upload SHACL results to code scanning
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
-      - name: Regenerate SARIF from sample SHACL report
-        run: python buildScripts/shacl_report_to_sarif.py
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
 
-      - name: Upload SHACL SARIF results
+      - name: Validate ReliCapGrid EQ and export SARIF (triplets native to_sarif)
+        run: uv run buildScripts/validate_shacl_sarif.py
+
+      - name: Upload SARIF as build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: shacl-results-sarif
+          path: reports/shacl-results.sarif
+
+      - name: Upload SHACL SARIF to code scanning
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: reports/shacl-results.sarif
