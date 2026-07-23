@@ -71,10 +71,22 @@ located = enriched.shacl.locate(sources=[EQ])
 reports = REPO_ROOT / "reports"
 reports.mkdir(exist_ok=True)
 sarif_path = located.shacl.to_sarif(path=reports / "shacl-results.sarif")
-print("wrote", sarif_path)
 
+# GitHub code scanning requires every result to carry at least one location.
+# Some violations (e.g. a missing required property) have no source line — give
+# them a file-level fallback location so the SARIF is accepted.
 sarif = json.loads(Path(sarif_path).read_text())
 run = sarif["runs"][0]
+patched = 0
+for result in run["results"]:
+    if not result.get("locations"):
+        result["locations"] = [{"physicalLocation": {
+            "artifactLocation": {"uri": EQ}, "region": {"startLine": 1}}}]
+        patched += 1
+if patched:
+    Path(sarif_path).write_text(json.dumps(sarif, indent=2))
+    print(f"added file-level fallback location to {patched} result(s)")
+print("wrote", sarif_path)
 levels = {}
 for r in run["results"]:
     levels[r["level"]] = levels.get(r["level"], 0) + 1

@@ -684,7 +684,7 @@
           "ruleIndex": 0,
           "level": "error",
           "message": {
-            "text": "One of the following occurs: 1) The value type is not IRI; 2) The value type is not the right class. — Terminal.ConductingEquipment — 1 object(s) affected. Examples: Terminal 0006811f-1505-4595-91c8-87848839bd74 (Terminal(2))"
+            "text": "One of the following occurs: 1) The value type is not IRI; 2) The value type is not the right class. \u2014 Terminal.ConductingEquipment \u2014 1 object(s) affected. Examples: Terminal 0006811f-1505-4595-91c8-87848839bd74 (Terminal(2))"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -728,7 +728,7 @@
           "ruleIndex": 1,
           "level": "error",
           "message": {
-            "text": "The value is negative. — ActivePowerLimit.normalValue — 1 object(s) affected. Examples: ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
+            "text": "The value is negative. \u2014 ActivePowerLimit.normalValue \u2014 1 object(s) affected. Examples: ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -772,7 +772,7 @@
           "ruleIndex": 2,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — ACLineSegment.gch — 90 object(s) affected. Examples: ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment b2a3ba57-d592-4bc9-b4cb-8a78cf8a0bb6 (RL8), ACLineSegment c74e2c04-c55f-46b5-839a-a38d09653d2a (L4_ST15-ST16) … ACLineSegment 68ff1db6-29ec-4e03-9a47-fd6810f27a0a (L2_ST10-ST11), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15), ACLineSegment 9e29b829-b840-4d5d-ad7b-4721c59a58e2 (AL1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ACLineSegment.gch \u2014 90 object(s) affected. Examples: ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment b2a3ba57-d592-4bc9-b4cb-8a78cf8a0bb6 (RL8), ACLineSegment c74e2c04-c55f-46b5-839a-a38d09653d2a (L4_ST15-ST16) \u2026 ACLineSegment 68ff1db6-29ec-4e03-9a47-fd6810f27a0a (L2_ST10-ST11), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15), ACLineSegment 9e29b829-b840-4d5d-ad7b-4721c59a58e2 (AL1)"
           },
           "occurrenceCount": 90,
           "locations": [
@@ -911,7 +911,7 @@
           "ruleIndex": 3,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — ACLineSegment.x — 32 object(s) affected. Examples: ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment 628cee38-ba9c-4fdd-915d-1dd7857a8f66 (FL10), ACLineSegment c30585bb-fe3f-404f-91c6-c5cb91948418 (CL6) … ACLineSegment 7f2ab29f-606d-42c7-af86-9d659b650c0a (FL6), ACLineSegment 48485857-d388-4d24-8e5c-02a68ec905e9 (FL12), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ACLineSegment.x \u2014 32 object(s) affected. Examples: ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment 628cee38-ba9c-4fdd-915d-1dd7857a8f66 (FL10), ACLineSegment c30585bb-fe3f-404f-91c6-c5cb91948418 (CL6) \u2026 ACLineSegment 7f2ab29f-606d-42c7-af86-9d659b650c0a (FL6), ACLineSegment 48485857-d388-4d24-8e5c-02a68ec905e9 (FL12), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15)"
           },
           "occurrenceCount": 32,
           "locations": [
@@ -1054,7 +1054,7 @@
           "ruleIndex": 4,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — Conductor.length — 7 object(s) affected. Examples: ACLineSegment 536f4b84-db4c-4545-96e9-bb5a87f65d13 (TieLine_SD_BO3), ACLineSegment 4c390dab-3499-4a9f-9cee-5877081479ab (TieLine_SD-EH3), ACLineSegment 891e77ff-39c6-4648-8eda-d81f730271f9 (TieLine_SD-EH2) … ACLineSegment 632d9eaa-06f7-4b7b-8f8f-ae248941efe2 (TieLine_SD-EH1), ACLineSegment 7b858bec-17c8-4cab-bfcb-6bbd645af2db (TieLine_SD-HVDC_SD_EH_1), ACLineSegment 20f3f6ca-906f-4c6c-bc12-89ffff80b03b (TieLine_SD-BO1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 Conductor.length \u2014 7 object(s) affected. Examples: ACLineSegment 536f4b84-db4c-4545-96e9-bb5a87f65d13 (TieLine_SD_BO3), ACLineSegment 4c390dab-3499-4a9f-9cee-5877081479ab (TieLine_SD-EH3), ACLineSegment 891e77ff-39c6-4648-8eda-d81f730271f9 (TieLine_SD-EH2) \u2026 ACLineSegment 632d9eaa-06f7-4b7b-8f8f-ae248941efe2 (TieLine_SD-EH1), ACLineSegment 7b858bec-17c8-4cab-bfcb-6bbd645af2db (TieLine_SD-HVDC_SD_EH_1), ACLineSegment 20f3f6ca-906f-4c6c-bc12-89ffff80b03b (TieLine_SD-BO1)"
           },
           "occurrenceCount": 7,
           "locations": [
@@ -1195,7 +1195,7 @@
           "ruleIndex": 5,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — ACLineSegment.r — 4 object(s) affected. Examples: ACLineSegment 20119a6d-5ad3-4d08-aed7-79b476537602 (CL17), ACLineSegment 134e7e0a-4c7e-4faf-923f-6c15e53792d3 (CL5), ACLineSegment d5c0d6d6-b846-4406-9739-066ee473d945 (CL12), ACLineSegment e02e1166-1c43-4a4d-8c5a-82298ee0c8f5 (CL1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ACLineSegment.r \u2014 4 object(s) affected. Examples: ACLineSegment 20119a6d-5ad3-4d08-aed7-79b476537602 (CL17), ACLineSegment 134e7e0a-4c7e-4faf-923f-6c15e53792d3 (CL5), ACLineSegment d5c0d6d6-b846-4406-9739-066ee473d945 (CL12), ACLineSegment e02e1166-1c43-4a4d-8c5a-82298ee0c8f5 (CL1)"
           },
           "occurrenceCount": 4,
           "locations": [
@@ -1297,7 +1297,7 @@
           "ruleIndex": 6,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — CurrentLimit.normalValue — 380 object(s) affected. Examples: CurrentLimit 1eabe3c1-81e1-cc7d-ea5c-4c9e0244eebc (patl for CL15), CurrentLimit 6ec56105-f9c6-2afb-f4df-947c9f65cb36 (tatl 600 for CL16), CurrentLimit 0a7b54aa-fb3c-7147-7cf5-36690ac86d7f (tatl 600 for L1_ST5-ST11) … CurrentLimit c5e0e6bd-15a1-1fd9-3fb7-ee4f1fc1317e (patl for STORFORS_G1_TRAFO), CurrentLimit 2d814b2a-518b-e28c-30c3-49c7f4f6a95e (tatl 600 for CL3), CurrentLimit 2ff11f10-371a-311e-bebe-551ee7c48f0d (tatl 600 for FL13)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 CurrentLimit.normalValue \u2014 380 object(s) affected. Examples: CurrentLimit 1eabe3c1-81e1-cc7d-ea5c-4c9e0244eebc (patl for CL15), CurrentLimit 6ec56105-f9c6-2afb-f4df-947c9f65cb36 (tatl 600 for CL16), CurrentLimit 0a7b54aa-fb3c-7147-7cf5-36690ac86d7f (tatl 600 for L1_ST5-ST11) \u2026 CurrentLimit c5e0e6bd-15a1-1fd9-3fb7-ee4f1fc1317e (patl for STORFORS_G1_TRAFO), CurrentLimit 2d814b2a-518b-e28c-30c3-49c7f4f6a95e (tatl 600 for CL3), CurrentLimit 2ff11f10-371a-311e-bebe-551ee7c48f0d (tatl 600 for FL13)"
           },
           "occurrenceCount": 380,
           "locations": [
@@ -1438,7 +1438,7 @@
           "ruleIndex": 7,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — GeneratingUnit.maxOperatingP — 36 object(s) affected. Examples: HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit c7765ac6-3e6c-f238-83f2-72e2b7e22a5c (HÄLLAN_G1) … ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (KÄRNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 GeneratingUnit.maxOperatingP \u2014 36 object(s) affected. Examples: HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit c7765ac6-3e6c-f238-83f2-72e2b7e22a5c (H\u00c4LLAN_G1) \u2026 ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (K\u00c4RNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
           },
           "occurrenceCount": 36,
           "locations": [
@@ -1482,7 +1482,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "HydroGeneratingUnit/c7765ac6-3e6c-f238-83f2-72e2b7e22a5c",
-                  "name": "HÄLLAN_G1",
+                  "name": "H\u00c4LLAN_G1",
                   "kind": "object"
                 }
               ],
@@ -1500,7 +1500,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "ThermalGeneratingUnit/0106680e-6c8c-22e8-e8d5-40a5be4d4ae1",
-                  "name": "KÄRNAN_G2",
+                  "name": "K\u00c4RNAN_G2",
                   "kind": "object"
                 }
               ],
@@ -1581,7 +1581,7 @@
           "ruleIndex": 8,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — GeneratingUnit.minOperatingP — 38 object(s) affected. Examples: HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit 7ec185f6-e72f-cb53-d4b0-7899558f8061 (STENFORSEN_G1) … ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (KÄRNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 GeneratingUnit.minOperatingP \u2014 38 object(s) affected. Examples: HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit 7ec185f6-e72f-cb53-d4b0-7899558f8061 (STENFORSEN_G1) \u2026 ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (K\u00c4RNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
           },
           "occurrenceCount": 38,
           "locations": [
@@ -1643,7 +1643,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "ThermalGeneratingUnit/0106680e-6c8c-22e8-e8d5-40a5be4d4ae1",
-                  "name": "KÄRNAN_G2",
+                  "name": "K\u00c4RNAN_G2",
                   "kind": "object"
                 }
               ],
@@ -1720,7 +1720,7 @@
           "ruleIndex": 9,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — LinearShuntCompensator.gPerSection — 45 object(s) affected. Examples: LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) … LinearShuntCompensator c666e845-f13e-423b-865c-e7721bdda3ed (FT41_EK1), LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 LinearShuntCompensator.gPerSection \u2014 45 object(s) affected. Examples: LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) \u2026 LinearShuntCompensator c666e845-f13e-423b-865c-e7721bdda3ed (FT41_EK1), LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3)"
           },
           "occurrenceCount": 45,
           "locations": [
@@ -1859,7 +1859,7 @@
           "ruleIndex": 10,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — ShuntCompensator.nomU — 46 object(s) affected. Examples: LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) … LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3), NonlinearShuntCompensator 8464a151-ec39-4e7a-8321-06c41e63958c (FT62_X3)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ShuntCompensator.nomU \u2014 46 object(s) affected. Examples: LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) \u2026 LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3), NonlinearShuntCompensator 8464a151-ec39-4e7a-8321-06c41e63958c (FT62_X3)"
           },
           "occurrenceCount": 46,
           "locations": [
@@ -1998,7 +1998,7 @@
           "ruleIndex": 11,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — OperationalLimitType.acceptableDuration — 3 object(s) affected. Examples: OperationalLimitType 6286de91-95ca-75a2-db02-e5a6331d18fb (tatl), OperationalLimitType 784a84a0-0d21-4d8c-bc63-94f7312a1eb2 (PTC_limit_import), OperationalLimitType 98cf1d8f-f84f-4d77-9616-43aa5a21c82c (PTC_limit_export)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 OperationalLimitType.acceptableDuration \u2014 3 object(s) affected. Examples: OperationalLimitType 6286de91-95ca-75a2-db02-e5a6331d18fb (tatl), OperationalLimitType 784a84a0-0d21-4d8c-bc63-94f7312a1eb2 (PTC_limit_import), OperationalLimitType 98cf1d8f-f84f-4d77-9616-43aa5a21c82c (PTC_limit_export)"
           },
           "occurrenceCount": 3,
           "locations": [
@@ -2081,7 +2081,7 @@
           "ruleIndex": 12,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — PowerTransformerEnd.b — 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLMÅFALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) … PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.b \u2014 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 106,
           "locations": [
@@ -2107,7 +2107,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "PowerTransformerEnd/ad64440b-e3c6-5a0a-f7dd-00100d44ef97",
-                  "name": "OLMÅFALLET_G1_TRAFO",
+                  "name": "OLM\u00c5FALLET_G1_TRAFO",
                   "kind": "object"
                 }
               ],
@@ -2220,7 +2220,7 @@
           "ruleIndex": 13,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — PowerTransformerEnd.g — 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLMÅFALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) … PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.g \u2014 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 106,
           "locations": [
@@ -2246,7 +2246,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "PowerTransformerEnd/ad64440b-e3c6-5a0a-f7dd-00100d44ef97",
-                  "name": "OLMÅFALLET_G1_TRAFO",
+                  "name": "OLM\u00c5FALLET_G1_TRAFO",
                   "kind": "object"
                 }
               ],
@@ -2359,7 +2359,7 @@
           "ruleIndex": 14,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — PowerTransformerEnd.r — 104 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLMÅFALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) … PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.r \u2014 104 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 104,
           "locations": [
@@ -2385,7 +2385,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "PowerTransformerEnd/ad64440b-e3c6-5a0a-f7dd-00100d44ef97",
-                  "name": "OLMÅFALLET_G1_TRAFO",
+                  "name": "OLM\u00c5FALLET_G1_TRAFO",
                   "kind": "object"
                 }
               ],
@@ -2498,7 +2498,7 @@
           "ruleIndex": 15,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — PowerTransformerEnd.ratedS — 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLMÅFALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) … PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.ratedS \u2014 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 106,
           "locations": [
@@ -2524,7 +2524,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "PowerTransformerEnd/ad64440b-e3c6-5a0a-f7dd-00100d44ef97",
-                  "name": "OLMÅFALLET_G1_TRAFO",
+                  "name": "OLM\u00c5FALLET_G1_TRAFO",
                   "kind": "object"
                 }
               ],
@@ -2640,7 +2640,7 @@
           "ruleIndex": 16,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — PowerTransformerEnd.ratedU — 100 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLMÅFALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) … PowerTransformerEnd 6a9604ba-bd15-4667-ce4d-ab0c5994d94c (FT63_T11), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.ratedU \u2014 100 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 6a9604ba-bd15-4667-ce4d-ab0c5994d94c (FT63_T11), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 100,
           "locations": [
@@ -2666,7 +2666,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "PowerTransformerEnd/ad64440b-e3c6-5a0a-f7dd-00100d44ef97",
-                  "name": "OLMÅFALLET_G1_TRAFO",
+                  "name": "OLM\u00c5FALLET_G1_TRAFO",
                   "kind": "object"
                 }
               ],
@@ -2781,7 +2781,7 @@
           "ruleIndex": 17,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — PowerTransformerEnd.x — 71 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLMÅFALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) … PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.x \u2014 71 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 71,
           "locations": [
@@ -2807,7 +2807,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "PowerTransformerEnd/ad64440b-e3c6-5a0a-f7dd-00100d44ef97",
-                  "name": "OLMÅFALLET_G1_TRAFO",
+                  "name": "OLM\u00c5FALLET_G1_TRAFO",
                   "kind": "object"
                 }
               ],
@@ -2921,7 +2921,7 @@
           "ruleIndex": 18,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — TapChanger.neutralU — 9 object(s) affected. Examples: RatioTapChanger 920f9cbd-0f0e-bf5d-083e-dbf16aad8b0f (XT201-T1), RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 1d61cd3e-d131-8bbb-f4a2-8a711c95dc1e (ST5_T1) … RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 1a33a841-7d4e-0485-bd31-45caf3cce221 (XT191-T1), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChanger.neutralU \u2014 9 object(s) affected. Examples: RatioTapChanger 920f9cbd-0f0e-bf5d-083e-dbf16aad8b0f (XT201-T1), RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 1d61cd3e-d131-8bbb-f4a2-8a711c95dc1e (ST5_T1) \u2026 RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 1a33a841-7d4e-0485-bd31-45caf3cce221 (XT191-T1), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
           },
           "occurrenceCount": 9,
           "locations": [
@@ -3061,7 +3061,7 @@
           "ruleIndex": 19,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — RatioTapChanger.stepVoltageIncrement — 4 object(s) affected. Examples: RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 9564d660-052a-292d-4549-2e0675125fcf (FT42_T402), RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RatioTapChanger.stepVoltageIncrement \u2014 4 object(s) affected. Examples: RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 9564d660-052a-292d-4549-2e0675125fcf (FT42_T402), RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
           },
           "occurrenceCount": 4,
           "locations": [
@@ -3162,7 +3162,7 @@
           "ruleIndex": 20,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — TapChangerTablePoint.b — 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e … RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.b \u2014 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 235,
           "locations": [
@@ -3301,7 +3301,7 @@
           "ruleIndex": 21,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — TapChangerTablePoint.g — 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e … RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.g \u2014 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 235,
           "locations": [
@@ -3440,7 +3440,7 @@
           "ruleIndex": 22,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — TapChangerTablePoint.r — 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e … RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.r \u2014 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 235,
           "locations": [
@@ -3579,7 +3579,7 @@
           "ruleIndex": 23,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — TapChangerTablePoint.ratio — 9 object(s) affected. Examples: RatioTapChangerTablePoint ac93de00-c749-d782-2dd4-95c3ecc65910, RatioTapChangerTablePoint ef4ab9d1-ed7f-9d87-952e-e1f0de084fdc, RatioTapChangerTablePoint 9dd8bbf0-306a-01c0-e30c-240d0c7616e2 … RatioTapChangerTablePoint 8d34ef9f-dc11-659c-9114-bb37d4dd2de6, RatioTapChangerTablePoint 6999f3b8-bc5a-d681-2e7c-27896300104d, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.ratio \u2014 9 object(s) affected. Examples: RatioTapChangerTablePoint ac93de00-c749-d782-2dd4-95c3ecc65910, RatioTapChangerTablePoint ef4ab9d1-ed7f-9d87-952e-e1f0de084fdc, RatioTapChangerTablePoint 9dd8bbf0-306a-01c0-e30c-240d0c7616e2 \u2026 RatioTapChangerTablePoint 8d34ef9f-dc11-659c-9114-bb37d4dd2de6, RatioTapChangerTablePoint 6999f3b8-bc5a-d681-2e7c-27896300104d, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 9,
           "locations": [
@@ -3718,7 +3718,7 @@
           "ruleIndex": 24,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — StaticVarCompensator.capacitiveRating — 2 object(s) affected. Examples: StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 StaticVarCompensator.capacitiveRating \u2014 2 object(s) affected. Examples: StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -3781,7 +3781,7 @@
           "ruleIndex": 25,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — StaticVarCompensator.inductiveRating — 2 object(s) affected. Examples: StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 StaticVarCompensator.inductiveRating \u2014 2 object(s) affected. Examples: StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -3845,7 +3845,7 @@
           "ruleIndex": 26,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — RotatingMachine.ratedS — 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDBÄCK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) … SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (HÄLLAN_G1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RotatingMachine.ratedS \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -3871,7 +3871,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/6c114aaf-8f71-4cd6-8c4a-8832a4713422",
-                  "name": "SYDBÄCK_G2",
+                  "name": "SYDB\u00c4CK_G2",
                   "kind": "object"
                 }
               ],
@@ -3943,7 +3943,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/4e0971d4-db4c-441d-a9f2-c88d4c04f60b",
-                  "name": "HÄLLAN_G1",
+                  "name": "H\u00c4LLAN_G1",
                   "kind": "object"
                 }
               ],
@@ -3989,7 +3989,7 @@
           "ruleIndex": 27,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — RotatingMachine.ratedU — 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDBÄCK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) … SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (HÄLLAN_G1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RotatingMachine.ratedU \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -4015,7 +4015,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/6c114aaf-8f71-4cd6-8c4a-8832a4713422",
-                  "name": "SYDBÄCK_G2",
+                  "name": "SYDB\u00c4CK_G2",
                   "kind": "object"
                 }
               ],
@@ -4087,7 +4087,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/4e0971d4-db4c-441d-a9f2-c88d4c04f60b",
-                  "name": "HÄLLAN_G1",
+                  "name": "H\u00c4LLAN_G1",
                   "kind": "object"
                 }
               ],
@@ -4129,7 +4129,7 @@
           "ruleIndex": 28,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — SynchronousMachine.maxQ — 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDBÄCK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) … SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (HÄLLAN_G1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 SynchronousMachine.maxQ \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -4155,7 +4155,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/6c114aaf-8f71-4cd6-8c4a-8832a4713422",
-                  "name": "SYDBÄCK_G2",
+                  "name": "SYDB\u00c4CK_G2",
                   "kind": "object"
                 }
               ],
@@ -4227,7 +4227,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/4e0971d4-db4c-441d-a9f2-c88d4c04f60b",
-                  "name": "HÄLLAN_G1",
+                  "name": "H\u00c4LLAN_G1",
                   "kind": "object"
                 }
               ],
@@ -4271,7 +4271,7 @@
           "ruleIndex": 29,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — SynchronousMachine.minQ — 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDBÄCK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) … SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (HÄLLAN_G1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 SynchronousMachine.minQ \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -4297,7 +4297,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/6c114aaf-8f71-4cd6-8c4a-8832a4713422",
-                  "name": "SYDBÄCK_G2",
+                  "name": "SYDB\u00c4CK_G2",
                   "kind": "object"
                 }
               ],
@@ -4369,7 +4369,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/4e0971d4-db4c-441d-a9f2-c88d4c04f60b",
-                  "name": "HÄLLAN_G1",
+                  "name": "H\u00c4LLAN_G1",
                   "kind": "object"
                 }
               ],
@@ -4414,7 +4414,7 @@
           "ruleIndex": 30,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — SynchronousMachine.qPercent — 26 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2), SynchronousMachine fc77b8f5-555e-4990-b913-a71852ddbfb2 (OLMÅFALLET_G1) … SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (HÄLLAN_G1)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 SynchronousMachine.qPercent \u2014 26 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2), SynchronousMachine fc77b8f5-555e-4990-b913-a71852ddbfb2 (OLM\u00c5FALLET_G1) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 26,
           "locations": [
@@ -4458,7 +4458,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/fc77b8f5-555e-4990-b913-a71852ddbfb2",
-                  "name": "OLMÅFALLET_G1",
+                  "name": "OLM\u00c5FALLET_G1",
                   "kind": "object"
                 }
               ],
@@ -4512,7 +4512,7 @@
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "SynchronousMachine/4e0971d4-db4c-441d-a9f2-c88d4c04f60b",
-                  "name": "HÄLLAN_G1",
+                  "name": "H\u00c4LLAN_G1",
                   "kind": "object"
                 }
               ],
@@ -4553,7 +4553,7 @@
           "ruleIndex": 31,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — VoltageLimit.normalValue — 2 object(s) affected. Examples: VoltageLimit b58af798-f3bd-c8c4-3fcf-4b3a9da2e9fb (low limit for FT41_B400_DALBO), VoltageLimit 97cd7bb9-db25-f4de-2be2-8a0b2cc0ed3e (high limit for FT41_B400_DALBO)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 VoltageLimit.normalValue \u2014 2 object(s) affected. Examples: VoltageLimit b58af798-f3bd-c8c4-3fcf-4b3a9da2e9fb (low limit for FT41_B400_DALBO), VoltageLimit 97cd7bb9-db25-f4de-2be2-8a0b2cc0ed3e (high limit for FT41_B400_DALBO)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -4617,7 +4617,7 @@
           "ruleIndex": 32,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) — ActivePowerLimit.normalValue — 2 object(s) affected. Examples: ActivePowerLimit a331310f-a6b9-4e30-be2e-a6f62b0b5430 (Limit_export), ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ActivePowerLimit.normalValue \u2014 2 object(s) affected. Examples: ActivePowerLimit a331310f-a6b9-4e30-be2e-a6f62b0b5430 (Limit_export), ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -4681,7 +4681,7 @@
           "ruleIndex": 33,
           "level": "error",
           "message": {
-            "text": "Missing required property (attribute). — IdentifiedObject.name — 1 object(s) affected. Examples: ACLineSegment 08464663-7dbf-4195-9754-a6ff63c421d6"
+            "text": "Missing required property (attribute). \u2014 IdentifiedObject.name \u2014 1 object(s) affected. Examples: ACLineSegment 08464663-7dbf-4195-9754-a6ff63c421d6"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -4722,7 +4722,7 @@
           "ruleIndex": 34,
           "level": "error",
           "message": {
-            "text": "The Terminal referenced by TransformerEnd.Terminal points to a PowerTransformer which is different than the referenced element via PowerTransformerEnd.PowerTransformer. — 1 object(s) affected. Examples: PowerTransformerEnd 97dad686-69db-a271-59c1-2ab23e543ab1 (STUPET_G2_TRAFO)"
+            "text": "The Terminal referenced by TransformerEnd.Terminal points to a PowerTransformer which is different than the referenced element via PowerTransformerEnd.PowerTransformer. \u2014 1 object(s) affected. Examples: PowerTransformerEnd 97dad686-69db-a271-59c1-2ab23e543ab1 (STUPET_G2_TRAFO)"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -4763,7 +4763,7 @@
           "ruleIndex": 35,
           "level": "error",
           "message": {
-            "text": "The PowerTransformerEnd.ratedU does not fuifil one of the following: 1) it is not a positive value; 2) the value of the high voltage side shall be greater than or equal to ratedU for the lower voltage sides. — 1 object(s) affected. Examples: PowerTransformer 555aceb5-a63e-4acb-a820-be850f080160 (NORRSELE_G1_TRAFO)"
+            "text": "The PowerTransformerEnd.ratedU does not fuifil one of the following: 1) it is not a positive value; 2) the value of the high voltage side shall be greater than or equal to ratedU for the lower voltage sides. \u2014 1 object(s) affected. Examples: PowerTransformer 555aceb5-a63e-4acb-a820-be850f080160 (NORRSELE_G1_TRAFO)"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -4807,7 +4807,7 @@
           "ruleIndex": 36,
           "level": "warning",
           "message": {
-            "text": "oxigraph rejected the query: error at 16:13: expected ENCODE_FOR_URI — ShuntCompensator.maximumSections — 1 object(s) affected."
+            "text": "oxigraph rejected the query: error at 16:13: expected ENCODE_FOR_URI \u2014 ShuntCompensator.maximumSections \u2014 1 object(s) affected."
           },
           "occurrenceCount": 1,
           "properties": {
@@ -4817,7 +4817,19 @@
             "sourceShape": "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ShuntCompensator.maximumSections-numberOfInstances",
             "schemaDescription": "The maximum number of sections that may be switched in. ",
             "schemaMultiplicity": "1..1"
-          }
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
         }
       ]
     }
