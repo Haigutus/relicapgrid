@@ -72,20 +72,27 @@ reports = REPO_ROOT / "reports"
 reports.mkdir(exist_ok=True)
 sarif_path = located.shacl.to_sarif(path=reports / "shacl-results.sarif")
 
-# GitHub code scanning requires every result to carry at least one location.
-# Some violations (e.g. a missing required property) have no source line — give
-# them a file-level fallback location so the SARIF is accepted.
+# Make the SARIF renderable by GitHub code scanning:
+#  * every result must carry at least one location — give location-less results
+#    (e.g. a missing required property) a file-level fallback;
+#  * regions must be line-based. The native export emits startColumn but no
+#    endColumn; GitHub then defaults end_column to 0, i.e. before startColumn,
+#    which is an invalid range and suppresses the code preview. Drop the columns
+#    so the whole line is highlighted.
 sarif = json.loads(Path(sarif_path).read_text())
 run = sarif["runs"][0]
-patched = 0
+fallback = 0
 for result in run["results"]:
     if not result.get("locations"):
         result["locations"] = [{"physicalLocation": {
             "artifactLocation": {"uri": EQ}, "region": {"startLine": 1}}}]
-        patched += 1
-if patched:
-    Path(sarif_path).write_text(json.dumps(sarif, indent=2))
-    print(f"added file-level fallback location to {patched} result(s)")
+        fallback += 1
+    for location in result["locations"]:
+        region = location.get("physicalLocation", {}).get("region")
+        if region and "startLine" in region:
+            location["physicalLocation"]["region"] = {"startLine": region["startLine"]}
+Path(sarif_path).write_text(json.dumps(sarif, indent=2))
+print(f"normalised regions to line-based; added fallback location to {fallback} result(s)")
 print("wrote", sarif_path)
 levels = {}
 for r in run["results"]:
