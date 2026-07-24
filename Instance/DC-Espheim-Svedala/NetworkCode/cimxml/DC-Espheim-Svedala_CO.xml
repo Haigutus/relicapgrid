@@ -17,7 +17,7 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2026-05-25T00:00:00Z</prov:generatedAtTime>
     <dcterms:identifier>d4b7c91a-3f8e-4c65-b2a1-7e9f035d4812</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/DC-Espheim-Svedala-CO"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/DC-Espheim-Svedala_SR-CO"/>
     <dcat:keyword>CO</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/DC-Espheim-Svedala"/>
@@ -25,12 +25,11 @@
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
     <dcterms:requires rdf:resource="urn:uuid:105893e4-668b-4b00-a351-0e436b53cbc9"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_DC-Espheim-Svedala_CO_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_DC-Espheim-Svedala_SR-CO</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/DC-Espheim-Svedala-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/DC-Espheim-Svedala-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcterms:references rdf:resource="urn:uuid:105893e4-668b-4b00-a351-0e436b53cbc9"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the DC-Espheim-Svedala CO dataset.</adms:versionNotes>
   </dcat:Dataset>

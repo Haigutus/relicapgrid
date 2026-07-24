@@ -17,7 +17,7 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>a2c02149-a114-4b5e-9de5-74dcccd9793a</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Galia-ER"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Galia_SR-ER"/>
     <dcat:keyword>ER</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Galia"/>
@@ -25,12 +25,11 @@
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Galia_ER_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Galia_SR-ER</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-ER"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Galia-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcterms:references rdf:resource="urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Galia ER dataset.</adms:versionNotes>
   </dcat:Dataset>

@@ -15,7 +15,7 @@
     <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
     <dcterms:description xml:lang="en">This is the example for availability schedule dataset for Svedala part of ReliCapGrid</dcterms:description>
     <dcterms:identifier>dc9fc9d1-bb73-4b36-a5a6-7fbb9ed5b354</dcterms:identifier> 
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-AS"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Svedala_SR-AS"/>
     <dcterms:issued>2024-12-03T10:00:00Z</dcterms:issued>
     <dcat:keyword>AS</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -23,15 +23,14 @@
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Frame/Svedala-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Frame/Svedala-Transmission"/>
     <dcat:startDate>2024-12-03T10:00:00Z</dcat:startDate>
-    <dcterms:title>20241203_Svedala_AS_1.0.0</dcterms:title>
+    <dcterms:title>202412031000_TSO-Svedala_SR-AS</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <adms:versionNotes xml:lang="en">This is an example of Availability schedule dataset for SvK.</adms:versionNotes>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/OPC-AS"/>
     <prov:generatedAtTime>2024-12-03T10:00:00Z</prov:generatedAtTime>
     <dcat:endDate>2024-12-03T10:00:00Z</dcat:endDate>
-    <dcterms:references rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
   </dcat:Dataset>
   <nc:AvailabilityEquipment rdf:ID="_cbe49fbe-64dd-48e0-8e9b-bbc468265abc">

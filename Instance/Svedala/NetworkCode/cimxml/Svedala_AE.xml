@@ -17,7 +17,7 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>126cd132-af5b-420c-9998-a646e338997e</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-AE"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Svedala_SR-AE"/>
     <dcat:keyword>AE</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Svedala"/>
@@ -26,12 +26,11 @@
     <dcterms:requires rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
     <dcterms:requires rdf:resource="urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Svedala_AE_1.0.0</dcterms:title> 
+    <dcterms:title>202206152230_TSO-Svedala_SR-AE</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-AE"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcterms:references rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Svedala AE dataset.</adms:versionNotes>
   </dcat:Dataset>

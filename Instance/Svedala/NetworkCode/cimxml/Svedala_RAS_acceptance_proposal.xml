@@ -17,7 +17,7 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>adaaff90-c3bd-463b-a405-b84d7389b351</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-RAS"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Svedala_SR-RAS"/>
     <dcat:keyword>RAS</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Svedala"/>
@@ -25,12 +25,11 @@
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Svedala_RAS_1.0.0</dcterms:title> 
+    <dcterms:title>202206152230_TSO-Svedala_SR-RAS</dcterms:title> 
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Action/CGM-RAS"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcterms:references rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Svedala RAS acceptance proposal dataset.</adms:versionNotes>
   </dcat:Dataset>

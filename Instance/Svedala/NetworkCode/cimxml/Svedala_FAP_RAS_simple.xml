@@ -31,9 +31,8 @@
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RAS-FAP"/>
     <!--Additions to reflect provenance information in the RAS header-->
     <prov:wasAssociatedWith rdf:resource="https://energy.referencedata.eu/CGM/SoftwareAgent/3f4ed5cb-b627-4922-b9ea-19ba419a1c7a"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Transmission"/>
     <dcterms:issued>2025-06-15T22:30:00Z</dcterms:issued>
-    <dcterms:references rdf:resource="urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Svedala FAP RAS dataset.</adms:versionNotes>
   </dcat:Dataset>

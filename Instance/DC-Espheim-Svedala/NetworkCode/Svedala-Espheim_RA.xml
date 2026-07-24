@@ -22,7 +22,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <dcat:startDate>2025-06-19T14:00:00Z</dcat:startDate>
     <dcat:keyword>RA</dcat:keyword>
     <dcat:version>1.0.0</dcat:version>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Transmission"/>
     <dcterms:issued>2025-06-19T14:00:00Z</dcterms:issued>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Svedala-Espheim-RA"/>
     <prov:wasGeneratedBy>"https://energy.referencedata.eu/Activity/CGM-RA</prov:wasGeneratedBy>

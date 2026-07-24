@@ -17,7 +17,7 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>c29d23f7-1955-46dc-8bfd-56e082ce9b18</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-OR"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-OR"/>
     <dcat:keyword>OR</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Espheim"/>
@@ -25,12 +25,11 @@
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Espheim_OR_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Espheim_SR-OR</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-OR"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
-    <dcterms:references rdf:resource="urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0"/>
     <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
     <adms:versionNotes xml:lang="en">Initial version of the Espheim OR dataset.</adms:versionNotes>
   </dcat:Dataset>

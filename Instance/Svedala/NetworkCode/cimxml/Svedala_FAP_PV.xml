@@ -30,10 +30,9 @@
   <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
   	<prov:generatedAtTime>2025-02-14T11:00:00Z</prov:generatedAtTime>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/PV"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Svedala-Transmission"/>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:requires rdf:resource="urn:uuid:aa129d49-f7af-4b87-942d-aa1e8e4e14a5"/>
-    <dcterms:references rdf:resource="urn:uuid:aa129d49-f7af-4b87-942d-aa1e8e4e14a5"/>
     <dcat:endDate>2025-02-14T12:00:00Z</dcat:endDate>
 </dcat:Dataset>
 
