@@ -64,6 +64,10 @@
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
   </nc:CountertradeRemedialAction>
+  <!-- Power shift key strategy for the countertrade RA (defined in the ER profile); the GLSK method/powerShiftKey live on PowerShiftKeyStrategy in ER -->
+  <nc:PowerShiftKeyStrategy rdf:about="#_52958168-c198-4dd0-924f-f3953ba17988">
+    <nc:PowerShiftKeyStrategy.PowerRemedialAction rdf:resource="#_30f6377d-5e35-4dd0-a53d-c1992043855e"/>
+  </nc:PowerShiftKeyStrategy>
   <nc:GridStateAlterationRemedialAction rdf:ID="_7acbe48a-bd54-4cd7-af2e-87768357c559">
     <cim:IdentifiedObject.description>Curative RA: ShuntCompensatorModification (step to 0). Shunt compensator ID: _002b0a40-3957-46db-b84a-30420083558f</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>7acbe48a-bd54-4cd7-af2e-87768357c559</cim:IdentifiedObject.mRID>

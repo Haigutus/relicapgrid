@@ -184,7 +184,6 @@
     <cim:CsConverter.operatingMode rdf:resource="http://iec.ch/TC57/CIM100#CsOperatingModeKind.rectifier" />
     <cim:CsConverter.pPccControl rdf:resource="http://iec.ch/TC57/CIM100#CsPpccControlKind.dcCurrent" />
     <cim:CsConverter.targetAlpha>10</cim:CsConverter.targetAlpha>
-    <cim:CsConverter.targetGamma>17</cim:CsConverter.targetGamma>
     <cim:CsConverter.targetIdc>500</cim:CsConverter.targetIdc>
     <cim:Equipment.inService>true</cim:Equipment.inService>
   </cim:CsConverter>
@@ -195,7 +194,6 @@
     <cim:ACDCConverter.targetUdc>169.306</cim:ACDCConverter.targetUdc>
     <cim:CsConverter.operatingMode rdf:resource="http://iec.ch/TC57/CIM100#CsOperatingModeKind.inverter" />
     <cim:CsConverter.pPccControl rdf:resource="http://iec.ch/TC57/CIM100#CsPpccControlKind.dcVoltage" />
-    <cim:CsConverter.targetAlpha>10</cim:CsConverter.targetAlpha>
     <cim:CsConverter.targetGamma>17</cim:CsConverter.targetGamma>
     <cim:CsConverter.targetIdc>1000</cim:CsConverter.targetIdc>
     <cim:Equipment.inService>true</cim:Equipment.inService>
