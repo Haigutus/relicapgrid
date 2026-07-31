@@ -23,7 +23,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Galia_TP_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:4a35cec1-141c-4882-afcc-c7282008cb47>;
+        dcat:distribution     <urn:uuid:cc4e2d7c-562c-4527-9ecc-3af8dd83fc29>;
         dcat:keyword          "TP";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
@@ -43,32 +43,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Galia_SV_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:033dc544-3d1b-4ec5-91db-43e29969442e>;
+        dcat:distribution     <urn:uuid:c5326942-2fd8-43d5-bad8-91a4b1d9be68>;
         dcat:keyword          "SV";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:c27fa2e9-63da-42f5-acda-16f2132c42b1>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
-        dcterms:description    "The steady-state hypothesis dataset for Galia, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Galia/Grid/cimxml/20220615T2230Z_2D_Galia_SSH_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:29beebb0-c460-4ba3-a4d4-c525f8ae9f6c>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:4a35cec1-141c-4882-afcc-c7282008cb47>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description    "The topology dataset for Galia, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Galia/Grid/cimxml/20220615T2230Z_2D_Galia_TP_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:36aa2bbc-5049-44f4-a4e0-46f7da2e8ccc>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-08T16:36:21Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:e781734e-13cc-43ba-be2a-0591973e9c0f>
+<urn:uuid:222618fc-5f70-47a4-8b08-1b0888b5231a>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset for Galia, which is part of the ReliCapGrid.";
@@ -78,12 +58,32 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:2cb06990-9bee-4aed-b88e-7d399297dbc4>
+<urn:uuid:f79afcfd-a3c6-48cb-8f7f-ff5d66fe9c94>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Galia, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Galia/Grid/cimxml/20220615T2230Z_2D_Galia_SSH_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:29beebb0-c460-4ba3-a4d4-c525f8ae9f6c>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:c5326942-2fd8-43d5-bad8-91a4b1d9be68>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:description    "The state variables dataset for Galia, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Galia/Grid/cimxml/20220615T2230Z_2D_Galia_SV_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:0243f8e6-404f-4ef1-9962-966118b91fd6>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T16:36:21Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:a281c75b-4ce6-486f-b00e-c6fa1f30aaf5>
         rdf:type              dcat:Catalog;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
         dcterms:description   ""@en;
-        dcterms:identifier    "cb06990-9bee-4aed-b88e-7d399297dbc4";
+        dcterms:identifier    "a281c75b-4ce6-486f-b00e-c6fa1f30aaf5";
         dcterms:issued        "2025-02-08T16:36:21Z"^^xsd:dateTime , "2025-02-06T14:18:22Z"^^xsd:dateTime;
         dcterms:license       <http://example.org/license>;
         dcterms:publisher     <http://galia.ga/CGMES>;
@@ -92,8 +92,18 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Manifest";
         adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:36aa2bbc-5049-44f4-a4e0-46f7da2e8ccc> , <urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11> , <urn:uuid:29beebb0-c460-4ba3-a4d4-c525f8ae9f6c> , <urn:uuid:0243f8e6-404f-4ef1-9962-966118b91fd6>;
+        dcat:dataset          <urn:uuid:29beebb0-c460-4ba3-a4d4-c525f8ae9f6c> , <urn:uuid:0243f8e6-404f-4ef1-9962-966118b91fd6> , <urn:uuid:36aa2bbc-5049-44f4-a4e0-46f7da2e8ccc> , <urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11>;
         dcat:version          "1" .
+
+<urn:uuid:cc4e2d7c-562c-4527-9ecc-3af8dd83fc29>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
+        dcterms:description    "The topology dataset for Galia, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Galia/Grid/cimxml/20220615T2230Z_2D_Galia_TP_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:36aa2bbc-5049-44f4-a4e0-46f7da2e8ccc>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T16:36:21Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:29beebb0-c460-4ba3-a4d4-c525f8ae9f6c>
         rdf:type              dcat:Dataset;
@@ -110,20 +120,10 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Galia_SSH_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:c27fa2e9-63da-42f5-acda-16f2132c42b1>;
+        dcat:distribution     <urn:uuid:f79afcfd-a3c6-48cb-8f7f-ff5d66fe9c94>;
         dcat:keyword          "SSH";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
-
-<urn:uuid:033dc544-3d1b-4ec5-91db-43e29969442e>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description    "The state variables dataset for Galia, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Galia/Grid/cimxml/20220615T2230Z_2D_Galia_SV_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:0243f8e6-404f-4ef1-9962-966118b91fd6>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-08T16:36:21Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11>
         rdf:type              dcat:Dataset;
@@ -140,7 +140,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z__Galia_EQ_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:e781734e-13cc-43ba-be2a-0591973e9c0f>;
+        dcat:distribution     <urn:uuid:222618fc-5f70-47a4-8b08-1b0888b5231a>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
