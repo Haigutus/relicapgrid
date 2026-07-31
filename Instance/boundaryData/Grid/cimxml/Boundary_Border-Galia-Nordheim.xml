@@ -75,4 +75,9 @@
     <cim:IdentifiedObject.name>HVDV Station</cim:IdentifiedObject.name>
     <cim:Substation.Region rdf:resource="#_77467625-a8fe-8792-7cf2-06c5dfd5fba9" />
   </cim:Substation>
+  <cim:SubGeographicalRegion rdf:ID="_77467625-a8fe-8792-7cf2-06c5dfd5fba9">
+    <cim:IdentifiedObject.mRID>77467625-a8fe-8792-7cf2-06c5dfd5fba9</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Nordheim</cim:IdentifiedObject.name>
+    <cim:SubGeographicalRegion.Region rdf:resource="#_9356077b-f716-0d6c-0cac-32c074bd8fa3"/>
+  </cim:SubGeographicalRegion>
 </rdf:RDF>

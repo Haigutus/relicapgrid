@@ -1478,11 +1478,6 @@
     <cim:IdentifiedObject.name>Voltage limits for BB1.3</cim:IdentifiedObject.name>
     <cim:OperationalLimitSet.Terminal rdf:resource="#_0e43bb97-50c8-ab36-a7ac-50b69b0f51f6" />
   </cim:OperationalLimitSet>
-  <cim:SubGeographicalRegion rdf:ID="_f69de45f-9681-4147-9d1f-9e0336fc8635">
-    <cim:IdentifiedObject.mRID>f69de45f-9681-4147-9d1f-9e0336fc8635</cim:IdentifiedObject.mRID>
-    <cim:IdentifiedObject.name>Portheim-TSO</cim:IdentifiedObject.name>
-    <cim:SubGeographicalRegion.Region rdf:resource="#_24823ed9-4605-4e20-bb9e-48dcf487d544" />
-  </cim:SubGeographicalRegion>
   <cim:VoltageLimit rdf:ID="_0dd8e8a9-74f2-6a33-29be-f1e9352eca56">
     <cim:IdentifiedObject.mRID>0dd8e8a9-74f2-6a33-29be-f1e9352eca56</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>high limit for BB1.2</cim:IdentifiedObject.name>

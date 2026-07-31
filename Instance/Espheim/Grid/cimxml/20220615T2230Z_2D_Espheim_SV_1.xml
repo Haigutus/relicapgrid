@@ -2,13 +2,13 @@
 <!-- Created with PowerFactory 2026 SP1 (x64) (digcimdb.dll ServicePack 0) -->
 <rdf:RDF xmlns:cim="http://iec.ch/TC57/CIM100#" xmlns:eu="http://iec.ch/TC57/CIM100-European#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <md:FullModel rdf:about="urn:uuid:fe5e66f1-e0f3-41e7-b745-df4db4ce2f4a">
-    <md:Model.DependentOn rdf:resource="urn:uuid:e953c171-b83a-4f87-bdef-c0a0c1d828d5" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:33e0fdb1-f02d-4a5c-a599-850f549df998" />
     <md:Model.created>2026-07-08T09:19:33Z</md:Model.created>
-    <md:Model.description />
+    <md:Model.description>The state variables dataset for Espheim, which is part of the ReliCapGrid.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://espheim.eh/CGMES</md:Model.modelingAuthoritySet>
     <md:Model.profile>http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0</md:Model.profile>
     <md:Model.scenarioTime>2022-06-16T23:30:00Z</md:Model.scenarioTime>
-    <md:Model.version />
+    <md:Model.version>1</md:Model.version>
   </md:FullModel>
   <cim:SvPowerFlow rdf:ID="_fc63a1fe-a7c6-464b-a757-b987b0d1734d">
     <cim:SvPowerFlow.Terminal rdf:resource="#_5f4e70e4-09b0-4f8e-97fe-7d18981c84c5" />
