@@ -4,6 +4,7 @@
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
+    xmlns:cim17="http://iec.ch/TC57/CIM100#"
     xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" >
@@ -87,6 +88,15 @@
     <cim:IdentifiedObject.name>PSKS1</cim:IdentifiedObject.name>
   </nc:PowerShiftKeyStrategy>
 
+  <!-- Power shift key strategy for the Countertrade RA (RA18); carries the GLSK method/powerShiftKey moved off CountertradeRemedialAction -->
+  <nc:PowerShiftKeyStrategy rdf:ID="_52958168-c198-4dd0-924f-f3953ba17988">
+    <nc:PowerShiftKeyStrategy.method rdf:resource="https://cim4.eu/ns/nc#ShiftMethodKind.shared"/>
+    <nc:PowerShiftKeyStrategy.powerShiftKey rdf:resource="https://cim4.eu/ns/nc#PowerShiftKeyKind.generatorsPmax"/>
+    <cim:IdentifiedObject.description>Power Shift Key Strategy for Countertrade RA (RA18)</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>52958168-c198-4dd0-924f-f3953ba17988</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>PSKS-CT</cim:IdentifiedObject.name>
+  </nc:PowerShiftKeyStrategy>
+
   <nc:AreaDispatchableUnit rdf:ID="_4a053fac-126a-4a13-8a74-781c11517fae">
     <nc:AreaDispatchableUnit.GeneratingUnit rdf:resource="#_413bbc8a-683c-7e07-4fb9-aa6ec83278e0"/>
     <nc:AreaDispatchableUnit.normalEnabled>true</nc:AreaDispatchableUnit.normalEnabled>
@@ -128,12 +138,12 @@
     <cim:IdentifiedObject.mRID>c31ae69b-423d-47c0-bacc-083d64e34d4a</cim:IdentifiedObject.mRID>
     <nc:Circuit.positiveFlowIn>true</nc:Circuit.positiveFlowIn>
   </nc:PowerTransformerCircuit>
-  <cim:ACLineSegment rdf:about="#_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
+  <cim17:ACLineSegment rdf:about="#_ffbabc27-1ccd-4fdc-b037-e341706c8d29">
     <nc:Equipment.Circuit rdf:resource="#_cef9011e-3753-453b-93bd-fb36eb3daac1"/>
-  </cim:ACLineSegment>
-  <cim:PowerTransformer rdf:about="#_b94318f6-6d24-4f56-96b9-df2531ad6543">
+  </cim17:ACLineSegment>
+  <cim17:PowerTransformer rdf:about="#_b94318f6-6d24-4f56-96b9-df2531ad6543">
     <nc:Equipment.Circuit rdf:resource="#_c31ae69b-423d-47c0-bacc-083d64e34d4a"/>
-  </cim:PowerTransformer>
+  </cim17:PowerTransformer>
   <nc:OrdinaryPowerTransferCorridor rdf:ID="_0863ac0c-b6af-4553-a00b-cde463a8a7d4">
     <cim:IdentifiedObject.mRID>0863ac0c-b6af-4553-a00b-cde463a8a7d4</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>PTC</cim:IdentifiedObject.name>

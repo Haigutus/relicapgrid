@@ -63,6 +63,15 @@
     <cim:IdentifiedObject.mRID>ed90cae2-cc84-4c37-a6b7-80cb9fe5c464</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Gate 1</cim:IdentifiedObject.name>
   </nc:Gate>
+  <nc:PinContingency rdf:ID="_7b09ac5a-abeb-4d70-87a9-423f0d8cbabc">
+    <nc:GateInputPin.Gate rdf:resource="#_ed90cae2-cc84-4c37-a6b7-80cb9fe5c464"/>
+    <nc:GateInputPin.absoluteValue>false</nc:GateInputPin.absoluteValue>
+    <nc:GateInputPin.duration>P0Y0M0DT0H0M0S</nc:GateInputPin.duration>
+    <nc:GateInputPin.negate>false</nc:GateInputPin.negate>
+    <cim:IdentifiedObject.mRID>7b09ac5a-abeb-4d70-87a9-423f0d8cbabc</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Contingency occurred</cim:IdentifiedObject.name>
+    <nc:PinContingency.Contingency rdf:resource="#_e05bbe20-9d4a-40da-9777-8424d216785d"/>
+</nc:PinContingency>
   <nc:GridStateAlterationCollection rdf:ID="_8739648b-662d-46c1-9f51-2965398e6ded">
     <cim:IdentifiedObject.mRID>8739648b-662d-46c1-9f51-2965398e6ded</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>collection 1</cim:IdentifiedObject.name>
@@ -97,7 +106,6 @@
     <nc:RemedialAction.isCrossBorderRelevant>true</nc:RemedialAction.isCrossBorderRelevant>
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
-    <nc:RemedialAction.ContingencyWithRemedialAction rdf:resource="_3a364a5b-7aba-4e48-abd5-4cd79e2e8676"/>
     <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:GridStateAlterationRemedialAction>
   <!-- Curative Remedial Action applied only to a XNE-->
@@ -228,6 +236,7 @@
     <nc:RemedialActionScheme.GateArmed rdf:resource="#_ed90cae2-cc84-4c37-a6b7-80cb9fe5c464"/>
     <nc:RemedialActionScheme.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionSchemeKind.sips"/>
     <nc:RemedialActionScheme.normalArmed>true</nc:RemedialActionScheme.normalArmed>
+    <nc:RemedialActionScheme.SchemeRemedialAction rdf:resource="#_31d41e36-11c8-417b-bafb-c410d4391898"/>
   </nc:RemedialActionScheme>
   <nc:SchemeRemedialAction rdf:ID="_31d41e36-11c8-417b-bafb-c410d4391898">
     <cim:IdentifiedObject.description>Curative RA: SIPS (Substation split). Coupler ID: _2db971f1-ed3d-4ea6-acf5-983c4289d51b</cim:IdentifiedObject.description>
@@ -420,6 +429,7 @@
   </nc:TopologyAction>
   <nc:TopologyAction rdf:ID="_55a11475-e39f-4541-accc-d979376bcda3">
     <nc:GridStateAlteration.GridStateAlterationCollection rdf:resource="#_8739648b-662d-46c1-9f51-2965398e6ded"/>
+    <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_347f4f7e-a2b6-4880-846a-8bd1effb00d5"/>
     <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/Switch.open"/>
     <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
     <cim:IdentifiedObject.description>description</cim:IdentifiedObject.description>

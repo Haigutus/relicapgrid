@@ -39,22 +39,23 @@
     <nc:ContingencyWithRemedialAction.RemedialAction rdf:resource="#_30f6377d-5e35-4dd0-a53d-c1992043855e"/>
     <nc:ContingencyWithRemedialAction.combinationConstraintKind rdf:resource="https://cim4.eu/ns/nc#ElementCombinationConstraintKind.included"/>
     <nc:ContingencyWithRemedialAction.mRID>87714f02-507a-4d20-8a6e-186bb23ae0d3</nc:ContingencyWithRemedialAction.mRID>
+    <nc:ContingencyWithRemedialAction.normalEnabled>true</nc:ContingencyWithRemedialAction.normalEnabled>
   </nc:ContingencyWithRemedialAction>
   <nc:ContingencyWithRemedialAction rdf:ID="_112c79d2-0739-480f-83c7-6d9ebc9bcb0c">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_7e31c67d-67ba-4592-8ac1-9e806d697c8e"/>
     <nc:ContingencyWithRemedialAction.RemedialAction rdf:resource="#_5e5ff13e-2043-4468-9351-01920d3d9504"/>
     <nc:ContingencyWithRemedialAction.combinationConstraintKind rdf:resource="https://cim4.eu/ns/nc#ElementCombinationConstraintKind.included"/>
     <nc:ContingencyWithRemedialAction.mRID>112c79d2-0739-480f-83c7-6d9ebc9bcb0c</nc:ContingencyWithRemedialAction.mRID>
+    <nc:ContingencyWithRemedialAction.normalEnabled>true</nc:ContingencyWithRemedialAction.normalEnabled>
   </nc:ContingencyWithRemedialAction>
   <nc:ContingencyWithRemedialAction rdf:ID="_5c7acbe4-4bbe-4609-b79f-2e87778424c5">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_e9eab3fe-c328-4f78-9bc1-77adb59f6ba7"/>
     <nc:ContingencyWithRemedialAction.RemedialAction rdf:resource="#_7acbe48a-bd54-4cd7-af2e-87768357c559"/>
     <nc:ContingencyWithRemedialAction.combinationConstraintKind rdf:resource="https://cim4.eu/ns/nc#ElementCombinationConstraintKind.included"/>
     <nc:ContingencyWithRemedialAction.mRID>5c7acbe4-4bbe-4609-b79f-2e87778424c5</nc:ContingencyWithRemedialAction.mRID>
+    <nc:ContingencyWithRemedialAction.normalEnabled>true</nc:ContingencyWithRemedialAction.normalEnabled>
   </nc:ContingencyWithRemedialAction>
   <nc:CountertradeRemedialAction rdf:ID="_30f6377d-5e35-4dd0-a53d-c1992043855e">
-    <nc:CountertradeRemedialAction.powerShiftKey rdf:resource="https://cim4.eu/ns/nc#GLSKStrategyKind.generatorPmax"/>
-    <nc:CountertradeRemedialAction.method rdf:resource="https://cim4.eu/ns/nc#ShiftMethodKind.shared"/>
     <cim:IdentifiedObject.description>Curative RA: Countertrading, BO:-205.5-gt;-251, GA:-438.25-gt;-392.8</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>30f6377d-5e35-4dd0-a53d-c1992043855e</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>RA18</cim:IdentifiedObject.name>
@@ -65,6 +66,10 @@
     <nc:RemedialAction.kind rdf:resource="https://cim4.eu/ns/nc#RemedialActionKind.curative"/>
     <nc:RemedialAction.normalAvailable>true</nc:RemedialAction.normalAvailable>
   </nc:CountertradeRemedialAction>
+  <!-- Power shift key strategy for the countertrade RA (defined in the ER profile); the GLSK method/powerShiftKey live on PowerShiftKeyStrategy in ER -->
+  <nc:PowerShiftKeyStrategy rdf:about="#_52958168-c198-4dd0-924f-f3953ba17988">
+    <nc:PowerShiftKeyStrategy.PowerRemedialAction rdf:resource="#_30f6377d-5e35-4dd0-a53d-c1992043855e"/>
+  </nc:PowerShiftKeyStrategy>
   <nc:GridStateAlterationRemedialAction rdf:ID="_7acbe48a-bd54-4cd7-af2e-87768357c559">
     <cim:IdentifiedObject.description>Curative RA: ShuntCompensatorModification (step to 0). Shunt compensator ID: _002b0a40-3957-46db-b84a-30420083558f</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>7acbe48a-bd54-4cd7-af2e-87768357c559</cim:IdentifiedObject.mRID>
@@ -112,7 +117,6 @@
     <cim:IdentifiedObject.mRID>7be59519-0083-4845-a587-cb391ed16a1d</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Rotatig Mach 2</cim:IdentifiedObject.name>
     <nc:RotatingMachineAction.RotatingMachine rdf:resource="#_550ebe0d-f2b2-48c1-991f-cebea43a21aa"/>
-    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:RotatingMachineAction>
   <nc:RotatingMachineAction rdf:ID="_a38d4a85-e221-43ec-b7bb-122f7c95f06e">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_d874f8e3-7272-44b8-95ba-18f10449f036"/>
@@ -129,7 +133,6 @@
     <cim:IdentifiedObject.mRID>ddb3c55f-b2ec-414e-baa3-592829e2edb2</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Shunt action 1</cim:IdentifiedObject.name>
     <nc:ShuntCompensatorModification.ShuntCompensator rdf:resource="#_002b0a40-3957-46db-b84a-30420083558f"/>
-    <nc:GridStateAlterationRemedialAction.isActivationRestricted>false</nc:GridStateAlterationRemedialAction.isActivationRestricted>
   </nc:ShuntCompensatorModification>
   <nc:TapPositionAction rdf:ID="_bf7f0ef4-dad3-4322-b2be-5ace59837e60">
     <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_5e5ff13e-2043-4468-9351-01920d3d9504"/>
@@ -137,6 +140,15 @@
     <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
     <cim:IdentifiedObject.description>tap position action on this transformer : Transformer ID: _84ed55f4-61f5-4d9d-8755-bba7b877a246</cim:IdentifiedObject.description>
     <cim:IdentifiedObject.mRID>bf7f0ef4-dad3-4322-b2be-5ace59837e60</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>TapRA2</cim:IdentifiedObject.name>
+    <nc:TapPositionAction.TapChanger rdf:resource="#_23c255c0-09e8-d446-2526-920905420c17"/>
+  </nc:TapPositionAction>
+  <nc:TapPositionAction rdf:ID="_14d59f97-7c9b-4921-a3b1-5883def956fb">
+    <nc:GridStateAlteration.GridStateAlterationRemedialAction rdf:resource="#_70b696ac-c38f-4528-8d65-ba707c0b72e1"/>
+    <nc:GridStateAlteration.PropertyReference rdf:resource="https://energy.referencedata.eu/PropertyReference/TapChanger.step"/>
+    <nc:GridStateAlteration.normalEnabled>true</nc:GridStateAlteration.normalEnabled>
+    <cim:IdentifiedObject.description>tap position action on this transformer : Transformer ID: _84ed55f4-61f5-4d9d-8755-bba7b877a246</cim:IdentifiedObject.description>
+    <cim:IdentifiedObject.mRID>14d59f97-7c9b-4921-a3b1-5883def956fb</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>TapRA2</cim:IdentifiedObject.name>
     <nc:TapPositionAction.TapChanger rdf:resource="#_23c255c0-09e8-d446-2526-920905420c17"/>
   </nc:TapPositionAction>
