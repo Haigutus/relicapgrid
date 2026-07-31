@@ -5,8 +5,8 @@
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/Contingency/2.3"/>
@@ -17,19 +17,21 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>5898c268-9b32-4ab5-9cfc-64546135a337</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-CO"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-CO"/>
     <dcat:keyword>CO</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Espheim"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Espheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Espheim_CO_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Espheim_SR-CO</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Espheim CO dataset.</adms:versionNotes>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_5461e1a3-e345-43a3-a863-9648b652d6c1">
     <cim:ContingencyElement.Contingency rdf:resource="#_b6b780cb-9fe5-4c45-989d-447a927c3874"/>

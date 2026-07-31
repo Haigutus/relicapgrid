@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
+    xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:772dc3d3-6526-48fd-a26c-cc40d7fb8083">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
@@ -16,19 +16,21 @@
     <dcterms:description xml:lang="en">This is an example of the contingency profile initially sent. We only observe one contingency studying the loss of G1.</dcterms:description>
     <prov:generatedAtTime>2025-05-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>772dc3d3-6526-48fd-a26c-cc40d7fb8083</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-CO"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-CO"/>
     <dcat:keyword>CO</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Belgovia"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c"/>
     <dcat:startDate>2025-05-16T18:00:00Z</dcat:startDate>
-    <dcterms:title>20250516_Belgovia_CO_1.0.0</dcterms:title>
+    <dcterms:title>202505161800_TSO-Belgovia_SR-CO</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission"/>
     <dcterms:issued>2025-05-16T18:00:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Belgovia CO dataset.</adms:versionNotes>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_19bfe9d5-5d04-4c3c-9919-ca1b2d1215ae">
     <cim:ContingencyElement.Contingency rdf:resource="#_37997e71-cb7d-4a8c-baa6-2a1594956da9"/>

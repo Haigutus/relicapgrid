@@ -5,8 +5,8 @@
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:6d20b56c-57ba-4591-89bf-8e8f5c586c7d">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialActionSchedule/2.4"/>
@@ -17,19 +17,21 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>6d20b56c-57ba-4591-89bf-8e8f5c586c7d</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-RAS"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-RAS"/>
     <dcat:keyword>RAS</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/JOTUNHEIM"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/RCC-Jotunheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Belgovia_RAS_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Belgovia_SR-RAS</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RAS"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Belgovia RAS dataset.</adms:versionNotes>
   </dcat:Dataset>
   <nc:CountertradeScheduleAction rdf:ID="_53063047-32ea-439d-8b2c-e632055b2aba">
     <cim:IdentifiedObject.description>Countertrade</cim:IdentifiedObject.description>

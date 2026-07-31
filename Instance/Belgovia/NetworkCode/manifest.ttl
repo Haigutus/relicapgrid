@@ -8,36 +8,6 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:6dbf7741-2f23-491c-9cb5-a4a0b3e078f0>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/StateInstructionSchedule/2.4> , <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#>;
-        dcterms:description    "This is the State Instruction Schedule dataset for Belgovia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_SIS.xml>;
-        dcat:isDistributionOf  <urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SIS> .
-
-<urn:uuid:c163b419-5376-4e2d-8212-c9340a41746c>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#>;
-        dcterms:description    "This is an example of remedial action schedule profile that Belgovia proposes in answer to the FAP process."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_RAS_FAP.xml>;
-        dcat:isDistributionOf  <urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RAS-FAP> .
-
-<urn:uuid:97cbb7ec-3726-4fc8-821b-4615561c9353>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
-        dcterms:description    "This is the steady state hypothesis schedule dataset for Belgovia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_SHS.xml>;
-        dcat:isDistributionOf  <urn:uuid:79e8ace6-d345-4855-a279-95220d646012>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SHS> .
-
 <urn:uuid:32e52e36-11d9-428c-8a0b-d521e43a18a9>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
@@ -46,16 +16,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "32e52e36-11d9-428c-8a0b-d521e43a18a9";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc> , <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20220615_Belgovia_AE_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-AE";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:7b1af18e-e6d7-429d-b218-c4cb1ac424b7>;
+        dcat:distribution     <urn:uuid:a9362ca9-c6ec-45db-8625-dadc5cdf3454>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-AE>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-AE>;
         dcat:keyword          "AE";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
@@ -68,29 +38,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "886d71fa-6ca7-4be9-a55d-04c3c49c987c";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:15c8a8ad-08d5-4b59-8417-db80e273bd1a>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20220615_Belgovia_ER_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-ER";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:c5879028-63f2-49d8-b744-db018a1a11ed>;
+        dcat:distribution     <urn:uuid:b6fed62d-72c3-4688-b274-7557d1e5a3b4>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-ER>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-ER>;
         dcat:keyword          "ER";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
-
-<urn:uuid:5472f6a2-5a09-477b-80f5-ad9b7d7a9122>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
-        dcterms:description    "This is the remedial action schedule dataset for Belgovia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_RAS.xml>;
-        dcat:isDistributionOf  <urn:uuid:6d20b56c-57ba-4591-89bf-8e8f5c586c7d>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RAS> .
 
 <urn:uuid:6d20b56c-57ba-4591-89bf-8e8f5c586c7d>
         rdf:type              dcat:Dataset;
@@ -100,19 +60,29 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "6d20b56c-57ba-4591-89bf-8e8f5c586c7d";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/JOTUNHEIM>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/RCC-Jotunheim>;
         dcterms:requires      <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20220615_Belgovia_RAS_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-RAS";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:5472f6a2-5a09-477b-80f5-ad9b7d7a9122>;
+        dcat:distribution     <urn:uuid:745c662a-a85b-4589-a483-63005bedd083>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-RAS>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-RAS>;
         dcat:keyword          "RAS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:b6fed62d-72c3-4688-b274-7557d1e5a3b4>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/EquipmentReliability/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the equipment reliability dataset for Belgovia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_ER.xml>;
+        dcat:isDistributionOf  <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-ER> .
 
 <urn:uuid:79e8ace6-d345-4855-a279-95220d646012>
         rdf:type              dcat:Dataset;
@@ -122,16 +92,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "79e8ace6-d345-4855-a279-95220d646012";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:15c8a8ad-08d5-4b59-8417-db80e273bd1a>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20220615_Belgovia_SHS_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-SHS";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:97cbb7ec-3726-4fc8-821b-4615561c9353>;
+        dcat:distribution     <urn:uuid:b46686b4-f8a4-4367-b4a9-331f784ac167>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-SHS>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-SHS>;
         dcat:keyword          "SHS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
@@ -144,29 +114,49 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "7528537a-551c-45bf-9e4f-1854287d5cdc";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b> , <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20220615_Belgovia_RA_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-RA";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:f388e08a-3d47-42e8-8aaf-c3989c313784>;
+        dcat:distribution     <urn:uuid:1a05e7ec-70ad-4677-bae6-f9140b607441>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-RA>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-RA>;
         dcat:keyword          "RA";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:06863ba7-a1b0-47a5-9c2b-15b7fad1092e>
+<urn:uuid:6a5564be-95da-4a0a-84e2-948dddf10944>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/Contingency/2.3> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#>;
-        dcterms:description    "This is an example of the last contingency dataset version update. The version notes provide additional information. We observe one contingency studying the loss of G1, L2, L1 and NonConformLoad_1."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_CO.xml>;
-        dcat:isDistributionOf  <urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b>;
+        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/RemedialActionSchedule/2.4>;
+        dcterms:description    "This is an example of remedial action schedule profile that Belgovia proposes in answer to the FAP process."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_RAS_FAP.xml>;
+        dcat:isDistributionOf  <urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-05-15T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RAS-FAP> .
+
+<urn:uuid:a5e02065-9728-4dc9-a484-912a0cfaa392>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/StateInstructionSchedule/2.4>;
+        dcterms:description    "This is the State Instruction Schedule dataset for Belgovia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_SIS.xml>;
+        dcat:isDistributionOf  <urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SIS> .
+
+<urn:uuid:745c662a-a85b-4589-a483-63005bedd083>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the remedial action schedule dataset for Belgovia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_RAS.xml>;
+        dcat:isDistributionOf  <urn:uuid:6d20b56c-57ba-4591-89bf-8e8f5c586c7d>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RAS> .
 
 <urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d>
         rdf:type              dcat:Dataset;
@@ -176,46 +166,39 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "87e76d11-6689-4e96-8094-0db3730fa60d";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20220615_Belgovia_RAS-FAP_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-RAS-FAP";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:c163b419-5376-4e2d-8212-c9340a41746c>;
+        dcat:distribution     <urn:uuid:6a5564be-95da-4a0a-84e2-948dddf10944>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-RAS>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-RAS>;
         dcat:keyword          "RAS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:498e4e18-6d59-4555-8290-b63e2f9c98bd>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <https://ap.cim4.eu/EquipmentReliability/2.4> , <https://ap.cim4.eu/RemedialAction/2.4> , <https://ap.cim4.eu/PowerSchedule/2.4> , <https://ap.cim4.eu/Contingency/2.3> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <https://ap.cim4.eu/StateInstructionSchedule/2.4> , <http://iec.ch/TC57/CIM100#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "e4e18-6d59-4555-8290-b63e2f9c98bd";
-        dcterms:issued        "2025-05-18T18:00:00Z"^^xsd:dateTime , "2022-06-15T22:30:00Z"^^xsd:dateTime;
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/JOTUNHEIM> , <https://energy.referencedata.eu/test/party/Belgovia>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc> , <urn:uuid:32e52e36-11d9-428c-8a0b-d521e43a18a9> , <urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c> , <urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b> , <urn:uuid:6d20b56c-57ba-4591-89bf-8e8f5c586c7d> , <urn:uuid:8a82ef13-ae28-4037-8a44-f84b1f639ba4> , <urn:uuid:79e8ace6-d345-4855-a279-95220d646012> , <urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d> , <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
-        dcat:version          "1.0.0" .
-
-<urn:uuid:f388e08a-3d47-42e8-8aaf-c3989c313784>
+<urn:uuid:33f2d839-8ac4-4402-8296-485344b39cc6>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/RemedialAction/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
-        dcterms:description    "This is the remedial action dataset for Belgovia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_RA.xml>;
-        dcat:isDistributionOf  <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc>;
+        dcterms:conformsTo     <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/PowerSchedule/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the power schedule dataset for Belgovia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_PS.xml>;
+        dcat:isDistributionOf  <urn:uuid:8a82ef13-ae28-4037-8a44-f84b1f639ba4>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RA> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-PS> .
+
+<urn:uuid:2337f5d7-e929-457d-b516-e28a23c84b6c>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/Contingency/2.3> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is an example of the last contingency dataset version update. The version notes provide additional information. We observe one contingency studying the loss of G1, L2, L1 and NonConformLoad_1."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_CO.xml>;
+        dcat:isDistributionOf  <urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-05-15T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
 
 <urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c>
         rdf:type              dcat:Dataset;
@@ -225,39 +208,56 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "fc3c4b17-cce7-4c2f-9c13-8240e514c87c";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia> , <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20230722_Belgovia_SIS_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-SIS";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:6dbf7741-2f23-491c-9cb5-a4a0b3e078f0>;
+        dcat:distribution     <urn:uuid:a5e02065-9728-4dc9-a484-912a0cfaa392>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-SIS>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-SIS>;
         dcat:keyword          "SIS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:a4f82f72-6d14-4b19-bc1b-c67e43f401fd>
+<urn:uuid:1a05e7ec-70ad-4677-bae6-f9140b607441>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/PowerSchedule/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
-        dcterms:description    "This is the power schedule dataset for Belgovia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_PS.xml>;
-        dcat:isDistributionOf  <urn:uuid:8a82ef13-ae28-4037-8a44-f84b1f639ba4>;
+        dcterms:conformsTo     <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/RemedialAction/2.4>;
+        dcterms:description    "This is the remedial action dataset for Belgovia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_RA.xml>;
+        dcat:isDistributionOf  <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-PS> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RA> .
 
-<urn:uuid:c5879028-63f2-49d8-b744-db018a1a11ed>
+<urn:uuid:4401ec41-6ed1-4cde-a8b4-794efab11105>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/Contingency/2.3> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <https://ap.cim4.eu/PowerSchedule/2.4> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://ap.cim4.eu/RemedialAction/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1> , <https://ap.cim4.eu/StateInstructionSchedule/2.4> , <https://ap.cim4.eu/EquipmentReliability/2.4>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "ec41-6ed1-4cde-a8b4-794efab11105";
+        dcterms:issued        "2025-05-18T18:00:00Z"^^xsd:dateTime , "2022-06-15T22:30:00Z"^^xsd:dateTime;
+        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia> , <https://energy.referencedata.eu/test/party/Belgovia> , <https://energy.referencedata.eu/test/party/RCC-Jotunheim>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:8a82ef13-ae28-4037-8a44-f84b1f639ba4> , <urn:uuid:32e52e36-11d9-428c-8a0b-d521e43a18a9> , <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc> , <urn:uuid:87e76d11-6689-4e96-8094-0db3730fa60d> , <urn:uuid:fc3c4b17-cce7-4c2f-9c13-8240e514c87c> , <urn:uuid:6d20b56c-57ba-4591-89bf-8e8f5c586c7d> , <urn:uuid:79e8ace6-d345-4855-a279-95220d646012> , <urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b> , <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
+        dcat:version          "1.0.0" .
+
+<urn:uuid:a9362ca9-c6ec-45db-8625-dadc5cdf3454>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/EquipmentReliability/2.4>;
-        dcterms:description    "This is the equipment reliability dataset for Belgovia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_ER.xml>;
-        dcat:isDistributionOf  <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
+        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the assessed element dataset for Belgovia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_AE.xml>;
+        dcat:isDistributionOf  <urn:uuid:32e52e36-11d9-428c-8a0b-d521e43a18a9>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-ER> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-AE> .
 
 <urn:uuid:8a82ef13-ae28-4037-8a44-f84b1f639ba4>
         rdf:type              dcat:Dataset;
@@ -267,29 +267,29 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "8a82ef13-ae28-4037-8a44-f84b1f639ba4";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:7528537a-551c-45bf-9e4f-1854287d5cdc>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20220615_Belgovia_AE_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202206152230_TSO-Belgovia_SR-PS";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:a4f82f72-6d14-4b19-bc1b-c67e43f401fd>;
+        dcat:distribution     <urn:uuid:33f2d839-8ac4-4402-8296-485344b39cc6>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-PS>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-PS>;
         dcat:keyword          "PS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:7b1af18e-e6d7-429d-b218-c4cb1ac424b7>
+<urn:uuid:b46686b4-f8a4-4367-b4a9-331f784ac167>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://cim4.eu/ns/nc/2.4#>;
-        dcterms:description    "This is the assessed element dataset for Belgovia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_AE.xml>;
-        dcat:isDistributionOf  <urn:uuid:32e52e36-11d9-428c-8a0b-d521e43a18a9>;
+        dcterms:conformsTo     <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1> , <http://iec.ch/TC57/CIM100#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+        dcterms:description    "This is the steady state hypothesis schedule dataset for Belgovia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Belgovia/NetworkCode/cimxml/Belgovia_SHS.xml>;
+        dcat:isDistributionOf  <urn:uuid:79e8ace6-d345-4855-a279-95220d646012>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-AE> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SHS> .
 
 <urn:uuid:b2d1215a-a124-4b6e-9df5-85ecdce9793b>
         rdf:type              dcat:Dataset;
@@ -299,15 +299,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "b2d1215a-a124-4b6e-9df5-85ecdce9793b";
         dcterms:issued        "2025-05-18T18:00:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Belgovia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Belgovia>;
         dcterms:requires      <urn:uuid:886d71fa-6ca7-4be9-a55d-04c3c49c987c>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
-        dcterms:title         "20250520_Belgovia_CO_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission>;
+        dcterms:title         "202505181800_TSO-Belgovia_SR-CO";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:06863ba7-a1b0-47a5-9c2b-15b7fad1092e>;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-CO>;
+        dcat:distribution     <urn:uuid:2337f5d7-e929-457d-b516-e28a23c84b6c>;
+        dcat:endDate          "2026-05-18T18:00:00Z"^^xsd:dateTime;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-CO>;
         dcat:keyword          "CO";
         dcat:startDate        "2025-05-18T18:00:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .

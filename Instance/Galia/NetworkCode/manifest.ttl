@@ -16,39 +16,29 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "897e711a-7da8-4cfa-a66e-15d4d5ada97d";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Galia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Galia>;
         dcterms:requires      <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
-        dcterms:title         "20220615_Galia_CO_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Transmission>;
+        dcterms:title         "202206152230_TSO-Galia_SR-CO";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:d6b1a855-fc9a-411a-869d-e75eea7253da>;
+        dcat:distribution     <urn:uuid:47780eb4-59be-4c24-b15e-04e8816c05bd>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-CO>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Galia_SR-CO>;
         dcat:keyword          "CO";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:a387544c-9461-47cd-9466-1c67cfbac7ba>
+<urn:uuid:88bcee2e-8909-4538-8a83-8214e53fe4f2>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4>;
-        dcterms:description    "This is the assessed element dataset for Galia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_AE.xml>;
-        dcat:isDistributionOf  <urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87>;
+        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/RemedialAction/2.4> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the remedial action dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_RA.xml>;
+        dcat:isDistributionOf  <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-AE> .
-
-<urn:uuid:d6b1a855-fc9a-411a-869d-e75eea7253da>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/Contingency/2.3>;
-        dcterms:description    "This is the contingency dataset for Galia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_CO.xml>;
-        dcat:isDistributionOf  <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RA> .
 
 <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>
         rdf:type              dcat:Dataset;
@@ -58,16 +48,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "a2c02149-a114-4b5e-9de5-74dcccd9793a";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Galia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Galia>;
         dcterms:requires      <urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
-        dcterms:title         "20220615_Galia_ER_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Transmission>;
+        dcterms:title         "202206152230_TSO-Galia_SR-ER";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:c4e06f17-9aa7-4fca-b36a-3fc445c6ff15>;
+        dcat:distribution     <urn:uuid:64aea937-8083-4bae-ad51-7e2e15514e11>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-ER>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Galia_SR-ER>;
         dcat:keyword          "ER";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
@@ -80,40 +70,23 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "2ea55b46-ad48-4408-be72-734b475ba18f";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Galia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Galia>;
         dcterms:requires      <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d> , <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
-        dcterms:title         "20220615_Galia_RA_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Transmission>;
+        dcterms:title         "202206152230_TSO-Galia_SR-RA";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:5fbe33cb-ff33-4f8f-ae9d-1f5a610ea0af>;
+        dcat:distribution     <urn:uuid:88bcee2e-8909-4538-8a83-8214e53fe4f2>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-RA>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Galia_SR-RA>;
         dcat:keyword          "RA";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:60059049-d286-4784-9666-b7ab980763b4>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <https://ap.cim4.eu/AssessedElement/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/RemedialAction/2.4> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <https://ap.cim4.eu/EquipmentReliability/2.4>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "d286-4784-9666-b7ab980763b4";
-        dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/JOTUNHEIM> , <https://energy.referencedata.eu/test/party/Galia>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a> , <urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87> , <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f> , <urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd> , <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d>;
-        dcat:version          "1.0.0" .
-
-<urn:uuid:bbcf88b7-41e4-4ce1-bc1b-8ac036471489>
+<urn:uuid:22fe6a6e-d01b-4e08-bbc7-c0e69a929f85>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#>;
+        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <https://cim4.eu/ns/nc/2.4#>;
         dcterms:description    "This is the remedial action schedule dataset for Galia part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_RAS.xml>;
         dcat:isDistributionOf  <urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd>;
@@ -121,15 +94,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RAS> .
 
-<urn:uuid:5fbe33cb-ff33-4f8f-ae9d-1f5a610ea0af>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/RemedialAction/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
-        dcterms:description    "This is the remedial action dataset for Galia part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_RA.xml>;
-        dcat:isDistributionOf  <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RA> .
+<urn:uuid:4196d515-ce59-42bc-a551-5da0759131fa>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <https://ap.cim4.eu/AssessedElement/2.4> , <https://ap.cim4.eu/RemedialAction/2.4> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/Contingency/2.3> , <https://ap.cim4.eu/EquipmentReliability/2.4> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "d515-ce59-42bc-a551-5da0759131fa";
+        dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
+        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Galia> , <https://energy.referencedata.eu/test/party/RCC-Jotunheim>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Transmission>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f> , <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a> , <urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87> , <urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd> , <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d>;
+        dcat:version          "1.0.0" .
 
 <urn:uuid:dc15a1c0-75ee-49f1-90ac-ccd579376bcd>
         rdf:type              dcat:Dataset;
@@ -139,16 +119,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "dc15a1c0-75ee-49f1-90ac-ccd579376bcd";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/JOTUNHEIM>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/RCC-Jotunheim>;
         dcterms:requires      <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
-        dcterms:title         "20220615_Galia_RAS_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Transmission>;
+        dcterms:title         "202206152230_TSO-Galia_SR-RAS";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:bbcf88b7-41e4-4ce1-bc1b-8ac036471489>;
+        dcat:distribution     <urn:uuid:22fe6a6e-d01b-4e08-bbc7-c0e69a929f85>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-RAS>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Galia_SR-RAS>;
         dcat:keyword          "RAS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
@@ -161,26 +141,46 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:identifier    "447dc560-28a7-41ff-b1ce-15dd3f0d5e87";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Galia>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Galia>;
         dcterms:requires      <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a> , <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
-        dcterms:title         "20220615_Galia_AE_1.0.0";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Galia-Transmission>;
+        dcterms:title         "202206152230_TSO-Galia_SR-AE";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:a387544c-9461-47cd-9466-1c67cfbac7ba>;
+        dcat:distribution     <urn:uuid:0bdd795a-74ff-45df-941b-0a0811c1d48d>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-AE>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Galia_SR-AE>;
         dcat:keyword          "AE";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:c4e06f17-9aa7-4fca-b36a-3fc445c6ff15>
+<urn:uuid:47780eb4-59be-4c24-b15e-04e8816c05bd>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/EquipmentReliability/2.4> , <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+        dcterms:conformsTo     <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the contingency dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_CO.xml>;
+        dcat:isDistributionOf  <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
+
+<urn:uuid:64aea937-8083-4bae-ad51-7e2e15514e11>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/EquipmentReliability/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
         dcterms:description    "This is the equipment reliability dataset for Galia part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_ER.xml>;
         dcat:isDistributionOf  <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-ER> .
+
+<urn:uuid:0bdd795a-74ff-45df-941b-0a0811c1d48d>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/AssessedElement/2.4>;
+        dcterms:description    "This is the assessed element dataset for Galia part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Galia/NetworkCode/cimxml/Galia_AE.xml>;
+        dcat:isDistributionOf  <urn:uuid:447dc560-28a7-41ff-b1ce-15dd3f0d5e87>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-AE> .

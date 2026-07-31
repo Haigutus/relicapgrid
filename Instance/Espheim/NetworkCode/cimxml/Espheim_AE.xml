@@ -5,8 +5,8 @@
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="http://iec.ch/TC57/CIM100#"/>
@@ -17,20 +17,22 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>972cd4cd-25b0-4b70-96f9-eab4bfd32907</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-AE"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-AE"/>
     <dcat:keyword>AE</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Espheim"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Espheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965"/>
     <dcterms:requires rdf:resource="urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Espheim_AE_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Espheim_SR-AE</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-AE"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Espheim AE dataset.</adms:versionNotes>
   </dcat:Dataset>
   <nc:AssessedElement rdf:ID="_2cc84c47-b6b7-481c-aa0e-6c46589d458a">
     <nc:AssessedElement.AssessedSystemOperator rdf:resource="#_151d6acf-d4fd-4604-9603-f02348603277"/>

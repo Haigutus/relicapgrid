@@ -5,8 +5,8 @@
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/RemedialAction/2.4"/>
@@ -17,20 +17,22 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>2ea55b46-ad48-4408-be72-734b475ba18f</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Galia-RA"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Galia_SR-RA"/>
     <dcat:keyword>RA</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Galia"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Galia"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a"/>
     <dcterms:requires rdf:resource="urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Galia_RA_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Galia_SR-RA</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-RA"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Galia-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Galia RA dataset.</adms:versionNotes>
   </dcat:Dataset>
   <nc:ContingencyWithRemedialAction rdf:ID="_e3512f27-7c5e-4121-adf8-e943872d8fa5">
     <nc:ContingencyWithRemedialAction.Contingency rdf:resource="#_bd7bb012-f7b9-45e0-9e15-4e2aa3592829"/>
