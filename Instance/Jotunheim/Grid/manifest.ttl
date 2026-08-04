@@ -8,6 +8,33 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
+<urn:uuid:6ada926b-8f0f-4083-9e96-39faec2bec29>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "ada926b-8f0f-4083-9e96-39faec2bec29";
+        dcterms:issued        "2026-07-03T08:05:19Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://jotunheim.jh/CGMES>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:47007c4e-7ff1-49e0-b16a-90197e6a7044> , <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db>;
+        dcat:version          "2" .
+
+<urn:uuid:f87f7569-f3ba-4654-a207-e4de3e75181a>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:description    "The state variables dataset for ReliCapGrid, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/Grid/cimxml/20220615T2230Z_2D_Jotunheim_SV_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:47007c4e-7ff1-49e0-b16a-90197e6a7044>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2026-07-03T08:05:19Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
 <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
@@ -23,10 +50,20 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Jotunheim_TP_2";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:b399bdc9-499b-4c55-9d2c-55cf52c91f50>;
+        dcat:distribution     <urn:uuid:1a0e387d-29db-4ca2-b6b2-e5faec138815>;
         dcat:keyword          "TP";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "2" .
+
+<urn:uuid:1a0e387d-29db-4ca2-b6b2-e5faec138815>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
+        dcterms:description    "The topology dataset for ReliCapGrid, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/Grid/cimxml/20220615T2230Z_2D_Jotunheim_TP_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2026-07-03T08:05:19Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:47007c4e-7ff1-49e0-b16a-90197e6a7044>
         rdf:type              dcat:Dataset;
@@ -43,44 +80,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Jotunheim_SV_2";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:9ec09a2e-6979-492e-a2d4-b292946c9262>;
+        dcat:distribution     <urn:uuid:f87f7569-f3ba-4654-a207-e4de3e75181a>;
         dcat:keyword          "SV";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "2" .
-
-<urn:uuid:6ccce556-56d3-46b9-8367-7f26d7cefb6d>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "ccce556-56d3-46b9-8367-7f26d7cefb6d";
-        dcterms:issued        "2026-07-03T08:05:19Z"^^xsd:dateTime;
-        dcterms:license       <http://example.org/license>;
-        dcterms:publisher     <http://jotunheim.jh/CGMES>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
-        dcterms:spatial       <urn:placeholder:spatial>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db> , <urn:uuid:47007c4e-7ff1-49e0-b16a-90197e6a7044>;
-        dcat:version          "2" .
-
-<urn:uuid:9ec09a2e-6979-492e-a2d4-b292946c9262>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description    "The state variables dataset for ReliCapGrid, updated by Jotunheim.";
-        dcat:accessURL         <file:Instance/Jotunheim/Grid/cimxml/20220615T2230Z_2D_Jotunheim_SV_2.xml>;
-        dcat:isDistributionOf  <urn:uuid:47007c4e-7ff1-49e0-b16a-90197e6a7044>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2026-07-03T08:05:19Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:b399bdc9-499b-4c55-9d2c-55cf52c91f50>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description    "The topology dataset for ReliCapGrid, updated by Jotunheim.";
-        dcat:accessURL         <file:Instance/Jotunheim/Grid/cimxml/20220615T2230Z_2D_Jotunheim_TP_2.xml>;
-        dcat:isDistributionOf  <urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2026-07-03T08:05:19Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .

@@ -8,26 +8,6 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:4e570721-6e8f-4008-a5b5-57377a6e0ccc>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
-        dcterms:description    "The steady-state hypothesis dataset for Nordheim, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Nordheim/Grid/cimxml/20220615T2230Z_2D_Nordheim_SSH_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:20e37c0f-8ecd-4bb1-a10d-f3fd2f3f692f>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description    "The state variables dataset for Nordheim, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Nordheim/Grid/cimxml/20220615T2230Z_2D_Nordheim_SV_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:e6534100-413c-4dff-8c27-b0a757c254a9>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-08T10:43:06Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
 <urn:uuid:74def37a-c099-4e6a-85b4-edd7c43a5a7a>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
@@ -43,7 +23,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Nordheim_TP_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:fc947268-5346-432b-8097-c87668048c5f>;
+        dcat:distribution     <urn:uuid:53f74b22-a8d2-4c90-a728-c0f3b7e4417a>;
         dcat:keyword          "TP";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
@@ -63,22 +43,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z__Nordheim_EQ_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:a43e32a5-39ed-4c8a-be49-1108cb0ca0ce>;
+        dcat:distribution     <urn:uuid:27e5fe15-c52f-4989-ade2-9500525b2804>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:fc947268-5346-432b-8097-c87668048c5f>
+<urn:uuid:c4bea651-d7c8-4f31-b5ac-a0a39e9c6f71>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description    "The topology dataset for Nordheim, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Nordheim/Grid/cimxml/20220615T2230Z_2D_Nordheim_TP_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:74def37a-c099-4e6a-85b4-edd7c43a5a7a>;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:description    "The state variables dataset for Nordheim, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Nordheim/Grid/cimxml/20220615T2230Z_2D_Nordheim_SV_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:e6534100-413c-4dff-8c27-b0a757c254a9>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2025-02-08T10:43:06Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:a43e32a5-39ed-4c8a-be49-1108cb0ca0ce>
+<urn:uuid:27e5fe15-c52f-4989-ade2-9500525b2804>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset for Nordheim, which is part of the ReliCapGrid.";
@@ -86,6 +66,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcat:isDistributionOf  <urn:uuid:b2d38b16-0d3a-4d6d-8bf2-e894632a2912>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:53f74b22-a8d2-4c90-a728-c0f3b7e4417a>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
+        dcterms:description    "The topology dataset for Nordheim, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Nordheim/Grid/cimxml/20220615T2230Z_2D_Nordheim_TP_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:74def37a-c099-4e6a-85b4-edd7c43a5a7a>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T10:43:06Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03>
@@ -103,18 +93,28 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Nordheim_SSH_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:4e570721-6e8f-4008-a5b5-57377a6e0ccc>;
+        dcat:distribution     <urn:uuid:f08213ad-8c87-4454-ba17-5088a97f1aff>;
         dcat:keyword          "SSH";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:3aa42973-3bbf-40c2-b7c9-0b39d6c30c0e>
+<urn:uuid:f08213ad-8c87-4454-ba17-5088a97f1aff>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Nordheim, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Nordheim/Grid/cimxml/20220615T2230Z_2D_Nordheim_SSH_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:d16b300a-3693-4537-9b6b-7444f40d54e1>
         rdf:type              dcat:Catalog;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
         dcterms:description   ""@en;
-        dcterms:identifier    "aa42973-3bbf-40c2-b7c9-0b39d6c30c0e";
-        dcterms:issued        "2025-02-08T10:43:06Z"^^xsd:dateTime , "2025-02-06T14:18:22Z"^^xsd:dateTime;
+        dcterms:identifier    "d16b300a-3693-4537-9b6b-7444f40d54e1";
+        dcterms:issued        "2025-02-06T14:18:22Z"^^xsd:dateTime , "2025-02-08T10:43:06Z"^^xsd:dateTime;
         dcterms:license       <http://example.org/license>;
         dcterms:publisher     <http://nordheim.nh/CGMES>;
         dcterms:rights        "Copyright";
@@ -122,7 +122,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Manifest";
         adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:74def37a-c099-4e6a-85b4-edd7c43a5a7a> , <urn:uuid:e6534100-413c-4dff-8c27-b0a757c254a9> , <urn:uuid:b2d38b16-0d3a-4d6d-8bf2-e894632a2912> , <urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03>;
+        dcat:dataset          <urn:uuid:74def37a-c099-4e6a-85b4-edd7c43a5a7a> , <urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03> , <urn:uuid:b2d38b16-0d3a-4d6d-8bf2-e894632a2912> , <urn:uuid:e6534100-413c-4dff-8c27-b0a757c254a9>;
         dcat:version          "1" .
 
 <urn:uuid:e6534100-413c-4dff-8c27-b0a757c254a9>
@@ -140,7 +140,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Nordheim_SV_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:20e37c0f-8ecd-4bb1-a10d-f3fd2f3f692f>;
+        dcat:distribution     <urn:uuid:c4bea651-d7c8-4f31-b5ac-a0a39e9c6f71>;
         dcat:keyword          "SV";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
