@@ -23,7 +23,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20241223T0642Z_2D_Portheim_SSH_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:afaa7b84-ee23-4c6c-b94c-93d4507ff32c>;
+        dcat:distribution     <urn:uuid:9b9c89bc-f12e-4e74-b424-44444701d1fa>;
         dcat:keyword          "SSH";
         dcat:startDate        "2024-12-23T06:42:14Z"^^xsd:dateTime;
         dcat:version          "1" .
@@ -43,7 +43,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20241223T0642Z_2D_Portheim_TP_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:89621165-2999-4473-ac02-695c08455f8f>;
+        dcat:distribution     <urn:uuid:a1a04389-a4aa-48b3-97b1-b177cb816052>;
         dcat:keyword          "TP";
         dcat:startDate        "2024-12-23T06:42:14Z"^^xsd:dateTime;
         dcat:version          "1" .
@@ -63,10 +63,20 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20241223T0642Z_2D_Portheim_SV_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:d0d01543-0f77-4483-98a7-7aa2c8baf1e9>;
+        dcat:distribution     <urn:uuid:1eed378c-bfae-4e4d-8e1c-d01e409ba892>;
         dcat:keyword          "SV";
         dcat:startDate        "2024-12-23T06:42:14Z"^^xsd:dateTime;
         dcat:version          "" .
+
+<urn:uuid:a1a04389-a4aa-48b3-97b1-b177cb816052>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
+        dcterms:description    "The topology dataset for Portheim, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Portheim/Grid/cimxml/20241223T0642Z_2D_Portheim_TP_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:0c70f203-18d0-476c-a580-7e6b5060bbc9>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2026-07-21T09:36:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f>
         rdf:type              dcat:Dataset;
@@ -83,49 +93,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20241223T0642Z_2D_Portheim_EQ_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:8c3aa607-2e1a-4cc5-a598-f1c1b303081a>;
+        dcat:distribution     <urn:uuid:0591bcfc-94f6-451b-ab3d-8fa0ee4888c3>;
         dcat:keyword          "EQ";
         dcat:startDate        "2024-12-23T06:42:14Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:d0d01543-0f77-4483-98a7-7aa2c8baf1e9>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description    "";
-        dcat:accessURL         <file:Instance/Portheim/Grid/cimxml/20241223T0642Z_2D_Portheim_SV_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:772c3fcd-3821-46fc-bb46-e9758f9f1725>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2026-07-21T09:36:31Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:f1448867-10b8-4f66-9488-8bdd7e93f302>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "f1448867-10b8-4f66-9488-8bdd7e93f302";
-        dcterms:issued        "2026-04-07T12:58:24Z"^^xsd:dateTime , "2026-07-21T09:36:31Z"^^xsd:dateTime;
-        dcterms:license       <http://example.org/license>;
-        dcterms:publisher     <http://portheim.ph>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
-        dcterms:spatial       <urn:placeholder:spatial>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:0c70f203-18d0-476c-a580-7e6b5060bbc9> , <urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f> , <urn:uuid:76bea528-aec5-4235-8f96-19e155278d63> , <urn:uuid:772c3fcd-3821-46fc-bb46-e9758f9f1725>;
-        dcat:version          "" , "1" .
-
-<urn:uuid:89621165-2999-4473-ac02-695c08455f8f>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description    "The topology dataset for Portheim, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Portheim/Grid/cimxml/20241223T0642Z_2D_Portheim_TP_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:0c70f203-18d0-476c-a580-7e6b5060bbc9>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2026-07-21T09:36:31Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:8c3aa607-2e1a-4cc5-a598-f1c1b303081a>
+<urn:uuid:0591bcfc-94f6-451b-ab3d-8fa0ee4888c3>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "This is a text model for boundary.";
@@ -135,7 +108,24 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2026-04-07T12:58:24Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:afaa7b84-ee23-4c6c-b94c-93d4507ff32c>
+<urn:uuid:59f3a024-d547-4bd1-93c2-e389bac616c8>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "f3a024-d547-4bd1-93c2-e389bac616c8";
+        dcterms:issued        "2026-07-21T09:36:31Z"^^xsd:dateTime , "2026-04-07T12:58:24Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://portheim.ph>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:76bea528-aec5-4235-8f96-19e155278d63> , <urn:uuid:772c3fcd-3821-46fc-bb46-e9758f9f1725> , <urn:uuid:0c70f203-18d0-476c-a580-7e6b5060bbc9> , <urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f>;
+        dcat:version          "" , "1" .
+
+<urn:uuid:9b9c89bc-f12e-4e74-b424-44444701d1fa>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
         dcterms:description    "This is a text model for boundary.";
@@ -143,4 +133,14 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcat:isDistributionOf  <urn:uuid:76bea528-aec5-4235-8f96-19e155278d63>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2026-04-07T12:58:24Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:1eed378c-bfae-4e4d-8e1c-d01e409ba892>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:description    "";
+        dcat:accessURL         <file:Instance/Portheim/Grid/cimxml/20241223T0642Z_2D_Portheim_SV_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:772c3fcd-3821-46fc-bb46-e9758f9f1725>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2026-07-21T09:36:31Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
