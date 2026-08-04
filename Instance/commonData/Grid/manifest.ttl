@@ -8,7 +8,7 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:61e5960c-c96b-4778-8526-ac57b9059c8f>
+<urn:uuid:be531fc1-b504-4006-ab76-82f9240ce678>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "ReliCapGrid grid common data (CGMES 3.0 CoreEquipment) shared by all NineRealms IGMs and the CGM.";
@@ -18,12 +18,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:5424fdcc-4ed3-4339-860d-27e7fea8bc11>
+<urn:uuid:8bd1754c-bfa7-4e57-a263-631801767744>
         rdf:type              dcat:Catalog;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
         dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description   ""@en;
-        dcterms:identifier    "fdcc-4ed3-4339-860d-27e7fea8bc11";
+        dcterms:identifier    "bd1754c-bfa7-4e57-a263-631801767744";
         dcterms:issued        "2025-02-06T14:18:22Z"^^xsd:dateTime;
         dcterms:license       <http://example.org/license>;
         dcterms:publisher     <http://ninerealms.nr/CommonData>;
@@ -49,7 +49,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Grid_CommonData_CGM-CD";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:61e5960c-c96b-4778-8526-ac57b9059c8f>;
+        dcat:distribution     <urn:uuid:be531fc1-b504-4006-ab76-82f9240ce678>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
