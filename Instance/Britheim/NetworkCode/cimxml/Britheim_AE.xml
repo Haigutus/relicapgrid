@@ -17,17 +17,17 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>7a2b0068-b5cd-4299-a172-5bb724b6fb44</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Britheim-AE"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Britheim_SR-AE"/>
     <dcat:keyword>AE</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Britheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Britheim_AE_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Britheim_SR-AE</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-AE"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Britheim-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Britheim-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <nc:AssessedElement rdf:ID="_3b669188-4bd4-4b21-b9f3-896430c31ba9">
