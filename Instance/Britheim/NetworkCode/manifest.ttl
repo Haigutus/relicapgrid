@@ -22,7 +22,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Transmission>;
         dcterms:title         "202206152230_TSO-Britheim_SR-CO";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:4b948cb5-35e3-4d6a-b276-4dae00eb6fd9>;
+        dcat:distribution     <urn:uuid:05efce4d-aaa6-494b-b190-f99af664c516>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Britheim_SR-CO>;
         dcat:keyword          "CO";
@@ -43,29 +43,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Transmission>;
         dcterms:title         "202206152230_TSO-Britheim_SR-AE";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:7f0f1985-189d-471e-84f0-64a3d189e052>;
+        dcat:distribution     <urn:uuid:83b34826-2203-4614-a98b-bf16722afcec>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Britheim_SR-AE>;
         dcat:keyword          "AE";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:4b948cb5-35e3-4d6a-b276-4dae00eb6fd9>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/Contingency/2.3>;
-        dcterms:description    "This is the contingency dataset for Britheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Britheim/NetworkCode/cimxml/Britheim_CO.xml>;
-        dcat:isDistributionOf  <urn:uuid:7f3d50ef-9075-4143-b225-e57cd60df603>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
-
-<urn:uuid:e7e2f3aa-08cb-40b9-a0e8-4e49e7806bf4>
+<urn:uuid:ca2403d8-1e33-4f61-8bde-5e3bb34a8350>
         rdf:type              dcat:Catalog;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/Contingency/2.3> , <https://ap.cim4.eu/AssessedElement/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+        dcterms:conformsTo    <https://ap.cim4.eu/AssessedElement/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
         dcterms:description   ""@en;
-        dcterms:identifier    "e7e2f3aa-08cb-40b9-a0e8-4e49e7806bf4";
+        dcterms:identifier    "ca2403d8-1e33-4f61-8bde-5e3bb34a8350";
         dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
         dcterms:publisher     <https://energy.referencedata.eu/test/party/Britheim>;
@@ -77,9 +67,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcat:dataset          <urn:uuid:7f3d50ef-9075-4143-b225-e57cd60df603> , <urn:uuid:7a2b0068-b5cd-4299-a172-5bb724b6fb44>;
         dcat:version          "1.0.0" .
 
-<urn:uuid:7f0f1985-189d-471e-84f0-64a3d189e052>
+<urn:uuid:05efce4d-aaa6-494b-b190-f99af664c516>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://cim4.eu/ns/nc/2.4#>;
+        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/Contingency/2.3> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the contingency dataset for Britheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Britheim/NetworkCode/cimxml/Britheim_CO.xml>;
+        dcat:isDistributionOf  <urn:uuid:7f3d50ef-9075-4143-b225-e57cd60df603>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
+
+<urn:uuid:83b34826-2203-4614-a98b-bf16722afcec>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
         dcterms:description    "This is the assessed element dataset for Britheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Britheim/NetworkCode/cimxml/Britheim_AE.xml>;
         dcat:isDistributionOf  <urn:uuid:7a2b0068-b5cd-4299-a172-5bb724b6fb44>;
