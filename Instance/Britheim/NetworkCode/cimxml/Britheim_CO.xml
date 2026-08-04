@@ -24,10 +24,10 @@
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Britheim_CO_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Britheim_SR-CO</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-CO"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Britheim-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Britheim-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
   </dcat:Dataset>
   <cim:ContingencyEquipment rdf:ID="_f0fd459b-e477-44d3-9ed7-6398ff63f037">
