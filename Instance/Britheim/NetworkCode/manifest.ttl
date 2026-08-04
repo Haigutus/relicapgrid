@@ -19,12 +19,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:publisher     <https://energy.referencedata.eu/test/party/Britheim>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Transmission>;
-        dcterms:title         "202206152230_TSO-Britheim_SR-CO";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Power-Transmission-System>;
+        dcterms:title         "20220615_Britheim_CO_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:05efce4d-aaa6-494b-b190-f99af664c516>;
+        dcat:distribution     <urn:uuid:eba73fa6-1c4b-4350-904c-59ef3db44562>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Britheim_SR-CO>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Britheim-CO>;
         dcat:keyword          "CO";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
@@ -40,36 +40,19 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:publisher     <https://energy.referencedata.eu/test/party/Britheim>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Transmission>;
-        dcterms:title         "202206152230_TSO-Britheim_SR-AE";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Power-Transmission-System>;
+        dcterms:title         "20220615_Britheim_AE_1.0.0";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:83b34826-2203-4614-a98b-bf16722afcec>;
+        dcat:distribution     <urn:uuid:b2dec407-5e77-4770-b113-2d06db36bd4e>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Britheim_SR-AE>;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Britheim-AE>;
         dcat:keyword          "AE";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:ca2403d8-1e33-4f61-8bde-5e3bb34a8350>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <https://ap.cim4.eu/AssessedElement/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "ca2403d8-1e33-4f61-8bde-5e3bb34a8350";
-        dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/Britheim>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Transmission>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:7f3d50ef-9075-4143-b225-e57cd60df603> , <urn:uuid:7a2b0068-b5cd-4299-a172-5bb724b6fb44>;
-        dcat:version          "1.0.0" .
-
-<urn:uuid:05efce4d-aaa6-494b-b190-f99af664c516>
+<urn:uuid:eba73fa6-1c4b-4350-904c-59ef3db44562>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/Contingency/2.3> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#>;
         dcterms:description    "This is the contingency dataset for Britheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Britheim/NetworkCode/cimxml/Britheim_CO.xml>;
         dcat:isDistributionOf  <urn:uuid:7f3d50ef-9075-4143-b225-e57cd60df603>;
@@ -77,12 +60,29 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
 
-<urn:uuid:83b34826-2203-4614-a98b-bf16722afcec>
+<urn:uuid:b2dec407-5e77-4770-b113-2d06db36bd4e>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+        dcterms:conformsTo     <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4> , <http://iec.ch/TC57/CIM100#>;
         dcterms:description    "This is the assessed element dataset for Britheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Britheim/NetworkCode/cimxml/Britheim_AE.xml>;
         dcat:isDistributionOf  <urn:uuid:7a2b0068-b5cd-4299-a172-5bb724b6fb44>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-AE> .
+
+<urn:uuid:51f045ee-bf2d-4439-9b9a-6a7c4dae3f9e>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/AssessedElement/2.4>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "f045ee-bf2d-4439-9b9a-6a7c4dae3f9e";
+        dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime;
+        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/Britheim>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Britheim-Power-Transmission-System>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:7f3d50ef-9075-4143-b225-e57cd60df603> , <urn:uuid:7a2b0068-b5cd-4299-a172-5bb724b6fb44>;
+        dcat:version          "1.0.0" .

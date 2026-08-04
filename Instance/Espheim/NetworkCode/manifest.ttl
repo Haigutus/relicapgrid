@@ -23,7 +23,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152230_TSO-Espheim_SR-OR";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:fb060192-f1c9-4316-9a65-0d4a3615f9cf>;
+        dcat:distribution     <urn:uuid:845b4b2d-355a-41d3-8864-ceffd9186003>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-OR>;
         dcat:keyword          "OR";
@@ -45,12 +45,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152230_TSO-Espheim_SR-CO";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:25250baf-3c83-457b-9dad-43385ebba79b>;
+        dcat:distribution     <urn:uuid:58aa9732-4bae-468c-a718-ee87fc832408>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-CO>;
         dcat:keyword          "CO";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:8f3310ff-37bd-450b-a92b-c075d30c41d7>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/EquipmentReliability/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:description    "This is the equipment reliability dataset for Espheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_ER.xml>;
+        dcat:isDistributionOf  <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-ER> .
 
 <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda>
         rdf:type              dcat:Dataset;
@@ -67,7 +77,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152330_TSO-Espheim_SR-SSI";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:a466c560-1844-407f-b54d-ab6da2ffc4fa>;
+        dcat:distribution     <urn:uuid:305810f1-bdb1-4549-bbd6-cef3c6c62564>;
         dcat:endDate          "2022-06-16T00:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-SSI>;
         dcat:keyword          "SSI";
@@ -89,46 +99,16 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152230_TSO-Espheim_SR-SIS";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:e4f61527-6723-45e1-8302-01ded1275581>;
+        dcat:distribution     <urn:uuid:9d528487-a4c0-4c56-8d5a-c0748b8a1e77>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-SIS>;
         dcat:keyword          "SIS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:fb060192-f1c9-4316-9a65-0d4a3615f9cf>
+<urn:uuid:bfbce8b6-2668-4e2e-ae54-9165fed48724>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/ObjectRegistry/2.2>;
-        dcterms:description    "This is the object registry profile dataset for Espheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_OR.xml>;
-        dcat:isDistributionOf  <urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-OR> .
-
-<urn:uuid:e4f61527-6723-45e1-8302-01ded1275581>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/StateInstructionSchedule/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#>;
-        dcterms:description    "This is the State Instruction Schedule dataset for Espheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_SIS.xml>;
-        dcat:isDistributionOf  <urn:uuid:85dd3d01-ccdd-4a59-a6e8-2f66205f6cbe>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SIS> .
-
-<urn:uuid:f3a1cff1-5e3c-425b-ac0a-364c0d10e636>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/EquipmentReliability/2.4> , <https://cim4.eu/ns/nc/2.4#>;
-        dcterms:description    "This is the equipment reliability dataset for Espheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_ER.xml>;
-        dcat:isDistributionOf  <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-ER> .
-
-<urn:uuid:2be5b7c1-98bd-4f88-96bf-e010c271f6fa>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4>;
+        dcterms:conformsTo     <https://ap.cim4.eu/AssessedElement/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
         dcterms:description    "This is the assessed element dataset for Espheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_AE.xml>;
         dcat:isDistributionOf  <urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907>;
@@ -136,36 +116,9 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-AE> .
 
-<urn:uuid:ac3b5a63-dc1f-4f1d-bb3a-83e2b4445f39>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/RemedialAction/2.4> , <https://ap.cim4.eu/Contingency/2.3> , <https://ap.cim4.eu/StateInstructionSchedule/2.4> , <https://ap.cim4.eu/EquipmentReliability/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/ObjectRegistry/2.2> , <https://ap.cim4.eu/SteadyStateInstruction/2.4> , <https://ap.cim4.eu/RemedialActionSchedule/2.4>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "ac3b5a63-dc1f-4f1d-bb3a-83e2b4445f39";
-        dcterms:issued        "2022-06-15T23:30:00Z"^^xsd:dateTime , "2022-06-15T22:30:00Z"^^xsd:dateTime;
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Espheim>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "ENTSO-E";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907> , <urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18> , <urn:uuid:962cc3bd-25bf-4b7f-96e9-eab3bec328f7> , <urn:uuid:85dd3d01-ccdd-4a59-a6e8-2f66205f6cbe> , <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12> , <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337> , <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965> , <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda>;
-        dcat:version          "1.0.0" .
-
-<urn:uuid:a466c560-1844-407f-b54d-ab6da2ffc4fa>
+<urn:uuid:7fc2ab76-f96b-4baf-9d3b-9da261995d17>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/SteadyStateInstruction/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
-        dcterms:description    "This is the Steady State Instruction dataset for Espheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_SSI.xml>;
-        dcat:isDistributionOf  <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SSI> .
-
-<urn:uuid:413081e5-162e-4010-8f12-19d52263fe16>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#>;
+        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
         dcterms:description    "This is the remedial action schedule dataset for Espheim part of ReliCapGrid."@en;
         dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_RAS.xml>;
         dcat:isDistributionOf  <urn:uuid:962cc3bd-25bf-4b7f-96e9-eab3bec328f7>;
@@ -188,22 +141,49 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152230_TSO-Espheim_SR-ER";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:f3a1cff1-5e3c-425b-ac0a-364c0d10e636>;
+        dcat:distribution     <urn:uuid:8f3310ff-37bd-450b-a92b-c075d30c41d7>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-ER>;
         dcat:keyword          "ER";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:25250baf-3c83-457b-9dad-43385ebba79b>
+<urn:uuid:9d528487-a4c0-4c56-8d5a-c0748b8a1e77>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/Contingency/2.3> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#>;
-        dcterms:description    "This is the contingency dataset for Espheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_CO.xml>;
-        dcat:isDistributionOf  <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337>;
+        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/StateInstructionSchedule/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+        dcterms:description    "This is the State Instruction Schedule dataset for Espheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_SIS.xml>;
+        dcat:isDistributionOf  <urn:uuid:85dd3d01-ccdd-4a59-a6e8-2f66205f6cbe>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SIS> .
+
+<urn:uuid:7cf6a206-03b4-435d-88b7-caf7a307d154>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <https://ap.cim4.eu/RemedialAction/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#>;
+        dcterms:description    "This is the remedial action dataset for Espheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_RA.xml>;
+        dcat:isDistributionOf  <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RA> .
+
+<urn:uuid:d1f06d6b-744a-47c9-81bb-532178a670a4>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <https://cim4.eu/ns/nc/2.4#> , <https://ap.cim4.eu/ObjectRegistry/2.2> , <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/RemedialActionSchedule/2.4> , <https://ap.cim4.eu/Contingency/2.3> , <https://ap.cim4.eu/EquipmentReliability/2.4> , <https://ap.cim4.eu/StateInstructionSchedule/2.4> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/AssessedElement/2.4> , <https://ap.cim4.eu/RemedialAction/2.4> , <https://ap.cim4.eu/SteadyStateInstruction/2.4>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "d1f06d6b-744a-47c9-81bb-532178a670a4";
+        dcterms:issued        "2022-06-15T22:30:00Z"^^xsd:dateTime , "2022-06-15T23:30:00Z"^^xsd:dateTime;
+        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
+        dcterms:publisher     <https://energy.referencedata.eu/test/party/TSO-Espheim>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "ENTSO-E";
+        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965> , <urn:uuid:85dd3d01-ccdd-4a59-a6e8-2f66205f6cbe> , <urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907> , <urn:uuid:962cc3bd-25bf-4b7f-96e9-eab3bec328f7> , <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda> , <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337> , <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12> , <urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18>;
+        dcat:version          "1.0.0" .
 
 <urn:uuid:962cc3bd-25bf-4b7f-96e9-eab3bec328f7>
         rdf:type              dcat:Dataset;
@@ -220,22 +200,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152230_TSO-Espheim_SR-RAS";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:413081e5-162e-4010-8f12-19d52263fe16>;
+        dcat:distribution     <urn:uuid:7fc2ab76-f96b-4baf-9d3b-9da261995d17>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-RAS>;
         dcat:keyword          "RAS";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
 
-<urn:uuid:f5845a3a-e248-498a-8d78-031200c5b5c9>
+<urn:uuid:305810f1-bdb1-4549-bbd6-cef3c6c62564>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <https://ap.cim4.eu/RemedialAction/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/CIM100#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
-        dcterms:description    "This is the remedial action dataset for Espheim part of ReliCapGrid."@en;
-        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_RA.xml>;
-        dcat:isDistributionOf  <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12>;
+        dcterms:conformsTo     <https://ap.cim4.eu/SteadyStateInstruction/2.4> , <http://iec.ch/TC57/CIM100#> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+        dcterms:description    "This is the Steady State Instruction dataset for Espheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_SSI.xml>;
+        dcat:isDistributionOf  <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-RA> .
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-SSI> .
 
 <urn:uuid:972cd4cd-25b0-4b70-96f9-eab4bfd32907>
         rdf:type              dcat:Dataset;
@@ -252,12 +232,32 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152230_TSO-Espheim_SR-AE";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:2be5b7c1-98bd-4f88-96bf-e010c271f6fa>;
+        dcat:distribution     <urn:uuid:bfbce8b6-2668-4e2e-ae54-9165fed48724>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-AE>;
         dcat:keyword          "AE";
         dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:version          "1.0.0" .
+
+<urn:uuid:58aa9732-4bae-468c-a718-ee87fc832408>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/Contingency/2.3> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://cim4.eu/ns/nc/2.4#>;
+        dcterms:description    "This is the contingency dataset for Espheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_CO.xml>;
+        dcat:isDistributionOf  <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-CO> .
+
+<urn:uuid:845b4b2d-355a-41d3-8864-ceffd9186003>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/CIM100#> , <https://ap.cim4.eu/ObjectRegistry/2.2> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+        dcterms:description    "This is the object registry profile dataset for Espheim part of ReliCapGrid."@en;
+        dcat:accessURL         <file:Instance/Espheim/NetworkCode/cimxml/Espheim_OR.xml>;
+        dcat:isDistributionOf  <urn:uuid:c29d23f7-1955-46dc-8bfd-56e082ce9b18>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2022-06-10T07:06:25Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Activity/CGM-OR> .
 
 <urn:uuid:2149e514-b933-4d45-94e1-1129bd7baf12>
         rdf:type              dcat:Dataset;
@@ -274,7 +274,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/Espheim-Transmission>;
         dcterms:title         "202206152230_TSO-Espheim_SR-RA";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:f5845a3a-e248-498a-8d78-031200c5b5c9>;
+        dcat:distribution     <urn:uuid:7cf6a206-03b4-435d-88b7-caf7a307d154>;
         dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
         dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-RA>;
         dcat:keyword          "RA";

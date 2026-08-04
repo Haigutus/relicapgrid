@@ -8,26 +8,6 @@ PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:cb779bbf-7a76-4a22-b84d-dfe4ebb1b033>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description    "The topology dataset for Svedala, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Svedala/Grid/cimxml/20220615T2230Z_2D_Svedala_TP_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:2cb25d37-92c8-4b4c-9efb-d1e1b0448dad>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-08T17:47:28Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:f454010a-1455-42c6-97cf-2c2adde8a0ba>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description    "The state variables dataset for Svedala, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Svedala/Grid/cimxml/20220615T2230Z_2D_Svedala_SV_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:2ffd3555-f572-494e-b35e-e56ae740eeb2>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-08T17:47:28Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
 <urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
@@ -43,10 +23,30 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z__Svedala_EQ_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:626b0521-d177-4623-9150-9b67f7f4cd60>;
+        dcat:distribution     <urn:uuid:17ce03f2-88f2-42fe-87ac-15edc6e79370>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
+
+<urn:uuid:f92c0321-e46e-488d-abad-5f1fbf2bc364>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
+        dcterms:description    "The topology dataset for Svedala, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Svedala/Grid/cimxml/20220615T2230Z_2D_Svedala_TP_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:2cb25d37-92c8-4b4c-9efb-d1e1b0448dad>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T17:47:28Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:71a1ce5e-0fc3-4fd1-b4fb-734f32158cc9>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
+        dcterms:description    "The state variables dataset for Svedala, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Svedala/Grid/cimxml/20220615T2230Z_2D_Svedala_SV_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:2ffd3555-f572-494e-b35e-e56ae740eeb2>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T17:47:28Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:5102429b-f699-482b-97b4-214c8b06dc7c>
         rdf:type              dcat:Dataset;
@@ -63,29 +63,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Svedala_SSH_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:5af2e66a-bb14-440a-89a3-b1d2966c6c16>;
+        dcat:distribution     <urn:uuid:73fe22d2-1045-4051-9317-ff0c6ee1e7c4>;
         dcat:keyword          "SSH";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:93bdcac8-86af-4746-b2b6-12a180cc9631>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "bdcac8-86af-4746-b2b6-12a180cc9631";
-        dcterms:issued        "2025-02-08T17:47:28Z"^^xsd:dateTime , "2025-02-06T14:18:22Z"^^xsd:dateTime;
-        dcterms:license       <http://example.org/license>;
-        dcterms:publisher     <http://svedala.sd/CGMES>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
-        dcterms:spatial       <urn:placeholder:spatial>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e> , <urn:uuid:2ffd3555-f572-494e-b35e-e56ae740eeb2> , <urn:uuid:5102429b-f699-482b-97b4-214c8b06dc7c> , <urn:uuid:2cb25d37-92c8-4b4c-9efb-d1e1b0448dad>;
-        dcat:version          "1" .
-
-<urn:uuid:626b0521-d177-4623-9150-9b67f7f4cd60>
+<urn:uuid:17ce03f2-88f2-42fe-87ac-15edc6e79370>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset for Svedala, which is part of the ReliCapGrid.";
@@ -95,15 +78,22 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:5af2e66a-bb14-440a-89a3-b1d2966c6c16>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
-        dcterms:description    "The steady-state hypothesis dataset for Svedala, which is part of the ReliCapGrid.";
-        dcat:accessURL         <file:Instance/Svedala/Grid/cimxml/20220615T2230Z_2D_Svedala_SSH_1.xml>;
-        dcat:isDistributionOf  <urn:uuid:5102429b-f699-482b-97b4-214c8b06dc7c>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+<urn:uuid:2da9e707-de7a-4493-9838-11695c9f6f86>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "da9e707-de7a-4493-9838-11695c9f6f86";
+        dcterms:issued        "2025-02-06T14:18:22Z"^^xsd:dateTime , "2025-02-08T17:47:28Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://svedala.sd/CGMES>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e> , <urn:uuid:2cb25d37-92c8-4b4c-9efb-d1e1b0448dad> , <urn:uuid:2ffd3555-f572-494e-b35e-e56ae740eeb2> , <urn:uuid:5102429b-f699-482b-97b4-214c8b06dc7c>;
+        dcat:version          "1" .
 
 <urn:uuid:2ffd3555-f572-494e-b35e-e56ae740eeb2>
         rdf:type              dcat:Dataset;
@@ -120,10 +110,20 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Svedala_SV_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:f454010a-1455-42c6-97cf-2c2adde8a0ba>;
+        dcat:distribution     <urn:uuid:71a1ce5e-0fc3-4fd1-b4fb-734f32158cc9>;
         dcat:keyword          "SV";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
+
+<urn:uuid:73fe22d2-1045-4051-9317-ff0c6ee1e7c4>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Svedala, which is part of the ReliCapGrid.";
+        dcat:accessURL         <file:Instance/Svedala/Grid/cimxml/20220615T2230Z_2D_Svedala_SSH_1.xml>;
+        dcat:isDistributionOf  <urn:uuid:5102429b-f699-482b-97b4-214c8b06dc7c>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
 <urn:uuid:2cb25d37-92c8-4b4c-9efb-d1e1b0448dad>
         rdf:type              dcat:Dataset;
@@ -140,7 +140,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Svedala_TP_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:cb779bbf-7a76-4a22-b84d-dfe4ebb1b033>;
+        dcat:distribution     <urn:uuid:f92c0321-e46e-488d-abad-5f1fbf2bc364>;
         dcat:keyword          "TP";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
