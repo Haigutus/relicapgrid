@@ -8,3 +8,8 @@
 /.idea
 *.iml
 validation_report/
+
+# Python bytecode cache #
+############
+tests\__pycache__
+*.pyc

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:cim="http://iec.ch/TC57/CIM100#" xmlns:eu="http://iec.ch/TC57/CIM100-European#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <md:FullModel rdf:about="urn:uuid:a6cfce0c-fdd2-40ac-ba48-ab55d8d5f4db">
-    <md:Model.DependentOn rdf:resource="urn:uuid:fe534bf5-0160-43eb-9b1a-da77b7818665" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:de6abe0a-a247-47ab-8ba1-026bca8a9b6e" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:1bda19cf-8528-44be-bc94-6c4ca46bfeb4" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:17a58fba-a783-427f-99f5-e464a80c3ec3" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:29beebb0-c460-4ba3-a4d4-c525f8ae9f6c" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:05861a09-75d6-487d-bad3-9a94f312b9a5" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:76bea528-aec5-4235-8f96-19e155278d63" />
-    <md:Model.DependentOn rdf:resource="urn:uuid:5102429b-f699-482b-97b4-214c8b06dc7c" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:03e76bc6-be5b-4436-8eea-27eae2dcbf9d" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:14b4410c-e040-4147-b148-aed1f7a4337f" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:cce234eb-ec10-4252-a4fb-6c41c4988440" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:5ecd2a3e-2330-4b21-9be1-c26ec1ab5f38" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:0d009e1e-210c-46fb-963d-93f1adc69342" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:468fc202-2423-4aeb-9998-e366a05ae9b0" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:957210cd-d30b-4d7a-a0c3-ab6ad918646e" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:7aeb7915-d4c6-4b43-80e9-386556516d9b" />
+    <md:Model.DependentOn rdf:resource="urn:uuid:426926c8-0cd9-4b0d-9fa8-ddeb1a966c75" />
     <md:Model.created>2026-07-03T08:05:19Z</md:Model.created>
     <md:Model.description>The topology dataset for ReliCapGrid, updated by Jotunheim.</md:Model.description>
     <md:Model.modelingAuthoritySet>http://jotunheim.jh/CGMES</md:Model.modelingAuthoritySet>
