@@ -23,12 +23,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Britheim_TP_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:c423f333-7aa9-4c34-916a-07a9149369ba>;
+        dcat:distribution     <urn:uuid:c0055393-9331-4294-a322-d658c8f69eaa>;
         dcat:keyword          "TP";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:e43964c8-81ab-4483-ad2b-4100b7b28201>
+<urn:uuid:b800f817-6bb0-4c15-bd8e-74083568500e>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
         dcterms:description    "The equipment dataset for Britheim, which is part of the ReliCapGrid.";
@@ -37,23 +37,6 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
-
-<urn:uuid:d203039b-4576-469e-9330-989250c1eea5>
-        rdf:type              dcat:Catalog;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description   ""@en;
-        dcterms:identifier    "d203039b-4576-469e-9330-989250c1eea5";
-        dcterms:issued        "2025-02-06T14:18:22Z"^^xsd:dateTime , "2025-02-08T14:27:41Z"^^xsd:dateTime;
-        dcterms:license       <http://example.org/license>;
-        dcterms:publisher     <http://britheim.bh/CGMES>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
-        dcterms:spatial       <urn:placeholder:spatial>;
-        dcterms:title         "Manifest";
-        adms:versionNotes     "Placeholder version notes."@en;
-        dcat:dataset          <urn:uuid:bc112df8-1df7-4f54-9175-b7035a8b1108> , <urn:uuid:33bd4875-01b7-4442-a5a2-dc04419143bf> , <urn:uuid:c9d01d20-0a67-4b37-9a8c-90cc7a0f9f2c> , <urn:uuid:de6abe0a-a247-47ab-8ba1-026bca8a9b6e>;
-        dcat:version          "1" .
 
 <urn:uuid:de6abe0a-a247-47ab-8ba1-026bca8a9b6e>
         rdf:type              dcat:Dataset;
@@ -70,7 +53,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Britheim_SSH_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:1657e40d-6a78-4fb5-9972-de3fe1d91824>;
+        dcat:distribution     <urn:uuid:adbcb1c3-2019-44c2-b4ed-666059af1c25>;
         dcat:keyword          "SSH";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
@@ -90,12 +73,12 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z_2D_Britheim_SV_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:63f8449d-5120-40d8-827f-b4009a0f198f>;
+        dcat:distribution     <urn:uuid:ce20f854-7e80-47db-981b-e326966fd7de>;
         dcat:keyword          "SV";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
         dcat:version          "1" .
 
-<urn:uuid:c423f333-7aa9-4c34-916a-07a9149369ba>
+<urn:uuid:c0055393-9331-4294-a322-d658c8f69eaa>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
         dcterms:description    "The topology dataset for Britheim, which is part of the ReliCapGrid.";
@@ -105,7 +88,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2025-02-08T14:27:41Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:1657e40d-6a78-4fb5-9972-de3fe1d91824>
+<urn:uuid:adbcb1c3-2019-44c2-b4ed-666059af1c25>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
         dcterms:description    "The steady-state hypothesis dataset for Britheim, which is part of the ReliCapGrid.";
@@ -115,7 +98,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         prov:generatedAtTime   "2025-02-06T14:18:22Z"^^xsd:dateTimeStamp;
         prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:63f8449d-5120-40d8-827f-b4009a0f198f>
+<urn:uuid:ce20f854-7e80-47db-981b-e326966fd7de>
         rdf:type               dcat:Distribution;
         dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
         dcterms:description    "The state variables dataset for Britheim, which is part of the ReliCapGrid.";
@@ -140,7 +123,24 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
         dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "20220615T2230Z__Britheim_EQ_1";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        dcat:distribution     <urn:uuid:e43964c8-81ab-4483-ad2b-4100b7b28201>;
+        dcat:distribution     <urn:uuid:b800f817-6bb0-4c15-bd8e-74083568500e>;
         dcat:keyword          "EQ";
         dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "1" .
+
+<urn:uuid:d2d10359-00bc-4a8d-80f9-109e4152210a>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "d2d10359-00bc-4a8d-80f9-109e4152210a";
+        dcterms:issued        "2025-02-08T14:27:41Z"^^xsd:dateTime , "2025-02-06T14:18:22Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://britheim.bh/CGMES>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "Manifest";
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:c9d01d20-0a67-4b37-9a8c-90cc7a0f9f2c> , <urn:uuid:bc112df8-1df7-4f54-9175-b7035a8b1108> , <urn:uuid:33bd4875-01b7-4442-a5a2-dc04419143bf> , <urn:uuid:de6abe0a-a247-47ab-8ba1-026bca8a9b6e>;
         dcat:version          "1" .
