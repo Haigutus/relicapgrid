@@ -114,11 +114,11 @@
   <eu:BoundaryPoint rdf:ID="_3f5af4d3-5943-dfd0-1c61-de4f3fd11070">
     <eu:BoundaryPoint.ConnectivityNode rdf:resource="#_ceafce7b-5485-4cb8-9e06-c85ba137ffa9" />
     <eu:BoundaryPoint.fromEndIsoCode>EH</eu:BoundaryPoint.fromEndIsoCode>
-    <eu:BoundaryPoint.fromEndName>Madgar4</eu:BoundaryPoint.fromEndName>
+    <eu:BoundaryPoint.fromEndName>Substation Portheim-Espheim</eu:BoundaryPoint.fromEndName>
     <eu:BoundaryPoint.fromEndNameTso>TSO-Espheim</eu:BoundaryPoint.fromEndNameTso>
     <eu:BoundaryPoint.isExcludedFromAreaInterchange>false</eu:BoundaryPoint.isExcludedFromAreaInterchange>
     <eu:BoundaryPoint.toEndIsoCode>PH</eu:BoundaryPoint.toEndIsoCode>
-    <eu:BoundaryPoint.toEndName>Lysaborg4</eu:BoundaryPoint.toEndName>
+    <eu:BoundaryPoint.toEndName>Substation Portheim-Espheim</eu:BoundaryPoint.toEndName>
     <eu:BoundaryPoint.toEndNameTso>TSO-Portheim</eu:BoundaryPoint.toEndNameTso>
     <cim:IdentifiedObject.mRID>3f5af4d3-5943-dfd0-1c61-de4f3fd11070</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>BP Portheim-Espheim</cim:IdentifiedObject.name>
@@ -176,6 +176,7 @@
   <cim:SubGeographicalRegion rdf:ID="_f69de45f-9681-4147-9d1f-9e0336fc8635">
     <cim:IdentifiedObject.mRID>f69de45f-9681-4147-9d1f-9e0336fc8635</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>Portheim-TSO</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.description>Portheim-TSO subgeographical region for the Portheim-Espheim Boundary Substation, this instance appears in two EQ files and in the Boundary.</cim:IdentifiedObject.description>
     <cim:SubGeographicalRegion.Region rdf:resource="#_24823ed9-4605-4e20-bb9e-48dcf487d544" />
   </cim:SubGeographicalRegion>
 </rdf:RDF>
