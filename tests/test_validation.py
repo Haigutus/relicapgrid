@@ -49,8 +49,11 @@ def test_dangling_references(grid_data):
         # Filter out valid missing references or references to profiles not loaded
         to_ignore = [
             'Model.Supersedes',
-            #'GridStateAlteration.PropertyReference',
-            #'StaticPropertyRange.PropertyReference',
+            # PropertyReference now targets external CIM/nc ontology properties
+            # (e.g. http://iec.ch/TC57/CIM100#RotatingMachine.p, issue #358), which
+            # resolve outside the instance data and are not dangling references.
+            'GridStateAlteration.PropertyReference',
+            'StaticPropertyRange.PropertyReference',
         ]
         dangling = dangling[~dangling['KEY_FROM'].isin(to_ignore)]
 
