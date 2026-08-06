@@ -130,7 +130,6 @@ jobs:
           pattern: manifest-*
           path: .
           merge-multiple: true
-          if-no-files-found: ignore
 
       - name: Commit regenerated manifests to a working branch
         id: commit
