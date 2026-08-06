@@ -41,9 +41,65 @@
     <skos:prefLabel xml:lang="en">TSO-Svedala IGM-EQ Model of Svedala-Transmission.</skos:prefLabel>
     <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/Svedala-Transmission"/>
   </provcim:Model>
+  <provcim:Model rdf:about="https://energy.referencedata.eu/test/model/TSO-Belgovia_IGM-CO">
+    <dcterms:description xml:lang="en">Abstract identity for the CIM-based Individual Grid Model (IGM) Contingency (CO) representation of the Belgovia transmission system governed by TSO-Belgovia.</dcterms:description>
+    <dcterms:identifier>b3f7d0b7-ce2c-4a44-baf4-2cb7c8b0cab8</dcterms:identifier>
+    <provcim:modelAuthority rdf:resource="https://energy.referencedata.eu/test/party/TSO-Belgovia"/>
+    <skos:prefLabel xml:lang="en">TSO-Belgovia IGM-CO Model of Belgovia-Transmission.</skos:prefLabel>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/Belgovia-Transmission"/>
+  </provcim:Model>
+  <provcim:Model rdf:about="https://energy.referencedata.eu/test/model/TSO-Britheim_IGM-AE">
+    <dcterms:description xml:lang="en">Abstract identity for the CIM-based Individual Grid Model (IGM) Assessed Element (AE) representation of the Britheim transmission system governed by TSO-Britheim.</dcterms:description>
+    <dcterms:identifier>67ec06db-78df-44c9-830c-c92e9eb13261</dcterms:identifier>
+    <provcim:modelAuthority rdf:resource="https://energy.referencedata.eu/test/party/TSO-Britheim"/>
+    <skos:prefLabel xml:lang="en">TSO-Britheim IGM-AE Model of Britheim-Transmission.</skos:prefLabel>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/Britheim-Transmission"/>
+  </provcim:Model>
+  <provcim:Model rdf:about="https://energy.referencedata.eu/test/model/TSO-Espheim_IGM-RA">
+    <dcterms:description xml:lang="en">Abstract identity for the CIM-based Individual Grid Model (IGM) Remedial Action (RA) representation of the Espheim transmission system governed by TSO-Espheim.</dcterms:description>
+    <dcterms:identifier>e0cae1fd-7734-4347-9121-d76ca51b18a5</dcterms:identifier>
+    <provcim:modelAuthority rdf:resource="https://energy.referencedata.eu/test/party/TSO-Espheim"/>
+    <skos:prefLabel xml:lang="en">TSO-Espheim IGM-RA Model of Espheim-Transmission.</skos:prefLabel>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/Espheim-Transmission"/>
+  </provcim:Model>
+  <provcim:Model rdf:about="https://energy.referencedata.eu/test/model/TSO-Nordheim_IGM-EQ">
+    <dcterms:description xml:lang="en">Abstract identity for the CIM-based Individual Grid Model (IGM) of Equipment (EQ) representation of the Nordheim transmission system governed by TSO-Nordheim.</dcterms:description>
+    <dcterms:identifier>88bd12dc-5a4c-44a1-8b1c-06fcbbfee67c</dcterms:identifier>
+    <provcim:modelAuthority rdf:resource="https://energy.referencedata.eu/test/party/TSO-Nordheim"/>
+    <skos:prefLabel xml:lang="en">TSO-Nordheim IGM-EQ Model of Nordheim-Transmission.</skos:prefLabel>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/Nordheim-Transmission"/>
+  </provcim:Model>
+  <provcim:Model rdf:about="https://energy.referencedata.eu/test/model/TSO-Portheim_IGM-SSH">
+    <dcterms:description xml:lang="en">Abstract identity for the CIM-based Individual Grid Model (IGM) Steady-State Hypothesis (SSH) representation of the Portheim transmission system governed by TSO-Portheim.</dcterms:description>
+    <dcterms:identifier>c5baec64-cd96-43c7-9f3f-d15c97deaeaf</dcterms:identifier>
+    <provcim:modelAuthority rdf:resource="https://energy.referencedata.eu/test/party/TSO-Portheim"/>
+    <skos:prefLabel xml:lang="en">TSO-Portheim IGM-SSH Model of Portheim-Transmission.</skos:prefLabel>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/Portheim-Transmission"/>
+  </provcim:Model>
+  <provcim:Model rdf:about="https://energy.referencedata.eu/test/model/DC-Espheim-Svedala_SR-CO">
+    <dcterms:description xml:lang="en">Abstract identity for the CIM-based Individual Grid Model (IGM) Contingency (CO) representation of the DC-Espheim-Svedala HVDC interconnector governed by DC-Espheim-Svedala.</dcterms:description>
+    <dcterms:identifier>832d7cb4-cb47-45bf-a4f5-4e48f9e41d13</dcterms:identifier>
+    <provcim:modelAuthority rdf:resource="https://energy.referencedata.eu/test/party/DC-Espheim-Svedala"/>
+    <skos:prefLabel xml:lang="en">DC-Espheim-Svedala SR-CO Model of DC-Espheim-Svedala-Transmission.</skos:prefLabel>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/DC-Espheim-Svedala-Transmission"/>
+  </provcim:Model>
+  <provcim:Model rdf:about="https://energy.referencedata.eu/test/model/DC-Nordheim-Galia_SR-EQ">
+    <dcterms:description xml:lang="en">Abstract identity for the CIM-based Individual Grid Model (IGM) of Equipment (EQ) representation of the DC-Nordheim-Galia HVDC interconnector governed by DC-Nordheim-Galia.</dcterms:description>
+    <dcterms:identifier>8bcb3092-84b1-41b1-b546-b8bb44335401</dcterms:identifier>
+    <provcim:modelAuthority rdf:resource="https://energy.referencedata.eu/test/party/DC-Nordheim-Galia"/>
+    <skos:prefLabel xml:lang="en">DC-Nordheim-Galia SR-EQ Model of DC-Nordheim-Galia-Transmission.</skos:prefLabel>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/DC-Nordheim-Galia-Transmission"/>
+  </provcim:Model>
   <prov:Collection rdf:about="https://energy.referencedata.eu/test/ModelScheme/NCP/1.0#collection_ncp_model">
-    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Svedala_EQ"/>
-    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Galia_ER"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Svedala_IGM-EQ"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Galia_IGM-ER"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Belgovia_IGM-CO"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Britheim_IGM-AE"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Espheim_IGM-RA"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Nordheim_IGM-EQ"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/TSO-Portheim_IGM-SSH"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/DC-Espheim-Svedala_SR-CO"/>
+    <prov:hadMember rdf:resource="https://energy.referencedata.eu/test/model/DC-Nordheim-Galia_SR-EQ"/>
     <dcterms:identifier>3c0d7db0-6380-4ce8-ac1f-39bb5687311c</dcterms:identifier>
     <skos:prefLabel xml:lang="en">Collection of recognized models for NCP and ReliCapGrid.</skos:prefLabel>
   </prov:Collection>

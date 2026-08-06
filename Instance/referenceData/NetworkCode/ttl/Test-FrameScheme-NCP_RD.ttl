@@ -42,10 +42,17 @@
     a prov:Collection ;
     dcterms:identifier "b0c0950a-2dcf-44f6-8a82-d47305b9987e" ;
     skos:prefLabel "Collection of recognized frames identities for ReliCapGrid."@en ;
-    prov:hadMember         
+    prov:hadMember
 		<https://energy.referencedata.eu/test/frame/Svedala-Transmission> ,
         <https://energy.referencedata.eu/test/frame/Galia-Transmission> ,
-		<https://energy.referencedata.eu/test/frame/Espheim-Portheim-Transmission> .
+		<https://energy.referencedata.eu/test/frame/Espheim-Portheim-Transmission> ,
+		<https://energy.referencedata.eu/test/frame/Belgovia-Transmission> ,
+		<https://energy.referencedata.eu/test/frame/Britheim-Transmission> ,
+		<https://energy.referencedata.eu/test/frame/Espheim-Transmission> ,
+		<https://energy.referencedata.eu/test/frame/Nordheim-Transmission> ,
+		<https://energy.referencedata.eu/test/frame/Portheim-Transmission> ,
+		<https://energy.referencedata.eu/test/frame/DC-Espheim-Svedala-Transmission> ,
+		<https://energy.referencedata.eu/test/frame/DC-Nordheim-Galia-Transmission> .
 
 
 #################################################################
@@ -63,7 +70,7 @@
     a provcim:Frame ;
     skos:prefLabel "Galia-Transmission"@en ;
 	dcterms:identifier "188b7f96-efeb-4033-bdfc-e5f1e915cef1" ;
-	dcterms:description "Recognized frame as dcterms:spatial of the Svedala Transmission grid that a provcim:Model can fit into."@en ;
+	dcterms:description "Recognized frame as dcterms:spatial of the Galia Transmission grid that a provcim:Model can fit into."@en ;
 	provcim:hasMinVoltage [
         a qudt:QuantityValue ;
         qudt:numericValue "130" ;
@@ -108,5 +115,57 @@
 	dcterms:description "Recognized boundary frame as dcterms:spatial between Espeheim and Portheim Transmission grid that a provcim:Model can fit into."@en ;
 	provcim:connectsFrame <https://energy.referencedata.eu/test/frame/Espheim-Transmission> ,
                           <https://energy.referencedata.eu/test/frame/Portheim-Transmission> .
-	
-	
+
+
+<https://energy.referencedata.eu/test/frame/Belgovia-Transmission>
+    a provcim:Frame ;
+    skos:prefLabel "Belgovia-Transmission"@en ;
+	dcterms:identifier "58e82671-202c-411a-8fd6-f2558e04b244" ;
+	dcterms:description "Recognized transmission frame representing the spatial applicability of resources related to the Belgovia transmission grid. Models version describing different elements of the grid fits into."@en .
+
+
+<https://energy.referencedata.eu/test/frame/Britheim-Transmission>
+    a provcim:Frame ;
+    skos:prefLabel "Britheim-Transmission"@en ;
+	dcterms:identifier "9edf17ad-ec43-4db2-979e-48d0d111ae55" ;
+	dcterms:description "Recognized transmission frame representing the spatial applicability of resources related to the Britheim transmission grid. Models version describing different elements of the grid fits into."@en .
+
+
+<https://energy.referencedata.eu/test/frame/Espheim-Transmission>
+    a provcim:Frame ;
+    skos:prefLabel "Espheim-Transmission"@en ;
+	dcterms:identifier "20f632b8-99d2-471a-a8c6-f412f3b55ad6" ;
+	dcterms:description "Recognized transmission frame representing the spatial applicability of resources related to the Espheim transmission grid. Models version describing different elements of the grid fits into."@en .
+
+
+<https://energy.referencedata.eu/test/frame/Nordheim-Transmission>
+    a provcim:Frame ;
+    skos:prefLabel "Nordheim-Transmission"@en ;
+	dcterms:identifier "d91b9bc9-ae4f-4e74-8aba-bea4580920da" ;
+	dcterms:description "Recognized transmission frame representing the spatial applicability of resources related to the Nordheim transmission grid. Models version describing different elements of the grid fits into."@en .
+
+
+<https://energy.referencedata.eu/test/frame/Portheim-Transmission>
+    a provcim:Frame ;
+    skos:prefLabel "Portheim-Transmission"@en ;
+	dcterms:identifier "630d8bc5-cdae-4f2b-8714-52a3a9479e2b" ;
+	dcterms:description "Recognized transmission frame representing the spatial applicability of resources related to the Portheim transmission grid. Models version describing different elements of the grid fits into."@en .
+
+
+<https://energy.referencedata.eu/test/frame/DC-Espheim-Svedala-Transmission>
+    a provcim:BoundaryFrame ;
+    skos:prefLabel "DC-Espheim-Svedala-Transmission"@en ;
+	dcterms:identifier "5a147926-fdf8-4718-9af2-9a5aeac667b3" ;
+	dcterms:description "Recognized boundary frame as dcterms:spatial for the DC-Espheim-Svedala HVDC interconnector between the Espheim and Svedala transmission grids that a provcim:Model can fit into."@en ;
+	provcim:connectsFrame <https://energy.referencedata.eu/test/frame/Espheim-Transmission> ,
+                          <https://energy.referencedata.eu/test/frame/Svedala-Transmission> .
+
+
+<https://energy.referencedata.eu/test/frame/DC-Nordheim-Galia-Transmission>
+    a provcim:BoundaryFrame ;
+    skos:prefLabel "DC-Nordheim-Galia-Transmission"@en ;
+	dcterms:identifier "cba59f77-c35d-4d36-8174-8c537ef9ef76" ;
+	dcterms:description "Recognized boundary frame as dcterms:spatial for the DC-Nordheim-Galia HVDC interconnector between the Nordheim and Galia transmission grids that a provcim:Model can fit into."@en ;
+	provcim:connectsFrame <https://energy.referencedata.eu/test/frame/Nordheim-Transmission> ,
+                          <https://energy.referencedata.eu/test/frame/Galia-Transmission> .
+
