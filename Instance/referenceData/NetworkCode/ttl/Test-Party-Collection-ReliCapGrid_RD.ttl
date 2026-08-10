@@ -10,24 +10,24 @@
 
 
 #################################################################
-# Party Scheme / Reference Dataset
+# Party Collection for ReliCapGrid / Reference Dataset
 #################################################################
 
-<https://energy.referencedata.eu/test/PartyScheme/1.0>
+<https://energy.referencedata.eu/test/Party-Collection-ReliCapGrid/1.0>
     a dcat:Dataset ;
-    skos:prefLabel "Energy Reference Data Party Scheme"@en ;
-	skos:definition "Reference dataset and concept scheme listing recognized Party identities that may be used as the object of dcterms:publisher and provcim:modelAuthority."@en ;
+    skos:prefLabel "Energy Reference Data Party Collection ReliCapGrid"@en ;
+	skos:definition "Reference dataset listing recognized Party identities that shall be used as the object of dcterms:publisher and provcim:modelAuthority."@en ;
 	dcterms:description "Reference dataset containing recognized party identities for use in publisher, authority, and provenance references."@en ;
-    dcterms:title "Test-PartyScheme_RD" ;
+    dcterms:title "Test-Party-Collection-ReliCapGrid_RD" ;
 	dcterms:identifier "b77fe0ff-9907-4943-90a7-6e35a178a8ab" ;
     dcterms:publisher <https://www.entsoe.eu/> ;
     dcterms:rights "Copyright" ;
     dcterms:rightsHolder "ENTSO-E" ;
-    dcterms:issued "2026-07-16T00:00:00Z"^^xsd:dateTime ;
-    prov:generatedAtTime "2026-07-16T00:00:00Z"^^xsd:dateTime ;
+    dcterms:issued "2026-08-08T00:00:00Z"^^xsd:dateTime ;
+    prov:generatedAtTime "2026-08-08T00:00:00Z"^^xsd:dateTime ;
     dcat:version "1.0.0" ;
-    adms:versionNotes "Initial version of the Energy Reference Data Party Scheme for ReliCapGrid."@en ;
-    dcat:isVersionOf <https://energy.referencedata.eu/test/PartyScheme> ;
+    adms:versionNotes "Initial version of the Energy Reference Data Party Collection for ReliCapGrid."@en ;
+    dcat:isVersionOf <https://energy.referencedata.eu/test/Party-Collection-ReliCapGrid> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:accessRights <https://energy.referencedata.eu/Confidentiality/Public> ;
 	dcterms:hasPart <https://energy.referencedata.eu/test/PartyScheme/1.0#collection_party> .
@@ -49,8 +49,8 @@
 		<https://energy.referencedata.eu/test/party/TSO-Espheim> ,
 		<https://energy.referencedata.eu/test/party/TSO-Nordheim> ,
 		<https://energy.referencedata.eu/test/party/TSO-Portheim> ,
-		<https://energy.referencedata.eu/test/party/DC-Espheim-Svedala> ,
-		<https://energy.referencedata.eu/test/party/DC-Nordheim-Galia> .
+		<https://energy.referencedata.eu/test/party/DCSO-Espheim-Svedala> ,
+		<https://energy.referencedata.eu/test/party/DCSO-Nordheim-Galia> .
 
 #################################################################
 # List of Party
@@ -126,22 +126,22 @@
     cim:IdentifiedObject.name "TSO-Portheim" .
 
 
-<https://energy.referencedata.eu/test/party/DC-Espheim-Svedala>
-    a prov:Agent ;
-    skos:prefLabel "DC-Espheim-Svedala"@en ;
+<https://energy.referencedata.eu/test/party/DCSO-Espheim-Svedala>
+    a prov:Agent, nc:DirectCurrentSystemOperator ;
+    skos:prefLabel "DCSO-Espheim-Svedala"@en ;
 	dcterms:identifier "73ed2666-3e8d-48bf-8d90-bbaf1110e705" ;
-	dcterms:description "Recognized party representing the joint operating entity for the DC-Espheim-Svedala HVDC interconnector, modelled as a separate dataset alongside the individual IGMs of the connected TSOs."@en ;
+	dcterms:description "Recognized party representing the post of operating the joint entity for the DC-Espheim-Svedala HVDC interconnector,"@en ;
     cim:IdentifiedObject.description "Joint operating entity post and function performed for the DC-Espheim-Svedala HVDC interconnector between Espheim and Svedala" ;
     cim:IdentifiedObject.mRID "73ed2666-3e8d-48bf-8d90-bbaf1110e705" ;
-    cim:IdentifiedObject.name "DC-Espheim-Svedala" .
+    cim:IdentifiedObject.name "DCSO-Espheim-Svedala" .
 
 
-<https://energy.referencedata.eu/test/party/DC-Nordheim-Galia>
-    a prov:Agent ;
-    skos:prefLabel "DC-Nordheim-Galia"@en ;
+<https://energy.referencedata.eu/test/party/DCSO-Nordheim-Galia>
+    a prov:Agent, nc:DirectCurrentSystemOperator ;
+    skos:prefLabel "DCSO-Nordheim-Galia"@en ;
 	dcterms:identifier "a1211023-b0a3-4d43-8876-183e6a5ea46a" ;
-	dcterms:description "Recognized party representing the joint operating entity for the DC-Nordheim-Galia HVDC interconnector, modelled as a separate dataset alongside the individual IGMs of the connected TSOs."@en ;
+	dcterms:description "Recognized party representing the post of operating the joint entity for the DC-Nordheim-Galia HVDC interconnector,"@en ;
     cim:IdentifiedObject.description "Joint operating entity post and function performed for the DC-Nordheim-Galia HVDC interconnector between Nordheim and Galia" ;
     cim:IdentifiedObject.mRID "a1211023-b0a3-4d43-8876-183e6a5ea46a" ;
-    cim:IdentifiedObject.name "DC-Nordheim-Galia" .
+    cim:IdentifiedObject.name "DCSO-Nordheim-Galia" .
 

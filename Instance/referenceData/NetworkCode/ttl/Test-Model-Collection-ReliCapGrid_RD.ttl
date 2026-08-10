@@ -8,24 +8,24 @@
 
 
 #################################################################
-# Model Scheme / Reference Dataset
+# Model Collection of ReliCapGrid / Reference Dataset
 #################################################################
 
-<https://energy.referencedata.eu/test/ModelScheme/1.0>
+<https://energy.referencedata.eu/test/Model-Collection-ReliCapGrid/1.0>
     a dcat:Dataset ;
-    skos:prefLabel "Energy Reference Data Model Scheme"@en ;
-	skos:definition "Reference dataset and concept scheme listing recognized abstract CIM model identities that may be used as the object of dcat:isVersionOf for versioned datasets."@en ;
+    skos:prefLabel "Energy Reference Data Model Collection of ReliCapGrid"@en ;
+	skos:definition "Reference dataset listing recognized abstract CIM model identities that may be used as the object of dcat:isVersionOf for versioned datasets."@en ;
 	dcterms:description "Reference dataset containing recognized abstract CIM model identities for use in dataset versioning, provenance, and cataloguing."@en ;
-    dcterms:title "Test-ModelScheme_RD" ;
+    dcterms:title "Test-Model-Collection-ReliCapGrid_RD" ;
 	dcterms:identifier "f4f9cafc-d146-4275-92b5-6d04f9b26b56" ;
     dcterms:publisher <https://www.entsoe.eu/> ;
     dcterms:rights "Copyright" ;
     dcterms:rightsHolder "ENTSO-E" ;
-    dcterms:issued "2026-07-16T00:00:00Z"^^xsd:dateTime ;
-    prov:generatedAtTime "2026-07-16T00:00:00Z"^^xsd:dateTime ;
+    dcterms:issued "2026-08-08T00:00:00Z"^^xsd:dateTime ;
+    prov:generatedAtTime "2026-08-08T00:00:00Z"^^xsd:dateTime ;
     dcat:version "1.0.0" ;
-    adms:versionNotes "Initial version of the Energy Reference Data Model Scheme for ReliCapGrid."@en ;
-    dcat:isVersionOf <https://energy.referencedata.eu/test/ModelScheme> ;
+    adms:versionNotes "Initial version of the Energy Reference Data Model Collection for ReliCapGrid."@en ;
+    dcat:isVersionOf <https://energy.referencedata.eu/test/Model-Collection-ReliCapGrid> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:accessRights <https://energy.referencedata.eu/Confidentiality/Public> ;
 	dcterms:hasPart <https://energy.referencedata.eu/test/ModelScheme/1.0#collection_model> .
@@ -40,13 +40,13 @@
     dcterms:identifier "3c0d7db0-6380-4ce8-ac1f-39bb5687311c" ;
     skos:prefLabel "Collection of recognized models for ReliCapGrid."@en ;
     prov:hadMember
-		<https://energy.referencedata.eu/test/model/TSO-Svedala_SR-EQ> ,
-        <https://energy.referencedata.eu/test/model/TSO-Galia_AD-SSH> ,
-		<https://energy.referencedata.eu/test/model/TSO-Belgovia_SR-CO> ,
-		<https://energy.referencedata.eu/test/model/TSO-Britheim_SR-AE> ,
-		<https://energy.referencedata.eu/test/model/TSO-Espheim_SR-RA> ,
-		<https://energy.referencedata.eu/test/model/TSO-Nordheim_SR-EQ> ,
-		<https://energy.referencedata.eu/test/model/TSO-Portheim_SR-SSH> ,
+		<https://energy.referencedata.eu/test/model/Svedala_SR-EQ> ,
+        <https://energy.referencedata.eu/test/model/Galia_AD-SSH> ,
+		<https://energy.referencedata.eu/test/model/Belgovia_SR-CO> ,
+		<https://energy.referencedata.eu/test/model/Britheim_SR-AE> ,
+		<https://energy.referencedata.eu/test/model/Espheim_SR-RA> ,
+		<https://energy.referencedata.eu/test/model/Nordheim_SR-EQ> ,
+		<https://energy.referencedata.eu/test/model/Portheim_SR-SSH> ,
 		<https://energy.referencedata.eu/test/model/DC-Espheim-Svedala_SR-CO> ,
 		<https://energy.referencedata.eu/test/model/DC-Nordheim-Galia_SR-EQ> .
 
@@ -54,57 +54,57 @@
 # List of Model
 #################################################################
 
-<https://energy.referencedata.eu/test/model/TSO-Svedala_SR-EQ>
+<https://energy.referencedata.eu/test/model/Svedala_SR-EQ>
     a provcim:Model ;
-    skos:prefLabel "TSO-Svedala_StructuralRepresentation_CoreEquipment."@en ;
+    skos:prefLabel "Svedala_StructuralRepresentation_CoreEquipment."@en ;
 	dcterms:identifier "bbee31bf-dfb6-456a-9b5e-4d1ff0713000" ;
 	dcterms:description "TSO-Svedala Structural model data complying to Core Equipment (EQ) for the Frame Svedala-Transmission."@en ;
 	provcim:modelAuthority <https://energy.referencedata.eu/test/party/TSO-Svedala> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/Svedala-Transmission> .
 
-<https://energy.referencedata.eu/test/model/TSO-Galia_AD-SSH>
+<https://energy.referencedata.eu/test/model/Galia_AD-SSH>
     a provcim:Model ;
-    skos:prefLabel "TSO-Galia_AssumptionDefinition-SteadyStateHypothesis."@en ;
+    skos:prefLabel "Galia_AssumptionDefinition-SteadyStateHypothesis."@en ;
 	dcterms:identifier "9db94464-5b71-4f83-8345-e83f3d604761" ;
 	dcterms:description "TSO-Galia Assumed operating conditions complying to Steady-State Hypothesis (SSH) for the Frame Galia-Transmission."@en ;
 	provcim:modelAuthority <https://energy.referencedata.eu/test/party/TSO-Galia> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/Galia-Transmission> .
 
-<https://energy.referencedata.eu/test/model/TSO-Belgovia_SR-CO>
+<https://energy.referencedata.eu/test/model/Belgovia_SR-CO>
     a provcim:Model ;
-    skos:prefLabel "TSO-Belgovia_StructuralRepresentation_Contingency."@en ;
+    skos:prefLabel "Belgovia_StructuralRepresentation_Contingency."@en ;
 	dcterms:identifier "b3f7d0b7-ce2c-4a44-baf4-2cb7c8b0cab8" ;
 	dcterms:description "TSO-Belgovia Structural model data complying to Contingency (CO) for the Frame Belgovia-Transmission."@en ;
 	provcim:modelAuthority <https://energy.referencedata.eu/test/party/TSO-Belgovia> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/Belgovia-Transmission> .
 
-<https://energy.referencedata.eu/test/model/TSO-Britheim_SR-AE>
+<https://energy.referencedata.eu/test/model/Britheim_SR-AE>
     a provcim:Model ;
-    skos:prefLabel "TSO-Britheim_StructuralRepresentation_AssessedElement."@en ;
+    skos:prefLabel "Britheim_StructuralRepresentation_AssessedElement."@en ;
 	dcterms:identifier "67ec06db-78df-44c9-830c-c92e9eb13261" ;
 	dcterms:description "TSO-Britheim Structural model data complying to Assessed Element (AE) for the Frame Britheim-Transmission."@en ;
 	provcim:modelAuthority <https://energy.referencedata.eu/test/party/TSO-Britheim> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/Britheim-Transmission> .
 
-<https://energy.referencedata.eu/test/model/TSO-Espheim_SR-RA>
+<https://energy.referencedata.eu/test/model/Espheim_SR-RA>
     a provcim:Model ;
-    skos:prefLabel "TSO-Espheim_StructuralRepresentation_RemedialAction."@en ;
+    skos:prefLabel "Espheim_StructuralRepresentation_RemedialAction."@en ;
 	dcterms:identifier "e0cae1fd-7734-4347-9121-d76ca51b18a5" ;
 	dcterms:description "TSO-Espheim Structural model data complying to Remedial Action (RA) for the Frame Espheim-Transmission."@en ;
 	provcim:modelAuthority <https://energy.referencedata.eu/test/party/TSO-Espheim> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/Espheim-Transmission> .
 
-<https://energy.referencedata.eu/test/model/TSO-Nordheim_SR-EQ>
+<https://energy.referencedata.eu/test/model/Nordheim_SR-EQ>
     a provcim:Model ;
-    skos:prefLabel "TSO-Nordheim_StructuralRepresentation_CoreEquipment."@en ;
+    skos:prefLabel "Nordheim_StructuralRepresentation_CoreEquipment."@en ;
 	dcterms:identifier "88bd12dc-5a4c-44a1-8b1c-06fcbbfee67c" ;
 	dcterms:description "TSO-Nordheim Structural model data complying to Core Equipment (EQ) for the Frame Nordheim-Transmission."@en ;
 	provcim:modelAuthority <https://energy.referencedata.eu/test/party/TSO-Nordheim> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/Nordheim-Transmission> .
 
-<https://energy.referencedata.eu/test/model/TSO-Portheim_SR-SSH>
+<https://energy.referencedata.eu/test/model/Portheim_SR-SSH>
     a provcim:Model ;
-    skos:prefLabel "TSO-Portheim_StructuralRepresentation_SteadyStateHypothesis."@en ;
+    skos:prefLabel "Portheim_StructuralRepresentation_SteadyStateHypothesis."@en ;
 	dcterms:identifier "c5baec64-cd96-43c7-9f3f-d15c97deaeaf" ;
 	dcterms:description "TSO-Portheim Structural model data complying to Steady-State Hypothesis (SSH) for the Frame Portheim-Transmission."@en ;
 	provcim:modelAuthority <https://energy.referencedata.eu/test/party/TSO-Portheim> ;
@@ -115,7 +115,7 @@
     skos:prefLabel "DC-Espheim-Svedala_StructuralRepresentation_Contingency."@en ;
 	dcterms:identifier "832d7cb4-cb47-45bf-a4f5-4e48f9e41d13" ;
 	dcterms:description "DC-Espheim-Svedala Structural model data complying to Contingency (CO) for the Frame DC-Espheim-Svedala-Transmission."@en ;
-	provcim:modelAuthority <https://energy.referencedata.eu/test/party/DC-Espheim-Svedala> ;
+	provcim:modelAuthority <https://energy.referencedata.eu/test/party/DCSO-Espheim-Svedala> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/DC-Espheim-Svedala-Transmission> .
 
 <https://energy.referencedata.eu/test/model/DC-Nordheim-Galia_SR-EQ>
@@ -123,5 +123,5 @@
     skos:prefLabel "DC-Nordheim-Galia_StructuralRepresentation_CoreEquipment."@en ;
 	dcterms:identifier "8bcb3092-84b1-41b1-b546-b8bb44335401" ;
 	dcterms:description "DC-Nordheim-Galia Structural model data complying to Core Equipment (EQ) for the Frame DC-Nordheim-Galia-Transmission."@en ;
-	provcim:modelAuthority <https://energy.referencedata.eu/test/party/DC-Nordheim-Galia> ;
+	provcim:modelAuthority <https://energy.referencedata.eu/test/party/DCSO-Nordheim-Galia> ;
 	dcterms:spatial <https://energy.referencedata.eu/test/frame/DC-Nordheim-Galia-Transmission> .

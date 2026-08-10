@@ -545,24 +545,24 @@
         skos:notation        "AD-SET";
         skos:prefLabel       "AssumptionDefinition-Simulation Settings"@en .
 
-<https://energy.referencedata.eu/ActivityScheme/1.0>
-        rdf:type              skos:ConceptScheme , dcat:Dataset;
+<https://energy.referencedata.eu/Activity-Collection/1.0>
+        rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
         dcterms:description   "Reference dataset containing recognized activity identities for use in provenance references."@en;
         dcterms:hasPart       <https://energy.referencedata.eu/ActivityScheme/NCP/1.0#collection_ncp_activity>;
         dcterms:identifier    "afab3d78-d706-466e-931a-db0bf847b904";
-        dcterms:issued        "2026-07-21T00:00:00Z";
+        dcterms:issued        "2026-08-08T00:00:00Z";
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
         dcterms:publisher     <https://www.entsoe.eu/>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:title         "ActivityScheme_RD";
-        skos:definition       "Reference dataset and concept scheme listing recognized activity identities that may be used as the object of prov:wasGeneratedBy."@en;
-        skos:prefLabel        "Energy Reference Data Activity Scheme"@en;
-        adms:versionNotes     "Initial version of the Energy Reference Data Activity Scheme for ReliCapGrid."@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/ActivityScheme>;
+        dcterms:title         "Activity-Collection_RD";
+        skos:definition       "Reference dataset listing recognized activity identities that should be used as the object of prov:wasGeneratedBy."@en;
+        skos:prefLabel        "Energy Reference Data Activity Collection"@en;
+        adms:versionNotes     "Initial version of the Energy Reference Data Activity Collection generated as part of ReliCapGrid test dataset."@en;
+        dcat:isVersionOf      <https://energy.referencedata.eu/Activity-Collection>;
         dcat:version          "1.0.0";
-        prov:generatedAtTime  "2026-07-21T00:00:00Z" .
+        prov:generatedAtTime  "2026-08-08T00:00:00Z" .
 
 <https://energy.referencedata.eu/activity/AD-SSI>
         rdf:type             provcim:Modeling;

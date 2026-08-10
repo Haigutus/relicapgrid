@@ -8,23 +8,22 @@
     xmlns:provcim="https://cim4.eu/ns/provcim#"
     xmlns:dcat="http://www.w3.org/ns/dcat#"
     xmlns:prof="http://www.w3.org/ns/dx/prof/" > 
-  <dcat:Dataset rdf:about="https://energy.referencedata.eu/ConformanceReleaseScheme/NCP/2.4">
+  <dcat:Dataset rdf:about="https://energy.referencedata.eu/ConformTo-Collection/NCP/2.4">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-    <dcterms:description xml:lang="en">Conformance Release Scheme that identifies the vocabulary version and profiles that are part of the release, in addition to identifying profile conformance to a previous vocabulary version.</dcterms:description>
-    <prov:generatedAtTime>2026-03-18T10:00:00Z</prov:generatedAtTime>
-    <dcterms:hasPart rdf:resource="https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_1_release"/>
+    <dcterms:description xml:lang="en">ConformTo Collection that identifies the vocabulary version and profiles that are part of the release, in addition to identifying profile conformance to a previous vocabulary version.</dcterms:description>
+    <prov:generatedAtTime>2026-08-08T10:00:00Z</prov:generatedAtTime>
+    <dcterms:hasPart rdf:resource="https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_release"/>
     <dcterms:identifier>4d19c86f-884e-4e94-b8b5-386655d2fcb2</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/ConformanceReleaseScheme/NCP"/>
-    <dcterms:issued>2026-03-18T10:00:00Z</dcterms:issued>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/ConformTo-Collection/NCP"/>
+    <dcterms:issued>2026-08-08T10:00:00Z</dcterms:issued>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <skos:prefLabel xml:lang="en">Network Code Profile 2.4.1 Conformance Release Scheme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Network Code Profile 2.4 ConformTo Collection</skos:prefLabel>
     <dcterms:publisher rdf:resource="https://www.entsoe.eu/"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
-    <dcterms:title>ConformanceReleaseScheme-NCP-2-4-1_RD</dcterms:title>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <dcat:version>2.4.1</dcat:version>
-    <adms:versionNotes xml:lang="en">Minor bug fix to support Common Dataset.</adms:versionNotes>
+    <dcterms:title>ConformTo-Collection-NCP-2-4_RD</dcterms:title>
+    <dcat:version>1.0.0</dcat:version>
+    <adms:versionNotes xml:lang="en">Inital version of this reference data</adms:versionNotes>
   </dcat:Dataset>
   <provcim:SupportedProfileCollection rdf:about="https://energy.referencedata.eu/CGMES/3.0#support_CIM17-2_of_CGMES_3_0">
     <provcim:forVocabulary rdf:resource="https://cim4.eu/ns/cgmes/3.0"/>
@@ -61,7 +60,7 @@
     <prov:hadMember rdf:resource="https://ap.cim4.eu/ObjectRegistry/2.2"/>
     <skos:prefLabel xml:lang="en">Profiles in the NCP 2.4.1 release that are supported by vocabulary nc 2.4</skos:prefLabel>
   </provcim:SupportedProfileCollection>
-  <prov:Collection rdf:about="https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_1_release">
+  <prov:Collection rdf:about="https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_release">
     <prov:hadMember rdf:resource="https://ap.cim4.eu/ImpactAssessmentMatrix/2.4"/>
     <prov:hadMember rdf:resource="https://ap.cim4.eu/StateInstructionSchedule/2.4"/>
     <prov:hadMember rdf:resource="https://ap.cim4.eu/AvailabilitySchedule/2.3"/>

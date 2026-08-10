@@ -7,24 +7,23 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:provcim="https://cim4.eu/ns/provcim#"
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
-  <dcat:Dataset rdf:about="https://energy.referencedata.eu/ActivityScheme/1.0">
+  <dcat:Dataset rdf:about="https://energy.referencedata.eu/Activity-Collection/1.0">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
-    <skos:definition xml:lang="en">Reference dataset and concept scheme listing recognized activity identities that may be used as the object of prov:wasGeneratedBy.</skos:definition>
+    <skos:definition xml:lang="en">Reference dataset listing recognized activity identities that should be used as the object of prov:wasGeneratedBy.</skos:definition>
     <dcterms:description xml:lang="en">Reference dataset containing recognized activity identities for use in provenance references.</dcterms:description>
-    <prov:generatedAtTime>2026-07-21T00:00:00Z</prov:generatedAtTime>
+    <prov:generatedAtTime>2026-08-08T00:00:00Z</prov:generatedAtTime>
     <dcterms:hasPart rdf:resource="https://energy.referencedata.eu/ActivityScheme/NCP/1.0#collection_ncp_activity"/>
     <dcterms:identifier>afab3d78-d706-466e-931a-db0bf847b904</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/ActivityScheme"/>
-    <dcterms:issued>2026-07-21T00:00:00Z</dcterms:issued>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Activity-Collection"/>
+    <dcterms:issued>2026-08-08T00:00:00Z</dcterms:issued>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <skos:prefLabel xml:lang="en">Energy Reference Data Activity Scheme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Energy Reference Data Activity Collection</skos:prefLabel>
     <dcterms:publisher rdf:resource="https://www.entsoe.eu/"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
-    <dcterms:title>ActivityScheme_RD</dcterms:title>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dcterms:title>Activity-Collection_RD</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <adms:versionNotes xml:lang="en">Initial version of the Energy Reference Data Activity Scheme for ReliCapGrid.</adms:versionNotes>
+    <adms:versionNotes xml:lang="en">Initial version of the Energy Reference Data Activity Collection generated as part of ReliCapGrid test dataset.</adms:versionNotes>
   </dcat:Dataset>
   <provcim:Transaction rdf:about="https://energy.referencedata.eu/activity/RES-AS">
     <dcterms:description xml:lang="en">Formal response complying to AvailabilitySchedule (AS).</dcterms:description>

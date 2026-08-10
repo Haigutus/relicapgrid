@@ -76,7 +76,7 @@
         prov:hadMember         <http://iec.ch/TC57/ns/CIM/Dynamics-EU/1.0> , <http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU/3.0> , <http://iec.ch/TC57/ns/CIM/ShortCircuit-EU/3.0> , <http://iec.ch/TC57/ns/CIM/DiagramLayout-EU/3.0> , <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0> , <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0> , <http://iec.ch/TC57/ns/CIM/GeographicalLocation-EU/3.0> , <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0> , <http://iec.ch/TC57/ns/CIM/Operation-EU/3.0> , <http://iec.ch/TC57/61970-552/ModelDescription/1>;
         provcim:forVocabulary  <https://cim4.eu/ns/cgmes/3.0> .
 
-<https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_1_release>
+<https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_release>
         rdf:type            prov:Collection;
         dcterms:identifier  "77802eb8-a069-490e-98be-54032ca9cc8e";
         skos:prefLabel      "Namespace and profile supported by NCP 2.4.1"@en;
@@ -125,23 +125,23 @@
         skos:prefLabel       "Sensitivity Matrix (SM) Application Profile 2.3"@en;
         prof:isProfileOf     <https://cim4.eu/ns/nc/2.4> .
 
-<https://energy.referencedata.eu/ConformanceReleaseScheme/NCP/2.4>
-        rdf:type              skos:ConceptScheme , dcat:Dataset;
+<https://energy.referencedata.eu/ConformTo-Collection/NCP/2.4>
+        rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:description   "Conformance Release Scheme that identifies the vocabulary version and profiles that are part of the release, in addition to identifying profile conformance to a previous vocabulary version."@en;
-        dcterms:hasPart       <https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_1_release>;
+        dcterms:description   "ConformTo Collection that identifies the vocabulary version and profiles that are part of the release, in addition to identifying profile conformance to a previous vocabulary version."@en;
+        dcterms:hasPart       <https://energy.referencedata.eu/NCP/2.4#collection_ncp_2_4_release>;
         dcterms:identifier    "4d19c86f-884e-4e94-b8b5-386655d2fcb2";
-        dcterms:issued        "2026-03-18T10:00:00Z";
+        dcterms:issued        "2026-08-08T10:00:00Z";
         dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
         dcterms:publisher     <https://www.entsoe.eu/>;
         dcterms:rights        "Copyright";
         dcterms:rightsHolder  "ENTSO-E";
-        dcterms:title         "ConformanceReleaseScheme-NCP-2-4-1_RD";
-        skos:prefLabel        "Network Code Profile 2.4.1 Conformance Release Scheme"@en;
-        adms:versionNotes     "Minor bug fix to support Common Dataset."@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/ConformanceReleaseScheme/NCP>;
-        dcat:version          "2.4.1";
-        prov:generatedAtTime  "2026-03-18T10:00:00Z" .
+        dcterms:title         "ConformTo-Collection-NCP-2-4_RD";
+        skos:prefLabel        "Network Code Profile 2.4 ConformTo Collection"@en;
+        adms:versionNotes     "Inital version of this reference data"@en;
+        dcat:isVersionOf      <https://energy.referencedata.eu/ConformTo-Collection/NCP>;
+        dcat:version          "1.0.0";
+        prov:generatedAtTime  "2026-08-08T10:00:00Z" .
 
 <https://ap.cim4.eu/AssessedElement/2.4>
         rdf:type             prof:Profile;
