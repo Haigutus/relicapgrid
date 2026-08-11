@@ -38,7 +38,7 @@ jobs:
       - name: Upload NCP RA SARIF to code scanning
         uses: github/codeql-action/upload-sarif@v4
         with:
-          sarif_file: reports/Svedala-Espheim_RA.sarif
+          sarif_file: reports/DC-Espheim-Svedala_RA.sarif
           category: shacl-ncp-ra
 
       - name: Upload SARIF + full SHACL reports as run artifact

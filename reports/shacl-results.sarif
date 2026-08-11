@@ -681,12 +681,12 @@
       "invocations": [
         {
           "executionSuccessful": true,
-          "startTimeUtc": "2026-08-11T13:31:57.110638Z",
-          "endTimeUtc": "2026-08-11T13:32:08.186001Z"
+          "startTimeUtc": "2026-08-11T15:13:16.651421Z",
+          "endTimeUtc": "2026-08-11T15:13:27.557081Z"
         }
       ],
       "properties": {
-        "duration_seconds": 11.075,
+        "duration_seconds": 10.906,
         "engine": "polars",
         "source": [
           "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
@@ -701,7 +701,7 @@
           "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ACDCConverter.PccTerminal-valueType: unsupported sh:path form",
           "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#PowerTransformer-twoWinding: sh:target not walked",
           "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#Terminal.phases-phaseCodeN: unsupported sh:path form",
-          "n66b71a30ca29443fa8365e5b13766c65b119: unsupported sh:path form"
+          "na71afcb7b93f4109b77d7ce996e644f1b119: unsupported sh:path form"
         ],
         "skipped_components": []
       },
@@ -4887,20 +4887,20 @@
               }
             },
             {
-              "id": "RangeConstraint.GridStateAlteration-valueType/sh:in",
-              "name": "RangeConstraint.GridStateAlteration-valueType",
+              "id": "AllowedClasses-property/sh:in",
+              "name": "ClassNotInProfile",
               "shortDescription": {
-                "text": "RangeConstraint.GridStateAlteration-valueType"
+                "text": "ClassNotInProfile"
               },
               "fullDescription": {
-                "text": "This constraint validates the value of the association at the used direction."
+                "text": "Checks if the dataset contains classes which are not defined in the profile to which this dataset conforms to."
               },
-              "helpUri": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.GridStateAlteration-valueType",
+              "helpUri": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#AllowedClasses-property",
               "defaultConfiguration": {
-                "level": "error"
+                "level": "note"
               },
               "properties": {
-                "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.GridStateAlteration-valueType",
+                "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#AllowedClasses-property",
                 "constraint": "sh:in"
               }
             },
@@ -4964,15 +4964,15 @@
       "invocations": [
         {
           "executionSuccessful": true,
-          "startTimeUtc": "2026-08-11T13:32:11.150919Z",
-          "endTimeUtc": "2026-08-11T13:32:11.379551Z"
+          "startTimeUtc": "2026-08-11T15:13:31.596963Z",
+          "endTimeUtc": "2026-08-11T15:13:31.799837Z"
         }
       ],
       "properties": {
-        "duration_seconds": 0.229,
+        "duration_seconds": 0.203,
         "engine": "polars",
         "source": [
-          "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+          "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
         ],
         "references": [
           "RemedialAction-AP-Con-Simple-SHACL.ttl",
@@ -5003,11 +5003,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 128,
-                  "endLine": 128
+                  "startLine": 130,
+                  "endLine": 130
                 }
               }
             },
@@ -5021,11 +5021,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 141,
-                  "endLine": 141
+                  "startLine": 143,
+                  "endLine": 143
                 }
               }
             },
@@ -5039,11 +5039,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 154,
-                  "endLine": 154
+                  "startLine": 156,
+                  "endLine": 156
                 }
               }
             },
@@ -5057,11 +5057,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 167,
-                  "endLine": 167
+                  "startLine": 169,
+                  "endLine": 169
                 }
               }
             }
@@ -5087,104 +5087,47 @@
           }
         },
         {
-          "ruleId": "RangeConstraint.GridStateAlteration-valueType/sh:in",
+          "ruleId": "AllowedClasses-property/sh:in",
           "ruleIndex": 1,
-          "level": "error",
+          "level": "note",
           "message": {
-            "text": "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class. \u2014 RangeConstraint.GridStateAlteration \u2014 4 object(s) affected. Examples: StaticPropertyRange ce3e19bd-2e06-4abf-bd35-2f3868816131, StaticPropertyRange f70729cc-9ae8-4e24-b7ed-5ef3c316f362, StaticPropertyRange c5134317-6eaf-4629-a1db-349836438984, StaticPropertyRange fffdf252-9de2-414f-a991-1cd0d2307796"
+            "text": "This class is not part of the profile to which this dataset conforms to. \u2014 1 object(s) affected. Examples: Dataset c1413a88-1f17-4b9e-9afe-cd089605c671"
           },
-          "occurrenceCount": 4,
+          "occurrenceCount": 1,
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "StaticPropertyRange/ce3e19bd-2e06-4abf-bd35-2f3868816131",
-                  "name": "ce3e19bd-2e06-4abf-bd35-2f3868816131",
+                  "fullyQualifiedName": "Dataset/c1413a88-1f17-4b9e-9afe-cd089605c671",
+                  "name": "c1413a88-1f17-4b9e-9afe-cd089605c671",
                   "kind": "object"
                 }
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 192,
-                  "endLine": 192
-                }
-              }
-            },
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "StaticPropertyRange/f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
-                  "name": "f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
-                  "kind": "object"
-                }
-              ],
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
-                },
-                "region": {
-                  "startLine": 200,
-                  "endLine": 200
-                }
-              }
-            },
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "StaticPropertyRange/c5134317-6eaf-4629-a1db-349836438984",
-                  "name": "c5134317-6eaf-4629-a1db-349836438984",
-                  "kind": "object"
-                }
-              ],
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
-                },
-                "region": {
-                  "startLine": 224,
-                  "endLine": 224
-                }
-              }
-            },
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "StaticPropertyRange/fffdf252-9de2-414f-a991-1cd0d2307796",
-                  "name": "fffdf252-9de2-414f-a991-1cd0d2307796",
-                  "kind": "object"
-                }
-              ],
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
-                },
-                "region": {
-                  "startLine": 232,
-                  "endLine": 232
+                  "startLine": 30,
+                  "endLine": 30
                 }
               }
             }
           ],
           "properties": {
-            "count": 4,
-            "key": "RangeConstraint.GridStateAlteration",
+            "count": 1,
+            "key": "type",
             "sampleIDs": [
-              "ce3e19bd-2e06-4abf-bd35-2f3868816131",
-              "f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
-              "c5134317-6eaf-4629-a1db-349836438984",
-              "fffdf252-9de2-414f-a991-1cd0d2307796"
+              "c1413a88-1f17-4b9e-9afe-cd089605c671"
             ],
             "sampleValues": [
-              "GridStateAlterationCollection"
+              "https://energy.referencedata.eu/type/CIM-PowerSystemModel"
             ],
             "violationType": "sh:in",
-            "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.GridStateAlteration-valueType",
-            "schemaDescription": "The grid state alteration which has static range.",
-            "schemaMultiplicity": "1",
-            "classDescription": "Defines the static range, which means that this is the minimum and/or maximum of an attribute value. The value provided by the schedule replaces the value of the attribute to which the schedule refers to.\nIn case that the PropertyReference refers to Boolean type attributes, RangeConstraint.direction shall be none or upAndDown and the RangeConstraint.valueKind shall be absolute. If the direction is none then optimization of the attribute referenced by the PropertyReference is not possible if the current status is already as the value in the range. Otherwise if the direction is upAndDown, the optimization can change from true to false or vice versa independently of the initial value in the operational scenario.\nFor instance for a tap changer related grid state alteration for a particular point in time, if the range of TapChanger.step is to be restricted, the value of the schedule will represent that new TapChanger.step range."
+            "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#AllowedClasses-property",
+            "schemaDescription": "The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.",
+            "schemaMultiplicity": "0..1",
+            "classDescription": "A collection of data, published or curated by a single source, and available for access or download in one or more representations."
           }
         },
         {
@@ -5206,11 +5149,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 125,
-                  "endLine": 125
+                  "startLine": 127,
+                  "endLine": 127
                 }
               }
             },
@@ -5224,11 +5167,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 138,
-                  "endLine": 138
+                  "startLine": 140,
+                  "endLine": 140
                 }
               }
             },
@@ -5242,11 +5185,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 151,
-                  "endLine": 151
+                  "startLine": 153,
+                  "endLine": 153
                 }
               }
             },
@@ -5260,11 +5203,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 164,
-                  "endLine": 164
+                  "startLine": 166,
+                  "endLine": 166
                 }
               }
             }
@@ -5310,11 +5253,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 194,
-                  "endLine": 194
+                  "startLine": 196,
+                  "endLine": 196
                 }
               }
             },
@@ -5328,11 +5271,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 202,
-                  "endLine": 202
+                  "startLine": 204,
+                  "endLine": 204
                 }
               }
             },
@@ -5346,11 +5289,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 226,
-                  "endLine": 226
+                  "startLine": 228,
+                  "endLine": 228
                 }
               }
             },
@@ -5364,11 +5307,11 @@
               ],
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
-                  "startLine": 234,
-                  "endLine": 234
+                  "startLine": 236,
+                  "endLine": 236
                 }
               }
             }
@@ -5413,7 +5356,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
                 },
                 "region": {
                   "startLine": 1,

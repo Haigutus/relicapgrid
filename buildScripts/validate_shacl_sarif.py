@@ -36,7 +36,7 @@ EQ = "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
 EQ_SHACL = ["CGMES/SHACL/61970-600-2_Equipment-AP-Con-Simple-SHACL.ttl",
             "CGMES/SHACL/61970-301_Equipment-AP-Con-Complex-SHACL.ttl"]
 
-RA = "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+RA = "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
 RA_SHACL = ["NCP/SHACL/RemedialAction-AP-Con-Simple-SHACL.ttl",
             "NCP/SHACL/RemedialAction-AP-Con-Complex-SHACL.ttl"]
 
