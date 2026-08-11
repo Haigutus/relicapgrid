@@ -7,7 +7,7 @@
         "driver": {
           "name": "triplets-shacl",
           "informationUri": "https://github.com/Haigutus/triplets",
-          "version": "0.2.0a2",
+          "version": "0.2.0rc1",
           "rules": [
             {
               "id": "Terminal.ConductingEquipment-valueType/sh:in",
@@ -678,6 +678,33 @@
           ]
         }
       },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "startTimeUtc": "2026-08-11T13:31:57.110638Z",
+          "endTimeUtc": "2026-08-11T13:32:08.186001Z"
+        }
+      ],
+      "properties": {
+        "duration_seconds": 11.075,
+        "engine": "polars",
+        "source": [
+          "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
+        ],
+        "references": [
+          "61970-600-2_Equipment-AP-Con-Simple-SHACL.ttl",
+          "61970-301_Equipment-AP-Con-Complex-SHACL.ttl"
+        ],
+        "node_shapes": 219,
+        "constraints": 4851,
+        "skipped_shapes": [
+          "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ACDCConverter.PccTerminal-valueType: unsupported sh:path form",
+          "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#PowerTransformer-twoWinding: sh:target not walked",
+          "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#Terminal.phases-phaseCodeN: unsupported sh:path form",
+          "n66b71a30ca29443fa8365e5b13766c65b119: unsupported sh:path form"
+        ],
+        "skipped_components": []
+      },
       "results": [
         {
           "ruleId": "Terminal.ConductingEquipment-valueType/sh:in",
@@ -701,7 +728,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 41266
+                  "startLine": 41266,
+                  "endLine": 41266
                 }
               }
             }
@@ -744,7 +772,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55955
+                  "startLine": 55955,
+                  "endLine": 55955
                 }
               }
             }
@@ -787,7 +816,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 20
+                  "startLine": 20,
+                  "endLine": 20
                 }
               }
             },
@@ -804,7 +834,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 31
+                  "startLine": 31,
+                  "endLine": 31
                 }
               }
             },
@@ -821,7 +852,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 42
+                  "startLine": 42,
+                  "endLine": 42
                 }
               }
             },
@@ -838,7 +870,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 1054
+                  "startLine": 1054,
+                  "endLine": 1054
                 }
               }
             },
@@ -855,7 +888,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 1065
+                  "startLine": 1065,
+                  "endLine": 1065
                 }
               }
             },
@@ -872,7 +906,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 1076
+                  "startLine": 1076,
+                  "endLine": 1076
                 }
               }
             }
@@ -920,7 +955,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22
+                  "startLine": 22,
+                  "endLine": 22
                 }
               }
             },
@@ -937,7 +973,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55
+                  "startLine": 55,
+                  "endLine": 55
                 }
               }
             },
@@ -954,7 +991,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 99
+                  "startLine": 99,
+                  "endLine": 99
                 }
               }
             },
@@ -971,7 +1009,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 1001
+                  "startLine": 1001,
+                  "endLine": 1001
                 }
               }
             },
@@ -988,7 +1027,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 1034
+                  "startLine": 1034,
+                  "endLine": 1034
                 }
               }
             },
@@ -1005,7 +1045,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 1067
+                  "startLine": 1067,
+                  "endLine": 1067
                 }
               }
             }
@@ -1057,7 +1098,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 189
+                  "startLine": 189,
+                  "endLine": 189
                 }
               }
             },
@@ -1074,7 +1116,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 508
+                  "startLine": 508,
+                  "endLine": 508
                 }
               }
             },
@@ -1091,7 +1134,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 552
+                  "startLine": 552,
+                  "endLine": 552
                 }
               }
             },
@@ -1108,7 +1152,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 838
+                  "startLine": 838,
+                  "endLine": 838
                 }
               }
             },
@@ -1125,7 +1170,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 893
+                  "startLine": 893,
+                  "endLine": 893
                 }
               }
             },
@@ -1142,7 +1188,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 959
+                  "startLine": 959,
+                  "endLine": 959
                 }
               }
             }
@@ -1192,7 +1239,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 373
+                  "startLine": 373,
+                  "endLine": 373
                 }
               }
             },
@@ -1209,7 +1257,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 582
+                  "startLine": 582,
+                  "endLine": 582
                 }
               }
             },
@@ -1226,7 +1275,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 659
+                  "startLine": 659,
+                  "endLine": 659
                 }
               }
             },
@@ -1243,7 +1293,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 857
+                  "startLine": 857,
+                  "endLine": 857
                 }
               }
             }
@@ -1290,7 +1341,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 11413
+                  "startLine": 11413,
+                  "endLine": 11413
                 }
               }
             },
@@ -1307,7 +1359,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 11420
+                  "startLine": 11420,
+                  "endLine": 11420
                 }
               }
             },
@@ -1324,7 +1377,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 11427
+                  "startLine": 11427,
+                  "endLine": 11427
                 }
               }
             },
@@ -1341,7 +1395,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 14759
+                  "startLine": 14759,
+                  "endLine": 14759
                 }
               }
             },
@@ -1358,7 +1413,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 14766
+                  "startLine": 14766,
+                  "endLine": 14766
                 }
               }
             },
@@ -1375,7 +1431,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 14773
+                  "startLine": 14773,
+                  "endLine": 14773
                 }
               }
             }
@@ -1425,7 +1482,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22137
+                  "startLine": 22137,
+                  "endLine": 22137
                 }
               }
             },
@@ -1442,7 +1500,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22145
+                  "startLine": 22145,
+                  "endLine": 22145
                 }
               }
             },
@@ -1459,7 +1518,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22169
+                  "startLine": 22169,
+                  "endLine": 22169
                 }
               }
             },
@@ -1476,7 +1536,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55306
+                  "startLine": 55306,
+                  "endLine": 55306
                 }
               }
             },
@@ -1493,7 +1554,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55313
+                  "startLine": 55313,
+                  "endLine": 55313
                 }
               }
             },
@@ -1510,7 +1572,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55320
+                  "startLine": 55320,
+                  "endLine": 55320
                 }
               }
             }
@@ -1562,7 +1625,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22138
+                  "startLine": 22138,
+                  "endLine": 22138
                 }
               }
             },
@@ -1579,7 +1643,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22146
+                  "startLine": 22146,
+                  "endLine": 22146
                 }
               }
             },
@@ -1596,7 +1661,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22154
+                  "startLine": 22154,
+                  "endLine": 22154
                 }
               }
             },
@@ -1613,7 +1679,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55307
+                  "startLine": 55307,
+                  "endLine": 55307
                 }
               }
             },
@@ -1630,7 +1697,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55314
+                  "startLine": 55314,
+                  "endLine": 55314
                 }
               }
             },
@@ -1647,7 +1715,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55321
+                  "startLine": 55321,
+                  "endLine": 55321
                 }
               }
             }
@@ -1695,7 +1764,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22774
+                  "startLine": 22774,
+                  "endLine": 22774
                 }
               }
             },
@@ -1712,7 +1782,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22786
+                  "startLine": 22786,
+                  "endLine": 22786
                 }
               }
             },
@@ -1729,7 +1800,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22798
+                  "startLine": 22798,
+                  "endLine": 22798
                 }
               }
             },
@@ -1746,7 +1818,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 23267
+                  "startLine": 23267,
+                  "endLine": 23267
                 }
               }
             },
@@ -1763,7 +1836,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 23279
+                  "startLine": 23279,
+                  "endLine": 23279
                 }
               }
             },
@@ -1780,7 +1854,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 23291
+                  "startLine": 23291,
+                  "endLine": 23291
                 }
               }
             }
@@ -1828,7 +1903,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22778
+                  "startLine": 22778,
+                  "endLine": 22778
                 }
               }
             },
@@ -1845,7 +1921,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22790
+                  "startLine": 22790,
+                  "endLine": 22790
                 }
               }
             },
@@ -1862,7 +1939,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 22802
+                  "startLine": 22802,
+                  "endLine": 22802
                 }
               }
             },
@@ -1879,7 +1957,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 23283
+                  "startLine": 23283,
+                  "endLine": 23283
                 }
               }
             },
@@ -1896,7 +1975,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 23294
+                  "startLine": 23294,
+                  "endLine": 23294
                 }
               }
             },
@@ -1913,7 +1993,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 23308
+                  "startLine": 23308,
+                  "endLine": 23308
                 }
               }
             }
@@ -1961,7 +2042,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 24868
+                  "startLine": 24868,
+                  "endLine": 24868
                 }
               }
             },
@@ -1978,7 +2060,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55965
+                  "startLine": 55965,
+                  "endLine": 55965
                 }
               }
             },
@@ -1995,7 +2078,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55973
+                  "startLine": 55973,
+                  "endLine": 55973
                 }
               }
             }
@@ -2041,7 +2125,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25175
+                  "startLine": 25175,
+                  "endLine": 25175
                 }
               }
             },
@@ -2058,7 +2143,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25190
+                  "startLine": 25190,
+                  "endLine": 25190
                 }
               }
             },
@@ -2075,7 +2161,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25205
+                  "startLine": 25205,
+                  "endLine": 25205
                 }
               }
             },
@@ -2092,7 +2179,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26720
+                  "startLine": 26720,
+                  "endLine": 26720
                 }
               }
             },
@@ -2109,7 +2197,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26735
+                  "startLine": 26735,
+                  "endLine": 26735
                 }
               }
             },
@@ -2126,7 +2215,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26750
+                  "startLine": 26750,
+                  "endLine": 26750
                 }
               }
             }
@@ -2174,7 +2264,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25177
+                  "startLine": 25177,
+                  "endLine": 25177
                 }
               }
             },
@@ -2191,7 +2282,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25192
+                  "startLine": 25192,
+                  "endLine": 25192
                 }
               }
             },
@@ -2208,7 +2300,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25207
+                  "startLine": 25207,
+                  "endLine": 25207
                 }
               }
             },
@@ -2225,7 +2318,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26722
+                  "startLine": 26722,
+                  "endLine": 26722
                 }
               }
             },
@@ -2242,7 +2336,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26737
+                  "startLine": 26737,
+                  "endLine": 26737
                 }
               }
             },
@@ -2259,7 +2354,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26752
+                  "startLine": 26752,
+                  "endLine": 26752
                 }
               }
             }
@@ -2307,7 +2403,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25178
+                  "startLine": 25178,
+                  "endLine": 25178
                 }
               }
             },
@@ -2324,7 +2421,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25193
+                  "startLine": 25193,
+                  "endLine": 25193
                 }
               }
             },
@@ -2341,7 +2439,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25208
+                  "startLine": 25208,
+                  "endLine": 25208
                 }
               }
             },
@@ -2358,7 +2457,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26723
+                  "startLine": 26723,
+                  "endLine": 26723
                 }
               }
             },
@@ -2375,7 +2475,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26738
+                  "startLine": 26738,
+                  "endLine": 26738
                 }
               }
             },
@@ -2392,7 +2493,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26753
+                  "startLine": 26753,
+                  "endLine": 26753
                 }
               }
             }
@@ -2440,7 +2542,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25179
+                  "startLine": 25179,
+                  "endLine": 25179
                 }
               }
             },
@@ -2457,7 +2560,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25194
+                  "startLine": 25194,
+                  "endLine": 25194
                 }
               }
             },
@@ -2474,7 +2578,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25209
+                  "startLine": 25209,
+                  "endLine": 25209
                 }
               }
             },
@@ -2491,7 +2596,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26724
+                  "startLine": 26724,
+                  "endLine": 26724
                 }
               }
             },
@@ -2508,7 +2614,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26739
+                  "startLine": 26739,
+                  "endLine": 26739
                 }
               }
             },
@@ -2525,7 +2632,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26754
+                  "startLine": 26754,
+                  "endLine": 26754
                 }
               }
             }
@@ -2576,7 +2684,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25180
+                  "startLine": 25180,
+                  "endLine": 25180
                 }
               }
             },
@@ -2593,7 +2702,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25195
+                  "startLine": 25195,
+                  "endLine": 25195
                 }
               }
             },
@@ -2610,7 +2720,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25210
+                  "startLine": 25210,
+                  "endLine": 25210
                 }
               }
             },
@@ -2627,7 +2738,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26710
+                  "startLine": 26710,
+                  "endLine": 26710
                 }
               }
             },
@@ -2644,7 +2756,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26740
+                  "startLine": 26740,
+                  "endLine": 26740
                 }
               }
             },
@@ -2661,7 +2774,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26755
+                  "startLine": 26755,
+                  "endLine": 26755
                 }
               }
             }
@@ -2711,7 +2825,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25181
+                  "startLine": 25181,
+                  "endLine": 25181
                 }
               }
             },
@@ -2728,7 +2843,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25196
+                  "startLine": 25196,
+                  "endLine": 25196
                 }
               }
             },
@@ -2745,7 +2861,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25211
+                  "startLine": 25211,
+                  "endLine": 25211
                 }
               }
             },
@@ -2762,7 +2879,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26726
+                  "startLine": 26726,
+                  "endLine": 26726
                 }
               }
             },
@@ -2779,7 +2897,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26741
+                  "startLine": 26741,
+                  "endLine": 26741
                 }
               }
             },
@@ -2796,7 +2915,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26756
+                  "startLine": 26756,
+                  "endLine": 26756
                 }
               }
             }
@@ -2845,7 +2965,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26772
+                  "startLine": 26772,
+                  "endLine": 26772
                 }
               }
             },
@@ -2862,7 +2983,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26786
+                  "startLine": 26786,
+                  "endLine": 26786
                 }
               }
             },
@@ -2879,7 +3001,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26800
+                  "startLine": 26800,
+                  "endLine": 26800
                 }
               }
             },
@@ -2896,7 +3019,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26884
+                  "startLine": 26884,
+                  "endLine": 26884
                 }
               }
             },
@@ -2913,7 +3037,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26898
+                  "startLine": 26898,
+                  "endLine": 26898
                 }
               }
             },
@@ -2930,7 +3055,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26912
+                  "startLine": 26912,
+                  "endLine": 26912
                 }
               }
             }
@@ -2979,7 +3105,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26780
+                  "startLine": 26780,
+                  "endLine": 26780
                 }
               }
             },
@@ -2996,7 +3123,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26808
+                  "startLine": 26808,
+                  "endLine": 26808
                 }
               }
             },
@@ -3013,7 +3141,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26878
+                  "startLine": 26878,
+                  "endLine": 26878
                 }
               }
             },
@@ -3030,7 +3159,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26906
+                  "startLine": 26906,
+                  "endLine": 26906
                 }
               }
             }
@@ -3076,7 +3206,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26961
+                  "startLine": 26961,
+                  "endLine": 26961
                 }
               }
             },
@@ -3093,7 +3224,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26970
+                  "startLine": 26970,
+                  "endLine": 26970
                 }
               }
             },
@@ -3110,7 +3242,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26979
+                  "startLine": 26979,
+                  "endLine": 26979
                 }
               }
             },
@@ -3127,7 +3260,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29049
+                  "startLine": 29049,
+                  "endLine": 29049
                 }
               }
             },
@@ -3144,7 +3278,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29058
+                  "startLine": 29058,
+                  "endLine": 29058
                 }
               }
             },
@@ -3161,7 +3296,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29067
+                  "startLine": 29067,
+                  "endLine": 29067
                 }
               }
             }
@@ -3209,7 +3345,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26962
+                  "startLine": 26962,
+                  "endLine": 26962
                 }
               }
             },
@@ -3226,7 +3363,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26971
+                  "startLine": 26971,
+                  "endLine": 26971
                 }
               }
             },
@@ -3243,7 +3381,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26980
+                  "startLine": 26980,
+                  "endLine": 26980
                 }
               }
             },
@@ -3260,7 +3399,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29050
+                  "startLine": 29050,
+                  "endLine": 29050
                 }
               }
             },
@@ -3277,7 +3417,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29059
+                  "startLine": 29059,
+                  "endLine": 29059
                 }
               }
             },
@@ -3294,7 +3435,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29068
+                  "startLine": 29068,
+                  "endLine": 29068
                 }
               }
             }
@@ -3342,7 +3484,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26963
+                  "startLine": 26963,
+                  "endLine": 26963
                 }
               }
             },
@@ -3359,7 +3502,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26972
+                  "startLine": 26972,
+                  "endLine": 26972
                 }
               }
             },
@@ -3376,7 +3520,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26981
+                  "startLine": 26981,
+                  "endLine": 26981
                 }
               }
             },
@@ -3393,7 +3538,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29051
+                  "startLine": 29051,
+                  "endLine": 29051
                 }
               }
             },
@@ -3410,7 +3556,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29060
+                  "startLine": 29060,
+                  "endLine": 29060
                 }
               }
             },
@@ -3427,7 +3574,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29069
+                  "startLine": 29069,
+                  "endLine": 29069
                 }
               }
             }
@@ -3475,7 +3623,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 27054
+                  "startLine": 27054,
+                  "endLine": 27054
                 }
               }
             },
@@ -3492,7 +3641,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 27090
+                  "startLine": 27090,
+                  "endLine": 27090
                 }
               }
             },
@@ -3509,7 +3659,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 27126
+                  "startLine": 27126,
+                  "endLine": 27126
                 }
               }
             },
@@ -3526,7 +3677,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 28431
+                  "startLine": 28431,
+                  "endLine": 28431
                 }
               }
             },
@@ -3543,7 +3695,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 28908
+                  "startLine": 28908,
+                  "endLine": 28908
                 }
               }
             },
@@ -3560,7 +3713,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29070
+                  "startLine": 29070,
+                  "endLine": 29070
                 }
               }
             }
@@ -3608,7 +3762,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29529
+                  "startLine": 29529,
+                  "endLine": 29529
                 }
               }
             },
@@ -3625,7 +3780,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29538
+                  "startLine": 29538,
+                  "endLine": 29538
                 }
               }
             }
@@ -3669,7 +3825,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29530
+                  "startLine": 29530,
+                  "endLine": 29530
                 }
               }
             },
@@ -3686,7 +3843,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29539
+                  "startLine": 29539,
+                  "endLine": 29539
                 }
               }
             }
@@ -3731,7 +3889,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29864
+                  "startLine": 29864,
+                  "endLine": 29864
                 }
               }
             },
@@ -3748,7 +3907,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29878
+                  "startLine": 29878,
+                  "endLine": 29878
                 }
               }
             },
@@ -3765,7 +3925,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29892
+                  "startLine": 29892,
+                  "endLine": 29892
                 }
               }
             },
@@ -3782,7 +3943,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30367
+                  "startLine": 30367,
+                  "endLine": 30367
                 }
               }
             },
@@ -3799,7 +3961,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30381
+                  "startLine": 30381,
+                  "endLine": 30381
                 }
               }
             },
@@ -3816,7 +3979,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30395
+                  "startLine": 30395,
+                  "endLine": 30395
                 }
               }
             }
@@ -3869,7 +4033,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29865
+                  "startLine": 29865,
+                  "endLine": 29865
                 }
               }
             },
@@ -3886,7 +4051,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29879
+                  "startLine": 29879,
+                  "endLine": 29879
                 }
               }
             },
@@ -3903,7 +4069,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29893
+                  "startLine": 29893,
+                  "endLine": 29893
                 }
               }
             },
@@ -3920,7 +4087,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30368
+                  "startLine": 30368,
+                  "endLine": 30368
                 }
               }
             },
@@ -3937,7 +4105,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30382
+                  "startLine": 30382,
+                  "endLine": 30382
                 }
               }
             },
@@ -3954,7 +4123,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30396
+                  "startLine": 30396,
+                  "endLine": 30396
                 }
               }
             }
@@ -4003,7 +4173,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29866
+                  "startLine": 29866,
+                  "endLine": 29866
                 }
               }
             },
@@ -4020,7 +4191,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29880
+                  "startLine": 29880,
+                  "endLine": 29880
                 }
               }
             },
@@ -4037,7 +4209,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29894
+                  "startLine": 29894,
+                  "endLine": 29894
                 }
               }
             },
@@ -4054,7 +4227,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30369
+                  "startLine": 30369,
+                  "endLine": 30369
                 }
               }
             },
@@ -4071,7 +4245,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30383
+                  "startLine": 30383,
+                  "endLine": 30383
                 }
               }
             },
@@ -4088,7 +4263,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30397
+                  "startLine": 30397,
+                  "endLine": 30397
                 }
               }
             }
@@ -4139,7 +4315,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29867
+                  "startLine": 29867,
+                  "endLine": 29867
                 }
               }
             },
@@ -4156,7 +4333,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29881
+                  "startLine": 29881,
+                  "endLine": 29881
                 }
               }
             },
@@ -4173,7 +4351,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29895
+                  "startLine": 29895,
+                  "endLine": 29895
                 }
               }
             },
@@ -4190,7 +4369,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30370
+                  "startLine": 30370,
+                  "endLine": 30370
                 }
               }
             },
@@ -4207,7 +4387,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30384
+                  "startLine": 30384,
+                  "endLine": 30384
                 }
               }
             },
@@ -4224,7 +4405,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30398
+                  "startLine": 30398,
+                  "endLine": 30398
                 }
               }
             }
@@ -4276,7 +4458,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29868
+                  "startLine": 29868,
+                  "endLine": 29868
                 }
               }
             },
@@ -4293,7 +4476,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29896
+                  "startLine": 29896,
+                  "endLine": 29896
                 }
               }
             },
@@ -4310,7 +4494,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 29910
+                  "startLine": 29910,
+                  "endLine": 29910
                 }
               }
             },
@@ -4327,7 +4512,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30371
+                  "startLine": 30371,
+                  "endLine": 30371
                 }
               }
             },
@@ -4344,7 +4530,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30385
+                  "startLine": 30385,
+                  "endLine": 30385
                 }
               }
             },
@@ -4361,7 +4548,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 30399
+                  "startLine": 30399,
+                  "endLine": 30399
                 }
               }
             }
@@ -4409,7 +4597,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55933
+                  "startLine": 55933,
+                  "endLine": 55933
                 }
               }
             },
@@ -4426,7 +4615,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55940
+                  "startLine": 55940,
+                  "endLine": 55940
                 }
               }
             }
@@ -4471,7 +4661,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55947
+                  "startLine": 55947,
+                  "endLine": 55947
                 }
               }
             },
@@ -4488,7 +4679,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 55955
+                  "startLine": 55955,
+                  "endLine": 55955
                 }
               }
             }
@@ -4533,7 +4725,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 159
+                  "startLine": 159,
+                  "endLine": 159
                 }
               }
             }
@@ -4573,7 +4766,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 26011
+                  "startLine": 26011,
+                  "endLine": 26011
                 }
               }
             }
@@ -4613,7 +4807,8 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 25133
+                  "startLine": 25133,
+                  "endLine": 25133
                 }
               }
             }
@@ -4657,7 +4852,572 @@
                   "uri": "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
                 },
                 "region": {
-                  "startLine": 1
+                  "startLine": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "triplets-shacl",
+          "informationUri": "https://github.com/Haigutus/triplets",
+          "version": "0.2.0rc1",
+          "rules": [
+            {
+              "id": "PinTerminal.Terminal-valueType/sh:class",
+              "name": "PinTerminal.Terminal-valueType",
+              "shortDescription": {
+                "text": "PinTerminal.Terminal-valueType"
+              },
+              "fullDescription": {
+                "text": "This constraint validates the value of the association at the used direction."
+              },
+              "helpUri": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#PinTerminal.Terminal-valueType",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#PinTerminal.Terminal-valueType",
+                "constraint": "sh:class"
+              }
+            },
+            {
+              "id": "RangeConstraint.GridStateAlteration-valueType/sh:in",
+              "name": "RangeConstraint.GridStateAlteration-valueType",
+              "shortDescription": {
+                "text": "RangeConstraint.GridStateAlteration-valueType"
+              },
+              "fullDescription": {
+                "text": "This constraint validates the value of the association at the used direction."
+              },
+              "helpUri": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.GridStateAlteration-valueType",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.GridStateAlteration-valueType",
+                "constraint": "sh:in"
+              }
+            },
+            {
+              "id": "GateInputPin.thresholdValue-datatype/triplets:lexicalForm",
+              "name": "GateInputPin.thresholdValue-datatype",
+              "shortDescription": {
+                "text": "GateInputPin.thresholdValue-datatype"
+              },
+              "fullDescription": {
+                "text": "This constraint validates the datatype of the property (attribute)."
+              },
+              "helpUri": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#GateInputPin.thresholdValue-datatype",
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#GateInputPin.thresholdValue-datatype",
+                "constraint": "triplets:lexicalForm"
+              }
+            },
+            {
+              "id": "RangeConstraint.normalValue-datatype/triplets:lexicalForm",
+              "name": "RangeConstraint.normalValue-datatype",
+              "shortDescription": {
+                "text": "RangeConstraint.normalValue-datatype"
+              },
+              "fullDescription": {
+                "text": "This constraint validates the datatype of the property (attribute)."
+              },
+              "helpUri": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.normalValue-datatype",
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.normalValue-datatype",
+                "constraint": "triplets:lexicalForm"
+              }
+            },
+            {
+              "id": "GridStateAlteration-associations/triplets:invalidSparql",
+              "name": "C:NC:RA:GridStateAlteration:associations",
+              "shortDescription": {
+                "text": "C:NC:RA:GridStateAlteration:associations"
+              },
+              "fullDescription": {
+                "text": "A GridStateAlteration shall have either association to GridStateAlterationRemedialAction or GridStateAlterationCollection."
+              },
+              "helpUri": "https://ap-con.cim4.eu/RemedialAction-Complex/2.5#GridStateAlteration-associations",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Complex/2.5#GridStateAlteration-associations",
+                "constraint": "triplets:invalidSparql"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "startTimeUtc": "2026-08-11T13:32:11.150919Z",
+          "endTimeUtc": "2026-08-11T13:32:11.379551Z"
+        }
+      ],
+      "properties": {
+        "duration_seconds": 0.229,
+        "engine": "polars",
+        "source": [
+          "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+        ],
+        "references": [
+          "RemedialAction-AP-Con-Simple-SHACL.ttl",
+          "RemedialAction-AP-Con-Complex-SHACL.ttl"
+        ],
+        "node_shapes": 144,
+        "constraints": 1628,
+        "skipped_shapes": [],
+        "skipped_components": []
+      },
+      "results": [
+        {
+          "ruleId": "PinTerminal.Terminal-valueType/sh:class",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "One of the following does not conform: 1) The value shall be IRI; 2) The value shall be an instance of the class: cim18:Terminal \u2014 PinTerminal.Terminal \u2014 4 object(s) affected. Examples: PinTerminal 5de44bcd-eb77-4f14-8e3b-e0e455937cda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal fb1b297b-35a8-4e09-a1b5-f35b211d2fda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal 85826c3d-d25f-4b41-92d4-b2b855f3e96f (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a), PinTerminal 2a58112c-da48-48fd-b1b4-0ad75cc431ae (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a)"
+          },
+          "occurrenceCount": 4,
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/5de44bcd-eb77-4f14-8e3b-e0e455937cda",
+                  "name": "FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 128,
+                  "endLine": 128
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/fb1b297b-35a8-4e09-a1b5-f35b211d2fda",
+                  "name": "FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 141,
+                  "endLine": 141
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/85826c3d-d25f-4b41-92d4-b2b855f3e96f",
+                  "name": "FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 154,
+                  "endLine": 154
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/2a58112c-da48-48fd-b1b4-0ad75cc431ae",
+                  "name": "FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 167,
+                  "endLine": 167
+                }
+              }
+            }
+          ],
+          "properties": {
+            "count": 4,
+            "key": "PinTerminal.Terminal",
+            "sampleIDs": [
+              "5de44bcd-eb77-4f14-8e3b-e0e455937cda",
+              "fb1b297b-35a8-4e09-a1b5-f35b211d2fda",
+              "85826c3d-d25f-4b41-92d4-b2b855f3e96f",
+              "2a58112c-da48-48fd-b1b4-0ad75cc431ae"
+            ],
+            "sampleValues": [
+              "6872b1c9-9f39-48d5-88c3-25d9d82af2a2",
+              "f3603af7-a098-1e2c-431e-8ca22ae76221"
+            ],
+            "violationType": "sh:class",
+            "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#PinTerminal.Terminal-valueType",
+            "schemaDescription": "The Terminal that is used in the input pin.",
+            "schemaMultiplicity": "1",
+            "classDescription": "Input pin associated with a Terminal. It is used for comparison."
+          }
+        },
+        {
+          "ruleId": "RangeConstraint.GridStateAlteration-valueType/sh:in",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "One of the following occurs: 1) The value is not IRI; 2) The value is not the right class. \u2014 RangeConstraint.GridStateAlteration \u2014 4 object(s) affected. Examples: StaticPropertyRange ce3e19bd-2e06-4abf-bd35-2f3868816131, StaticPropertyRange f70729cc-9ae8-4e24-b7ed-5ef3c316f362, StaticPropertyRange c5134317-6eaf-4629-a1db-349836438984, StaticPropertyRange fffdf252-9de2-414f-a991-1cd0d2307796"
+          },
+          "occurrenceCount": 4,
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/ce3e19bd-2e06-4abf-bd35-2f3868816131",
+                  "name": "ce3e19bd-2e06-4abf-bd35-2f3868816131",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 192,
+                  "endLine": 192
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
+                  "name": "f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 200,
+                  "endLine": 200
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/c5134317-6eaf-4629-a1db-349836438984",
+                  "name": "c5134317-6eaf-4629-a1db-349836438984",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 224,
+                  "endLine": 224
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/fffdf252-9de2-414f-a991-1cd0d2307796",
+                  "name": "fffdf252-9de2-414f-a991-1cd0d2307796",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 232,
+                  "endLine": 232
+                }
+              }
+            }
+          ],
+          "properties": {
+            "count": 4,
+            "key": "RangeConstraint.GridStateAlteration",
+            "sampleIDs": [
+              "ce3e19bd-2e06-4abf-bd35-2f3868816131",
+              "f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
+              "c5134317-6eaf-4629-a1db-349836438984",
+              "fffdf252-9de2-414f-a991-1cd0d2307796"
+            ],
+            "sampleValues": [
+              "GridStateAlterationCollection"
+            ],
+            "violationType": "sh:in",
+            "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.GridStateAlteration-valueType",
+            "schemaDescription": "The grid state alteration which has static range.",
+            "schemaMultiplicity": "1",
+            "classDescription": "Defines the static range, which means that this is the minimum and/or maximum of an attribute value. The value provided by the schedule replaces the value of the attribute to which the schedule refers to.\nIn case that the PropertyReference refers to Boolean type attributes, RangeConstraint.direction shall be none or upAndDown and the RangeConstraint.valueKind shall be absolute. If the direction is none then optimization of the attribute referenced by the PropertyReference is not possible if the current status is already as the value in the range. Otherwise if the direction is upAndDown, the optimization can change from true to false or vice versa independently of the initial value in the operational scenario.\nFor instance for a tap changer related grid state alteration for a particular point in time, if the range of TapChanger.step is to be restricted, the value of the schedule will represent that new TapChanger.step range."
+          }
+        },
+        {
+          "ruleId": "GateInputPin.thresholdValue-datatype/triplets:lexicalForm",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 GateInputPin.thresholdValue \u2014 4 object(s) affected. Examples: PinTerminal 5de44bcd-eb77-4f14-8e3b-e0e455937cda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal fb1b297b-35a8-4e09-a1b5-f35b211d2fda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal 85826c3d-d25f-4b41-92d4-b2b855f3e96f (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a), PinTerminal 2a58112c-da48-48fd-b1b4-0ad75cc431ae (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a)"
+          },
+          "occurrenceCount": 4,
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/5de44bcd-eb77-4f14-8e3b-e0e455937cda",
+                  "name": "FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 125,
+                  "endLine": 125
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/fb1b297b-35a8-4e09-a1b5-f35b211d2fda",
+                  "name": "FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 138,
+                  "endLine": 138
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/85826c3d-d25f-4b41-92d4-b2b855f3e96f",
+                  "name": "FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 151,
+                  "endLine": 151
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PinTerminal/2a58112c-da48-48fd-b1b4-0ad75cc431ae",
+                  "name": "FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 164,
+                  "endLine": 164
+                }
+              }
+            }
+          ],
+          "properties": {
+            "count": 4,
+            "key": "GateInputPin.thresholdValue",
+            "sampleIDs": [
+              "5de44bcd-eb77-4f14-8e3b-e0e455937cda",
+              "fb1b297b-35a8-4e09-a1b5-f35b211d2fda",
+              "85826c3d-d25f-4b41-92d4-b2b855f3e96f",
+              "2a58112c-da48-48fd-b1b4-0ad75cc431ae"
+            ],
+            "sampleValues": [
+              "-250",
+              "-50",
+              "250",
+              "50"
+            ],
+            "violationType": "triplets:lexicalForm",
+            "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#GateInputPin.thresholdValue-datatype",
+            "schemaDescription": "The threshold value that should be used for compare with the input value.",
+            "schemaMultiplicity": "0..1",
+            "classDescription": "Input pin associated with a Terminal. It is used for comparison."
+          }
+        },
+        {
+          "ruleId": "RangeConstraint.normalValue-datatype/triplets:lexicalForm",
+          "ruleIndex": 3,
+          "level": "warning",
+          "message": {
+            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RangeConstraint.normalValue \u2014 4 object(s) affected. Examples: StaticPropertyRange ce3e19bd-2e06-4abf-bd35-2f3868816131, StaticPropertyRange f70729cc-9ae8-4e24-b7ed-5ef3c316f362, StaticPropertyRange c5134317-6eaf-4629-a1db-349836438984, StaticPropertyRange fffdf252-9de2-414f-a991-1cd0d2307796"
+          },
+          "occurrenceCount": 4,
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/ce3e19bd-2e06-4abf-bd35-2f3868816131",
+                  "name": "ce3e19bd-2e06-4abf-bd35-2f3868816131",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 194,
+                  "endLine": 194
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
+                  "name": "f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 202,
+                  "endLine": 202
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/c5134317-6eaf-4629-a1db-349836438984",
+                  "name": "c5134317-6eaf-4629-a1db-349836438984",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 226,
+                  "endLine": 226
+                }
+              }
+            },
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "StaticPropertyRange/fffdf252-9de2-414f-a991-1cd0d2307796",
+                  "name": "fffdf252-9de2-414f-a991-1cd0d2307796",
+                  "kind": "object"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 234,
+                  "endLine": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "count": 4,
+            "key": "RangeConstraint.normalValue",
+            "sampleIDs": [
+              "ce3e19bd-2e06-4abf-bd35-2f3868816131",
+              "f70729cc-9ae8-4e24-b7ed-5ef3c316f362",
+              "c5134317-6eaf-4629-a1db-349836438984",
+              "fffdf252-9de2-414f-a991-1cd0d2307796"
+            ],
+            "sampleValues": [
+              "-250",
+              "250"
+            ],
+            "violationType": "triplets:lexicalForm",
+            "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Simple/2.5#RangeConstraint.normalValue-datatype",
+            "schemaDescription": "The normal (initial) value. The meaning of the value is defined by the attribute referenced by the PropertyReference. The attribute value can be integer, float or boolean. In case of boolean 1 equals true and 0 equals false.\nIf the valueKind is incremental or incrementalPercentage, then the attribute value shall be positive (greater than zero).\nIf the valueKind is absolute, it does not constraint attribute value to be positive.\nIf the valueKind is incrementalPercentage, then the attribute value \u201c100\u201d shall represent 100%. However, the attribute value can be greater than 100 but not negative.",
+            "schemaMultiplicity": "0..1",
+            "classDescription": "Defines the static range, which means that this is the minimum and/or maximum of an attribute value. The value provided by the schedule replaces the value of the attribute to which the schedule refers to.\nIn case that the PropertyReference refers to Boolean type attributes, RangeConstraint.direction shall be none or upAndDown and the RangeConstraint.valueKind shall be absolute. If the direction is none then optimization of the attribute referenced by the PropertyReference is not possible if the current status is already as the value in the range. Otherwise if the direction is upAndDown, the optimization can change from true to false or vice versa independently of the initial value in the operational scenario.\nFor instance for a tap changer related grid state alteration for a particular point in time, if the range of TapChanger.step is to be restricted, the value of the schedule will represent that new TapChanger.step range."
+          }
+        },
+        {
+          "ruleId": "GridStateAlteration-associations/triplets:invalidSparql",
+          "ruleIndex": 4,
+          "level": "error",
+          "message": {
+            "text": "fails on every engine \u2014 rdflib: Unknown namespace prefix : nc \u2014 1 object(s) affected."
+          },
+          "occurrenceCount": 1,
+          "properties": {
+            "count": 1,
+            "key": "type",
+            "violationType": "triplets:invalidSparql",
+            "sourceShape": "https://ap-con.cim4.eu/RemedialAction-Complex/2.5#GridStateAlteration-associations",
+            "schemaDescription": "The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.",
+            "schemaMultiplicity": "0..1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1
                 }
               }
             }

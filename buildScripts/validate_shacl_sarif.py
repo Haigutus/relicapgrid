@@ -1,13 +1,17 @@
-"""SHACL validation of a ReliCapGrid instance with native SARIF 2.1.0 export.
+"""SHACL validation of ReliCapGrid instances with native SARIF 2.1.0 export.
 
-Uses triplets >= 0.2.0a2, which exports SARIF directly (``.shacl.to_sarif``) —
-the previous custom ``shacl_report_to_sarif.py`` converter is no longer needed.
+Uses triplets >= 0.2.0rc1: ``.shacl.to_sarif()`` emits grouped results (one per
+violated rule with occurrenceCount, per-occurrence file:line regions) with
+line-only, fully bounded regions — the 0.2.0a2-era post-processing (column
+stripping, fallback locations) is no longer needed.
 
-Validates the Svedala EQ instance against the official ENTSO-E CGMES Equipment
-SHACL (Simple = cardinality/datatype/valueType, Complex = cross-object sh:sparql).
-Three issues are injected deliberately so code scanning shows error-level alerts
-with exact source locations. Output: reports/shacl-results.sarif (repo-relative
-artifact URIs so GitHub code scanning can map results to the file).
+Two validations, merged into one SARIF log with repo-relative artifact URIs:
+  * Svedala EQ against the official CGMES Equipment SHACL, with three issues
+    injected deliberately so code scanning always shows error-level alerts;
+  * Svedala-Espheim RA (NCP RemedialAction) as-is — the real state of the data.
+
+Each validation also exports the full sh:ValidationReport (turtle + RDF/XML)
+into reports/, and reports/summary.md links the run to the code scanning UI.
 
 Run from the repo root:  uv run buildScripts/validate_shacl_sarif.py
 """
@@ -26,76 +30,118 @@ logging.getLogger("triplets.validation").setLevel(logging.ERROR)
 REPO_ROOT = Path(__file__).resolve().parent.parent
 os.chdir(REPO_ROOT)  # keep SARIF artifactLocation URIs repo-relative
 
-# EQ instance, path relative to the repo root (becomes the SARIF artifact URI)
+APL_RAW = "https://raw.githubusercontent.com/entsoe/application-profiles-library/main"
+
 EQ = "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
+EQ_SHACL = ["CGMES/SHACL/61970-600-2_Equipment-AP-Con-Simple-SHACL.ttl",
+            "CGMES/SHACL/61970-301_Equipment-AP-Con-Complex-SHACL.ttl"]
 
-UPSTREAM_RAW = "https://raw.githubusercontent.com/entsoe/application-profiles-library/main/CGMES/SHACL"
-SHACL_FILES = [
-    "61970-600-2_Equipment-AP-Con-Simple-SHACL.ttl",   # cardinality, datatype, valueType
-    "61970-301_Equipment-AP-Con-Complex-SHACL.ttl",    # cross-object sh:sparql rules
-]
+RA = "Instance/DC-Espheim-Svedala/NetworkCode/Svedala-Espheim_RA.xml"
+RA_SHACL = ["NCP/SHACL/RemedialAction-AP-Con-Simple-SHACL.ttl",
+            "NCP/SHACL/RemedialAction-AP-Con-Complex-SHACL.ttl"]
+
+LEVEL_ICONS = {"error": "🔴", "warning": "🟠", "note": "🔵"}
+REPORTS = REPO_ROOT / "reports"
 
 
-def entsoe_shapes():
+def entsoe_shapes(paths):
     cache = REPO_ROOT / ".shacl_cache"
     cache.mkdir(exist_ok=True)
-    for name in SHACL_FILES:
+    local = []
+    for path in paths:
+        name = Path(path).name
         if not (cache / name).exists():
             print(f"downloading {name}")
-            urllib.request.urlretrieve(f"{UPSTREAM_RAW}/{name}", cache / name)
-    return [str(cache / name) for name in SHACL_FILES]
+            urllib.request.urlretrieve(f"{APL_RAW}/{path}", cache / name)
+        local.append(str(cache / name))
+    return local
+
+
+def export_reports(located, instance, shape_files):
+    stem = Path(instance).stem
+    sarif_path = located.shacl.to_sarif(path=REPORTS / f"{stem}.sarif")
+    for suffix in ("ttl", "xml"):
+        report = located.shacl.to_shacl_report(
+            path=REPORTS / f"{stem}-shacl-report.{suffix}",
+            report_source=instance, report_references=[Path(s).name for s in shape_files])
+        print("wrote", report)
+
+    # GitHub code scanning needs a location on every result. Shape-level
+    # meta-findings (triplets:invalidSparql — the sh:sparql constraint itself
+    # is broken) have no instance line, so anchor them to the validated file.
+    sarif = json.loads(Path(sarif_path).read_text())
+    for result in sarif["runs"][0]["results"]:
+        if not result.get("locations"):
+            result["locations"] = [{"physicalLocation": {
+                "artifactLocation": {"uri": instance}, "region": {"startLine": 1, "endLine": 1}}}]
+    Path(sarif_path).write_text(json.dumps(sarif, indent=2))
+    return sarif
+
+
+def validate_eq_with_injected_issues():
+    shapes = entsoe_shapes(EQ_SHACL)
+    data = pandas.read_RDF([EQ])
+    print(f"parsed {len(data):,} triples from {Path(EQ).name}")
+
+    line = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "ACLineSegment"), "ID"])[0]
+    winding = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "PowerTransformerEnd"), "ID"])[0]
+    terminal = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "Terminal"), "ID"])[0]
+    substation = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "Substation"), "ID"])[0]
+
+    broken = data[~((data["ID"] == line) & (data["KEY"] == "IdentifiedObject.name"))].copy()  # 1: missing name
+    broken.loc[(broken["ID"] == winding) & (broken["KEY"] == "PowerTransformerEnd.ratedU"), "VALUE"] = "-400"  # 2: value range
+    broken.loc[(broken["ID"] == terminal) & (broken["KEY"] == "Terminal.ConductingEquipment"), "VALUE"] = substation  # 3: value type
+
+    violations = broken.shacl.validate(shapes, rdf_map=schemas.ENTSOE_CGMES_3_0_0_552_ED1)
+    print("EQ (3 injected issues):", violations["SEVERITY"].value_counts().to_dict())
+    enriched = violations.shacl.enrich(data=broken, shapes=shapes, rdf_map=schemas.ENTSOE_CGMES_3_0_0_552_ED1)
+    return export_reports(enriched.shacl.locate(sources=[EQ]), EQ, shapes)
+
+
+def validate_ra():
+    shapes = entsoe_shapes(RA_SHACL)
+    data = pandas.read_RDF([RA])
+    print(f"parsed {len(data):,} triples from {Path(RA).name}")
+
+    violations = data.shacl.validate(shapes, rdf_map=schemas.ENTSOE_NC_2_4_1_552_ED1)
+    print("RA (as-is):", violations["SEVERITY"].value_counts().to_dict() if len(violations) else "conforms")
+    enriched = violations.shacl.enrich(data=data, shapes=shapes, rdf_map=schemas.ENTSOE_NC_2_4_1_552_ED1)
+    return export_reports(enriched.shacl.locate(sources=[RA]), RA, shapes)
+
+
+def write_summary(sarif):
+    lines = ["# SHACL validation", ""]
+    repo, branch = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_REF_NAME")
+    if repo and branch:
+        alerts = (f"https://github.com/{repo}/security/code-scanning"
+                  f"?query=is%3Aopen+branch%3A{branch}+tool%3A%22triplets-shacl%22")
+        lines += [f"**[Open the code scanning alerts of this branch →]({alerts})**", "",
+                  "Full sh:ValidationReport (turtle + RDF/XML) per instance is attached "
+                  "to this run as the `shacl-reports` artifact.", ""]
+    lines += ["| rule | level | occurrences |", "|---|---|---|"]
+    for run in sarif["runs"]:
+        for result in run["results"]:
+            icon = LEVEL_ICONS.get(result["level"], "")
+            count = result.get("occurrenceCount", len(result.get("locations", [])))
+            lines.append(f"| `{result['ruleId']}` | {icon} {result['level']} | {count} |")
+    (REPORTS / "summary.md").write_text("\n".join(lines) + "\n")
+    print("wrote", REPORTS / "summary.md")
 
 
 print("triplets", triplets.__version__)
-shapes = entsoe_shapes()
+REPORTS.mkdir(exist_ok=True)
 
-data = pandas.read_RDF([EQ])
-print(f"parsed {len(data):,} triples from {Path(EQ).name}")
+logs = [validate_eq_with_injected_issues(), validate_ra()]
 
-# Inject three issues so the report carries error-level results:
-line = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "ACLineSegment"), "ID"])[0]
-winding = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "PowerTransformerEnd"), "ID"])[0]
-terminal = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "Terminal"), "ID"])[0]
-substation = sorted(data.loc[(data["KEY"] == "Type") & (data["VALUE"] == "Substation"), "ID"])[0]
+merged = logs[0]
+for log in logs[1:]:
+    merged["runs"].extend(log["runs"])
+(REPORTS / "shacl-results.sarif").write_text(json.dumps(merged, indent=2))
 
-broken = data[~((data["ID"] == line) & (data["KEY"] == "IdentifiedObject.name"))].copy()  # 1: missing name
-broken.loc[(broken["ID"] == winding) & (broken["KEY"] == "PowerTransformerEnd.ratedU"), "VALUE"] = "-400"  # 2: value range
-broken.loc[(broken["ID"] == terminal) & (broken["KEY"] == "Terminal.ConductingEquipment"), "VALUE"] = substation  # 3: value type
-
-violations = broken.shacl.validate(shapes, rdf_map=schemas.ENTSOE_CGMES_3_0_0_552_ED1)
-print("severities:", violations["SEVERITY"].value_counts().to_dict())
-
-enriched = violations.shacl.enrich(data=broken, shapes=shapes, rdf_map=schemas.ENTSOE_CGMES_3_0_0_552_ED1)
-located = enriched.shacl.locate(sources=[EQ])
-
-reports = REPO_ROOT / "reports"
-reports.mkdir(exist_ok=True)
-sarif_path = located.shacl.to_sarif(path=reports / "shacl-results.sarif")
-
-# Make the SARIF renderable by GitHub code scanning:
-#  * every result must carry at least one location — give location-less results
-#    (e.g. a missing required property) a file-level fallback;
-#  * regions must be line-based. The native export emits startColumn but no
-#    endColumn; GitHub then defaults end_column to 0, i.e. before startColumn,
-#    which is an invalid range and suppresses the code preview. Drop the columns
-#    so the whole line is highlighted.
-sarif = json.loads(Path(sarif_path).read_text())
-run = sarif["runs"][0]
-fallback = 0
-for result in run["results"]:
-    if not result.get("locations"):
-        result["locations"] = [{"physicalLocation": {
-            "artifactLocation": {"uri": EQ}, "region": {"startLine": 1}}}]
-        fallback += 1
-    for location in result["locations"]:
-        region = location.get("physicalLocation", {}).get("region")
-        if region and "startLine" in region:
-            location["physicalLocation"]["region"] = {"startLine": region["startLine"]}
-Path(sarif_path).write_text(json.dumps(sarif, indent=2))
-print(f"normalised regions to line-based; added fallback location to {fallback} result(s)")
-print("wrote", sarif_path)
+results = [r for run in merged["runs"] for r in run["results"]]
 levels = {}
-for r in run["results"]:
-    levels[r["level"]] = levels.get(r["level"], 0) + 1
-print(f"SARIF: {len(run['tool']['driver'].get('rules', []))} rules, "
-      f"{len(run['results'])} results, levels={levels}")
+for result in results:
+    levels[result["level"]] = levels.get(result["level"], 0) + 1
+print(f"wrote {REPORTS / 'shacl-results.sarif'}: {len(merged['runs'])} runs, "
+      f"{len(results)} grouped results, levels={levels}")
+write_summary(merged)

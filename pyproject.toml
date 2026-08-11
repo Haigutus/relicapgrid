@@ -27,7 +27,7 @@ license = "CC-BY-SA-4.0"
 requires-python = ">=3.12"
 dependencies = [
     "pandas",
-    "triplets[polars,oxigraph,validation]==0.2.0a2",
+    "triplets[polars,oxigraph,validation]==0.2.0rc1",
     "pytest",
     "tabulate>=0.10.0",
 ]
