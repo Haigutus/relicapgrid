@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -18,28 +17,47 @@ PREFIX rdfg:     <http://www.w3.org/2004/03/trix/rdfg-1/>
 PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 
 <urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202> {
-    <urn:uuid:658d2858-ed67-4179-a825-546df2aee455>
-            rdf:type                       nc:SchedulingArea;
-            cim:IdentifiedObject.description
-                    "Svedala";
-            cim:IdentifiedObject.mRID      "658d2858-ed67-4179-a825-546df2aee455";
-            cim:IdentifiedObject.name      "Svedala";
-            nc:SchedulingArea.BiddingZone  <urn:uuid:4b0d834a-3487-426e-b69d-6b5c2a36494b>;
-            nc:SchedulingArea.ControlArea  <urn:uuid:ebccc726-b760-46c6-b7f6-8289bafce797> .
+    <urn:uuid:f65ea671-415f-4284-b216-010b8fe543ab>
+            rdf:type                   nc:CircuitShare;
+            cim:IdentifiedObject.mRID  "f65ea671-415f-4284-b216-010b8fe543ab";
+            cim:IdentifiedObject.name  "CL14_CS";
+            nc:CircuitShare.Circuit    <urn:uuid:f4a4a26e-fbaa-4e67-8632-9cf1c1671902>;
+            nc:CircuitShare.PowerTransferCorridor
+                    <urn:uuid:1ad441fe-e557-4e7b-8286-91bd8029c3ff> .
+    
+    <urn:uuid:89de3c44-8a85-3cb9-6d7c-af2339a5a047>
+            rdf:type  cim:OperationalLimitSet;
+            nc:OperationalLimitSet.PowerTransferCorridor
+                    <urn:uuid:1ad441fe-e557-4e7b-8286-91bd8029c3ff> .
+    
+    <urn:uuid:eb36a3d9-55b4-435c-a6bc-5a6c571dbd8f>
+            rdf:type                   nc:CircuitShare;
+            cim:IdentifiedObject.mRID  "eb36a3d9-55b4-435c-a6bc-5a6c571dbd8f";
+            cim:IdentifiedObject.name  "CL15_CS";
+            nc:CircuitShare.Circuit    <urn:uuid:4ca1c51b-7f5a-490f-9f3a-62ae5a82b6c4>;
+            nc:CircuitShare.PowerTransferCorridor
+                    <urn:uuid:1ad441fe-e557-4e7b-8286-91bd8029c3ff> .
+    
+    <urn:uuid:4ca1c51b-7f5a-490f-9f3a-62ae5a82b6c4>
+            rdf:type                        nc:LineCircuit;
+            cim:IdentifiedObject.mRID       "4ca1c51b-7f5a-490f-9f3a-62ae5a82b6c4";
+            cim:IdentifiedObject.name       "CL15_LC";
+            nc:Circuit.IdentifyingTerminal  <urn:uuid:635e2a2a-e9db-4023-96a6-064a4bcf5a1e>;
+            nc:Circuit.positiveFlowIn       false .
     
     <urn:uuid:e54a29a9-de39-4ac0-b7c2-8dc935657202>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/EquipmentReliability/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://ap.cim4.eu/EquipmentReliability/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is the equipment reliability dataset for Svedala part of ReliCapGrid."@en;
             dct:identifier        "e54a29a9-de39-4ac0-b7c2-8dc935657202";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Svedala";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Svedala>;
             dct:requires          <urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System>;
             dct:title             "20220615_Svedala_ER_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Svedala-ER>;
@@ -47,13 +65,26 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-ER" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-ER> .
     
-    <urn:uuid:4b0d834a-3487-426e-b69d-6b5c2a36494b>
-            rdf:type                       nc:BiddingZone;
+    <urn:uuid:f11220b0-3c3c-cc6a-105c-8ffd33f5a790>
+            rdf:type  cim:OperationalLimitSet;
+            nc:OperationalLimitSet.PowerTransferCorridor
+                    <urn:uuid:1ad441fe-e557-4e7b-8286-91bd8029c3ff> .
+    
+    <urn:uuid:1ad441fe-e557-4e7b-8286-91bd8029c3ff>
+            rdf:type                   nc:OrdinaryPowerTransferCorridor;
             cim:IdentifiedObject.description
-                    "BZ_SD";
-            cim:IdentifiedObject.mRID      "4b0d834a-3487-426e-b69d-6b5c2a36494b";
-            cim:IdentifiedObject.name      "Bidding Zone SD";
-            nc:BiddingZone.isTradeEnabled  true .
+                    "Power Transfer Corridor for line CL14 and CL15 in \"meassured\" in substation STENFORSEN CT31";
+            cim:IdentifiedObject.mRID  "1ad441fe-e557-4e7b-8286-91bd8029c3ff";
+            cim:IdentifiedObject.name  "UseCase_NCP436";
+            nc:PowerTransferCorridor.normalEnabled
+                    true .
+    
+    <urn:uuid:f4a4a26e-fbaa-4e67-8632-9cf1c1671902>
+            rdf:type                        nc:LineCircuit;
+            cim:IdentifiedObject.mRID       "f4a4a26e-fbaa-4e67-8632-9cf1c1671902";
+            cim:IdentifiedObject.name       "CL14_LC";
+            nc:Circuit.IdentifyingTerminal  <urn:uuid:6872b1c9-9f39-48d5-88c3-25d9d82af2a2>;
+            nc:Circuit.positiveFlowIn       false .
 }

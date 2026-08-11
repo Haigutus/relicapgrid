@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -1926,7 +1925,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dct:conformsTo           <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
             dct:description          "The steady-state hypothesis dataset for Svedala, which is part of the ReliCapGrid.";
             dct:identifier           "5102429b-f699-482b-97b4-214c8b06dc7c";
-            dct:issued               "2025-02-06"^^xsd:date;
+            dct:issued               "2025-02-06T14:18:22Z"^^xsd:dateTime;
             dct:requires             <urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e>;
             dct:temporal             [ rdf:type        dct:PeriodOfTime;
                                        dcat:endDate    "2022-06-17T00:30:00Z"^^xsd:dateTime;
@@ -11075,6 +11074,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:SynchronousMachine.referencePriority
                     0 .
     
+    <urn:uuid:ec2a2385-872d-4cf7-b50b-f9e8a7210dbb>
+            rdf:type                    cim:ActivePowerLimit;
+            cim:ActivePowerLimit.value  "-2500"^^xsd:float .
+    
     <urn:uuid:6fbbd2ca-2933-4f32-b6e9-4f8f7e359c9c>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -18841,6 +18844,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:c9ace70b-e386-4cbe-b5af-cb427a8f961e>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:a331310f-a6b9-4e30-be2e-a6f62b0b5430>
+            rdf:type                    cim:ActivePowerLimit;
+            cim:ActivePowerLimit.value  "2500"^^xsd:float .
     
     <urn:uuid:690ace13-2584-4b8b-aaa9-d41e0e6a759b>
             rdf:type                    cim:Terminal;

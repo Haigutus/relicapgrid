@@ -1,223 +1,296 @@
 PREFIX adms:    <http://www.w3.org/ns/adms#>
 PREFIX cim:     <https://cim.ucaiug.io/ns#>
 PREFIX dcat:    <http://www.w3.org/ns/dcat#>
-PREFIX dcatcim: <https://cim4.eu/ns/dcatcim#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX eu:      <https://cim.ucaiug.io/ns/eu#>
 PREFIX nc:      <https://cim4.eu/ns/nc#>
 PREFIX prov:    <http://www.w3.org/ns/prov#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
-<urn:uuid:c4f2422b-03a4-4298-aa16-40921c4ca16f>
+<urn:uuid:b0481bfa-059d-4d2b-b3a3-b0fa694c30d2>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 OP"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_OP.xml>;
-        dcat:isDistributionOf  <urn:uuid:67e97bb0-ec38-481d-9e56-3e9d45e95a33>;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Belgovia, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_Belgovia_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:03e76bc6-be5b-4436-8eea-27eae2dcbf9d>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/OP> .
+        prov:generatedAtTime   "2025-02-08T21:20:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:67e97bb0-ec38-481d-9e56-3e9d45e95a33>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/Operation-EU/3.0>;
-        dcterms:description   "Equipment Operation (OP) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "67e97bb0-ec38-481d-9e56-3e9d45e95a33";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c> , <urn:uuid:d9a01a85-0ad8-4958-be03-d89ad78ca497>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_OP_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:distribution     <urn:uuid:c4f2422b-03a4-4298-aa16-40921c4ca16f>;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_SV>;
-        dcat:keyword          "OP" , "Operation";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:4841109b-52ca-4457-9beb-8db6890082d6>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 SV"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_SV.xml>;
-        dcat:isDistributionOf  <urn:uuid:5b6a8b13-4c20-4147-8ed6-7249e303e647>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/SV> .
-
-<urn:uuid:5b6a8b13-4c20-4147-8ed6-7249e303e647>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/StateVariables-EU/3.0>;
-        dcterms:description   "State Variable (SV) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "5b6a8b13-4c20-4147-8ed6-7249e303e647";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_SV_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_SV>;
-        dcat:keyword          "SV" , "StateVariablet";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:e6539353-17f9-4d94-be60-eabed8b6e99f>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 TP"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_TP.xml>;
-        dcat:isDistributionOf  <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/TP> .
-
-<urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
-        dcterms:description   "Topological (TP) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "7b3f94c0-bd9b-e74e-866b-f473153c3e70";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_TP_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_DL>;
-        dcat:keyword          "DL" , "DiagramLayout";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:2e11908e-5e1f-8542-854c-54da76d379d1>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/DiagramLayout-EU/3.0>;
-        dcterms:description   "Diagram Layout (DL) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "2e11908e-5e1f-8542-854c-54da76d379d1";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c> , <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_DL_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_DL>;
-        dcat:keyword          "DL" , "DiagramLayout";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:8b095732-1506-40bd-aeb8-a42d311edd5a>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 DL"@en , "CIMXML serialization of the Nordic44 GL"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_DL.xml> , <file://cimxml/Nordic44-HV_GL.xml>;
-        dcat:isDistributionOf  <urn:uuid:2e11908e-5e1f-8542-854c-54da76d379d1> , <urn:uuid:167b4832-27c5-ff4f-bd26-6ce3bff1bdb7>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/DL> , <https://energy.referencedata.eu/Test/Action/GL> .
-
-<urn:uuid:167b4832-27c5-ff4f-bd26-6ce3bff1bdb7>
-        rdf:type              dcat:Dataset;
-        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/GeographicalLocation-EU/3.0>;
-        dcterms:description   "Geographical Location (GL) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "167b4832-27c5-ff4f-bd26-6ce3bff1bdb7";
-        dcterms:issued        "2025-02-14T11:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>;
-        dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_GL_v3-0-0-beta-1";
-        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_GL>;
-        dcat:keyword          "GL" , "GeographicalLocation";
-        dcat:startDate        "2025-02-14T12:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
-
-<urn:uuid:38884d50-30ff-41d3-99bb-c794cbdf57cb>
-        rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 SSH"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_SSH.xml>;
-        dcat:isDistributionOf  <urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5>;
-        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/SSH> .
-
-<urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5>
+<urn:uuid:cce234eb-ec10-4252-a4fb-6c41c4988440>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
         dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
-        dcterms:description   "Steady-State Hypothesis (SSH) part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "1d08772d-c1d0-4c47-810d-b14908cd94f5";
-        dcterms:issued        "2025-02-14T12:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
-        dcterms:requires      <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>;
+        dcterms:description   "The steady-state hypothesis dataset for Espheim-Svedala HVDC, updated by Jotunheim.";
+        dcterms:identifier    "cce234eb-ec10-4252-a4fb-6c41c4988440";
+        dcterms:issued        "2025-02-08T21:20:31Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://espheim-svedala.es/CGMES>;
+        dcterms:requires      <urn:uuid:105893e4-668b-4b00-a351-0e436b53cbc9>;
         dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_SSH_v3-0-0-beta-1";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_HVDC_Espheim-Svedala_SSH_2";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_SSH>;
-        dcat:keyword          "SSH" , "SteadyStateHypothesis";
-        dcat:startDate        "2014-12-31T23:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
+        dcat:distribution     <urn:uuid:a8e4ff0f-d71a-4388-be54-d561e48146ed>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
 
-<urn:uuid:5e109739-0140-449f-a7ae-f531f882f7d0>
+<urn:uuid:dac8da23-d842-4ae0-bf6b-bfb2868192cd>
         rdf:type               dcat:Distribution;
-        dcterms:conformsTo     <urn:iso:std:iec:61970-552:2016>;
-        dcterms:description    "CIMXML serialization of the Nordic44 EQ"@en;
-        dcat:accessURL         <file://cimxml/Nordic44-HV_EQ.xml>;
-        dcat:isDistributionOf  <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Nordheim, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_Nordheim_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:957210cd-d30b-4d7a-a0c3-ab6ad918646e>;
         dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
-        prov:generatedAtTime   "2025-02-14T11:00:00Z";
-        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/EQ> .
+        prov:generatedAtTime   "2025-02-08T21:20:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
 
-<urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c>
+<urn:uuid:3933b05d-26c3-4c68-884e-a420c9c36099>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Portheim, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20241223T0642Z_2D_Portheim_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:7aeb7915-d4c6-4b43-80e9-386556516d9b>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2026-04-29T00:00:00Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:957210cd-d30b-4d7a-a0c3-ab6ad918646e>
         rdf:type              dcat:Dataset;
         dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
-        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
-        dcterms:description   "Equipment part of the Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "6ffcaafd-b3b7-4a7f-8d86-7d5870e17629";
-        dcterms:issued        "2025-02-14T12:00:00Z";
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Nordheim, updated by Jotunheim.";
+        dcterms:identifier    "cd-d30b-4d7a-a0c3-ab6ad918646e";
+        dcterms:issued        "2025-02-08T21:20:31Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://nordheim.nh/CGMES>;
+        dcterms:requires      <urn:uuid:b2d38b16-0d3a-4d6d-8bf2-e894632a2912>;
         dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
-        dcterms:spatial       <https://energy.referencedata.eu/Test/Frame/NORDIC-Power-Transmission-System>;
-        dcterms:title         "20160101_Nordic44-HV_EQ_v3-0-0-beta-1";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_Nordheim_SSH_2";
         dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
-        adms:versionNotes     "Initial version"@en;
-        dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Nordic44-HV_EQ>;
-        dcat:keyword          "EQ" , "Equipment";
-        dcat:startDate        "2014-12-31T23:00:00Z";
-        dcat:version          "3.0.0-beta-1" .
+        dcat:distribution     <urn:uuid:dac8da23-d842-4ae0-bf6b-bfb2868192cd>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
 
-<urn:uuid:dd979b66-7e29-4124-ba65-52d18b86330b>
-        rdf:type              dcat:Catalog;
-        dcterms:description   "Grid part of Nordic 44-bus synthetic test model developed by Statnett SF of the Nordic region."@en;
-        dcterms:identifier    "3d40111f-fc40-439e-a9f3-1670715392ca";
-        dcterms:issued        "2025-02-14T12:00:00Z";
-        dcterms:license       <https://creativecommons.org/licenses/by/4.0/>;
-        dcterms:publisher     <https://www.statnett.no/en/about-statnett/contact-us/>;
+<urn:uuid:03e76bc6-be5b-4436-8eea-27eae2dcbf9d>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Belgovia, updated by Jotunheim.";
+        dcterms:identifier    "e76bc6-be5b-4436-8eea-27eae2dcbf9d";
+        dcterms:issued        "2025-02-08T21:20:31Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://belgovia.bo/CGMES>;
+        dcterms:requires      <urn:uuid:15c8a8ad-08d5-4b59-8417-db80e273bd1a>;
         dcterms:rights        "Copyright";
-        dcterms:rightsHolder  "Statnett SF";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_Belgovia_SSH_2";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:b0481bfa-059d-4d2b-b3a3-b0fa694c30d2>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
+
+<urn:uuid:5ecd2a3e-2330-4b21-9be1-c26ec1ab5f38>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Espheim, updated by Jotunheim.";
+        dcterms:identifier    "ecd2a3e-2330-4b21-9be1-c26ec1ab5f38";
+        dcterms:issued        "2025-02-08T21:20:31Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://espheim.eh/CGMES>;
+        dcterms:requires      <urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_Espheim_SSH_2";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:8d748590-8b2d-477c-80d0-6a0511d4dba4>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
+
+<urn:uuid:426926c8-0cd9-4b0d-9fa8-ddeb1a966c75>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Svedala, updated by Jotunheim.";
+        dcterms:identifier    "c8-0cd9-4b0d-9fa8-ddeb1a966c75";
+        dcterms:issued        "2025-02-08T21:20:31Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://svedala.sd/CGMES>;
+        dcterms:requires      <urn:uuid:bea45848-a05d-496b-9ab2-f42c6714183e>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_Svedala_SSH_2";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:309c10f1-7397-42b8-badf-bd103aa4c097>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
+
+<urn:uuid:a0bc6d48-4d64-4ea9-964c-d03fe58adc22>
+        rdf:type              dcat:Catalog;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   ""@en;
+        dcterms:identifier    "a0bc6d48-4d64-4ea9-964c-d03fe58adc22";
+        dcterms:issued        "2025-02-09T04:53:56Z"^^xsd:dateTime , "2025-02-08T21:20:31Z"^^xsd:dateTime , "2026-04-29T00:00:00Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://galia.ga/CGMES> , <http://nordheim-galia.ng/CGMES> , <http://nordheim.nh/CGMES> , <http://espheim-svedala.es/CGMES> , <http://britheim.bh/CGMES> , <http://svedala.sd/CGMES> , <http://belgovia.bo/CGMES> , <http://espheim.eh/CGMES> , <http://portheim.ph/CGMES>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
         dcterms:title         "Manifest";
-        adms:versionNotes     "Initial version"@en;
-        dcat:dataset          <urn:uuid:1d08772d-c1d0-4c47-810d-b14908cd94f5> , <urn:uuid:e710212f-f6b2-8d4c-9dc0-365398d8b59c> , <urn:uuid:167b4832-27c5-ff4f-bd26-6ce3bff1bdb7> , <urn:uuid:2e11908e-5e1f-8542-854c-54da76d379d1> , <urn:uuid:7b3f94c0-bd9b-e74e-866b-f473153c3e70> , <urn:uuid:5b6a8b13-4c20-4147-8ed6-7249e303e647>;
-        dcat:version          "3.0.0-beta.1" .
+        adms:versionNotes     "Placeholder version notes."@en;
+        dcat:dataset          <urn:uuid:468fc202-2423-4aeb-9998-e366a05ae9b0> , <urn:uuid:cce234eb-ec10-4252-a4fb-6c41c4988440> , <urn:uuid:03e76bc6-be5b-4436-8eea-27eae2dcbf9d> , <urn:uuid:5ecd2a3e-2330-4b21-9be1-c26ec1ab5f38> , <urn:uuid:426926c8-0cd9-4b0d-9fa8-ddeb1a966c75> , <urn:uuid:7aeb7915-d4c6-4b43-80e9-386556516d9b> , <urn:uuid:0d009e1e-210c-46fb-963d-93f1adc69342> , <urn:uuid:14b4410c-e040-4147-b148-aed1f7a4337f> , <urn:uuid:957210cd-d30b-4d7a-a0c3-ab6ad918646e>;
+        dcat:version          "2" .
+
+<urn:uuid:0d009e1e-210c-46fb-963d-93f1adc69342>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Galia, updated by Jotunheim.";
+        dcterms:identifier    "d009e1e-210c-46fb-963d-93f1adc69342";
+        dcterms:issued        "2025-02-08T21:20:31Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://galia.ga/CGMES>;
+        dcterms:requires      <urn:uuid:b89a6150-43bd-442c-8c58-9efd3d537d11>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_Galia_SSH_2";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:5840b981-cf41-4b50-9a7c-a9f711c54609>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
+
+<urn:uuid:5840b981-cf41-4b50-9a7c-a9f711c54609>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Galia, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_Galia_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:0d009e1e-210c-46fb-963d-93f1adc69342>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T21:20:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:a8e4ff0f-d71a-4388-be54-d561e48146ed>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Espheim-Svedala HVDC, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_HVDC_Espheim-Svedala_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:cce234eb-ec10-4252-a4fb-6c41c4988440>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T21:20:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:309c10f1-7397-42b8-badf-bd103aa4c097>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Svedala, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_Svedala_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:426926c8-0cd9-4b0d-9fa8-ddeb1a966c75>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T21:20:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:14b4410c-e040-4147-b148-aed1f7a4337f>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Britheim, updated by Jotunheim.";
+        dcterms:identifier    "b4410c-e040-4147-b148-aed1f7a4337f";
+        dcterms:issued        "2025-02-08T21:20:31Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://britheim.bh/CGMES>;
+        dcterms:requires      <urn:uuid:33bd4875-01b7-4442-a5a2-dc04419143bf>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_Britheim_SSH_2";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:68ba66dd-2307-400d-a62a-2a2acb529226>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
+
+<urn:uuid:468fc202-2423-4aeb-9998-e366a05ae9b0>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Nordheim-Galia HVDC, updated by Jotunheim.";
+        dcterms:identifier    "fc202-2423-4aeb-9998-e366a05ae9b0";
+        dcterms:issued        "2025-02-09T04:53:56Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://nordheim-galia.ng/CGMES>;
+        dcterms:requires      <urn:uuid:9212d819-3f09-4062-aa13-82d4be4e2f4a>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20220615T2230Z_2D_HVDC_Nordheim-Galia_SSH_2";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:89286bb5-dfcd-4150-beea-2cc57cac8388>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2022-06-16T23:30:00Z"^^xsd:dateTime;
+        dcat:version          "2" .
+
+<urn:uuid:7aeb7915-d4c6-4b43-80e9-386556516d9b>
+        rdf:type              dcat:Dataset;
+        dcterms:accessRights  <https://energy.referencedata.eu/Confidentiality/Public>;
+        dcterms:conformsTo    <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description   "The steady-state hypothesis dataset for Portheim, updated by Jotunheim.";
+        dcterms:identifier    "aeb7915-d4c6-4b43-80e9-386556516d9b";
+        dcterms:issued        "2026-04-29T00:00:00Z"^^xsd:dateTime;
+        dcterms:license       <http://example.org/license>;
+        dcterms:publisher     <http://portheim.ph/CGMES>;
+        dcterms:requires      <urn:uuid:6c5d6483-ac4b-43df-8f42-67989468382f>;
+        dcterms:rights        "Copyright";
+        dcterms:rightsHolder  "PLACEHOLDER_RIGHTS_HOLDER";
+        dcterms:spatial       <urn:placeholder:spatial>;
+        dcterms:title         "20241223T0642Z_2D_Portheim_SSH_2";
+        dcterms:type          <https://energy.referencedata.eu/type/CIM-PowerSystemModel>;
+        dcat:distribution     <urn:uuid:3933b05d-26c3-4c68-884e-a420c9c36099>;
+        dcat:keyword          "SSH";
+        dcat:startDate        "2024-12-23T06:42:14Z"^^xsd:dateTime;
+        dcat:version          "2" .
+
+<urn:uuid:8d748590-8b2d-477c-80d0-6a0511d4dba4>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Espheim, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_Espheim_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:5ecd2a3e-2330-4b21-9be1-c26ec1ab5f38>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T21:20:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:68ba66dd-2307-400d-a62a-2a2acb529226>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Britheim, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_Britheim_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:14b4410c-e040-4147-b148-aed1f7a4337f>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-08T21:20:31Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .
+
+<urn:uuid:89286bb5-dfcd-4150-beea-2cc57cac8388>
+        rdf:type               dcat:Distribution;
+        dcterms:conformsTo     <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
+        dcterms:description    "The steady-state hypothesis dataset for Nordheim-Galia HVDC, updated by Jotunheim.";
+        dcat:accessURL         <file:Instance/Jotunheim/ChangeSet/cimxml/20220615T2230Z_2D_HVDC_Nordheim-Galia_SSH_2.xml>;
+        dcat:isDistributionOf  <urn:uuid:468fc202-2423-4aeb-9998-e366a05ae9b0>;
+        dcat:mediaType         <http://www.iana.org/assignments/media-types/application/rdf+xml>;
+        prov:generatedAtTime   "2025-02-09T04:53:56Z"^^xsd:dateTimeStamp;
+        prov:wasGeneratedBy    <https://energy.referencedata.eu/Test/Action/PlaceholderGeneration> .

@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -22,13 +21,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                      cim:VoltageLevel;
             cim:IdentifiedObject.mRID     "800afa6a-9910-4fb7-a88b-9fb1e66920ff";
             cim:IdentifiedObject.name     "VL_400";
-            cim:VoltageLevel.BaseVoltage  <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+            cim:VoltageLevel.BaseVoltage  <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:VoltageLevel.Substation   <urn:uuid:c544d893-1b9a-4363-bacb-e7064f812ec0> .
     
     <urn:uuid:e710a2e3-a70f-4261-508f-a4d925d1deb9>
             rdf:type                   cim:EquivalentInjection;
             cim:ConductingEquipment.BaseVoltage
-                    <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+                    <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:Equipment.EquipmentContainer
                     <urn:uuid:c06d67a0-4984-4661-846c-f42a9b29c049>;
             cim:EquivalentInjection.regulationCapability
@@ -223,7 +222,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "650"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "400"^^xsd:float;
             cim:PowerTransformerEnd.x       "14.5189"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:TransformerEnd.Terminal     <urn:uuid:61cafb07-5d42-a115-0c43-e5cb8b7ffb90>;
             cim:TransformerEnd.endNumber    1 .
     
@@ -289,7 +288,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACLineSegment.r        "1"^^xsd:float;
             cim:ACLineSegment.x        "2"^^xsd:float;
             cim:ConductingEquipment.BaseVoltage
-                    <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+                    <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:Conductor.length       "10"^^xsd:float;
             cim:Equipment.EquipmentContainer
                     <urn:uuid:ba130a7b-fb46-4c73-a6cf-ec41812a14c0>;
@@ -403,7 +402,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "650"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "125"^^xsd:float;
             cim:PowerTransformerEnd.x       "0"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:54191047-8b9e-8735-ed0d-5e1421d2e9dc>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:2798b33d-c534-45f2-9252-a1ea9b3247c6>;
             cim:TransformerEnd.Terminal     <urn:uuid:6163d1e1-7904-d404-2a1c-70057f17dc15>;
             cim:TransformerEnd.endNumber    2 .
     
@@ -598,7 +597,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACLineSegment.r        "1"^^xsd:float;
             cim:ACLineSegment.x        "2"^^xsd:float;
             cim:ConductingEquipment.BaseVoltage
-                    <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+                    <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:Conductor.length       "10"^^xsd:float;
             cim:Equipment.EquipmentContainer
                     <urn:uuid:c06d67a0-4984-4661-846c-f42a9b29c049>;
@@ -619,7 +618,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "650"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "400"^^xsd:float;
             cim:PowerTransformerEnd.x       "14.5189"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:TransformerEnd.Terminal     <urn:uuid:9a54a535-c88c-7247-37aa-938a9d1f42d9>;
             cim:TransformerEnd.endNumber    1 .
     
@@ -652,7 +651,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:b8a39d36-f5e3-9995-ba5a-e77d3392890f>
             rdf:type                   cim:EquivalentInjection;
             cim:ConductingEquipment.BaseVoltage
-                    <urn:uuid:597e44dc-2a6e-4c62-82f3-f82cc46e0e14>;
+                    <urn:uuid:65dd04e792584b3b912374e35dec032e>;
             cim:Equipment.EquipmentContainer
                     <urn:uuid:ba130a7b-fb46-4c73-a6cf-ec41812a14c0>;
             cim:EquivalentInjection.regulationCapability
@@ -664,7 +663,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                      cim:VoltageLevel;
             cim:IdentifiedObject.mRID     "3d1874ee-827e-4038-aba2-a5a4a748ff8a";
             cim:IdentifiedObject.name     "VL_125";
-            cim:VoltageLevel.BaseVoltage  <urn:uuid:54191047-8b9e-8735-ed0d-5e1421d2e9dc>;
+            cim:VoltageLevel.BaseVoltage  <urn:uuid:2798b33d-c534-45f2-9252-a1ea9b3247c6>;
             cim:VoltageLevel.Substation   <urn:uuid:c544d893-1b9a-4363-bacb-e7064f812ec0> .
     
     <urn:uuid:b959da55-d306-495d-80cf-ba2b25854d8e>
@@ -687,7 +686,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dct:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
             dct:description    "The equipment dataset for Espheim-Svedala, which is part of the ReliCapGrid.";
             dct:identifier     "105893e4-668b-4b00-a351-0e436b53cbc9";
-            dct:issued         "2025-02-06"^^xsd:date;
+            dct:issued         "2025-02-06T14:18:22Z"^^xsd:dateTime;
             dct:requires       <urn:uuid:af6450db-fe15-4caf-94a1-e22f3fced32e> , <urn:uuid:1b65ada7-39ca-42b8-a278-39c457ed82c3>;
             dct:temporal       [ rdf:type        dct:PeriodOfTime;
                                  dcat:startDate  "2022-06-16T23:30:00Z"^^xsd:dateTime
@@ -778,7 +777,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "650"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "125"^^xsd:float;
             cim:PowerTransformerEnd.x       "0"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:54191047-8b9e-8735-ed0d-5e1421d2e9dc>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:2798b33d-c534-45f2-9252-a1ea9b3247c6>;
             cim:TransformerEnd.Terminal     <urn:uuid:f22ac414-60d5-1b7a-f9b3-b1e456441f22>;
             cim:TransformerEnd.endNumber    2 .
     
@@ -926,11 +925,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:394f936b-1517-4035-b95e-25e305b4c09a>;
             cim:IdentifiedObject.mRID   "038ce404-30dc-4289-b9db-7076cb870b8e";
             cim:IdentifiedObject.name   "DC-3P-Convert-1" .
-    
-    <urn:uuid:75937a43-c47d-4431-9857-7a0333ed50be>
-            rdf:type                   cim:GeographicalRegion;
-            cim:IdentifiedObject.mRID  "75937a43-c47d-4431-9857-7a0333ed50be";
-            cim:IdentifiedObject.name  "Espheim-Svedala" .
     
     <urn:uuid:6163d1e1-7904-d404-2a1c-70057f17dc15>
             rdf:type                       cim:Terminal;

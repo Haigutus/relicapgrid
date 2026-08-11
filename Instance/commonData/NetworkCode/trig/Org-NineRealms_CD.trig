@@ -7,7 +7,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -484,7 +483,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:297f533e-77a7-42d9-a683-32babcf6c82f>
             rdf:type                       nc:SchedulingArea;
             cim:IdentifiedObject.description
-                    "Scheduling Area (SA) for Belgovia.";
+                    "Scheduling Area (SA) for Belgovia. Duplicated instance definition in CommonData and ER file.";
             cim:IdentifiedObject.mRID      "297f533e-77a7-42d9-a683-32babcf6c82f";
             cim:IdentifiedObject.name      "SA-Belgovia";
             nc:SchedulingArea.BiddingZone  <urn:uuid:4d4166a4-c0dc-4c77-9b67-a04a7e68ddf2>;
@@ -616,7 +615,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:87fb9f56-fd86-446f-b35d-c0abba19925f>
             rdf:type                       nc:BiddingZone;
             cim:IdentifiedObject.description
-                    "Bidding Zone for Belgovia";
+                    "Bidding Zone for Belgovia. Duplicated instance definition in CommonData and ER file.";
             cim:IdentifiedObject.mRID      "87fb9f56-fd86-446f-b35d-c0abba19925f";
             cim:IdentifiedObject.name      "BZ-Belgovia";
             nc:BiddingZone.CapacityCalculationRegion
@@ -643,12 +642,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:2667b32c-d94c-4198-96a2-e9f288cc8e3d>
             rdf:type              dcat:Dataset;
             dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/EquipmentReliability/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:conformsTo        cim: , <https://ap.cim4.eu/EquipmentReliability/2.4> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "Common data the NineRealms responsibility are as part of the ReliCapGrid ENTSO-E test model."@en;
             dct:identifier        "2667b32c-d94c-4198-96a2-e9f288cc8e3d";
             dct:issued            "2026-03-18T10:00:00Z"^^xsd:dateTime;
             dct:license           <https://creativecommons.org/licenses/by/4.0/>;
-            dct:publisher         "https://energy.referencedata.eu/test/party/Org-NineRealms";
+            dct:publisher         <https://energy.referencedata.eu/test/party/Org-NineRealms>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
             dct:spatial           <https://energy.referencedata.eu/test/frame/NineRealms-Transmission>;
@@ -659,7 +658,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2026-03-31T10:00:00Z"^^xsd:dateTime;
             dcat:version          "2.1.0";
             prov:generatedAtTime  "2026-03-31T10:00:00Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/activity/CD" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/activity/CD> .
     
     <urn:uuid:488ac74b-7c1d-41ac-b2d8-2108ff754752>
             rdf:type                   nc:BiddingZoneBorder;

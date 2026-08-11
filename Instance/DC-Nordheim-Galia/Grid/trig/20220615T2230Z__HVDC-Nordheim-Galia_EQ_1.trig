@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -39,7 +38,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                      cim:VoltageLevel;
             cim:IdentifiedObject.mRID     "512ac1ce-7df4-4caf-937c-5bb9380140e9";
             cim:IdentifiedObject.name     "VL 220 kV";
-            cim:VoltageLevel.BaseVoltage  <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+            cim:VoltageLevel.BaseVoltage  <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:VoltageLevel.Substation   <urn:uuid:9cc142f1-ee51-4b0e-9e50-c9e124527813> .
     
     <urn:uuid:471d1e90-5fb2-45f7-ba23-9ea6cf67bcde>
@@ -81,7 +80,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "220"^^xsd:float;
             cim:PowerTransformerEnd.x       "12.9062"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:TransformerEnd.Terminal     <urn:uuid:458009ac-cb20-90bf-8a6a-cec8a53241b7>;
             cim:TransformerEnd.endNumber    1 .
     
@@ -492,7 +491,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dct:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
             dct:description    "The equipment dataset for Nordheim-Galia, which is part of the ReliCapGrid.";
             dct:identifier     "9212d819-3f09-4062-aa13-82d4be4e2f4a";
-            dct:issued         "2025-02-06"^^xsd:date;
+            dct:issued         "2025-02-06T14:18:22Z"^^xsd:dateTime;
             dct:requires       <urn:uuid:5f8c11a8-c61c-42c9-925d-8cdbc0146c1a> , <urn:uuid:1b65ada7-39ca-42b8-a278-39c457ed82c3>;
             dct:temporal       [ rdf:type        dct:PeriodOfTime;
                                  dcat:startDate  "2022-06-16T23:30:00Z"^^xsd:dateTime
@@ -585,7 +584,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "220"^^xsd:float;
             cim:PowerTransformerEnd.x       "12.9062"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:TransformerEnd.Terminal     <urn:uuid:ba5b81c8-d9da-4698-3aba-fc5f15d7ba4f>;
             cim:TransformerEnd.endNumber    1 .
     
@@ -752,7 +751,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "220"^^xsd:float;
             cim:PowerTransformerEnd.x       "12.9062"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:TransformerEnd.Terminal     <urn:uuid:e00f8ed5-1aa8-65ed-1f5d-c4b310349438>;
             cim:TransformerEnd.endNumber    1 .
     
@@ -803,7 +802,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                      cim:VoltageLevel;
             cim:IdentifiedObject.mRID     "d487ff06-4419-477b-a85a-b55c34598b1b";
             cim:IdentifiedObject.name     "VL 150 kV";
-            cim:VoltageLevel.BaseVoltage  <urn:uuid:5ff755c5-dd8d-b345-1221-44482d996bb3>;
+            cim:VoltageLevel.BaseVoltage  <urn:uuid:e50ca4bd591d4c30bd6eca3635f70516>;
             cim:VoltageLevel.Substation   <urn:uuid:9cc142f1-ee51-4b0e-9e50-c9e124527813> .
     
     <urn:uuid:d6296fd9-41c1-0b8c-abb0-7bbcd4e653b1>
@@ -891,7 +890,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACLineSegment.r        "1"^^xsd:float;
             cim:ACLineSegment.x        "30"^^xsd:float;
             cim:ConductingEquipment.BaseVoltage
-                    <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+                    <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:Conductor.length       "10"^^xsd:float;
             cim:Equipment.EquipmentContainer
                     <urn:uuid:82abfaf2-36df-44ac-b4e5-e40a535affa4>;
@@ -971,7 +970,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "220"^^xsd:float;
             cim:PowerTransformerEnd.x       "12.9062"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:TransformerEnd.Terminal     <urn:uuid:5dfef055-80c1-721a-667e-506a89bee690>;
             cim:TransformerEnd.endNumber    1 .
     
@@ -1075,7 +1074,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "150"^^xsd:float;
             cim:PowerTransformerEnd.x       "0"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:5ff755c5-dd8d-b345-1221-44482d996bb3>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:e50ca4bd591d4c30bd6eca3635f70516>;
             cim:TransformerEnd.Terminal     <urn:uuid:e929a537-59db-0a68-fed5-cf14830b6cb4>;
             cim:TransformerEnd.endNumber    2 .
     
@@ -1093,7 +1092,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "150"^^xsd:float;
             cim:PowerTransformerEnd.x       "0"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:5ff755c5-dd8d-b345-1221-44482d996bb3>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:e50ca4bd591d4c30bd6eca3635f70516>;
             cim:TransformerEnd.Terminal     <urn:uuid:cdb39691-018d-3e5e-1592-28761b4138cb>;
             cim:TransformerEnd.endNumber    2 .
     
@@ -1145,16 +1144,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:DCBaseTerminal.DCNode  <urn:uuid:f04df7ea-bb4d-428e-8adf-3bd61cf27083>;
             cim:IdentifiedObject.mRID  "9ba30534-4b14-3924-4dac-5cd5ba47464a";
             cim:IdentifiedObject.name  "Cub_2" .
-    
-    <urn:uuid:d121cf41-5b6d-47c9-87a4-67bfb994d8ec>
-            rdf:type                       cim:GeographicalRegion;
-            cim:IdentifiedObject.description
-                    "GA-NH HVDC link";
-            cim:IdentifiedObject.mRID      "d121cf41-5b6d-47c9-87a4-67bfb994d8ec";
-            cim:IdentifiedObject.name      "Nordheim-Galia";
-            eu:IdentifiedObject.energyIdentCodeEic
-                    "10T-GA-NH-123456";
-            eu:IdentifiedObject.shortName  "GA-NH" .
     
     <urn:uuid:6a460b27-ee5c-4f31-aa4c-5ed99b640135>
             rdf:type                    cim:ControlArea;
@@ -1257,7 +1246,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "150"^^xsd:float;
             cim:PowerTransformerEnd.x       "0"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:5ff755c5-dd8d-b345-1221-44482d996bb3>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:e50ca4bd591d4c30bd6eca3635f70516>;
             cim:TransformerEnd.Terminal     <urn:uuid:83274019-cf88-d03e-c291-efc418632b61>;
             cim:TransformerEnd.endNumber    2 .
     
@@ -1376,7 +1365,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:b24417f8-c669-44e5-6525-17fce5cd57d1>
             rdf:type                   cim:EquivalentInjection;
             cim:ConductingEquipment.BaseVoltage
-                    <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+                    <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:Equipment.EquipmentContainer
                     <urn:uuid:82abfaf2-36df-44ac-b4e5-e40a535affa4>;
             cim:EquivalentInjection.regulationCapability
@@ -1439,7 +1428,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:PowerTransformerEnd.ratedS  "450"^^xsd:float;
             cim:PowerTransformerEnd.ratedU  "150"^^xsd:float;
             cim:PowerTransformerEnd.x       "0"^^xsd:float;
-            cim:TransformerEnd.BaseVoltage  <urn:uuid:5ff755c5-dd8d-b345-1221-44482d996bb3>;
+            cim:TransformerEnd.BaseVoltage  <urn:uuid:e50ca4bd591d4c30bd6eca3635f70516>;
             cim:TransformerEnd.Terminal     <urn:uuid:bb580ab8-eb07-4e59-8932-8a078288e409>;
             cim:TransformerEnd.endNumber    2 .
     

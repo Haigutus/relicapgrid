@@ -386,6 +386,11 @@
     <cim:EquivalentInjection.p>-26.7316</cim:EquivalentInjection.p>
     <cim:EquivalentInjection.q>2.1787</cim:EquivalentInjection.q>
   </cim:EquivalentInjection>
+  <cim:EquivalentInjection rdf:about="#_7c43d75f-f169-4525-9a55-ef54c6f95f3c">
+    <cim:Equipment.inService>true</cim:Equipment.inService>
+    <cim:EquivalentInjection.p>0</cim:EquivalentInjection.p>
+    <cim:EquivalentInjection.q>0</cim:EquivalentInjection.q>
+  </cim:EquivalentInjection>
   <cim:EquivalentInjection rdf:about="#_579381e6-1e32-457b-a208-32f905b1e19e">
     <cim:Equipment.inService>true</cim:Equipment.inService>
     <cim:EquivalentInjection.p>-576.42</cim:EquivalentInjection.p>
@@ -760,6 +765,9 @@
     <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
   </cim:Terminal>
   <cim:Terminal rdf:about="#_77f04391-aa23-49b6-b3e9-6089130bb5d5">
+    <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+  </cim:Terminal>
+  <cim:Terminal rdf:ID="_515bd41d-c5bc-4d0c-bf0f-449875c7bd9b">
     <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
   </cim:Terminal>
   <cim:VoltageLimit rdf:about="#_f4546d12-7aa2-14ec-f126-944c963b97ed">

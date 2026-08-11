@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -40,6 +39,18 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "10T-AT-DE-00016Z";
             eu:IdentifiedObject.shortName  "BP_EH-PH2" .
     
+    <urn:uuid:a414d08b-918b-41ac-a242-82a2915ab810>
+            rdf:type                       cim:Terminal;
+            cim:ACDCTerminal.sequenceNumber
+                    1;
+            cim:IdentifiedObject.description
+                    "Terminal of busbar section BP-PH-EH connecting it to ConnectivityNode";
+            cim:IdentifiedObject.mRID      "a414d08b-918b-41ac-a242-82a2915ab810";
+            cim:IdentifiedObject.name      "Terminal_BP-PH-EH busbar";
+            cim:Terminal.ConductingEquipment
+                    <urn:uuid:00c7faff-a1ed-4b64-bbf8-527d4efefb76>;
+            cim:Terminal.ConnectivityNode  <urn:uuid:ceafce7b-5485-4cb8-9e06-c85ba137ffa9> .
+    
     <urn:uuid:bf0b3138-b656-482b-8874-f0a4fa314579>
             rdf:type                       cim:ConnectivityNode;
             cim:ConnectivityNode.ConnectivityNodeContainer
@@ -62,6 +73,69 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             eu:IdentifiedObject.energyIdentCodeEic
                     "10T-BO-GA-10014U";
             eu:IdentifiedObject.shortName  "BP_EH-PH1" .
+    
+    <urn:uuid:15403b4d-9f81-b474-49c1-94c37ff5b597>
+            rdf:type                   cim:OperationalLimitSet;
+            cim:IdentifiedObject.mRID  "15403b4d-9f81-b474-49c1-94c37ff5b597";
+            cim:IdentifiedObject.name  "Voltage limits for BP Portheim-Espheim";
+            cim:OperationalLimitSet.Terminal
+                    <urn:uuid:a414d08b-918b-41ac-a242-82a2915ab810> .
+    
+    <urn:uuid:00c7faff-a1ed-4b64-bbf8-527d4efefb76>
+            rdf:type                   cim:BusbarSection;
+            cim:Equipment.EquipmentContainer
+                    <urn:uuid:0c4f41f8-9797-44eb-bdbe-1a28efa083b9>;
+            cim:IdentifiedObject.description
+                    "Busbar Section for the Boundary Point Portheim-Espheim";
+            cim:IdentifiedObject.mRID  "00c7faff-a1ed-4b64-bbf8-527d4efefb76";
+            cim:IdentifiedObject.name  "Busbar Section BP-PH-EH" .
+    
+    <urn:uuid:3f5af4d3-5943-dfd0-1c61-de4f3fd11070>
+            rdf:type                       eu:BoundaryPoint;
+            cim:IdentifiedObject.description
+                    "Boundary point 4 in a Substation between Portheim and Espheim (400kV).";
+            cim:IdentifiedObject.mRID      "3f5af4d3-5943-dfd0-1c61-de4f3fd11070";
+            cim:IdentifiedObject.name      "BP Portheim-Espheim";
+            eu:BoundaryPoint.ConnectivityNode
+                    <urn:uuid:ceafce7b-5485-4cb8-9e06-c85ba137ffa9>;
+            eu:BoundaryPoint.fromEndIsoCode
+                    "";
+            eu:BoundaryPoint.fromEndName   "";
+            eu:BoundaryPoint.fromEndNameTso
+                    "";
+            eu:BoundaryPoint.toEndIsoCode  "";
+            eu:BoundaryPoint.toEndName     "";
+            eu:BoundaryPoint.toEndNameTso  "";
+            eu:IdentifiedObject.shortName  "BP_PH-EH" .
+    
+    <urn:uuid:3192156f-1201-4607-be08-83213d4317b2>
+            rdf:type                      cim:OperationalLimitType;
+            cim:IdentifiedObject.mRID     "3192156f-1201-4607-be08-83213d4317b2";
+            cim:IdentifiedObject.name     "highVoltage";
+            cim:OperationalLimitType.direction
+                    cim:OperationalLimitDirectionKind.high;
+            cim:OperationalLimitType.isInfiniteDuration
+                    true;
+            eu:OperationalLimitType.kind  eu:LimitKind.highVoltage .
+    
+    <urn:uuid:0c4f41f8-9797-44eb-bdbe-1a28efa083b9>
+            rdf:type                       cim:VoltageLevel;
+            cim:IdentifiedObject.description
+                    "Portheim-Espheim Voltage Level 400kV in the Boundary Substation, this instance appears in two EQ files and in the Boundary.";
+            cim:IdentifiedObject.mRID      "0c4f41f8-9797-44eb-bdbe-1a28efa083b9";
+            cim:IdentifiedObject.name      "Portheim-Espheim Voltage Level 400kV";
+            cim:VoltageLevel.BaseVoltage   <urn:uuid:65dd04e792584b3b912374e35dec032e>;
+            cim:VoltageLevel.Substation    <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c>;
+            eu:IdentifiedObject.shortName  "PH-EH-400kV" .
+    
+    <urn:uuid:42b7f03a-db7a-415a-9e15-25f634f5ea9c>
+            rdf:type                       cim:Substation;
+            cim:IdentifiedObject.description
+                    "AC Substation Boundary for Portheim-Espheim, this instance appears in two EQ files and in the Boundary.";
+            cim:IdentifiedObject.mRID      "42b7f03a-db7a-415a-9e15-25f634f5ea9c";
+            cim:IdentifiedObject.name      "Substation Portheim-Espheim";
+            cim:Substation.Region          <urn:uuid:f69de45f-9681-4147-9d1f-9e0336fc8635>;
+            eu:IdentifiedObject.shortName  "Subst-PH-EH" .
     
     <urn:uuid:7ab6767d-9ca1-9972-8c25-13c831c95b93>
             rdf:type                       eu:BoundaryPoint;
@@ -88,7 +162,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dct:conformsTo     <http://iec.ch/TC57/ns/CIM/CoreEquipment-EU/3.0>;
             dct:description    "The equipment dataset of the boundary that is used in the ReliCapGrid.";
             dct:identifier     "18883bbd-c850-48eb-8eb9-b6018decdb63";
-            dct:issued         "2025-02-06"^^xsd:date;
+            dct:issued         "2025-02-06T14:18:22Z"^^xsd:dateTime;
             dct:requires       <urn:uuid:1b65ada7-39ca-42b8-a278-39c457ed82c3>;
             dct:temporal       [ rdf:type        dct:PeriodOfTime;
                                  dcat:startDate  "2022-06-16T23:30:00Z"^^xsd:dateTime
@@ -120,6 +194,26 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             eu:IdentifiedObject.energyIdentCodeEic
                     "10T-BO-GA-10234U";
             eu:IdentifiedObject.shortName  "BP_EH-PH2" .
+    
+    <urn:uuid:ceafce7b-5485-4cb8-9e06-c85ba137ffa9>
+            rdf:type                       cim:ConnectivityNode;
+            cim:ConnectivityNode.ConnectivityNodeContainer
+                    <urn:uuid:0c4f41f8-9797-44eb-bdbe-1a28efa083b9>;
+            cim:IdentifiedObject.description
+                    "Portheim-Espheim Connectivity Node in the Boundary Substation";
+            cim:IdentifiedObject.mRID      "ceafce7b-5485-4cb8-9e06-c85ba137ffa9";
+            cim:IdentifiedObject.name      "BP Portheim-Espheim";
+            eu:IdentifiedObject.shortName  "BP_PH-EH" .
+    
+    <urn:uuid:1cb91fbf-8b61-c2e4-98e9-b3ae0197ea98>
+            rdf:type                      cim:VoltageLimit;
+            cim:IdentifiedObject.mRID     "1cb91fbf-8b61-c2e4-98e9-b3ae0197ea98";
+            cim:IdentifiedObject.name     "high limit for BP Portheim-Espheim";
+            cim:OperationalLimit.OperationalLimitSet
+                    <urn:uuid:15403b4d-9f81-b474-49c1-94c37ff5b597>;
+            cim:OperationalLimit.OperationalLimitType
+                    <urn:uuid:3192156f-1201-4607-be08-83213d4317b2>;
+            cim:VoltageLimit.normalValue  "420"^^xsd:float .
     
     <urn:uuid:a9bb608d-7e93-cd9c-03bb-77c175befc39>
             rdf:type                       eu:BoundaryPoint;

@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -33,17 +32,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:2ea55b46-ad48-4408-be72-734b475ba18f>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/RemedialAction/2.4" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        <https://ap.cim4.eu/RemedialAction/2.4> , cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
             dct:description       "This is the remedial action dataset for Galia part of ReliCapGrid."@en;
             dct:identifier        "2ea55b46-ad48-4408-be72-734b475ba18f";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Galia";
-            dct:requires          <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a>;
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Galia>;
+            dct:requires          <urn:uuid:a2c02149-a114-4b5e-9de5-74dcccd9793a> , <urn:uuid:897e711a-7da8-4cfa-a66e-15d4d5ada97d>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Galia-Power-Transmission-System>;
             dct:title             "20220615_Galia_RA_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Galia-RA>;
@@ -51,7 +50,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-RA" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-RA> .
     
     <urn:uuid:f4d57bc2-1cef-46ab-ae13-3ad864813d9c>
             rdf:type                   nc:GridStateAlterationRemedialAction;
@@ -72,7 +71,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:7bbb3343-e48b-42dd-9ca5-6ff8945ca5b0>
             rdf:type                      nc:LoadAction;
             cim:IdentifiedObject.description
-                    "Curative RA: LoadAction (15 percent load shed - Scaling factor to 0.7), a new ID is generated for the bidding zone, don't know if we already have an ID for this Bidding zone)";
+                    "Curative RA: LoadAction (30 percent load shed)";
             cim:IdentifiedObject.mRID     "7bbb3343-e48b-42dd-9ca5-6ff8945ca5b0";
             cim:IdentifiedObject.name     "RA15";
             nc:GridStateAlteration.GridStateAlterationRemedialAction

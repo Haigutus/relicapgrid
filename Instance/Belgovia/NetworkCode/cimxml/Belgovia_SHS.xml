@@ -1,12 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:nc="https://cim4.eu/ns/nc#"
-    xmlns:cim="https://cim.ucaiug.io/ns#"
-    xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:nc="https://cim4.eu/ns/nc#" xmlns:cim="https://cim.ucaiug.io/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:dcat="http://www.w3.org/ns/dcat#">
   <dcat:Dataset rdf:about="urn:uuid:79e8ace6-d345-4855-a279-95220d646012">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1"/>
@@ -17,30 +10,519 @@
     <dcat:endDate>2023-06-15T22:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>79e8ace6-d345-4855-a279-95220d646012</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Belgovia-SHS"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Belgovia_SR-SHS"/>
     <dcat:keyword>SHS</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Belgovia"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Belgovia"/>
     <dcterms:rights>Copyright</dcterms:rights>
-    <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
+    <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
     <dcterms:requires rdf:resource="urn:uuid:15c8a8ad-08d5-4b59-8417-db80e273bd1a"/>
     <dcat:startDate>2022-06-15T22:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Belgovia_SHS_1.0.0</dcterms:title>
+    <dcterms:title>202206152230_TSO-Belgovia_SR-SHS</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-SHS"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Belgovia-Transmission"/>
     <dcterms:issued>2022-06-15T22:30:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Belgovia SHS dataset.</adms:versionNotes>
   </dcat:Dataset>
-   <nc:CurrentLimitSchedule rdf:ID="_a246aa9a-1e25-4693-a681-f4f771949d2f">
+  <nc:CurrentLimitSchedule rdf:ID="_a246aa9a-1e25-4693-a681-f4f771949d2f">
     <cim:IdentifiedObject.name>CLS1</cim:IdentifiedObject.name>
     <cim:IdentifiedObject.mRID>a246aa9a-1e25-4693-a681-f4f771949d2f</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.description>CLS1</cim:IdentifiedObject.description>
     <nc:CurrentLimitSchedule.CurrentLimit rdf:resource="#_1ee85ce6-8298-c191-b8a0-9ccac2282a66"/>
-     <nc:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.none"/>
+    <nc:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.none"/>
   </nc:CurrentLimitSchedule>
   <nc:CurrentLimitTimePoint rdf:ID="_9eccd27b-3511-48a8-8fa7-a56a57f8d0c9">
     <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_a246aa9a-1e25-4693-a681-f4f771949d2f"/>
     <nc:CurrentLimitTimePoint.atTime>2023-07-22T16:00:00Z</nc:CurrentLimitTimePoint.atTime>
     <nc:CurrentLimitTimePoint.value>350</nc:CurrentLimitTimePoint.value>
   </nc:CurrentLimitTimePoint>
- </rdf:RDF>
+  <nc:CurrentLimitSchedule rdf:ID="_221f5836-dd4c-43a9-87a5-781bf085d4d1">
+    <cim:IdentifiedObject.name>DLR_UC1: DLR Schedule for BO-Line_2</cim:IdentifiedObject.name>
+    <cim:IdentifiedObject.mRID>221f5836-dd4c-43a9-87a5-781bf085d4d1</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.description>DLR_UC1: Dynamic Line Rating schedule for Belgovia-Galia tie line BO-Line_2, 15-min intervals</cim:IdentifiedObject.description>
+    <nc:CurrentLimitSchedule.CurrentLimit rdf:resource="#_b59a4b04-016f-ec37-917a-3297a36f61f8"/>
+    <nc:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.linear"/>
+  </nc:CurrentLimitSchedule>
+  <nc:CurrentLimitTimePoint rdf:ID="_42f70b11-cfd1-4f83-b752-0085e104f4fc">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T00:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1708</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_0a4ed519-1206-444c-a548-c30447da267b">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T00:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1712</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_2a4cccaa-2d77-4166-b3c9-851c84727b9a">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T00:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1716</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_36ff3e38-ab7d-45cd-84b6-ea463331dc9a">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T00:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1720</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_f05d0698-a3e9-4b6c-9cb6-5387de938e7c">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T01:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1725</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_592b6a73-65ac-46a8-849a-85ea0d6e3392">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T01:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1730</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_0697bfc9-8f90-4a4f-b066-490e223a5fb4">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T01:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1734</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_8d4a3539-7ebb-468e-a977-a0411f9ba1a4">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T01:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1739</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_23030caa-9c3d-41f5-8a32-87b5f9714746">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T02:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1745</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_855d302d-d10e-48d4-ac5a-6775ccb05afb">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T02:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1750</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_957e2528-6804-404f-97b7-e0f1f69ddd30">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T02:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1755</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_1f10c4a9-0a79-4248-b5bf-eb88b72d70a2">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T02:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1761</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_d88c836f-4740-4ac0-a541-129699b4495a">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T03:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1766</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_e8df92aa-279d-439c-b442-69c8e409df7f">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T03:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1771</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_436dd401-2df2-4a02-8d03-5f4593994c64">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T03:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1777</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_84d34495-dbfd-4a4f-9d97-4e25436c5768">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T03:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1782</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_8a7260a7-0821-466e-9ca2-65809aa839dd">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T04:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1788</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_ef800684-19bf-448a-9149-709d7fc3b2de">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T04:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1793</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_d77f6954-6ee0-4fb0-bdba-bf4102dda1ff">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T04:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1798</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_02c41736-6171-45ea-8c72-1116ce5fa523">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T04:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1803</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_dafbb8f8-1914-4510-84c1-8a3dfedf9c9c">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T05:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1808</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_c46f7a65-3110-4ec8-afc0-17c49cb39a83">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T05:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1813</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_b99337f7-ddd5-4b04-ba6a-cd73cf5e108a">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T05:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1818</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_d48b27f3-c8c8-47ea-8212-73c0336c648d">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T05:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1822</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_168c373f-e4ea-4c2e-b98b-2686d2bc486b">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T06:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1826</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_b83ab124-503a-45a6-8174-c5eb9bc7052e">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T06:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1830</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_eb71c33e-8b9a-4b0f-83e9-e7c5855c44f9">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T06:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1834</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_fe2563e0-d956-466b-9959-c6c28f402475">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T06:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1838</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_8d02b362-2a17-45e0-b491-e3f222063793">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T07:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1841</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_c1686635-f983-4154-82dc-0998d976de1f">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T07:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1844</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_0fbc6ec5-c7e5-4c01-97ba-05722c2c4d0b">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T07:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1846</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_530f5f38-cd43-4680-ab98-13033feba80d">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T07:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1848</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_fa5474c2-abdc-4092-a40a-eeb437157735">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T08:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1850</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_8488b2a0-05d2-46e9-ad21-63950ad5c04b">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T08:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1852</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_0ab99512-d5c9-426a-afbd-1c6962814691">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T08:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1853</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_19311752-1b17-4a17-bdf4-9a312240d7d3">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T08:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1854</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_6580da26-c953-4763-99a2-f4340d108632">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T09:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1854</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_5ab4d9a6-10f2-4462-af18-846411988fc5">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T09:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1854</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_f14a5ab1-621b-4a8b-b834-0d0c51fa8c6c">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T09:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1854</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_ac7abea3-ed8d-41ba-b43b-7dc8799c99e2">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T09:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1854</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_ad944d85-ff7f-4197-b5f4-1e9325793dc5">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T10:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1853</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_4ea0cdc8-14ea-471a-ae7b-f0a5012ca703">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T10:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1851</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_b504cf1e-e02b-4a0b-8b8c-788f340e0d2c">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T10:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1850</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_0db42a98-7a02-4737-b664-63d40984c8c1">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T10:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1848</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_5885c842-f8a4-47ca-92d0-4734fc218905">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T11:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1845</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_56c913f9-adaf-4cbd-9f69-28c14c26c7e7">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T11:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1843</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_1de2a50f-e70c-4016-9080-1bd9be616469">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T11:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1840</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_2ad9f3a5-edac-4091-9394-fb6853123e89">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T11:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1837</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_bc954a5f-dbb6-4bba-81a9-0d506faac5c2">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T12:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1833</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_c2d3d5ae-2b5f-400c-a2af-5d418f69a554">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T12:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1829</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_35e787a4-e2d5-459a-9571-63972840df86">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T12:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1825</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_4906756c-79c8-40c3-9ce3-98d168fcfb9a">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T12:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1821</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_7541bb32-4e48-4567-a04f-879ddefd6f78">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T13:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1817</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_3160d6e5-2f1f-49ce-a117-e8d3801cc620">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T13:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1812</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_04151c2d-0fee-497d-8bee-d9f6061f477b">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T13:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1807</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_cae6f806-8764-430d-bbe3-84639d5c45c0">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T13:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1802</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_f2e9d950-7d48-459e-8ba2-53a4778ce998">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T14:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1797</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_f39f5299-477c-4c2e-a101-c463e1096f1e">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T14:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1792</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_e75c30bc-17dd-42c2-b483-d4e29206a3aa">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T14:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1786</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_e27a6df9-2a81-40e0-a70d-419e360f7b6a">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T14:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1781</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_dd41c01d-9767-426e-98b1-559fe496fb0b">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T15:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1776</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_cb8680ff-ff5e-4524-9f12-d49e7fcb4ada">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T15:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1770</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_faefeb41-810a-45d1-919e-fa8c59e46c4c">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T15:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1765</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_ca94285b-7027-4b30-ab5f-e2c8abf17358">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T15:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1759</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_762fafb9-49c5-4639-9e82-148786d19b5e">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T16:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1754</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_f3324829-e7e8-48af-9c02-ec2568d17c30">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T16:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1748</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_24a4cd4d-c4ce-451e-8387-56f9bc632108">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T16:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1743</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_a757d50f-a862-4cc4-a26f-4f59b0c22b70">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T16:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1738</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_27f1de2c-105f-409b-a101-95cce3e97b32">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T17:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1733</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_07c38961-51b7-4105-8f25-e41ce4c4e53a">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T17:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1728</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_91006124-493c-413a-9846-186f0fe5d727">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T17:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1724</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_db642def-90e1-4b3b-949b-a5a8b7b8b8b6">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T17:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1719</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_c2d3dc83-d4d9-41da-abf8-3c303193e6f2">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T18:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1715</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_a4f4c466-1e07-4e50-904e-053394feb911">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T18:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1711</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_19ab33a0-d7ea-4f5b-9feb-cb8e5e230433">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T18:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1707</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_dca316ed-7c4b-4531-b9a7-389eb3124d7d">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T18:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1704</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_de2cc964-f56b-44c4-864f-a1cdb860ea71">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T19:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1701</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_34510267-7be5-4b3a-b93f-fdb6a83e6adf">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T19:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1698</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_02633cac-65ee-4140-8251-7000f8b6482e">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T19:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1695</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_df55dd98-2440-423c-b3d7-b4e0a54661db">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T19:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1693</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_ef2051e7-e421-49c0-8e26-b2166a2e3e29">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T20:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1691</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_a65b34d4-bd42-4374-8e64-59d1a8082e39">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T20:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1690</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_104a50f9-6a23-4e97-a136-1c50f5ee7a8d">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T20:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1689</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_06f6d71c-1869-4831-b547-690e8d07919c">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T20:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1688</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_26069d65-d363-4974-a9ef-d4da809f8007">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T21:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1687</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_39752c67-1db3-450e-8583-4df1f1d3c0e1">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T21:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1687</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_583a88e5-6a56-4f58-98aa-a3cd358094ba">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T21:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1687</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_910acb39-c3f1-417c-bb24-6ada03be8e78">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T21:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1688</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_9893ce23-b972-4ec4-8ce9-6ade89f97803">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T22:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1689</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_7de2d710-d37f-4c85-9cf8-7e31e5e9a9cc">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T22:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1690</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_00b1f8b9-047f-41b7-9e88-91da978562e0">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T22:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1692</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_97344de8-d3c7-4ef7-a9d3-53eea88502d2">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T22:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1694</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_aa29264a-eb99-42e2-84db-5f58b02e2d71">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T23:00:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1696</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_8103c6fc-9b5b-4121-9254-2b0d46da9b77">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T23:15:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1699</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_f060e561-66ec-43bd-ac1b-3a9695910eeb">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T23:30:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1702</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+  <nc:CurrentLimitTimePoint rdf:ID="_6c00472b-3ea9-43b2-ab6d-48485de8042f">
+    <nc:CurrentLimitTimePoint.CurrentLimitSchedule rdf:resource="#_221f5836-dd4c-43a9-87a5-781bf085d4d1"/>
+    <nc:CurrentLimitTimePoint.atTime>2023-07-22T23:45:00Z</nc:CurrentLimitTimePoint.atTime>
+    <nc:CurrentLimitTimePoint.value>1705</nc:CurrentLimitTimePoint.value>
+  </nc:CurrentLimitTimePoint>
+</rdf:RDF>

@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -23,7 +22,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "34334895-232c-75cb-9a58-36c799a1a485";
             cim:IdentifiedObject.name  "BP HVDC GA-NH NH side";
             cim:TopologicalNode.BaseVoltage
-                    <urn:uuid:a7f1d8de-d658-428a-821b-3a5ae5965fd1>;
+                    <urn:uuid:7891a026ba2c42098556665efd13ba94>;
             cim:TopologicalNode.ConnectivityNodeContainer
                     <urn:uuid:e61f8ecf-8129-4702-a3a2-826bdf5ad13d> .
     
@@ -49,7 +48,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dct:conformsTo           <http://iec.ch/TC57/ns/CIM/Topology-EU/3.0>;
             dct:description          "The topology dataset for Nordheim, which is part of the ReliCapGrid.";
             dct:identifier           "74def37a-c099-4e6a-85b4-edd7c43a5a7a";
-            dct:issued               "2025-02-08"^^xsd:date;
+            dct:issued               "2025-02-08T10:43:06Z"^^xsd:dateTime;
             dct:requires             <urn:uuid:994972cb-891c-4ad3-a06d-abaa9a5c4a03>;
             dct:temporal             [ rdf:type        dct:PeriodOfTime;
                                        dcat:endDate    "2022-06-17T00:30:00Z"^^xsd:dateTime;

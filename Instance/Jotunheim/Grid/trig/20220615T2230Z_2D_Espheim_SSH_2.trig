@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -172,10 +171,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
-    <urn:uuid:eea01e1b-1682-d8a8-372f-8eafb5f3af8d>
-            rdf:type                cim:VoltageLimit;
-            cim:VoltageLimit.value  "420"^^xsd:float .
-    
     <urn:uuid:5e247d84-0ec9-4123-b760-d791955d2e4f>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -303,6 +298,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:6c0c64dc-0fc2-4c7d-a164-7365a880b354>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:a1a444e9-d063-4b56-9c81-13c217703deb>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
@@ -3126,6 +3125,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:d59d31c3-8ea3-40a4-b2d7-cf60e3148d71>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:e349f93c-3685-4ea9-a791-a8c1ed359737>
+            rdf:type                        cim:ExternalNetworkInjection;
+            cim:Equipment.inService         true;
+            cim:ExternalNetworkInjection.p  "1"^^xsd:float;
+            cim:ExternalNetworkInjection.q  "0"^^xsd:float;
+            cim:ExternalNetworkInjection.referencePriority
+                    0;
+            cim:RegulatingCondEq.controlEnabled
+                    true .
     
     <urn:uuid:044a10e4-c766-11e1-8775-005056c00008>
             rdf:type                 cim:Equipment;
@@ -6514,10 +6523,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Switch.locked        false;
             cim:Switch.open          false .
     
-    <urn:uuid:ee433f38-c62f-4cb1-c431-fcdffe4e0983>
-            rdf:type                    cim:Terminal;
-            cim:ACDCTerminal.connected  true .
-    
     <urn:uuid:5810d882-9e34-4c49-b8b4-bffa567265e1>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
@@ -9323,6 +9328,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:Equipment.inService  true;
             cim:Switch.locked        false;
             cim:Switch.open          false .
+    
+    <urn:uuid:b33c3968-18ea-4b22-9b4f-d6de8b8e0b46>
+            rdf:type                        cim:RegulatingControl;
+            cim:RegulatingControl.discrete  false;
+            cim:RegulatingControl.enabled   true;
+            cim:RegulatingControl.targetValue
+                    "220"^^xsd:float;
+            cim:RegulatingControl.targetValueUnitMultiplier
+                    cim:UnitMultiplier.k .
     
     <urn:uuid:04524e4a-c766-11e1-8775-005056c00008>
             rdf:type                 cim:ConformLoad;
@@ -15498,6 +15512,16 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     
+    <urn:uuid:6843c26a-5265-4cc7-b88b-6346257770bd>
+            rdf:type                        cim:ExternalNetworkInjection;
+            cim:Equipment.inService         true;
+            cim:ExternalNetworkInjection.p  "-1"^^xsd:float;
+            cim:ExternalNetworkInjection.q  "0"^^xsd:float;
+            cim:ExternalNetworkInjection.referencePriority
+                    0;
+            cim:RegulatingCondEq.controlEnabled
+                    true .
+    
     <urn:uuid:7da359fc-4e24-4681-a201-2454239749fa>
             rdf:type                 cim:Disconnector;
             cim:Equipment.inService  true;
@@ -16755,7 +16779,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dct:conformsTo           <http://iec.ch/TC57/ns/CIM/SteadyStateHypothesis-EU/3.0>;
             dct:description          "The steady-state hypothesis dataset for Espheim, updated by Jotunheim.";
             dct:identifier           "5ecd2a3e-2330-4b21-9be1-c26ec1ab5f38";
-            dct:issued               "2025-02-08"^^xsd:date;
+            dct:issued               "2025-02-08T21:20:31Z"^^xsd:dateTime;
             dct:requires             <urn:uuid:e3beb946-afc6-4304-9660-517d5115cbb0>;
             dct:temporal             [ rdf:type        dct:PeriodOfTime;
                                        dcat:endDate    "2022-06-17T00:30:00Z"^^xsd:dateTime;
@@ -16948,10 +16972,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:044c33c9-c766-11e1-8775-005056c00008>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
-    
-    <urn:uuid:050bd9ce-ce4b-980c-8f8b-dc476f0a9d0a>
-            rdf:type                 cim:Equipment;
-            cim:Equipment.inService  true .
     
     <urn:uuid:a2095dca-8ba5-421b-bee7-29e414e3bc0f>
             rdf:type                    cim:Terminal;
@@ -18277,6 +18297,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:f142da17-85d3-43b7-8b34-314493892baf>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:c31869c1-26d1-4435-9189-2d4fc7f381b7>
+            rdf:type                        cim:RegulatingControl;
+            cim:RegulatingControl.discrete  false;
+            cim:RegulatingControl.enabled   true;
+            cim:RegulatingControl.targetValue
+                    "220"^^xsd:float;
+            cim:RegulatingControl.targetValueUnitMultiplier
+                    cim:UnitMultiplier.k .
     
     <urn:uuid:d6f0e100-8730-46cf-aa13-8ff2fb45417b>
             rdf:type                    cim:Terminal;
@@ -23625,6 +23654,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:ACDCTerminal.connected  true .
     
     <urn:uuid:3d60766e-665c-4143-93ed-2a784d760d6a>
+            rdf:type                    cim:Terminal;
+            cim:ACDCTerminal.connected  true .
+    
+    <urn:uuid:d089b6ae-b343-4fee-b541-914b73ac559e>
             rdf:type                    cim:Terminal;
             cim:ACDCTerminal.connected  true .
     

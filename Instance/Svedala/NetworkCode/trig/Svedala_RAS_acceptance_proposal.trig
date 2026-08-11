@@ -1,0 +1,211 @@
+PREFIX adms:     <http://www.w3.org/ns/adms#>
+PREFIX cim:      <https://cim.ucaiug.io/ns#>
+PREFIX dcat:     <http://www.w3.org/ns/dcat#>
+PREFIX dcat-cim: <https://cim4.eu/ns/dcat-cim#>
+PREFIX dcatcim:  <https://cim4.eu/ns/dcatcim#>
+PREFIX dct:      <http://purl.org/dc/terms/>
+PREFIX dcterms:  <http://purl.org/dc/terms/>
+PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
+PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
+PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
+PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
+PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
+PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
+PREFIX nc:       <https://cim4.eu/ns/nc#>
+PREFIX prov:     <http://www.w3.org/ns/prov#>
+PREFIX pti:      <http://www.pti-us.com/PTI_CIM-schema-cim16#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfg:     <http://www.w3.org/2004/03/trix/rdfg-1/>
+PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+
+<urn:uuid:adaaff90-c3bd-463b-a405-b84d7389b351> {
+    <urn:uuid:a99b012c-7603-48f3-bfe1-2636ea242832>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:cefc01ca-f500-4215-9c86-dbef2b2cbdd2>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "a99b012c-7603-48f3-bfe1-2636ea242832" .
+    
+    <urn:uuid:f641de8f-61b4-4df7-8cfc-16b582d6d82b>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:279bfb00-1b2a-4592-af3a-dba9403d1abd>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "f641de8f-61b4-4df7-8cfc-16b582d6d82b" .
+    
+    <urn:uuid:92d129af-b852-4931-b7fa-62c567e3eedc>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:589e558b-937d-4497-9e11-12dbd7aaf12e>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "92d129af-b852-4931-b7fa-62c567e3eedc" .
+    
+    <urn:uuid:8e91d112-2dfb-4491-a3ca-3c6970a65457>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:1ca7da8c-faa6-42a1-9949-56da97dc3a23>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "8e91d112-2dfb-4491-a3ca-3c6970a65457" .
+    
+    <urn:uuid:595e55c7-b635-416d-97e8-95485951a91e>
+            rdf:type                    nc:EventTimePoint;
+            nc:EventTimePoint.EventSchedule
+                    <urn:uuid:bbf76944-5049-4393-89c4-4f0e4d34c086>;
+            nc:EventTimePoint.atTime    "2024-11-20T02:30:00Z"^^xsd:dateTime;
+            nc:EventTimePoint.isActive  false .
+    
+    <urn:uuid:64e07907-7deb-413f-8f9a-dd0a2e07a85a>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:aa124b6e-4df6-485e-bdce-9793b7bcdb3b>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "64e07907-7deb-413f-8f9a-dd0a2e07a85a" .
+    
+    <urn:uuid:0c827624-5b2c-480d-9ca2-adc07c8778c1>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:231c3e6a-b437-47d2-827f-6c7d813936ea>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "0c827624-5b2c-480d-9ca2-adc07c8778c1" .
+    
+    <urn:uuid:bbf76944-5049-4393-89c4-4f0e4d34c086>
+            rdf:type                   nc:EventSchedule;
+            cim:IdentifiedObject.mRID  "bbf76944-5049-4393-89c4-4f0e4d34c086";
+            cim:IdentifiedObject.name  "TP RA One Switch";
+            nc:BaseTimeSeries.interpolationKind
+                    nc:TimeSeriesInterpolationKind.none;
+            nc:EventSchedule.RemedialActionSchedule
+                    <urn:uuid:51361821-0a40-4e5a-a49d-29c266ea2ecc> .
+    
+    <urn:uuid:96f93b71-420f-456f-932e-9ac3f724b683>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:17527637-6099-4ee6-8b21-fea8dfec4c75>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.refused;
+            nc:RemedialActionScheduleResponse.mRID
+                    "96f93b71-420f-456f-932e-9ac3f724b683" .
+    
+    <urn:uuid:f7231aa5-d497-41f3-a5d5-9d4af74444f0>
+            rdf:type  nc:RemedialActionScheduleDependency;
+            nc:RemedialActionScheduleDependency.ProposedRemedialActionSchedule
+                    <urn:uuid:51361821-0a40-4e5a-a49d-29c266ea2ecc>;
+            nc:RemedialActionScheduleDependency.ReplacedRemedialActionSchedule
+                    <urn:uuid:17527637-6099-4ee6-8b21-fea8dfec4c75>;
+            nc:RemedialActionScheduleDependency.kind
+                    nc:RemedialActionScheduleDependencyKind.none;
+            nc:RemedialActionScheduleDependency.mRID
+                    "f7231aa5-d497-41f3-a5d5-9d4af74444f0" .
+    
+    <urn:uuid:e6177f83-c51b-4413-943c-82d33e16c11a>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:87e90c47-43d8-4e5c-b2ad-5c67d3a74842>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "e6177f83-c51b-4413-943c-82d33e16c11a" .
+    
+    <urn:uuid:c2048707-74c1-45a5-a41f-ceac1e2a3761>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:5ceba553-3b0d-4ff6-9780-3d395e851f48>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "c2048707-74c1-45a5-a41f-ceac1e2a3761" .
+    
+    <urn:uuid:adaaff90-c3bd-463b-a405-b84d7389b351>
+            rdf:type                  dcat:Dataset;
+            dct:accessRights          <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo            <https://ap.cim4.eu/RemedialActionSchedule/2.4> , cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+            dct:description           "This is an example of remedial action schedule profile dataset proposed by a TSO."@en;
+            dct:identifier            "adaaff90-c3bd-463b-a405-b84d7389b351";
+            dct:issued                "2022-06-15T22:30:00Z"^^xsd:dateTime;
+            dct:license               <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher             <https://energy.referencedata.eu/Test/Party/Svedala>;
+            dct:requires              <urn:uuid:f7b94ef6-e043-4d2a-a359-2718e6e20507>;
+            dct:rights                "Copyright";
+            dct:rightsHolder          "ENTSO-E";
+            dct:spatial               <https://energy.referencedata.eu/Test/Frame/Svedala-Power-Transmission-System>;
+            dct:title                 "20220615_Svedala_RAS_1.0.0";
+            dcat:endDate              "2023-06-15T22:30:00Z"^^xsd:dateTime;
+            dcat:isVersionOf          <https://energy.referencedata.eu/Test/Model/Svedala-RAS>;
+            dcat:keyword              "RAS";
+            dcat:startDate            "2022-06-15T22:30:00Z"^^xsd:dateTime;
+            dcat:version              "1.0.0";
+            prov:generatedAtTime      "2022-06-10T07:06:25Z"^^xsd:dateTime;
+            prov:wasGeneratedBy       <https://energy.referencedata.eu/Action/CGM-RAS> .
+    
+    <urn:uuid:51361821-0a40-4e5a-a49d-29c266ea2ecc>
+            rdf:type                   nc:RemedialActionSchedule;
+            cim:IdentifiedObject.mRID  "51361821-0a40-4e5a-a49d-29c266ea2ecc";
+            cim:IdentifiedObject.name  "TP RA One Switch";
+            nc:RemedialActionSchedule.RemedialAction
+                    <urn:uuid:6d2c8901-d068-4d22-8ce9-7379644b4f17>;
+            nc:RemedialActionSchedule.statusKind
+                    nc:RemedialActionScheduleStatusKind.ordered .
+    
+    <urn:uuid:92f63706-a704-43e6-80f5-7803f5ece294>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:26035028-03ee-4e29-bda4-0817694a3d30>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "92f63706-a704-43e6-80f5-7803f5ece294" .
+    
+    <urn:uuid:f9d89230-f625-4c58-a7a4-ecbc64be95b7>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:eb4861bc-3bc1-40ae-97e2-5e4d5a3aec2c>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "f9d89230-f625-4c58-a7a4-ecbc64be95b7" .
+    
+    <urn:uuid:4c87f8d4-6e7c-492d-92e4-1a4a7736b4e5>
+            rdf:type  nc:RemedialActionScheduleResponse;
+            nc:RemedialActionScheduleResponse.RemedialActionSchedule
+                    <urn:uuid:264f9a19-ae29-4c95-b44c-6b7919ca0f6c>;
+            nc:RemedialActionScheduleResponse.RespondingEntity
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:RemedialActionScheduleResponse.kind
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "4c87f8d4-6e7c-492d-92e4-1a4a7736b4e5" .
+}

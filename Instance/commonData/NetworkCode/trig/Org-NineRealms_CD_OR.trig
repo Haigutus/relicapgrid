@@ -1,0 +1,71 @@
+PREFIX adms:     <http://www.w3.org/ns/adms#>
+PREFIX cim:      <https://cim.ucaiug.io/ns#>
+PREFIX dcat:     <http://www.w3.org/ns/dcat#>
+PREFIX dcat-cim: <https://cim4.eu/ns/dcat-cim#>
+PREFIX dcatcim:  <https://cim4.eu/ns/dcatcim#>
+PREFIX dct:      <http://purl.org/dc/terms/>
+PREFIX dcterms:  <http://purl.org/dc/terms/>
+PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
+PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
+PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
+PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
+PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
+PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
+PREFIX nc:       <https://cim4.eu/ns/nc#>
+PREFIX prov:     <http://www.w3.org/ns/prov#>
+PREFIX pti:      <http://www.pti-us.com/PTI_CIM-schema-cim16#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfg:     <http://www.w3.org/2004/03/trix/rdfg-1/>
+PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+
+<urn:uuid:7508c65c-0ffe-4036-8152-3dea83062287> {
+    <urn:uuid:3dacaa80-ee35-458c-bccd-7b6530a292c9>
+            rdf:type            nc:ObjectType;
+            nc:ObjectType.type  "DSO_Injection" .
+    
+    <urn:uuid:e26959c9-19b3-417a-9263-dd87e970fbd4>
+            rdf:type                     cim:NameType;
+            cim:NameType.description     "Codes issued by NineRealms.";
+            cim:NameType.name            "NineRealms Code";
+            nc:NameType.NamingAuthority  <urn:uuid:2fdd0646-4b9c-484b-b7cd-24d497fdfa8e>;
+            nc:NameType.mRID             "e26959c9-19b3-417a-9263-dd87e970fbd4" .
+    
+    <urn:uuid:7073634a-393e-443c-9d96-f181f861ae4a>
+            rdf:type                     cim:NameType;
+            cim:NameType.description     "Long Name from Element List.";
+            cim:NameType.name            "Long Name";
+            nc:NameType.NamingAuthority  <urn:uuid:ae7f97f4-dc2d-4960-b61b-b75ac9dafb34>;
+            nc:NameType.mRID             "7073634a-393e-443c-9d96-f181f861ae4a" .
+    
+    <urn:uuid:ae7f97f4-dc2d-4960-b61b-b75ac9dafb34>
+            rdf:type                        nc:NamingAuthority;
+            nc:NamingAuthority.description  "This is the authority for Element ID.";
+            nc:NamingAuthority.mRID         "ae7f97f4-dc2d-4960-b61b-b75ac9dafb34";
+            nc:NamingAuthority.name         "NineRealms" .
+    
+    <urn:uuid:7508c65c-0ffe-4036-8152-3dea83062287>
+            rdf:type              dcat:Dataset;
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://ap.cim4.eu/ObjectRegistry/2.2> , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#>;
+            dct:description       "Common data for OPC that includes NameType, NamingAuthority and ObjectType."@en;
+            dct:identifier        "7508c65c-0ffe-4036-8152-3dea83062287";
+            dct:issued            "2026-05-05T10:00:00Z"^^xsd:dateTime;
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Org-NineRealms>;
+            dct:rights            "Copyright";
+            dct:rightsHolder      "ENTSO-E";
+            dct:spatial           <https://energy.referencedata.eu/test/frame/NineRealms-Transmission>;
+            dct:title             "20260505_Org-NineRealms_CD_OR_v1-0-0";
+            adms:versionNotes     "Common data for OPC that includes NameType, NamingAuthority and ObjectType."@en;
+            dcat:isVersionOf      <https://energy.referencedata.eu/test/model/Org-NineRealms_CD>;
+            dcat:keyword          "CommonData" , "OR" , "CD";
+            dcat:version          "1.0.0";
+            prov:generatedAtTime  "2026-05-05T10:00:00Z"^^xsd:dateTime;
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/activity/CD> .
+    
+    <urn:uuid:2fdd0646-4b9c-484b-b7cd-24d497fdfa8e>
+            rdf:type                        nc:NamingAuthority;
+            nc:NamingAuthority.description  "The authority that issues NineRealms Codes.";
+            nc:NamingAuthority.mRID         "2fdd0646-4b9c-484b-b7cd-24d497fdfa8e";
+            nc:NamingAuthority.name         "Jotunheim" .
+}

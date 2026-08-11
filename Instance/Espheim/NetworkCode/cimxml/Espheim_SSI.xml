@@ -5,8 +5,8 @@
     xmlns:nc="https://cim4.eu/ns/nc#"
     xmlns:cim="https://cim.ucaiug.io/ns#"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eumd="https://cim4.eu/ns/Metadata-European#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#" > 
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" >
   <dcat:Dataset rdf:about="urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/SteadyStateInstruction/2.4"/>
@@ -17,19 +17,21 @@
     <dcat:endDate>2022-06-16T00:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda</dcterms:identifier>
-    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Espheim-SSI"/>
+    <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/TSO-Espheim_SR-SSI"/>
     <dcat:keyword>SSI</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Espheim"/>
+    <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/TSO-Espheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
     <dcterms:requires rdf:resource="urn:uuid:e3453a3c-8639-4648-a662-d6c15f512965"/>
     <dcat:startDate>2022-06-15T23:30:00Z</dcat:startDate>
-    <dcterms:title>20220615_Espheim_SSI_1.0.0</dcterms:title>
+    <dcterms:title>202206152330_TSO-Espheim_SR-SSI</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-SSI"/>
-    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Power-Transmission-System"/>
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/Test/Frame/Espheim-Transmission"/>
     <dcterms:issued>2022-06-15T23:30:00Z</dcterms:issued>
+    <dcterms:type rdf:resource="https://energy.referencedata.eu/type/CIM-PowerSystemModel"/>
+    <adms:versionNotes xml:lang="en">Initial version of the Espheim SSI dataset.</adms:versionNotes>
   </dcat:Dataset>
   
 
@@ -38,5 +40,6 @@
   </nc:TopologyAction>
   <nc:EquivalentGeneratingUnit rdf:about="#_0b23d814-7559-4edf-8c55-40af585209e6">
     <nc:GeneratingUnit.isRamping>false</nc:GeneratingUnit.isRamping>
+    <cim:Equipment.inService>true</cim:Equipment.inService>
   </nc:EquivalentGeneratingUnit>
 </rdf:RDF>

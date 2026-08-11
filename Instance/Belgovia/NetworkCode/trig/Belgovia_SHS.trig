@@ -6,7 +6,6 @@ PREFIX dcterms:  <http://purl.org/dc/terms/>
 PREFIX dm:       <http://iec.ch/TC57/61970-552/DifferenceModel/1#>
 PREFIX entsoe2:  <http://entsoe.eu/CIM/SchemaExtension/3/2#>
 PREFIX eu:       <https://cim.ucaiug.io/ns/eu#>
-PREFIX eumd:     <https://cim4.eu/ns/Metadata-European#>
 PREFIX icim:     <http://iec.ch/TC57/2013/CIM-schema-cim16-info#>
 PREFIX json-ld:  <https://www.w3.org/ns/json-ld#>
 PREFIX md:       <http://iec.ch/TC57/61970-552/ModelDescription/1#>
@@ -18,6 +17,81 @@ PREFIX rdfg:     <http://www.w3.org/2004/03/trix/rdfg-1/>
 PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 
 <urn:uuid:79e8ace6-d345-4855-a279-95220d646012> {
+    <urn:uuid:aa29264a-eb99-42e2-84db-5f58b02e2d71>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T23:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1696"^^xsd:float .
+    
+    <urn:uuid:df55dd98-2440-423c-b3d7-b4e0a54661db>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T19:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1693"^^xsd:float .
+    
+    <urn:uuid:0db42a98-7a02-4737-b664-63d40984c8c1>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T10:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1848"^^xsd:float .
+    
+    <urn:uuid:8103c6fc-9b5b-4121-9254-2b0d46da9b77>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T23:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1699"^^xsd:float .
+    
+    <urn:uuid:1f10c4a9-0a79-4248-b5bf-eb88b72d70a2>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T02:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1761"^^xsd:float .
+    
+    <urn:uuid:db642def-90e1-4b3b-949b-a5a8b7b8b8b6>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T17:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1719"^^xsd:float .
+    
+    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>
+            rdf:type                   nc:CurrentLimitSchedule;
+            cim:IdentifiedObject.description
+                    "DLR_UC1: Dynamic Line Rating schedule for Belgovia-Galia tie line BO-Line_2, 15-min intervals";
+            cim:IdentifiedObject.mRID  "221f5836-dd4c-43a9-87a5-781bf085d4d1";
+            cim:IdentifiedObject.name  "DLR_UC1: DLR Schedule for BO-Line_2";
+            nc:BaseTimeSeries.interpolationKind
+                    nc:TimeSeriesInterpolationKind.linear;
+            nc:CurrentLimitSchedule.CurrentLimit
+                    <urn:uuid:b59a4b04-016f-ec37-917a-3297a36f61f8> .
+    
+    <urn:uuid:cae6f806-8764-430d-bbe3-84639d5c45c0>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T13:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1802"^^xsd:float .
+    
+    <urn:uuid:c46f7a65-3110-4ec8-afc0-17c49cb39a83>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T05:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1813"^^xsd:float .
+    
     <urn:uuid:a246aa9a-1e25-4693-a681-f4f771949d2f>
             rdf:type                   nc:CurrentLimitSchedule;
             cim:IdentifiedObject.description
@@ -29,31 +103,587 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:CurrentLimitSchedule.CurrentLimit
                     <urn:uuid:1ee85ce6-8298-c191-b8a0-9ccac2282a66> .
     
+    <urn:uuid:104a50f9-6a23-4e97-a136-1c50f5ee7a8d>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T20:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1689"^^xsd:float .
+    
+    <urn:uuid:d48b27f3-c8c8-47ea-8212-73c0336c648d>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T05:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1822"^^xsd:float .
+    
+    <urn:uuid:07c38961-51b7-4105-8f25-e41ce4c4e53a>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T17:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1728"^^xsd:float .
+    
+    <urn:uuid:39752c67-1db3-450e-8583-4df1f1d3c0e1>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T21:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1687"^^xsd:float .
+    
     <urn:uuid:9eccd27b-3511-48a8-8fa7-a56a57f8d0c9>
             rdf:type                        nc:CurrentLimitTimePoint;
-            cim:IdentifiedObject.description
-                    "CLTP1";
-            cim:IdentifiedObject.mRID       "9eccd27b-3511-48a8-8fa7-a56a57f8d0c9";
-            cim:IdentifiedObject.name       "CLTP1";
             nc:CurrentLimitTimePoint.CurrentLimitSchedule
                     <urn:uuid:a246aa9a-1e25-4693-a681-f4f771949d2f>;
             nc:CurrentLimitTimePoint.atTime
                     "2023-07-22T16:00:00Z"^^xsd:dateTime;
             nc:CurrentLimitTimePoint.value  "350"^^xsd:float .
     
+    <urn:uuid:19311752-1b17-4a17-bdf4-9a312240d7d3>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T08:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1854"^^xsd:float .
+    
+    <urn:uuid:c2d3dc83-d4d9-41da-abf8-3c303193e6f2>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T18:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1715"^^xsd:float .
+    
+    <urn:uuid:8a7260a7-0821-466e-9ca2-65809aa839dd>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T04:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1788"^^xsd:float .
+    
+    <urn:uuid:2a4cccaa-2d77-4166-b3c9-851c84727b9a>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T00:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1716"^^xsd:float .
+    
+    <urn:uuid:19ab33a0-d7ea-4f5b-9feb-cb8e5e230433>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T18:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1707"^^xsd:float .
+    
+    <urn:uuid:c1686635-f983-4154-82dc-0998d976de1f>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T07:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1844"^^xsd:float .
+    
+    <urn:uuid:faefeb41-810a-45d1-919e-fa8c59e46c4c>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T15:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1765"^^xsd:float .
+    
+    <urn:uuid:2ad9f3a5-edac-4091-9394-fb6853123e89>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T11:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1837"^^xsd:float .
+    
+    <urn:uuid:5ab4d9a6-10f2-4462-af18-846411988fc5>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T09:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1854"^^xsd:float .
+    
+    <urn:uuid:f060e561-66ec-43bd-ac1b-3a9695910eeb>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T23:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1702"^^xsd:float .
+    
+    <urn:uuid:e27a6df9-2a81-40e0-a70d-419e360f7b6a>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T14:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1781"^^xsd:float .
+    
+    <urn:uuid:ad944d85-ff7f-4197-b5f4-1e9325793dc5>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T10:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1853"^^xsd:float .
+    
+    <urn:uuid:762fafb9-49c5-4639-9e82-148786d19b5e>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T16:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1754"^^xsd:float .
+    
+    <urn:uuid:9893ce23-b972-4ec4-8ce9-6ade89f97803>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T22:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1689"^^xsd:float .
+    
+    <urn:uuid:36ff3e38-ab7d-45cd-84b6-ea463331dc9a>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T00:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1720"^^xsd:float .
+    
+    <urn:uuid:a4f4c466-1e07-4e50-904e-053394feb911>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T18:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1711"^^xsd:float .
+    
+    <urn:uuid:530f5f38-cd43-4680-ab98-13033feba80d>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T07:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1848"^^xsd:float .
+    
+    <urn:uuid:cb8680ff-ff5e-4524-9f12-d49e7fcb4ada>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T15:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1770"^^xsd:float .
+    
+    <urn:uuid:dafbb8f8-1914-4510-84c1-8a3dfedf9c9c>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T05:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1808"^^xsd:float .
+    
+    <urn:uuid:d77f6954-6ee0-4fb0-bdba-bf4102dda1ff>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T04:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1798"^^xsd:float .
+    
+    <urn:uuid:dca316ed-7c4b-4531-b9a7-389eb3124d7d>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T18:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1704"^^xsd:float .
+    
+    <urn:uuid:d88c836f-4740-4ac0-a541-129699b4495a>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T03:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1766"^^xsd:float .
+    
+    <urn:uuid:f14a5ab1-621b-4a8b-b834-0d0c51fa8c6c>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T09:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1854"^^xsd:float .
+    
+    <urn:uuid:e75c30bc-17dd-42c2-b483-d4e29206a3aa>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T14:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1786"^^xsd:float .
+    
+    <urn:uuid:7541bb32-4e48-4567-a04f-879ddefd6f78>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T13:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1817"^^xsd:float .
+    
+    <urn:uuid:3160d6e5-2f1f-49ce-a117-e8d3801cc620>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T13:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1812"^^xsd:float .
+    
+    <urn:uuid:8488b2a0-05d2-46e9-ad21-63950ad5c04b>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T08:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1852"^^xsd:float .
+    
+    <urn:uuid:0fbc6ec5-c7e5-4c01-97ba-05722c2c4d0b>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T07:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1846"^^xsd:float .
+    
+    <urn:uuid:23030caa-9c3d-41f5-8a32-87b5f9714746>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T02:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1745"^^xsd:float .
+    
+    <urn:uuid:00b1f8b9-047f-41b7-9e88-91da978562e0>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T22:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1692"^^xsd:float .
+    
+    <urn:uuid:91006124-493c-413a-9846-186f0fe5d727>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T17:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1724"^^xsd:float .
+    
+    <urn:uuid:8d4a3539-7ebb-468e-a977-a0411f9ba1a4>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T01:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1739"^^xsd:float .
+    
+    <urn:uuid:35e787a4-e2d5-459a-9571-63972840df86>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T12:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1825"^^xsd:float .
+    
+    <urn:uuid:5885c842-f8a4-47ca-92d0-4734fc218905>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T11:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1845"^^xsd:float .
+    
+    <urn:uuid:06f6d71c-1869-4831-b547-690e8d07919c>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T20:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1688"^^xsd:float .
+    
+    <urn:uuid:fe2563e0-d956-466b-9959-c6c28f402475>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T06:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1838"^^xsd:float .
+    
+    <urn:uuid:dd41c01d-9767-426e-98b1-559fe496fb0b>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T15:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1776"^^xsd:float .
+    
+    <urn:uuid:bc954a5f-dbb6-4bba-81a9-0d506faac5c2>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T12:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1833"^^xsd:float .
+    
+    <urn:uuid:ef800684-19bf-448a-9149-709d7fc3b2de>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T04:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1793"^^xsd:float .
+    
+    <urn:uuid:b99337f7-ddd5-4b04-ba6a-cd73cf5e108a>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T05:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1818"^^xsd:float .
+    
+    <urn:uuid:7de2d710-d37f-4c85-9cf8-7e31e5e9a9cc>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T22:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1690"^^xsd:float .
+    
+    <urn:uuid:4906756c-79c8-40c3-9ce3-98d168fcfb9a>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T12:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1821"^^xsd:float .
+    
+    <urn:uuid:27f1de2c-105f-409b-a101-95cce3e97b32>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T17:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1733"^^xsd:float .
+    
+    <urn:uuid:ac7abea3-ed8d-41ba-b43b-7dc8799c99e2>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T09:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1854"^^xsd:float .
+    
+    <urn:uuid:855d302d-d10e-48d4-ac5a-6775ccb05afb>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T02:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1750"^^xsd:float .
+    
+    <urn:uuid:4ea0cdc8-14ea-471a-ae7b-f0a5012ca703>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T10:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1851"^^xsd:float .
+    
+    <urn:uuid:f05d0698-a3e9-4b6c-9cb6-5387de938e7c>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T01:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1725"^^xsd:float .
+    
+    <urn:uuid:eb71c33e-8b9a-4b0f-83e9-e7c5855c44f9>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T06:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1834"^^xsd:float .
+    
+    <urn:uuid:de2cc964-f56b-44c4-864f-a1cdb860ea71>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T19:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1701"^^xsd:float .
+    
+    <urn:uuid:c2d3d5ae-2b5f-400c-a2af-5d418f69a554>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T12:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1829"^^xsd:float .
+    
+    <urn:uuid:fa5474c2-abdc-4092-a40a-eeb437157735>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T08:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1850"^^xsd:float .
+    
+    <urn:uuid:b83ab124-503a-45a6-8174-c5eb9bc7052e>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T06:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1830"^^xsd:float .
+    
+    <urn:uuid:ca94285b-7027-4b30-ab5f-e2c8abf17358>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T15:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1759"^^xsd:float .
+    
+    <urn:uuid:583a88e5-6a56-4f58-98aa-a3cd358094ba>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T21:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1687"^^xsd:float .
+    
+    <urn:uuid:910acb39-c3f1-417c-bb24-6ada03be8e78>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T21:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1688"^^xsd:float .
+    
+    <urn:uuid:8d02b362-2a17-45e0-b491-e3f222063793>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T07:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1841"^^xsd:float .
+    
+    <urn:uuid:6580da26-c953-4763-99a2-f4340d108632>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T09:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1854"^^xsd:float .
+    
+    <urn:uuid:97344de8-d3c7-4ef7-a9d3-53eea88502d2>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T22:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1694"^^xsd:float .
+    
+    <urn:uuid:0ab99512-d5c9-426a-afbd-1c6962814691>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T08:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1853"^^xsd:float .
+    
+    <urn:uuid:34510267-7be5-4b3a-b93f-fdb6a83e6adf>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T19:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1698"^^xsd:float .
+    
+    <urn:uuid:84d34495-dbfd-4a4f-9d97-4e25436c5768>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T03:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1782"^^xsd:float .
+    
+    <urn:uuid:0697bfc9-8f90-4a4f-b066-490e223a5fb4>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T01:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1734"^^xsd:float .
+    
+    <urn:uuid:56c913f9-adaf-4cbd-9f69-28c14c26c7e7>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T11:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1843"^^xsd:float .
+    
+    <urn:uuid:02633cac-65ee-4140-8251-7000f8b6482e>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T19:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1695"^^xsd:float .
+    
+    <urn:uuid:04151c2d-0fee-497d-8bee-d9f6061f477b>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T13:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1807"^^xsd:float .
+    
+    <urn:uuid:24a4cd4d-c4ce-451e-8387-56f9bc632108>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T16:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1743"^^xsd:float .
+    
     <urn:uuid:79e8ace6-d345-4855-a279-95220d646012>
             rdf:type              dcat:Dataset;
-            dct:accessRights      "https://energy.referencedata.eu/Confidentiality/Public";
-            dct:conformsTo        "https://cim.ucaiug.io/ns#" , "https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1" , "https://cim4.eu/ns/nc/2.4#" , "http://iec.ch/TC57/2013/CIM-schema-cim16#";
+            dct:accessRights      <https://energy.referencedata.eu/Confidentiality/Public>;
+            dct:conformsTo        cim: , <https://cim4.eu/ns/nc/2.4#> , <http://iec.ch/TC57/2013/CIM-schema-cim16#> , <https://ap.cim4.eu/SteadyStateHypothesisSchedule/1.1>;
             dct:description       "This is the steady state hypothesis schedule dataset for Belgovia part of ReliCapGrid."@en;
             dct:identifier        "79e8ace6-d345-4855-a279-95220d646012";
             dct:issued            "2022-06-15T22:30:00Z"^^xsd:dateTime;
-            dct:license           "https://creativecommons.org/licenses/by/4.0/";
-            dct:publisher         "https://energy.referencedata.eu/test/party/Belgovia";
+            dct:license           <https://creativecommons.org/licenses/by/4.0/>;
+            dct:publisher         <https://energy.referencedata.eu/test/party/Belgovia>;
             dct:requires          <urn:uuid:15c8a8ad-08d5-4b59-8417-db80e273bd1a>;
             dct:rights            "Copyright";
             dct:rightsHolder      "ENTSO-E";
-            dct:spatial           "https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System";
+            dct:spatial           <https://energy.referencedata.eu/Test/Frame/Belgovia-Power-Transmission-System>;
             dct:title             "20220615_Belgovia_SHS_1.0.0";
             dcat:endDate          "2023-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:isVersionOf      <https://energy.referencedata.eu/Test/Model/Belgovia-SHS>;
@@ -61,5 +691,149 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             dcat:startDate        "2022-06-15T22:30:00Z"^^xsd:dateTime;
             dcat:version          "1.0.0";
             prov:generatedAtTime  "2022-06-10T07:06:25Z"^^xsd:dateTime;
-            prov:wasGeneratedBy   "https://energy.referencedata.eu/Activity/CGM-SHS" .
+            prov:wasGeneratedBy   <https://energy.referencedata.eu/Activity/CGM-SHS> .
+    
+    <urn:uuid:f39f5299-477c-4c2e-a101-c463e1096f1e>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T14:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1792"^^xsd:float .
+    
+    <urn:uuid:0a4ed519-1206-444c-a548-c30447da267b>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T00:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1712"^^xsd:float .
+    
+    <urn:uuid:1de2a50f-e70c-4016-9080-1bd9be616469>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T11:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1840"^^xsd:float .
+    
+    <urn:uuid:ef2051e7-e421-49c0-8e26-b2166a2e3e29>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T20:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1691"^^xsd:float .
+    
+    <urn:uuid:f3324829-e7e8-48af-9c02-ec2568d17c30>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T16:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1748"^^xsd:float .
+    
+    <urn:uuid:6c00472b-3ea9-43b2-ab6d-48485de8042f>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T23:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1705"^^xsd:float .
+    
+    <urn:uuid:26069d65-d363-4974-a9ef-d4da809f8007>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T21:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1687"^^xsd:float .
+    
+    <urn:uuid:592b6a73-65ac-46a8-849a-85ea0d6e3392>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T01:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1730"^^xsd:float .
+    
+    <urn:uuid:02c41736-6171-45ea-8c72-1116ce5fa523>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T04:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1803"^^xsd:float .
+    
+    <urn:uuid:e8df92aa-279d-439c-b442-69c8e409df7f>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T03:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1771"^^xsd:float .
+    
+    <urn:uuid:957e2528-6804-404f-97b7-e0f1f69ddd30>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T02:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1755"^^xsd:float .
+    
+    <urn:uuid:168c373f-e4ea-4c2e-b98b-2686d2bc486b>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T06:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1826"^^xsd:float .
+    
+    <urn:uuid:f2e9d950-7d48-459e-8ba2-53a4778ce998>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T14:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1797"^^xsd:float .
+    
+    <urn:uuid:b504cf1e-e02b-4a0b-8b8c-788f340e0d2c>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T10:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1850"^^xsd:float .
+    
+    <urn:uuid:a757d50f-a862-4cc4-a26f-4f59b0c22b70>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T16:45:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1738"^^xsd:float .
+    
+    <urn:uuid:42f70b11-cfd1-4f83-b752-0085e104f4fc>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T00:00:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1708"^^xsd:float .
+    
+    <urn:uuid:436dd401-2df2-4a02-8d03-5f4593994c64>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T03:30:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1777"^^xsd:float .
+    
+    <urn:uuid:a65b34d4-bd42-4374-8e64-59d1a8082e39>
+            rdf:type                        nc:CurrentLimitTimePoint;
+            nc:CurrentLimitTimePoint.CurrentLimitSchedule
+                    <urn:uuid:221f5836-dd4c-43a9-87a5-781bf085d4d1>;
+            nc:CurrentLimitTimePoint.atTime
+                    "2023-07-22T20:15:00Z"^^xsd:dateTime;
+            nc:CurrentLimitTimePoint.value  "1690"^^xsd:float .
 }
