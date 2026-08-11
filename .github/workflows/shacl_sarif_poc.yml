@@ -27,11 +27,19 @@ jobs:
       - name: Validate instances, export grouped SARIF + full SHACL reports
         run: uv run buildScripts/validate_shacl_sarif.py
 
-      - name: Upload SHACL SARIF to code scanning
-        uses: github/codeql-action/upload-sarif@v3
+      # one upload per SARIF run — code scanning no longer combines
+      # multiple runs uploaded under the same category
+      - name: Upload EQ demo SARIF to code scanning
+        uses: github/codeql-action/upload-sarif@v4
         with:
-          sarif_file: reports/shacl-results.sarif
-          category: shacl-validation
+          sarif_file: reports/20220615T2230Z__Svedala_EQ_1.sarif
+          category: shacl-eq-demo
+
+      - name: Upload NCP RA SARIF to code scanning
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: reports/Svedala-Espheim_RA.sarif
+          category: shacl-ncp-ra
 
       - name: Upload SARIF + full SHACL reports as run artifact
         uses: actions/upload-artifact@v4
