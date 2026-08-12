@@ -21,7 +21,7 @@
     <dcterms:publisher rdf:resource="https://www.entsoe.eu/"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
-    <dcterms:title>Activity-Collection_RD</dcterms:title>
+    <dcterms:title>ActivityCollection_RD</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <adms:versionNotes xml:lang="en">Initial version of the Energy Reference Data Activity Collection generated as part of ReliCapGrid test dataset.</adms:versionNotes>
   </dcat:Dataset>
