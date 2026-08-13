@@ -7,13 +7,13 @@
         "driver": {
           "name": "triplets-shacl",
           "informationUri": "https://github.com/Haigutus/triplets",
-          "version": "0.2.0rc1",
+          "version": "0.2.0rc2",
           "rules": [
             {
               "id": "Terminal.ConductingEquipment-valueType/sh:in",
-              "name": "Terminal.ConductingEquipment-valueType",
+              "name": "Terminal.ConductingEquipment-valueType (1\u00d7)",
               "shortDescription": {
-                "text": "Terminal.ConductingEquipment-valueType"
+                "text": "Terminal.ConductingEquipment-valueType (1\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the value type of the association at the used direction."
@@ -29,9 +29,9 @@
             },
             {
               "id": "ActivePowerLimit.normalValue-valueRange/sh:minInclusive",
-              "name": "C:301:EQ:ActivePowerLimit.normalValue:valueRange",
+              "name": "C:301:EQ:ActivePowerLimit.normalValue:valueRange (1\u00d7)",
               "shortDescription": {
-                "text": "C:301:EQ:ActivePowerLimit.normalValue:valueRange"
+                "text": "C:301:EQ:ActivePowerLimit.normalValue:valueRange (1\u00d7)"
               },
               "fullDescription": {
                 "text": "The attribute shall be a positive value or zero."
@@ -47,9 +47,9 @@
             },
             {
               "id": "ACLineSegment.gch-datatype/triplets:lexicalForm",
-              "name": "ACLineSegment.gch-datatype",
+              "name": "ACLineSegment.gch-datatype (90\u00d7)",
               "shortDescription": {
-                "text": "ACLineSegment.gch-datatype"
+                "text": "ACLineSegment.gch-datatype (90\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -65,9 +65,9 @@
             },
             {
               "id": "ACLineSegment.x-datatype/triplets:lexicalForm",
-              "name": "ACLineSegment.x-datatype",
+              "name": "ACLineSegment.x-datatype (32\u00d7)",
               "shortDescription": {
-                "text": "ACLineSegment.x-datatype"
+                "text": "ACLineSegment.x-datatype (32\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -83,9 +83,9 @@
             },
             {
               "id": "Conductor.length-datatype/triplets:lexicalForm",
-              "name": "Conductor.length-datatype",
+              "name": "Conductor.length-datatype (7\u00d7)",
               "shortDescription": {
-                "text": "Conductor.length-datatype"
+                "text": "Conductor.length-datatype (7\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -101,9 +101,9 @@
             },
             {
               "id": "ACLineSegment.r-datatype/triplets:lexicalForm",
-              "name": "ACLineSegment.r-datatype",
+              "name": "ACLineSegment.r-datatype (4\u00d7)",
               "shortDescription": {
-                "text": "ACLineSegment.r-datatype"
+                "text": "ACLineSegment.r-datatype (4\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -119,9 +119,9 @@
             },
             {
               "id": "CurrentLimit.normalValue-datatype/triplets:lexicalForm",
-              "name": "CurrentLimit.normalValue-datatype",
+              "name": "CurrentLimit.normalValue-datatype (380\u00d7)",
               "shortDescription": {
-                "text": "CurrentLimit.normalValue-datatype"
+                "text": "CurrentLimit.normalValue-datatype (380\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -137,9 +137,9 @@
             },
             {
               "id": "GeneratingUnit.maxOperatingP-datatype/triplets:lexicalForm",
-              "name": "GeneratingUnit.maxOperatingP-datatype",
+              "name": "GeneratingUnit.maxOperatingP-datatype (36\u00d7)",
               "shortDescription": {
-                "text": "GeneratingUnit.maxOperatingP-datatype"
+                "text": "GeneratingUnit.maxOperatingP-datatype (36\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -155,9 +155,9 @@
             },
             {
               "id": "GeneratingUnit.minOperatingP-datatype/triplets:lexicalForm",
-              "name": "GeneratingUnit.minOperatingP-datatype",
+              "name": "GeneratingUnit.minOperatingP-datatype (38\u00d7)",
               "shortDescription": {
-                "text": "GeneratingUnit.minOperatingP-datatype"
+                "text": "GeneratingUnit.minOperatingP-datatype (38\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -173,9 +173,9 @@
             },
             {
               "id": "LinearShuntCompensator.gPerSection-datatype/triplets:lexicalForm",
-              "name": "LinearShuntCompensator.gPerSection-datatype",
+              "name": "LinearShuntCompensator.gPerSection-datatype (45\u00d7)",
               "shortDescription": {
-                "text": "LinearShuntCompensator.gPerSection-datatype"
+                "text": "LinearShuntCompensator.gPerSection-datatype (45\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -191,9 +191,9 @@
             },
             {
               "id": "ShuntCompensator.nomU-datatype/triplets:lexicalForm",
-              "name": "ShuntCompensator.nomU-datatype",
+              "name": "ShuntCompensator.nomU-datatype (46\u00d7)",
               "shortDescription": {
-                "text": "ShuntCompensator.nomU-datatype"
+                "text": "ShuntCompensator.nomU-datatype (46\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -209,9 +209,9 @@
             },
             {
               "id": "OperationalLimitType.acceptableDuration-datatype/triplets:lexicalForm",
-              "name": "OperationalLimitType.acceptableDuration-datatype",
+              "name": "OperationalLimitType.acceptableDuration-datatype (3\u00d7)",
               "shortDescription": {
-                "text": "OperationalLimitType.acceptableDuration-datatype"
+                "text": "OperationalLimitType.acceptableDuration-datatype (3\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -227,9 +227,9 @@
             },
             {
               "id": "PowerTransformerEnd.b-datatype/triplets:lexicalForm",
-              "name": "PowerTransformerEnd.b-datatype",
+              "name": "PowerTransformerEnd.b-datatype (106\u00d7)",
               "shortDescription": {
-                "text": "PowerTransformerEnd.b-datatype"
+                "text": "PowerTransformerEnd.b-datatype (106\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -245,9 +245,9 @@
             },
             {
               "id": "PowerTransformerEnd.g-datatype/triplets:lexicalForm",
-              "name": "PowerTransformerEnd.g-datatype",
+              "name": "PowerTransformerEnd.g-datatype (106\u00d7)",
               "shortDescription": {
-                "text": "PowerTransformerEnd.g-datatype"
+                "text": "PowerTransformerEnd.g-datatype (106\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -263,9 +263,9 @@
             },
             {
               "id": "PowerTransformerEnd.r-datatype/triplets:lexicalForm",
-              "name": "PowerTransformerEnd.r-datatype",
+              "name": "PowerTransformerEnd.r-datatype (104\u00d7)",
               "shortDescription": {
-                "text": "PowerTransformerEnd.r-datatype"
+                "text": "PowerTransformerEnd.r-datatype (104\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -281,9 +281,9 @@
             },
             {
               "id": "PowerTransformerEnd.ratedS-datatype/triplets:lexicalForm",
-              "name": "PowerTransformerEnd.ratedS-datatype",
+              "name": "PowerTransformerEnd.ratedS-datatype (106\u00d7)",
               "shortDescription": {
-                "text": "PowerTransformerEnd.ratedS-datatype"
+                "text": "PowerTransformerEnd.ratedS-datatype (106\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -299,9 +299,9 @@
             },
             {
               "id": "PowerTransformerEnd.ratedU-datatype/triplets:lexicalForm",
-              "name": "PowerTransformerEnd.ratedU-datatype",
+              "name": "PowerTransformerEnd.ratedU-datatype (100\u00d7)",
               "shortDescription": {
-                "text": "PowerTransformerEnd.ratedU-datatype"
+                "text": "PowerTransformerEnd.ratedU-datatype (100\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -317,9 +317,9 @@
             },
             {
               "id": "PowerTransformerEnd.x-datatype/triplets:lexicalForm",
-              "name": "PowerTransformerEnd.x-datatype",
+              "name": "PowerTransformerEnd.x-datatype (71\u00d7)",
               "shortDescription": {
-                "text": "PowerTransformerEnd.x-datatype"
+                "text": "PowerTransformerEnd.x-datatype (71\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -335,9 +335,9 @@
             },
             {
               "id": "TapChanger.neutralU-datatype/triplets:lexicalForm",
-              "name": "TapChanger.neutralU-datatype",
+              "name": "TapChanger.neutralU-datatype (9\u00d7)",
               "shortDescription": {
-                "text": "TapChanger.neutralU-datatype"
+                "text": "TapChanger.neutralU-datatype (9\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -353,9 +353,9 @@
             },
             {
               "id": "RatioTapChanger.stepVoltageIncrement-datatype/triplets:lexicalForm",
-              "name": "RatioTapChanger.stepVoltageIncrement-datatype",
+              "name": "RatioTapChanger.stepVoltageIncrement-datatype (4\u00d7)",
               "shortDescription": {
-                "text": "RatioTapChanger.stepVoltageIncrement-datatype"
+                "text": "RatioTapChanger.stepVoltageIncrement-datatype (4\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -371,9 +371,9 @@
             },
             {
               "id": "TapChangerTablePoint.b-datatype/triplets:lexicalForm",
-              "name": "TapChangerTablePoint.b-datatype",
+              "name": "TapChangerTablePoint.b-datatype (235\u00d7)",
               "shortDescription": {
-                "text": "TapChangerTablePoint.b-datatype"
+                "text": "TapChangerTablePoint.b-datatype (235\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -389,9 +389,9 @@
             },
             {
               "id": "TapChangerTablePoint.g-datatype/triplets:lexicalForm",
-              "name": "TapChangerTablePoint.g-datatype",
+              "name": "TapChangerTablePoint.g-datatype (235\u00d7)",
               "shortDescription": {
-                "text": "TapChangerTablePoint.g-datatype"
+                "text": "TapChangerTablePoint.g-datatype (235\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -407,9 +407,9 @@
             },
             {
               "id": "TapChangerTablePoint.r-datatype/triplets:lexicalForm",
-              "name": "TapChangerTablePoint.r-datatype",
+              "name": "TapChangerTablePoint.r-datatype (235\u00d7)",
               "shortDescription": {
-                "text": "TapChangerTablePoint.r-datatype"
+                "text": "TapChangerTablePoint.r-datatype (235\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -425,9 +425,9 @@
             },
             {
               "id": "TapChangerTablePoint.ratio-datatype/triplets:lexicalForm",
-              "name": "TapChangerTablePoint.ratio-datatype",
+              "name": "TapChangerTablePoint.ratio-datatype (9\u00d7)",
               "shortDescription": {
-                "text": "TapChangerTablePoint.ratio-datatype"
+                "text": "TapChangerTablePoint.ratio-datatype (9\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -443,9 +443,9 @@
             },
             {
               "id": "StaticVarCompensator.capacitiveRating-datatype/triplets:lexicalForm",
-              "name": "StaticVarCompensator.capacitiveRating-datatype",
+              "name": "StaticVarCompensator.capacitiveRating-datatype (2\u00d7)",
               "shortDescription": {
-                "text": "StaticVarCompensator.capacitiveRating-datatype"
+                "text": "StaticVarCompensator.capacitiveRating-datatype (2\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -461,9 +461,9 @@
             },
             {
               "id": "StaticVarCompensator.inductiveRating-datatype/triplets:lexicalForm",
-              "name": "StaticVarCompensator.inductiveRating-datatype",
+              "name": "StaticVarCompensator.inductiveRating-datatype (2\u00d7)",
               "shortDescription": {
-                "text": "StaticVarCompensator.inductiveRating-datatype"
+                "text": "StaticVarCompensator.inductiveRating-datatype (2\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -479,9 +479,9 @@
             },
             {
               "id": "RotatingMachine.ratedS-datatype/triplets:lexicalForm",
-              "name": "RotatingMachine.ratedS-datatype",
+              "name": "RotatingMachine.ratedS-datatype (39\u00d7)",
               "shortDescription": {
-                "text": "RotatingMachine.ratedS-datatype"
+                "text": "RotatingMachine.ratedS-datatype (39\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -497,9 +497,9 @@
             },
             {
               "id": "RotatingMachine.ratedU-datatype/triplets:lexicalForm",
-              "name": "RotatingMachine.ratedU-datatype",
+              "name": "RotatingMachine.ratedU-datatype (39\u00d7)",
               "shortDescription": {
-                "text": "RotatingMachine.ratedU-datatype"
+                "text": "RotatingMachine.ratedU-datatype (39\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -515,9 +515,9 @@
             },
             {
               "id": "SynchronousMachine.maxQ-datatype/triplets:lexicalForm",
-              "name": "SynchronousMachine.maxQ-datatype",
+              "name": "SynchronousMachine.maxQ-datatype (39\u00d7)",
               "shortDescription": {
-                "text": "SynchronousMachine.maxQ-datatype"
+                "text": "SynchronousMachine.maxQ-datatype (39\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -533,9 +533,9 @@
             },
             {
               "id": "SynchronousMachine.minQ-datatype/triplets:lexicalForm",
-              "name": "SynchronousMachine.minQ-datatype",
+              "name": "SynchronousMachine.minQ-datatype (39\u00d7)",
               "shortDescription": {
-                "text": "SynchronousMachine.minQ-datatype"
+                "text": "SynchronousMachine.minQ-datatype (39\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -551,9 +551,9 @@
             },
             {
               "id": "SynchronousMachine.qPercent-datatype/triplets:lexicalForm",
-              "name": "SynchronousMachine.qPercent-datatype",
+              "name": "SynchronousMachine.qPercent-datatype (26\u00d7)",
               "shortDescription": {
-                "text": "SynchronousMachine.qPercent-datatype"
+                "text": "SynchronousMachine.qPercent-datatype (26\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -569,9 +569,9 @@
             },
             {
               "id": "VoltageLimit.normalValue-datatype/triplets:lexicalForm",
-              "name": "VoltageLimit.normalValue-datatype",
+              "name": "VoltageLimit.normalValue-datatype (2\u00d7)",
               "shortDescription": {
-                "text": "VoltageLimit.normalValue-datatype"
+                "text": "VoltageLimit.normalValue-datatype (2\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -587,9 +587,9 @@
             },
             {
               "id": "ActivePowerLimit.normalValue-datatype/triplets:lexicalForm",
-              "name": "ActivePowerLimit.normalValue-datatype",
+              "name": "ActivePowerLimit.normalValue-datatype (2\u00d7)",
               "shortDescription": {
-                "text": "ActivePowerLimit.normalValue-datatype"
+                "text": "ActivePowerLimit.normalValue-datatype (2\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -605,9 +605,9 @@
             },
             {
               "id": "IdentifiedObject.name-cardinality/sh:minCount",
-              "name": "IdentifiedObject.name-cardinality",
+              "name": "IdentifiedObject.name-cardinality (1\u00d7)",
               "shortDescription": {
-                "text": "IdentifiedObject.name-cardinality"
+                "text": "IdentifiedObject.name-cardinality (1\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the cardinality of the property (attribute)."
@@ -623,9 +623,9 @@
             },
             {
               "id": "PowerTransformerEnd-terminalConsistency/sh:sparql",
-              "name": "C:301:EQ:PowerTransformerEnd:terminalConsistency",
+              "name": "C:301:EQ:PowerTransformerEnd:terminalConsistency (1\u00d7)",
               "shortDescription": {
-                "text": "C:301:EQ:PowerTransformerEnd:terminalConsistency"
+                "text": "C:301:EQ:PowerTransformerEnd:terminalConsistency (1\u00d7)"
               },
               "fullDescription": {
                 "text": "In all cases a PowerTransformer models a group of physical devices acting together to transform power among terminals and in one physical location."
@@ -641,9 +641,9 @@
             },
             {
               "id": "PowerTransformerEnd.ratedU-valueRange/sh:sparql",
-              "name": "C:301:EQ:PowerTransformerEnd.ratedU:valueRange",
+              "name": "C:301:EQ:PowerTransformerEnd.ratedU:valueRange (1\u00d7)",
               "shortDescription": {
-                "text": "C:301:EQ:PowerTransformerEnd.ratedU:valueRange"
+                "text": "C:301:EQ:PowerTransformerEnd.ratedU:valueRange (1\u00d7)"
               },
               "fullDescription": {
                 "text": "A high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater than or equal to ratedU for the lower voltage sides. The attribute shall be a positive value."
@@ -659,9 +659,9 @@
             },
             {
               "id": "ShuntCompensator.maximumSections-numberOfInstances/triplets:invalidSparql",
-              "name": "C:301:EQ:NonlinearShuntCompensatorPoint:numberOfInstances",
+              "name": "C:301:EQ:NonlinearShuntCompensatorPoint:numberOfInstances (1\u00d7)",
               "shortDescription": {
-                "text": "C:301:EQ:NonlinearShuntCompensatorPoint:numberOfInstances"
+                "text": "C:301:EQ:NonlinearShuntCompensatorPoint:numberOfInstances (1\u00d7)"
               },
               "fullDescription": {
                 "text": "The number of NonlinearShuntCompenstorPoint instances associated with a NonlinearShuntCompensator shall be equal to ShuntCompensator.maximumSections. "
@@ -681,12 +681,12 @@
       "invocations": [
         {
           "executionSuccessful": true,
-          "startTimeUtc": "2026-08-11T15:13:16.651421Z",
-          "endTimeUtc": "2026-08-11T15:13:27.557081Z"
+          "startTimeUtc": "2026-08-13T07:40:54.347015Z",
+          "endTimeUtc": "2026-08-13T07:41:00.935980Z"
         }
       ],
       "properties": {
-        "duration_seconds": 10.906,
+        "duration_seconds": 6.589,
         "engine": "polars",
         "source": [
           "Instance/Svedala/Grid/cimxml/20220615T2230Z__Svedala_EQ_1.xml"
@@ -701,7 +701,7 @@
           "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#ACDCConverter.PccTerminal-valueType: unsupported sh:path form",
           "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#PowerTransformer-twoWinding: sh:target not walked",
           "http://iec.ch/TC57/ns/CIM/Equipment-EU/constraints/IEC61970-301/3.0#Terminal.phases-phaseCodeN: unsupported sh:path form",
-          "na71afcb7b93f4109b77d7ce996e644f1b119: unsupported sh:path form"
+          "ncd5446215aee45039b8642831c875c8eb119: unsupported sh:path form"
         ],
         "skipped_components": []
       },
@@ -711,7 +711,7 @@
           "ruleIndex": 0,
           "level": "error",
           "message": {
-            "text": "One of the following occurs: 1) The value type is not IRI; 2) The value type is not the right class. \u2014 Terminal.ConductingEquipment \u2014 1 object(s) affected. Examples: Terminal 0006811f-1505-4595-91c8-87848839bd74 (Terminal(2))"
+            "text": "[shacl_message] One of the following occurs: 1) The value type is not IRI; 2) The value type is not the right class.\n[shacl_path] Terminal.ConductingEquipment\n[shacl_expected] one of: Clamp, SeriesCompensator, Switch, Ground, PowerTransformer, EnergySource, EnergyConsumer, GroundingImpedance, PetersenCoil, Junction, BusbarSection, EquivalentBranch, EquivalentInjection, EquivalentShunt, Disconnector, GroundDisconnector, Fuse, Jumper, Cut, ACLineSegment, CsConverter, VsConverter, StaticVarCompensator, PowerElectronicsConnection, ExternalNetworkInjection, NonConformLoad, StationSupply, ConformLoad, LoadBreakSwitch, Breaker, SynchronousMachine, AsynchronousMachine, LinearShuntCompensator, NonlinearShuntCompensator, DisconnectingCircuitBreaker, Equipment\n[context_message] association target found, of type Substation\n[schema_property] The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. [1]\n[schema_class] An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.\n[context_count] 1 object(s) affected\n[context_examples] Terminal 0006811f-1505-4595-91c8-87848839bd74 (Terminal(2))"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -729,7 +729,10 @@
                 },
                 "region": {
                   "startLine": 41266,
-                  "endLine": 41266
+                  "endLine": 41266,
+                  "snippet": {
+                    "text": "<cim:Terminal.ConductingEquipment rdf:resource=\"#_bde75e02-02ed-453f-8a4a-1fad9c00bd32\"/>"
+                  }
                 }
               }
             }
@@ -755,7 +758,7 @@
           "ruleIndex": 1,
           "level": "error",
           "message": {
-            "text": "The value is negative. \u2014 ActivePowerLimit.normalValue \u2014 1 object(s) affected. Examples: ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
+            "text": "[shacl_message] The value is negative.\n[shacl_path] ActivePowerLimit.normalValue\n[shacl_expected] value >= 0.0\n[schema_property] The normal value of active power limit. The attribute shall be a positive value or zero. [1..1]\n[schema_class] Limit on active power flow.\n[context_count] 1 object(s) affected\n[context_examples] ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -773,7 +776,10 @@
                 },
                 "region": {
                   "startLine": 55955,
-                  "endLine": 55955
+                  "endLine": 55955,
+                  "snippet": {
+                    "text": "<cim:ActivePowerLimit.normalValue>-2500</cim:ActivePowerLimit.normalValue>"
+                  }
                 }
               }
             }
@@ -799,7 +805,7 @@
           "ruleIndex": 2,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ACLineSegment.gch \u2014 90 object(s) affected. Examples: ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment b2a3ba57-d592-4bc9-b4cb-8a78cf8a0bb6 (RL8), ACLineSegment c74e2c04-c55f-46b5-839a-a38d09653d2a (L4_ST15-ST16) \u2026 ACLineSegment 68ff1db6-29ec-4e03-9a47-fd6810f27a0a (L2_ST10-ST11), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15), ACLineSegment 9e29b829-b840-4d5d-ad7b-4721c59a58e2 (AL1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] ACLineSegment.gch\n[shacl_expected] a xsd:float value\n[schema_property] Positive sequence shunt (charging) conductance, uniformly distributed, of the entire line section. [0..1]\n[schema_class] A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.\n[context_count] 90 object(s) affected\n[context_examples] ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment b2a3ba57-d592-4bc9-b4cb-8a78cf8a0bb6 (RL8), ACLineSegment c74e2c04-c55f-46b5-839a-a38d09653d2a (L4_ST15-ST16) \u2026 ACLineSegment 68ff1db6-29ec-4e03-9a47-fd6810f27a0a (L2_ST10-ST11), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15), ACLineSegment 9e29b829-b840-4d5d-ad7b-4721c59a58e2 (AL1)"
           },
           "occurrenceCount": 90,
           "locations": [
@@ -817,7 +823,10 @@
                 },
                 "region": {
                   "startLine": 20,
-                  "endLine": 20
+                  "endLine": 20,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.gch>0</cim:ACLineSegment.gch>"
+                  }
                 }
               }
             },
@@ -835,7 +844,10 @@
                 },
                 "region": {
                   "startLine": 31,
-                  "endLine": 31
+                  "endLine": 31,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.gch>0</cim:ACLineSegment.gch>"
+                  }
                 }
               }
             },
@@ -853,7 +865,10 @@
                 },
                 "region": {
                   "startLine": 42,
-                  "endLine": 42
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.gch>0</cim:ACLineSegment.gch>"
+                  }
                 }
               }
             },
@@ -871,7 +886,10 @@
                 },
                 "region": {
                   "startLine": 1054,
-                  "endLine": 1054
+                  "endLine": 1054,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.gch>0</cim:ACLineSegment.gch>"
+                  }
                 }
               }
             },
@@ -889,7 +907,10 @@
                 },
                 "region": {
                   "startLine": 1065,
-                  "endLine": 1065
+                  "endLine": 1065,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.gch>0</cim:ACLineSegment.gch>"
+                  }
                 }
               }
             },
@@ -907,7 +928,10 @@
                 },
                 "region": {
                   "startLine": 1076,
-                  "endLine": 1076
+                  "endLine": 1076,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.gch>0</cim:ACLineSegment.gch>"
+                  }
                 }
               }
             }
@@ -938,7 +962,7 @@
           "ruleIndex": 3,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ACLineSegment.x \u2014 32 object(s) affected. Examples: ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment 628cee38-ba9c-4fdd-915d-1dd7857a8f66 (FL10), ACLineSegment c30585bb-fe3f-404f-91c6-c5cb91948418 (CL6) \u2026 ACLineSegment 7f2ab29f-606d-42c7-af86-9d659b650c0a (FL6), ACLineSegment 48485857-d388-4d24-8e5c-02a68ec905e9 (FL12), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] ACLineSegment.x\n[shacl_expected] a xsd:float value\n[schema_property] Positive sequence series reactance of the entire line section. [1..1]\n[schema_class] A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.\n[context_count] 32 object(s) affected\n[context_examples] ACLineSegment c77668c9-6993-4391-8c03-29fc802ad605 (CL15), ACLineSegment 628cee38-ba9c-4fdd-915d-1dd7857a8f66 (FL10), ACLineSegment c30585bb-fe3f-404f-91c6-c5cb91948418 (CL6) \u2026 ACLineSegment 7f2ab29f-606d-42c7-af86-9d659b650c0a (FL6), ACLineSegment 48485857-d388-4d24-8e5c-02a68ec905e9 (FL12), ACLineSegment b6750099-1ff2-4dc9-98de-041392bb1287 (FL15)"
           },
           "occurrenceCount": 32,
           "locations": [
@@ -956,7 +980,10 @@
                 },
                 "region": {
                   "startLine": 22,
-                  "endLine": 22
+                  "endLine": 22,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.x>128</cim:ACLineSegment.x>"
+                  }
                 }
               }
             },
@@ -974,7 +1001,10 @@
                 },
                 "region": {
                   "startLine": 55,
-                  "endLine": 55
+                  "endLine": 55,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.x>32</cim:ACLineSegment.x>"
+                  }
                 }
               }
             },
@@ -992,7 +1022,10 @@
                 },
                 "region": {
                   "startLine": 99,
-                  "endLine": 99
+                  "endLine": 99,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.x>48</cim:ACLineSegment.x>"
+                  }
                 }
               }
             },
@@ -1010,7 +1043,10 @@
                 },
                 "region": {
                   "startLine": 1001,
-                  "endLine": 1001
+                  "endLine": 1001,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.x>72</cim:ACLineSegment.x>"
+                  }
                 }
               }
             },
@@ -1028,7 +1064,10 @@
                 },
                 "region": {
                   "startLine": 1034,
-                  "endLine": 1034
+                  "endLine": 1034,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.x>48</cim:ACLineSegment.x>"
+                  }
                 }
               }
             },
@@ -1046,7 +1085,10 @@
                 },
                 "region": {
                   "startLine": 1067,
-                  "endLine": 1067
+                  "endLine": 1067,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.x>64</cim:ACLineSegment.x>"
+                  }
                 }
               }
             }
@@ -1081,7 +1123,7 @@
           "ruleIndex": 4,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 Conductor.length \u2014 7 object(s) affected. Examples: ACLineSegment 536f4b84-db4c-4545-96e9-bb5a87f65d13 (TieLine_SD_BO3), ACLineSegment 4c390dab-3499-4a9f-9cee-5877081479ab (TieLine_SD-EH3), ACLineSegment 891e77ff-39c6-4648-8eda-d81f730271f9 (TieLine_SD-EH2) \u2026 ACLineSegment 632d9eaa-06f7-4b7b-8f8f-ae248941efe2 (TieLine_SD-EH1), ACLineSegment 7b858bec-17c8-4cab-bfcb-6bbd645af2db (TieLine_SD-HVDC_SD_EH_1), ACLineSegment 20f3f6ca-906f-4c6c-bc12-89ffff80b03b (TieLine_SD-BO1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] Conductor.length\n[shacl_expected] a xsd:float value\n[schema_property] Segment length for calculating line section capabilities. [0..1]\n[schema_class] A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.\n[context_count] 7 object(s) affected\n[context_examples] ACLineSegment 536f4b84-db4c-4545-96e9-bb5a87f65d13 (TieLine_SD_BO3), ACLineSegment 4c390dab-3499-4a9f-9cee-5877081479ab (TieLine_SD-EH3), ACLineSegment 891e77ff-39c6-4648-8eda-d81f730271f9 (TieLine_SD-EH2) \u2026 ACLineSegment 632d9eaa-06f7-4b7b-8f8f-ae248941efe2 (TieLine_SD-EH1), ACLineSegment 7b858bec-17c8-4cab-bfcb-6bbd645af2db (TieLine_SD-HVDC_SD_EH_1), ACLineSegment 20f3f6ca-906f-4c6c-bc12-89ffff80b03b (TieLine_SD-BO1)"
           },
           "occurrenceCount": 7,
           "locations": [
@@ -1099,7 +1141,10 @@
                 },
                 "region": {
                   "startLine": 189,
-                  "endLine": 189
+                  "endLine": 189,
+                  "snippet": {
+                    "text": "<cim:Conductor.length>20</cim:Conductor.length>"
+                  }
                 }
               }
             },
@@ -1117,7 +1162,10 @@
                 },
                 "region": {
                   "startLine": 508,
-                  "endLine": 508
+                  "endLine": 508,
+                  "snippet": {
+                    "text": "<cim:Conductor.length>1</cim:Conductor.length>"
+                  }
                 }
               }
             },
@@ -1135,7 +1183,10 @@
                 },
                 "region": {
                   "startLine": 552,
-                  "endLine": 552
+                  "endLine": 552,
+                  "snippet": {
+                    "text": "<cim:Conductor.length>50</cim:Conductor.length>"
+                  }
                 }
               }
             },
@@ -1153,7 +1204,10 @@
                 },
                 "region": {
                   "startLine": 838,
-                  "endLine": 838
+                  "endLine": 838,
+                  "snippet": {
+                    "text": "<cim:Conductor.length>1</cim:Conductor.length>"
+                  }
                 }
               }
             },
@@ -1171,7 +1225,10 @@
                 },
                 "region": {
                   "startLine": 893,
-                  "endLine": 893
+                  "endLine": 893,
+                  "snippet": {
+                    "text": "<cim:Conductor.length>1</cim:Conductor.length>"
+                  }
                 }
               }
             },
@@ -1189,7 +1246,10 @@
                 },
                 "region": {
                   "startLine": 959,
-                  "endLine": 959
+                  "endLine": 959,
+                  "snippet": {
+                    "text": "<cim:Conductor.length>50</cim:Conductor.length>"
+                  }
                 }
               }
             }
@@ -1222,7 +1282,7 @@
           "ruleIndex": 5,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ACLineSegment.r \u2014 4 object(s) affected. Examples: ACLineSegment 20119a6d-5ad3-4d08-aed7-79b476537602 (CL17), ACLineSegment 134e7e0a-4c7e-4faf-923f-6c15e53792d3 (CL5), ACLineSegment d5c0d6d6-b846-4406-9739-066ee473d945 (CL12), ACLineSegment e02e1166-1c43-4a4d-8c5a-82298ee0c8f5 (CL1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] ACLineSegment.r\n[shacl_expected] a xsd:float value\n[schema_property] Positive sequence series resistance of the entire line section. [1..1]\n[schema_class] A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.\n[context_count] 4 object(s) affected\n[context_examples] ACLineSegment 20119a6d-5ad3-4d08-aed7-79b476537602 (CL17), ACLineSegment 134e7e0a-4c7e-4faf-923f-6c15e53792d3 (CL5), ACLineSegment d5c0d6d6-b846-4406-9739-066ee473d945 (CL12), ACLineSegment e02e1166-1c43-4a4d-8c5a-82298ee0c8f5 (CL1)"
           },
           "occurrenceCount": 4,
           "locations": [
@@ -1240,7 +1300,10 @@
                 },
                 "region": {
                   "startLine": 373,
-                  "endLine": 373
+                  "endLine": 373,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.r>16</cim:ACLineSegment.r>"
+                  }
                 }
               }
             },
@@ -1258,7 +1321,10 @@
                 },
                 "region": {
                   "startLine": 582,
-                  "endLine": 582
+                  "endLine": 582,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.r>8</cim:ACLineSegment.r>"
+                  }
                 }
               }
             },
@@ -1276,7 +1342,10 @@
                 },
                 "region": {
                   "startLine": 659,
-                  "endLine": 659
+                  "endLine": 659,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.r>16</cim:ACLineSegment.r>"
+                  }
                 }
               }
             },
@@ -1294,7 +1363,10 @@
                 },
                 "region": {
                   "startLine": 857,
-                  "endLine": 857
+                  "endLine": 857,
+                  "snippet": {
+                    "text": "<cim:ACLineSegment.r>8</cim:ACLineSegment.r>"
+                  }
                 }
               }
             }
@@ -1324,7 +1396,7 @@
           "ruleIndex": 6,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 CurrentLimit.normalValue \u2014 380 object(s) affected. Examples: CurrentLimit 1eabe3c1-81e1-cc7d-ea5c-4c9e0244eebc (patl for CL15), CurrentLimit 6ec56105-f9c6-2afb-f4df-947c9f65cb36 (tatl 600 for CL16), CurrentLimit 0a7b54aa-fb3c-7147-7cf5-36690ac86d7f (tatl 600 for L1_ST5-ST11) \u2026 CurrentLimit c5e0e6bd-15a1-1fd9-3fb7-ee4f1fc1317e (patl for STORFORS_G1_TRAFO), CurrentLimit 2d814b2a-518b-e28c-30c3-49c7f4f6a95e (tatl 600 for CL3), CurrentLimit 2ff11f10-371a-311e-bebe-551ee7c48f0d (tatl 600 for FL13)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] CurrentLimit.normalValue\n[shacl_expected] a xsd:float value\n[schema_property] The normal value for limit on current flow. The attribute shall be a positive value or zero. [1..1]\n[schema_class] Operational limit on current. \n[context_count] 380 object(s) affected\n[context_examples] CurrentLimit 1eabe3c1-81e1-cc7d-ea5c-4c9e0244eebc (patl for CL15), CurrentLimit 6ec56105-f9c6-2afb-f4df-947c9f65cb36 (tatl 600 for CL16), CurrentLimit 0a7b54aa-fb3c-7147-7cf5-36690ac86d7f (tatl 600 for L1_ST5-ST11) \u2026 CurrentLimit c5e0e6bd-15a1-1fd9-3fb7-ee4f1fc1317e (patl for STORFORS_G1_TRAFO), CurrentLimit 2d814b2a-518b-e28c-30c3-49c7f4f6a95e (tatl 600 for CL3), CurrentLimit 2ff11f10-371a-311e-bebe-551ee7c48f0d (tatl 600 for FL13)"
           },
           "occurrenceCount": 380,
           "locations": [
@@ -1342,7 +1414,10 @@
                 },
                 "region": {
                   "startLine": 11413,
-                  "endLine": 11413
+                  "endLine": 11413,
+                  "snippet": {
+                    "text": "<cim:CurrentLimit.normalValue>1530</cim:CurrentLimit.normalValue>"
+                  }
                 }
               }
             },
@@ -1360,7 +1435,10 @@
                 },
                 "region": {
                   "startLine": 11420,
-                  "endLine": 11420
+                  "endLine": 11420,
+                  "snippet": {
+                    "text": "<cim:CurrentLimit.normalValue>500</cim:CurrentLimit.normalValue>"
+                  }
                 }
               }
             },
@@ -1378,7 +1456,10 @@
                 },
                 "region": {
                   "startLine": 11427,
-                  "endLine": 11427
+                  "endLine": 11427,
+                  "snippet": {
+                    "text": "<cim:CurrentLimit.normalValue>500</cim:CurrentLimit.normalValue>"
+                  }
                 }
               }
             },
@@ -1396,7 +1477,10 @@
                 },
                 "region": {
                   "startLine": 14759,
-                  "endLine": 14759
+                  "endLine": 14759,
+                  "snippet": {
+                    "text": "<cim:CurrentLimit.normalValue>2566</cim:CurrentLimit.normalValue>"
+                  }
                 }
               }
             },
@@ -1414,7 +1498,10 @@
                 },
                 "region": {
                   "startLine": 14766,
-                  "endLine": 14766
+                  "endLine": 14766,
+                  "snippet": {
+                    "text": "<cim:CurrentLimit.normalValue>500</cim:CurrentLimit.normalValue>"
+                  }
                 }
               }
             },
@@ -1432,7 +1519,10 @@
                 },
                 "region": {
                   "startLine": 14773,
-                  "endLine": 14773
+                  "endLine": 14773,
+                  "snippet": {
+                    "text": "<cim:CurrentLimit.normalValue>500</cim:CurrentLimit.normalValue>"
+                  }
                 }
               }
             }
@@ -1465,7 +1555,7 @@
           "ruleIndex": 7,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 GeneratingUnit.maxOperatingP \u2014 36 object(s) affected. Examples: HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit c7765ac6-3e6c-f238-83f2-72e2b7e22a5c (H\u00c4LLAN_G1) \u2026 ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (K\u00c4RNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] GeneratingUnit.maxOperatingP\n[shacl_expected] a xsd:float value\n[schema_property] This is the maximum operating active power limit the dispatcher can enter for this unit. [1..1]\n[schema_class] A generating unit whose prime mover is a hydraulic turbine (e.g., Francis, Pelton, Kaplan).\n[context_count] 36 object(s) affected\n[context_examples] HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit c7765ac6-3e6c-f238-83f2-72e2b7e22a5c (H\u00c4LLAN_G1) \u2026 ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (K\u00c4RNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
           },
           "occurrenceCount": 36,
           "locations": [
@@ -1483,7 +1573,10 @@
                 },
                 "region": {
                   "startLine": 22137,
-                  "endLine": 22137
+                  "endLine": 22137,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.maxOperatingP>315</cim:GeneratingUnit.maxOperatingP>"
+                  }
                 }
               }
             },
@@ -1501,7 +1594,10 @@
                 },
                 "region": {
                   "startLine": 22145,
-                  "endLine": 22145
+                  "endLine": 22145,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.maxOperatingP>570</cim:GeneratingUnit.maxOperatingP>"
+                  }
                 }
               }
             },
@@ -1519,7 +1615,10 @@
                 },
                 "region": {
                   "startLine": 22169,
-                  "endLine": 22169
+                  "endLine": 22169,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.maxOperatingP>1350</cim:GeneratingUnit.maxOperatingP>"
+                  }
                 }
               }
             },
@@ -1537,7 +1636,10 @@
                 },
                 "region": {
                   "startLine": 55306,
-                  "endLine": 55306
+                  "endLine": 55306,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.maxOperatingP>180</cim:GeneratingUnit.maxOperatingP>"
+                  }
                 }
               }
             },
@@ -1555,7 +1657,10 @@
                 },
                 "region": {
                   "startLine": 55313,
-                  "endLine": 55313
+                  "endLine": 55313,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.maxOperatingP>540</cim:GeneratingUnit.maxOperatingP>"
+                  }
                 }
               }
             },
@@ -1573,7 +1678,10 @@
                 },
                 "region": {
                   "startLine": 55320,
-                  "endLine": 55320
+                  "endLine": 55320,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.maxOperatingP>540</cim:GeneratingUnit.maxOperatingP>"
+                  }
                 }
               }
             }
@@ -1608,7 +1716,7 @@
           "ruleIndex": 8,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 GeneratingUnit.minOperatingP \u2014 38 object(s) affected. Examples: HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit 7ec185f6-e72f-cb53-d4b0-7899558f8061 (STENFORSEN_G1) \u2026 ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (K\u00c4RNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] GeneratingUnit.minOperatingP\n[shacl_expected] a xsd:float value\n[schema_property] This is the minimum operating active power limit the dispatcher can enter for this unit. [1..1]\n[schema_class] A generating unit whose prime mover is a hydraulic turbine (e.g., Francis, Pelton, Kaplan).\n[context_count] 38 object(s) affected\n[context_examples] HydroGeneratingUnit 78fe254d-4c5a-b422-08a7-77f783acf3a7 (NORRSELE_G2), HydroGeneratingUnit 9f819286-734f-191c-3397-10c61585699f (VATTENDRAGET_G1), HydroGeneratingUnit 7ec185f6-e72f-cb53-d4b0-7899558f8061 (STENFORSEN_G1) \u2026 ThermalGeneratingUnit 0106680e-6c8c-22e8-e8d5-40a5be4d4ae1 (K\u00c4RNAN_G2), ThermalGeneratingUnit d6bb8b08-2285-799b-46f0-10718e1e30ca (RUTHUVUD_G1), ThermalGeneratingUnit 31c52089-b305-6be1-4c2a-bc66a3d9b29a (ERIKSHAMN_G1)"
           },
           "occurrenceCount": 38,
           "locations": [
@@ -1626,7 +1734,10 @@
                 },
                 "region": {
                   "startLine": 22138,
-                  "endLine": 22138
+                  "endLine": 22138,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>"
+                  }
                 }
               }
             },
@@ -1644,7 +1755,10 @@
                 },
                 "region": {
                   "startLine": 22146,
-                  "endLine": 22146
+                  "endLine": 22146,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>"
+                  }
                 }
               }
             },
@@ -1662,7 +1776,10 @@
                 },
                 "region": {
                   "startLine": 22154,
-                  "endLine": 22154
+                  "endLine": 22154,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>"
+                  }
                 }
               }
             },
@@ -1680,7 +1797,10 @@
                 },
                 "region": {
                   "startLine": 55307,
-                  "endLine": 55307
+                  "endLine": 55307,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>"
+                  }
                 }
               }
             },
@@ -1698,7 +1818,10 @@
                 },
                 "region": {
                   "startLine": 55314,
-                  "endLine": 55314
+                  "endLine": 55314,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>"
+                  }
                 }
               }
             },
@@ -1716,7 +1839,10 @@
                 },
                 "region": {
                   "startLine": 55321,
-                  "endLine": 55321
+                  "endLine": 55321,
+                  "snippet": {
+                    "text": "<cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>"
+                  }
                 }
               }
             }
@@ -1747,7 +1873,7 @@
           "ruleIndex": 9,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 LinearShuntCompensator.gPerSection \u2014 45 object(s) affected. Examples: LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) \u2026 LinearShuntCompensator c666e845-f13e-423b-865c-e7721bdda3ed (FT41_EK1), LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] LinearShuntCompensator.gPerSection\n[shacl_expected] a xsd:float value\n[schema_property] Positive sequence shunt (charging) conductance per section. [1..1]\n[schema_class] A linear shunt compensator has banks or sections with equal admittance values.\n[context_count] 45 object(s) affected\n[context_examples] LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) \u2026 LinearShuntCompensator c666e845-f13e-423b-865c-e7721bdda3ed (FT41_EK1), LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3)"
           },
           "occurrenceCount": 45,
           "locations": [
@@ -1765,7 +1891,10 @@
                 },
                 "region": {
                   "startLine": 22774,
-                  "endLine": 22774
+                  "endLine": 22774,
+                  "snippet": {
+                    "text": "<cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>"
+                  }
                 }
               }
             },
@@ -1783,7 +1912,10 @@
                 },
                 "region": {
                   "startLine": 22786,
-                  "endLine": 22786
+                  "endLine": 22786,
+                  "snippet": {
+                    "text": "<cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>"
+                  }
                 }
               }
             },
@@ -1801,7 +1933,10 @@
                 },
                 "region": {
                   "startLine": 22798,
-                  "endLine": 22798
+                  "endLine": 22798,
+                  "snippet": {
+                    "text": "<cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>"
+                  }
                 }
               }
             },
@@ -1819,7 +1954,10 @@
                 },
                 "region": {
                   "startLine": 23267,
-                  "endLine": 23267
+                  "endLine": 23267,
+                  "snippet": {
+                    "text": "<cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>"
+                  }
                 }
               }
             },
@@ -1837,7 +1975,10 @@
                 },
                 "region": {
                   "startLine": 23279,
-                  "endLine": 23279
+                  "endLine": 23279,
+                  "snippet": {
+                    "text": "<cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>"
+                  }
                 }
               }
             },
@@ -1855,7 +1996,10 @@
                 },
                 "region": {
                   "startLine": 23291,
-                  "endLine": 23291
+                  "endLine": 23291,
+                  "snippet": {
+                    "text": "<cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>"
+                  }
                 }
               }
             }
@@ -1886,7 +2030,7 @@
           "ruleIndex": 10,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ShuntCompensator.nomU \u2014 46 object(s) affected. Examples: LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) \u2026 LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3), NonlinearShuntCompensator 8464a151-ec39-4e7a-8321-06c41e63958c (FT62_X3)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] ShuntCompensator.nomU\n[shacl_expected] a xsd:float value\n[schema_property] The voltage at which the nominal reactive power may be calculated. This should normally be within 10% of the voltage at which the capacitor is connected to the network. [1..1]\n[schema_class] A linear shunt compensator has banks or sections with equal admittance values.\n[context_count] 46 object(s) affected\n[context_examples] LinearShuntCompensator 348c3d19-594b-47a4-89ae-e4310680d46c (FT42_X1), LinearShuntCompensator 3209be35-4c7d-4436-b880-d9b5b0925307 (CT32_X1), LinearShuntCompensator 36c7a8dc-5cf4-439d-ba3d-b97af313ab35 (CT31_X2) \u2026 LinearShuntCompensator e6ca44f1-4c8d-4b36-a640-eedc75dfc536 (FT62_X2), LinearShuntCompensator e6c123b3-d61d-43f2-b643-381de440115f (FT42_X3), NonlinearShuntCompensator 8464a151-ec39-4e7a-8321-06c41e63958c (FT62_X3)"
           },
           "occurrenceCount": 46,
           "locations": [
@@ -1904,7 +2048,10 @@
                 },
                 "region": {
                   "startLine": 22778,
-                  "endLine": 22778
+                  "endLine": 22778,
+                  "snippet": {
+                    "text": "<cim:ShuntCompensator.nomU>400</cim:ShuntCompensator.nomU>"
+                  }
                 }
               }
             },
@@ -1922,7 +2069,10 @@
                 },
                 "region": {
                   "startLine": 22790,
-                  "endLine": 22790
+                  "endLine": 22790,
+                  "snippet": {
+                    "text": "<cim:ShuntCompensator.nomU>400</cim:ShuntCompensator.nomU>"
+                  }
                 }
               }
             },
@@ -1940,7 +2090,10 @@
                 },
                 "region": {
                   "startLine": 22802,
-                  "endLine": 22802
+                  "endLine": 22802,
+                  "snippet": {
+                    "text": "<cim:ShuntCompensator.nomU>400</cim:ShuntCompensator.nomU>"
+                  }
                 }
               }
             },
@@ -1958,7 +2111,10 @@
                 },
                 "region": {
                   "startLine": 23283,
-                  "endLine": 23283
+                  "endLine": 23283,
+                  "snippet": {
+                    "text": "<cim:ShuntCompensator.nomU>400</cim:ShuntCompensator.nomU>"
+                  }
                 }
               }
             },
@@ -1976,7 +2132,10 @@
                 },
                 "region": {
                   "startLine": 23294,
-                  "endLine": 23294
+                  "endLine": 23294,
+                  "snippet": {
+                    "text": "<cim:ShuntCompensator.nomU>400</cim:ShuntCompensator.nomU>"
+                  }
                 }
               }
             },
@@ -1994,7 +2153,10 @@
                 },
                 "region": {
                   "startLine": 23308,
-                  "endLine": 23308
+                  "endLine": 23308,
+                  "snippet": {
+                    "text": "<cim:ShuntCompensator.nomU>400</cim:ShuntCompensator.nomU>"
+                  }
                 }
               }
             }
@@ -2025,7 +2187,7 @@
           "ruleIndex": 11,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 OperationalLimitType.acceptableDuration \u2014 3 object(s) affected. Examples: OperationalLimitType 6286de91-95ca-75a2-db02-e5a6331d18fb (tatl), OperationalLimitType 784a84a0-0d21-4d8c-bc63-94f7312a1eb2 (PTC_limit_import), OperationalLimitType 98cf1d8f-f84f-4d77-9616-43aa5a21c82c (PTC_limit_export)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] OperationalLimitType.acceptableDuration\n[shacl_expected] a xsd:float value\n[schema_property] The nominal acceptable duration of the limit. Limits are commonly expressed in terms of the time limit for which the limit is normally acceptable. The actual acceptable duration of a specific limit may depend on other local factors such as temperature or wind speed. The attribute has meaning only if the flag isInfiniteDuration is set to false, hence it shall not be exchanged when isInfiniteDuration is set to true. [0..1]\n[schema_class] The operational meaning of a category of limits.\n[context_count] 3 object(s) affected\n[context_examples] OperationalLimitType 6286de91-95ca-75a2-db02-e5a6331d18fb (tatl), OperationalLimitType 784a84a0-0d21-4d8c-bc63-94f7312a1eb2 (PTC_limit_import), OperationalLimitType 98cf1d8f-f84f-4d77-9616-43aa5a21c82c (PTC_limit_export)"
           },
           "occurrenceCount": 3,
           "locations": [
@@ -2043,7 +2205,10 @@
                 },
                 "region": {
                   "startLine": 24868,
-                  "endLine": 24868
+                  "endLine": 24868,
+                  "snippet": {
+                    "text": "<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>"
+                  }
                 }
               }
             },
@@ -2061,7 +2226,10 @@
                 },
                 "region": {
                   "startLine": 55965,
-                  "endLine": 55965
+                  "endLine": 55965,
+                  "snippet": {
+                    "text": "<cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>"
+                  }
                 }
               }
             },
@@ -2079,7 +2247,10 @@
                 },
                 "region": {
                   "startLine": 55973,
-                  "endLine": 55973
+                  "endLine": 55973,
+                  "snippet": {
+                    "text": "<cim:OperationalLimitType.acceptableDuration>900</cim:OperationalLimitType.acceptableDuration>"
+                  }
                 }
               }
             }
@@ -2108,7 +2279,7 @@
           "ruleIndex": 12,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.b \u2014 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] PowerTransformerEnd.b\n[shacl_expected] a xsd:float value\n[schema_property] Magnetizing branch susceptance (B mag).  The value can be positive or negative. [1..1]\n[schema_class] A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).\n[context_count] 106 object(s) affected\n[context_examples] PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 106,
           "locations": [
@@ -2126,7 +2297,10 @@
                 },
                 "region": {
                   "startLine": 25175,
-                  "endLine": 25175
+                  "endLine": 25175,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>"
+                  }
                 }
               }
             },
@@ -2144,7 +2318,10 @@
                 },
                 "region": {
                   "startLine": 25190,
-                  "endLine": 25190
+                  "endLine": 25190,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>"
+                  }
                 }
               }
             },
@@ -2162,7 +2339,10 @@
                 },
                 "region": {
                   "startLine": 25205,
-                  "endLine": 25205
+                  "endLine": 25205,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>"
+                  }
                 }
               }
             },
@@ -2180,7 +2360,10 @@
                 },
                 "region": {
                   "startLine": 26720,
-                  "endLine": 26720
+                  "endLine": 26720,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>"
+                  }
                 }
               }
             },
@@ -2198,7 +2381,10 @@
                 },
                 "region": {
                   "startLine": 26735,
-                  "endLine": 26735
+                  "endLine": 26735,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>"
+                  }
                 }
               }
             },
@@ -2216,7 +2402,10 @@
                 },
                 "region": {
                   "startLine": 26750,
-                  "endLine": 26750
+                  "endLine": 26750,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>"
+                  }
                 }
               }
             }
@@ -2247,7 +2436,7 @@
           "ruleIndex": 13,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.g \u2014 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] PowerTransformerEnd.g\n[shacl_expected] a xsd:float value\n[schema_property] Magnetizing branch conductance. [0..1]\n[schema_class] A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).\n[context_count] 106 object(s) affected\n[context_examples] PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 106,
           "locations": [
@@ -2265,7 +2454,10 @@
                 },
                 "region": {
                   "startLine": 25177,
-                  "endLine": 25177
+                  "endLine": 25177,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>"
+                  }
                 }
               }
             },
@@ -2283,7 +2475,10 @@
                 },
                 "region": {
                   "startLine": 25192,
-                  "endLine": 25192
+                  "endLine": 25192,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>"
+                  }
                 }
               }
             },
@@ -2301,7 +2496,10 @@
                 },
                 "region": {
                   "startLine": 25207,
-                  "endLine": 25207
+                  "endLine": 25207,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>"
+                  }
                 }
               }
             },
@@ -2319,7 +2517,10 @@
                 },
                 "region": {
                   "startLine": 26722,
-                  "endLine": 26722
+                  "endLine": 26722,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>"
+                  }
                 }
               }
             },
@@ -2337,7 +2538,10 @@
                 },
                 "region": {
                   "startLine": 26737,
-                  "endLine": 26737
+                  "endLine": 26737,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>"
+                  }
                 }
               }
             },
@@ -2355,7 +2559,10 @@
                 },
                 "region": {
                   "startLine": 26752,
-                  "endLine": 26752
+                  "endLine": 26752,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>"
+                  }
                 }
               }
             }
@@ -2386,7 +2593,7 @@
           "ruleIndex": 14,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.r \u2014 104 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] PowerTransformerEnd.r\n[shacl_expected] a xsd:float value\n[schema_property] Resistance (star-model) of the transformer end.\nThe attribute shall be equal to or greater than zero for non-equivalent transformers. [1..1]\n[schema_class] A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).\n[context_count] 104 object(s) affected\n[context_examples] PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 104,
           "locations": [
@@ -2404,7 +2611,10 @@
                 },
                 "region": {
                   "startLine": 25178,
-                  "endLine": 25178
+                  "endLine": 25178,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>"
+                  }
                 }
               }
             },
@@ -2422,7 +2632,10 @@
                 },
                 "region": {
                   "startLine": 25193,
-                  "endLine": 25193
+                  "endLine": 25193,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>"
+                  }
                 }
               }
             },
@@ -2440,7 +2653,10 @@
                 },
                 "region": {
                   "startLine": 25208,
-                  "endLine": 25208
+                  "endLine": 25208,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>"
+                  }
                 }
               }
             },
@@ -2458,7 +2674,10 @@
                 },
                 "region": {
                   "startLine": 26723,
-                  "endLine": 26723
+                  "endLine": 26723,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>"
+                  }
                 }
               }
             },
@@ -2476,7 +2695,10 @@
                 },
                 "region": {
                   "startLine": 26738,
-                  "endLine": 26738
+                  "endLine": 26738,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>"
+                  }
                 }
               }
             },
@@ -2494,7 +2716,10 @@
                 },
                 "region": {
                   "startLine": 26753,
-                  "endLine": 26753
+                  "endLine": 26753,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>"
+                  }
                 }
               }
             }
@@ -2525,7 +2750,7 @@
           "ruleIndex": 15,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.ratedS \u2014 106 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] PowerTransformerEnd.ratedS\n[shacl_expected] a xsd:float value\n[schema_property] Normal apparent power rating.\nThe attribute shall be a positive value. For a two-winding transformer the values for the high and low voltage sides shall be identical.  [0..1]\n[schema_class] A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).\n[context_count] 106 object(s) affected\n[context_examples] PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 106,
           "locations": [
@@ -2543,7 +2768,10 @@
                 },
                 "region": {
                   "startLine": 25179,
-                  "endLine": 25179
+                  "endLine": 25179,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>"
+                  }
                 }
               }
             },
@@ -2561,7 +2789,10 @@
                 },
                 "region": {
                   "startLine": 25194,
-                  "endLine": 25194
+                  "endLine": 25194,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedS>700</cim:PowerTransformerEnd.ratedS>"
+                  }
                 }
               }
             },
@@ -2579,7 +2810,10 @@
                 },
                 "region": {
                   "startLine": 25209,
-                  "endLine": 25209
+                  "endLine": 25209,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedS>200</cim:PowerTransformerEnd.ratedS>"
+                  }
                 }
               }
             },
@@ -2597,7 +2831,10 @@
                 },
                 "region": {
                   "startLine": 26724,
-                  "endLine": 26724
+                  "endLine": 26724,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedS>600</cim:PowerTransformerEnd.ratedS>"
+                  }
                 }
               }
             },
@@ -2615,7 +2852,10 @@
                 },
                 "region": {
                   "startLine": 26739,
-                  "endLine": 26739
+                  "endLine": 26739,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedS>200</cim:PowerTransformerEnd.ratedS>"
+                  }
                 }
               }
             },
@@ -2633,7 +2873,10 @@
                 },
                 "region": {
                   "startLine": 26754,
-                  "endLine": 26754
+                  "endLine": 26754,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedS>200</cim:PowerTransformerEnd.ratedS>"
+                  }
                 }
               }
             }
@@ -2667,7 +2910,7 @@
           "ruleIndex": 16,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.ratedU \u2014 100 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 6a9604ba-bd15-4667-ce4d-ab0c5994d94c (FT63_T11), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] PowerTransformerEnd.ratedU\n[shacl_expected] a xsd:float value\n[schema_property] Rated voltage: phase-phase for three-phase windings, and either phase-phase or phase-neutral for single-phase windings.\nA high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater than or equal to ratedU for the lower voltage sides.\nThe attribute shall be a positive value. [1..1]\n[schema_class] A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).\n[context_count] 100 object(s) affected\n[context_examples] PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 6a9604ba-bd15-4667-ce4d-ab0c5994d94c (FT63_T11), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 100,
           "locations": [
@@ -2685,7 +2928,10 @@
                 },
                 "region": {
                   "startLine": 25180,
-                  "endLine": 25180
+                  "endLine": 25180,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedU>400</cim:PowerTransformerEnd.ratedU>"
+                  }
                 }
               }
             },
@@ -2703,7 +2949,10 @@
                 },
                 "region": {
                   "startLine": 25195,
-                  "endLine": 25195
+                  "endLine": 25195,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedU>17</cim:PowerTransformerEnd.ratedU>"
+                  }
                 }
               }
             },
@@ -2721,7 +2970,10 @@
                 },
                 "region": {
                   "startLine": 25210,
-                  "endLine": 25210
+                  "endLine": 25210,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedU>400</cim:PowerTransformerEnd.ratedU>"
+                  }
                 }
               }
             },
@@ -2739,7 +2991,10 @@
                 },
                 "region": {
                   "startLine": 26710,
-                  "endLine": 26710
+                  "endLine": 26710,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedU>20</cim:PowerTransformerEnd.ratedU>"
+                  }
                 }
               }
             },
@@ -2757,7 +3012,10 @@
                 },
                 "region": {
                   "startLine": 26740,
-                  "endLine": 26740
+                  "endLine": 26740,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedU>20</cim:PowerTransformerEnd.ratedU>"
+                  }
                 }
               }
             },
@@ -2775,7 +3033,10 @@
                 },
                 "region": {
                   "startLine": 26755,
-                  "endLine": 26755
+                  "endLine": 26755,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.ratedU>20</cim:PowerTransformerEnd.ratedU>"
+                  }
                 }
               }
             }
@@ -2808,7 +3069,7 @@
           "ruleIndex": 17,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 PowerTransformerEnd.x \u2014 71 object(s) affected. Examples: PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] PowerTransformerEnd.x\n[shacl_expected] a xsd:float value\n[schema_property] Positive sequence series reactance (star-model) of the transformer end. [1..1]\n[schema_class] A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).\n[context_count] 71 object(s) affected\n[context_examples] PowerTransformerEnd 887f8ea3-5008-422c-e002-1d911a85e8be (FT44_T13), PowerTransformerEnd ad64440b-e3c6-5a0a-f7dd-00100d44ef97 (OLM\u00c5FALLET_G1_TRAFO), PowerTransformerEnd b457ecd6-1a05-2966-e4bb-54ec2634fe48 (RUTHUVUD_G2_TRAFO) \u2026 PowerTransformerEnd 1f3a023e-2dcc-d5c8-995d-7a183dd35976 (CT31_T401), PowerTransformerEnd e7119438-34a5-92d7-52dd-94ed81f4d55c (RUTHUVUD_G2_TRAFO), PowerTransformerEnd bcb68501-c04f-3f82-837b-7260e8fc2808 (ATOMSBORG_G1_TRAFO)"
           },
           "occurrenceCount": 71,
           "locations": [
@@ -2826,7 +3087,10 @@
                 },
                 "region": {
                   "startLine": 25181,
-                  "endLine": 25181
+                  "endLine": 25181,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.x>120</cim:PowerTransformerEnd.x>"
+                  }
                 }
               }
             },
@@ -2844,7 +3108,10 @@
                 },
                 "region": {
                   "startLine": 25196,
-                  "endLine": 25196
+                  "endLine": 25196,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>"
+                  }
                 }
               }
             },
@@ -2862,7 +3129,10 @@
                 },
                 "region": {
                   "startLine": 25211,
-                  "endLine": 25211
+                  "endLine": 25211,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.x>120</cim:PowerTransformerEnd.x>"
+                  }
                 }
               }
             },
@@ -2880,7 +3150,10 @@
                 },
                 "region": {
                   "startLine": 26726,
-                  "endLine": 26726
+                  "endLine": 26726,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>"
+                  }
                 }
               }
             },
@@ -2898,7 +3171,10 @@
                 },
                 "region": {
                   "startLine": 26741,
-                  "endLine": 26741
+                  "endLine": 26741,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>"
+                  }
                 }
               }
             },
@@ -2916,7 +3192,10 @@
                 },
                 "region": {
                   "startLine": 26756,
-                  "endLine": 26756
+                  "endLine": 26756,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>"
+                  }
                 }
               }
             }
@@ -2948,7 +3227,7 @@
           "ruleIndex": 18,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChanger.neutralU \u2014 9 object(s) affected. Examples: RatioTapChanger 920f9cbd-0f0e-bf5d-083e-dbf16aad8b0f (XT201-T1), RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 1d61cd3e-d131-8bbb-f4a2-8a711c95dc1e (ST5_T1) \u2026 RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 1a33a841-7d4e-0485-bd31-45caf3cce221 (XT191-T1), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] TapChanger.neutralU\n[shacl_expected] a xsd:float value\n[schema_property] Voltage at which the winding operates at the neutral tap setting. It is the voltage at the terminal of the PowerTransformerEnd associated with the tap changer when all tap changers on the transformer are at their neutralStep position.  Normally neutralU of the tap changer is the same as ratedU of the PowerTransformerEnd, but it can differ in special cases such as when the tapping mechanism is separate from the winding more common on lower voltage transformers.\nThis attribute is not relevant for PhaseTapChangerAsymmetrical, PhaseTapChangerSymmetrical and PhaseTapChangerLinear.  [1..1]\n[schema_class] A tap changer that changes the voltage ratio impacting the voltage magnitude but not the phase angle across the transformer.\n\nAngle sign convention (general): Positive value indicates a positive phase shift from the winding where the tap is located to the other winding (for a two-winding transformer).\n[context_count] 9 object(s) affected\n[context_examples] RatioTapChanger 920f9cbd-0f0e-bf5d-083e-dbf16aad8b0f (XT201-T1), RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 1d61cd3e-d131-8bbb-f4a2-8a711c95dc1e (ST5_T1) \u2026 RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 1a33a841-7d4e-0485-bd31-45caf3cce221 (XT191-T1), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
           },
           "occurrenceCount": 9,
           "locations": [
@@ -2966,7 +3245,10 @@
                 },
                 "region": {
                   "startLine": 26772,
-                  "endLine": 26772
+                  "endLine": 26772,
+                  "snippet": {
+                    "text": "<cim:TapChanger.neutralU>135</cim:TapChanger.neutralU>"
+                  }
                 }
               }
             },
@@ -2984,7 +3266,10 @@
                 },
                 "region": {
                   "startLine": 26786,
-                  "endLine": 26786
+                  "endLine": 26786,
+                  "snippet": {
+                    "text": "<cim:TapChanger.neutralU>135</cim:TapChanger.neutralU>"
+                  }
                 }
               }
             },
@@ -3002,7 +3287,10 @@
                 },
                 "region": {
                   "startLine": 26800,
-                  "endLine": 26800
+                  "endLine": 26800,
+                  "snippet": {
+                    "text": "<cim:TapChanger.neutralU>50</cim:TapChanger.neutralU>"
+                  }
                 }
               }
             },
@@ -3020,7 +3308,10 @@
                 },
                 "region": {
                   "startLine": 26884,
-                  "endLine": 26884
+                  "endLine": 26884,
+                  "snippet": {
+                    "text": "<cim:TapChanger.neutralU>135</cim:TapChanger.neutralU>"
+                  }
                 }
               }
             },
@@ -3038,7 +3329,10 @@
                 },
                 "region": {
                   "startLine": 26898,
-                  "endLine": 26898
+                  "endLine": 26898,
+                  "snippet": {
+                    "text": "<cim:TapChanger.neutralU>135</cim:TapChanger.neutralU>"
+                  }
                 }
               }
             },
@@ -3056,7 +3350,10 @@
                 },
                 "region": {
                   "startLine": 26912,
-                  "endLine": 26912
+                  "endLine": 26912,
+                  "snippet": {
+                    "text": "<cim:TapChanger.neutralU>135</cim:TapChanger.neutralU>"
+                  }
                 }
               }
             }
@@ -3088,7 +3385,7 @@
           "ruleIndex": 19,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RatioTapChanger.stepVoltageIncrement \u2014 4 object(s) affected. Examples: RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 9564d660-052a-292d-4549-2e0675125fcf (FT42_T402), RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] RatioTapChanger.stepVoltageIncrement\n[shacl_expected] a xsd:float value\n[schema_property] Tap step increment, in per cent of rated voltage of the power transformer end, per step position.\nWhen the increment is negative, the voltage decreases when the tap step increases. [1..1]\n[schema_class] A tap changer that changes the voltage ratio impacting the voltage magnitude but not the phase angle across the transformer.\n\nAngle sign convention (general): Positive value indicates a positive phase shift from the winding where the tap is located to the other winding (for a two-winding transformer).\n[context_count] 4 object(s) affected\n[context_examples] RatioTapChanger a11d2b46-cf3a-449d-e89e-e96085aef0cf (FT42_T401), RatioTapChanger 9564d660-052a-292d-4549-2e0675125fcf (FT42_T402), RatioTapChanger 493f9319-387f-2683-2bcd-a1940360f0e2 (FT50_T401), RatioTapChanger 601760f8-722f-2c5d-60a6-246344aa08da (FT50_T402)"
           },
           "occurrenceCount": 4,
           "locations": [
@@ -3106,7 +3403,10 @@
                 },
                 "region": {
                   "startLine": 26780,
-                  "endLine": 26780
+                  "endLine": 26780,
+                  "snippet": {
+                    "text": "<cim:RatioTapChanger.stepVoltageIncrement>1</cim:RatioTapChanger.stepVoltageIncrement>"
+                  }
                 }
               }
             },
@@ -3124,7 +3424,10 @@
                 },
                 "region": {
                   "startLine": 26808,
-                  "endLine": 26808
+                  "endLine": 26808,
+                  "snippet": {
+                    "text": "<cim:RatioTapChanger.stepVoltageIncrement>1</cim:RatioTapChanger.stepVoltageIncrement>"
+                  }
                 }
               }
             },
@@ -3142,7 +3445,10 @@
                 },
                 "region": {
                   "startLine": 26878,
-                  "endLine": 26878
+                  "endLine": 26878,
+                  "snippet": {
+                    "text": "<cim:RatioTapChanger.stepVoltageIncrement>1</cim:RatioTapChanger.stepVoltageIncrement>"
+                  }
                 }
               }
             },
@@ -3160,7 +3466,10 @@
                 },
                 "region": {
                   "startLine": 26906,
-                  "endLine": 26906
+                  "endLine": 26906,
+                  "snippet": {
+                    "text": "<cim:RatioTapChanger.stepVoltageIncrement>1</cim:RatioTapChanger.stepVoltageIncrement>"
+                  }
                 }
               }
             }
@@ -3189,7 +3498,7 @@
           "ruleIndex": 20,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.b \u2014 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] TapChangerTablePoint.b\n[shacl_expected] a xsd:float value\n[schema_property] The magnetizing branch susceptance deviation as a percentage of nominal value. The actual susceptance is calculated as follows:\ncalculated magnetizing susceptance = b(nominal) * (1 + b(from this class)/100).   The b(nominal) is defined as the static magnetizing susceptance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form. [0..1]\n[schema_class] Describes each tap step in the ratio tap changer tabular curve.\n[context_count] 235 object(s) affected\n[context_examples] RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 235,
           "locations": [
@@ -3207,7 +3516,10 @@
                 },
                 "region": {
                   "startLine": 26961,
-                  "endLine": 26961
+                  "endLine": 26961,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.b>0</cim:TapChangerTablePoint.b>"
+                  }
                 }
               }
             },
@@ -3225,7 +3537,10 @@
                 },
                 "region": {
                   "startLine": 26970,
-                  "endLine": 26970
+                  "endLine": 26970,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.b>0</cim:TapChangerTablePoint.b>"
+                  }
                 }
               }
             },
@@ -3243,7 +3558,10 @@
                 },
                 "region": {
                   "startLine": 26979,
-                  "endLine": 26979
+                  "endLine": 26979,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.b>0</cim:TapChangerTablePoint.b>"
+                  }
                 }
               }
             },
@@ -3261,7 +3579,10 @@
                 },
                 "region": {
                   "startLine": 29049,
-                  "endLine": 29049
+                  "endLine": 29049,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.b>0</cim:TapChangerTablePoint.b>"
+                  }
                 }
               }
             },
@@ -3279,7 +3600,10 @@
                 },
                 "region": {
                   "startLine": 29058,
-                  "endLine": 29058
+                  "endLine": 29058,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.b>0</cim:TapChangerTablePoint.b>"
+                  }
                 }
               }
             },
@@ -3297,7 +3621,10 @@
                 },
                 "region": {
                   "startLine": 29067,
-                  "endLine": 29067
+                  "endLine": 29067,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.b>0</cim:TapChangerTablePoint.b>"
+                  }
                 }
               }
             }
@@ -3328,7 +3655,7 @@
           "ruleIndex": 21,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.g \u2014 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] TapChangerTablePoint.g\n[shacl_expected] a xsd:float value\n[schema_property] The magnetizing branch conductance deviation as a percentage of nominal value. The actual conductance is calculated as follows:\ncalculated magnetizing conductance = g(nominal) * (1 + g(from this class)/100).   The g(nominal) is defined as the static magnetizing conductance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form. [0..1]\n[schema_class] Describes each tap step in the ratio tap changer tabular curve.\n[context_count] 235 object(s) affected\n[context_examples] RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 235,
           "locations": [
@@ -3346,7 +3673,10 @@
                 },
                 "region": {
                   "startLine": 26962,
-                  "endLine": 26962
+                  "endLine": 26962,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.g>0</cim:TapChangerTablePoint.g>"
+                  }
                 }
               }
             },
@@ -3364,7 +3694,10 @@
                 },
                 "region": {
                   "startLine": 26971,
-                  "endLine": 26971
+                  "endLine": 26971,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.g>0</cim:TapChangerTablePoint.g>"
+                  }
                 }
               }
             },
@@ -3382,7 +3715,10 @@
                 },
                 "region": {
                   "startLine": 26980,
-                  "endLine": 26980
+                  "endLine": 26980,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.g>0</cim:TapChangerTablePoint.g>"
+                  }
                 }
               }
             },
@@ -3400,7 +3736,10 @@
                 },
                 "region": {
                   "startLine": 29050,
-                  "endLine": 29050
+                  "endLine": 29050,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.g>0</cim:TapChangerTablePoint.g>"
+                  }
                 }
               }
             },
@@ -3418,7 +3757,10 @@
                 },
                 "region": {
                   "startLine": 29059,
-                  "endLine": 29059
+                  "endLine": 29059,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.g>0</cim:TapChangerTablePoint.g>"
+                  }
                 }
               }
             },
@@ -3436,7 +3778,10 @@
                 },
                 "region": {
                   "startLine": 29068,
-                  "endLine": 29068
+                  "endLine": 29068,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.g>0</cim:TapChangerTablePoint.g>"
+                  }
                 }
               }
             }
@@ -3467,7 +3812,7 @@
           "ruleIndex": 22,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.r \u2014 235 object(s) affected. Examples: RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] TapChangerTablePoint.r\n[shacl_expected] a xsd:float value\n[schema_property] The resistance deviation as a percentage of nominal value. The actual reactance is calculated as follows:\ncalculated resistance = r(nominal) * (1 + r(from this class)/100).   The r(nominal) is defined as the static resistance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form. [0..1]\n[schema_class] Describes each tap step in the ratio tap changer tabular curve.\n[context_count] 235 object(s) affected\n[context_examples] RatioTapChangerTablePoint 3e87649e-7855-a8f1-3662-25afe1bf25d6, RatioTapChangerTablePoint 18e4c40e-3e8c-5d5a-048b-74477dc1fbde, RatioTapChangerTablePoint 5d07d09c-f14c-2d3e-5fd1-e79dbc097a1e \u2026 RatioTapChangerTablePoint 692052e2-707d-892f-b04d-e4bc924fdc4a, RatioTapChangerTablePoint 16d47c52-6b2d-f8a9-6751-a623599a86b3, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 235,
           "locations": [
@@ -3485,7 +3830,10 @@
                 },
                 "region": {
                   "startLine": 26963,
-                  "endLine": 26963
+                  "endLine": 26963,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>"
+                  }
                 }
               }
             },
@@ -3503,7 +3851,10 @@
                 },
                 "region": {
                   "startLine": 26972,
-                  "endLine": 26972
+                  "endLine": 26972,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>"
+                  }
                 }
               }
             },
@@ -3521,7 +3872,10 @@
                 },
                 "region": {
                   "startLine": 26981,
-                  "endLine": 26981
+                  "endLine": 26981,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>"
+                  }
                 }
               }
             },
@@ -3539,7 +3893,10 @@
                 },
                 "region": {
                   "startLine": 29051,
-                  "endLine": 29051
+                  "endLine": 29051,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>"
+                  }
                 }
               }
             },
@@ -3557,7 +3914,10 @@
                 },
                 "region": {
                   "startLine": 29060,
-                  "endLine": 29060
+                  "endLine": 29060,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>"
+                  }
                 }
               }
             },
@@ -3575,7 +3935,10 @@
                 },
                 "region": {
                   "startLine": 29069,
-                  "endLine": 29069
+                  "endLine": 29069,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>"
+                  }
                 }
               }
             }
@@ -3606,7 +3969,7 @@
           "ruleIndex": 23,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 TapChangerTablePoint.ratio \u2014 9 object(s) affected. Examples: RatioTapChangerTablePoint ac93de00-c749-d782-2dd4-95c3ecc65910, RatioTapChangerTablePoint ef4ab9d1-ed7f-9d87-952e-e1f0de084fdc, RatioTapChangerTablePoint 9dd8bbf0-306a-01c0-e30c-240d0c7616e2 \u2026 RatioTapChangerTablePoint 8d34ef9f-dc11-659c-9114-bb37d4dd2de6, RatioTapChangerTablePoint 6999f3b8-bc5a-d681-2e7c-27896300104d, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] TapChangerTablePoint.ratio\n[shacl_expected] a xsd:float value\n[schema_property] The voltage at the tap step divided by rated voltage of the transformer end having the tap changer. Hence this is a value close to one.\nFor example, if the ratio at step 1 is 1.01, and the rated voltage of the transformer end is 110kV, then the voltage obtained by setting the tap changer to step 1 to is 111.1kV. [0..1]\n[schema_class] Describes each tap step in the ratio tap changer tabular curve.\n[context_count] 9 object(s) affected\n[context_examples] RatioTapChangerTablePoint ac93de00-c749-d782-2dd4-95c3ecc65910, RatioTapChangerTablePoint ef4ab9d1-ed7f-9d87-952e-e1f0de084fdc, RatioTapChangerTablePoint 9dd8bbf0-306a-01c0-e30c-240d0c7616e2 \u2026 RatioTapChangerTablePoint 8d34ef9f-dc11-659c-9114-bb37d4dd2de6, RatioTapChangerTablePoint 6999f3b8-bc5a-d681-2e7c-27896300104d, RatioTapChangerTablePoint 4a813e3c-0a01-4e10-37bf-a94b9dd787cb"
           },
           "occurrenceCount": 9,
           "locations": [
@@ -3624,7 +3987,10 @@
                 },
                 "region": {
                   "startLine": 27054,
-                  "endLine": 27054
+                  "endLine": 27054,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.ratio>1</cim:TapChangerTablePoint.ratio>"
+                  }
                 }
               }
             },
@@ -3642,7 +4008,10 @@
                 },
                 "region": {
                   "startLine": 27090,
-                  "endLine": 27090
+                  "endLine": 27090,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.ratio>1</cim:TapChangerTablePoint.ratio>"
+                  }
                 }
               }
             },
@@ -3660,7 +4029,10 @@
                 },
                 "region": {
                   "startLine": 27126,
-                  "endLine": 27126
+                  "endLine": 27126,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.ratio>1</cim:TapChangerTablePoint.ratio>"
+                  }
                 }
               }
             },
@@ -3678,7 +4050,10 @@
                 },
                 "region": {
                   "startLine": 28431,
-                  "endLine": 28431
+                  "endLine": 28431,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.ratio>1</cim:TapChangerTablePoint.ratio>"
+                  }
                 }
               }
             },
@@ -3696,7 +4071,10 @@
                 },
                 "region": {
                   "startLine": 28908,
-                  "endLine": 28908
+                  "endLine": 28908,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.ratio>1</cim:TapChangerTablePoint.ratio>"
+                  }
                 }
               }
             },
@@ -3714,7 +4092,10 @@
                 },
                 "region": {
                   "startLine": 29070,
-                  "endLine": 29070
+                  "endLine": 29070,
+                  "snippet": {
+                    "text": "<cim:TapChangerTablePoint.ratio>1</cim:TapChangerTablePoint.ratio>"
+                  }
                 }
               }
             }
@@ -3745,7 +4126,7 @@
           "ruleIndex": 24,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 StaticVarCompensator.capacitiveRating \u2014 2 object(s) affected. Examples: StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] StaticVarCompensator.capacitiveRating\n[shacl_expected] a xsd:float value\n[schema_property] Capacitive reactance at maximum capacitive reactive power.  Shall always be positive. [1..1]\n[schema_class] A facility for providing variable and controllable shunt reactive power. The SVC typically consists of a stepdown transformer, filter, thyristor-controlled reactor, and thyristor-switched capacitor arms.\n\nThe SVC may operate in fixed MVar output mode or in voltage control mode. When in voltage control mode, the output of the SVC will be proportional to the deviation of voltage at the controlled bus from the voltage setpoint.  The SVC characteristic slope defines the proportion.  If the voltage at the controlled bus is equal to the voltage setpoint, the SVC MVar output is zero.\n[context_count] 2 object(s) affected\n[context_examples] StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -3763,7 +4144,10 @@
                 },
                 "region": {
                   "startLine": 29529,
-                  "endLine": 29529
+                  "endLine": 29529,
+                  "snippet": {
+                    "text": "<cim:StaticVarCompensator.capacitiveRating>800</cim:StaticVarCompensator.capacitiveRating>"
+                  }
                 }
               }
             },
@@ -3781,7 +4165,10 @@
                 },
                 "region": {
                   "startLine": 29538,
-                  "endLine": 29538
+                  "endLine": 29538,
+                  "snippet": {
+                    "text": "<cim:StaticVarCompensator.capacitiveRating>800</cim:StaticVarCompensator.capacitiveRating>"
+                  }
                 }
               }
             }
@@ -3808,7 +4195,7 @@
           "ruleIndex": 25,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 StaticVarCompensator.inductiveRating \u2014 2 object(s) affected. Examples: StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] StaticVarCompensator.inductiveRating\n[shacl_expected] a xsd:float value\n[schema_property] Inductive reactance at maximum inductive reactive power.  Shall always be negative.   [1..1]\n[schema_class] A facility for providing variable and controllable shunt reactive power. The SVC typically consists of a stepdown transformer, filter, thyristor-controlled reactor, and thyristor-switched capacitor arms.\n\nThe SVC may operate in fixed MVar output mode or in voltage control mode. When in voltage control mode, the output of the SVC will be proportional to the deviation of voltage at the controlled bus from the voltage setpoint.  The SVC characteristic slope defines the proportion.  If the voltage at the controlled bus is equal to the voltage setpoint, the SVC MVar output is zero.\n[context_count] 2 object(s) affected\n[context_examples] StaticVarCompensator 54125a2a-e584-453a-b020-903d23cadd2c (FT41_SVC), StaticVarCompensator fd169662-a098-4279-b8fb-7ee49ec4713c (FT62_SVC)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -3826,7 +4213,10 @@
                 },
                 "region": {
                   "startLine": 29530,
-                  "endLine": 29530
+                  "endLine": 29530,
+                  "snippet": {
+                    "text": "<cim:StaticVarCompensator.inductiveRating>-800</cim:StaticVarCompensator.inductiveRating>"
+                  }
                 }
               }
             },
@@ -3844,7 +4234,10 @@
                 },
                 "region": {
                   "startLine": 29539,
-                  "endLine": 29539
+                  "endLine": 29539,
+                  "snippet": {
+                    "text": "<cim:StaticVarCompensator.inductiveRating>-400</cim:StaticVarCompensator.inductiveRating>"
+                  }
                 }
               }
             }
@@ -3872,7 +4265,7 @@
           "ruleIndex": 26,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RotatingMachine.ratedS \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] RotatingMachine.ratedS\n[shacl_expected] a xsd:float value\n[schema_property] Nameplate apparent power rating for the unit.\nThe attribute shall have a positive value. [0..1]\n[schema_class] An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.\n[context_count] 39 object(s) affected\n[context_examples] SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -3890,7 +4283,10 @@
                 },
                 "region": {
                   "startLine": 29864,
-                  "endLine": 29864
+                  "endLine": 29864,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedS>350</cim:RotatingMachine.ratedS>"
+                  }
                 }
               }
             },
@@ -3908,7 +4304,10 @@
                 },
                 "region": {
                   "startLine": 29878,
-                  "endLine": 29878
+                  "endLine": 29878,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedS>600</cim:RotatingMachine.ratedS>"
+                  }
                 }
               }
             },
@@ -3926,7 +4325,10 @@
                 },
                 "region": {
                   "startLine": 29892,
-                  "endLine": 29892
+                  "endLine": 29892,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedS>700</cim:RotatingMachine.ratedS>"
+                  }
                 }
               }
             },
@@ -3944,7 +4346,10 @@
                 },
                 "region": {
                   "startLine": 30367,
-                  "endLine": 30367
+                  "endLine": 30367,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedS>300</cim:RotatingMachine.ratedS>"
+                  }
                 }
               }
             },
@@ -3962,7 +4367,10 @@
                 },
                 "region": {
                   "startLine": 30381,
-                  "endLine": 30381
+                  "endLine": 30381,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedS>500</cim:RotatingMachine.ratedS>"
+                  }
                 }
               }
             },
@@ -3980,7 +4388,10 @@
                 },
                 "region": {
                   "startLine": 30395,
-                  "endLine": 30395
+                  "endLine": 30395,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedS>1500</cim:RotatingMachine.ratedS>"
+                  }
                 }
               }
             }
@@ -4016,7 +4427,7 @@
           "ruleIndex": 27,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RotatingMachine.ratedU \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] RotatingMachine.ratedU\n[shacl_expected] a xsd:float value\n[schema_property] Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909.\nThe attribute shall be a positive value. [0..1]\n[schema_class] An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.\n[context_count] 39 object(s) affected\n[context_examples] SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -4034,7 +4445,10 @@
                 },
                 "region": {
                   "startLine": 29865,
-                  "endLine": 29865
+                  "endLine": 29865,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedU>17</cim:RotatingMachine.ratedU>"
+                  }
                 }
               }
             },
@@ -4052,7 +4466,10 @@
                 },
                 "region": {
                   "startLine": 29879,
-                  "endLine": 29879
+                  "endLine": 29879,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedU>20</cim:RotatingMachine.ratedU>"
+                  }
                 }
               }
             },
@@ -4070,7 +4487,10 @@
                 },
                 "region": {
                   "startLine": 29893,
-                  "endLine": 29893
+                  "endLine": 29893,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedU>20</cim:RotatingMachine.ratedU>"
+                  }
                 }
               }
             },
@@ -4088,7 +4508,10 @@
                 },
                 "region": {
                   "startLine": 30368,
-                  "endLine": 30368
+                  "endLine": 30368,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedU>17</cim:RotatingMachine.ratedU>"
+                  }
                 }
               }
             },
@@ -4106,7 +4529,10 @@
                 },
                 "region": {
                   "startLine": 30382,
-                  "endLine": 30382
+                  "endLine": 30382,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedU>17</cim:RotatingMachine.ratedU>"
+                  }
                 }
               }
             },
@@ -4124,7 +4550,10 @@
                 },
                 "region": {
                   "startLine": 30396,
-                  "endLine": 30396
+                  "endLine": 30396,
+                  "snippet": {
+                    "text": "<cim:RotatingMachine.ratedU>17</cim:RotatingMachine.ratedU>"
+                  }
                 }
               }
             }
@@ -4156,7 +4585,7 @@
           "ruleIndex": 28,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 SynchronousMachine.maxQ \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] SynchronousMachine.maxQ\n[shacl_expected] a xsd:float value\n[schema_property] Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. [0..1]\n[schema_class] An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.\n[context_count] 39 object(s) affected\n[context_examples] SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -4174,7 +4603,10 @@
                 },
                 "region": {
                   "startLine": 29866,
-                  "endLine": 29866
+                  "endLine": 29866,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.maxQ>175</cim:SynchronousMachine.maxQ>"
+                  }
                 }
               }
             },
@@ -4192,7 +4624,10 @@
                 },
                 "region": {
                   "startLine": 29880,
-                  "endLine": 29880
+                  "endLine": 29880,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.maxQ>300</cim:SynchronousMachine.maxQ>"
+                  }
                 }
               }
             },
@@ -4210,7 +4645,10 @@
                 },
                 "region": {
                   "startLine": 29894,
-                  "endLine": 29894
+                  "endLine": 29894,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.maxQ>350</cim:SynchronousMachine.maxQ>"
+                  }
                 }
               }
             },
@@ -4228,7 +4666,10 @@
                 },
                 "region": {
                   "startLine": 30369,
-                  "endLine": 30369
+                  "endLine": 30369,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.maxQ>300</cim:SynchronousMachine.maxQ>"
+                  }
                 }
               }
             },
@@ -4246,7 +4687,10 @@
                 },
                 "region": {
                   "startLine": 30383,
-                  "endLine": 30383
+                  "endLine": 30383,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.maxQ>250</cim:SynchronousMachine.maxQ>"
+                  }
                 }
               }
             },
@@ -4264,7 +4708,10 @@
                 },
                 "region": {
                   "startLine": 30397,
-                  "endLine": 30397
+                  "endLine": 30397,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.maxQ>300</cim:SynchronousMachine.maxQ>"
+                  }
                 }
               }
             }
@@ -4298,7 +4745,7 @@
           "ruleIndex": 29,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 SynchronousMachine.minQ \u2014 39 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] SynchronousMachine.minQ\n[shacl_expected] a xsd:float value\n[schema_property] Minimum reactive power limit for the unit. [0..1]\n[schema_class] An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.\n[context_count] 39 object(s) affected\n[context_examples] SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 6c114aaf-8f71-4cd6-8c4a-8832a4713422 (SYDB\u00c4CK_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 39,
           "locations": [
@@ -4316,7 +4763,10 @@
                 },
                 "region": {
                   "startLine": 29867,
-                  "endLine": 29867
+                  "endLine": 29867,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.minQ>-35</cim:SynchronousMachine.minQ>"
+                  }
                 }
               }
             },
@@ -4334,7 +4784,10 @@
                 },
                 "region": {
                   "startLine": 29881,
-                  "endLine": 29881
+                  "endLine": 29881,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.minQ>0</cim:SynchronousMachine.minQ>"
+                  }
                 }
               }
             },
@@ -4352,7 +4805,10 @@
                 },
                 "region": {
                   "startLine": 29895,
-                  "endLine": 29895
+                  "endLine": 29895,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.minQ>0</cim:SynchronousMachine.minQ>"
+                  }
                 }
               }
             },
@@ -4370,7 +4826,10 @@
                 },
                 "region": {
                   "startLine": 30370,
-                  "endLine": 30370
+                  "endLine": 30370,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.minQ>-200</cim:SynchronousMachine.minQ>"
+                  }
                 }
               }
             },
@@ -4388,7 +4847,10 @@
                 },
                 "region": {
                   "startLine": 30384,
-                  "endLine": 30384
+                  "endLine": 30384,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.minQ>-50</cim:SynchronousMachine.minQ>"
+                  }
                 }
               }
             },
@@ -4406,7 +4868,10 @@
                 },
                 "region": {
                   "startLine": 30398,
-                  "endLine": 30398
+                  "endLine": 30398,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.minQ>-100</cim:SynchronousMachine.minQ>"
+                  }
                 }
               }
             }
@@ -4441,7 +4906,7 @@
           "ruleIndex": 30,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 SynchronousMachine.qPercent \u2014 26 object(s) affected. Examples: SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2), SynchronousMachine fc77b8f5-555e-4990-b913-a71852ddbfb2 (OLM\u00c5FALLET_G1) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] SynchronousMachine.qPercent\n[shacl_expected] a xsd:float value\n[schema_property] Part of the coordinated reactive control that comes from this machine. The attribute is used as a participation factor not necessarily summing up to 100% for the participating devices in the control. [0..1]\n[schema_class] An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.\n[context_count] 26 object(s) affected\n[context_examples] SynchronousMachine 1092d095-f5a4-4e36-a31b-8bd15851165f (NORRSELE_G2), SynchronousMachine 1bcb5c59-1458-40ed-81f6-d4c548505de1 (BLOCKET_G2), SynchronousMachine fc77b8f5-555e-4990-b913-a71852ddbfb2 (OLM\u00c5FALLET_G1) \u2026 SynchronousMachine 904232af-11a3-4fa2-9a0c-17ea76ddb41f (DALBO_G1), SynchronousMachine d4e4911b-d87a-4fd5-a7a7-0346c0538db3 (NORRSELE_G1), SynchronousMachine 4e0971d4-db4c-441d-a9f2-c88d4c04f60b (H\u00c4LLAN_G1)"
           },
           "occurrenceCount": 26,
           "locations": [
@@ -4459,7 +4924,10 @@
                 },
                 "region": {
                   "startLine": 29868,
-                  "endLine": 29868
+                  "endLine": 29868,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.qPercent>100</cim:SynchronousMachine.qPercent>"
+                  }
                 }
               }
             },
@@ -4477,7 +4945,10 @@
                 },
                 "region": {
                   "startLine": 29896,
-                  "endLine": 29896
+                  "endLine": 29896,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.qPercent>100</cim:SynchronousMachine.qPercent>"
+                  }
                 }
               }
             },
@@ -4495,7 +4966,10 @@
                 },
                 "region": {
                   "startLine": 29910,
-                  "endLine": 29910
+                  "endLine": 29910,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.qPercent>100</cim:SynchronousMachine.qPercent>"
+                  }
                 }
               }
             },
@@ -4513,7 +4987,10 @@
                 },
                 "region": {
                   "startLine": 30371,
-                  "endLine": 30371
+                  "endLine": 30371,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.qPercent>100</cim:SynchronousMachine.qPercent>"
+                  }
                 }
               }
             },
@@ -4531,7 +5008,10 @@
                 },
                 "region": {
                   "startLine": 30385,
-                  "endLine": 30385
+                  "endLine": 30385,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.qPercent>100</cim:SynchronousMachine.qPercent>"
+                  }
                 }
               }
             },
@@ -4549,7 +5029,10 @@
                 },
                 "region": {
                   "startLine": 30399,
-                  "endLine": 30399
+                  "endLine": 30399,
+                  "snippet": {
+                    "text": "<cim:SynchronousMachine.qPercent>100</cim:SynchronousMachine.qPercent>"
+                  }
                 }
               }
             }
@@ -4580,7 +5063,7 @@
           "ruleIndex": 31,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 VoltageLimit.normalValue \u2014 2 object(s) affected. Examples: VoltageLimit b58af798-f3bd-c8c4-3fcf-4b3a9da2e9fb (low limit for FT41_B400_DALBO), VoltageLimit 97cd7bb9-db25-f4de-2be2-8a0b2cc0ed3e (high limit for FT41_B400_DALBO)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] VoltageLimit.normalValue\n[shacl_expected] a xsd:float value\n[schema_property] The normal limit on voltage. High or low limit nature of the limit depends upon the properties of the operational limit type. The attribute shall be a positive value or zero. [1..1]\n[schema_class] Operational limit applied to voltage.\nThe use of operational VoltageLimit is preferred instead of limits defined at VoltageLevel. The operational VoltageLimits are used, if present.\n[context_count] 2 object(s) affected\n[context_examples] VoltageLimit b58af798-f3bd-c8c4-3fcf-4b3a9da2e9fb (low limit for FT41_B400_DALBO), VoltageLimit 97cd7bb9-db25-f4de-2be2-8a0b2cc0ed3e (high limit for FT41_B400_DALBO)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -4598,7 +5081,10 @@
                 },
                 "region": {
                   "startLine": 55933,
-                  "endLine": 55933
+                  "endLine": 55933,
+                  "snippet": {
+                    "text": "<cim:VoltageLimit.normalValue>360</cim:VoltageLimit.normalValue>"
+                  }
                 }
               }
             },
@@ -4616,7 +5102,10 @@
                 },
                 "region": {
                   "startLine": 55940,
-                  "endLine": 55940
+                  "endLine": 55940,
+                  "snippet": {
+                    "text": "<cim:VoltageLimit.normalValue>440</cim:VoltageLimit.normalValue>"
+                  }
                 }
               }
             }
@@ -4644,7 +5133,7 @@
           "ruleIndex": 32,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 ActivePowerLimit.normalValue \u2014 2 object(s) affected. Examples: ActivePowerLimit a331310f-a6b9-4e30-be2e-a6f62b0b5430 (Limit_export), ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] ActivePowerLimit.normalValue\n[shacl_expected] a xsd:float value\n[schema_property] The normal value of active power limit. The attribute shall be a positive value or zero. [1..1]\n[schema_class] Limit on active power flow.\n[context_count] 2 object(s) affected\n[context_examples] ActivePowerLimit a331310f-a6b9-4e30-be2e-a6f62b0b5430 (Limit_export), ActivePowerLimit ec2a2385-872d-4cf7-b50b-f9e8a7210dbb (Limit_import)"
           },
           "occurrenceCount": 2,
           "locations": [
@@ -4662,7 +5151,10 @@
                 },
                 "region": {
                   "startLine": 55947,
-                  "endLine": 55947
+                  "endLine": 55947,
+                  "snippet": {
+                    "text": "<cim:ActivePowerLimit.normalValue>2500</cim:ActivePowerLimit.normalValue>"
+                  }
                 }
               }
             },
@@ -4680,7 +5172,10 @@
                 },
                 "region": {
                   "startLine": 55955,
-                  "endLine": 55955
+                  "endLine": 55955,
+                  "snippet": {
+                    "text": "<cim:ActivePowerLimit.normalValue>-2500</cim:ActivePowerLimit.normalValue>"
+                  }
                 }
               }
             }
@@ -4708,7 +5203,7 @@
           "ruleIndex": 33,
           "level": "error",
           "message": {
-            "text": "Missing required property (attribute). \u2014 IdentifiedObject.name \u2014 1 object(s) affected. Examples: ACLineSegment 08464663-7dbf-4195-9754-a6ff63c421d6"
+            "text": "[shacl_message] Missing required property (attribute).\n[shacl_path] IdentifiedObject.name\n[shacl_expected] at least 1 value(s)\n[schema_property] The name is any free human readable and possibly non unique text naming the object. [1..1]\n[schema_class] A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.\n[context_count] 1 object(s) affected\n[context_examples] ACLineSegment 08464663-7dbf-4195-9754-a6ff63c421d6"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -4726,7 +5221,10 @@
                 },
                 "region": {
                   "startLine": 159,
-                  "endLine": 159
+                  "endLine": 159,
+                  "snippet": {
+                    "text": "<cim:IdentifiedObject.name>RL1</cim:IdentifiedObject.name>"
+                  }
                 }
               }
             }
@@ -4749,7 +5247,7 @@
           "ruleIndex": 34,
           "level": "error",
           "message": {
-            "text": "The Terminal referenced by TransformerEnd.Terminal points to a PowerTransformer which is different than the referenced element via PowerTransformerEnd.PowerTransformer. \u2014 1 object(s) affected. Examples: PowerTransformerEnd 97dad686-69db-a271-59c1-2ab23e543ab1 (STUPET_G2_TRAFO)"
+            "text": "[shacl_message] The Terminal referenced by TransformerEnd.Terminal points to a PowerTransformer which is different than the referenced element via PowerTransformerEnd.PowerTransformer.\n[shacl_path] type\n[schema_property] The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format. [0..1]\n[schema_class] A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).\n[context_count] 1 object(s) affected\n[context_examples] PowerTransformerEnd 97dad686-69db-a271-59c1-2ab23e543ab1 (STUPET_G2_TRAFO)"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -4767,7 +5265,10 @@
                 },
                 "region": {
                   "startLine": 26011,
-                  "endLine": 26011
+                  "endLine": 26011,
+                  "snippet": {
+                    "text": "<cim:PowerTransformerEnd rdf:ID=\"_97dad686-69db-a271-59c1-2ab23e543ab1\">"
+                  }
                 }
               }
             }
@@ -4790,7 +5291,7 @@
           "ruleIndex": 35,
           "level": "error",
           "message": {
-            "text": "The PowerTransformerEnd.ratedU does not fuifil one of the following: 1) it is not a positive value; 2) the value of the high voltage side shall be greater than or equal to ratedU for the lower voltage sides. \u2014 1 object(s) affected. Examples: PowerTransformer 555aceb5-a63e-4acb-a820-be850f080160 (NORRSELE_G1_TRAFO)"
+            "text": "[shacl_message] The PowerTransformerEnd.ratedU does not fuifil one of the following: 1) it is not a positive value; 2) the value of the high voltage side shall be greater than or equal to ratedU for the lower voltage sides.\n[shacl_path] type\n[schema_property] The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format. [0..1]\n[schema_class] An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow).\nA power transformer may be composed of separate transformer tanks that need not be identical.\nA power transformer can be modelled with or without tanks and is intended for use in both balanced and unbalanced representations.   A power transformer typically has two terminals, but may have one (grounding), three or more terminals.\nThe inherited association ConductingEquipment.BaseVoltage should not be used.  The association from TransformerEnd to BaseVoltage should be used instead.\n[context_count] 1 object(s) affected\n[context_examples] PowerTransformer 555aceb5-a63e-4acb-a820-be850f080160 (NORRSELE_G1_TRAFO)"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -4808,7 +5309,10 @@
                 },
                 "region": {
                   "startLine": 25133,
-                  "endLine": 25133
+                  "endLine": 25133,
+                  "snippet": {
+                    "text": "<cim:PowerTransformer rdf:ID=\"_555aceb5-a63e-4acb-a820-be850f080160\">"
+                  }
                 }
               }
             }
@@ -4834,7 +5338,7 @@
           "ruleIndex": 36,
           "level": "warning",
           "message": {
-            "text": "oxigraph rejected the query: error at 16:13: expected ENCODE_FOR_URI \u2014 ShuntCompensator.maximumSections \u2014 1 object(s) affected."
+            "text": "[engine_message] oxigraph rejected the query: error at 16:13: expected ENCODE_FOR_URI \u2014 the constraint WAS still evaluated via the rdflib fallback; fix the shape/data upstream\n[shacl_path] ShuntCompensator.maximumSections\n[schema_property] The maximum number of sections that may be switched in.  [1..1]"
           },
           "occurrenceCount": 1,
           "properties": {
@@ -4866,13 +5370,13 @@
         "driver": {
           "name": "triplets-shacl",
           "informationUri": "https://github.com/Haigutus/triplets",
-          "version": "0.2.0rc1",
+          "version": "0.2.0rc2",
           "rules": [
             {
               "id": "PinTerminal.Terminal-valueType/sh:class",
-              "name": "PinTerminal.Terminal-valueType",
+              "name": "PinTerminal.Terminal-valueType (4\u00d7)",
               "shortDescription": {
-                "text": "PinTerminal.Terminal-valueType"
+                "text": "PinTerminal.Terminal-valueType (4\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the value of the association at the used direction."
@@ -4888,9 +5392,9 @@
             },
             {
               "id": "AllowedClasses-property/sh:in",
-              "name": "ClassNotInProfile",
+              "name": "ClassNotInProfile (1\u00d7)",
               "shortDescription": {
-                "text": "ClassNotInProfile"
+                "text": "ClassNotInProfile (1\u00d7)"
               },
               "fullDescription": {
                 "text": "Checks if the dataset contains classes which are not defined in the profile to which this dataset conforms to."
@@ -4906,9 +5410,9 @@
             },
             {
               "id": "GateInputPin.thresholdValue-datatype/triplets:lexicalForm",
-              "name": "GateInputPin.thresholdValue-datatype",
+              "name": "GateInputPin.thresholdValue-datatype (4\u00d7)",
               "shortDescription": {
-                "text": "GateInputPin.thresholdValue-datatype"
+                "text": "GateInputPin.thresholdValue-datatype (4\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -4924,9 +5428,9 @@
             },
             {
               "id": "RangeConstraint.normalValue-datatype/triplets:lexicalForm",
-              "name": "RangeConstraint.normalValue-datatype",
+              "name": "RangeConstraint.normalValue-datatype (4\u00d7)",
               "shortDescription": {
-                "text": "RangeConstraint.normalValue-datatype"
+                "text": "RangeConstraint.normalValue-datatype (4\u00d7)"
               },
               "fullDescription": {
                 "text": "This constraint validates the datatype of the property (attribute)."
@@ -4942,9 +5446,9 @@
             },
             {
               "id": "GridStateAlteration-associations/triplets:invalidSparql",
-              "name": "C:NC:RA:GridStateAlteration:associations",
+              "name": "C:NC:RA:GridStateAlteration:associations (1\u00d7)",
               "shortDescription": {
-                "text": "C:NC:RA:GridStateAlteration:associations"
+                "text": "C:NC:RA:GridStateAlteration:associations (1\u00d7)"
               },
               "fullDescription": {
                 "text": "A GridStateAlteration shall have either association to GridStateAlterationRemedialAction or GridStateAlterationCollection."
@@ -4964,12 +5468,12 @@
       "invocations": [
         {
           "executionSuccessful": true,
-          "startTimeUtc": "2026-08-11T15:13:31.596963Z",
-          "endTimeUtc": "2026-08-11T15:13:31.799837Z"
+          "startTimeUtc": "2026-08-13T07:41:19.656573Z",
+          "endTimeUtc": "2026-08-13T07:41:19.801491Z"
         }
       ],
       "properties": {
-        "duration_seconds": 0.203,
+        "duration_seconds": 0.145,
         "engine": "polars",
         "source": [
           "Instance/DC-Espheim-Svedala/NetworkCode/cimxml/DC-Espheim-Svedala_RA.xml"
@@ -4989,7 +5493,7 @@
           "ruleIndex": 0,
           "level": "error",
           "message": {
-            "text": "One of the following does not conform: 1) The value shall be IRI; 2) The value shall be an instance of the class: cim18:Terminal \u2014 PinTerminal.Terminal \u2014 4 object(s) affected. Examples: PinTerminal 5de44bcd-eb77-4f14-8e3b-e0e455937cda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal fb1b297b-35a8-4e09-a1b5-f35b211d2fda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal 85826c3d-d25f-4b41-92d4-b2b855f3e96f (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a), PinTerminal 2a58112c-da48-48fd-b1b4-0ad75cc431ae (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a)"
+            "text": "[shacl_message] One of the following does not conform: 1) The value shall be IRI; 2) The value shall be an instance of the class: cim18:Terminal\n[shacl_path] PinTerminal.Terminal\n[shacl_expected] a reference to a Terminal\n[context_message] referenced object not found in the data\n[schema_property] The Terminal that is used in the input pin. [1]\n[schema_class] Input pin associated with a Terminal. It is used for comparison.\n[context_count] 4 object(s) affected\n[context_examples] PinTerminal 5de44bcd-eb77-4f14-8e3b-e0e455937cda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal fb1b297b-35a8-4e09-a1b5-f35b211d2fda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal 85826c3d-d25f-4b41-92d4-b2b855f3e96f (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a), PinTerminal 2a58112c-da48-48fd-b1b4-0ad75cc431ae (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a)"
           },
           "occurrenceCount": 4,
           "locations": [
@@ -5007,7 +5511,10 @@
                 },
                 "region": {
                   "startLine": 130,
-                  "endLine": 130
+                  "endLine": 130,
+                  "snippet": {
+                    "text": "<nc:PinTerminal.Terminal rdf:resource=\"#_f3603af7-a098-1e2c-431e-8ca22ae76221\" />"
+                  }
                 }
               }
             },
@@ -5025,7 +5532,10 @@
                 },
                 "region": {
                   "startLine": 143,
-                  "endLine": 143
+                  "endLine": 143,
+                  "snippet": {
+                    "text": "<nc:PinTerminal.Terminal rdf:resource=\"#_f3603af7-a098-1e2c-431e-8ca22ae76221\" />"
+                  }
                 }
               }
             },
@@ -5043,7 +5553,10 @@
                 },
                 "region": {
                   "startLine": 156,
-                  "endLine": 156
+                  "endLine": 156,
+                  "snippet": {
+                    "text": "<nc:PinTerminal.Terminal rdf:resource=\"#_6872b1c9-9f39-48d5-88c3-25d9d82af2a2\" />"
+                  }
                 }
               }
             },
@@ -5061,7 +5574,10 @@
                 },
                 "region": {
                   "startLine": 169,
-                  "endLine": 169
+                  "endLine": 169,
+                  "snippet": {
+                    "text": "<nc:PinTerminal.Terminal rdf:resource=\"#_6872b1c9-9f39-48d5-88c3-25d9d82af2a2\" />"
+                  }
                 }
               }
             }
@@ -5091,7 +5607,7 @@
           "ruleIndex": 1,
           "level": "note",
           "message": {
-            "text": "This class is not part of the profile to which this dataset conforms to. \u2014 1 object(s) affected. Examples: Dataset c1413a88-1f17-4b9e-9afe-cd089605c671"
+            "text": "[shacl_message] This class is not part of the profile to which this dataset conforms to.\n[shacl_path] type\n[shacl_expected] one of: PinGate, MeasurementCalculatorInput, ContingencyWithRemedialAction, PowerShiftKeyStrategy, IntertemporalPropertyRange, LoadAction, PinDCTerminal, PinContingency, PinEquipmentTripping, PinOperationalLimit, PinTerminal, PinEquipment, PinPowerTransferCorridor, PinMeasurement, StaticVarCompensatorAction, RemedialActionDependency, RemedialActionScheme, AvailabilityRemedialAction, GridStateAlterationRemedialAction, SchemeRemedialAction, CountertradeRemedialAction, RedispatchRemedialAction, ExternalNetworkInjectionAction, Substation, SecondarySubstation, TopologyAction, EquipmentControllerAction, InServiceAction, StaticPropertyRange, ACDCConverterAction, EquivalentInjectionAction, RotatingMachineAction, BatteryUnitAction, BiddingZoneAction, ControlFunctionBlockAction, PowerElectronicsConnectionAction, EnergySourceModification, ShuntCompensatorModification, RegulatingControlAction, TapPositionAction, StageTrigger, GridStateAlterationCollection, PTCActivePowerSupport, RemedialActionGroup, Gate, MeasurementCalculator, TriggerCondition, Stage, FullModel, DifferenceModel, Dataset\n[schema_property] The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format. [0..1]\n[schema_class] A collection of data, published or curated by a single source, and available for access or download in one or more representations.\n[context_count] 1 object(s) affected\n[context_examples] Dataset c1413a88-1f17-4b9e-9afe-cd089605c671"
           },
           "occurrenceCount": 1,
           "locations": [
@@ -5109,7 +5625,10 @@
                 },
                 "region": {
                   "startLine": 30,
-                  "endLine": 30
+                  "endLine": 30,
+                  "snippet": {
+                    "text": "<dcterms:type rdf:resource=\"https://energy.referencedata.eu/type/CIM-PowerSystemModel\"/>"
+                  }
                 }
               }
             }
@@ -5135,7 +5654,7 @@
           "ruleIndex": 2,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 GateInputPin.thresholdValue \u2014 4 object(s) affected. Examples: PinTerminal 5de44bcd-eb77-4f14-8e3b-e0e455937cda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal fb1b297b-35a8-4e09-a1b5-f35b211d2fda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal 85826c3d-d25f-4b41-92d4-b2b855f3e96f (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a), PinTerminal 2a58112c-da48-48fd-b1b4-0ad75cc431ae (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a)"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] GateInputPin.thresholdValue\n[shacl_expected] a xsd:float value\n[schema_property] The threshold value that should be used for compare with the input value. [0..1]\n[schema_class] Input pin associated with a Terminal. It is used for comparison.\n[context_count] 4 object(s) affected\n[context_examples] PinTerminal 5de44bcd-eb77-4f14-8e3b-e0e455937cda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal fb1b297b-35a8-4e09-a1b5-f35b211d2fda (FlowAt_8343e5c5-b77a-4c4e-b074-1cb3777a2f2d), PinTerminal 85826c3d-d25f-4b41-92d4-b2b855f3e96f (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a), PinTerminal 2a58112c-da48-48fd-b1b4-0ad75cc431ae (FlowAt_e9a92c08-1020-4810-8126-decb9124fc9a)"
           },
           "occurrenceCount": 4,
           "locations": [
@@ -5153,7 +5672,10 @@
                 },
                 "region": {
                   "startLine": 127,
-                  "endLine": 127
+                  "endLine": 127,
+                  "snippet": {
+                    "text": "<nc:GateInputPin.thresholdValue>-250</nc:GateInputPin.thresholdValue>"
+                  }
                 }
               }
             },
@@ -5171,7 +5693,10 @@
                 },
                 "region": {
                   "startLine": 140,
-                  "endLine": 140
+                  "endLine": 140,
+                  "snippet": {
+                    "text": "<nc:GateInputPin.thresholdValue>250</nc:GateInputPin.thresholdValue>"
+                  }
                 }
               }
             },
@@ -5189,7 +5714,10 @@
                 },
                 "region": {
                   "startLine": 153,
-                  "endLine": 153
+                  "endLine": 153,
+                  "snippet": {
+                    "text": "<nc:GateInputPin.thresholdValue>-50</nc:GateInputPin.thresholdValue>"
+                  }
                 }
               }
             },
@@ -5207,7 +5735,10 @@
                 },
                 "region": {
                   "startLine": 166,
-                  "endLine": 166
+                  "endLine": 166,
+                  "snippet": {
+                    "text": "<nc:GateInputPin.thresholdValue>50</nc:GateInputPin.thresholdValue>"
+                  }
                 }
               }
             }
@@ -5239,7 +5770,7 @@
           "ruleIndex": 3,
           "level": "warning",
           "message": {
-            "text": "lexical form is narrower than the declared xsd:float (e.g. integer form for a float) \u2014 RangeConstraint.normalValue \u2014 4 object(s) affected. Examples: StaticPropertyRange ce3e19bd-2e06-4abf-bd35-2f3868816131, StaticPropertyRange f70729cc-9ae8-4e24-b7ed-5ef3c316f362, StaticPropertyRange c5134317-6eaf-4629-a1db-349836438984, StaticPropertyRange fffdf252-9de2-414f-a991-1cd0d2307796"
+            "text": "[engine_message] lexical form is narrower than the declared xsd:float (e.g. integer form for a float)\n[shacl_path] RangeConstraint.normalValue\n[shacl_expected] a xsd:float value\n[schema_property] The normal (initial) value. The meaning of the value is defined by the attribute referenced by the PropertyReference. The attribute value can be integer, float or boolean. In case of boolean 1 equals true and 0 equals false.\nIf the valueKind is incremental or incrementalPercentage, then the attribute value shall be positive (greater than zero).\nIf the valueKind is absolute, it does not constraint attribute value to be positive.\nIf the valueKind is incrementalPercentage, then the attribute value \u201c100\u201d shall represent 100%. However, the attribute value can be greater than 100 but not negative. [0..1]\n[schema_class] Defines the static range, which means that this is the minimum and/or maximum of an attribute value. The value provided by the schedule replaces the value of the attribute to which the schedule refers to.\nIn case that the PropertyReference refers to Boolean type attributes, RangeConstraint.direction shall be none or upAndDown and the RangeConstraint.valueKind shall be absolute. If the direction is none then optimization of the attribute referenced by the PropertyReference is not possible if the current status is already as the value in the range. Otherwise if the direction is upAndDown, the optimization can change from true to false or vice versa independently of the initial value in the operational scenario.\nFor instance for a tap changer related grid state alteration for a particular point in time, if the range of TapChanger.step is to be restricted, the value of the schedule will represent that new TapChanger.step range.\n[context_count] 4 object(s) affected\n[context_examples] StaticPropertyRange ce3e19bd-2e06-4abf-bd35-2f3868816131, StaticPropertyRange f70729cc-9ae8-4e24-b7ed-5ef3c316f362, StaticPropertyRange c5134317-6eaf-4629-a1db-349836438984, StaticPropertyRange fffdf252-9de2-414f-a991-1cd0d2307796"
           },
           "occurrenceCount": 4,
           "locations": [
@@ -5257,7 +5788,10 @@
                 },
                 "region": {
                   "startLine": 196,
-                  "endLine": 196
+                  "endLine": 196,
+                  "snippet": {
+                    "text": "<nc:RangeConstraint.normalValue>250</nc:RangeConstraint.normalValue>"
+                  }
                 }
               }
             },
@@ -5275,7 +5809,10 @@
                 },
                 "region": {
                   "startLine": 204,
-                  "endLine": 204
+                  "endLine": 204,
+                  "snippet": {
+                    "text": "<nc:RangeConstraint.normalValue>-250</nc:RangeConstraint.normalValue>"
+                  }
                 }
               }
             },
@@ -5293,7 +5830,10 @@
                 },
                 "region": {
                   "startLine": 228,
-                  "endLine": 228
+                  "endLine": 228,
+                  "snippet": {
+                    "text": "<nc:RangeConstraint.normalValue>250</nc:RangeConstraint.normalValue>"
+                  }
                 }
               }
             },
@@ -5311,7 +5851,10 @@
                 },
                 "region": {
                   "startLine": 236,
-                  "endLine": 236
+                  "endLine": 236,
+                  "snippet": {
+                    "text": "<nc:RangeConstraint.normalValue>-250</nc:RangeConstraint.normalValue>"
+                  }
                 }
               }
             }
@@ -5341,7 +5884,7 @@
           "ruleIndex": 4,
           "level": "error",
           "message": {
-            "text": "fails on every engine \u2014 rdflib: Unknown namespace prefix : nc \u2014 1 object(s) affected."
+            "text": "[engine_message] sh:sparql constraint of shape GridStateAlteration-associations (ACDCConverterAction/type) was NOT evaluated \u2014 the query is defective on every engine (rdflib: Unknown namespace prefix : nc). A shapes bug, not a data finding; this constraint went unchecked.\n[shacl_path] type\n[schema_property] The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format. [0..1]"
           },
           "occurrenceCount": 1,
           "properties": {
