@@ -1,14 +1,9 @@
 name: SHACL SARIF POC
 
+# Deactivated POC (manual dispatch only) — superseded by shacl_validation.yml,
+# the PROF-driven validation of all instance files.
 on:
   workflow_dispatch:
-  push:
-    branches: [shacl-sarif-poc]
-    paths:
-      - Instance/**
-      - buildScripts/validate_shacl_sarif.py
-      - .github/workflows/shacl_sarif_poc.yml
-      - pyproject.toml
 
 permissions:
   contents: read
