@@ -241,6 +241,48 @@ def validate_group(frame, group):
     return located, reported
 
 
+def profile_name(uri):
+    parts = [s for s in str(uri).split("/") if s]
+    return parts[-2] if len(parts) >= 2 else None
+
+
+def build_schema_index(rdf_map_path):
+    """Index the export schema's profile sections by versionIRI and by profile
+    name segment (the NC map uses ap-voc.cim4.eu, instance data ap.cim4.eu)."""
+    doc = json.loads(Path(rdf_map_path).read_text())
+    index = {}
+    for keyword, section in doc.items():
+        version_iri = section.get("ProfileMetadata", {}).get("versionIRI", "")
+        index[version_iri] = keyword
+        if profile_name(version_iri):
+            index[profile_name(version_iri)] = keyword
+    return doc, index
+
+
+def run_schema_pass(frame, infos, config, release):
+    """Schema conformance per instance file: the file's own profile section of
+    the export schema, evaluated with scope= (per-dataset semantics). Complements
+    the SHACL layers with a shapes-independent check straight from the schema."""
+    doc, index = build_schema_index(config["rdf_map"])
+    files, frames, skipped = [], [], []
+    for fi in [f for f in infos if f.kind == config["kind"]]:
+        keyword = next((index.get(uri) or index.get(profile_name(uri)) for uri in fi.profile_uris), None)
+        if keyword is None:
+            skipped.append((fi.path, f"{release}: no schema section for declared profile"))
+            continue
+        violations = frame.shacl.validate_schema({keyword: doc[keyword]}, scope=[fi.instance_id])
+        if len(violations):
+            frames.append(violations)
+        files.append(fi)
+
+    if not frames:
+        return None, files, skipped
+    combined = pandas.concat(frames, ignore_index=True)
+    located = combined.shacl.locate(sources=[fi.path for fi in files])
+    sarif_path = located.shacl.to_sarif(path=REPORTS / f"schema-{release}.sarif")
+    return json.loads(Path(sarif_path).read_text()), files, skipped
+
+
 def export_release(release, frames):
     combined = pandas.concat([f for f in frames if not f.empty], ignore_index=True) if frames else pandas.DataFrame()
     if combined.empty:
@@ -337,10 +379,23 @@ def main():
             frames.append(reported)
         release_sarifs[release] = export_release(release, frames)
 
+        start = time.monotonic()
+        schema_sarif, schema_files, schema_skipped = run_schema_pass(frame, infos, config, release)
+        skipped += schema_skipped
+        if schema_sarif:
+            release_sarifs[f"schema-{release}"] = schema_sarif
+            counts = {}
+            for result in schema_sarif["runs"][0]["results"]:
+                level = {"error": "Violation", "warning": "Warning", "note": "Info"}[result["level"]]
+                counts[level] = counts.get(level, 0) + result.get("occurrenceCount", 1)
+            group_stats.append((f"schema-{release}", len(schema_files), counts, time.monotonic() - start))
+            print(f"schema-{release}: {len(schema_files)} files, {time.monotonic() - start:.1f}s, {counts}")
+
     write_summary(release_sarifs, group_stats, skipped, all_gaps)
-    for release, sarif in release_sarifs.items():
+    for key, sarif in release_sarifs.items():
         if sarif:
-            print(f"wrote reports/shacl-{release}.sarif: {len(sarif['runs'][0]['results'])} grouped results")
+            name = key if key.startswith("schema-") else f"shacl-{key}"
+            print(f"wrote reports/{name}.sarif: {len(sarif['runs'][0]['results'])} grouped results")
     print(f"wrote {REPORTS / 'summary.md'}")
 
 

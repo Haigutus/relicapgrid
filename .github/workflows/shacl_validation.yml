@@ -56,12 +56,25 @@ jobs:
           sarif_file: reports/shacl-ncp-2.4.sarif
           category: shacl-ncp-2.4
 
+      - name: Upload CGMES 3.0 schema-conformance SARIF to code scanning
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: reports/schema-cgmes-3.0.sarif
+          category: schema-cgmes-3.0
+
+      - name: Upload NCP 2.4 schema-conformance SARIF to code scanning
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: reports/schema-ncp-2.4.sarif
+          category: schema-ncp-2.4
+
       - name: Upload SARIF + full SHACL reports as run artifact
         uses: actions/upload-artifact@v4
         with:
           name: shacl-reports
           path: |
             reports/shacl-*.sarif
+            reports/schema-*.sarif
             reports/*-shacl-report.*
             reports/summary.md
 
