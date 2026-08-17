@@ -280,7 +280,20 @@ def run_schema_pass(frame, infos, config, release):
     combined = pandas.concat(frames, ignore_index=True)
     located = combined.shacl.locate(sources=[fi.path for fi in files])
     sarif_path = located.shacl.to_sarif(path=REPORTS / f"schema-{release}.sarif")
-    return json.loads(Path(sarif_path).read_text()), files, skipped
+
+    # schema-language rules carry no name/shortDescription (SHACL rules get
+    # them from sh:name), so GitHub would title alerts with the raw message —
+    # synthesize the same "<rule> (N×)" style until triplets fills them
+    sarif = json.loads(Path(sarif_path).read_text())
+    run = sarif["runs"][0]
+    counts = {r["ruleId"]: r.get("occurrenceCount", 1) for r in run["results"]}
+    for rule in run["tool"]["driver"]["rules"]:
+        if not rule.get("shortDescription"):
+            title = f"{rule['id'].replace('/', ' ')} ({counts.get(rule['id'], 1)}×)"
+            rule["name"] = title
+            rule["shortDescription"] = {"text": title}
+    Path(sarif_path).write_text(json.dumps(sarif, indent=2))
+    return sarif, files, skipped
 
 
 def export_release(release, frames):
