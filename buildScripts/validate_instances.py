@@ -206,15 +206,12 @@ def validate_group(frame, group):
     data = frame[frame["INSTANCE_ID"].isin({fi.instance_id for fi in group.files})]
 
     # reference checks need the group frame; cardinality must not see the
-    # rdf:about continuation of other files, so it comes from per-file scope=.
-    # Dataset shapes run one shape FILE at a time: several Simple files
-    # re-declare the same IdentifiedObject property shapes, and the merged
-    # shapes graph double-counts values (triplets cardinality bug, reported).
+    # rdf:about continuation of other files, so it comes from per-file scope=
     union = data.shacl.validate(group.union_shapes, rdf_map=group.rdf_map)
     passes = [union[~union["VIOLATION_TYPE"].isin(CARDINALITY)] if len(union) else union]
     for instance_id, shapes in group.dataset_shapes.items():
-        for shape in shapes:
-            per_file = data.shacl.validate([shape], rdf_map=group.rdf_map, scope=[instance_id])
+        if shapes:
+            per_file = data.shacl.validate(shapes, rdf_map=group.rdf_map, scope=[instance_id])
             if len(per_file):
                 passes.append(per_file[per_file["VIOLATION_TYPE"].isin(CARDINALITY)])
     violations = pandas.concat([v for v in passes if len(v)], ignore_index=True) if any(len(v) for v in passes) \
@@ -280,20 +277,7 @@ def run_schema_pass(frame, infos, config, release):
     combined = pandas.concat(frames, ignore_index=True)
     located = combined.shacl.locate(sources=[fi.path for fi in files])
     sarif_path = located.shacl.to_sarif(path=REPORTS / f"schema-{release}.sarif")
-
-    # schema-language rules carry no name/shortDescription (SHACL rules get
-    # them from sh:name), so GitHub would title alerts with the raw message —
-    # synthesize the same "<rule> (N×)" style until triplets fills them
-    sarif = json.loads(Path(sarif_path).read_text())
-    run = sarif["runs"][0]
-    counts = {r["ruleId"]: r.get("occurrenceCount", 1) for r in run["results"]}
-    for rule in run["tool"]["driver"]["rules"]:
-        if not rule.get("shortDescription"):
-            title = f"{rule['id'].replace('/', ' ')} ({counts.get(rule['id'], 1)}×)"
-            rule["name"] = title
-            rule["shortDescription"] = {"text": title}
-    Path(sarif_path).write_text(json.dumps(sarif, indent=2))
-    return sarif, files, skipped
+    return json.loads(Path(sarif_path).read_text()), files, skipped
 
 
 def export_release(release, frames):
