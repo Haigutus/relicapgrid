@@ -238,46 +238,19 @@ def validate_group(frame, group):
     return located, reported
 
 
-def profile_name(uri):
-    parts = [s for s in str(uri).split("/") if s]
-    return parts[-2] if len(parts) >= 2 else None
-
-
-def build_schema_index(rdf_map_path):
-    """Index the export schema's profile sections by versionIRI and by profile
-    name segment (the NC map uses ap-voc.cim4.eu, instance data ap.cim4.eu)."""
-    doc = json.loads(Path(rdf_map_path).read_text())
-    index = {}
-    for keyword, section in doc.items():
-        version_iri = section.get("ProfileMetadata", {}).get("versionIRI", "")
-        index[version_iri] = keyword
-        if profile_name(version_iri):
-            index[profile_name(version_iri)] = keyword
-    return doc, index
-
-
 def run_schema_pass(frame, infos, config, release):
-    """Schema conformance per instance file: the file's own profile section of
-    the export schema, evaluated with scope= (per-dataset semantics). Complements
-    the SHACL layers with a shapes-independent check straight from the schema."""
-    doc, index = build_schema_index(config["rdf_map"])
-    files, frames, skipped = [], [], []
-    for fi in [f for f in infos if f.kind == config["kind"]]:
-        keyword = next((index.get(uri) or index.get(profile_name(uri)) for uri in fi.profile_uris), None)
-        if keyword is None:
-            skipped.append((fi.path, f"{release}: no schema section for declared profile"))
-            continue
-        violations = frame.shacl.validate_schema({keyword: doc[keyword]}, scope=[fi.instance_id])
-        if len(violations):
-            frames.append(violations)
-        files.append(fi)
-
-    if not frames:
-        return None, files, skipped
-    combined = pandas.concat(frames, ignore_index=True)
-    located = combined.shacl.locate(sources=[fi.path for fi in files])
+    """Schema conformance straight from the export schema, shapes-independent:
+    validate_schema resolves each instance's declared profiles from its own
+    header and runs every profile separately against that instance's rows
+    (per-dataset semantics). Complements the SHACL layers."""
+    files = [fi for fi in infos if fi.kind == config["kind"]]
+    data = frame[frame["INSTANCE_ID"].isin({fi.instance_id for fi in files})]
+    violations = data.shacl.validate_schema(config["rdf_map"])
+    if violations.empty:
+        return None, files, []
+    located = violations.shacl.locate(sources=[fi.path for fi in files])
     sarif_path = located.shacl.to_sarif(path=REPORTS / f"schema-{release}.sarif")
-    return json.loads(Path(sarif_path).read_text()), files, skipped
+    return json.loads(Path(sarif_path).read_text()), files, []
 
 
 def export_release(release, frames):
