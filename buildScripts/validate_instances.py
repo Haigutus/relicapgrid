@@ -4,11 +4,15 @@ Every Instance/**/*.xml is mapped to its SHACL shape set through the DX-PROF
 descriptors of the ENTSO-E application-profiles-library (see prof_map.py):
 CGMES files by their md:Model.profile header, NC files by dcterms:conformsTo.
 
-Validation runs in groups so cross-file references resolve instead of raising
-false dangling-reference errors: CGMES per area (EQ+SSH+TP+SV with the boundary
-files as context), the Jotunheim CGM as a full assembly, and NC files per area
-with the area's Grid files as context. Context files are loaded but their
-violations are reported only in their own group.
+Two validation passes per group, matching the two kinds of shapes:
+  * per-dataset — the profile's Simple shapes (cardinality, datatypes,
+    in-file valueType) run per instance file via scope=, so the legal
+    rdf:about continuation across a model set never counts double;
+  * union — Complex / AllProfiles shapes run on the group frame, where
+    cross-file references resolve (CGMES per area with boundary context,
+    the Jotunheim CGM as a full assembly, NC per area with the area's
+    Grid files as context). Context files are loaded but their violations
+    are reported only in their own group.
 
 One grouped SARIF per release (single run, one code-scanning category each)
 plus full sh:ValidationReports (turtle + RDF/XML) per group in reports/.
@@ -20,7 +24,8 @@ import argparse
 import json
 import logging
 import os
-from dataclasses import dataclass, field
+import time
+from dataclasses import dataclass
 from pathlib import Path
 
 import pandas
@@ -43,10 +48,8 @@ RELEASES = {
     # "cgmes-2.4": add once the APL publishes its PROF + SHACL
 }
 
-# Cross-cutting CGMES shapes referenced by no PROF descriptor (APL gap).
-# IdentifiedObjectCommon is deliberately NOT added: its mRID/name maxCount
-# checks assume a single profile dataset and false-fire on the legal
-# rdf:about continuation between EQ and SSH/TP/SV in a model-set frame.
+# Cross-cutting CGMES shapes referenced by no PROF descriptor (APL gap, filed
+# as application-profiles-library#130)
 CGMES_COMMON_SHACL = [
     "CGMES/SHACL/61970-600-1_AllProfiles-AP-Con-Complex-SHACL.ttl",
 ]
@@ -69,7 +72,8 @@ class Group:
     name: str
     files: list               # FileInfo loaded into the frame (incl. context)
     report_paths: set         # paths whose violations are reported
-    shapes: list              # resolved shape Paths
+    union_shapes: list        # Complex/AllProfiles shapes, run on the group frame
+    dataset_shapes: dict      # instance_id -> [Simple shapes], run with scope=
     rdf_map: object
 
 
@@ -118,33 +122,58 @@ def resolve_shapes(profile_uris, prof_map):
     return sorted(shapes), unmapped
 
 
+def is_dataset_shape(path):
+    """Simple shapes check per-dataset conformance (cardinality, datatypes)."""
+    return "-Con-Simple-" in path.name or path.name == "DatasetMetadata-AP-Con-SHACL.ttl"
+
+
+def drop_boundary(paths):
+    """EquipmentBoundary shapes (bundled into the EQ PROF) constrain Terminal/
+    ConnectivityNode to boundary-legal classes — boundary datasets only."""
+    return [p for p in paths if "EquipmentBoundary" not in p.name]
+
+
+def shape_split(files, prof_map, keep_boundary=False):
+    """(union_shapes, dataset_shapes, unmapped) for a set of reported files.
+
+    union_shapes = everything (reference checks need the full group frame);
+    dataset_shapes = the file's own Simple shapes, re-run per file with scope=
+    for the cardinality constraints (see validate_group)."""
+    union, dataset, unmapped = set(), {}, {}
+    for fi in files:
+        shapes, missing = resolve_shapes(fi.profile_uris, prof_map)
+        if missing:
+            unmapped[fi.path] = missing
+            continue
+        if not keep_boundary:
+            shapes = drop_boundary(shapes)
+        dataset[fi.instance_id] = [p for p in shapes if is_dataset_shape(p)]
+        union.update(shapes)
+    return sorted(union), dataset, unmapped
+
+
 def build_cgmes_groups(infos, prof_map, apl_dir, rdf_map):
     grid = [fi for fi in infos if fi.kind == "cgmes"]
     boundary = [fi for fi in grid if fi.area in ("boundaryData", "commonData")]
     jotunheim = [fi for fi in grid if fi.area == "Jotunheim"]
     areas = sorted({fi.area for fi in grid} - {"boundaryData", "commonData", "Jotunheim"})
 
-    all_uris = sorted({uri for fi in grid for uri in fi.profile_uris})
-    shapes, unmapped = resolve_shapes(all_uris, prof_map)
-    if unmapped:
-        raise SystemExit(f"unmapped CGMES Model.profile URIs (APL PROF broken?): {unmapped}")
-    shapes = sorted(set(shapes) | {apl_dir / rel for rel in CGMES_COMMON_SHACL if (apl_dir / rel).exists()})
-    # the EquipmentBoundary shapes (pulled in via the EQ PROF) constrain
-    # Terminal/ConnectivityNode to the boundary-legal classes — they only
-    # apply to boundary datasets, not to full equipment models
-    model_shapes = [p for p in shapes if "EquipmentBoundary" not in p.name]
+    common = [apl_dir / rel for rel in CGMES_COMMON_SHACL if (apl_dir / rel).exists()]
 
-    groups = []
-    for area in areas:
-        area_files = [fi for fi in grid if fi.area == area]
-        groups.append(Group(f"cgmes-{area}", area_files + boundary,
-                            {fi.path for fi in area_files}, model_shapes, rdf_map))
-    groups.append(Group("cgmes-boundary", boundary, {fi.path for fi in boundary}, shapes, rdf_map))
+    def cgmes_group(name, reported, context):
+        union, dataset, unmapped = shape_split(reported, prof_map, keep_boundary=(name == "cgmes-boundary"))
+        if unmapped:
+            raise SystemExit(f"unmapped CGMES Model.profile URIs (APL PROF broken?): {unmapped}")
+        return Group(name, reported + context, {fi.path for fi in reported},
+                     sorted(set(union) | set(common)), dataset, rdf_map)
+
+    groups = [cgmes_group(f"cgmes-{area}", [fi for fi in grid if fi.area == area], boundary)
+              for area in areas]
+    groups.append(cgmes_group("cgmes-boundary", boundary, []))
 
     eq_files = [fi for fi in grid if fi.profile_uris[0].startswith("http://iec.ch/TC57/ns/CIM/CoreEquipment")
-                and fi.area not in ("Jotunheim",)]
-    groups.append(Group("cgmes-CGM-Jotunheim", jotunheim + eq_files + [fi for fi in boundary if fi not in eq_files],
-                        {fi.path for fi in jotunheim}, model_shapes, rdf_map))
+                and fi.area != "Jotunheim"]
+    groups.append(cgmes_group("cgmes-CGM-Jotunheim", jotunheim, eq_files))
     return groups, []
 
 
@@ -158,41 +187,54 @@ def build_nc_groups(infos, prof_map, rdf_map):
 
     for area in sorted({area_name(fi) for fi in nc}):
         area_files = [fi for fi in nc if area_name(fi) == area]
-        mapped, area_uris = [], set()
-        for fi in area_files:
-            shapes, unmapped = resolve_shapes(fi.profile_uris, prof_map)
-            if unmapped:
-                skipped.append((fi.path, f"unmapped profile URI: {', '.join(unmapped)}"))
-            else:
-                mapped.append(fi)
-                area_uris.update(fi.profile_uris)
+        union, dataset, unmapped = shape_split(area_files, prof_map)
+        skipped += [(path, f"unmapped profile URI: {', '.join(uris)}") for path, uris in unmapped.items()]
+        mapped = [fi for fi in area_files if fi.path not in unmapped]
         if not mapped:
             continue
-        shapes, _ = resolve_shapes(sorted(area_uris), prof_map)
         base_area = area.split("-GridSituation")[0]
         context = [fi for fi in grid if fi.area in (base_area, "boundaryData", "commonData")]
-        groups.append(Group(f"nc-{area}", mapped + context, {fi.path for fi in mapped}, shapes, rdf_map))
+        groups.append(Group(f"nc-{area}", mapped + context, {fi.path for fi in mapped},
+                            union, dataset, rdf_map))
     return groups, skipped
 
 
-def validate_group(frame, group, compiled_cache):
-    key = tuple(str(p) for p in group.shapes)
-    if key not in compiled_cache:
-        compiled_cache[key] = triplets.validation.compile([str(p) for p in group.shapes])
-    compiled = compiled_cache[key]
+CARDINALITY = ("sh:minCount", "sh:maxCount")
 
-    ids = {fi.instance_id for fi in group.files}
-    data = frame[frame["INSTANCE_ID"].isin(ids)]
-    violations = data.shacl.validate(compiled, rdf_map=group.rdf_map)
+
+def validate_group(frame, group):
+    data = frame[frame["INSTANCE_ID"].isin({fi.instance_id for fi in group.files})]
+
+    # reference checks need the group frame; cardinality must not see the
+    # rdf:about continuation of other files, so it comes from per-file scope=.
+    # Dataset shapes run one shape FILE at a time: several Simple files
+    # re-declare the same IdentifiedObject property shapes, and the merged
+    # shapes graph double-counts values (triplets cardinality bug, reported).
+    union = data.shacl.validate(group.union_shapes, rdf_map=group.rdf_map)
+    passes = [union[~union["VIOLATION_TYPE"].isin(CARDINALITY)] if len(union) else union]
+    for instance_id, shapes in group.dataset_shapes.items():
+        for shape in shapes:
+            per_file = data.shacl.validate([shape], rdf_map=group.rdf_map, scope=[instance_id])
+            if len(per_file):
+                passes.append(per_file[per_file["VIOLATION_TYPE"].isin(CARDINALITY)])
+    violations = pandas.concat([v for v in passes if len(v)], ignore_index=True) if any(len(v) for v in passes) \
+        else passes[0]
     if violations.empty:
         return violations, violations
-    enriched = violations.shacl.enrich(data=data, shapes=compiled, rdf_map=group.rdf_map)
+    # duplicated statements (rdf:about continuation) yield identical violation
+    # rows from the union pass — one finding per fact
+    violations = violations.drop_duplicates(subset=["ID", "KEY", "VALUE", "VIOLATION_TYPE", "SOURCE_SHAPE"])
+
+    all_shapes = sorted({str(p) for p in group.union_shapes}
+                        | {str(p) for shapes in group.dataset_shapes.values() for p in shapes})
+    enriched = violations.shacl.enrich(data=data, shapes=all_shapes, rdf_map=group.rdf_map)
     located = enriched.shacl.locate(sources=[fi.path for fi in group.files])
     located["GROUP"] = group.name
 
     reported = located[located["SOURCE_URI"].isin(group.report_paths) | located["SOURCE_URI"].isna()].copy()
-    # shape-level meta findings (e.g. triplets:invalidSparql) have no instance
-    # line — anchor them to the group's first reported file so GitHub accepts them
+    # shape-level meta findings (e.g. triplets:invalidSparql) get anchored to
+    # the group's first reported file — an in-repo path GitHub can display
+    # (rc3's native fallback points at the shapes file, which is not in-repo)
     anchor = sorted(group.report_paths)[0]
     reported.loc[reported["SOURCE_URI"].isna(), "SOURCE_LINE"] = 1
     reported.loc[reported["SOURCE_URI"].isna(), "SOURCE_URI"] = anchor
@@ -208,18 +250,7 @@ def export_release(release, frames):
                               combined[meta].drop_duplicates(subset=["VIOLATION_TYPE", "MESSAGE", "SOURCE_SHAPE"])],
                              ignore_index=True)
     sarif_path = combined.shacl.to_sarif(path=REPORTS / f"shacl-{release}.sarif")
-
-    # shape-level meta findings are exported without locations; GitHub needs
-    # one per result — anchor them to the file recorded on the frame row
-    anchors = combined.dropna(subset=["SOURCE_URI"]).drop_duplicates("SOURCE_SHAPE").set_index("SOURCE_SHAPE")["SOURCE_URI"]
-    sarif = json.loads(Path(sarif_path).read_text())
-    for result in sarif["runs"][0]["results"]:
-        if not result.get("locations"):
-            uri = anchors.get(str((result.get("properties") or {}).get("sourceShape")), anchors.iloc[0])
-            result["locations"] = [{"physicalLocation": {
-                "artifactLocation": {"uri": uri}, "region": {"startLine": 1, "endLine": 1}}}]
-    Path(sarif_path).write_text(json.dumps(sarif, indent=2))
-    return sarif
+    return json.loads(Path(sarif_path).read_text())
 
 
 def write_summary(release_sarifs, group_stats, skipped, gaps):
@@ -230,10 +261,10 @@ def write_summary(release_sarifs, group_stats, skipped, gaps):
         lines += [f"**[Open the code scanning alerts of this branch →]({alerts})**", "",
                   "Full sh:ValidationReports (turtle + RDF/XML) per group are attached as the `shacl-reports` artifact.", ""]
 
-    lines += ["| group | files | errors | warnings | notes |", "|---|---|---|---|---|"]
-    for name, file_count, severities in group_stats:
+    lines += ["| group | files | errors | warnings | notes | seconds |", "|---|---|---|---|---|---|"]
+    for name, file_count, severities, seconds in group_stats:
         lines.append(f"| `{name}` | {file_count} | {severities.get('Violation', 0)} | "
-                     f"{severities.get('Warning', 0)} | {severities.get('Info', 0)} |")
+                     f"{severities.get('Warning', 0)} | {severities.get('Info', 0)} | {seconds:.1f} |")
 
     for release, sarif in release_sarifs.items():
         if sarif is None:
@@ -250,10 +281,11 @@ def write_summary(release_sarifs, group_stats, skipped, gaps):
     if gaps:
         lines += ["", "## Profile library gaps", ""]
         lines += [f"- {gap}" for gap in sorted(set(gaps))]
-    lines += ["", "Notes: the cross-cutting AllProfiles shapes are added manually (no PROF references them); "
-              "IdentifiedObjectCommon is excluded (its per-dataset cardinality checks false-fire on rdf:about "
-              "continuation in model-set frames); EquipmentBoundary shapes run only on the boundary group; "
-              "variant shape sets (SolvedMAS/NotSolvedMAS, CrossProfile, InverseAssociation; role/validation) are not run."]
+    lines += ["", "Notes: Simple shapes run per instance file (scope=) so rdf:about continuation across a "
+              "model set is not double-counted; Complex/AllProfiles shapes run on the group frame; "
+              "EquipmentBoundary shapes run only on the boundary group; the cross-cutting AllProfiles "
+              "shapes are added manually (no PROF references them); variant shape sets "
+              "(SolvedMAS/NotSolvedMAS, CrossProfile, InverseAssociation; role/validation) are not run."]
     (REPORTS / "summary.md").write_text("\n".join(lines) + "\n")
 
 
@@ -272,7 +304,7 @@ def main():
     frame, infos, skipped = scan_instances()
     print(f"parsed {len(frame):,} triples from {len(infos)} mapped files ({len(skipped)} skipped)")
 
-    compiled_cache, group_stats, release_sarifs, all_gaps = {}, [], {}, []
+    group_stats, release_sarifs, all_gaps = [], {}, []
     for release, config in RELEASES.items():
         if args.only and release != args.only:
             continue
@@ -290,23 +322,25 @@ def main():
 
         frames = []
         for group in groups:
-            located, reported = validate_group(frame, group, compiled_cache)
+            start = time.monotonic()
+            located, reported = validate_group(frame, group)
+            seconds = time.monotonic() - start
             severities = reported["SEVERITY"].value_counts().to_dict() if len(reported) else {}
-            group_stats.append((group.name, len(group.report_paths), severities))
-            print(f"{group.name}: {len(group.report_paths)} files, {severities or 'conforms'}")
+            group_stats.append((group.name, len(group.report_paths), severities, seconds))
+            print(f"{group.name}: {len(group.report_paths)} files, {seconds:.1f}s, {severities or 'conforms'}")
             if len(located):  # full unfiltered report incl. context-file findings
                 for suffix in ("ttl", "xml"):
                     located.shacl.to_shacl_report(
                         path=REPORTS / f"{group.name}-shacl-report.{suffix}", report_source=group.name,
-                        report_references=[p.name for p in group.shapes])
+                        report_references=sorted({p.name for p in group.union_shapes}
+                                                 | {p.name for s in group.dataset_shapes.values() for p in s}))
             frames.append(reported)
         release_sarifs[release] = export_release(release, frames)
 
     write_summary(release_sarifs, group_stats, skipped, all_gaps)
     for release, sarif in release_sarifs.items():
         if sarif:
-            results = sarif["runs"][0]["results"]
-            print(f"wrote reports/shacl-{release}.sarif: {len(results)} grouped results")
+            print(f"wrote reports/shacl-{release}.sarif: {len(sarif['runs'][0]['results'])} grouped results")
     print(f"wrote {REPORTS / 'summary.md'}")
 
 
