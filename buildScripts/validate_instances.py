@@ -1,23 +1,13 @@
-"""PROF-driven SHACL validation of all CGMES and NC instance files.
+"""PROF-driven SHACL + schema validation of all CGMES and NC instance files.
 
-Every Instance/**/*.xml is mapped to its SHACL shape set through the DX-PROF
-descriptors of the ENTSO-E application-profiles-library (see prof_map.py):
-CGMES files by their md:Model.profile header, NC files by dcterms:conformsTo.
+Instance files map to shape sets via the DX-PROF descriptors of the
+application-profiles-library (prof_map.py), grouped so cross-file references
+resolve, and validated in two passes: counting constraints per instance file
+(scope=), everything else on the group frame. Schema conformance is a third,
+shapes-independent pass straight from the export schema. Outputs: one grouped
+SARIF per release + layer, full sh:ValidationReports per group, summary.md.
 
-Two validation passes per group, matching the two kinds of shapes:
-  * per-dataset — the profile's Simple shapes (cardinality, datatypes,
-    in-file valueType) run per instance file via scope=, so the legal
-    rdf:about continuation across a model set never counts double;
-  * union — Complex / AllProfiles shapes run on the group frame, where
-    cross-file references resolve (CGMES per area with boundary context,
-    the Jotunheim CGM as a full assembly, NC per area with the area's
-    Grid files as context). Context files are loaded but their violations
-    are reported only in their own group.
-
-One grouped SARIF per release (single run, one code-scanning category each)
-plus full sh:ValidationReports (turtle + RDF/XML) per group in reports/.
-
-Run from the repo root:
+Run:
     uv run buildScripts/validate_instances.py --apl cgmes-3.0=.apl-main --apl ncp-2.4=.apl-ncp24
 """
 import argparse
@@ -37,7 +27,6 @@ from prof_map import build_prof_map
 logging.getLogger("triplets.validation").setLevel(logging.ERROR)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-os.chdir(REPO_ROOT)  # keep SARIF artifactLocation URIs repo-relative
 REPORTS = REPO_ROOT / "reports"
 LEVEL_ICONS = {"error": "🔴", "warning": "🟠", "note": "🔵"}
 
@@ -126,7 +115,9 @@ def resolve_shapes(profile_uris, prof_map):
 
 
 def is_dataset_shape(path):
-    """Simple shapes check per-dataset conformance (cardinality, datatypes)."""
+    """Cost filter for the per-file pass: only these files carry counting
+    constraints, so the Complex sh:sparql shapes are not re-run once per
+    instance file. The semantic split is the CARDINALITY type filter."""
     return "-Con-Simple-" in path.name or path.name == "DatasetMetadata-AP-Con-SHACL.ttl"
 
 
@@ -155,6 +146,14 @@ def shape_split(files, prof_map, keep_boundary=False):
     return sorted(union), dataset, unmapped
 
 
+# Group policy — context files are loaded for reference resolution but their
+# violations are reported only in their own group:
+#   cgmes-<Area>         reported: the area's EQ/SSH/TP/SV  context: boundary + commonData
+#   cgmes-boundary       reported: boundary + commonData    context: none (EQBD shapes kept)
+#   cgmes-CGM-Jotunheim  reported: Jotunheim TP/SV + SSH_2  context: every TSO's EQ + boundary
+#   nc-<Area>            reported: the area's NC files      context: the area's Grid + boundary
+# Unmapped CGMES profiles hard-fail (the 4 URIs must always resolve);
+# unmapped NC profiles skip the file with a summary note.
 def build_cgmes_groups(infos, prof_map, apl_dir, rdf_map):
     grid = [fi for fi in infos if fi.kind == "cgmes"]
     boundary = [fi for fi in grid if fi.area in ("boundaryData", "commonData")]
@@ -208,18 +207,18 @@ def validate_group(frame, group):
     # reference checks need the group frame; cardinality must not see the
     # rdf:about continuation of other files, so it comes from per-file scope=
     union = data.shacl.validate(group.union_shapes, rdf_map=group.rdf_map)
-    passes = [union[~union["VIOLATION_TYPE"].isin(CARDINALITY)] if len(union) else union]
+    passes = []
+    if len(union):
+        passes.append(union[~union["VIOLATION_TYPE"].isin(CARDINALITY)])
     for instance_id, shapes in group.dataset_shapes.items():
         if shapes:
             per_file = data.shacl.validate(shapes, rdf_map=group.rdf_map, scope=[instance_id])
             if len(per_file):
                 passes.append(per_file[per_file["VIOLATION_TYPE"].isin(CARDINALITY)])
-    violations = pandas.concat([v for v in passes if len(v)], ignore_index=True) if any(len(v) for v in passes) \
-        else passes[0]
+    violations = pandas.concat(passes, ignore_index=True) if passes else union
     if violations.empty:
         return violations, violations
-    # duplicated statements (rdf:about continuation) yield identical violation
-    # rows from the union pass — one finding per fact
+    # rdf:about continuation duplicates a fact across files — one finding per fact
     violations = violations.drop_duplicates(subset=["ID", "KEY", "VALUE", "VIOLATION_TYPE", "SOURCE_SHAPE"])
 
     all_shapes = sorted({str(p) for p in group.union_shapes}
@@ -228,9 +227,8 @@ def validate_group(frame, group):
     located = enriched.shacl.locate(sources=[fi.path for fi in group.files])
 
     reported = located[located["SOURCE_URI"].isin(group.report_paths) | located["SOURCE_URI"].isna()].copy()
-    # shape-level meta findings (e.g. triplets:invalidSparql) get anchored to
-    # the group's first reported file — an in-repo path GitHub can display
-    # (rc3's native fallback points at the shapes file, which is not in-repo)
+    # shape-level meta findings (e.g. triplets:invalidSparql) carry no instance
+    # line — anchor them to an in-repo path so GitHub can display the alert
     anchor = sorted(group.report_paths)[0]
     reported.loc[reported["SOURCE_URI"].isna(), "SOURCE_LINE"] = 1
     reported.loc[reported["SOURCE_URI"].isna(), "SOURCE_URI"] = anchor
@@ -239,9 +237,7 @@ def validate_group(frame, group):
 
 def run_schema_pass(frame, infos, config, release):
     """Schema conformance straight from the export schema, shapes-independent:
-    validate_schema resolves each instance's declared profiles from its own
-    header and runs every profile separately against that instance's rows
-    (per-dataset semantics). Complements the SHACL layers."""
+    each instance's declared profiles run separately against its own rows."""
     files = [fi for fi in infos if fi.kind == config["kind"]]
     data = frame[frame["INSTANCE_ID"].isin({fi.instance_id for fi in files})]
     violations = data.shacl.validate_schema(config["rdf_map"])
@@ -301,6 +297,7 @@ def write_summary(release_sarifs, group_stats, skipped, gaps):
 
 
 def main():
+    os.chdir(REPO_ROOT)  # relative source paths => repo-relative SARIF artifact URIs
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--apl", action="append", default=[], metavar="RELEASE=PATH",
                         help="APL checkout per release, e.g. cgmes-3.0=.apl-main (repeatable)")
