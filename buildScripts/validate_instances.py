@@ -57,12 +57,15 @@ CGMES_COMMON_SHACL = [
 # Near-duplicates of Instance/Jotunheim/GridSituation/cimxml/ (kept dir wins)
 DUPLICATE_GLOB = "Instance/Jotunheim/NetworkCode/*.xml"
 
+# per-dataset semantics: these must not see other files' rdf:about continuation
+CARDINALITY = ("sh:minCount", "sh:maxCount")
+
 
 @dataclass
 class FileInfo:
     path: str                 # repo-relative posix
     instance_id: str
-    kind: str                 # "cgmes" | "nc" | "unknown"
+    kind: str                 # "cgmes" | "nc"
     profile_uris: list
     area: str                 # Instance/<area>/...
 
@@ -199,9 +202,6 @@ def build_nc_groups(infos, prof_map, rdf_map):
     return groups, skipped
 
 
-CARDINALITY = ("sh:minCount", "sh:maxCount")
-
-
 def validate_group(frame, group):
     data = frame[frame["INSTANCE_ID"].isin({fi.instance_id for fi in group.files})]
 
@@ -226,7 +226,6 @@ def validate_group(frame, group):
                         | {str(p) for shapes in group.dataset_shapes.values() for p in shapes})
     enriched = violations.shacl.enrich(data=data, shapes=all_shapes, rdf_map=group.rdf_map)
     located = enriched.shacl.locate(sources=[fi.path for fi in group.files])
-    located["GROUP"] = group.name
 
     reported = located[located["SOURCE_URI"].isin(group.report_paths) | located["SOURCE_URI"].isna()].copy()
     # shape-level meta findings (e.g. triplets:invalidSparql) get anchored to
@@ -247,10 +246,10 @@ def run_schema_pass(frame, infos, config, release):
     data = frame[frame["INSTANCE_ID"].isin({fi.instance_id for fi in files})]
     violations = data.shacl.validate_schema(config["rdf_map"])
     if violations.empty:
-        return None, files, []
+        return None, files, violations
     located = violations.shacl.locate(sources=[fi.path for fi in files])
     sarif_path = located.shacl.to_sarif(path=REPORTS / f"schema-{release}.sarif")
-    return json.loads(Path(sarif_path).read_text()), files, []
+    return json.loads(Path(sarif_path).read_text()), files, located
 
 
 def export_release(release, frames):
@@ -350,16 +349,12 @@ def main():
         release_sarifs[release] = export_release(release, frames)
 
         start = time.monotonic()
-        schema_sarif, schema_files, schema_skipped = run_schema_pass(frame, infos, config, release)
-        skipped += schema_skipped
+        schema_sarif, schema_files, schema_located = run_schema_pass(frame, infos, config, release)
         if schema_sarif:
             release_sarifs[f"schema-{release}"] = schema_sarif
-            counts = {}
-            for result in schema_sarif["runs"][0]["results"]:
-                level = {"error": "Violation", "warning": "Warning", "note": "Info"}[result["level"]]
-                counts[level] = counts.get(level, 0) + result.get("occurrenceCount", 1)
-            group_stats.append((f"schema-{release}", len(schema_files), counts, time.monotonic() - start))
-            print(f"schema-{release}: {len(schema_files)} files, {time.monotonic() - start:.1f}s, {counts}")
+            severities = schema_located["SEVERITY"].value_counts().to_dict()
+            group_stats.append((f"schema-{release}", len(schema_files), severities, time.monotonic() - start))
+            print(f"schema-{release}: {len(schema_files)} files, {time.monotonic() - start:.1f}s, {severities}")
 
     write_summary(release_sarifs, group_stats, skipped, all_gaps)
     for key, sarif in release_sarifs.items():
