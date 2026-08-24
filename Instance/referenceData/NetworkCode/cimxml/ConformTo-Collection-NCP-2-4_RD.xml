@@ -23,7 +23,7 @@
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>
     <dcterms:title>ConformTo-Collection-NCP-2-4_RD</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
-    <adms:versionNotes xml:lang="en">Inital version of this reference data</adms:versionNotes>
+    <adms:versionNotes xml:lang="en">Initial version of this reference data</adms:versionNotes>
   </dcat:Dataset>
   <provcim:SupportedProfileCollection rdf:about="https://energy.referencedata.eu/CGMES/3.0#support_CIM17-2_of_CGMES_3_0">
     <provcim:forVocabulary rdf:resource="https://cim4.eu/ns/cgmes/3.0"/>
