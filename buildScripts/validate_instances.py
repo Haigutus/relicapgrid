@@ -17,6 +17,7 @@ import os
 import time
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import quote_plus
 
 import pandas
 import triplets
@@ -260,6 +261,12 @@ def export_release(release, frames):
     return json.loads(Path(sarif_path).read_text())
 
 
+def rule_url(repo, branch, rule_id):
+    """Code-scanning list filtered to one rule — links a summary row to its alerts."""
+    query = quote_plus(f'is:open branch:{branch} rule:"{rule_id}"')
+    return f"https://github.com/{repo}/security/code-scanning?query={query}"
+
+
 def write_summary(release_sarifs, group_stats, skipped, gaps):
     lines = ["# SHACL validation — PROF-driven full sweep", ""]
     repo, branch = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_REF_NAME")
@@ -280,7 +287,10 @@ def write_summary(release_sarifs, group_stats, skipped, gaps):
         for result in sarif["runs"][0]["results"]:
             icon = LEVEL_ICONS.get(result["level"], "")
             count = result.get("occurrenceCount", len(result.get("locations", [])))
-            lines.append(f"| `{result['ruleId']}` | {icon} {result['level']} | {count} |")
+            rule = f"`{result['ruleId']}`"
+            if repo and branch:
+                rule = f"[{rule}]({rule_url(repo, branch, result['ruleId'])})"
+            lines.append(f"| {rule} | {icon} {result['level']} | {count} |")
 
     if skipped:
         lines += ["", "## Skipped files", "", "| file | reason |", "|---|---|"]
