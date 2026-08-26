@@ -20,6 +20,7 @@ from pathlib import Path
 
 import pandas
 import triplets
+from triplets import cgmes_tools
 from triplets.export_schema import schemas
 
 from prof_map import build_prof_map
@@ -78,27 +79,22 @@ def scan_instances():
 
     frame = pandas.read_RDF(files, max_workers=os.cpu_count())
 
-    labels = frame[frame["KEY"] == "label"][["INSTANCE_ID", "VALUE"]]
-    path_by_instance = {row.INSTANCE_ID: str(Path(row.VALUE).resolve().relative_to(REPO_ROOT))
-                        for row in labels.itertuples()}
+    # release routing policy over the header inventory: Model.profile => the
+    # CGMES release, an ap.cim4.eu conformsTo => the NC release
+    headers = cgmes_tools.get_loaded_profiles(frame)
+    headers = headers.assign(path=[str(Path(v).resolve().relative_to(REPO_ROOT)) for v in headers["label"]])
+    cgmes = headers[headers["KEY"] == "Model.profile"]
+    nc = headers[(headers["KEY"] == "conformsTo") & headers["VALUE"].str.startswith("https://ap.cim4.eu/")]
 
-    # INSTANCE_ID is arrow-dictionary-typed: groupby would emit every dictionary
-    # value (also unmatched ones) regardless of observed=, so group on plain str
-    profiles = frame[frame["KEY"] == "Model.profile"].astype({"INSTANCE_ID": str})
-    cgmes = profiles.groupby("INSTANCE_ID")["VALUE"].apply(list)
-    conforms = frame[(frame["KEY"] == "conformsTo")
-                     & frame["VALUE"].str.startswith("https://ap.cim4.eu/")].astype({"INSTANCE_ID": str})
-    nc = conforms.groupby("INSTANCE_ID")["VALUE"].apply(lambda v: sorted(set(v)))
-
-    infos = []
-    for instance_id, path in sorted(path_by_instance.items(), key=lambda item: item[1]):
-        area = Path(path).parts[1]
-        if instance_id in cgmes.index:
-            infos.append(FileInfo(path, instance_id, "cgmes", cgmes[instance_id], area))
-        elif instance_id in nc.index:
-            infos.append(FileInfo(path, instance_id, "nc", nc[instance_id], area))
-        else:
-            skipped.append((path, "no application profile declared"))
+    declared = {}
+    for source, kind in ((cgmes, "cgmes"), (nc, "nc")):
+        for row in source.itertuples():
+            entry = declared.setdefault(str(row.INSTANCE_ID), (row.path, kind, set()))
+            if entry[1] == kind:
+                entry[2].add(row.VALUE)
+    infos = [FileInfo(path, instance_id, kind, sorted(uris), Path(path).parts[1])
+             for instance_id, (path, kind, uris) in sorted(declared.items(), key=lambda kv: kv[1][0])]
+    skipped += [(p, "no application profile declared") for p in files if p not in {fi.path for fi in infos}]
     return frame, infos, skipped
 
 
@@ -313,6 +309,12 @@ def main():
     print(f"parsed {len(frame):,} triples from {len(infos)} mapped files ({len(skipped)} skipped)")
 
     group_stats, release_sarifs, all_gaps = [], {}, []
+    relations = cgmes_tools.get_model_relations(frame)
+    missing = relations[relations["INSTANCE_ID_TO"].isna()]
+    if len(missing):
+        all_gaps += [f"declared model dependency not loaded: {row.ID_FROM} -[{row.KEY}]-> {row.ID_TO}"
+                     for row in missing.itertuples()]
+    print(f"model dependencies: {len(relations)} declared, {len(missing)} not loaded")
     for release, config in RELEASES.items():
         if args.only and release != args.only:
             continue
