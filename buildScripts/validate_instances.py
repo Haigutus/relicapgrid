@@ -47,8 +47,12 @@ CGMES_COMMON_SHACL = [
 # Near-duplicates of Instance/Jotunheim/GridSituation/cimxml/ (kept dir wins)
 DUPLICATE_GLOB = "Instance/Jotunheim/NetworkCode/*.xml"
 
-# per-dataset semantics: these must not see other files' rdf:about continuation
-CARDINALITY = ("sh:minCount", "sh:maxCount")
+# per-dataset semantics — evaluated per instance file, never on the union:
+# counting must not see other files' rdf:about continuation, and each profile's
+# sh:closed AllowedProperties list only applies to datasets of THAT profile
+# (e.g. ssi:OrdinaryContingency-AllowedProperties allows 2 properties; run over
+# a frame with CO data it would reject every legitimate Contingency property)
+PER_DATASET = ("sh:minCount", "sh:maxCount", "sh:closed")
 
 
 @dataclass
@@ -113,7 +117,7 @@ def resolve_shapes(profile_uris, prof_map):
 def is_dataset_shape(path):
     """Cost filter for the per-file pass: only these files carry counting
     constraints, so the Complex sh:sparql shapes are not re-run once per
-    instance file. The semantic split is the CARDINALITY type filter."""
+    instance file. The semantic split is the PER_DATASET type filter."""
     return "-Con-Simple-" in path.name or path.name == "DatasetMetadata-AP-Con-SHACL.ttl"
 
 
@@ -205,12 +209,12 @@ def validate_group(frame, group):
     union = data.shacl.validate(group.union_shapes, rdf_map=group.rdf_map)
     passes = []
     if len(union):
-        passes.append(union[~union["VIOLATION_TYPE"].isin(CARDINALITY)])
+        passes.append(union[~union["VIOLATION_TYPE"].isin(PER_DATASET)])
     for instance_id, shapes in group.dataset_shapes.items():
         if shapes:
             per_file = data.shacl.validate(shapes, rdf_map=group.rdf_map, scope=[instance_id])
             if len(per_file):
-                passes.append(per_file[per_file["VIOLATION_TYPE"].isin(CARDINALITY)])
+                passes.append(per_file[per_file["VIOLATION_TYPE"].isin(PER_DATASET)])
     violations = pandas.concat(passes, ignore_index=True) if passes else union
     if violations.empty:
         return violations, violations
