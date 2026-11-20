@@ -43,20 +43,20 @@
     <nc:RemedialActionSchedule.RemedialAction rdf:resource="#_d874f8e3-7272-44b8-95ba-18f10449f036"/>
     <nc:RemedialActionSchedule.statusKind rdf:resource="https://cim4.eu/ns/nc#RemedialActionScheduleStatusKind.ordered"/>
   </nc:RemedialActionSchedule>
-  <nc:EventSchedule rdf:ID="_fd123c28-963a-49fc-8287-679eb8fc092c">
+  <nc:EventSchedule rdf:ID="_3dee7636-951a-4905-8cd4-50a8f0de8ba9">
     <nc:BaseTimeSeries.interpolationKind rdf:resource="https://cim4.eu/ns/nc#TimeSeriesInterpolationKind.none"/>
     <nc:EventSchedule.RemedialActionSchedule rdf:resource="#_091f8931-34c1-40ad-8e14-af493bcc8bda"/>
-    <cim:IdentifiedObject.mRID>fd123c28-963a-49fc-8287-679eb8fc092c</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.mRID>3dee7636-951a-4905-8cd4-50a8f0de8ba9</cim:IdentifiedObject.mRID>
     <cim:IdentifiedObject.name>TP RA One Switch</cim:IdentifiedObject.name>
   </nc:EventSchedule>
-  <nc:EventTimePoint rdf:ID="_679f1be4-e50c-464a-be4a-3462b0edc9d6">
-    <nc:EventTimePoint.EventSchedule rdf:resource="#_fd123c28-963a-49fc-8287-679eb8fc092c"/>
+  <nc:EventTimePoint rdf:ID="_87f2fe49-859f-44ae-867e-ba5b8ebefb03">
+    <nc:EventTimePoint.EventSchedule rdf:resource="#_3dee7636-951a-4905-8cd4-50a8f0de8ba9"/>
     <nc:EventTimePoint.atTime>2024-11-20T02:30:00Z</nc:EventTimePoint.atTime>
     <nc:EventTimePoint.isActive>false</nc:EventTimePoint.isActive>
   </nc:EventTimePoint>
 
-  <nc:RemedialActionScheduleDependency rdf:ID="_51592d48-9943-4e13-9ce3-51b79db43109">
-    <nc:RemedialActionScheduleDependency.mRID>51592d48-9943-4e13-9ce3-51b79db43109</nc:RemedialActionScheduleDependency.mRID>
+  <nc:RemedialActionScheduleDependency rdf:ID="_2f039ff4-2f49-4529-9c7e-9633809cac83">
+    <nc:RemedialActionScheduleDependency.mRID>2f039ff4-2f49-4529-9c7e-9633809cac83</nc:RemedialActionScheduleDependency.mRID>
     <nc:RemedialActionScheduleDependency.ProposedRemedialActionSchedule rdf:resource="#_091f8931-34c1-40ad-8e14-af493bcc8bda"/>	
     <nc:RemedialActionScheduleDependency.ReplacedRemedialActionSchedule rdf:resource="#_17527637-6099-4ee6-8b21-fea8dfec4c75"/>	
   </nc:RemedialActionScheduleDependency>  
