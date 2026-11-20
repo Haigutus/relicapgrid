@@ -8,19 +8,23 @@
     xmlns:dcat="http://www.w3.org/ns/dcat#" > 
   <dcat:Dataset rdf:about="urn:uuid:d226786d-20b5-46c5-9be5-95190f83845c">
     <dcterms:accessRights rdf:resource="https://energy.referencedata.eu/Confidentiality/Public"/>
+    <dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/daily"/>
     <dcterms:conformsTo rdf:resource="https://ap.cim4.eu/ImpactAssessmentMatrix/2.4"/>
     <dcterms:description xml:lang="en">This is the impact assessment matrix dataset for Jotunheim part of ReliCapGrid.</dcterms:description>
     <dcat:endDate>2023-06-16T07:30:00Z</dcat:endDate>
     <prov:generatedAtTime>2022-06-10T07:06:25Z</prov:generatedAtTime>
     <dcterms:identifier>d226786d-20b5-46c5-9be5-95190f83845c</dcterms:identifier>
+    <dcterms:issued>2022-06-16T07:30:00Z</dcterms:issued>
     <dcat:isVersionOf rdf:resource="https://energy.referencedata.eu/Test/Model/Jotunheim-IAM"/>
     <dcat:keyword>IAM</dcat:keyword>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcterms:publisher rdf:resource="https://energy.referencedata.eu/test/party/Jotunheim"/>
     <dcterms:rights>Copyright</dcterms:rights>
     <dcterms:rightsHolder>ENTSO-E</dcterms:rightsHolder>	
+    <dcterms:spatial rdf:resource="https://energy.referencedata.eu/test/frame/NineRealms-Transmission"/>
     <dcterms:requires rdf:resource="urn:uuid:67b33697-15a1-4752-aeee-fb9b488defc4"/>
     <dcat:startDate>2022-06-16T07:30:00Z</dcat:startDate>
+    <dcterms:title>20220615_IAM_1.0.0</dcterms:title>
     <dcat:version>1.0.0</dcat:version>
     <prov:wasGeneratedBy rdf:resource="https://energy.referencedata.eu/Activity/CGM-IAM"/>
   </dcat:Dataset>
@@ -47,11 +51,11 @@
     <!-- 7.4.4	RAS rejection -->
 
   <nc:RemedialActionScheduleOutcomeValue rdf:ID="_9f16db8d-3c1f-4fe8-b22f-51e223c89694">
-    <cim:IdentifiedObject.mRID>9f16db8d-3c1f-4fe8-b22f-51e223c89694</cim:IdentifiedObject.mRID>
     <nc:OutcomeValue.ImpactAssessmentMatrix rdf:resource="#_d3b375a5-c7ac-4be4-abbe-64dd89f2e877"/>
     <nc:OutcomeValue.ImpactedSystemOperator rdf:resource="#_a9dba80c-9dfb-4ebf-b383-446ddc2c4adf"/>
+    <nc:OutcomeValue.mRID>9f16db8d-3c1f-4fe8-b22f-51e223c89694</nc:OutcomeValue.mRID>
     <nc:OutcomeValue.outcome rdf:resource="https://cim4.eu/ns/nc#OutcomeImpactAssessmentKind.false"/>
-    <nc:RemedialActionOutcomeValue.RemedialActionSchedule rdf:resource="#_e79dc7a3-3bd2-4a1a-87e7-a8d90ae0e37c"/>
+    <nc:RemedialActionScheduleOutcomeValue.RemedialActionSchedule rdf:resource="#_e79dc7a3-3bd2-4a1a-87e7-a8d90ae0e37c"/>
   </nc:RemedialActionScheduleOutcomeValue>
 
 </rdf:RDF>
