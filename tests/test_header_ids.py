@@ -1,58 +1,38 @@
 """Every instance file has its own header ID.
 
-The header (md:FullModel or dcat:Dataset) names the dataset. IEC 61970-552 and
-the dataset metadata profile require that name to be unique: a tool that keys a
-dataset by its header ID merges two files that share one.
+The header (md:FullModel, md:DifferenceModel or dcat:Dataset) names the dataset.
+IEC 61970-552 and the dataset metadata profile require that name to be unique: a
+tool that keys a dataset by its header ID merges two files that share one.
 """
-import xml.etree.ElementTree as ET
-from collections import defaultdict
 from pathlib import Path
 
 import pandas
 import pytest
+import triplets  # noqa: F401  (registers pandas.read_RDF)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INSTANCE_DIR = REPO_ROOT / "Instance"
 
-RDF = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}"
-HEADER_TAGS = {
-    "{http://iec.ch/TC57/61970-552/ModelDescription/1#}FullModel",
-    "{http://iec.ch/TC57/61970-552/DifferenceModel/1#}DifferenceModel",
-    "{http://www.w3.org/ns/dcat#}Dataset",
-}
+HEADER_TYPES = ["FullModel", "DifferenceModel", "Dataset"]
 
 
-def header_id(source):
-    """The rdf:about of the file's header element, as a bare ID (no urn:uuid:, #, _); None without one."""
-    for _, element in ET.iterparse(source, events=("start",)):
-        if element.tag in HEADER_TAGS:
-            about = element.get(f"{RDF}about") or element.get(f"{RDF}ID") or ""
-            for prefix in ("urn:uuid:", "#", "_"):
-                about = about.removeprefix(prefix)
-            return about or None
-    return None
-
-
-def shared_header_ids(files):
-    """{header ID: [files]} for the IDs more than one file uses."""
-    owners = defaultdict(list)
-    for file in files:
-        identifier = header_id(file)
-        if identifier:
-            owners[identifier].append(file)
-    return {identifier: names for identifier, names in owners.items() if len(names) > 1}
+def shared_header_ids(data):
+    """Header ID, file for each header ID that more than one file uses."""
+    headers = data[(data["KEY"] == "Type") & data["VALUE"].isin(HEADER_TYPES)][["ID", "INSTANCE_ID"]]
+    files = data[data["KEY"] == "label"][["INSTANCE_ID", "VALUE"]].rename(columns={"VALUE": "File"})
+    headers = headers.merge(files, on="INSTANCE_ID")
+    shared = headers[headers["ID"].duplicated(keep=False)]
+    return shared.rename(columns={"ID": "Header ID"})[["Header ID", "File"]].sort_values(["Header ID", "File"])
 
 
 def test_header_ids_are_unique():
     """No two instance files share a header ID."""
-    files = sorted(INSTANCE_DIR.rglob("*.xml"))
-    shared = shared_header_ids(files)
-    if shared:
-        table = pandas.DataFrame(
-            [(identifier, str(file.relative_to(REPO_ROOT))) for identifier, names in sorted(shared.items())
-             for file in names],
-            columns=["Header ID", "File"]).to_markdown(index=False)
-        pytest.fail(f"**{len(shared)} header IDs are used by more than one file:**\n\n{table}\n\n"
+    data = pandas.read_RDF([str(path) for path in sorted(INSTANCE_DIR.rglob("*.xml"))])
+    shared = shared_header_ids(data)
+    if not shared.empty:
+        shared["File"] = shared["File"].map(lambda path: str(Path(path).relative_to(REPO_ROOT)))
+        pytest.fail(f"**{shared['Header ID'].nunique()} header IDs are used by more than one file:**\n\n"
+                    f"{shared.to_markdown(index=False)}\n\n"
                     "Give each file its own header ID (a new UUID).")
 
 
@@ -76,6 +56,7 @@ def test_shared_header_id_detection(tmp_path):
     }
     for name, header in files.items():
         (tmp_path / name).write_text(HEADER.format(header=header))
-    shared = shared_header_ids(sorted(tmp_path.glob("*.xml")))
-    assert {identifier: [file.name for file in names] for identifier, names in shared.items()} == {
-        "6b3e2c8a-51f0-4c1d-9d2e-7a40c3e1d00b": ["a.xml", "b.xml", "c.xml"]}
+    data = pandas.read_RDF([str(path) for path in sorted(tmp_path.glob("*.xml"))])
+    shared = shared_header_ids(data)
+    assert list(shared["Header ID"]) == ["6b3e2c8a-51f0-4c1d-9d2e-7a40c3e1d00b"] * 3
+    assert [Path(path).name for path in shared["File"]] == ["a.xml", "b.xml", "c.xml"]
